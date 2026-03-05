@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1999FA3A-FD2E-45CD-ADF9-29FF14C99C39}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Banagrario.DataAccess</RootNamespace>
+    <AssemblyName>Banagrario.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Slyg.Data, Version=2.8.2.19506, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools, Version=2.9.0.16857, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Canje\DBCattanDatosDataBaseManager.cs" />
+    <Compile Include="Canje\DBCattanDatosDataBaseManager.designer.cs">
+      <DependentUpon>DBCattanDatosDataBaseManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Canje\DBCattanImagesDataBaseManager.cs" />
+    <Compile Include="Canje\DBCattanImagesDataBaseManager.designer.cs">
+      <DependentUpon>DBCattanImagesDataBaseManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log\DBAgrarioLogDataBaseManager.cs" />
+    <Compile Include="Log\DBAgrarioLogDataBaseManager.Designer.cs">
+      <DependentUpon>DBAgrarioLogDataBaseManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\Enumeraciones.cs" />
+    <Compile Include="Cliente\DBAgrarioDataBaseManager.cs" />
+    <Compile Include="Cliente\DBAgrarioDataBaseManager.designer.cs">
+      <DependentUpon>DBAgrarioDataBaseManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Canje\DBCattanDatos.sqldesign" />
+    <None Include="Canje\DBCattanImages.sqldesign" />
+    <None Include="Cliente\DBAgrario.sqldesign" />
+    <None Include="Log\DBAgrarioLog.sqldesign" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

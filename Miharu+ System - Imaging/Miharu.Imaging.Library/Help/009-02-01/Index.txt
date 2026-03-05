@@ -1,0 +1,7 @@
+﻿id	Documento	Imagen	Observacion
+1	Cheque	Iamagen1.tif	Cheque devuelto
+2	Consignacion efectivo	Iamagen1.tif	Cheque devuelto
+3	Consignacion cheque	Iamagen1.tif	Cheque devuelto
+4	Retiro	Iamagen1.tif	Cheque devuelto
+5	pago credito	Iamagen1.tif	Cheque devuelto
+6	pago tarjeta	Iamagen1.tif	Cheque devuelto

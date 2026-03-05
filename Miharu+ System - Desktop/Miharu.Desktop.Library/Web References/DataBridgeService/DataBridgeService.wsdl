@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="DataBridge">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataBridgeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DataBridgeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImageCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImageCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ImageCountResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFolio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFolioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFolioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendDataPostRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendDataPostRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendDataPostRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFoliosCargueItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFoliosCargueItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFoliosCargueItemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFolioCargueItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFolioCargueItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFolioCargueItemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFoliosFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFoliosFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFoliosFileResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFolioFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFolioFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFolioFileResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateImageFolioManager">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateImageFolioManagerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateImageFolioManagerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="DataBridgeSoapIn">
+    <wsdl:part name="parameters" element="tns:DataBridge" />
+  </wsdl:message>
+  <wsdl:message name="DataBridgeSoapOut">
+    <wsdl:part name="parameters" element="tns:DataBridgeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImageCountSoapIn">
+    <wsdl:part name="parameters" element="tns:ImageCount" />
+  </wsdl:message>
+  <wsdl:message name="ImageCountSoapOut">
+    <wsdl:part name="parameters" element="tns:ImageCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFolioSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFolio" />
+  </wsdl:message>
+  <wsdl:message name="GetFolioSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFolioResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendDataPostRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:SendDataPostRequest" />
+  </wsdl:message>
+  <wsdl:message name="SendDataPostRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:SendDataPostRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFoliosCargueItemSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFoliosCargueItem" />
+  </wsdl:message>
+  <wsdl:message name="GetFoliosCargueItemSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFoliosCargueItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFolioCargueItemSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFolioCargueItem" />
+  </wsdl:message>
+  <wsdl:message name="GetFolioCargueItemSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFolioCargueItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFoliosFileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFoliosFile" />
+  </wsdl:message>
+  <wsdl:message name="GetFoliosFileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFoliosFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFolioFileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFolioFile" />
+  </wsdl:message>
+  <wsdl:message name="GetFolioFileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFolioFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateImageFolioManagerSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateImageFolioManager" />
+  </wsdl:message>
+  <wsdl:message name="CreateImageFolioManagerSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateImageFolioManagerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DataBridgeServiceSoap">
+    <wsdl:operation name="DataBridge">
+      <wsdl:input message="tns:DataBridgeSoapIn" />
+      <wsdl:output message="tns:DataBridgeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImageCount">
+      <wsdl:input message="tns:ImageCountSoapIn" />
+      <wsdl:output message="tns:ImageCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFolio">
+      <wsdl:input message="tns:GetFolioSoapIn" />
+      <wsdl:output message="tns:GetFolioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendDataPostRequest">
+      <wsdl:input message="tns:SendDataPostRequestSoapIn" />
+      <wsdl:output message="tns:SendDataPostRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFoliosCargueItem">
+      <wsdl:input message="tns:GetFoliosCargueItemSoapIn" />
+      <wsdl:output message="tns:GetFoliosCargueItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFolioCargueItem">
+      <wsdl:input message="tns:GetFolioCargueItemSoapIn" />
+      <wsdl:output message="tns:GetFolioCargueItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFoliosFile">
+      <wsdl:input message="tns:GetFoliosFileSoapIn" />
+      <wsdl:output message="tns:GetFoliosFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFolioFile">
+      <wsdl:input message="tns:GetFolioFileSoapIn" />
+      <wsdl:output message="tns:GetFolioFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateImageFolioManager">
+      <wsdl:input message="tns:CreateImageFolioManagerSoapIn" />
+      <wsdl:output message="tns:CreateImageFolioManagerSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DataBridgeServiceSoap" type="tns:DataBridgeServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DataBridge">
+      <soap:operation soapAction="http://tempuri.org/DataBridge" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImageCount">
+      <soap:operation soapAction="http://tempuri.org/ImageCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFolio">
+      <soap:operation soapAction="http://tempuri.org/GetFolio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendDataPostRequest">
+      <soap:operation soapAction="http://tempuri.org/SendDataPostRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFoliosCargueItem">
+      <soap:operation soapAction="http://tempuri.org/GetFoliosCargueItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFolioCargueItem">
+      <soap:operation soapAction="http://tempuri.org/GetFolioCargueItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFoliosFile">
+      <soap:operation soapAction="http://tempuri.org/GetFoliosFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFolioFile">
+      <soap:operation soapAction="http://tempuri.org/GetFolioFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateImageFolioManager">
+      <soap:operation soapAction="http://tempuri.org/CreateImageFolioManager" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DataBridgeServiceSoap12" type="tns:DataBridgeServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DataBridge">
+      <soap12:operation soapAction="http://tempuri.org/DataBridge" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImageCount">
+      <soap12:operation soapAction="http://tempuri.org/ImageCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFolio">
+      <soap12:operation soapAction="http://tempuri.org/GetFolio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendDataPostRequest">
+      <soap12:operation soapAction="http://tempuri.org/SendDataPostRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFoliosCargueItem">
+      <soap12:operation soapAction="http://tempuri.org/GetFoliosCargueItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFolioCargueItem">
+      <soap12:operation soapAction="http://tempuri.org/GetFolioCargueItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFoliosFile">
+      <soap12:operation soapAction="http://tempuri.org/GetFoliosFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFolioFile">
+      <soap12:operation soapAction="http://tempuri.org/GetFolioFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateImageFolioManager">
+      <soap12:operation soapAction="http://tempuri.org/CreateImageFolioManager" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DataBridgeService">
+    <wsdl:port name="DataBridgeServiceSoap" binding="tns:DataBridgeServiceSoap">
+      <soap:address location="http://localhost/Miharu.Data.Bridge/DataBridgeService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DataBridgeServiceSoap12" binding="tns:DataBridgeServiceSoap12">
+      <soap12:address location="http://localhost/Miharu.Data.Bridge/DataBridgeService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

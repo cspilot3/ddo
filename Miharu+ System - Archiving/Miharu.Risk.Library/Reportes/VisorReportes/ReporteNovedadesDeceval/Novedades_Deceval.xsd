@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Novedades_Deceval" targetNamespace="http://tempuri.org/Novedades_Deceval.xsd" xmlns:mstns="http://tempuri.org/Novedades_Deceval.xsd" xmlns="http://tempuri.org/Novedades_Deceval.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Novedades_Deceval" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Novedades_Deceval" msprop:Generator_UserDSName="Novedades_Deceval">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Llave_01" msprop:Generator_ColumnVarNameInTable="columnLlave_01" msprop:Generator_ColumnPropNameInRow="Llave_01" msprop:Generator_ColumnPropNameInTable="Llave_01Column" msprop:Generator_UserColumnName="Llave_01" type="xs:string" minOccurs="0" />
+              <xs:element name="Llave_02" msprop:Generator_ColumnVarNameInTable="columnLlave_02" msprop:Generator_ColumnPropNameInRow="Llave_02" msprop:Generator_ColumnPropNameInTable="Llave_02Column" msprop:Generator_UserColumnName="Llave_02" type="xs:string" minOccurs="0" />
+              <xs:element name="fk_Expediente" msprop:Generator_ColumnVarNameInTable="columnfk_Expediente" msprop:Generator_ColumnPropNameInRow="fk_Expediente" msprop:Generator_ColumnPropNameInTable="fk_ExpedienteColumn" msprop:Generator_UserColumnName="fk_Expediente" type="xs:string" minOccurs="0" />
+              <xs:element name="fk_Folder" msprop:Generator_ColumnVarNameInTable="columnfk_Folder" msprop:Generator_ColumnPropNameInRow="fk_Folder" msprop:Generator_ColumnPropNameInTable="fk_FolderColumn" msprop:Generator_UserColumnName="fk_Folder" type="xs:string" minOccurs="0" />
+              <xs:element name="fk_File" msprop:Generator_ColumnVarNameInTable="columnfk_File" msprop:Generator_ColumnPropNameInRow="fk_File" msprop:Generator_ColumnPropNameInTable="fk_FileColumn" msprop:Generator_UserColumnName="fk_File" type="xs:string" minOccurs="0" />
+              <xs:element name="Tipologia" msprop:Generator_ColumnVarNameInTable="columnTipologia" msprop:Generator_ColumnPropNameInRow="Tipologia" msprop:Generator_ColumnPropNameInTable="TipologiaColumn" msprop:Generator_UserColumnName="Tipologia" type="xs:string" minOccurs="0" />
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" type="xs:string" minOccurs="0" />
+              <xs:element name="Validaciones" msprop:Generator_ColumnVarNameInTable="columnValidaciones" msprop:Generator_ColumnPropNameInRow="Validaciones" msprop:Generator_ColumnPropNameInTable="ValidacionesColumn" msprop:Generator_UserColumnName="Validaciones" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

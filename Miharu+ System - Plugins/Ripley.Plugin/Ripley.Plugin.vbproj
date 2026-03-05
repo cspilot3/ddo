@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB1C4F35-8498-469F-9876-A8263444A862}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>Ripley.Plugin</RootNamespace>
+    <AssemblyName>Ripley.Plugin</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ripley.Plugin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Ripley.Plugin.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Ripley.Plugin.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Ripley.Plugin.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Slyg.Data, Version=2.7.6.24573, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Imaging\Configuracion\FormConfigCampo.Designer.vb">
+      <DependentUpon>FormConfigCampo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Configuracion\FormConfigCampo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Configuracion\FormConfigDocumento.Designer.vb">
+      <DependentUpon>FormConfigDocumento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Configuracion\FormConfigDocumento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Configuracion\FormConfigValidacion.Designer.vb">
+      <DependentUpon>FormConfigValidacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Configuracion\FormConfigValidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Controls\PluginSearchControlParameters.Designer.vb">
+      <DependentUpon>PluginSearchControlParameters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Controls\PluginSearchControlParameters.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Imaging\ImagingEventExecuter.vb" />
+    <Compile Include="Imaging\Reportes\Facturacion\ReportFacturacion.vb" />
+    <Compile Include="Imaging\Wrapper.vb" />
+    <Compile Include="Imaging\Plugin.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Imaging\Reportes\Destape\ReportDestape.vb" />
+    <Compile Include="Imaging\Reportes\DocumentosProcesados\ReportDocumentosProcesados.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Imaging\Configuracion\FormConfigCampo.resx">
+      <DependentUpon>FormConfigCampo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Configuracion\FormConfigDocumento.resx">
+      <DependentUpon>FormConfigDocumento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Configuracion\FormConfigValidacion.resx">
+      <DependentUpon>FormConfigValidacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Controls\PluginSearchControlParameters.resx">
+      <DependentUpon>PluginSearchControlParameters.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Reportes\Facturacion\ReportFacturacion.rdlc" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Iconos\upload.ico" />
+    <Content Include="Resources\Aceptar.png" />
+    <Content Include="Resources\Adicionar.png" />
+    <Content Include="Resources\anexo_completo.png" />
+    <Content Include="Resources\anexo_folder.png" />
+    <Content Include="Resources\auto_indexar.png" />
+    <Content Include="Resources\bancoagrario.png" />
+    <Content Include="Resources\book_previous.png" />
+    <Content Include="Resources\btnAgregar.png" />
+    <Content Include="Resources\btnAjustarAlto.Image.png" />
+    <Content Include="Resources\btnAjustarAncho.Image.png" />
+    <Content Include="Resources\btnBuscar.png" />
+    <Content Include="Resources\btnCopiar.png" />
+    <Content Include="Resources\btnDestape.png" />
+    <Content Include="Resources\btnGenerarEstructura.png" />
+    <Content Include="Resources\btnGuardar.png" />
+    <Content Include="Resources\btnPaginaAnterior.Image.png" />
+    <Content Include="Resources\btnPaginaFinal.Image.png" />
+    <Content Include="Resources\btnPaginaPrimera.Image.png" />
+    <Content Include="Resources\btnPaginaSiguiente.Image.png" />
+    <Content Include="Resources\btnReflejarHorizontal.Image.png" />
+    <Content Include="Resources\btnReflejarVertical.Image.png" />
+    <Content Include="Resources\btnRotarDerecha.Image.png" />
+    <Content Include="Resources\btnRotarIzquierda.Image.png" />
+    <Content Include="Resources\btnSalir.png" />
+    <Content Include="Resources\btnZoomIn.Image.png" />
+    <Content Include="Resources\btnZoomOut.Image.png" />
+    <Content Include="Resources\calculator_edit.png" />
+    <Content Include="Resources\cancel.png" />
+    <Content Include="Resources\cancelar.png" />
+    <Content Include="Resources\CancelarVen.png" />
+    <Content Include="Resources\Cargue.png" />
+    <Content Include="Resources\Close_Red.png" />
+    <Content Include="Resources\cog_edit.png" />
+    <Content Include="Resources\cog_go.png" />
+    <Content Include="Resources\compress.png" />
+    <Content Include="Resources\cross.png" />
+    <Content Include="Resources\Devoluciones.png" />
+    <Content Include="Resources\document_add.png" />
+    <Content Include="Resources\document_delete.png" />
+    <Content Include="Resources\document_edit.png" />
+    <Content Include="Resources\door_in.png" />
+    <Content Include="Resources\Edit.png" />
+    <Content Include="Resources\Entidad.png" />
+    <Content Include="Resources\Export.png" />
+    <Content Include="Resources\filesave.png" />
+    <Content Include="Resources\film.png" />
+    <Content Include="Resources\film_delete.png" />
+    <Content Include="Resources\find.png" />
+    <Content Include="Resources\folder_add.png" />
+    <Content Include="Resources\folder_delete.png" />
+    <Content Include="Resources\folder_image.png" />
+    <Content Include="Resources\images.png" />
+    <Content Include="Resources\image_edit.png" />
+    <Content Include="Resources\Indexar.png" />
+    <Content Include="Resources\Instalador.jpg" />
+    <Content Include="Resources\Keys.png" />
+    <Content Include="Resources\layout_content.png" />
+    <Content Include="Resources\layout_edit.png" />
+    <Content Include="Resources\layout_error.png" />
+    <Content Include="Resources\lightning_go.png" />
+    <Content Include="Resources\lock.png" />
+    <Content Include="Resources\lock_open.png" />
+    <Content Include="Resources\MainField.png" />
+    <Content Include="Resources\MesaImagenes.png" />
+    <Content Include="Resources\MiharuImagingIndexerImage.png" />
+    <Content Include="Resources\page_white_code.png" />
+    <Content Include="Resources\page_white_key.png" />
+    <Content Include="Resources\PreIndexar.png" />
+    <Content Include="Resources\prepare.png" />
+    <Content Include="Resources\Process-Accept.png" />
+    <Content Include="Resources\publicar.png" />
+    <Content Include="Resources\refresh.png" />
+    <Content Include="Resources\Remove-Image.png" />
+    <Content Include="Resources\remove-update.png" />
+    <Content Include="Resources\Remove.png" />
+    <Content Include="Resources\replace-image.png" />
+    <Content Include="Resources\report.png" />
+    <Content Include="Resources\Reproceso.png" />
+    <Content Include="Resources\scanner.png" />
+    <Content Include="Resources\SegundaCaptura.png" />
+    <Content Include="Resources\SelectOne.png" />
+    <Content Include="Resources\SelectTwo.png" />
+    <Content Include="Resources\server_go.png" />
+    <Content Include="Resources\sheet_add.png" />
+    <Content Include="Resources\sheet_delete.png" />
+    <Content Include="Resources\spellcheck.png" />
+    <Content Include="Resources\TablaAsociada.png" />
+    <Content Include="Resources\tag_blue_delete.png" />
+    <Content Include="Resources\tag_yellow.png" />
+    <Content Include="Resources\Terceracaptura.png" />
+    <Content Include="Resources\text_list_numbers.png" />
+    <Content Include="Resources\tick.png" />
+    <Content Include="Resources\zoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagenes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Controls\Miharu.Desktop.Controls.vbproj">
+      <Project>{BBDF4261-7651-4D93-95EE-675260D016AC}</Project>
+      <Name>Miharu.Desktop.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Library\Miharu.Desktop.Library.vbproj">
+      <Project>{60FE71B4-EC25-45F0-B384-B98582D035C7}</Project>
+      <Name>Miharu.Desktop.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.DataAccess\Miharu.Imaging.DataAccess.csproj">
+      <Project>{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}</Project>
+      <Name>Miharu.Imaging.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.Indexer\Miharu.Imaging.Indexer.vbproj">
+      <Project>{3AA91370-45D5-4EBD-A700-99FB10AB6FB4}</Project>
+      <Name>Miharu.Imaging.Indexer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.Library\Miharu.Imaging.Library.vbproj">
+      <Project>{9501AE9F-03BC-4933-9EC3-84BCD96CC795}</Project>
+      <Name>Miharu.Imaging.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.DataAccess\Miharu.Security.DataAccess.csproj">
+      <Project>{902B10BC-8630-4730-9AC5-763CA7D2CB31}</Project>
+      <Name>Miharu.Security.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.Library\Miharu.Security.Library.csproj">
+      <Project>{BC90E6AA-55BE-4E52-841E-FE48A32E750D}</Project>
+      <Name>Miharu.Security.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Integration.DataAccess\Miharu.Integration.DataAccess.csproj">
+      <Project>{8A0078E2-6728-4413-AE6F-FD1EADEB7247}</Project>
+      <Name>Miharu.Integration.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

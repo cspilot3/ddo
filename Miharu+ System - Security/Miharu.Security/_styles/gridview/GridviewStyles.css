@@ -1,0 +1,196 @@
+﻿/* table style */
+table.yui-datatable-theme
+{
+	font-family:arial;
+	font-size:x-small;
+	border:solid 1px #7f7f7f;
+	/*width:700px;*/
+	width:97%;
+	white-space: nowrap;
+	/*text-align:center;*/
+	text-align:left;
+}
+
+/* common cell styles */
+.yui-datatable-theme th, .yui-datatable-theme td
+{
+    /*cursor:default;*/
+    cursor:pointer;
+	white-space: nowrap;
+}
+
+/* header cell styles */
+.yui-datatable-theme th
+{
+    background: url(yui-datatable/sprite.png) repeat-x 0px 0px;
+    border-color: #989898 #cbcbcb #989898 #989898;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+    color: #000;
+    padding: 4px 5px 4px 10px;
+	/*text-align:center;*/
+	text-align:left;
+    vertical-align: bottom;
+}
+
+/* data data cell style */
+.yui-datatable-theme td
+{
+    padding:4px 10px 4px 10px;
+    border-right:solid 1px #cbcbcb;	
+}
+
+/* alternating row style */
+.yui-datatable-theme .nor-data-row
+{
+	background-color: #FFFFFF;
+	cursor:pointer;
+}
+
+/* alternating row style */
+.yui-datatable-theme .alt-data-row
+{
+	background-color: #F5F5F5;
+	cursor:pointer;
+}
+
+/* select row style */
+.yui-datatable-theme .row-select 
+{
+	background-color: #9EB4C9;
+	cursor:pointer;
+}
+
+.yui-datatable-theme .row-edit
+{
+	background-color: #5B80A4;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+/* on row mouse over */
+.yui-datatable-theme .nor-data-row:hover , .yui-datatable-theme .alt-data-row:hover , .yui-datatable-theme .row-select:hover , .yui-datatable-theme .row-edit:hover
+{
+	background-color: #D9E1EC;
+	cursor:pointer;
+}
+
+.yui-datatable-theme .pager-stl
+{
+	background-color: #666699;
+	font-style:normal; /*Bold*/
+	font-size:small;
+    color:White;
+    Height:20px;
+    text-align:center;
+    vertical-align:middle;
+}
+
+
+ 
+
+/* table style */
+table.tablecloth-theme
+{
+    font-family:Arial,Helvetica,sans-serif;
+    color:#555555;
+    border-collapse:collapse;
+    border-style:none;
+    border-width:0px;
+	width:700px;    
+}
+
+/* header cell style */
+.tablecloth-theme th
+{
+    background:#328AA4 url(tablecloth/tr_back.gif) repeat-x;
+    color:#FFFFFF;    
+}  
+
+/* common cell styles */
+.tablecloth-theme th, .tablecloth-theme td
+{
+    border:1px solid #FFFFFF;
+    padding:0.5em;
+    text-align:left;
+    font-size: 9.7pt;
+    cursor:default;
+}
+
+/* alternating row style */
+.tablecloth-theme .alt-data-row { background-color:#E5F1F4; }
+
+/* mouseover row style */
+.tablecloth-theme .row-over, .tablecloth-theme .column-over, .tablecloth-theme .cell-over { background-color:#ECFBD4; }
+
+/* mouseover row style */
+.tablecloth-theme .row-select, .tablecloth-theme .column-select, .tablecloth-theme .cell-select
+{ 
+    background:#BCE774;
+    color:#555;
+}
+
+/* mouseover row style */
+.tablecloth-theme .header-over a
+{
+	text-decoration: underline; 
+}
+
+/* table style */
+table.sharepoint-theme
+{
+	font-family:arial;
+	font-size:small;
+    color:#555555;
+	border:solid 1px #7f7f7f;
+	width:700px;
+}
+
+/* header cell style */
+.sharepoint-theme th
+{
+	border-right:solid 1px #7f7f7f;
+	border-bottom:solid 1px #7f7f7f;
+    background:url(sharepoint/calnumBttn_obsidian.gif) repeat-x;
+    background-color: #DCDFE2;
+    color:#000;
+    font-weight:normal;
+    text-align:center;    
+}  
+
+/* common cell styles */
+.sharepoint-theme th, .sharepoint-theme td
+{
+	cursor:default;
+	height:20px;
+	color:#000;
+}
+
+.sharepoint-theme td
+{
+	padding:2px 8px;
+    border-bottom:solid 1px #d0d0d0;	
+}
+
+/* mouseover row style */
+.sharepoint-theme .row-over
+{
+	background: url(sharepoint/calnumBttnover.gif) repeat-x;
+	background-color: #E9F2FF;
+}
+.sharepoint-theme .row-over-selected
+{
+	background: url(sharepoint/calnumBttntodayHot_obsidian.gif) repeat-x;
+	background-color: #DCDFE2;
+}
+/* mouseover header style */
+.sharepoint-theme .header-over
+{
+    background:url(sharepoint/calnumBttntoday_obsidian.gif) repeat-x;
+}
+
+.sharepoint-theme .selected-row
+{
+    background:url(sharepoint/calnumBttntoday_obsidian.gif) repeat-x;
+    background-color: #FFBA62;
+}

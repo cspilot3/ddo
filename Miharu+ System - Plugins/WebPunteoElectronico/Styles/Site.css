@@ -1,0 +1,954 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body
+{
+    /*background: #b6b7bc;*/
+    font-size: .80em;
+    font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+    text-align: left;
+    background-color: #FFFFFF;
+}
+
+a:link, a:visited, a:hover, a:active
+{
+    color: #808080;
+    text-decoration: none;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    /*font-variant: small-caps;*/
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+.input-text
+{
+    width:200px;
+    height:16px;
+}
+
+.input-button
+{
+    background-color: #818C9E;
+    color: #FFFFFF;
+    border: 1px solid #000000;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.input-button:hover /*, input[type="button"]:hover*/
+{
+    background-color: #FFFFFF;
+    color: #818C9E;
+    border: 1px solid #000000;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+#options
+{
+    position: absolute;
+    right: 2px;
+    width: 250px;
+}
+
+
+/* PATH
+----------------------------------------------------------*/
+.path
+{
+    /*background: #FFFFFF; background: #4e5766;*/
+    margin: 0px auto;
+    text-align: left;
+    line-height: normal;
+    width: auto;
+    color: #FFFFFF;
+    height: 15px;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: x-small;
+    background-image: url('marco/Path.png');
+    background-repeat: no-repeat;
+}
+
+.path a:hover
+{
+    text-decoration: underline;
+    color: #FF9933;
+    font-weight: bold;
+    font-size: x-small;
+}
+
+.path a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: x-small;
+}
+
+.DashBoard-separator
+{
+    width: 30px;
+}
+
+/* PANELS
+----------------------------------------------------------*/
+.panel-header
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 250px;
+    height: 41px;
+}
+.panel-header-left
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 30px;
+    height: 41px;
+    background-image: url('marco/panel_header_left.png');
+    background-repeat: repeat-x;
+    padding-top: 5px;
+}
+
+.panel-header-center
+{
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    height: 41px;
+    background-image: url('marco/panel_header_center.png');
+    background-repeat: repeat-x;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.panel-header-center span
+{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.panel-header-right
+{
+    position: absolute;
+    top: 0px;
+    width: 30px;
+    height: 41px;
+    background-image: url('marco/panel_header_right.png');
+    background-repeat: repeat-x;
+    padding-top: 5px;
+}
+
+.panel-content
+{
+    background-color: White;
+    position: absolute;
+    top: 43px;
+    border: 1px solid #000000;
+    overflow:auto;
+}
+
+.panel-content-menu
+{
+    background-color: White;
+    position: absolute;
+    top: 43px;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color: #F78421;
+    width: auto;
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #F78421;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-right: 4px;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #FF9900;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #FF6600;
+    color: #C0C0C0;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    margin: auto;
+    width: 500px;
+    text-align: left;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.empresa
+{
+    padding: 5px;
+    float: right;
+    display: block;
+}
+
+.logo
+{
+    padding: 5px;
+    float: left;
+    display: block;
+}
+
+.title
+{
+    text-align: left;
+    width: auto;
+}
+
+.title h1
+{
+    color: #333333;
+}
+
+.formtitle
+{
+    padding: 5px;
+    font-style: oblique;
+    text-align: right;
+    color: #FFFFFF;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: #FFFFFF;
+    float: right;
+    font-weight: bold;
+}
+
+.loginDisplay a:link
+{
+    color: #FFFFFF;
+}
+
+.loginDisplay a:visited
+{
+    color: #FFFFFF;
+}
+
+.loginDisplay a:hover
+{
+    color: #FFFFCC;
+    text-decoration: underline;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.DashBoardItem
+{
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+}
+
+.DashBoardItem:hover
+{
+    border: 1px solid #808080;
+    cursor: pointer;
+    background-color: #99FF66;
+}
+
+.DashBoardItem a
+{
+    text-decoration: none;
+    color: #006600;
+    font-weight: bold;
+}
+
+.DashBoardGroup
+{
+    padding: 0px 0px 0px 5px;
+    margin-right: 10px;
+}
+
+/* 
+Filtro
+----------------------------------------------------------*/
+
+.Filter-Button, .Filter-Button:hover, .Filter-Button-Selected
+{
+	font-weight: bold;
+	font-size: x-small;
+	font-family: Tahoma;
+}
+.Filter-Button
+{
+	border: 1px solid #666666;
+	background-color: #C0C0C0;
+	cursor: pointer;
+	color: #3366CC;
+}
+.Filter-Button:hover
+{
+	border: 1px solid #666666;	
+	background-color: #FFFFCC;
+}
+.Filter-Button-Selected
+{
+	border: 1px inset #FFFFFF;
+	background-color: #666666;
+	color: #FFFFFF;
+}
+
+
+
+
+/* 
+Secciones
+----------------------------------------------------------*/
+.Section
+{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #FFE6BF;
+    width: 800px;
+    text-align: left;
+}
+
+.Section-Head
+{
+    /*border-style: solid;
+    border-width: 1px 1px 0px 1px;
+    border-color: #FF9900;*/
+    background-color: #FAB170;
+    width: auto;
+    color: #FFFFFF;
+    font-style: italic;
+    font-weight: bold;
+    min-height: 20px;
+    vertical-align: middle;
+    font-size: 11px;
+}
+
+.Section-Head-Text
+{
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FFFFFF;
+    background-color: #FAB170;
+    color: #FFFFFF;
+    min-height: 20px;
+    font-size: 12px;
+    height: 20px;
+    font-weight: bold;
+}
+
+.Section-Content
+{
+    /*border-style: solid;
+    border-width: 0px 1px 1px 1px;
+    border-color: #FF9900;*/
+}
+
+.Section-CntLabel
+{
+    width: 150px;
+    color: #333333;
+    font-size: 9px;
+}
+
+.Section-CntControl
+{
+    min-width: 150px;
+}
+
+.Control-Focus
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000 #808080 #808080 #000000;
+    background-color: #FFEEAA;
+}
+
+.Control-Blur
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #808080 #CCCCCC #CCCCCC #808080;
+    background-color: #FFFCF0;
+}
+
+.Control-Codigo
+{
+    font-size: 8px;
+    width:600px;
+    height:35px;
+}
+
+.Campo-Edicion
+{
+    border: 1px solid #EFA32B;
+    position: absolute !important;
+    width: 660px;
+    height: 465px;
+    font-size: 10px;
+    line-height: 12px;
+    z-index: 15000;
+    overflow: hidden;
+    display: none;
+    font-weight: bold;
+    background-color: #FFFFE8;
+    padding-top :10;
+    margin-top :10;
+}
+
+.Flecha
+{
+    position: absolute !important;
+    background-image: url('images/yellow-arrow.png');
+    background-repeat: no-repeat;
+    z-index: 15000;
+    width: 10px;
+    height: 11px;
+}
+
+/* 
+Tabs
+----------------------------------------------------------*/
+.tab-panel
+{
+    width: auto;
+    /*height:auto;*/
+    text-align: left;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+.BotonCambiante
+{
+	border: 1px solid #FFFFFF;
+	vertical-align: middle;
+	text-align: center;
+}
+.BotonCambiante:hover
+{
+	border: 1px solid #666666;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/* 
+Configuracion
+----------------------------------------------------------*/
+.config-separator
+{
+    width: 10px;
+}
+
+.config-button
+{
+    width: 30px;
+}
+
+.config-buton-div, .config-buton-div-oculto
+{
+    width: 25px;
+}
+
+.config-buton-div-oculto
+{
+    display: none
+}
+
+/* main-content
+----------------------------------------------------------*/
+#main-content
+{
+    position: absolute;
+    left: 8px;
+    top: 5px;
+}
+
+.option-table
+{
+    margin: 5px;
+    width: 235px;
+    text-align: left;
+}
+
+.option-title
+{
+    background-color: #336699;
+    border: 1px solid #333333;
+    font-weight: bold;
+    font-size: x-small;
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+
+.option-separator1
+{
+    height:5px;
+}
+
+.option-separator2
+{
+    height:10px;
+}
+
+.option-separator3
+{
+    height:20px;
+}
+
+.option-image
+{
+    width: 30px;
+}
+
+.option-link a
+{
+    color: #3366CC;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.option-link a:hover
+{
+    color: #339933;
+    text-decoration: underline;
+}
+
+/* Formularios */
+.page-table
+{
+    width: 99%;
+    margin: 0px auto;
+}
+
+.t1
+{
+    font-size: large;
+    color: #003366;
+    border: 1px solid #333333;
+    background-color: #CCCCCC;
+    font-weight: bold;
+    width: auto;
+    margin: 0px auto;
+}
+
+.t1, .t2, .t3
+{
+    font-size: 1.5em;
+    color: #666666;    
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+
+.t1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    border: 1px solid #333333;
+    background-color: #CCCCCC;
+    text-align: center;
+}
+
+
+.t2
+{
+    font-size: 1.2em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    border: 1px solid #333333;
+    background-color: #336699;
+    color: #FFFFFF;
+    text-align:center;
+}
+
+.t3
+{
+    font-size: 1.0em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    border: 1px solid #333333;
+    background-color: #99CCFF;
+    text-align: left;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.rs5
+{
+    height:5px !important;
+}
+
+.rs10
+{
+    height:10px !important;
+}
+
+.rs15
+{
+    height:15px !important;
+}
+
+.rs20
+{
+    height:20px !important;
+}
+
+.rs23
+{
+    height:23px !important;
+}
+
+.rs30
+{
+    height:30px !important;
+}
+
+.rs50
+{
+    height:30px !important;
+}
+
+.cs5
+{
+    width: 5px !important;
+}
+
+.cs10
+{
+    width:10px !important;
+}
+
+.cs20
+{
+    width:20px !important;
+}
+
+.cs50
+{
+    width:50px !important;
+}
+
+.cs100
+{
+    width:100px !important;
+}
+
+.cs150
+{
+    width:150px !important;
+}
+
+.cs200
+{
+    width:200px !important;
+}
+
+.DetailPanel-table
+{
+    text-align: left;
+    width: auto;
+}
+
+.oculto
+{
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.label, .textbox, .textbox-readonly
+{    
+    font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif;
+}
+
+.textbox, .textbox-readonly
+{    
+    font-size: small;
+}
+
+.label
+{
+    font-size: x-small;
+    font-weight: bold;
+    color: #666666;
+    text-align: left;
+}
+
+.link
+{
+    text-decoration: underline;
+    color: #000000;
+    cursor: pointer;
+}
+
+.textbox
+{
+    border: 1px solid #808080;
+    text-align: left;
+}
+
+.textbox-readonly
+{
+    border: 1px solid #808080;
+    background-color: #CCCCCC;
+}
+
+.inline
+{
+    float: left;
+}
+
+.failure-notification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.changing-button
+{
+    border: 1px solid #FFFFFF !important;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+}
+.changing-button:hover
+{
+    border: 1px solid #666666 !important;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.button img
+{
+    border-style: none;
+}
+
+.button:link, .button:visited, .button:hover, .button:active
+{
+    color: white;
+}
+
+.error_label
+{
+    font-size: x-small;
+    color: #FF0000;
+}
+
+/*
+Autolist
+-------------------------------------------------------*/
+.blist
+{
+	width:17px !important;
+	height:18px !important;
+	background-image: url('images/btnList1.gif');
+}
+.blist:hover
+{
+    width: 17px !important;
+    height: 18px !important;
+    background-image: url('images/btnList2.gif');
+}
+
+.ui-autolist-content
+{
+    border: 1px solid #0033CC;
+    color: #666666;
+    font-size: 14px;
+}
+
+
+.ui-autocomplete
+{
+    height:150px;
+    overflow:auto;   
+    font-size:xx-small !important;
+}
+
+/*
+Consulta
+-------------------------------------------------------*/
+.formConsulta
+{
+    font-size:x-small! important; 
+    text-align:left
+}
+
+.formConsulta input
+{
+    font-size:x-small! important; 
+}

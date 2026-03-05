@@ -1,0 +1,98 @@
+﻿.DialogBox_Barra
+{
+	cursor: move;
+}
+.DialogBox_nw
+{
+	background: transparent url(DialogBox/left-top.gif) no-repeat 0 0;
+	width: 10px;
+	height: 25px;
+}
+
+.DialogBox_n
+{
+	background: transparent url(DialogBox/top-middle.gif) repeat-x 0 0;
+	height: 25px;
+	width: auto;
+}
+
+.DialogBox_ne
+{
+	background: transparent url(DialogBox/right-top.gif) no-repeat top right;
+	width: 10px;
+	height: 25px;
+}
+
+.DialogBox_w
+{
+	background: transparent url(DialogBox/frame-left.gif) repeat-y top left;
+	width: 10px;
+	background-color: #FFFFFF;
+}
+
+.DialogBox_e
+{
+	background: transparent url(DialogBox/frame-right.gif) repeat-y top right;
+	width: 10px;
+	background-color: #FFFFFF;
+}
+
+.DialogBox_sw
+{
+	background: transparent url(DialogBox/bottom-left-c.gif) no-repeat 0 0;
+	width: 10px;
+	height: 7px;
+}
+
+.DialogBox_s
+{
+	background: transparent url(DialogBox/bottom-middle.gif) repeat-x 0 0;
+	height: 7px;	
+	text-align: center;
+	vertical-align: top;
+}
+
+.DialogBox_se
+{
+	background: transparent url(DialogBox/bottom-right-c.gif) no-repeat 0 0;
+	width: 10px;
+	height: 7px;
+}
+
+.DialogBox_close
+{	
+	background: transparent url(DialogBox/button-close-cold.gif) no-repeat 0 0;
+	width: 23px;
+	cursor: pointer;
+	background-color: #FFFFFF;
+}
+.DialogBox_close:hover
+{
+	background: transparent url(DialogBox/button-close-focus.gif) no-repeat 0 0;
+	width: 23px;
+	cursor: pointer;
+	background-color: #FFFFFF;
+}
+.table_window
+{
+	border-style: none;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.Content
+{
+	background-color: #FFFFFF;
+}
+
+.title_window
+{
+	-moz-user-select: none;
+	text-align: center;
+	font-weight: bold;
+	color: #000080;
+	cursor: move;
+}  

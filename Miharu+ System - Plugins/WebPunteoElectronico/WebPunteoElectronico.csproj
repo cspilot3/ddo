@@ -1,0 +1,1253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95B28ED6-58E3-4EA3-BFA7-9337790E3BBD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebPunteoElectronico</RootNamespace>
+    <AssemblyName>WebPunteoElectronico</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\basic\WebPunteoElectronicoIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=4.1.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Slyg.Data">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\SLYG.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools, Version=2.0.4364.27629, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="Sms.Registro.Integration.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Sms.Registro.Integration.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\AutoListHelper.cs" />
+    <Compile Include="Clases\FormInitialBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clases\Log.cs" />
+    <Compile Include="Clases\WebGraph.cs" />
+    <Compile Include="Clases\WebReport.cs" />
+    <Compile Include="Clases\TransaccionDataCache.cs" />
+    <Compile Include="Clases\ConsultaCamposOcultos.cs" />
+    <Compile Include="Clases\NullableHelper.cs" />
+    <Compile Include="Clases\ParametrosConsulta.cs" />
+    <Compile Include="Clases\ParametrosReporteSMS.cs" />
+    <Content Include="Charts\FCF_Area2D.swf" />
+    <Content Include="Charts\FCF_Bar2D.swf" />
+    <Content Include="Charts\FCF_Column2D.swf" />
+    <Content Include="Charts\FCF_Column3D.swf" />
+    <Content Include="Charts\FCF_Doughnut2D.swf" />
+    <Content Include="Charts\FCF_Funnel.swf" />
+    <Content Include="Charts\FCF_Line.swf" />
+    <Content Include="Charts\FCF_Pie2D.swf" />
+    <Content Include="Charts\FCF_Pie3D.swf" />
+    <Content Include="Controls\DashBoardItem.ascx" />
+    <Content Include="Controls\DashBoardItemLocal.ascx" />
+    <Content Include="Controls\FilterWebUserControl.ascx" />
+    <Content Include="Controls\GraphManager.ascx" />
+    <Content Include="Controls\LoginWebUserControl.ascx" />
+    <Content Include="Controls\ProxyData.aspx" />
+    <Content Include="Controls\StatusBarWebUserControl.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Images\basic\add.png" />
+    <Content Include="Images\basic\adjuntar.png" />
+    <Content Include="Images\basic\ajax-loader - copia.gif" />
+    <Content Include="Images\basic\ajax-loader.gif" />
+    <Content Include="Images\basic\Ajustar.png" />
+    <Content Include="Images\basic\Aprobar.png" />
+    <Content Include="Images\basic\arrow_down.png" />
+    <Content Include="Images\basic\arrow_up.png" />
+    <Content Include="Images\basic\bg_btn.gif" />
+    <Content Include="Images\basic\bg_btnOver.gif" />
+    <Content Include="Images\basic\cog_edit.png" />
+    <Content Include="Images\basic\cross.png" />
+    <Content Include="Images\basic\Excel-32.gif" />
+    <Content Include="Images\basic\find.png" />
+    <Content Include="Images\basic\LogoPyC.png" />
+    <Content Include="Images\basic\Rechazar.png" />
+    <Content Include="Images\basic\Save.png" />
+    <Content Include="Images\basic\WebPunteoElectronicoImage.png" />
+    <Content Include="Images\basic\construccion.png" />
+    <Content Include="Images\basic\delete.png" />
+    <Content Include="Images\basic\download.png" />
+    <Content Include="Images\basic\edit.png" />
+    <Content Include="Images\basic\error.png" />
+    <Content Include="Images\basic\festivos.png" />
+    <Content Include="Images\basic\folder.png" />
+    <Content Include="Images\basic\Instalador.jpg" />
+    <Content Include="Images\basic\jefe.png" />
+    <Content Include="Images\basic\key-icon.png" />
+    <Content Include="Images\basic\keys-icon.png" />
+    <Content Include="Images\basic\lock.png" />
+    <Content Include="Images\basic\logoSLYG.png" />
+    <Content Include="Images\basic\mas.gif" />
+    <Content Include="Images\basic\menos.gif" />
+    <Content Include="Images\basic\WebPunteoElectronicoIcon.ico" />
+    <Content Include="Images\basic\page.png" />
+    <Content Include="Images\basic\upload.png" />
+    <Content Include="Images\basic\visualizar.png" />
+    <Content Include="Images\basic\Word-32.gif" />
+    <Content Include="Images\basic\zoom.png" />
+    <Content Include="Images\dashboard\ajustes.png" />
+    <Content Include="Images\dashboard\ajuste_soportes_sobrantes.png" />
+    <Content Include="Images\dashboard\ajuste_soporte_sobrante.png" />
+    <Content Include="Images\dashboard\back.png" />
+    <Content Include="Images\dashboard\Consolidado_Total.png" />
+    <Content Include="Images\dashboard\consultas.png" />
+    <Content Include="Images\dashboard\consultas_firmas.png" />
+    <Content Include="Images\dashboard\Devolucion_Recibido.png" />
+    <Content Include="Images\dashboard\diferencia_datos.png" />
+    <Content Include="Images\dashboard\dif_medio_pago.png" />
+    <Content Include="Images\dashboard\dif_producto.png" />
+    <Content Include="Images\dashboard\dif_valor.png" />
+    <Content Include="Images\dashboard\estadisticos.png" />
+    <Content Include="Images\dashboard\consolid_valid_forma.png" />
+    <Content Include="Images\dashboard\contenedor_ofic.png" />
+    <Content Include="Images\dashboard\consolid_medio_pago.png" />
+    <Content Include="Images\dashboard\cruce.png" />
+    <Content Include="Images\dashboard\consolidadocruceautom.png" />
+    <Content Include="Images\dashboard\docnoidentifi.png" />
+    <Content Include="Images\dashboard\anexos_faltantes.png" />
+    <Content Include="Images\dashboard\estad_contenedor_ofic.png" />
+    <Content Include="Images\dashboard\estad_oficina_pendiente_cierre.png" />
+    <Content Include="Images\dashboard\firmas.png" />
+    <Content Include="Images\dashboard\oficinastipob.png" />
+    <Content Include="Images\dashboard\oficina_pend_cierre.png" />
+    <Content Include="Images\dashboard\ofic_pend_proceso.png" />
+    <Content Include="Images\dashboard\tx_desmat_con_soporte_físico.png" />
+    <Content Include="Images\dashboard\resultado_cierre.png" />
+    <Content Include="Images\dashboard\resul_cruce_autom.png" />
+    <Content Include="Images\dashboard\txcruceexitoso.png" />
+    <Content Include="Images\dashboard\txnoidentifi.png" />
+    <Content Include="Images\dashboard\txprocesmensual.png" />
+    <Content Include="Images\dashboard\txreversadas.png" />
+    <Content Include="Images\dashboard\dif_fisicos_contenedor.png" />
+    <Content Include="Images\dashboard\digitalizacion.png" />
+    <Content Include="Images\dashboard\docsinorden.png" />
+    <Content Include="Images\dashboard\dig_inconsis_anxs_falt.png" />
+    <Content Include="Images\dashboard\pendiente_envio_mov.png" />
+    <Content Include="Images\dashboard\validaciones_forma.png" />
+    <Content Include="Images\dashboard\parametrizacion.png" />
+    <Content Include="Images\dashboard\registros_sobrantes.png" />
+    <Content Include="Images\dashboard\reportes.png" />
+    <Content Include="Images\dashboard\reporte_gerencial.png" />
+    <Content Include="Images\dashboard\servicio_cliente.png" />
+    <Content Include="Images\dashboard\soportes_sobrantes.png" />
+    <Content Include="Images\dashboard\tx_357.png" />
+    <Content Include="Images\dashboard\tx_excluidas.png" />
+    <Content Include="Images\estadisticos\Area2D_32.png" />
+    <Content Include="Images\estadisticos\Bar2D_32.png" />
+    <Content Include="Images\estadisticos\Column2D_32.png" />
+    <Content Include="Images\estadisticos\Column3D_32.png" />
+    <Content Include="Images\estadisticos\Doughnut2D.png" />
+    <Content Include="Images\estadisticos\Doughnut2D_32.png" />
+    <Content Include="Images\estadisticos\DownloadZip.png" />
+    <Content Include="Images\estadisticos\DownloadZip_32.png" />
+    <Content Include="Images\estadisticos\Error_128.png" />
+    <Content Include="Images\estadisticos\Estadisticos_128.png" />
+    <Content Include="Images\estadisticos\Funnel_32.png" />
+    <Content Include="Images\estadisticos\Line_32.png" />
+    <Content Include="Images\estadisticos\NoData.png" />
+    <Content Include="Images\estadisticos\Estadisticos.png" />
+    <Content Include="Images\estadisticos\Bar2D.png" />
+    <Content Include="Images\estadisticos\Area2D.png" />
+    <Content Include="Images\estadisticos\Column2D.png" />
+    <Content Include="Images\estadisticos\Column3D.png" />
+    <Content Include="Images\estadisticos\Funnel.png" />
+    <Content Include="Images\estadisticos\Line.png" />
+    <Content Include="Images\estadisticos\NoData_128.png" />
+    <Content Include="Images\estadisticos\NoDisponible_128.png" />
+    <Content Include="Images\estadisticos\Pie2D.png" />
+    <Content Include="Images\estadisticos\Pie2D_32.png" />
+    <Content Include="Images\estadisticos\Pie3D.png" />
+    <Content Include="Images\estadisticos\Pie3D_32.png" />
+    <Content Include="Images\menu\Accept.png" />
+    <Content Include="Images\menu\Add_Money.png" />
+    <Content Include="Images\menu\Agency.png" />
+    <Content Include="Images\menu\bank-1.png" />
+    <Content Include="Images\menu\Bank.png" />
+    <Content Include="Images\menu\Bases.png" />
+    <Content Include="Images\menu\Briefcase.png" />
+    <Content Include="Images\menu\Casher.png" />
+    <Content Include="Images\menu\Companies.png" />
+    <Content Include="Images\menu\Company.png" />
+    <Content Include="Images\menu\Consulta.png" />
+    <Content Include="Images\menu\FondoxOficina.png" />
+    <Content Include="Images\menu\Hang_up.png" />
+    <Content Include="Images\opciones\Iconos.png" />
+    <Content Include="Images\menu\Money Containment.png" />
+    <Content Include="Images\menu\Money_Bag.png" />
+    <Content Include="Images\menu\PaperMoney.png" />
+    <Content Include="Images\menu\Pick_Up.png" />
+    <Content Include="Images\menu\piggy_bank.png" />
+    <Content Include="Images\menu\Programing16.png" />
+    <Content Include="Images\menu\Roles.png" />
+    <Content Include="Images\menu\security blue.png" />
+    <Content Include="Images\menu\Stock-1.png" />
+    <Content Include="Images\menu\switch.png" />
+    <Content Include="Images\menu\transfer1.png" />
+    <Content Include="Images\dashboard\acercade.png" />
+    <Content Include="Images\logo\brinks.gif" />
+    <Content Include="Images\logo\brinks.png" />
+    <Content Include="Images\logo\logo.png" />
+    <Content Include="Images\menu\cog_add.png" />
+    <Content Include="Images\menu\cog_delete.png" />
+    <Content Include="Images\menu\cog_go.png" />
+    <Content Include="Images\menu\Intercamb.png" />
+    <Content Include="Images\menu\Compra.png" />
+    <Content Include="Images\menu\Aprovsion.png" />
+    <Content Include="Images\menu\page_error.png" />
+    <Content Include="Images\menu\page_green.png" />
+    <Content Include="Images\menu\page_refresh.png" />
+    <Content Include="Images\menu\Recoleccion.png" />
+    <Content Include="Images\menu\money.png" />
+    <Content Include="Images\menu\money_add.png" />
+    <Content Include="Images\menu\money_delete.png" />
+    <Content Include="Images\menu\Tripulante.png" />
+    <Content Include="Images\menu\truck_icon.png" />
+    <Content Include="Images\menu\User.png" />
+    <Content Include="Images\menu\Venta.png" />
+    <Content Include="Images\menu\log.png" />
+    <Content Include="Images\opciones\password.png" />
+    <Content Include="Images\opciones\Print-Preview.png" />
+    <Content Include="Images\opciones\Tick.png" />
+    <Content Include="Images\opciones\Canceled.png" />
+    <Content Include="Images\opciones\edit.png" />
+    <Content Include="Images\opciones\Print.png" />
+    <Content Include="Images\opciones\process.png" />
+    <Content Include="Images\opciones\save.png" />
+    <Content Include="Images\opciones\cancel.png" />
+    <Content Include="Images\opciones\delete.png" />
+    <Content Include="Images\opciones\new.png" />
+    <Content Include="Images\opciones\refresh.png" />
+    <Content Include="Images\opciones\search.png" />
+    <Content Include="Images\opciones\Shopcartadd.png" />
+    <Content Include="Images\opciones\Shopcartapply.png" />
+    <Content Include="Images\opciones\upload.png" />
+    <Content Include="Scripts\Jquery\flexigrid.custom.js" />
+    <Content Include="Scripts\Jquery\jquery-1.8.0.min.js" />
+    <Content Include="Scripts\Jquery\jquery-ui-1.8.23.custom.min.js" />
+    <Content Include="Scripts\Jquery\jquery.corner.js" />
+    <Content Include="Scripts\MarterFormScript.js" />
+    <Content Include="Site\Adjuntos\show_adjunto.aspx" />
+    <Content Include="Site\Adjuntos\show_adjunto_flujo.aspx" />
+    <Content Include="Site\Ajustes\AjusteDiferenciaMedioPago.aspx" />
+    <Content Include="Site\Ajustes\AjustesAjaxController.aspx" />
+    <Content Include="Scripts\CmiGridView.js" />
+    <Content Include="Scripts\codemirror\css\baboon.png" />
+    <Content Include="Scripts\codemirror\css\baboon_vector.svg" />
+    <Content Include="Scripts\codemirror\css\docs.css" />
+    <Content Include="Scripts\codemirror\lib\codemirror.css" />
+    <Content Include="Scripts\codemirror\lib\codemirror.js" />
+    <Content Include="Scripts\codemirror\lib\overlay.js" />
+    <Content Include="Scripts\codemirror\lib\runmode.js" />
+    <Content Include="Scripts\codemirror\mode\clike\clike.js" />
+    <Content Include="Scripts\codemirror\mode\clike\index.html" />
+    <Content Include="Scripts\codemirror\mode\coffeescript\coffeescript.js" />
+    <Content Include="Scripts\codemirror\mode\coffeescript\index.html" />
+    <Content Include="Scripts\codemirror\mode\css\css.js" />
+    <Content Include="Scripts\codemirror\mode\css\index.html" />
+    <Content Include="Scripts\codemirror\mode\diff\diff.css" />
+    <Content Include="Scripts\codemirror\mode\diff\diff.js" />
+    <Content Include="Scripts\codemirror\mode\diff\index.html" />
+    <Content Include="Scripts\codemirror\mode\haskell\haskell.js" />
+    <Content Include="Scripts\codemirror\mode\haskell\index.html" />
+    <Content Include="Scripts\codemirror\mode\htmlmixed\htmlmixed.js" />
+    <Content Include="Scripts\codemirror\mode\htmlmixed\index.html" />
+    <Content Include="Scripts\codemirror\mode\javascript\index.html" />
+    <Content Include="Scripts\codemirror\mode\javascript\javascript.js" />
+    <Content Include="Scripts\codemirror\mode\lua\index.html" />
+    <Content Include="Scripts\codemirror\mode\lua\lua.js" />
+    <Content Include="Scripts\codemirror\mode\php\index.html" />
+    <Content Include="Scripts\codemirror\mode\php\php.js" />
+    <Content Include="Scripts\codemirror\mode\plsql\index.html" />
+    <Content Include="Scripts\codemirror\mode\plsql\plsql.js" />
+    <Content Include="Scripts\codemirror\mode\python\index.html" />
+    <Content Include="Scripts\codemirror\mode\python\LICENSE.txt" />
+    <Content Include="Scripts\codemirror\mode\python\python.js" />
+    <Content Include="Scripts\codemirror\mode\rst\index.html" />
+    <Content Include="Scripts\codemirror\mode\rst\rst.css" />
+    <Content Include="Scripts\codemirror\mode\rst\rst.js" />
+    <Content Include="Scripts\codemirror\mode\ruby\index.html" />
+    <Content Include="Scripts\codemirror\mode\ruby\ruby.js" />
+    <Content Include="Scripts\codemirror\mode\r\index.html" />
+    <Content Include="Scripts\codemirror\mode\r\r.js" />
+    <Content Include="Scripts\codemirror\mode\scheme\index.html" />
+    <Content Include="Scripts\codemirror\mode\scheme\scheme.js" />
+    <Content Include="Scripts\codemirror\mode\smalltalk\index.html" />
+    <Content Include="Scripts\codemirror\mode\smalltalk\smalltalk.js" />
+    <Content Include="Scripts\codemirror\mode\sparql\index.html" />
+    <Content Include="Scripts\codemirror\mode\sparql\sparql.js" />
+    <Content Include="Scripts\codemirror\mode\stex\index.html" />
+    <Content Include="Scripts\codemirror\mode\stex\stex.js" />
+    <Content Include="Scripts\codemirror\mode\velocity\index.html" />
+    <Content Include="Scripts\codemirror\mode\velocity\velocity.js" />
+    <Content Include="Scripts\codemirror\mode\xmlpure\index.html" />
+    <Content Include="Scripts\codemirror\mode\xmlpure\xmlpure.js" />
+    <Content Include="Scripts\codemirror\mode\xml\index.html" />
+    <Content Include="Scripts\codemirror\mode\xml\xml.js" />
+    <Content Include="Scripts\codemirror\mode\yaml\index.html" />
+    <Content Include="Scripts\codemirror\mode\yaml\yaml.js" />
+    <Content Include="Scripts\codemirror\theme\default.css" />
+    <Content Include="Scripts\codemirror\theme\elegant.css" />
+    <Content Include="Scripts\codemirror\theme\neat.css" />
+    <Content Include="Scripts\codemirror\theme\night.css" />
+    <Content Include="Scripts\FornatoNumeros.js" />
+    <Content Include="Scripts\imgRotateCanvas.js" />
+    <Content Include="Scripts\Jquery\flexigrid.js" />
+    <Content Include="Scripts\Jquery\flexigrid.pack.js" />
+    <Content Include="Scripts\Jquery\jquery-1.6.2.min.js" />
+    <Content Include="Scripts\Jquery\jquery-es.js" />
+    <Content Include="Scripts\Jquery\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="Scripts\Jquery\jquery.ctNotify.js" />
+    <Content Include="Scripts\Jquery\jquery.floatnumber.js" />
+    <Content Include="Scripts\Jquery\jquery.gritter.min.js" />
+    <Content Include="Scripts\Jquery\jquery.maskedinput-1.3.min.js" />
+    <Content Include="Scripts\Jquery\jquery.numeric.pack.js" />
+    <Content Include="Scripts\Jquery\jquery.qtip-1.0.0-rc3.min.js" />
+    <Content Include="Scripts\Jquery\jquery.ui.autocomplete.custom.js" />
+    <Content Include="Scripts\Jquery\jquery.ui.autocomplete.js" />
+    <Content Include="Scripts\Jquery\jquery.ui.core.js" />
+    <Content Include="Scripts\Jquery\jquery.ui.datepicker.js" />
+    <Content Include="Scripts\Jquery\jquery.ui.dialog.js" />
+    <Content Include="Scripts\Jquery\jquery.ui.position.js" />
+    <Content Include="Scripts\Jquery\jquery.ui.widget.js" />
+    <Content Include="Scripts\Jquery\jquery.windows-engine.js" />
+    <Content Include="Scripts\Jquery\OtrosNoUsados\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\Jquery\OtrosNoUsados\jquery-1.4.1.js" />
+    <Content Include="Scripts\Jquery\OtrosNoUsados\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\Jquery\OtrosNoUsados\jquery-1.6.1-vsdoc.js" />
+    <Content Include="Scripts\Jquery\OtrosNoUsados\jquery-1.6.2.js" />
+    <Content Include="Scripts\Jquery\OtrosNoUsados\jquery.ctNotify.js" />
+    <Content Include="Scripts\Jquery\OtrosNoUsados\jquery.decimalMask.1.1.1.min.js" />
+    <Content Include="Scripts\Jquery\OtrosNoUsados\jquery.gritter.js" />
+    <Content Include="Scripts\Jquery\OtrosNoUsados\jquery.qtip-1.0.0-rc3.min.js" />
+    <Content Include="Scripts\Jquery\OtrosNoUsados\jquery.qtip.min.js" />
+    <Content Include="Scripts\Jquery\OtrosNoUsados\jquery.ui.core.js" />
+    <Content Include="Scripts\Jquery\OtrosNoUsados\jquery.ui.datepicker.js" />
+    <Content Include="Scripts\Jquery\OtrosNoUsados\jquery.ui.position.js" />
+    <Content Include="Scripts\Jquery\OtrosNoUsados\jquery.ui.widget.js" />
+    <Content Include="Scripts\Jquery\OtrosNoUsados\tooltip.js" />
+    <Content Include="Scripts\Jquery\slyg-tooltip.js" />
+    <Content Include="Scripts\Jquery\tooltip.js" />
+    <Content Include="Scripts\Jquery\ui.dialogr.custom.js" />
+    <Content Include="Master\MasterForm.js" />
+    <Content Include="Master\MasterPage.js" />
+    <Content Include="Master\MasterPopUp.js" />
+    <Content Include="Scripts\Slyg.Web.Controls.Dynamic.js" />
+    <Content Include="Scripts\SlygToolTip.js" />
+    <Content Include="Scripts\Utils.js" />
+    <Content Include="Scripts\Silverlight.js" />
+    <Content Include="Site\About.aspx" />
+    <Content Include="Site\Account\ChangePassword.aspx" />
+    <Content Include="Site\Account\Login.aspx" />
+    <Content Include="Site\Ajustes\AjusteDiferenciaProducto.aspx" />
+    <Content Include="Site\Ajustes\AjusteDiferenciaValor.aspx" />
+    <Content Include="Site\Ajustes\AjusteRegistroSobrante.aspx" />
+    <Content Include="Site\Ajustes\AjustesFirmasAjaxController.aspx" />
+    <Content Include="Site\Ajustes\AjustesFirmasScript.js" />
+    <Content Include="Site\Ajustes\AjusteSoportesSobrantes.aspx" />
+    <Content Include="Site\Ajustes\AjustesScript.js" />
+    <Content Include="Site\Ajustes\AjusteTarjetaFaltante.aspx" />
+    <Content Include="Site\Ajustes\CambioTipologia.aspx" />
+    <Content Include="Site\Ajustes\p_adjuntar.aspx" />
+    <Content Include="Site\Blankform.aspx" />
+    <Content Include="Site\ConsultaFirmas\Consulta_Firmas_Data.aspx" />
+    <Content Include="Site\ConsultaFirmas\Firmas_Data.aspx" />
+    <Content Include="Site\ConsultaFirmas\Consulta_Firmas.aspx" />
+    <Content Include="Site\ConsultaFirmas\Consulta_Firmas.js" />
+    <Content Include="Site\ConsultaFirmas\ReporteConsultas.aspx" />
+    <Content Include="Site\ConsultaFirmas\VerTxLog.aspx" />
+    <Content Include="Site\Consulta\Consultas.js" />
+    <Content Include="Site\Consulta\Consultas.aspx" />
+    <Content Include="Site\Consulta\Consulta_Data.aspx" />
+    <Content Include="Site\Consulta\ReporteConsulta.aspx" />
+    <Content Include="Site\Consulta\VerDetalleData.aspx" />
+    <Content Include="Site\Consulta\VerTxDetalleLog.aspx" />
+    <Content Include="Site\DashBoard.aspx" />
+    <Content Include="Site\Download.aspx" />
+    <Content Include="Site\Estadisticos\WebGraphManagerViewer.aspx" />
+    <Content Include="Site\Estadisticos\WebGraphManagerViewer.js" />
+    <Content Include="Site\Estadisticos\WebGraphViewerB.aspx" />
+    <Content Include="Site\Estadisticos\WebGraphViewerA.aspx" />
+    <Content Include="Site\OficinasB\OficinaB.aspx" />
+    <Content Include="Site\Reportes\R011_Soporte_Sobrante_Multiple\R011_Soportes_Sobrante_Multiple.aspx" />
+    <Content Include="Site\Reportes\R011_Soporte_Sobrante_Multiple\R011_Soportes_Sobrante_Multiple.js" />
+    <Content Include="Site\Reportes\R026_Tx_sin_Identificar_Medio_de_Pago\R026_Txs_sin_Identificar_Medio_de_Pago.rdlc" />
+    <Content Include="Site\Reportes\R028_Transacciones_357\R028_Transaccion_357.rdlc">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Site\Reportes\WebReportViewerA.aspx" />
+    <Content Include="Site\Reportes\WebReportViewerB.aspx" />
+    <Content Include="Site\Reportes\WebReportViewerC.aspx" />
+    <Content Include="Site\Reportes\WebReportViewerD.aspx" />
+    <Content Include="Site\Reportes\WebReportViewerE.aspx" />
+    <Content Include="Site\Reportes\WebReportViewerF.aspx" />
+    <Content Include="Site\Reportes\WebReportViewerG.aspx" />
+    <Content Include="Site\Reportes\WebReportViewerH.aspx" />
+    <Content Include="Site\Reportes\WebReportViewerI.aspx" />
+    <Content Include="Site\Reportes\WebReportViewerJ.aspx" />
+    <Content Include="Site\VisorImagenes\VerImagen.aspx" />
+    <Content Include="Styles\dialog\icon-error.png" />
+    <Content Include="Styles\dialog\icon-information.png" />
+    <Content Include="Styles\dialog\icon-warning.png" />
+    <Content Include="Styles\flexigrid-1_1\flexigrid.css" />
+    <Content Include="Styles\flexigrid-1_1\flexigrid.pack.css" />
+    <Content Include="Styles\flexigrid-1_1\images\bg.gif" />
+    <Content Include="Styles\flexigrid-1_1\images\btn-sprite.gif" />
+    <Content Include="Styles\flexigrid-1_1\images\ddn.png" />
+    <Content Include="Styles\flexigrid-1_1\images\dn.png" />
+    <Content Include="Styles\flexigrid-1_1\images\fhbg.gif" />
+    <Content Include="Styles\flexigrid-1_1\images\first.gif" />
+    <Content Include="Styles\flexigrid-1_1\images\hl.png" />
+    <Content Include="Styles\flexigrid-1_1\images\last.gif" />
+    <Content Include="Styles\flexigrid-1_1\images\line.gif" />
+    <Content Include="Styles\flexigrid-1_1\images\load.gif" />
+    <Content Include="Styles\flexigrid-1_1\images\load.png" />
+    <Content Include="Styles\flexigrid-1_1\images\magnifier.png" />
+    <Content Include="Styles\flexigrid-1_1\images\next.gif" />
+    <Content Include="Styles\flexigrid-1_1\images\prev.gif" />
+    <Content Include="Styles\flexigrid-1_1\images\selectAll.png" />
+    <Content Include="Styles\flexigrid-1_1\images\selectNone.png" />
+    <Content Include="Styles\flexigrid-1_1\images\up.png" />
+    <Content Include="Styles\flexigrid-1_1\images\uup.png" />
+    <Content Include="Styles\flexigrid-1_1\images\wbg.gif" />
+    <Content Include="Styles\green-theme\images\ui-bg_glass_55_fcf0ba_1x400.png" />
+    <Content Include="Styles\green-theme\images\ui-bg_gloss-wave_100_ece8da_500x100.png" />
+    <Content Include="Styles\green-theme\images\ui-bg_highlight-hard_100_f5f3e5_1x100.png" />
+    <Content Include="Styles\green-theme\images\ui-bg_highlight-hard_100_fafaf4_1x100.png" />
+    <Content Include="Styles\green-theme\images\ui-bg_highlight-hard_15_459e00_1x100.png" />
+    <Content Include="Styles\green-theme\images\ui-bg_highlight-hard_95_cccccc_1x100.png" />
+    <Content Include="Styles\green-theme\images\ui-bg_highlight-soft_25_67b021_1x100.png" />
+    <Content Include="Styles\green-theme\images\ui-bg_highlight-soft_95_ffedad_1x100.png" />
+    <Content Include="Styles\green-theme\images\ui-bg_inset-soft_15_2b2922_1x100.png" />
+    <Content Include="Styles\green-theme\images\ui-icons_808080_256x240.png" />
+    <Content Include="Styles\green-theme\images\ui-icons_847e71_256x240.png" />
+    <Content Include="Styles\green-theme\images\ui-icons_8dc262_256x240.png" />
+    <Content Include="Styles\green-theme\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Styles\green-theme\images\ui-icons_eeeeee_256x240.png" />
+    <Content Include="Styles\green-theme\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Styles\green-theme\jquery-ui-1.8.23.custom.css" />
+    <Content Include="Styles\green-theme\jquery.ctNotify.css" />
+    <Content Include="Styles\green-theme\jquery.dialogr.css" />
+    <Content Include="Styles\green-theme\jquery.gritter.css" />
+    <Content Include="Styles\green-theme\jquery.windows-engine.css" />
+    <Content Include="Styles\green-theme\slyg-tooltip.css" />
+    <Content Include="Styles\green-theme\tooltip.css" />
+    <Content Include="Styles\gridview\extjs\header-hover.gif" />
+    <Content Include="Styles\gridview\extjs\header.gif" />
+    <Content Include="Styles\gridview\GridviewStyles.css" />
+    <Content Include="Styles\gridview\sharepoint\calnumBttnover.gif" />
+    <Content Include="Styles\gridview\sharepoint\calnumBttntodayHot_obsidian.GIF" />
+    <Content Include="Styles\gridview\sharepoint\calnumBttntoday_obsidian.gif" />
+    <Content Include="Styles\gridview\sharepoint\calnumBttn_obsidian.gif" />
+    <Content Include="Styles\gridview\tablecloth\tr_back.gif" />
+    <Content Include="Styles\gridview\WhiteChromeGridView\Images\FireworksNative\HeaderChrome.png" />
+    <Content Include="Styles\gridview\WhiteChromeGridView\Images\FireworksNative\HeaderChromeBlack.png" />
+    <Content Include="Styles\gridview\WhiteChromeGridView\Images\FireworksNative\HeaderGamer.png" />
+    <Content Include="Styles\gridview\WhiteChromeGridView\Images\FireworksNative\HeaderGlassBlack.png" />
+    <Content Include="Styles\gridview\WhiteChromeGridView\Images\FireworksNative\HeaderSoftGrey.png" />
+    <Content Include="Styles\gridview\WhiteChromeGridView\Images\FireworksNative\HeaderWhiteChrome.png" />
+    <Content Include="Styles\gridview\WhiteChromeGridView\Images\FireworksNative\PagerGamer.png" />
+    <Content Include="Styles\gridview\WhiteChromeGridView\Images\HeaderChrome.jpg" />
+    <Content Include="Styles\gridview\WhiteChromeGridView\Images\HeaderChromeBlack.jpg" />
+    <Content Include="Styles\gridview\WhiteChromeGridView\Images\HeaderGamer.jpg" />
+    <Content Include="Styles\gridview\WhiteChromeGridView\Images\HeaderGamer_Hover.jpg" />
+    <Content Include="Styles\gridview\WhiteChromeGridView\Images\HeaderGamer_left.jpg" />
+    <Content Include="Styles\gridview\WhiteChromeGridView\Images\HeaderGlassBlack.jpg" />
+    <Content Include="Styles\gridview\WhiteChromeGridView\Images\HeaderSoftGrey.jpg" />
+    <Content Include="Styles\gridview\WhiteChromeGridView\Images\HeaderWhiteChrome.jpg" />
+    <Content Include="Styles\gridview\WhiteChromeGridView\Images\PagerGamer.jpg" />
+    <Content Include="Styles\gridview\WhiteChromeGridView\WhiteChromeGridView.css" />
+    <Content Include="Styles\gridview\yui-datatable\sprite.png" />
+    <Content Include="Styles\images\btnList1.gif" />
+    <Content Include="Styles\images\btnList2.gif" />
+    <Content Include="Styles\images\gritter-long.png" />
+    <Content Include="Styles\images\gritter.png" />
+    <Content Include="Styles\images\ie-spacer.gif" />
+    <Content Include="Styles\images\yellow-arrow.png" />
+    <Content Include="Styles\Marco.css" />
+    <Content Include="Styles\marco\left.png" />
+    <Content Include="Styles\marco\middle_lightgray.png" />
+    <Content Include="Styles\marco\panel_header_left.png" />
+    <Content Include="Styles\marco\panel_header_center.png" />
+    <Content Include="Styles\marco\panel_header_right.png" />
+    <Content Include="Styles\marco\Path.png" />
+    <Content Include="Styles\marco\right.png" />
+    <Content Include="Styles\marco\topleft_corner.png" />
+    <Content Include="Styles\marco\topright_corner.png" />
+    <Content Include="Styles\marco\top_intermediate.png" />
+    <Content Include="Main.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\Slyg.Web.Controls.Dynamic.css" />
+    <Content Include="Styles\SlygToolTip.css" />
+    <Content Include="Styles\StyleSheet_Menu.css" />
+    <Content Include="Styles\StyleSheet_Miharu.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Wellcome.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\FormBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clases\GenericBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clases\JSonGridData.cs" />
+    <Compile Include="Clases\MasterBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clases\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clases\PopUpBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clases\Program.cs" />
+    <Compile Include="Clases\ScriptBuilder.cs" />
+    <Compile Include="Clases\SessionData.cs" />
+    <Compile Include="Clases\Slyg\JSonGridData.cs" />
+    <Compile Include="Clases\Slyg\SlygFlexigrid.cs" />
+    <Compile Include="Clases\UserWebControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CoreControls.cs" />
+    <Compile Include="Controls\CoreDateBox.cs" />
+    <Compile Include="Controls\CoreGridView.cs" />
+    <Compile Include="Controls\DashBoardItem.ascx.cs">
+      <DependentUpon>DashBoardItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DashBoardItem.ascx.designer.cs">
+      <DependentUpon>DashBoardItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DashBoardItemLocal.ascx.cs">
+      <DependentUpon>DashBoardItemLocal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DashBoardItemLocal.ascx.designer.cs">
+      <DependentUpon>DashBoardItemLocal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FilterWebUserControl.ascx.cs">
+      <DependentUpon>FilterWebUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FilterWebUserControl.ascx.designer.cs">
+      <DependentUpon>FilterWebUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GraphManager.ascx.cs">
+      <DependentUpon>GraphManager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\GraphManager.ascx.designer.cs">
+      <DependentUpon>GraphManager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LoginWebUserControl.ascx.cs">
+      <DependentUpon>LoginWebUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\LoginWebUserControl.ascx.designer.cs">
+      <DependentUpon>LoginWebUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProxyData.aspx.cs">
+      <DependentUpon>ProxyData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ProxyData.aspx.designer.cs">
+      <DependentUpon>ProxyData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StatusBarWebUserControl.ascx.cs">
+      <DependentUpon>StatusBarWebUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\StatusBarWebUserControl.ascx.designer.cs">
+      <DependentUpon>StatusBarWebUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Enumeraciones.cs" />
+    <Compile Include="Master\MasterConfig.Master.cs">
+      <DependentUpon>MasterConfig.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterConfig.Master.designer.cs">
+      <DependentUpon>MasterConfig.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <DependentUpon>Reports.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterForm.Master.cs">
+      <DependentUpon>MasterForm.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterForm.Master.designer.cs">
+      <DependentUpon>MasterForm.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterPopUp.Master.cs">
+      <DependentUpon>MasterPopUp.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterPopUp.Master.designer.cs">
+      <DependentUpon>MasterPopUp.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Navigation.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Adjuntos\show_adjunto.aspx.cs">
+      <DependentUpon>show_adjunto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Adjuntos\show_adjunto.aspx.designer.cs">
+      <DependentUpon>show_adjunto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Adjuntos\show_adjunto_flujo.aspx.cs">
+      <DependentUpon>show_adjunto_flujo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Adjuntos\show_adjunto_flujo.aspx.designer.cs">
+      <DependentUpon>show_adjunto_flujo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Ajustes\AjusteDiferenciaMedioPago.aspx.cs">
+      <DependentUpon>AjusteDiferenciaMedioPago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Ajustes\AjusteDiferenciaMedioPago.aspx.designer.cs">
+      <DependentUpon>AjusteDiferenciaMedioPago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Ajustes\AjusteDiferenciaProducto.aspx.cs">
+      <DependentUpon>AjusteDiferenciaProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Ajustes\AjusteDiferenciaProducto.aspx.designer.cs">
+      <DependentUpon>AjusteDiferenciaProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Ajustes\AjusteDiferenciaValor.aspx.cs">
+      <DependentUpon>AjusteDiferenciaValor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Ajustes\AjusteDiferenciaValor.aspx.designer.cs">
+      <DependentUpon>AjusteDiferenciaValor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Ajustes\AjusteRegistroSobrante.aspx.cs">
+      <DependentUpon>AjusteRegistroSobrante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Ajustes\AjusteRegistroSobrante.aspx.designer.cs">
+      <DependentUpon>AjusteRegistroSobrante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Ajustes\AjustesAjaxController.aspx.cs">
+      <DependentUpon>AjustesAjaxController.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Ajustes\AjustesAjaxController.aspx.designer.cs">
+      <DependentUpon>AjustesAjaxController.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Ajustes\AjustesFirmasAjaxController.aspx.cs">
+      <DependentUpon>AjustesFirmasAjaxController.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Ajustes\AjustesFirmasAjaxController.aspx.designer.cs">
+      <DependentUpon>AjustesFirmasAjaxController.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Ajustes\AjusteSoportesSobrantes.aspx.cs">
+      <DependentUpon>AjusteSoportesSobrantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Ajustes\AjusteSoportesSobrantes.aspx.designer.cs">
+      <DependentUpon>AjusteSoportesSobrantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Ajustes\AjusteTarjetaFaltante.aspx.cs">
+      <DependentUpon>AjusteTarjetaFaltante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Ajustes\AjusteTarjetaFaltante.aspx.designer.cs">
+      <DependentUpon>AjusteTarjetaFaltante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Ajustes\CambioTipologia.aspx.cs">
+      <DependentUpon>CambioTipologia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Ajustes\CambioTipologia.aspx.designer.cs">
+      <DependentUpon>CambioTipologia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Ajustes\p_adjuntar.aspx.cs">
+      <DependentUpon>p_adjuntar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Ajustes\p_adjuntar.aspx.designer.cs">
+      <DependentUpon>p_adjuntar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Blankform.aspx.cs">
+      <DependentUpon>Blankform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Blankform.aspx.designer.cs">
+      <DependentUpon>Blankform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\ConsultaFirmas\Consulta_Firmas_Data.aspx.cs">
+      <DependentUpon>Consulta_Firmas_Data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\ConsultaFirmas\Consulta_Firmas_Data.aspx.designer.cs">
+      <DependentUpon>Consulta_Firmas_Data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\ConsultaFirmas\Firmas_Data.aspx.cs">
+      <DependentUpon>Firmas_Data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\ConsultaFirmas\Firmas_Data.aspx.designer.cs">
+      <DependentUpon>Firmas_Data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\ConsultaFirmas\Consulta_Firmas.aspx.cs">
+      <DependentUpon>Consulta_Firmas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\ConsultaFirmas\Consulta_Firmas.aspx.designer.cs">
+      <DependentUpon>Consulta_Firmas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\ConsultaFirmas\ReporteConsultas.aspx.cs">
+      <DependentUpon>ReporteConsultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\ConsultaFirmas\ReporteConsultas.aspx.designer.cs">
+      <DependentUpon>ReporteConsultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\ConsultaFirmas\VerTxLog.aspx.cs">
+      <DependentUpon>VerTxLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\ConsultaFirmas\VerTxLog.aspx.designer.cs">
+      <DependentUpon>VerTxLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Consulta\Consultas.aspx.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Consulta\Consultas.aspx.designer.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Consulta\Consulta_Data.aspx.cs">
+      <DependentUpon>Consulta_Data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Consulta\Consulta_Data.aspx.designer.cs">
+      <DependentUpon>Consulta_Data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Consulta\ReporteConsulta.aspx.cs">
+      <DependentUpon>ReporteConsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Consulta\ReporteConsulta.aspx.designer.cs">
+      <DependentUpon>ReporteConsulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Consulta\VerDetalleData.aspx.cs">
+      <DependentUpon>VerDetalleData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Consulta\VerDetalleData.aspx.designer.cs">
+      <DependentUpon>VerDetalleData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Consulta\VerTxDetalleLog.aspx.cs">
+      <DependentUpon>VerTxDetalleLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Consulta\VerTxDetalleLog.aspx.designer.cs">
+      <DependentUpon>VerTxDetalleLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\DashBoard.aspx.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\DashBoard.aspx.designer.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Estadisticos\R000_Consolidado_Total\R000_Consolidados_Totales.cs" />
+    <Compile Include="Site\Estadisticos\R011_Ajuste_Soporte_Sobrante\R011_Ajuste_Soportes_Sobrantes.cs" />
+    <Compile Include="Site\Estadisticos\R012_Ajuste_Registro_Sobrante\R012_Ajuste_Registros_Sobrantes.cs" />
+    <Compile Include="Site\Estadisticos\R013_Ajuste_Resultado_Proceso_Cruce_Automatico\R013_Ajuste_Resultados_Proceso_Cruce_Automaticos.cs" />
+    <Compile Include="Site\Estadisticos\R022_Transaccion_Excluida_Archivo_Detalle\R022_Transacciones_Excluidas_Archivo_Detalle.cs" />
+    <Compile Include="Site\Estadisticos\R023_Transaccion_Reversada_Archivo_Detalle\R023_Transacciones_Reversadas_Archivo_Detalle.cs" />
+    <Compile Include="Site\Estadisticos\R025_Oficina_Pendiente_Cierre\R025_Oficinas_Pendientes_Cierres.cs" />
+    <Compile Include="Site\Estadisticos\R028_Transaccion_357\R028_Transacciones_357.cs" />
+    <Compile Include="Site\Estadisticos\WebGraphManagerViewer.aspx.cs">
+      <DependentUpon>WebGraphManagerViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Estadisticos\WebGraphManagerViewer.aspx.designer.cs">
+      <DependentUpon>WebGraphManagerViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Estadisticos\WebGraphViewerB.aspx.cs">
+      <DependentUpon>WebGraphViewerB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Estadisticos\WebGraphViewerB.aspx.designer.cs">
+      <DependentUpon>WebGraphViewerB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Estadisticos\R000_Tx_Reversada\R000_Tx_Reversadas.cs" />
+    <Compile Include="Site\Estadisticos\R001_Contenedor_Oficina\R001_Contenedores_Oficinas.cs" />
+    <Compile Include="Site\Estadisticos\R002_Diferencia_entre_Doc_Fisicos_en_Tula_y_en_Contenedor\R002_Diferencias_entre_Doc_Fisicos_en_Tula_y_en_Contenedores.cs" />
+    <Compile Include="Site\Estadisticos\R003_Documento_Remitido_Sin_Ordenamiento_Definido\R003_Documentos_Remitidos_Sin_Ordenamiento_Definido.cs" />
+    <Compile Include="Site\Estadisticos\R004_Soporte_Tx_Con_Inconsistencia_y_o_Anexo_Faltante\R004_Soportes_Tx_Con_Inconsistencias_y_o_Anexos_Faltantes.cs" />
+    <Compile Include="Site\Estadisticos\R006_Oficina_Sin_Transmision_No_Envio_Movimiento\R006_Oficinas_Sin_Transmision_No_Envio_Movimiento.cs" />
+    <Compile Include="Site\Estadisticos\R007_Oficina_Pendiente_Proceso\R007_Oficinas_Pendiente_Proceso.cs" />
+    <Compile Include="Site\Estadisticos\R009_Transaccion_Desmaterializads_Con_Soporte_Fisico\R009_Transacciones_Desmaterializadas_Con_Soporte_Fisico.cs" />
+    <Compile Include="Site\Estadisticos\R011_Soporte_Sobrante\R011_Soportes_Sobrante.cs" />
+    <Compile Include="Site\Estadisticos\R012_Registros_Sobrantes\R012_Registro_Sobrante.cs" />
+    <Compile Include="Site\Estadisticos\R013_Resultado_Proceso_Cruce_Automatico\R013_Resultados_Proceso_Cruce_Automatico.cs" />
+    <Compile Include="Site\Estadisticos\R014_Novedad_en_validacion_de_Forma\R014_Novedades_en_validaciones_de_Forma.cs" />
+    <Compile Include="Site\Estadisticos\R016_Consolidado_Novedad_De_Forma\R016_Consolidado_Novedades_De_Forma.cs" />
+    <Compile Include="Site\Estadisticos\R018_Consolidado_Cruce_Automatico\R018_Consolidado_Cruces_Automaticos.cs" />
+    <Compile Include="Site\Estadisticos\R019_Tx_No_Identificada\R019_Tx_No_Identificadas.cs" />
+    <Compile Include="Site\Estadisticos\R020_Tx_Con_Cruce_Exitoso\R020_Tx_Con_Cruces_Exitosos.cs" />
+    <Compile Include="Site\Estadisticos\R024_Doc_No_Identificado\R024_Doc_No_Identificados.cs" />
+    <Compile Include="Site\Estadisticos\R000_Transaccion_Procesada_Mensualmente_Tipo\R000_Transacciones_Procesadas_Mensualmente_Tipos.cs" />
+    <Compile Include="Site\Estadisticos\WebGraphViewerA.aspx.cs">
+      <DependentUpon>WebGraphViewerA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Estadisticos\WebGraphViewerA.aspx.designer.cs">
+      <DependentUpon>WebGraphViewerA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\OficinasB\OficinaB.aspx.cs">
+      <DependentUpon>OficinaB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\OficinasB\OficinaB.aspx.designer.cs">
+      <DependentUpon>OficinaB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Reportes\ConsultaCasosSMS\Reporte_ConsultaCasosSMS.cs" />
+    <Compile Include="Site\Reportes\R001_ContenedorOficina\R001_ContenedoresOficinas.cs" />
+    <Compile Include="Site\Reportes\R002_DiferenciaDocEnviadoReportado\R002_DiferenciasDocsEnviadosReportados.cs" />
+    <Compile Include="Site\Reportes\R003_DocRemitidoSinOrdenamiento\R003_DocsRemitidosSinOrdenamiento.cs" />
+    <Compile Include="Site\Reportes\R004_TranNoOriginaloIlegible\R004_TransNoOriginaloIlegible.cs" />
+    <Compile Include="Site\Reportes\R005_Consolidado_Medio_Pago_Detalle\R005_Consolidado_Medios_Pago_Detalle.cs" />
+    <Compile Include="Site\Reportes\R005_Consolidado_Medio_Pago_Maestro\R005_Consolidado_Medios_Pago_Maestro.cs" />
+    <Compile Include="Site\Reportes\R006_OficinaPendienteTransmision\R006_OficinasPendienteTransmision.cs" />
+    <Compile Include="Site\Reportes\R007_OficinaPendienteProceso\R007_OficinasPendienteProceso.cs" />
+    <Compile Include="Site\Reportes\R008_Tx_Mensual\R008_Txs_Mensuales.cs" />
+    <Compile Include="Site\Reportes\R009_Tx_Desmat_ConSoporte\R009_Txs_Desmats_ConSoportes.cs" />
+    <Compile Include="Site\Reportes\R011_Soporte_Sobrante\R011_Soporte_Sobrantes.cs" />
+    <Compile Include="Site\Reportes\R011_Soporte_Sobrante_Medios_Pago\R011_Soporte_Sobrantes_Medios_Pago.cs" />
+    <Compile Include="Site\Reportes\R011_Soporte_Sobrante_Multiple\R011_Soportes_Sobrante_Multiple.aspx.cs">
+      <DependentUpon>R011_Soportes_Sobrante_Multiple.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Reportes\R011_Soporte_Sobrante_Multiple\R011_Soportes_Sobrante_Multiple.aspx.designer.cs">
+      <DependentUpon>R011_Soportes_Sobrante_Multiple.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Reportes\R012_Registro_Sobrante\R012_RegistrosSobrantes.cs" />
+    <Compile Include="Site\Reportes\R012_Registro_Sobrante_Medios_Pago\R012_Registro_Sobrantes_Medios_Pago.cs" />
+    <Compile Include="Site\Reportes\R013_ResultadoCruceAutomatico\R013_ResultadosCrucesAutomaticos.cs" />
+    <Compile Include="Site\Reportes\R013_ResultadoCruceAutomatico_Medio\R013_ResultadosCruceAutomatico_Medio.cs" />
+    <Compile Include="Site\Reportes\R013_ResultadoCruceAutomatico_Valor\R013_ResultadosCruceAutomatico_Valor.cs" />
+    <Compile Include="Site\Reportes\R014_NovedadValidacionForma\R014_NovedadesValidacionesForma.cs" />
+    <Compile Include="Site\Reportes\R016_ConsolidadoNovedadDeForma\R016_ConsolidadosNovedadesDeForma.cs" />
+    <Compile Include="Site\Reportes\R018_ConsolidadoCruceAutomatico\R018_ConsolidadosCrucesAutomaticos.cs" />
+    <Compile Include="Site\Reportes\R019_Tx_No_Identificada\R019_Txs_No_Identificadas.cs" />
+    <Compile Include="Site\Reportes\R020_Tx_Con_Cruce_Exitoso\R020_Txs_Con_Cruces_Exitosos.cs" />
+    <Compile Include="Site\Reportes\R021_Resultado_Cierre\R021_Resultados_Cierres.cs" />
+    <Compile Include="Site\Reportes\R022_Tx_Excluida_Cruce\R022_Txs_Excluidas_Cruce.cs" />
+    <Compile Include="Site\Reportes\R023_Tx_Reversada_Log\R023_Txs_Reversadas_Log.cs" />
+    <Compile Include="Site\Reportes\R024_Doc_No_Identificado\R024_Docs_No_Identificados.cs" />
+    <Compile Include="Site\Reportes\R025_Oficina_Pendiente_Cierre\R025_Oficinas_Pendientes_Cierre.cs" />
+    <Compile Include="Site\Reportes\R026_Tx_sin_Identificar_Medio_de_Pago\R026_Txs_sin_Identificar_Medio_de_Pago.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Site\Reportes\R029_Devolucion_Canje_Recibido\R029_Devolucion_Canje_Recibidos.cs" />
+    <Compile Include="Site\Reportes\R028_Transacciones_357\R028_Transaccion_357.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Site\Reportes\Reporte_AjusteRealizado\Reporte_AjustesRealizados.cs" />
+    <Compile Include="Site\Reportes\RF01_Gestion_Tarjetas_Firmas_Faltantes\RF01_Gestion_Tarjetas_Firmas_Faltante.cs" />
+    <Compile Include="Site\Reportes\RF02_Control_Envio_Oficinas\RF02_Control_Envio_Oficina.cs" />
+    <Compile Include="Site\Reportes\RF03_Soportes_Sobrantes\RF03_Soporte_Sobrante.cs" />
+    <Compile Include="Site\Reportes\RF04_Cruce_Exitoso\RF04_Cruce_Exitosos.cs" />
+    <Compile Include="Site\Reportes\RF05_Transacciones_Excluidas_Cruce\RF05_Transacciones_Excluida_Cruce.cs" />
+    <Compile Include="Site\Reportes\RF06_Transacciones_Mensuales\RF06_Transacciones_Mensual.cs" />
+    <Compile Include="Site\Reportes\RF07_Tarjetas_Firmas_Rechazadas\RF07_Tarjetas_Firmas_Rechazada.cs" />
+    <Compile Include="Site\Reportes\RF08_Resultado_Cierre\RF08_Resultado_Cierres.cs" />
+    <Compile Include="Site\Reportes\RF09_Documentos_No_Identificados\RF09_Documentos_No_Identificado.cs" />
+    <Compile Include="Site\Reportes\WebReportViewerA.aspx.cs">
+      <DependentUpon>WebReportViewerA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerA.aspx.designer.cs">
+      <DependentUpon>WebReportViewerA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerB.aspx.cs">
+      <DependentUpon>WebReportViewerB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerB.aspx.designer.cs">
+      <DependentUpon>WebReportViewerB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerC.aspx.cs">
+      <DependentUpon>WebReportViewerC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerC.aspx.designer.cs">
+      <DependentUpon>WebReportViewerC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerD.aspx.cs">
+      <DependentUpon>WebReportViewerD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerD.aspx.designer.cs">
+      <DependentUpon>WebReportViewerD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerE.aspx.cs">
+      <DependentUpon>WebReportViewerE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerE.aspx.designer.cs">
+      <DependentUpon>WebReportViewerE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerF.aspx.cs">
+      <DependentUpon>WebReportViewerF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerF.aspx.designer.cs">
+      <DependentUpon>WebReportViewerF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerG.aspx.cs">
+      <DependentUpon>WebReportViewerG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerG.aspx.designer.cs">
+      <DependentUpon>WebReportViewerG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerH.aspx.cs">
+      <DependentUpon>WebReportViewerH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerH.aspx.designer.cs">
+      <DependentUpon>WebReportViewerH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerI.aspx.cs">
+      <DependentUpon>WebReportViewerI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerI.aspx.designer.cs">
+      <DependentUpon>WebReportViewerI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerJ.aspx.cs">
+      <DependentUpon>WebReportViewerJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\Reportes\WebReportViewerJ.aspx.designer.cs">
+      <DependentUpon>WebReportViewerJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site\VisorImagenes\VerImagen.aspx.cs">
+      <DependentUpon>VerImagen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site\VisorImagenes\VerImagen.aspx.designer.cs">
+      <DependentUpon>VerImagen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wellcome.aspx.cs">
+      <DependentUpon>Wellcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wellcome.aspx.designer.cs">
+      <DependentUpon>Wellcome.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Scripts\ModalBox\lib\" />
+    <Folder Include="Scripts\Windows\javascripts\" />
+    <Folder Include="Scripts\Windows\themes\alert\" />
+    <Folder Include="Scripts\Windows\themes\alphacube\" />
+    <Folder Include="Scripts\Windows\themes\darkX\" />
+    <Folder Include="Scripts\Windows\themes\default\" />
+    <Folder Include="Scripts\Windows\themes\iefix\" />
+    <Folder Include="Scripts\Windows\themes\lighting\" />
+    <Folder Include="Scripts\Windows\themes\mac_os_x\" />
+    <Folder Include="Scripts\Windows\themes\mac_os_x_dialog\" />
+    <Folder Include="Scripts\Windows\themes\nuncio\" />
+    <Folder Include="Scripts\Windows\themes\spread\" />
+    <Folder Include="Styles\flexigrid-1_1\images\.svn\tmp\prop-base\" />
+    <Folder Include="Styles\flexigrid-1_1\images\.svn\tmp\props\" />
+    <Folder Include="Styles\flexigrid-1_1\images\.svn\tmp\text-base\" />
+    <Folder Include="Temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\MasterForm.Master" />
+    <Content Include="Master\MasterPage.Master" />
+    <Content Include="Master\MasterPopUp.Master" />
+    <Content Include="Master\MasterConfig.Master" />
+    <None Include="Reports.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Reports.cs</LastGenOutput>
+    </None>
+    <None Include="Navigation.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Navigation.cs</LastGenOutput>
+    </None>
+    <None Include="Scripts\codemirror\mode\coffeescript\LICENSE" />
+    <None Include="Scripts\codemirror\mode\ruby\LICENSE" />
+    <None Include="Scripts\codemirror\mode\r\LICENSE" />
+    <None Include="Styles\flexigrid-1_1\images\.svn\all-wcprops" />
+    <None Include="Styles\flexigrid-1_1\images\.svn\entries" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Library\Miharu.Desktop.Library.vbproj">
+      <Project>{60FE71B4-EC25-45F0-B384-B98582D035C7}</Project>
+      <Name>Miharu.Desktop.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.DataAccess\Miharu.Imaging.DataAccess.csproj">
+      <Project>{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}</Project>
+      <Name>Miharu.Imaging.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.DataAccess\Miharu.Security.DataAccess.csproj">
+      <Project>{902B10BC-8630-4730-9AC5-763CA7D2CB31}</Project>
+      <Name>Miharu.Security.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.Library\Miharu.Security.Library.csproj">
+      <Project>{BC90E6AA-55BE-4E52-841E-FE48A32E750D}</Project>
+      <Name>Miharu.Security.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Slyg.Report\Slyg.Report.csproj">
+      <Project>{181B3CE0-035E-4077-BBD6-D59262072EB6}</Project>
+      <Name>Slyg.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.WorkFlow.DataAccess\Miharu.Workflow.DataAccess.csproj">
+      <Project>{CF643415-A38C-439E-89B4-0A8870EC5819}</Project>
+      <Name>Miharu.Workflow.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site\Reportes\ConsultaCasosSMS\Reporte_ConsultaCasosSMS.rdlc">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Site\Reportes\R001_ContenedorOficina\R001_ContenedoresOficinas.rdlc" />
+    <Content Include="Site\Reportes\R011_Soporte_Sobrante\R011_Soporte_Sobrantes.rdlc" />
+    <Content Include="Site\Reportes\R002_DiferenciaDocEnviadoReportado\R002_DiferenciasDocsEnviadosReportados.rdlc" />
+    <Content Include="Site\Reportes\R003_DocRemitidoSinOrdenamiento\R003_DocsRemitidosSinOrdenamiento.rdlc" />
+    <Content Include="Site\Reportes\R004_TranNoOriginaloIlegible\R004_TransNoOriginaloIlegible.rdlc" />
+    <Content Include="Site\Reportes\R005_Consolidado_Medio_Pago_Detalle\R005_Consolidado_Medios_Pago_Detalle.rdlc" />
+    <Content Include="Site\Reportes\R005_Consolidado_Medio_Pago_Maestro\R005_Consolidado_Medios_Pago_Maestro.rdlc" />
+    <Content Include="Site\Reportes\R006_OficinaPendienteTransmision\R006_OficinasPendienteTransmision.rdlc" />
+    <Content Include="Site\Reportes\R007_OficinaPendienteProceso\R007_OficinasPendienteProceso.rdlc" />
+    <Content Include="Site\Reportes\R009_Tx_Desmat_ConSoporte\R009_Txs_Desmats_ConSoportes.rdlc" />
+    <Content Include="Site\Reportes\R012_Registro_Sobrante\R012_RegistrosSobrantes.rdlc" />
+    <Content Include="Site\Reportes\R013_ResultadoCruceAutomatico\R013_ResultadosCrucesAutomaticos.rdlc" />
+    <Content Include="Site\Reportes\R014_NovedadValidacionForma\R014_NovedadesValidacionesForma.rdlc" />
+    <Content Include="Site\Reportes\R016_ConsolidadoNovedadDeForma\R016_ConsolidadosNovedadesDeForma.rdlc" />
+    <Content Include="Site\Reportes\R018_ConsolidadoCruceAutomatico\R018_ConsolidadosCrucesAutomaticos.rdlc" />
+    <Content Include="Site\Reportes\R019_Tx_No_Identificada\R019_Txs_No_Identificadas.rdlc" />
+    <Content Include="Site\Reportes\R020_Tx_Con_Cruce_Exitoso\R020_Txs_Con_Cruces_Exitosos.rdlc" />
+    <Content Include="Site\Reportes\R023_Tx_Reversada_Log\R023_Txs_Reversadas_Log.rdlc" />
+    <Content Include="Site\Reportes\R024_Doc_No_Identificado\R024_Docs_No_Identificados.rdlc" />
+    <Content Include="Site\Reportes\R025_Oficina_Pendiente_Cierre\R025_Oficinas_Pendientes_Cierre.rdlc" />
+    <Content Include="Site\Reportes\R022_Tx_Excluida_Cruce\R022_Txs_Excluidas_Cruce.rdlc" />
+    <Content Include="Site\Reportes\R021_Resultado_Cierre\R021_Resultados_Cierres.rdlc">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Site\Reportes\R027_Consulta_Tx\R027_Reporte_Consulta_Transacciones.rdlc">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Site\Reportes\R011_Soporte_Sobrante_Medios_Pago\R011_Soporte_Sobrantes_Medios_Pago.rdlc" />
+    <Content Include="Site\Reportes\R012_Registro_Sobrante_Medios_Pago\R012_Registro_Sobrantes_Medios_Pago.rdlc" />
+    <Content Include="Site\Reportes\R013_ResultadoCruceAutomatico_Valor\R013_ResultadosCruceAutomatico_Valor.rdlc" />
+    <Content Include="Site\Reportes\R013_ResultadoCruceAutomatico_Medio\R013_ResultadosCruceAutomatico_Medio.rdlc" />
+    <Content Include="Site\Reportes\R008_Tx_Mensual\R008_Txs_Mensuales.rdlc">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Site\Reportes\Reporte_AjusteRealizado\Reporte_AjustesRealizados.rdlc">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site\Reportes\R029_Devolucion_Canje_Recibido\R029_Devolucion_Canje_Recibidos.rdlc">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site\Reportes\R008_Tx_Mensual\R008_Txs_Mensuales_Detallado.rdlc" />
+    <Content Include="Site\Reportes\RF01_Gestion_Tarjetas_Firmas_Faltantes\RF01_Gestion_Tarjetas_Firmas_Faltante.rdlc">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Site\Reportes\RF02_Control_Envio_Oficinas\RF02_Control_Envio_Oficina.rdlc" />
+    <Content Include="Site\Reportes\RF03_Soportes_Sobrantes\RF03_Soporte_Sobrante.rdlc" />
+    <Content Include="Site\Reportes\RF04_Cruce_Exitoso\RF04_Cruce_Exitosos.rdlc" />
+    <Content Include="Site\Reportes\RF05_Transacciones_Excluidas_Cruce\RF05_Transacciones_Excluida_Cruce.rdlc" />
+    <Content Include="Site\Reportes\RF06_Transacciones_Mensuales\RF06_Transacciones_Mensual.rdlc" />
+    <Content Include="Site\Reportes\RF07_Tarjetas_Firmas_Rechazadas\RF07_Tarjetas_Firmas_Rechazada.rdlc" />
+    <Content Include="Site\Reportes\RF08_Resultado_Cierre\RF08_Resultado_Cierres.rdlc" />
+    <Content Include="Site\Reportes\RF09_Documentos_No_Identificados\RF09_Documentos_No_Identificado.rdlc" />
+    <EmbeddedResource Include="Site\Reportes\RF06_Transacciones_Mensuales\RF06_Transacciones_Mensual_Detallado.rdlc" />
+    <Content Include="Site\Reportes\RF10_Reporte_Consulta_Firmas_Proceso_Detalle\RF10_Reporte_Consulta_Firmas_Proceso_Detalle.rdlc">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

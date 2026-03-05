@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterConfig.Master.cs"
+    Inherits="WebPunteoElectronico.Master.MasterConfig" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>::Punteo Electrónico::</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Marco.css" rel="stylesheet" type="text/css" />
+    <asp:Literal ID="HeadScriptsLiteral" runat="server"></asp:Literal>
+    <asp:ContentPlaceHolder ID="HeadContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="padding: 0px; text-align: center; margin: 0px; vertical-align: top;
+    background-color: White;" onload="SetPointers(); BeginRequestHandler();">
+    <form id="MainForm" runat="server">
+    <script type="text/javascript">
+        /*
+        Scripts de Master Config
+        ----------------------------------*/
+        var SelectedTab = 0;
+
+        // Responder a la seleccion de un tab
+        function CreateTabsHandlers() {
+            $('#tabs').tabs({
+                selected: SelectedTab,
+                select: function (event, ui) {
+                    ShowOpciones(ui.index == 0 ? 'none' : 'inline');
+                    return true;
+                }
+            });
+        }
+
+        function SelectTab(tab) {
+            SelectedTab = (tab == "Filtro") ? 0 : 1;
+            ShowOpciones(SelectedTab == 0 ? 'none' : 'inline');
+        }
+
+        function ShowOpciones(Modo) {
+            //    document.getElementById(ctrId_SaveDiv).style.display = Modo;
+            //    document.getElementById(ctrId_DeleteDiv).style.display = Modo;
+        }
+
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+        prm.add_beginRequest(BeginRequestHandler);
+
+        prm.add_pageLoaded(pageLoadedHandler);
+        prm.add_pageLoaded(CreateTabsHandlers);
+
+        var ctrId_EndRequestAction = '<%= EndRequestAction.ClientID %>';
+        var ctrId_DaughterFormCloseLinkButton = '<%= DaughterFormCloseLinkButton.UniqueID %>';
+        var ctrId_FlexiGridRowIndexChanged = '<%= FlexiGridRowIndexChangedLinkButton.ClientID %>';
+        var ctrId_FlexiGridRowIndexInfo = '<%= FlexiGridRowIndexInfo.ClientID %>';
+
+        $(function () {
+            Redimencionar();
+        });
+
+        $(window).resize(function () { Redimencionar(); });
+    </script>
+    <div class="oculto">
+        <asp:ScriptManager ID="MasterScriptManager" ScriptMode="Release" runat="server">
+        </asp:ScriptManager>
+        <asp:UpdatePanel ID="SpecialOptionsUpdatePanel" runat="server">
+            <ContentTemplate>
+                <asp:LinkButton ID="DaughterFormCloseLinkButton" runat="server" OnClick="DaughterFormCloseLinkButton_Click"></asp:LinkButton>
+                <input type="hidden" id="EndRequestAction" value="" runat="server" />
+                <asp:LinkButton ID="FlexiGridRowIndexChangedLinkButton" runat="server" OnClick="FlexiGridRowIndexChangedLinkButton_Click"></asp:LinkButton>
+                <input type="hidden" id="FlexiGridRowIndexInfo" value="" runat="server" />
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    <asp:UpdatePanel ID="BodyUpdatePanel" runat="server">
+        <ContentTemplate>
+            <div class="path">
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                </asp:SiteMapPath>
+            </div>
+            <table class="page-table">
+                <tr id="TitleTR" runat="server">
+                    <td class="t1">
+                        <asp:Label ID="TitleLabel" runat="server" Text="Titulo"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="tabs">
+                            <ul>
+                                <li><a id="tab_filtro" href="#tabs-1">Búsqueda</a></li>
+                                <li><a id="tab_detalle" href="#tabs-2">Detalle</a></li>
+                            </ul>
+                            <div id="tabs-1">
+                                <div class="tab-panel" style="height:410px">
+                                    <asp:ContentPlaceHolder ID="TabContentPlaceHolderFiltro" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </div>
+                            </div>
+                            <div id="tabs-2">
+                                <div class="tab-panel" style="height:410px">
+                                    <asp:ContentPlaceHolder ID="TabContentPlaceHolderDetalle" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    <asp:ContentPlaceHolder ID="FinalScriptContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

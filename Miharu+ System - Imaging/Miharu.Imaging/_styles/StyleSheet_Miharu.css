@@ -1,0 +1,298 @@
+﻿body
+{
+	margin: 0px;		
+}
+a
+{	
+	color: #003366;
+}
+a:visited
+{
+	color: #003366;
+}
+.link
+{
+	font-size: x-small;
+	font-weight: bold;
+	font-family: 'Microsoft Sans Serif';	
+}
+.botonimagen
+{
+	border: 1px solid #FFFFFF;	
+}
+.botonimagen:hover
+{
+	border: 1px solid #808080;
+	cursor:pointer;
+}
+.Titulo_Principal
+{
+	font-weight: bold;
+	font-size: x-large;
+	color: navy;
+	font-family: Georgia;
+}
+.Titulo_Secundario
+{
+	border: 2px outset #999999;
+	font-weight: bold;
+	font-size: medium;
+	color: #FFFFFF;
+	font-family: Verdana;
+	height: 30px;
+	background-color: #006699;
+}
+.Grilla_Header
+{
+	border: 1px solid #999999;
+	font-weight: bold;
+	font-size: small;
+	color: #FFFFFF;
+	font-family: Verdana;
+	height: 30px;
+	background-color: #006699;
+}
+.Titulo_Menu
+{
+	font-weight: bold;
+	font-size: x-small;
+	color: black;
+	font-family: Verdana;	
+	text-decoration: none;
+}
+.Parrafo
+{
+	font-size: x-small;	
+	font-family: Verdana;
+}
+.Parrafo2
+{
+	font-size: medium;
+	font-family: Verdana;
+	font-weight: bold;
+}
+.Label
+{
+	font-weight: bold;
+	font-size: x-small;
+	color: #3366CC;
+	font-family: Verdana;
+}
+.LabelTextbox
+{
+	border: 1px solid #333333;
+	font-size: small;
+	font-family: Verdana;
+	color: #003366;
+	font-weight: bold;
+	padding-left: 10px;
+}
+.Textbox
+{
+	font-size: small;
+	font-family: Verdana;
+	background-color: #FFFFEA;
+	color: #003366;
+	font-weight: bold;
+}
+.TextboxDisable
+{
+	font-size: small;
+	font-family: Verdana;
+	background-color: #EEEEEE;
+	color: #003366;
+	font-weight: bold;
+}
+.Button, .Button:hover, .Button_Selected
+{
+	font-weight: bold;
+	font-size: x-small;
+	font-family: Tahoma;
+}
+.Button
+{
+	border: 1px solid #666666;
+	background-color: #C0C0C0;
+	cursor: pointer;
+	color: #3366CC;
+}
+.Button:hover
+{
+	border: 1px solid #666666;	
+	background-color: #FFFFCC;
+}
+.Button_Selected
+{
+	border: 1px inset #FFFFFF;
+	background-color: #666666;
+	color: #FFFFFF;
+}
+.Error
+{
+	font-weight: bold;
+	color: red;
+	font-family: Verdana;
+}
+.Mensaje_Error
+{
+	font-weight: bold;
+	font-size: xx-small;
+	color: red;
+	font-family: Verdana;
+}
+.Oculto
+{
+	display: none;
+}
+.BotonCambiante
+{
+	border: 1px solid #FFFFFF;
+	vertical-align: middle;
+	text-align: center;
+}
+.BotonCambiante:hover
+{
+	border: 1px solid #666666;
+	vertical-align: middle;
+	text-align: center;
+}
+.Flujo_Paso
+{
+	background-image: url('../_images/flujo/Paso.png');
+	font-family: 'Courier New' , Courier, 'espacio sencillo';
+	font-weight: bold;
+	background-repeat: no-repeat;
+	text-align: center;
+	vertical-align: middle;
+	width: 23px;
+	font-size: medium;
+	height: 23px;
+	padding-top: 4px;
+}
+.Flujo_Estado
+{
+	text-align: center;
+	vertical-align: middle;
+	width: 23px;
+}
+.Separador
+{
+	border: 1px solid #000000;
+	height: 20px;
+	background-color: #336699;
+	padding-left: 20px;
+	font-family: Verdana;
+	font-size: small;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.MD_Celda
+{
+	border-width: 1px;
+	border-color: #666666;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-family: Verdana;
+	font-size: x-small;
+	font-weight: bold;
+	color: #3366CC;
+	text-align: left;
+}
+.collapsePanel
+{
+	height: 0px;
+	overflow: hidden;
+}
+a.button
+{
+	float: left;
+	font-size: 110%;
+	font-weight: bold;
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	border-right: 1px solid #333;
+	border-bottom: 1px solid #333;
+	color: #333;
+	width: auto;
+	text-decoration:none;
+}
+
+a.button:hover
+{
+	border-top: 1px solid #333;
+	border-left: 1px solid #333;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	color: #333;
+}
+
+a.button span
+{
+	background: #d4d0c8 url(../_images/basic/bg_btn.gif) repeat-x;
+	float: left;
+	line-height: 24px;
+	height: 24px;
+	padding: 0 10px;
+	border-right: 1px solid #777;
+	border-bottom: 1px solid #777;
+	vertical-align: middle;
+	text-align: center;
+}
+
+a.button:hover span
+{
+	border: none;
+	border-top: 1px solid #777;
+	border-left: 1px solid #777;
+	background: #d4d0c8 url(../_images/basic/bg_btnOver.gif) repeat-x;
+	cursor: pointer;
+}
+.TextboxCode
+{
+	font-size: small;
+	font-family: 'Courier New' , Courier, 'espacio sencillo';
+	background-color: #FFFFFF;
+	color: #000000;
+	font-weight: normal;
+}
+.Apartado
+{
+	font-family: Verdana;
+	font-size: small;
+	font-weight: bold;
+	color: #800000;
+}
+.Bloque
+{
+	border: 1px solid #808080;
+	background-color: #FFFFAE;
+}
+.EncabezadoVertical
+{
+	writing-mode: tb-rl;
+	filter: flipv fliph;
+	font-family: Verdana;
+	font-size: small;
+	font-weight: bold;
+	color: #3366CC;
+	border: 1px solid #333333;
+	background-color: #F0F0F0;
+	width: 20px;
+}
+.Calendar
+{
+    border: 1px solid #333333;
+    background-color: #F0F0F0;
+    font-family: Verdana;
+    font-size: small;
+    width: 30px
+}
+.CheckBox
+{
+    font-family: Verdana;	
+	font-weight: bold;
+}
+.DropDownList
+{
+    font-family: Verdana;    
+}

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B18BD952-9EB4-4690-A44D-1C68CB865325}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Davivienda.Plugin</RootNamespace>
+    <AssemblyName>Davivienda.Plugin</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SLYG.Data">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\SLYG.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Imaging\Archivo\ArchivoPlugin.cs" />
+    <Compile Include="Imaging\Archivo\EventExecuterArchivo.cs" />
+    <Compile Include="Imaging\Archivo\FormImagingWorkSpaceWrapperArchivo.cs" />
+    <Compile Include="Imaging\Archivo\Forms\FormExportar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Archivo\Forms\FormExportar.Designer.cs">
+      <DependentUpon>FormExportar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Embargos\EmbargosPlugin.cs" />
+    <Compile Include="Imaging\Embargos\EventExecuterEmbargos.cs" />
+    <Compile Include="Imaging\Embargos\FormImagingWorkSpaceWrapperEmbargos.cs" />
+    <Compile Include="Imaging\Embargos\Forms\FormExportar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Embargos\Forms\FormExportar.Designer.cs">
+      <DependentUpon>FormExportar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Controls\Miharu.Desktop.Controls.vbproj">
+      <Project>{BBDF4261-7651-4D93-95EE-675260D016AC}</Project>
+      <Name>Miharu.Desktop.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Library\Miharu.Desktop.Library.vbproj">
+      <Project>{60FE71B4-EC25-45F0-B384-B98582D035C7}</Project>
+      <Name>Miharu.Desktop.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.DataAccess\Miharu.Imaging.DataAccess.csproj">
+      <Project>{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}</Project>
+      <Name>Miharu.Imaging.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.Indexer\Miharu.Imaging.Indexer.vbproj">
+      <Project>{3AA91370-45D5-4EBD-A700-99FB10AB6FB4}</Project>
+      <Name>Miharu.Imaging.Indexer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.Library\Miharu.Imaging.Library.vbproj">
+      <Project>{9501AE9F-03BC-4933-9EC3-84BCD96CC795}</Project>
+      <Name>Miharu.Imaging.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.DataAccess\Miharu.Security.DataAccess.csproj">
+      <Project>{902B10BC-8630-4730-9AC5-763CA7D2CB31}</Project>
+      <Name>Miharu.Security.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.Library\Miharu.Security.Library.csproj">
+      <Project>{BC90E6AA-55BE-4E52-841E-FE48A32E750D}</Project>
+      <Name>Miharu.Security.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.FileProvider.Library\Miharu.FileProvider.Library.vbproj">
+      <Project>{1E21AD2F-0D1F-47A5-94C5-A75D6DAAAC8F}</Project>
+      <Name>Miharu.FileProvider.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.FileProvider\Miharu.FileProvider.vbproj">
+      <Project>{A81EC87D-4B7A-49C4-91C9-534BFC0C805E}</Project>
+      <Name>Miharu.FileProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.Tools\Miharu.Tools.vbproj">
+      <Project>{69D016B1-3E92-4037-9CEB-FE8283479AFD}</Project>
+      <Name>Miharu.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Slyg.Tools.Imaging\Slyg.Tools.Imaging.csproj">
+      <Project>{B41AFD53-3FE1-4C20-B359-1C5FC16954C4}</Project>
+      <Name>Slyg.Tools.Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Integration.DataAccess\Miharu.Integration.DataAccess.csproj">
+      <Project>{8A0078E2-6728-4413-AE6F-FD1EADEB7247}</Project>
+      <Name>Miharu.Integration.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Imaging\Archivo\Forms\FormExportar.resx">
+      <DependentUpon>FormExportar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Embargos\Forms\FormExportar.resx">
+      <DependentUpon>FormExportar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagenes\Aceptar.png" />
+    <Content Include="Imagenes\btnBuscar.png" />
+    <Content Include="Imagenes\btnSalir.png" />
+    <Content Include="Imagenes\MainFolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

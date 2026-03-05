@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.Table.IndexerTableCellDateTime" Collapsed="true">
+    <Position X="30.75" Y="7.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IABAAAwABKIAAAAgAACAAGCKAAAAAQAACQAoIAAAAAA=</HashCode>
+      <FileName>View\Indexacion\Table\IndexerTableCellDateTime.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.TableInputControl" Collapsed="true">
+    <Position X="24.25" Y="9.75" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>RUiQAICAgjoAEBEIBFDAoiACCAAUAQA8IIwgKGAAQAQ=</HashCode>
+      <FileName>View\Indexacion\TableInputControl.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.TextInputControl" Collapsed="true">
+    <Position X="24.25" Y="11" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QQCRABwAgjoIkAEMBACAgCCKABEUAQBIAAggKQAAAIQ=</HashCode>
+      <FileName>View\Indexacion\TextInputControl.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.InputControl" Collapsed="true">
+    <Position X="22.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAABACgAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Indexacion\InputControl.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.Table.IndexerTable" Collapsed="true">
+    <Position X="26.5" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AkAAQjUSgyIIBUGNGGCgwhACKEIFGaIREEwSFBiIUBg=</HashCode>
+      <FileName>View\Indexacion\Table\IndexerTable.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.Table.IndexerTableCellCollection" Collapsed="true">
+    <Position X="15.25" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEIAAAAAABAAABAQAAAABAQEAAACAAAAAAAAAABQIAA=</HashCode>
+      <FileName>View\Indexacion\Table\IndexerTableCellCollection.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.Table.IndexerTableCellList" Collapsed="true">
+    <Position X="30.75" Y="8.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AQBAAAgABKIAAAAgABCAAGAKAAAAAQAACQAsIAAAABA=</HashCode>
+      <FileName>View\Indexacion\Table\IndexerTableCellList.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.Table.IndexerTableCellNumeric" Collapsed="true">
+    <Position X="30.75" Y="9.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAQABKIAAQAgABCAAGCKAAAAAQAACQAoIAAAAAA=</HashCode>
+      <FileName>View\Indexacion\Table\IndexerTableCellNumeric.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.Table.IndexerTableCellText" Collapsed="true">
+    <Position X="30.75" Y="10.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAwABKIAAAAgABCAAGCKAAAAAQAACQAoIAAAAAA=</HashCode>
+      <FileName>View\Indexacion\Table\IndexerTableCellText.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.Table.IndexerTableCell" Collapsed="true">
+    <Position X="29.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAABCIBAkAICADAAEAKAAAAAwAAAQAoaAAAAAA=</HashCode>
+      <FileName>View\Indexacion\Table\IndexerTableCell.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.Table.IndexerTableColumn" Collapsed="true">
+    <Position X="11.5" Y="6.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>JAAAAAgAAAAACgAUABAAQEAAAABAAAAEAQCAQBCAABA=</HashCode>
+      <FileName>View\Indexacion\Table\IndexerTableColumn.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.Table.IndexerTableColumnCollection" Collapsed="true">
+    <Position X="15.25" Y="6.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEIAAAAAABAAABAQACAARAQEAAACCAAAAAAAAABQIAA=</HashCode>
+      <FileName>View\Indexacion\Table\IndexerTableColumnCollection.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.Table.IndexerTableRow" Collapsed="true">
+    <Position X="33.75" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BIBAAAEAAChABgABAAKAwAACAABggAAAIICAAAAAEBA=</HashCode>
+      <FileName>View\Indexacion\Table\IndexerTableRow.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.Table.IndexerTableRowCollection" Collapsed="true">
+    <Position X="15.25" Y="8.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEIAAAAAABAAABAQAACABgQEAAACAAAAAAAAAABQIAE=</HashCode>
+      <FileName>View\Indexacion\Table\IndexerTableRowCollection.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Windows.Forms.UserControl" Collapsed="true">
+    <Position X="16.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="10.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.ComboBoxControl" Collapsed="true">
+    <Position X="19" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQAAABSAACQAAIAAQBCAAAACUADAoAAAIACAAAAAAAA=</HashCode>
+      <FileName>View\Indexacion\ComboBoxControl.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.ListValidationControl" Collapsed="true">
+    <Position X="37" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IYAAAAAAgDCAAAEAQAyAAACCAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Indexacion\ListValidationControl.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.RulerControl" Collapsed="true">
+    <Position X="18.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAmYAEIAAAAiAAAACAAQAEAEAQAQAAIIAAAA=</HashCode>
+      <FileName>View\Indexacion\RulerControl.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Recorte.CalidadDataControl" Collapsed="true">
+    <Position X="39.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAgAEiACAIAQAEiACAACAAAAQBMAAAAAAgAAAgI=</HashCode>
+      <FileName>View\Recorte\CalidadDataControl.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Recorte.RecorteDataControl" Collapsed="true">
+    <Position X="41.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAECAAAAAAAACAAAACAAEAQBMAIAgAAgAAAgI=</HashCode>
+      <FileName>View\Recorte\RecorteDataControl.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.ListInputControl" Collapsed="true">
+    <Position X="24.25" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QQCRBAAAgjsIkFEJBACAkCCKAAAVAUBIAAgkKAAAABQ=</HashCode>
+      <FileName>View\Indexacion\ListInputControl.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.TextInputDateTimeControl" Collapsed="true">
+    <Position X="24.25" Y="8.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QQCRAByAgjoAkAEMBgCAgCCKABEUAQBIAAggKQAAAAQ=</HashCode>
+      <FileName>View\Indexacion\TextInputDateTimeControl.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.TextInputNumericControl" Collapsed="true">
+    <Position X="24.25" Y="12.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QQCRABwAgjoIkAEMBACAgCCKABEUAQBIAAggKQAAAJQ=</HashCode>
+      <FileName>View\Indexacion\TextInputNumericControl.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.ValidationControl" Collapsed="true">
+    <Position X="24.25" Y="13.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QQCQAEkAgjoAEgEIBCCAgGiPABAUQQEYAAAoaBIAAIQ=</HashCode>
+      <FileName>View\Indexacion\ValidationControl.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.Controller.GenericController" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggkAXJgBIKgC4RIAhAB+BAKAAAgRBAI0AAACQABKImU=</HashCode>
+      <FileName>Controller\GenericController.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.MarshalByRefObject" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.Controller.Indexer.IndexerController" Collapsed="true">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABCAAAAIIBEEAAAAAQAAIAAASABQAAACCCAABgAQQ=</HashCode>
+      <FileName>Controller\Indexer\IndexerController.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.Controller.Recorte.RecorteController" Collapsed="true">
+    <Position X="5.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4lwADIAAIAgAAAAAAUAwAACAAAgAAQAAAQAAAABAAEQ=</HashCode>
+      <FileName>Controller\Recorte\RecorteController.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.Controller.Recorte.CalidadRecorteController" Collapsed="true">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAIAAIAgAAAAAAAAQAAAAAAgAAQAAAAAAAAAAAEA=</HashCode>
+      <FileName>Controller\Recorte\CalidadRecorteController.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.Controller.Indexer.Capturas.CapturasAdicionalController" Collapsed="true">
+    <Position X="1.25" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ohgBDIAAIKgBEAASAUIwAAKAUAiAgQAABQCkAAAEIEQ=</HashCode>
+      <FileName>Controller\Indexer\Capturas\CapturasAdicionalController.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.Controller.Indexer.Capturas.CapturasController" Collapsed="true">
+    <Position X="5.75" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ohwDTIAAIKgBEAASAUIwAAKAUAiAgQAABQCkAAAEIEQ=</HashCode>
+      <FileName>Controller\Indexer\Capturas\CapturasController.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.Controller.Indexer.Indexacion.IndexacionController" Collapsed="true">
+    <Position X="3.5" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gggBDIAEYIoRkCAAAEAQAIKAAAwBBQAAACiCBAAgAUQ=</HashCode>
+      <FileName>Controller\Indexer\Indexacion\IndexacionController.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.Controller.Indexer.Indexacion.ReIndexacionController" Collapsed="true">
+    <Position X="8" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gggBDIABIIoREAAAAEAQAAKAAAwBFQAAACCCAAIwAUw=</HashCode>
+      <FileName>Controller\Indexer\Indexacion\ReIndexacionController.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.Controller.Indexer.Capturas.Captura.CalidadCapturaController" Collapsed="true">
+    <Position X="7" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAIAAAAIAAQAAAAAQAADAAAQABAAAACACAAAgAQA=</HashCode>
+      <FileName>Controller\Indexer\Capturas\Captura\CalidadCapturaController.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.Controller.Indexer.Capturas.Captura.CorreccionCapturaMaquinaController" Collapsed="true">
+    <Position X="7" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAIAAAAIAAQAAAAAQAACAAAQABAAAACACAAAgAQA=</HashCode>
+      <FileName>Controller\Indexer\Capturas\Captura\CorreccionCapturaMaquinaController.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.Controller.Indexer.Capturas.Captura.PreCapturaController" Collapsed="true">
+    <Position X="7" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAIAAAAIAAAAAAAAQAACAAAQABAAAACACAAAgAQA=</HashCode>
+      <FileName>Controller\Indexer\Capturas\Captura\PreCapturaController.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.Controller.Indexer.Capturas.Captura.PrimeraCapturaController" Collapsed="true">
+    <Position X="7" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAIAAAAIAAQAAAABQAADAAAQABAAAACACAAAgAQA=</HashCode>
+      <FileName>Controller\Indexer\Capturas\Captura\PrimeraCapturaController.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.Controller.Indexer.Capturas.Captura.SegundaCapturaController" Collapsed="true">
+    <Position X="7" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAIAAAAIAAQAAAABQAADAAAQABAAAACACAAAgAQA=</HashCode>
+      <FileName>Controller\Indexer\Capturas\Captura\SegundaCapturaController.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.Controller.Indexer.Capturas.Captura.TerceraCapturaController" Collapsed="true">
+    <Position X="7" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAIAAAAIAAQAAAABQAADAAAQABAAAACACAAAgAQA=</HashCode>
+      <FileName>Controller\Indexer\Capturas\Captura\TerceraCapturaController.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.Controller.Indexer.Capturas.Reproceso.ReProcessController" Collapsed="true">
+    <Position X="7" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgQABIABBAoAAEAAAAARAACAAAQAAAAAACACAAAgAQA=</HashCode>
+      <FileName>Controller\Indexer\Capturas\Reproceso\ReProcessController.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.Controller.Indexer.Capturas.Validacion.ValidacionesOpcionalesController" Collapsed="true">
+    <Position X="7" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ogAAEIAAAAoAAAAAAAAQAACAAAQABAAAACACAAAoAQA=</HashCode>
+      <FileName>Controller\Indexer\Capturas\Validacion\ValidacionesOpcionalesController.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.Indexacion.FormIndexerView" Collapsed="true">
+    <Position X="12.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>995v/7vWdbnu+n/5Jv/W82+/l7x/3XX7N/Zn+bVm//4=</HashCode>
+      <FileName>View\Indexacion\FormIndexerView.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="14.75" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Forms.ContainerControl" Collapsed="true">
+    <Position X="16.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.KeyValueItem" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>View\IInputControl.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Miharu.Imaging.Indexer.View.TriggersValidations_Items" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAACAAAAAQAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>View\IInputControl.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Miharu.Imaging.Indexer.View.IInputControl" Collapsed="true">
+    <Position X="24.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQCQAAAAghoAEAEIBAAAgCAAAAAUAQAIAAAgKAAAAAQ=</HashCode>
+      <FileName>View\IInputControl.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Miharu.Imaging.Indexer.Controller.IController" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggkAFJAAIKgAIRAAgABcBAIAAAgBAAAQAAACAAAIAmQ=</HashCode>
+      <FileName>Controller\IController.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://slyg.com.co/miharu/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://slyg.com.co/miharu/PR_ExistKey/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://slyg.com.co/miharu/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/miharu/">
+      <s:import namespace="http://slyg.com.co/miharu/PR_ExistKey/" />
+      <s:element name="ExistsKeyA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nEntidad" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="nProyecto" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="nEsquema" type="s:short" />
+            <s:element minOccurs="0" maxOccurs="1" name="nKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExistsKeyAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExistsKeyAResult" type="s1:PR_ExistKey" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExistsKeyB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nEntidad" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="nProyecto" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="nEsquema" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="nDocumento" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExistsKeyBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExistsKeyBResult" type="s1:PR_ExistKey" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/miharu/PR_ExistKey/">
+      <s:complexType name="PR_ExistKey">
+        <s:attribute name="Result" type="s:boolean" use="required" />
+        <s:attribute name="Message" type="s:string" />
+        <s:attribute name="Encontrado" type="s:boolean" use="required" />
+        <s:attribute name="Identificador" type="s:string" />
+        <s:attribute name="Folios" type="s:short" use="required" />
+        <s:attribute name="Size" type="s:long" use="required" />
+        <s:attribute name="Tipo" type="s:string" />
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ExistsKeyASoapIn">
+    <wsdl:part name="parameters" element="tns:ExistsKeyA" />
+  </wsdl:message>
+  <wsdl:message name="ExistsKeyASoapOut">
+    <wsdl:part name="parameters" element="tns:ExistsKeyAResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExistsKeyBSoapIn">
+    <wsdl:part name="parameters" element="tns:ExistsKeyB" />
+  </wsdl:message>
+  <wsdl:message name="ExistsKeyBSoapOut">
+    <wsdl:part name="parameters" element="tns:ExistsKeyBResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ImagingServiceSoap">
+    <wsdl:operation name="ExistsKeyA">
+      <wsdl:input message="tns:ExistsKeyASoapIn" />
+      <wsdl:output message="tns:ExistsKeyASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExistsKeyB">
+      <wsdl:input message="tns:ExistsKeyBSoapIn" />
+      <wsdl:output message="tns:ExistsKeyBSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ImagingServiceSoap" type="tns:ImagingServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExistsKeyA">
+      <soap:operation soapAction="http://slyg.com.co/miharu/ExistsKeyA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistsKeyB">
+      <soap:operation soapAction="http://slyg.com.co/miharu/ExistsKeyB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ImagingServiceSoap12" type="tns:ImagingServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExistsKeyA">
+      <soap12:operation soapAction="http://slyg.com.co/miharu/ExistsKeyA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistsKeyB">
+      <soap12:operation soapAction="http://slyg.com.co/miharu/ExistsKeyB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ImagingService">
+    <wsdl:port name="ImagingServiceSoap" binding="tns:ImagingServiceSoap">
+      <soap:address location="http://localhost:55313/ImagingService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ImagingServiceSoap12" binding="tns:ImagingServiceSoap12">
+      <soap12:address location="http://localhost:55313/ImagingService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{389D9072-5A0A-4DB0-841D-0181C21712D1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Miharu.Imaging.Confinanciera</RootNamespace>
+    <AssemblyName>Miharu.Imaging.Confinanciera</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AFPDFLibNET, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\Banagrario - Desarrollo\Referencias\DLLs\AFPDFLibNET.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\Banagrario - Desarrollo\Referencias\DLLs\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Gios.PSM, Version=2.0.2009.701, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Banagrario - Desarrollo\Referencias\DLLs\Gios.PSM.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Slyg.Data">
+      <HintPath>..\..\Miharu.LoanFactory\Referencias\DLLs\Slyg.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools">
+      <HintPath>..\..\Miharu.LoanFactory\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="_images\basic\add.png" />
+    <Content Include="_images\basic\adjuntar.png" />
+    <Content Include="_images\basic\ajax-loader.gif" />
+    <Content Include="_images\basic\bg_btn.gif" />
+    <Content Include="_images\basic\bg_btnOver.gif" />
+    <Content Include="_images\basic\construccion.png" />
+    <Content Include="_images\basic\delete.png" />
+    <Content Include="_images\basic\download.png" />
+    <Content Include="_images\basic\Instalador.jpg" />
+    <Content Include="_images\basic\jefe.png" />
+    <Content Include="_images\basic\logoSLYG.png" />
+    <Content Include="_images\basic\mas.gif" />
+    <Content Include="_images\basic\menos.gif" />
+    <Content Include="_images\basic\upload.png" />
+    <Content Include="_images\basic\visualizar.png" />
+    <Content Include="_images\basic\zoom.png" />
+    <Content Include="_images\extenciones\icon-app.png" />
+    <Content Include="_images\extenciones\icon-c.png" />
+    <Content Include="_images\extenciones\icon-compressed.png" />
+    <Content Include="_images\extenciones\icon-cplusplus.png" />
+    <Content Include="_images\extenciones\icon-excel.png" />
+    <Content Include="_images\extenciones\icon-flash.png" />
+    <Content Include="_images\extenciones\icon-htm.png" />
+    <Content Include="_images\extenciones\icon-java.png" />
+    <Content Include="_images\extenciones\icon-music.png" />
+    <Content Include="_images\extenciones\icon-pdf.png" />
+    <Content Include="_images\extenciones\icon-picture.png" />
+    <Content Include="_images\extenciones\icon-powerpoint.png" />
+    <Content Include="_images\extenciones\icon-text.png" />
+    <Content Include="_images\extenciones\icon-word.png" />
+    <Content Include="_images\extenciones\icon-xxx.png" />
+    <Content Include="_images\logo_cliente\logo.bmp" />
+    <Content Include="_images\logo_cliente\Logo2.bmp" />
+    <Content Include="_images\marco\footer-left.jpg" />
+    <Content Include="_images\marco\footer-right.jpg" />
+    <Content Include="_images\marco\header-menucenter.jpg" />
+    <Content Include="_images\marco\header-menuleft.jpg" />
+    <Content Include="_images\marco\header-menuleftv.jpg" />
+    <Content Include="_images\marco\header-menurightv.jpg" />
+    <Content Include="_images\marco\header-menuseparator.jpg" />
+    <Content Include="_images\marco\header-name.jpg" />
+    <Content Include="_images\marco\header1.jpg" />
+    <Content Include="_images\marco\header2a.jpg" />
+    <Content Include="_images\marco\header2b.jpg" />
+    <Content Include="_images\marco\header3a.jpg" />
+    <Content Include="_images\marco\header3b.jpg" />
+    <Content Include="_images\marco\LogoEsfera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\FormBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\PaginaBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\PaginaBasePopUp.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\Program.vb" />
+    <Compile Include="App_Code\UserWebControlBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="errorform.aspx.designer.vb">
+      <DependentUpon>errorform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="errorform.aspx.vb">
+      <DependentUpon>errorform.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MiharuMasterForm.master.designer.vb">
+      <DependentUpon>MiharuMasterForm.master</DependentUpon>
+    </Compile>
+    <Compile Include="MiharuMasterForm.master.vb">
+      <DependentUpon>MiharuMasterForm.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MiharuMasterPage.master.designer.vb">
+      <DependentUpon>MiharuMasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="MiharuMasterPage.master.vb">
+      <DependentUpon>MiharuMasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MiharuMasterPopUp.master.designer.vb">
+      <DependentUpon>MiharuMasterPopUp.master</DependentUpon>
+    </Compile>
+    <Compile Include="MiharuMasterPopUp.master.vb">
+      <DependentUpon>MiharuMasterPopUp.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="_controls\wucFilter.ascx.designer.vb">
+      <DependentUpon>wucFilter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_controls\wucFilter.ascx.vb">
+      <DependentUpon>wucFilter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_controls\wucMenu.ascx.designer.vb">
+      <DependentUpon>wucMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_controls\wucMenu.ascx.vb">
+      <DependentUpon>wucMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_sitio\about.aspx.designer.vb">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_sitio\about.aspx.vb">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_sitio\blankform.aspx.designer.vb">
+      <DependentUpon>blankform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_sitio\blankform.aspx.vb">
+      <DependentUpon>blankform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_sitio\consulta\consulta.aspx.designer.vb">
+      <DependentUpon>consulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_sitio\consulta\consulta.aspx.vb">
+      <DependentUpon>consulta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="_sitio\informes\InformeGeneral.aspx.designer.vb">
+      <DependentUpon>InformeGeneral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_sitio\informes\InformeGeneral.aspx.vb">
+      <DependentUpon>InformeGeneral.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="_sitio\informes\informe_novedades.aspx.designer.vb">
+      <DependentUpon>informe_novedades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_sitio\informes\informe_novedades.aspx.vb">
+      <DependentUpon>informe_novedades.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="_sitio\informes\ReporteTrazabilidad.aspx.designer.vb">
+      <DependentUpon>ReporteTrazabilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_sitio\informes\ReporteTrazabilidad.aspx.vb">
+      <DependentUpon>ReporteTrazabilidad.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="_sitio\login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_sitio\login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_sitio\MiharuMainForm.aspx.designer.vb">
+      <DependentUpon>MiharuMainForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_sitio\MiharuMainForm.aspx.vb">
+      <DependentUpon>MiharuMainForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_sitio\paginaconstruccion.aspx.designer.vb">
+      <DependentUpon>paginaconstruccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_sitio\paginaconstruccion.aspx.vb">
+      <DependentUpon>paginaconstruccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_sitio\Validaciones.aspx.designer.vb">
+      <DependentUpon>Validaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_sitio\Validaciones.aspx.vb">
+      <DependentUpon>Validaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_informes\productividad_general.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_informes\productividad_usuario.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_informes\Report_InformeGeneral.rdlc" />
+    <EmbeddedResource Include="_informes\Report_InformeNovedades.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="errorform.aspx" />
+    <Content Include="MiharuMasterForm.master" />
+    <Content Include="MiharuMasterPage.master" />
+    <Content Include="MiharuMasterPopUp.master" />
+    <Content Include="_controls\wucFilter.ascx" />
+    <Content Include="_controls\wucMenu.ascx" />
+    <Content Include="_images\basic\arrow_down.png" />
+    <Content Include="_images\basic\arrow_up.png" />
+    <Content Include="_images\basic\edit.png" />
+    <Content Include="_images\basic\festivos.png" />
+    <Content Include="_images\basic\folder.png" />
+    <Content Include="_images\basic\lock.png" />
+    <Content Include="_images\basic\MiharuImagingImage.png" />
+    <Content Include="_images\basic\MiharuImagingIcon.ico" />
+    <Content Include="_images\basic\page.png" />
+    <Content Include="_images\menu\administracion.png" />
+    <Content Include="_images\menu\Calendario.png" />
+    <Content Include="_images\menu\centroprocesamiento.png" />
+    <Content Include="_images\menu\entransferencia.png" />
+    <Content Include="_images\menu\estructura.png" />
+    <Content Include="_images\menu\esquema.png" />
+    <Content Include="_images\menu\informe.png" />
+    <Content Include="_images\opciones\folder_go.png" />
+    <Content Include="_images\menu\menu-header-hover.gif" />
+    <Content Include="_images\menu\menu-header-selected-hover.gif" />
+    <Content Include="_images\menu\menu-header-selected.gif" />
+    <Content Include="_images\menu\menu-header.gif" />
+    <Content Include="_images\menu\pendientes.png" />
+    <Content Include="_images\menu\puestotrabajo.png" />
+    <Content Include="_images\menu\server.png" />
+    <Content Include="_images\menu\tipologias.png" />
+    <Content Include="_images\menu\proyecto.png" />
+    <Content Include="_images\menu\conexion.png" />
+    <Content Include="_images\menu\roles.png" />
+    <Content Include="_images\menu\base.png" />
+    <Content Include="_images\menu\busqueda.png" />
+    <Content Include="_images\menu\campo_busqueda.png" />
+    <Content Include="_images\menu\consulta.png" />
+    <Content Include="_images\menu\entidad.png" />
+    <Content Include="_images\menu\informes.png" />
+    <Content Include="_images\menu\listas.png" />
+    <Content Include="_images\menu\plantillas_email.png" />
+    <Content Include="_images\menu\seguridad.png" />
+    <Content Include="_images\menu\transferencias.png" />
+    <Content Include="_images\menu\transferir.png" />
+    <Content Include="_images\menu\usuarios.png" />
+    <Content Include="_images\opciones\chart_bar.png" />
+    <Content Include="_images\opciones\consulta.png" />
+    <Content Include="_images\opciones\delete.png" />
+    <Content Include="_images\opciones\detalle.png" />
+    <Content Include="_images\opciones\document_find.png" />
+    <Content Include="_images\opciones\festivos.png" />
+    <Content Include="_images\opciones\Grupos.png" />
+    <Content Include="_images\opciones\nuevo.png" />
+    <Content Include="_images\opciones\save.png" />
+    <Content Include="_images\opciones\search.png" />
+    <Content Include="_scripts\MiharuMasterFormScript.js" />
+    <Content Include="_scripts\MiharuMasterPageScript.js" />
+    <Content Include="_scripts\MiharuMasterPopUpScript.js" />
+    <Content Include="_scripts\ModalBox\icon-error.png" />
+    <Content Include="_scripts\ModalBox\icon-information.png" />
+    <Content Include="_scripts\ModalBox\icon-warning.png" />
+    <Content Include="_scripts\ModalBox\lib\effects.js" />
+    <Content Include="_scripts\ModalBox\lib\prototype.js" />
+    <Content Include="_scripts\ModalBox\lib\scriptaculous.js" />
+    <Content Include="_scripts\ModalBox\modalbox.css" />
+    <Content Include="_scripts\ModalBox\modalbox.js" />
+    <Content Include="_scripts\ModalBox\spinner.gif" />
+    <Content Include="_scripts\windows\javascripts\debug.js" />
+    <Content Include="_scripts\windows\javascripts\effects.js" />
+    <Content Include="_scripts\windows\javascripts\extended_debug.js" />
+    <Content Include="_scripts\windows\javascripts\prototype.js" />
+    <Content Include="_scripts\windows\javascripts\tooltip.js" />
+    <Content Include="_scripts\windows\javascripts\window.js" />
+    <Content Include="_scripts\windows\javascripts\window_effects.js" />
+    <Content Include="_scripts\windows\javascripts\window_ext.js" />
+    <Content Include="_scripts\windows\themes\alert.css" />
+    <Content Include="_scripts\windows\themes\alert\bottom.gif" />
+    <Content Include="_scripts\windows\themes\alert\bottom_left.gif" />
+    <Content Include="_scripts\windows\themes\alert\bottom_right.gif" />
+    <Content Include="_scripts\windows\themes\alert\left.gif" />
+    <Content Include="_scripts\windows\themes\alert\overlay.png" />
+    <Content Include="_scripts\windows\themes\alert\progress.gif" />
+    <Content Include="_scripts\windows\themes\alert\right.gif" />
+    <Content Include="_scripts\windows\themes\alert\top.gif" />
+    <Content Include="_scripts\windows\themes\alert\top_left.gif" />
+    <Content Include="_scripts\windows\themes\alert\top_right.gif" />
+    <Content Include="_scripts\windows\themes\alert_lite.css" />
+    <Content Include="_scripts\windows\themes\alphacube.css" />
+    <Content Include="_scripts\windows\themes\alphacube\bottom-left-c.gif" />
+    <Content Include="_scripts\windows\themes\alphacube\bottom-middle.gif" />
+    <Content Include="_scripts\windows\themes\alphacube\bottom-right-c.gif" />
+    <Content Include="_scripts\windows\themes\alphacube\button-close-focus.gif" />
+    <Content Include="_scripts\windows\themes\alphacube\button-max-focus.gif" />
+    <Content Include="_scripts\windows\themes\alphacube\button-min-focus.gif" />
+    <Content Include="_scripts\windows\themes\alphacube\frame-left.gif" />
+    <Content Include="_scripts\windows\themes\alphacube\frame-right.gif" />
+    <Content Include="_scripts\windows\themes\alphacube\left-top.gif" />
+    <Content Include="_scripts\windows\themes\alphacube\right-top.gif" />
+    <Content Include="_scripts\windows\themes\alphacube\top-middle.gif" />
+    <Content Include="_scripts\windows\themes\behavior.htc" />
+    <Content Include="_scripts\windows\themes\darkX.css" />
+    <Content Include="_scripts\windows\themes\darkX\button-close-focused.png" />
+    <Content Include="_scripts\windows\themes\darkX\button-maximize-focused.png" />
+    <Content Include="_scripts\windows\themes\darkX\button-minimize-focused.png" />
+    <Content Include="_scripts\windows\themes\darkX\frame-bottom-left-focused.png" />
+    <Content Include="_scripts\windows\themes\darkX\frame-bottom-mid-focused.png" />
+    <Content Include="_scripts\windows\themes\darkX\frame-bottom-right-focused.png" />
+    <Content Include="_scripts\windows\themes\darkX\frame-left-focused.png" />
+    <Content Include="_scripts\windows\themes\darkX\frame-right-focused.png" />
+    <Content Include="_scripts\windows\themes\darkX\titlebar-left-focused.png" />
+    <Content Include="_scripts\windows\themes\darkX\titlebar-mid-focused.png" />
+    <Content Include="_scripts\windows\themes\darkX\titlebar-right-focused.png" />
+    <Content Include="_scripts\windows\themes\debug.css" />
+    <Content Include="_scripts\windows\themes\default.css" />
+    <Content Include="_scripts\windows\themes\default\bottom_left.gif" />
+    <Content Include="_scripts\windows\themes\default\bottom_mid.gif" />
+    <Content Include="_scripts\windows\themes\default\bottom_right.gif" />
+    <Content Include="_scripts\windows\themes\default\bottom_right_resize.gif" />
+    <Content Include="_scripts\windows\themes\default\center_left.gif" />
+    <Content Include="_scripts\windows\themes\default\center_right.gif" />
+    <Content Include="_scripts\windows\themes\default\clear.gif" />
+    <Content Include="_scripts\windows\themes\default\close.gif" />
+    <Content Include="_scripts\windows\themes\default\inspect.gif" />
+    <Content Include="_scripts\windows\themes\default\maximize.gif" />
+    <Content Include="_scripts\windows\themes\default\minimize.gif" />
+    <Content Include="_scripts\windows\themes\default\overlay.png" />
+    <Content Include="_scripts\windows\themes\default\resize.gif" />
+    <Content Include="_scripts\windows\themes\default\sizer.gif" />
+    <Content Include="_scripts\windows\themes\default\top_left.gif" />
+    <Content Include="_scripts\windows\themes\default\top_mid.gif" />
+    <Content Include="_scripts\windows\themes\default\top_right.gif" />
+    <Content Include="_scripts\windows\themes\iefix\blank.gif" />
+    <Content Include="_scripts\windows\themes\iefix\iepngfix.css" />
+    <Content Include="_scripts\windows\themes\iefix\iepngfix.htc" />
+    <Content Include="_scripts\windows\themes\lighting.css" />
+    <Content Include="_scripts\windows\themes\lighting\background_buttons.gif" />
+    <Content Include="_scripts\windows\themes\lighting\bottom-left-blue.png" />
+    <Content Include="_scripts\windows\themes\lighting\bottom-left-darkblue.png" />
+    <Content Include="_scripts\windows\themes\lighting\bottom-left-green.png" />
+    <Content Include="_scripts\windows\themes\lighting\bottom-left-grey.png" />
+    <Content Include="_scripts\windows\themes\lighting\bottom-middle-blue.png" />
+    <Content Include="_scripts\windows\themes\lighting\bottom-middle-darkblue.png" />
+    <Content Include="_scripts\windows\themes\lighting\bottom-middle-green.png" />
+    <Content Include="_scripts\windows\themes\lighting\bottom-middle-grey.png" />
+    <Content Include="_scripts\windows\themes\lighting\bottom-right-blue.png" />
+    <Content Include="_scripts\windows\themes\lighting\bottom-right-darkblue.png" />
+    <Content Include="_scripts\windows\themes\lighting\bottom-right-green.png" />
+    <Content Include="_scripts\windows\themes\lighting\bottom-right-grey.png" />
+    <Content Include="_scripts\windows\themes\lighting\button-close-blue.png" />
+    <Content Include="_scripts\windows\themes\lighting\button-close-darkblue.png" />
+    <Content Include="_scripts\windows\themes\lighting\button-close-green.png" />
+    <Content Include="_scripts\windows\themes\lighting\button-close-grey.png" />
+    <Content Include="_scripts\windows\themes\lighting\button-maximize-blue.png" />
+    <Content Include="_scripts\windows\themes\lighting\button-maximize-darkblue.png" />
+    <Content Include="_scripts\windows\themes\lighting\button-maximize-green.png" />
+    <Content Include="_scripts\windows\themes\lighting\button-maximize-grey.png" />
+    <Content Include="_scripts\windows\themes\lighting\button-minimize-blue.png" />
+    <Content Include="_scripts\windows\themes\lighting\button-minimize-darkblue.png" />
+    <Content Include="_scripts\windows\themes\lighting\button-minimize-green.png" />
+    <Content Include="_scripts\windows\themes\lighting\button-minimize-grey.png" />
+    <Content Include="_scripts\windows\themes\lighting\left-blue.png" />
+    <Content Include="_scripts\windows\themes\lighting\left-darkblue.png" />
+    <Content Include="_scripts\windows\themes\lighting\left-green.png" />
+    <Content Include="_scripts\windows\themes\lighting\left-grey.png" />
+    <Content Include="_scripts\windows\themes\lighting\pngbehavior.htc" />
+    <Content Include="_scripts\windows\themes\lighting\right-blue.png" />
+    <Content Include="_scripts\windows\themes\lighting\right-darkblue.png" />
+    <Content Include="_scripts\windows\themes\lighting\right-green.png" />
+    <Content Include="_scripts\windows\themes\lighting\right-grey.png" />
+    <Content Include="_scripts\windows\themes\lighting\spinner.gif" />
+    <Content Include="_scripts\windows\themes\lighting\top-left-blue.png" />
+    <Content Include="_scripts\windows\themes\lighting\top-left-darkblue.png" />
+    <Content Include="_scripts\windows\themes\lighting\top-left-green.png" />
+    <Content Include="_scripts\windows\themes\lighting\top-left-grey.png" />
+    <Content Include="_scripts\windows\themes\lighting\top-middle-blue.png" />
+    <Content Include="_scripts\windows\themes\lighting\top-middle-darkblue.png" />
+    <Content Include="_scripts\windows\themes\lighting\top-middle-green.png" />
+    <Content Include="_scripts\windows\themes\lighting\top-middle-grey.png" />
+    <Content Include="_scripts\windows\themes\lighting\top-right-blue.png" />
+    <Content Include="_scripts\windows\themes\lighting\top-right-darkblue.png" />
+    <Content Include="_scripts\windows\themes\lighting\top-right-green.png" />
+    <Content Include="_scripts\windows\themes\lighting\top-right-grey.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x.css" />
+    <Content Include="_scripts\windows\themes\mac_os_x\B.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x\BL.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x\BL_Main.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x\BR.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x\BR_Main.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x\B_Main.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x\close.gif" />
+    <Content Include="_scripts\windows\themes\mac_os_x\L.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x\L_Main.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x\maximize.gif" />
+    <Content Include="_scripts\windows\themes\mac_os_x\minimize.gif" />
+    <Content Include="_scripts\windows\themes\mac_os_x\R.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x\R_Main.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x\T.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x\TL.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x\TL_Main.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x\TR.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x\TR_Main.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x\T_Main.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x_dialog.css" />
+    <Content Include="_scripts\windows\themes\mac_os_x_dialog\B.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x_dialog\bg.gif" />
+    <Content Include="_scripts\windows\themes\mac_os_x_dialog\BL.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x_dialog\BR.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x_dialog\close.gif" />
+    <Content Include="_scripts\windows\themes\mac_os_x_dialog\L.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x_dialog\maximize.gif" />
+    <Content Include="_scripts\windows\themes\mac_os_x_dialog\minimize.gif" />
+    <Content Include="_scripts\windows\themes\mac_os_x_dialog\R.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x_dialog\T.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x_dialog\TL.png" />
+    <Content Include="_scripts\windows\themes\mac_os_x_dialog\TR.png" />
+    <Content Include="_scripts\windows\themes\nuncio.css" />
+    <Content Include="_scripts\windows\themes\nuncio\bottom_left.png" />
+    <Content Include="_scripts\windows\themes\nuncio\bottom_mid.png" />
+    <Content Include="_scripts\windows\themes\nuncio\bottom_right.png" />
+    <Content Include="_scripts\windows\themes\nuncio\center_left.png" />
+    <Content Include="_scripts\windows\themes\nuncio\center_right.png" />
+    <Content Include="_scripts\windows\themes\nuncio\close.png" />
+    <Content Include="_scripts\windows\themes\nuncio\minimize.png" />
+    <Content Include="_scripts\windows\themes\nuncio\overlay.png" />
+    <Content Include="_scripts\windows\themes\nuncio\top_left.png" />
+    <Content Include="_scripts\windows\themes\nuncio\top_mid.png" />
+    <Content Include="_scripts\windows\themes\nuncio\top_right.png" />
+    <Content Include="_scripts\windows\themes\spread.css" />
+    <Content Include="_scripts\windows\themes\spread\.gif" />
+    <Content Include="_scripts\windows\themes\spread\bottom-left-c.gif" />
+    <Content Include="_scripts\windows\themes\spread\bottom-middle.gif" />
+    <Content Include="_scripts\windows\themes\spread\bottom-right-c.gif" />
+    <Content Include="_scripts\windows\themes\spread\button-close-focus.gif" />
+    <Content Include="_scripts\windows\themes\spread\button-max-focus.gif" />
+    <Content Include="_scripts\windows\themes\spread\button-min-focus.gif" />
+    <Content Include="_scripts\windows\themes\spread\frame-left.gif" />
+    <Content Include="_scripts\windows\themes\spread\frame-right.gif" />
+    <Content Include="_scripts\windows\themes\spread\left-top.gif" />
+    <Content Include="_scripts\windows\themes\spread\right-top.gif" />
+    <Content Include="_scripts\windows\themes\spread\top-middle.gif" />
+    <Content Include="_sitio\about.aspx" />
+    <Content Include="_sitio\blankform.aspx" />
+    <Content Include="_sitio\consulta\consulta.aspx" />
+    <Content Include="_sitio\informes\InformeGeneral.aspx" />
+    <Content Include="_sitio\informes\informe_novedades.aspx" />
+    <Content Include="_sitio\informes\ReporteTrazabilidad.aspx" />
+    <Content Include="_sitio\login.aspx" />
+    <Content Include="_sitio\MiharuMainForm.aspx" />
+    <Content Include="_sitio\paginaconstruccion.aspx" />
+    <Content Include="_sitio\Validaciones.aspx" />
+    <Content Include="_styles\DialogBox\bottom-left-c.gif" />
+    <Content Include="_styles\DialogBox\bottom-middle.gif" />
+    <Content Include="_styles\DialogBox\bottom-right-c.gif" />
+    <Content Include="_styles\DialogBox\button-close-cold.gif" />
+    <Content Include="_styles\DialogBox\button-close-focus.gif" />
+    <Content Include="_styles\DialogBox\button-max-focus.gif" />
+    <Content Include="_styles\DialogBox\button-min-focus.gif" />
+    <Content Include="_styles\DialogBox\frame-left.gif" />
+    <Content Include="_styles\DialogBox\frame-right.gif" />
+    <Content Include="_styles\DialogBox\left-top.gif" />
+    <Content Include="_styles\DialogBox\right-top.gif" />
+    <Content Include="_styles\DialogBox\top-middle.gif" />
+    <Content Include="_styles\gridview\extjs\header-hover.gif" />
+    <Content Include="_styles\gridview\extjs\header.gif" />
+    <Content Include="_styles\gridview\GridviewStyles.css" />
+    <Content Include="_styles\gridview\sharepoint\calnumBttnover.gif" />
+    <Content Include="_styles\gridview\sharepoint\calnumBttntodayHot_obsidian.GIF" />
+    <Content Include="_styles\gridview\sharepoint\calnumBttntoday_obsidian.gif" />
+    <Content Include="_styles\gridview\sharepoint\calnumBttn_obsidian.gif" />
+    <Content Include="_styles\gridview\SlygGridView.js" />
+    <Content Include="_styles\gridview\tablecloth\tr_back.gif" />
+    <Content Include="_styles\gridview\WhiteChromeGridView\Images\FireworksNative\HeaderChrome.png" />
+    <Content Include="_styles\gridview\WhiteChromeGridView\Images\FireworksNative\HeaderChromeBlack.png" />
+    <Content Include="_styles\gridview\WhiteChromeGridView\Images\FireworksNative\HeaderGamer.png" />
+    <Content Include="_styles\gridview\WhiteChromeGridView\Images\FireworksNative\HeaderGlassBlack.png" />
+    <Content Include="_styles\gridview\WhiteChromeGridView\Images\FireworksNative\HeaderSoftGrey.png" />
+    <Content Include="_styles\gridview\WhiteChromeGridView\Images\FireworksNative\HeaderWhiteChrome.png" />
+    <Content Include="_styles\gridview\WhiteChromeGridView\Images\FireworksNative\PagerGamer.png" />
+    <Content Include="_styles\gridview\WhiteChromeGridView\Images\HeaderChrome.jpg" />
+    <Content Include="_styles\gridview\WhiteChromeGridView\Images\HeaderChromeBlack.jpg" />
+    <Content Include="_styles\gridview\WhiteChromeGridView\Images\HeaderGamer.jpg" />
+    <Content Include="_styles\gridview\WhiteChromeGridView\Images\HeaderGamer_Hover.jpg" />
+    <Content Include="_styles\gridview\WhiteChromeGridView\Images\HeaderGamer_left.jpg" />
+    <Content Include="_styles\gridview\WhiteChromeGridView\Images\HeaderGlassBlack.jpg" />
+    <Content Include="_styles\gridview\WhiteChromeGridView\Images\HeaderSoftGrey.jpg" />
+    <Content Include="_styles\gridview\WhiteChromeGridView\Images\HeaderWhiteChrome.jpg" />
+    <Content Include="_styles\gridview\WhiteChromeGridView\Images\PagerGamer.jpg" />
+    <Content Include="_styles\gridview\WhiteChromeGridView\WhiteChromeGridView.css" />
+    <Content Include="_styles\gridview\yui-datatable\sprite.png" />
+    <Content Include="_styles\StyleSheet_DialogBox.css" />
+    <Content Include="_styles\StyleSheet_Marco.css" />
+    <Content Include="_styles\StyleSheet_Menu.css" />
+    <Content Include="_styles\StyleSheet_Miharu.css" />
+    <Content Include="_styles\Tabpanel\ie\ie_tabbacker_720x296.jpg" />
+    <Content Include="_styles\Tabpanel\ie\tab_selected.gif" />
+    <Content Include="_styles\Tabpanel\ie\tab_unselected.gif" />
+    <Content Include="_styles\Tabpanel\msngallery\displaypictures.png" />
+    <Content Include="_styles\Tabpanel\msngallery\emoticons.png" />
+    <Content Include="_styles\Tabpanel\msngallery\sidebar.png" />
+    <Content Include="_styles\Tabpanel\msngallery\sideshow.png" />
+    <Content Include="_styles\Tabpanel\msngallery\tab-line.png" />
+    <Content Include="_styles\Tabpanel\msngallery\toolbarbuttons.png" />
+    <Content Include="_styles\Tabpanel\msngallery\webgadgets.png" />
+    <Content Include="_styles\Tabpanel\msngallery\winks.png" />
+    <Content Include="_styles\Tabpanel\TabpanelStyles.css" />
+    <Content Include="_styles\Tabpanel\technorati\tab-line.png" />
+    <Content Include="_styles\Tabpanel\technorati\tab.png" />
+    <Content Include="_styles\Tabpanel\xp\tab-active-left.gif" />
+    <Content Include="_styles\Tabpanel\xp\tab-active-right.gif" />
+    <Content Include="_styles\Tabpanel\xp\tab-active.gif" />
+    <Content Include="_styles\Tabpanel\xp\tab-hover-left.gif" />
+    <Content Include="_styles\Tabpanel\xp\tab-hover-right.gif" />
+    <Content Include="_styles\Tabpanel\xp\tab-hover.gif" />
+    <Content Include="_styles\Tabpanel\xp\tab-left.gif" />
+    <Content Include="_styles\Tabpanel\xp\tab-line.gif" />
+    <Content Include="_styles\Tabpanel\xp\tab-right.gif" />
+    <Content Include="_styles\Tabpanel\xp\tab.gif" />
+    <Content Include="_styles\Tabpanel\yui\sprite.png" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - LoanFactory\Miharu.LoanFactory.DataAccess\Miharu.LoanFactory.DataAccess.csproj">
+      <Project>{C935B939-DABD-4924-BF9E-32AC330E7269}</Project>
+      <Name>Miharu.LoanFactory.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.Library\Miharu.Security.Library.csproj">
+      <Project>{BC90E6AA-55BE-4E52-841E-FE48A32E750D}</Project>
+      <Name>Miharu.Security.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.Web.Controls\Miharu.Web.Controls.vbproj">
+      <Project>{702DF77B-6910-487B-9B76-F2C8BA0952E5}</Project>
+      <Name>Miharu.Web.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Imaging.DataAccess\Miharu.Imaging.DataAccess.csproj">
+      <Project>{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}</Project>
+      <Name>Miharu.Imaging.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Imaging.Library\Miharu.Imaging.Library.vbproj">
+      <Project>{9501AE9F-03BC-4933-9EC3-84BCD96CC795}</Project>
+      <Name>Miharu.Imaging.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="bin\" />
+    <Folder Include="obj\" />
+    <Folder Include="_temporal\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>19966</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Miharu.Imaging.Confinanciera</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

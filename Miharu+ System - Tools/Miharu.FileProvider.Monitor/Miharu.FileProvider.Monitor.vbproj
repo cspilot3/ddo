@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{24C77913-0521-4987-AD16-9B6B2BF596EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>Miharu.FileProvider.Monitor</RootNamespace>
+    <AssemblyName>Miharu.FileProviderDDO.Monitor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>Imagenes\FileProviderIcon.ico</ApplicationIcon>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Slyg.Data">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\AboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Program.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formularios\AboutForm.resx">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagenes\add.png" />
+    <Content Include="Imagenes\Directorios.png" />
+    <Content Include="Imagenes\save.png" />
+    <Content Include="Imagenes\Servicio.png" />
+    <Content Include="Imagenes\delete.png" />
+    <Content Include="Imagenes\FileProviderIconInctivo.ico" />
+    <Content Include="Imagenes\FileProviderIconActivo.ico" />
+    <Content Include="Imagenes\Instalador.jpg" />
+    <Content Include="Imagenes\Pausa.png" />
+    <Content Include="Imagenes\Iniciar.png" />
+    <Content Include="Imagenes\Detener.png" />
+    <Content Include="Imagenes\Reiniciar.png" />
+    <Content Include="Imagenes\FileProviderIcon.ico" />
+    <Content Include="Imagenes\FileProviderMonitor.png" />
+    <Content Include="Imagenes\Aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.DataAccess\Miharu.Imaging.DataAccess.csproj">
+      <Project>{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}</Project>
+      <Name>Miharu.Imaging.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.Library\Miharu.Security.Library.csproj">
+      <Project>{BC90E6AA-55BE-4E52-841E-FE48A32E750D}</Project>
+      <Name>Miharu.Security.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.FileProvider.Library\Miharu.FileProvider.Library.vbproj">
+      <Project>{1E21AD2F-0D1F-47A5-94C5-A75D6DAAAC8F}</Project>
+      <Name>Miharu.FileProvider.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.FileProvider\Miharu.FileProvider.vbproj">
+      <Project>{A81EC87D-4B7A-49C4-91C9-534BFC0C805E}</Project>
+      <Name>Miharu.FileProvider</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

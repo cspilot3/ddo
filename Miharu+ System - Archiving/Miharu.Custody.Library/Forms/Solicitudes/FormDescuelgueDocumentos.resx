@@ -1,0 +1,870 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FiltrosGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="lblEntidadEncontrada.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblEntidadEncontrada.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblEntidadEncontrada.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 23</value>
+  </data>
+  <data name="lblEntidadEncontrada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 13</value>
+  </data>
+  <data name="lblEntidadEncontrada.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblEntidadEncontrada.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="&gt;&gt;lblEntidadEncontrada.Name" xml:space="preserve">
+    <value>lblEntidadEncontrada</value>
+  </data>
+  <data name="&gt;&gt;lblEntidadEncontrada.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEntidadEncontrada.Parent" xml:space="preserve">
+    <value>FiltrosGroupBox</value>
+  </data>
+  <data name="&gt;&gt;lblEntidadEncontrada.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BuscarButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="BuscarButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="BuscarButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>823, 16</value>
+  </data>
+  <data name="BuscarButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 26</value>
+  </data>
+  <data name="BuscarButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="BuscarButton.Text" xml:space="preserve">
+    <value>&amp;Buscar</value>
+  </data>
+  <data name="BuscarButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;BuscarButton.Name" xml:space="preserve">
+    <value>BuscarButton</value>
+  </data>
+  <data name="&gt;&gt;BuscarButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BuscarButton.Parent" xml:space="preserve">
+    <value>FiltrosGroupBox</value>
+  </data>
+  <data name="&gt;&gt;BuscarButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="SolicitudesDesktopComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="SolicitudesDesktopComboBox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="SolicitudesDesktopComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>490, 20</value>
+  </data>
+  <data name="SolicitudesDesktopComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 21</value>
+  </data>
+  <data name="SolicitudesDesktopComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;SolicitudesDesktopComboBox.Name" xml:space="preserve">
+    <value>SolicitudesDesktopComboBox</value>
+  </data>
+  <data name="&gt;&gt;SolicitudesDesktopComboBox.Type" xml:space="preserve">
+    <value>Miharu.Desktop.Controls.DesktopComboBox.DesktopComboBoxControl, Miharu.Desktop.Controls, Version=1.1.9019.17947, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;SolicitudesDesktopComboBox.Parent" xml:space="preserve">
+    <value>FiltrosGroupBox</value>
+  </data>
+  <data name="&gt;&gt;SolicitudesDesktopComboBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblSolicitudes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="lblSolicitudes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSolicitudes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>401, 23</value>
+  </data>
+  <data name="lblSolicitudes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="lblSolicitudes.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblSolicitudes.Text" xml:space="preserve">
+    <value>Solicitudes:</value>
+  </data>
+  <data name="&gt;&gt;lblSolicitudes.Name" xml:space="preserve">
+    <value>lblSolicitudes</value>
+  </data>
+  <data name="&gt;&gt;lblSolicitudes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSolicitudes.Parent" xml:space="preserve">
+    <value>FiltrosGroupBox</value>
+  </data>
+  <data name="&gt;&gt;lblSolicitudes.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblEntidad.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="lblEntidad.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblEntidad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="lblEntidad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="lblEntidad.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblEntidad.Text" xml:space="preserve">
+    <value>Entidad:</value>
+  </data>
+  <data name="&gt;&gt;lblEntidad.Name" xml:space="preserve">
+    <value>lblEntidad</value>
+  </data>
+  <data name="&gt;&gt;lblEntidad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEntidad.Parent" xml:space="preserve">
+    <value>FiltrosGroupBox</value>
+  </data>
+  <data name="&gt;&gt;lblEntidad.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="FiltrosGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="FiltrosGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 7</value>
+  </data>
+  <data name="FiltrosGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>942, 55</value>
+  </data>
+  <data name="FiltrosGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="FiltrosGroupBox.Text" xml:space="preserve">
+    <value>Filtro de Búsqueda</value>
+  </data>
+  <data name="&gt;&gt;FiltrosGroupBox.Name" xml:space="preserve">
+    <value>FiltrosGroupBox</value>
+  </data>
+  <data name="&gt;&gt;FiltrosGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FiltrosGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FiltrosGroupBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnImprimirCB.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="btnImprimirCB.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnImprimirCB.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnImprimirCB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 21</value>
+  </data>
+  <data name="btnImprimirCB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 26</value>
+  </data>
+  <data name="btnImprimirCB.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="btnImprimirCB.Text" xml:space="preserve">
+    <value>&amp;Imprimir CB</value>
+  </data>
+  <data name="btnImprimirCB.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;btnImprimirCB.Name" xml:space="preserve">
+    <value>btnImprimirCB</value>
+  </data>
+  <data name="&gt;&gt;btnImprimirCB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnImprimirCB.Parent" xml:space="preserve">
+    <value>SolicitudesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;btnImprimirCB.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CargandoPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>388, 153</value>
+  </data>
+  <data name="CargandoPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 122</value>
+  </data>
+  <data name="CargandoPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="CargandoPictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="CargandoPictureBox.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;CargandoPictureBox.Name" xml:space="preserve">
+    <value>CargandoPictureBox</value>
+  </data>
+  <data name="&gt;&gt;CargandoPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CargandoPictureBox.Parent" xml:space="preserve">
+    <value>SolicitudesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;CargandoPictureBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnExportar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="btnExportar.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnExportar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 21</value>
+  </data>
+  <data name="btnExportar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 26</value>
+  </data>
+  <data name="btnExportar.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnExportar.Text" xml:space="preserve">
+    <value>&amp;Exportar</value>
+  </data>
+  <data name="btnExportar.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;btnExportar.Name" xml:space="preserve">
+    <value>btnExportar</value>
+  </data>
+  <data name="&gt;&gt;btnExportar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnExportar.Parent" xml:space="preserve">
+    <value>SolicitudesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;btnExportar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnDescuelgue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="btnDescuelgue.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnDescuelgue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>822, 15</value>
+  </data>
+  <data name="btnDescuelgue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 26</value>
+  </data>
+  <data name="btnDescuelgue.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btnDescuelgue.Text" xml:space="preserve">
+    <value>&amp;Descuelgue</value>
+  </data>
+  <data name="btnDescuelgue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;btnDescuelgue.Name" xml:space="preserve">
+    <value>btnDescuelgue</value>
+  </data>
+  <data name="&gt;&gt;btnDescuelgue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDescuelgue.Parent" xml:space="preserve">
+    <value>SolicitudesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;btnDescuelgue.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cbarrasDesktopCBarrasControl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Courier New, 8.25pt</value>
+  </data>
+  <data name="cbarrasDesktopCBarrasControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>456, 21</value>
+  </data>
+  <data name="cbarrasDesktopCBarrasControl.MaxLength" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="cbarrasDesktopCBarrasControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 20</value>
+  </data>
+  <data name="cbarrasDesktopCBarrasControl.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;cbarrasDesktopCBarrasControl.Name" xml:space="preserve">
+    <value>cbarrasDesktopCBarrasControl</value>
+  </data>
+  <data name="&gt;&gt;cbarrasDesktopCBarrasControl.Type" xml:space="preserve">
+    <value>Miharu.Desktop.Controls.DesktopCBarras.DesktopCBarrasControl, Miharu.Desktop.Controls, Version=1.1.9019.17947, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbarrasDesktopCBarrasControl.Parent" xml:space="preserve">
+    <value>SolicitudesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;cbarrasDesktopCBarrasControl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblCbarras.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCbarras.Location" type="System.Drawing.Point, System.Drawing">
+    <value>345, 24</value>
+  </data>
+  <data name="lblCbarras.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 13</value>
+  </data>
+  <data name="lblCbarras.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblCbarras.Text" xml:space="preserve">
+    <value>Código de Barras:</value>
+  </data>
+  <data name="&gt;&gt;lblCbarras.Name" xml:space="preserve">
+    <value>lblCbarras</value>
+  </data>
+  <data name="&gt;&gt;lblCbarras.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCbarras.Parent" xml:space="preserve">
+    <value>SolicitudesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;lblCbarras.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="SolicitudesDataGridView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <metadata name="CBarras_Folder.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="CBarras_Folder.HeaderText" xml:space="preserve">
+    <value>CBarras Carpeta</value>
+  </data>
+  <data name="CBarras_Folder.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <metadata name="CBarras_File.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="CBarras_File.HeaderText" xml:space="preserve">
+    <value>CBarras Documento</value>
+  </data>
+  <data name="CBarras_File.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CBarras_File.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <metadata name="Data_1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Data_1.HeaderText" xml:space="preserve">
+    <value>Data_1</value>
+  </data>
+  <data name="Data_1.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <metadata name="Data_2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Data_2.HeaderText" xml:space="preserve">
+    <value>Data_2</value>
+  </data>
+  <metadata name="Nombre_Esquema.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Nombre_Esquema.HeaderText" xml:space="preserve">
+    <value>Esquema</value>
+  </data>
+  <data name="Nombre_Esquema.Width" type="System.Int32, mscorlib">
+    <value>83</value>
+  </data>
+  <metadata name="Nombre_Documento.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Nombre_Documento.HeaderText" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="Nombre_Documento.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <metadata name="Codigo_Boveda_Posicion.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Codigo_Boveda_Posicion.HeaderText" xml:space="preserve">
+    <value>Ubicacion</value>
+  </data>
+  <data name="Codigo_Boveda_Posicion.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <metadata name="Codigo_Caja.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Codigo_Caja.HeaderText" xml:space="preserve">
+    <value>Caja</value>
+  </data>
+  <metadata name="Nombre_Solicitud_Tipo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Nombre_Solicitud_Tipo.HeaderText" xml:space="preserve">
+    <value>Tipo Solicitud</value>
+  </data>
+  <data name="Nombre_Solicitud_Tipo.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <metadata name="R.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="R.HeaderText" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <metadata name="id_Item_Solicitud.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="id_Item_Solicitud.HeaderText" xml:space="preserve">
+    <value>id_Item_Solicitud</value>
+  </data>
+  <data name="id_Item_Solicitud.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SolicitudesDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 55</value>
+  </data>
+  <data name="SolicitudesDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>925, 305</value>
+  </data>
+  <data name="SolicitudesDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;SolicitudesDataGridView.Name" xml:space="preserve">
+    <value>SolicitudesDataGridView</value>
+  </data>
+  <data name="&gt;&gt;SolicitudesDataGridView.Type" xml:space="preserve">
+    <value>Miharu.Desktop.Controls.DesktopDataGridView.DesktopDataGridViewControl, Miharu.Desktop.Controls, Version=1.1.9019.17947, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;SolicitudesDataGridView.Parent" xml:space="preserve">
+    <value>SolicitudesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;SolicitudesDataGridView.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="SolicitudesGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="SolicitudesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 64</value>
+  </data>
+  <data name="SolicitudesGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="SolicitudesGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>941, 370</value>
+  </data>
+  <data name="SolicitudesGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="SolicitudesGroupBox.Text" xml:space="preserve">
+    <value>1- Solicitudes</value>
+  </data>
+  <data name="&gt;&gt;SolicitudesGroupBox.Name" xml:space="preserve">
+    <value>SolicitudesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;SolicitudesGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SolicitudesGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SolicitudesGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="CerrarButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="CerrarButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomLeft</value>
+  </data>
+  <data name="CerrarButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>827, 440</value>
+  </data>
+  <data name="CerrarButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 23</value>
+  </data>
+  <data name="CerrarButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="CerrarButton.Text" xml:space="preserve">
+    <value>&amp;Cerrar</value>
+  </data>
+  <data name="CerrarButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;CerrarButton.Name" xml:space="preserve">
+    <value>CerrarButton</value>
+  </data>
+  <data name="&gt;&gt;CerrarButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CerrarButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CerrarButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="SaveFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="DescuelgueBackgroundWorker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>140, 17</value>
+  </metadata>
+  <metadata name="DescuelgueBackgroundWorker_2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>344, 17</value>
+  </metadata>
+  <data name="pbDescolgando.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbDescolgando.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 440</value>
+  </data>
+  <data name="pbDescolgando.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 16</value>
+  </data>
+  <data name="pbDescolgando.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="pbDescolgando.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pbDescolgando.Name" xml:space="preserve">
+    <value>pbDescolgando</value>
+  </data>
+  <data name="&gt;&gt;pbDescolgando.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbDescolgando.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbDescolgando.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblDescolgando.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="lblDescolgando.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDescolgando.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblDescolgando.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblDescolgando.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 443</value>
+  </data>
+  <data name="lblDescolgando.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 13</value>
+  </data>
+  <data name="lblDescolgando.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblDescolgando.Text" xml:space="preserve">
+    <value>Descolgando...</value>
+  </data>
+  <data name="lblDescolgando.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblDescolgando.Name" xml:space="preserve">
+    <value>lblDescolgando</value>
+  </data>
+  <data name="&gt;&gt;lblDescolgando.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDescolgando.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblDescolgando.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>951, 468</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAD///8BOjo6jzo6OvM6OjrzOjo68zo6OvM6OjrzOjo68zo6OvM6OjrzOjo68zo6OvM6OjrzOjo68zo6
+        OvM6OjqP////ATw8PPPW1tb/1tbW/9bW1v/W1tb/1tbW/9bW1v/W1tb/1tbW/9bW1v/W1tb/1tbW/9bW
+        1v/W1tb/PDw88////wFAQEDzzs7O/5OTk/+SkpL/kpKS/5GRkf+SkpL/kZGR/5GRkf+SkpL/kZGR/5GR
+        kf+RkZH/zs7O/0BAQPP///8BQ0ND88rKyv+SkpL/6Ojo/+jo6P/o6Oj/6Ojo/+jo6P/o6Oj/6Ojo/+jo
+        6P/o6Oj/kZGR/8rKyv9DQ0Pz////AUhISPPJycn/k5OT/5KSkv+SkpL/kpKS/5KSkv+SkpL/kZGR/5GR
+        kf+SkpL/kpKS/5KSkv/Jycn/SEhI8////wFMTEzzzc3N/83Nzf/Nzc3/zc3N/83Nzf/Nzc3/zc3N/83N
+        zf/Nzc3/zc3N/83Nzf/Nzc3/zc3N/0xMTPP///8BUVFR89HR0f/R0dH/0dHR/9HR0f/R0dH/0dHR/9HR
+        0f/R0dH/0dHR/9HR0f/R0dH/0dHR/9HR0f9RUVHz////AVZWVvPW1tb/1tbW/1VVVf/W1tb/1tbW/9bW
+        1v+YmJj/mZmZ/5iYmP+ZmZn/mZmZ/5mZmf/W1tb/VlZW8////wFcXFzz2tra/1VVVf9VVVX/kZGR/9ra
+        2v/a2tr/2tra/9ra2v/a2tr/2tra/9ra2v/a2tr/2tra/1xcXPP///8BYWFh89/f3//f39//39/f/1VV
+        Vf/f39//39/f/9/f3//f39//m5ub/5ubm/+bm5v/m5ub/9/f3/9hYWHz////AWZmZvPk5OT/5OTk/1VV
+        Vf/k5OT/5OTk/+Tk5P/k5OT/5OTk/+Tk5P/k5OT/5OTk/+Tk5P/k5OT/ZmZm8////wFra2vz6Ojo/1VV
+        Vf/o6Oj/6Ojo/+jo6P/o6Oj/6Ojo/+jo6P/o6Oj/gYGB/4GBgf+BgYH/gYGB/2tra8P///8Bb29v8+zs
+        7P+RkZH/VVVV/1VVVf/s7Oz/7Ozs/+zs7P/s7Oz/7Ozs/4GBgf/s7Oz/1NTU/Xh4ePNvb29f////AXR0
+        dPPw8PD/8PDw/1VVVf/w8PD/8PDw//Dw8P/w8PD/8PDw//Dw8P+BgYH/2NjY/X19ffN0dHRf////Af//
+        /wF3d3fz8/Pz//Pz8//z8/P/8/Pz//Pz8//z8/P/8/Pz//Pz8//z8/P/gYGB/4CAgPN3d3df////Af//
+        /wH///8Be3t7j3t7e/N7e3vze3t783t7e/N7e3vze3t783t7e/N7e3vze3t783t7e8N7e3tf////Af//
+        /wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//w==
+</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Descuelgue Documentos</value>
+  </data>
+  <data name="&gt;&gt;CBarras_Folder.Name" xml:space="preserve">
+    <value>CBarras_Folder</value>
+  </data>
+  <data name="&gt;&gt;CBarras_Folder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CBarras_File.Name" xml:space="preserve">
+    <value>CBarras_File</value>
+  </data>
+  <data name="&gt;&gt;CBarras_File.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Data_1.Name" xml:space="preserve">
+    <value>Data_1</value>
+  </data>
+  <data name="&gt;&gt;Data_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Data_2.Name" xml:space="preserve">
+    <value>Data_2</value>
+  </data>
+  <data name="&gt;&gt;Data_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Nombre_Esquema.Name" xml:space="preserve">
+    <value>Nombre_Esquema</value>
+  </data>
+  <data name="&gt;&gt;Nombre_Esquema.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Nombre_Documento.Name" xml:space="preserve">
+    <value>Nombre_Documento</value>
+  </data>
+  <data name="&gt;&gt;Nombre_Documento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Codigo_Boveda_Posicion.Name" xml:space="preserve">
+    <value>Codigo_Boveda_Posicion</value>
+  </data>
+  <data name="&gt;&gt;Codigo_Boveda_Posicion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Codigo_Caja.Name" xml:space="preserve">
+    <value>Codigo_Caja</value>
+  </data>
+  <data name="&gt;&gt;Codigo_Caja.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Nombre_Solicitud_Tipo.Name" xml:space="preserve">
+    <value>Nombre_Solicitud_Tipo</value>
+  </data>
+  <data name="&gt;&gt;Nombre_Solicitud_Tipo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;R.Name" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="&gt;&gt;R.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;id_Item_Solicitud.Name" xml:space="preserve">
+    <value>id_Item_Solicitud</value>
+  </data>
+  <data name="&gt;&gt;id_Item_Solicitud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SaveFileDialog.Name" xml:space="preserve">
+    <value>SaveFileDialog</value>
+  </data>
+  <data name="&gt;&gt;SaveFileDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DescuelgueBackgroundWorker.Name" xml:space="preserve">
+    <value>DescuelgueBackgroundWorker</value>
+  </data>
+  <data name="&gt;&gt;DescuelgueBackgroundWorker.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DescuelgueBackgroundWorker_2.Name" xml:space="preserve">
+    <value>DescuelgueBackgroundWorker_2</value>
+  </data>
+  <data name="&gt;&gt;DescuelgueBackgroundWorker_2.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormDescuelgueDocumentos</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

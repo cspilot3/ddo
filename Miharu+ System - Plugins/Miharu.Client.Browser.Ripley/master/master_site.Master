@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master_site.master.cs" Inherits="Miharu.Client.Browser.master.master_site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>:: MIHARU ::</title>
+    <link href="~/images/basic/SlygBlockIcon.ico" rel="shortcut icon" type="image/x-icon" />
+    <asp:Literal ID="HeadScriptsLiteral" runat="server"></asp:Literal>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <script type="text/javascript">
+        function ValidateSubmit() {
+            return true;
+        }
+    </script>
+    <form id="master_siteForm" runat="server" onsubmit='return ValidateSubmit()'>
+    <div id="SessionTimeOutDialog" title="Próximo a finalizar la sesión">
+        <p>
+            No se ha detectado actividad. El sistema finalizará la sesión en: <span style="font-weight: bold" id="SessionTimeOutSeconds">20</span>. Si desea continuar trabajando haga clic en "Continuar", de lo contrario haga clic en "Salir"</p>
+    </div>
+    <div id="dialog-message">
+        <div id="dialog-message-icon">
+        </div>
+        <div class="dialog-message-text">
+            <span id="dialog-message-text"></span>
+        </div>
+    </div>
+    <div id='ProcessDiv' class="Loading_div Lock_div">
+        <img class="ProcessImg" src="<%= ResolveClientUrl("~/images/basic/ajax-loader.gif") %>" alt="" />
+    </div>
+    <div id='LockDiv' class="Loading_div Lock_div">
+    </div>
+    <div class="a-panel" style="top: 0; left: 0; right: 0; bottom: 0">
+        <div id="header">
+            <div id="header-top-left">
+            </div>
+            <div id="header-top">
+            </div>
+            <div id="header-top-right">
+            </div>
+            <div id="header-left">
+            </div>
+            <div id="header-center">
+            </div>
+            <div id="header-right">
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

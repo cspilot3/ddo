@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8FDD3462-307C-4A33-ACC8-75A0803B1F73}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Exportador_Acciones_Valores</RootNamespace>
+    <AssemblyName>Pruebas</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Sandbox\Acciones y Valores\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\PruebasFileSending.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\PruebasFileSending.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C1A896A141838B0DA09ED9B102820879375B06E5</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PruebasFileSending_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Exportador_Acciones_Valores.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\PruebasFileSending.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\PruebasFileSending.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Slyg.Data, Version=2.7.1.26852, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools, Version=2.0.4495.24813, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FormExportar.cs">
+      <SubType>Form</SubType>
+    </None>
+    <None Include="FormExportar.Designer.cs">
+      <DependentUpon>FormExportar.cs</DependentUpon>
+    </None>
+    <Compile Include="FormCanjeTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCanjeTransfer.Designer.cs">
+      <DependentUpon>FormCanjeTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFileProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFileProvider.Designer.cs">
+      <DependentUpon>FormFileProvider.cs</DependentUpon>
+    </Compile>
+    <None Include="FormMailSending.cs">
+      <SubType>Form</SubType>
+    </None>
+    <None Include="FormMailSending.Designer.cs">
+      <DependentUpon>FormMailSending.cs</DependentUpon>
+    </None>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormImagen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImagen.Designer.cs">
+      <DependentUpon>FormImagen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRemoting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRemoting.Designer.cs">
+      <DependentUpon>FormRemoting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCanjeTransfer.resx">
+      <DependentUpon>FormCanjeTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExportar.resx">
+      <DependentUpon>FormExportar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFileProvider.resx">
+      <DependentUpon>FormFileProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImagen.resx">
+      <DependentUpon>FormImagen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMailSending.resx">
+      <DependentUpon>FormMailSending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRemoting.resx">
+      <DependentUpon>FormRemoting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagenes\Aceptar.png" />
+    <Content Include="Imagenes\btnDestape.png" />
+    <Content Include="Imagenes\cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.DataAccess\Miharu.Imaging.DataAccess.csproj">
+      <Project>{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}</Project>
+      <Name>Miharu.Imaging.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.FileTransfer\Miharu.Imaging.FileTransfer.vbproj">
+      <Project>{03DD4899-4909-41A6-98B6-837D066DCDFE}</Project>
+      <Name>Miharu.Imaging.FileTransfer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.DataAccess\Miharu.Security.DataAccess.csproj">
+      <Project>{902B10BC-8630-4730-9AC5-763CA7D2CB31}</Project>
+      <Name>Miharu.Security.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.FileProvider.Library\Miharu.FileProvider.Library.vbproj">
+      <Project>{1e21ad2f-0d1f-47a5-94c5-a75d6daaac8f}</Project>
+      <Name>Miharu.FileProvider.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.FileProvider\Miharu.FileProvider.vbproj">
+      <Project>{a81ec87d-4b7a-49c4-91c9-534bfc0c805e}</Project>
+      <Name>Miharu.FileProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.MailSender\Miharu.MailSender.vbproj">
+      <Project>{1C79CD98-8A74-424D-8232-D4C247257B8E}</Project>
+      <Name>Miharu.MailSender</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Slyg.Tools.Imaging\Slyg.Tools.Imaging.csproj">
+      <Project>{B41AFD53-3FE1-4C20-B359-1C5FC16954C4}</Project>
+      <Name>Slyg.Tools.Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.CargueImagenes\Miharu.CargueImagenes.vbproj">
+      <Project>{f5fea5ec-c04d-4119-b532-12f33269ebf1}</Project>
+      <Name>Miharu.CargueImagenes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.CargueLog\Miharu.CargueLog.vbproj">
+      <Project>{73a78a77-6d01-47d0-a237-48a6bc208170}</Project>
+      <Name>Miharu.CargueLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.DDOTransfer\Miharu.DDOTransfer.vbproj">
+      <Project>{4daa2e1d-0eff-4aec-83f6-1bb4473c0136}</Project>
+      <Name>Miharu.DDOTransfer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.EnvioCorreo\Miharu.EnvioCorreo.vbproj">
+      <Project>{759380fb-f8a1-4b56-b348-d960c1fe51b8}</Project>
+      <Name>Miharu.EnvioCorreo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.FileSending.Library\Miharu.FileSending.Library.vbproj">
+      <Project>{8E524381-A7E2-4D60-B33C-5C6615252B49}</Project>
+      <Name>Miharu.FileSending.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.FileSending\Miharu.FileSending.vbproj">
+      <Project>{92198602-FE0F-460D-B3A4-E0E38B50FDFE}</Project>
+      <Name>Miharu.FileSending</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Reportes\Miharu.Reportes.vbproj">
+      <Project>{e77e43e5-a154-48f4-b9e8-b0bfcf574788}</Project>
+      <Name>Miharu.Reportes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.SofTracTransfer\Miharu.SofTracTransfer.vbproj">
+      <Project>{120D22E9-14AA-4B96-9E51-7508BAEACAE6}</Project>
+      <Name>Miharu.SofTracTransfer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.SynergeticsTransfer\Miharu.SynergeticsTransfer.vbproj">
+      <Project>{F0420074-C0B5-49C2-90FA-2E3BD9AEB315}</Project>
+      <Name>Miharu.SynergeticsTransfer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

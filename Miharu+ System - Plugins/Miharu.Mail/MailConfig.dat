@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CanjeTransferConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Intervalo>5000</Intervalo>
+  <SecurityWebServiceURL>http://apbanagrariocert/miharu.security.webservice/SecurityService.asmx</SecurityWebServiceURL>
+  <User>Service</User>
+  <Password>ru7X8Y7xy91/Gvlex3ZC0g==</Password>
+</CanjeTransferConfig>

@@ -1,0 +1,3 @@
+﻿Public Class FormCargueLogRespuestaDeceval
+
+End Class

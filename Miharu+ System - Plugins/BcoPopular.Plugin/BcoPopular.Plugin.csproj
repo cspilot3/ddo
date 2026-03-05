@@ -1,0 +1,805 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5B43F84-F0E4-4DDF-B68F-B48016CB31CE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BcoPopular.Plugin</RootNamespace>
+    <AssemblyName>BcoPopular.Plugin</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\12\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="RestSharp">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Data">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Imaging\Asistidos\AsistidosPlugin.cs" />
+    <Compile Include="Imaging\Asistidos\EventExecuterAsistidos.cs" />
+    <Compile Include="Imaging\Asistidos\FormImagingWorkSpaceWrapperAsistidos.cs" />
+    <Compile Include="Imaging\Asistidos\Forms\FormExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Asistidos\Forms\FormExport.Designer.cs">
+      <DependentUpon>FormExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Asistidos\Forms\frmFechaRecaudo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Asistidos\Forms\frmFechaRecaudo.Designer.cs">
+      <DependentUpon>frmFechaRecaudo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Asistidos\Forms\frmReportesImpuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Asistidos\Forms\frmReportesImpuestos.Designer.cs">
+      <DependentUpon>frmReportesImpuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\ClassGenerarImagenesApi.cs" />
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\FormExportWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\FormExportWeb.Designer.cs">
+      <DependentUpon>FormExportWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Cuadre_Consolidado_Tarjetas\Cuadre_Consolidado_Tarjetas.Designer.cs">
+      <DependentUpon>Cuadre_Consolidado_Tarjetas.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DetalladoRechazos\DetalladoRechazos.cs">
+      <DependentUpon>DetalladoRechazos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DetalladoRechazos\DetalladoRechazos1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetalladoRechazos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DetalladoRechazos\DetalladoRechazos1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetalladoRechazos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DetalladoRegistrosPorFecha\DetalladoPorFecha1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetalladoPorFecha.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_Detallado_FisicoVsLog\DetalladoFisicosVsLog1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetalladoFisicosVsLog.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Hacienda\CreacionPDF.cs" />
+    <Compile Include="Imaging\Hacienda\EventExecuterHacienda.cs" />
+    <Compile Include="Imaging\Hacienda\FormImagingWorkSpaceWrapperHacienda.cs" />
+    <Compile Include="Imaging\Hacienda\Forms\FormExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Hacienda\Forms\FormExport.Designer.cs">
+      <DependentUpon>FormExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Hacienda\Forms\frmFechaRecaudo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Hacienda\Forms\frmFechaRecaudo.Designer.cs">
+      <DependentUpon>frmFechaRecaudo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Hacienda\Forms\frmFechaRecaudoCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Hacienda\Forms\frmFechaRecaudoCiudad.Designer.cs">
+      <DependentUpon>frmFechaRecaudoCiudad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Hacienda\Forms\frmReportesImpuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Hacienda\Forms\frmReportesImpuestos.Designer.cs">
+      <DependentUpon>frmReportesImpuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Hacienda\Forms\Rpts\Reporte_Dispercion100\Dispercion100.Designer.cs">
+      <DependentUpon>Dispercion100.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Imaging\Hacienda\HaciendaPlugin.cs" />
+    <Compile Include="Imaging\GobernacionAntioquia\CreacionPDF.cs" />
+    <Compile Include="Imaging\GobernacionAntioquia\FormImagingWorkSpaceWrapperGobernacionAntioquia.cs" />
+    <Compile Include="Imaging\GobernacionAntioquia\EventExecuterGobernacionAntioquia.cs" />
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\FormExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\FormExport.Designer.cs">
+      <DependentUpon>FormExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\frmFechaRecaudoCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\frmFechaRecaudoCiudad.Designer.cs">
+      <DependentUpon>frmFechaRecaudoCiudad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\frmFechaRecaudo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\frmFechaRecaudo.Designer.cs">
+      <DependentUpon>frmFechaRecaudo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\frmReportesImpuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\frmReportesImpuestos.Designer.cs">
+      <DependentUpon>frmReportesImpuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Consolidado\Consolidado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Consolidado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Cuadre\Cuadre.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cuadre.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Dispercion100\Dispercion100.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dispercion100.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DispercionDepto\DispercionDepto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DispercionDepto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DispercionMunicipio\DispercionMunicipio.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DispercionMunicipio.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DispercionSistematizacion\DispercionSistematizacion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DispercionSistematizacion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Pagos\Pagos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pagos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Sistematizacion\Sistematizacion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sistematizacion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Tarjetas\Tarjetas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tarjetas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionAntioquia\GobernacionAntioquiaPlugin.cs" />
+    <Compile Include="Imaging\GobernacionSantander\CreacionPDF.cs" />
+    <Compile Include="Imaging\GobernacionSantander\EventExecuterGobernacionSantander.cs" />
+    <Compile Include="Imaging\GobernacionSantander\FormImagingWorkSpaceWrapperGobernacionSantander.cs" />
+    <Compile Include="Imaging\GobernacionSantander\Forms\FormExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\GobernacionSantander\Forms\FormExport.Designer.cs">
+      <DependentUpon>FormExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionSantander\Forms\frmFechaRecaudo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\GobernacionSantander\Forms\frmFechaRecaudo.Designer.cs">
+      <DependentUpon>frmFechaRecaudo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionSantander\Forms\frmFechaRecaudoCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\GobernacionSantander\Forms\frmFechaRecaudoCiudad.Designer.cs">
+      <DependentUpon>frmFechaRecaudoCiudad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionSantander\Forms\frmReportesImpuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\GobernacionSantander\Forms\frmReportesImpuestos.Designer.cs">
+      <DependentUpon>frmReportesImpuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_Dispercion100\Dispercion100.Designer.cs">
+      <DependentUpon>Dispercion100.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DispercionDepto\DispercionDepto.Designer.cs">
+      <DependentUpon>DispercionDepto.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DispercionMunicipio\DispercionMunicipio.Designer.cs">
+      <DependentUpon>DispercionMunicipio.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DispercionSistematizacion\DispercionSistematizacion.Designer.cs">
+      <DependentUpon>DispercionSistematizacion.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_TapaRadicacionDispersion\TapaRadicacionFisicos_A.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TapaRadicacionFisicos_A.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_TapaRadicacionDispersion\TapaRadicacionFisicos_R.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TapaRadicacionFisicos_R.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\GobernacionSantander\GobernacionSantanderPlugin.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_DB_Miharu_IntegrationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_DB_Miharu_IntegrationDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Imaging\Asistidos\Forms\FormExport.resx">
+      <DependentUpon>FormExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Asistidos\Forms\frmFechaRecaudo.resx">
+      <DependentUpon>frmFechaRecaudo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Asistidos\Forms\frmReportesImpuestos.resx">
+      <DependentUpon>frmReportesImpuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Asistidos\Forms\Rpts\Conciliacion\Reporte_ConciliacionPrecaptura.rdlc" />
+    <EmbeddedResource Include="Imaging\Asistidos\Forms\Rpts\InformeMensual\Informe_Mensual_Cliente.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionAntioquia\Forms\FormExportWeb.resx">
+      <DependentUpon>FormExportWeb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Cuadre_Consolidado_Tarjetas\Reporte_Cuadre_Consolidado_Tarjetas.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DetalladoRechazos\Reporte_DetalladoRechazos.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DetalladoRechazos\Reporte_DetalladoRechazos.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DetalladoRegistrosPorFecha\Reporte_DetalladoPorFecha.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_Detallado_FisicoVsLog\Reporte_DetalladoFisicosVsLog.rdlc" />
+    <EmbeddedResource Include="Imaging\Hacienda\Forms\FormExport.resx">
+      <DependentUpon>FormExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Hacienda\Forms\frmFechaRecaudo.resx">
+      <DependentUpon>frmFechaRecaudo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Hacienda\Forms\frmFechaRecaudoCiudad.resx">
+      <DependentUpon>frmFechaRecaudoCiudad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Hacienda\Forms\frmReportesImpuestos.resx">
+      <DependentUpon>frmReportesImpuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Hacienda\Forms\Rpts\Reporte_Dispercion100\Reporte_Dispercion100.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionAntioquia\Forms\FormExport.resx">
+      <DependentUpon>FormExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\GobernacionAntioquia\Forms\frmFechaRecaudoCiudad.resx">
+      <DependentUpon>frmFechaRecaudoCiudad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\GobernacionAntioquia\Forms\frmFechaRecaudo.resx">
+      <DependentUpon>frmFechaRecaudo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\GobernacionAntioquia\Forms\frmReportesImpuestos.resx">
+      <DependentUpon>frmReportesImpuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Consolidado\Reporte_Consolidado.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Cuadre\Reporte_Cuadre.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Dispercion100\Reporte_Dispercion100.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DispercionDepto\Reporte_DispercionDepto.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DispercionMunicipio\Reporte_DispercionMunicipio.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DispercionSistematizacion\Reporte_DispercionSistematizacion.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Pagos\Reporte_Pagos.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Sistematizacion\Reporte_Sistematizacion.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Tarjetas\Reporte_Tarjetas.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionSantander\Forms\FormExport.resx">
+      <DependentUpon>FormExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\GobernacionSantander\Forms\frmFechaRecaudo.resx">
+      <DependentUpon>frmFechaRecaudo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\GobernacionSantander\Forms\frmFechaRecaudoCiudad.resx">
+      <DependentUpon>frmFechaRecaudoCiudad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\GobernacionSantander\Forms\frmReportesImpuestos.resx">
+      <DependentUpon>frmReportesImpuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_Dispercion100\Reporte_Dispercion100.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DispercionDepto\Reporte_DispercionDepto.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DispercionMunicipio\Reporte_DispercionMunicipio.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DispercionSistematizacion\Reporte_DispercionSistematizacion.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_TapaRadicacionDispersion\Reporte_TapaRadicacionDispersion.rdlc" />
+    <EmbeddedResource Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_TapaRadicacionFisicos\Reporte_TapaRadicacionFisicos.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Cuadre_Consolidado_Tarjetas\Cuadre_Consolidado_Tarjetas.xsc">
+      <DependentUpon>Cuadre_Consolidado_Tarjetas.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Cuadre_Consolidado_Tarjetas\Cuadre_Consolidado_Tarjetas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cuadre_Consolidado_Tarjetas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Cuadre_Consolidado_Tarjetas\Cuadre_Consolidado_Tarjetas.xss">
+      <DependentUpon>Cuadre_Consolidado_Tarjetas.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DetalladoRechazos\DetalladoRechazos.xsc">
+      <DependentUpon>DetalladoRechazos.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DetalladoRechazos\DetalladoRechazos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DetalladoRechazos1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DetalladoRechazos\DetalladoRechazos.xss">
+      <DependentUpon>DetalladoRechazos.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DetalladoRechazos\DetalladoRechazos.xsc">
+      <DependentUpon>DetalladoRechazos.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DetalladoRechazos\DetalladoRechazos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DetalladoRechazos1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DetalladoRechazos\DetalladoRechazos.xss">
+      <DependentUpon>DetalladoRechazos.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DetalladoRegistrosPorFecha\DetalladoPorFecha.xsc">
+      <DependentUpon>DetalladoPorFecha.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DetalladoRegistrosPorFecha\DetalladoPorFecha.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DetalladoPorFecha1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DetalladoRegistrosPorFecha\DetalladoPorFecha.xss">
+      <DependentUpon>DetalladoPorFecha.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_Detallado_FisicoVsLog\DetalladoFisicosVsLog.xsc">
+      <DependentUpon>DetalladoFisicosVsLog.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_Detallado_FisicoVsLog\DetalladoFisicosVsLog.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DetalladoFisicosVsLog1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_Detallado_FisicoVsLog\DetalladoFisicosVsLog.xss">
+      <DependentUpon>DetalladoFisicosVsLog.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Hacienda\Forms\Rpts\Reporte_Dispercion100\Dispercion100.xsc">
+      <DependentUpon>Dispercion100.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Hacienda\Forms\Rpts\Reporte_Dispercion100\Dispercion100.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Dispercion100.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\Hacienda\Forms\Rpts\Reporte_Dispercion100\Dispercion100.xss">
+      <DependentUpon>Dispercion100.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Consolidado\Consolidado.xsc">
+      <DependentUpon>Consolidado.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Consolidado\Consolidado.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Consolidado.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Consolidado\Consolidado.xss">
+      <DependentUpon>Consolidado.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Cuadre\Cuadre.xsc">
+      <DependentUpon>Cuadre.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Cuadre\Cuadre.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cuadre.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Cuadre\Cuadre.xss">
+      <DependentUpon>Cuadre.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Dispercion100\Dispercion100.xsc">
+      <DependentUpon>Dispercion100.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Dispercion100\Dispercion100.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Dispercion100.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Dispercion100\Dispercion100.xss">
+      <DependentUpon>Dispercion100.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DispercionDepto\DispercionDepto.xsc">
+      <DependentUpon>DispercionDepto.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DispercionDepto\DispercionDepto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DispercionDepto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DispercionDepto\DispercionDepto.xss">
+      <DependentUpon>DispercionDepto.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DispercionMunicipio\DispercionMunicipio.xsc">
+      <DependentUpon>DispercionMunicipio.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DispercionMunicipio\DispercionMunicipio.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DispercionMunicipio.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DispercionMunicipio\DispercionMunicipio.xss">
+      <DependentUpon>DispercionMunicipio.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DispercionSistematizacion\DispercionSistematizacion.xsc">
+      <DependentUpon>DispercionSistematizacion.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DispercionSistematizacion\DispercionSistematizacion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DispercionSistematizacion.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_DispercionSistematizacion\DispercionSistematizacion.xss">
+      <DependentUpon>DispercionSistematizacion.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Pagos\Pagos.xsc">
+      <DependentUpon>Pagos.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Pagos\Pagos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Pagos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Pagos\Pagos.xss">
+      <DependentUpon>Pagos.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Sistematizacion\Sistematizacion.xsc">
+      <DependentUpon>Sistematizacion.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Sistematizacion\Sistematizacion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Sistematizacion.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Sistematizacion\Sistematizacion.xss">
+      <DependentUpon>Sistematizacion.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Tarjetas\Tarjetas.xsc">
+      <DependentUpon>Tarjetas.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Tarjetas\Tarjetas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Tarjetas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Imaging\GobernacionAntioquia\Forms\Rpts\Reporte_Tarjetas\Tarjetas.xss">
+      <DependentUpon>Tarjetas.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_Dispercion100\Dispercion100.xsc">
+      <DependentUpon>Dispercion100.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_Dispercion100\Dispercion100.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Dispercion100.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_Dispercion100\Dispercion100.xss">
+      <DependentUpon>Dispercion100.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DispercionDepto\DispercionDepto.xsc">
+      <DependentUpon>DispercionDepto.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DispercionDepto\DispercionDepto.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DispercionDepto.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DispercionDepto\DispercionDepto.xss">
+      <DependentUpon>DispercionDepto.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DispercionMunicipio\DispercionMunicipio.xsc">
+      <DependentUpon>DispercionMunicipio.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DispercionMunicipio\DispercionMunicipio.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DispercionMunicipio.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DispercionMunicipio\DispercionMunicipio.xss">
+      <DependentUpon>DispercionMunicipio.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DispercionSistematizacion\DispercionSistematizacion.xsc">
+      <DependentUpon>DispercionSistematizacion.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DispercionSistematizacion\DispercionSistematizacion.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DispercionSistematizacion.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_DispercionSistematizacion\DispercionSistematizacion.xss">
+      <DependentUpon>DispercionSistematizacion.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_TapaRadicacionDispersion\TapaRadicacionFisicos_A.xsc">
+      <DependentUpon>TapaRadicacionFisicos_A.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_TapaRadicacionDispersion\TapaRadicacionFisicos_A.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TapaRadicacionFisicos_A.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_TapaRadicacionDispersion\TapaRadicacionFisicos_A.xss">
+      <DependentUpon>TapaRadicacionFisicos_A.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_TapaRadicacionDispersion\TapaRadicacionFisicos_R.xsc">
+      <DependentUpon>TapaRadicacionFisicos_R.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_TapaRadicacionDispersion\TapaRadicacionFisicos_R.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TapaRadicacionFisicos_R.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Imaging\GobernacionSantander\Forms\Rpts\Reporte_TapaRadicacionDispersion\TapaRadicacionFisicos_R.xss">
+      <DependentUpon>TapaRadicacionFisicos_R.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_DB_Miharu_IntegrationDataSet.xsc">
+      <DependentUpon>_DB_Miharu_IntegrationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_DB_Miharu_IntegrationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_DB_Miharu_IntegrationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_DB_Miharu_IntegrationDataSet.xss">
+      <DependentUpon>_DB_Miharu_IntegrationDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Archiving\Miharu.Archiving.DataAccess\Miharu.Archiving.DataAccess.csproj">
+      <Project>{8AB7AE02-8837-4800-8FDA-EA6CC59A374F}</Project>
+      <Name>Miharu.Archiving.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core\Miharu.Core.vbproj">
+      <Project>{A75C24FE-1992-40E5-AADF-B51ECB1653A8}</Project>
+      <Name>Miharu.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Controls\Miharu.Desktop.Controls.vbproj">
+      <Project>{BBDF4261-7651-4D93-95EE-675260D016AC}</Project>
+      <Name>Miharu.Desktop.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Library\Miharu.Desktop.Library.vbproj">
+      <Project>{60FE71B4-EC25-45F0-B384-B98582D035C7}</Project>
+      <Name>Miharu.Desktop.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.DataAccess\Miharu.Imaging.DataAccess.csproj">
+      <Project>{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}</Project>
+      <Name>Miharu.Imaging.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.Indexer\Miharu.Imaging.Indexer.vbproj">
+      <Project>{3AA91370-45D5-4EBD-A700-99FB10AB6FB4}</Project>
+      <Name>Miharu.Imaging.Indexer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.Library\Miharu.Imaging.Library.vbproj">
+      <Project>{9501AE9F-03BC-4933-9EC3-84BCD96CC795}</Project>
+      <Name>Miharu.Imaging.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.OfflineViewer.Library\Miharu.Imaging.OffLineViewer.Library.vbproj">
+      <Project>{B32D869B-91E0-4A7A-8BE7-D14B3275B30A}</Project>
+      <Name>Miharu.Imaging.OffLineViewer.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.DataAccess\Miharu.Security.DataAccess.csproj">
+      <Project>{902B10BC-8630-4730-9AC5-763CA7D2CB31}</Project>
+      <Name>Miharu.Security.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.Library\Miharu.Security.Library.csproj">
+      <Project>{BC90E6AA-55BE-4E52-841E-FE48A32E750D}</Project>
+      <Name>Miharu.Security.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.FileProvider.Library\Miharu.FileProvider.Library.vbproj">
+      <Project>{1E21AD2F-0D1F-47A5-94C5-A75D6DAAAC8F}</Project>
+      <Name>Miharu.FileProvider.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.Tools\Miharu.Tools.vbproj">
+      <Project>{69D016B1-3E92-4037-9CEB-FE8283479AFD}</Project>
+      <Name>Miharu.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Slyg.Tools.Imaging\Slyg.Tools.Imaging.csproj">
+      <Project>{B41AFD53-3FE1-4C20-B359-1C5FC16954C4}</Project>
+      <Name>Slyg.Tools.Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Integration.DataAccess\Miharu.Integration.DataAccess.csproj">
+      <Project>{8A0078E2-6728-4413-AE6F-FD1EADEB7247}</Project>
+      <Name>Miharu.Integration.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\btnSalir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\CLOSE_FOLDER.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Process-Accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\refresh_grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax-loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax-loader1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAgregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBuscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnCargar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCopiar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnGenerarEstructura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnGuardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSalir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FacturacionMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainFolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Process-Accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Process-Accept1.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

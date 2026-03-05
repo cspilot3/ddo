@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://www.slyg.com.co/" xmlns:s12="http://slyg.com.co/Banagrario.WebService/PR_CentroProcesamiento/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s4="http://slyg.com.co/Banagrario.WebService/PR_MovementList/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s8="http://slyg.com.co/Banagrario.WebService/PR_getFolio/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s5="http://slyg.com.co/Banagrario.WebService/PR_getErrorList/" xmlns:s1="http://slyg.com.co/Banagrario.WebService/PR_getPermisos/" xmlns:s9="http://slyg.com.co/Banagrario.WebService/PR_NewImage/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s10="http://slyg.com.co/Banagrario.WebService/PR_AddFolio/" xmlns:s6="http://microsoft.com/wsdl/types/" xmlns:s2="http://slyg.com.co/Miharu.Security/SecurityService/Result/" xmlns:s11="http://slyg.com.co/Banagrario.WebService/PR_SedeProcesamiento/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s7="http://slyg.com.co/Banagrario.WebService/PR_getFolios/" xmlns:s3="http://slyg.com.co/Banagrario.WebService/PR_getOfficeList/" targetNamespace="http://www.slyg.com.co/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.slyg.com.co/">
+      <s:import namespace="http://slyg.com.co/Banagrario.WebService/PR_getPermisos/" />
+      <s:import namespace="http://slyg.com.co/Banagrario.WebService/PR_getOfficeList/" />
+      <s:import namespace="http://slyg.com.co/Banagrario.WebService/PR_MovementList/" />
+      <s:import namespace="http://slyg.com.co/Banagrario.WebService/PR_getErrorList/" />
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:import namespace="http://slyg.com.co/Banagrario.WebService/PR_getFolios/" />
+      <s:import namespace="http://slyg.com.co/Banagrario.WebService/PR_getFolio/" />
+      <s:import namespace="http://slyg.com.co/Banagrario.WebService/PR_NewImage/" />
+      <s:import namespace="http://slyg.com.co/Banagrario.WebService/PR_AddFolio/" />
+      <s:import namespace="http://slyg.com.co/Banagrario.WebService/PR_SedeProcesamiento/" />
+      <s:import namespace="http://slyg.com.co/Banagrario.WebService/PR_CentroProcesamiento/" />
+      <s:element name="getPermisos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nUser" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getPermisosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getPermisosResult" type="s1:PR_getPermisos" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getOfficeList">
+        <s:complexType />
+      </s:element>
+      <s:element name="getOfficeListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getOfficeListResult" type="s3:PR_getOfficeList" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMovementList">
+        <s:complexType />
+      </s:element>
+      <s:element name="getMovementListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMovementListResult" type="s4:PR_getMovementList" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getErrorList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nOffice" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getErrorListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getErrorListResult" type="s5:PR_getErrorList" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFolios">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nToken" type="s6:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFoliosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getFoliosResult" type="s7:PR_getFolios" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFolio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nToken" type="s6:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="nFolio" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFolioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getFolioResult" type="s8:PR_getFolio" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nToken" type="s6:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="nData" type="s:base64Binary" />
+            <s:element minOccurs="1" maxOccurs="1" name="nUsuario" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nUltimo" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NewImageResult" type="s9:PR_NewImage" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddFolio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nToken" type="s6:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="nData" type="s:base64Binary" />
+            <s:element minOccurs="1" maxOccurs="1" name="nUltimo" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddFolioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddFolioResult" type="s10:PR_AddFolio" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SedeProcesamiento">
+        <s:complexType />
+      </s:element>
+      <s:element name="SedeProcesamientoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SedeProcesamientoResult" type="s11:PR_SedeProcesamiento" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CentroProcesamiento">
+        <s:complexType />
+      </s:element>
+      <s:element name="CentroProcesamientoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CentroProcesamientoResult" type="s12:PR_CentroProcesamiento" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Banagrario.WebService/PR_getPermisos/">
+      <s:import namespace="http://slyg.com.co/Miharu.Security/SecurityService/Result/" />
+      <s:complexType name="PR_getPermisos">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="Permisos" type="s:string" />
+            </s:sequence>
+            <s:attribute name="UserID" type="s:int" use="required" />
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/Result/">
+      <s:complexType name="ResultBase">
+        <s:attribute name="Result" type="s:boolean" use="required" />
+        <s:attribute name="Message" type="s:string" />
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Banagrario.WebService/PR_getOfficeList/">
+      <s:import namespace="http://slyg.com.co/Miharu.Security/SecurityService/Result/" />
+      <s:complexType name="PR_getOfficeList">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="Offices" type="s3:TypeOffice" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="TypeOffice">
+        <s:attribute name="Id" type="s:int" use="required" />
+        <s:attribute name="Name" type="s:string" />
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Banagrario.WebService/PR_MovementList/">
+      <s:import namespace="http://slyg.com.co/Miharu.Security/SecurityService/Result/" />
+      <s:complexType name="PR_getMovementList">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="Movements" type="s4:TypeMovement" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="TypeMovement">
+        <s:attribute name="Id" type="s:int" use="required" />
+        <s:attribute name="Name" type="s:string" />
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Banagrario.WebService/PR_getErrorList/">
+      <s:import namespace="http://slyg.com.co/Miharu.Security/SecurityService/Result/" />
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:complexType name="PR_getErrorList">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="Errors" type="s5:TypeError" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="TypeError">
+        <s:attribute name="Fecha" type="s:string" />
+        <s:attribute name="Token" type="s6:guid" use="required" />
+        <s:attribute name="Name" type="s:string" />
+        <s:attribute name="Document" type="s:string" />
+        <s:attribute name="ErrorID" type="s:short" use="required" />
+        <s:attribute name="Description" type="s:string" />
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Banagrario.WebService/PR_getFolios/">
+      <s:import namespace="http://slyg.com.co/Miharu.Security/SecurityService/Result/" />
+      <s:complexType name="PR_getFolios">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="Folios" type="s:short" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Banagrario.WebService/PR_getFolio/">
+      <s:import namespace="http://slyg.com.co/Miharu.Security/SecurityService/Result/" />
+      <s:complexType name="PR_getFolio">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Data" type="s:base64Binary" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Banagrario.WebService/PR_NewImage/">
+      <s:import namespace="http://slyg.com.co/Miharu.Security/SecurityService/Result/" />
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:complexType name="PR_NewImage">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:attribute name="Token" type="s6:guid" use="required" />
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Banagrario.WebService/PR_AddFolio/">
+      <s:import namespace="http://slyg.com.co/Miharu.Security/SecurityService/Result/" />
+      <s:complexType name="PR_AddFolio">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:attribute name="Folio" type="s:short" use="required" />
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Banagrario.WebService/PR_SedeProcesamiento/">
+      <s:import namespace="http://slyg.com.co/Miharu.Security/SecurityService/Result/" />
+      <s:complexType name="PR_SedeProcesamiento">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:attribute name="SedeProcesamiento" type="s:string" />
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Banagrario.WebService/PR_CentroProcesamiento/">
+      <s:import namespace="http://slyg.com.co/Miharu.Security/SecurityService/Result/" />
+      <s:complexType name="PR_CentroProcesamiento">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:attribute name="CentroProcesamiento" type="s:string" />
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getPermisosSoapIn">
+    <wsdl:part name="parameters" element="tns:getPermisos" />
+  </wsdl:message>
+  <wsdl:message name="getPermisosSoapOut">
+    <wsdl:part name="parameters" element="tns:getPermisosResponse" />
+  </wsdl:message>
+  <wsdl:message name="getOfficeListSoapIn">
+    <wsdl:part name="parameters" element="tns:getOfficeList" />
+  </wsdl:message>
+  <wsdl:message name="getOfficeListSoapOut">
+    <wsdl:part name="parameters" element="tns:getOfficeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMovementListSoapIn">
+    <wsdl:part name="parameters" element="tns:getMovementList" />
+  </wsdl:message>
+  <wsdl:message name="getMovementListSoapOut">
+    <wsdl:part name="parameters" element="tns:getMovementListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getErrorListSoapIn">
+    <wsdl:part name="parameters" element="tns:getErrorList" />
+  </wsdl:message>
+  <wsdl:message name="getErrorListSoapOut">
+    <wsdl:part name="parameters" element="tns:getErrorListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFoliosSoapIn">
+    <wsdl:part name="parameters" element="tns:getFolios" />
+  </wsdl:message>
+  <wsdl:message name="getFoliosSoapOut">
+    <wsdl:part name="parameters" element="tns:getFoliosResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFolioSoapIn">
+    <wsdl:part name="parameters" element="tns:getFolio" />
+  </wsdl:message>
+  <wsdl:message name="getFolioSoapOut">
+    <wsdl:part name="parameters" element="tns:getFolioResponse" />
+  </wsdl:message>
+  <wsdl:message name="NewImageSoapIn">
+    <wsdl:part name="parameters" element="tns:NewImage" />
+  </wsdl:message>
+  <wsdl:message name="NewImageSoapOut">
+    <wsdl:part name="parameters" element="tns:NewImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddFolioSoapIn">
+    <wsdl:part name="parameters" element="tns:AddFolio" />
+  </wsdl:message>
+  <wsdl:message name="AddFolioSoapOut">
+    <wsdl:part name="parameters" element="tns:AddFolioResponse" />
+  </wsdl:message>
+  <wsdl:message name="SedeProcesamientoSoapIn">
+    <wsdl:part name="parameters" element="tns:SedeProcesamiento" />
+  </wsdl:message>
+  <wsdl:message name="SedeProcesamientoSoapOut">
+    <wsdl:part name="parameters" element="tns:SedeProcesamientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="CentroProcesamientoSoapIn">
+    <wsdl:part name="parameters" element="tns:CentroProcesamiento" />
+  </wsdl:message>
+  <wsdl:message name="CentroProcesamientoSoapOut">
+    <wsdl:part name="parameters" element="tns:CentroProcesamientoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BanagrarioServiceSoap">
+    <wsdl:operation name="getPermisos">
+      <wsdl:input message="tns:getPermisosSoapIn" />
+      <wsdl:output message="tns:getPermisosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getOfficeList">
+      <wsdl:input message="tns:getOfficeListSoapIn" />
+      <wsdl:output message="tns:getOfficeListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMovementList">
+      <wsdl:input message="tns:getMovementListSoapIn" />
+      <wsdl:output message="tns:getMovementListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getErrorList">
+      <wsdl:input message="tns:getErrorListSoapIn" />
+      <wsdl:output message="tns:getErrorListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFolios">
+      <wsdl:input message="tns:getFoliosSoapIn" />
+      <wsdl:output message="tns:getFoliosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFolio">
+      <wsdl:input message="tns:getFolioSoapIn" />
+      <wsdl:output message="tns:getFolioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NewImage">
+      <wsdl:input message="tns:NewImageSoapIn" />
+      <wsdl:output message="tns:NewImageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddFolio">
+      <wsdl:input message="tns:AddFolioSoapIn" />
+      <wsdl:output message="tns:AddFolioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SedeProcesamiento">
+      <wsdl:input message="tns:SedeProcesamientoSoapIn" />
+      <wsdl:output message="tns:SedeProcesamientoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CentroProcesamiento">
+      <wsdl:input message="tns:CentroProcesamientoSoapIn" />
+      <wsdl:output message="tns:CentroProcesamientoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BanagrarioServiceSoap" type="tns:BanagrarioServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getPermisos">
+      <soap:operation soapAction="http://www.slyg.com.co/getPermisos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOfficeList">
+      <soap:operation soapAction="http://www.slyg.com.co/getOfficeList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMovementList">
+      <soap:operation soapAction="http://www.slyg.com.co/getMovementList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getErrorList">
+      <soap:operation soapAction="http://www.slyg.com.co/getErrorList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFolios">
+      <soap:operation soapAction="http://www.slyg.com.co/getFolios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFolio">
+      <soap:operation soapAction="http://www.slyg.com.co/getFolio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewImage">
+      <soap:operation soapAction="http://www.slyg.com.co/NewImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddFolio">
+      <soap:operation soapAction="http://www.slyg.com.co/AddFolio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SedeProcesamiento">
+      <soap:operation soapAction="http://www.slyg.com.co/SedeProcesamiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CentroProcesamiento">
+      <soap:operation soapAction="http://www.slyg.com.co/CentroProcesamiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BanagrarioServiceSoap12" type="tns:BanagrarioServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getPermisos">
+      <soap12:operation soapAction="http://www.slyg.com.co/getPermisos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOfficeList">
+      <soap12:operation soapAction="http://www.slyg.com.co/getOfficeList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMovementList">
+      <soap12:operation soapAction="http://www.slyg.com.co/getMovementList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getErrorList">
+      <soap12:operation soapAction="http://www.slyg.com.co/getErrorList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFolios">
+      <soap12:operation soapAction="http://www.slyg.com.co/getFolios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFolio">
+      <soap12:operation soapAction="http://www.slyg.com.co/getFolio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewImage">
+      <soap12:operation soapAction="http://www.slyg.com.co/NewImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddFolio">
+      <soap12:operation soapAction="http://www.slyg.com.co/AddFolio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SedeProcesamiento">
+      <soap12:operation soapAction="http://www.slyg.com.co/SedeProcesamiento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CentroProcesamiento">
+      <soap12:operation soapAction="http://www.slyg.com.co/CentroProcesamiento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BanagrarioService">
+    <wsdl:port name="BanagrarioServiceSoap" binding="tns:BanagrarioServiceSoap">
+      <soap:address location="http://localhost:61950/BanagrarioService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BanagrarioServiceSoap12" binding="tns:BanagrarioServiceSoap12">
+      <soap12:address location="http://localhost:61950/BanagrarioService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

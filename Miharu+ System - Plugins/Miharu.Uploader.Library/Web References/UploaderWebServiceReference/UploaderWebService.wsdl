@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://slyg.com.co/Miharu.Uploader.WebService/UploaderWebService/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s4="http://slyg.com.co/Miharu.Uploader.WebService/ResultGetReporteCargue/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s5="http://slyg.com.co/Banagrario.WebService/ResultCargueData/" xmlns:s1="http://slyg.com.co/Miharu.Uploader.WebService/ResultGetProcesos/" xmlns:s6="http://slyg.com.co/Banagrario.WebService/ResultGetCampos/" xmlns:s2="http://slyg.com.co/Miharu.Uploader.WebService/ResultBase/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s7="http://slyg.com.co/Miharu.Uploader.WebService/ResultGetOficinas/" xmlns:s3="http://slyg.com.co/Miharu.Uploader.WebService/ResultGetCifradoTipo/" targetNamespace="http://slyg.com.co/Miharu.Uploader.WebService/UploaderWebService/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Uploader.WebService/UploaderWebService/">
+      <s:import namespace="http://slyg.com.co/Miharu.Uploader.WebService/ResultGetProcesos/" />
+      <s:import namespace="http://slyg.com.co/Miharu.Uploader.WebService/ResultGetCifradoTipo/" />
+      <s:import namespace="http://slyg.com.co/Miharu.Uploader.WebService/ResultGetReporteCargue/" />
+      <s:import namespace="http://slyg.com.co/Banagrario.WebService/ResultCargueData/" />
+      <s:import namespace="http://slyg.com.co/Banagrario.WebService/ResultGetCampos/" />
+      <s:import namespace="http://slyg.com.co/Miharu.Uploader.WebService/ResultGetOficinas/" />
+      <s:element name="GetProcesos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nIdUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdEntidad" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProcesosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProcesosResult" type="s1:ResultGetProcesos" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCifradoTipo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nIdEntidad" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCifradoTipoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCifradoTipoResult" type="s3:ResultGetCifradoTipo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReporteCargue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nIdEntidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdProyecto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdUsuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReporteCargueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReporteCargueResult" type="s4:ResultGetReporteCargue" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CargueData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nIdUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdEntidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIDProyecto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdEsquema" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdReporte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Datos" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CargueDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CargueDataResult" type="s5:ResultCargueData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCampos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nIdEntidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdProyecto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdEsquema" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdUsuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCamposResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCamposResult" type="s6:ResultGetCampos" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getOfficeList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nIdUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdEntidad" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getOfficeListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getOfficeListResult" type="s7:ResultGetOficinas" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Uploader.WebService/ResultGetProcesos/">
+      <s:import namespace="http://slyg.com.co/Miharu.Uploader.WebService/ResultBase/" />
+      <s:complexType name="ResultGetProcesos">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Procesos" type="s1:ArrayOfString" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Uploader.WebService/ResultBase/">
+      <s:complexType name="ResultBase">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+        </s:sequence>
+        <s:attribute name="Result" type="s:boolean" use="required" />
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Uploader.WebService/ResultGetCifradoTipo/">
+      <s:import namespace="http://slyg.com.co/Miharu.Uploader.WebService/ResultBase/" />
+      <s:complexType name="ResultGetCifradoTipo">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Cifrado" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Uploader.WebService/ResultGetReporteCargue/">
+      <s:import namespace="http://slyg.com.co/Miharu.Uploader.WebService/ResultBase/" />
+      <s:complexType name="ResultGetReporteCargue">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="Reportes" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Banagrario.WebService/ResultCargueData/">
+      <s:import namespace="http://slyg.com.co/Miharu.Uploader.WebService/ResultBase/" />
+      <s:complexType name="ResultCargueData">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:attribute name="ResultadoCargue">
+              <s:simpleType>
+                <s:list itemType="s:string" />
+              </s:simpleType>
+            </s:attribute>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Banagrario.WebService/ResultGetCampos/">
+      <s:import namespace="http://slyg.com.co/Miharu.Uploader.WebService/ResultBase/" />
+      <s:complexType name="ResultGetCampos">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:attribute name="Campos">
+              <s:simpleType>
+                <s:list itemType="s:string" />
+              </s:simpleType>
+            </s:attribute>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Uploader.WebService/ResultGetOficinas/">
+      <s:import namespace="http://slyg.com.co/Miharu.Uploader.WebService/ResultBase/" />
+      <s:complexType name="ResultGetOficinas">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Oficinas" type="s7:ArrayOfString" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetProcesosSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProcesos" />
+  </wsdl:message>
+  <wsdl:message name="GetProcesosSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProcesosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCifradoTipoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCifradoTipo" />
+  </wsdl:message>
+  <wsdl:message name="GetCifradoTipoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCifradoTipoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReporteCargueSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReporteCargue" />
+  </wsdl:message>
+  <wsdl:message name="GetReporteCargueSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReporteCargueResponse" />
+  </wsdl:message>
+  <wsdl:message name="CargueDataSoapIn">
+    <wsdl:part name="parameters" element="tns:CargueData" />
+  </wsdl:message>
+  <wsdl:message name="CargueDataSoapOut">
+    <wsdl:part name="parameters" element="tns:CargueDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCamposSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCampos" />
+  </wsdl:message>
+  <wsdl:message name="GetCamposSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCamposResponse" />
+  </wsdl:message>
+  <wsdl:message name="getOfficeListSoapIn">
+    <wsdl:part name="parameters" element="tns:getOfficeList" />
+  </wsdl:message>
+  <wsdl:message name="getOfficeListSoapOut">
+    <wsdl:part name="parameters" element="tns:getOfficeListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UploaderWebServiceSoap">
+    <wsdl:operation name="GetProcesos">
+      <wsdl:input message="tns:GetProcesosSoapIn" />
+      <wsdl:output message="tns:GetProcesosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCifradoTipo">
+      <wsdl:input message="tns:GetCifradoTipoSoapIn" />
+      <wsdl:output message="tns:GetCifradoTipoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReporteCargue">
+      <wsdl:input message="tns:GetReporteCargueSoapIn" />
+      <wsdl:output message="tns:GetReporteCargueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CargueData">
+      <wsdl:input message="tns:CargueDataSoapIn" />
+      <wsdl:output message="tns:CargueDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCampos">
+      <wsdl:input message="tns:GetCamposSoapIn" />
+      <wsdl:output message="tns:GetCamposSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getOfficeList">
+      <wsdl:input message="tns:getOfficeListSoapIn" />
+      <wsdl:output message="tns:getOfficeListSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UploaderWebServiceSoap" type="tns:UploaderWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetProcesos">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Uploader.WebService/UploaderWebService/GetProcesos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCifradoTipo">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Uploader.WebService/UploaderWebService/GetCifradoTipo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReporteCargue">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Uploader.WebService/UploaderWebService/GetReporteCargue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargueData">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Uploader.WebService/UploaderWebService/CargueData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampos">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Uploader.WebService/UploaderWebService/GetCampos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOfficeList">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Uploader.WebService/UploaderWebService/getOfficeList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UploaderWebServiceSoap12" type="tns:UploaderWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetProcesos">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Uploader.WebService/UploaderWebService/GetProcesos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCifradoTipo">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Uploader.WebService/UploaderWebService/GetCifradoTipo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReporteCargue">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Uploader.WebService/UploaderWebService/GetReporteCargue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargueData">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Uploader.WebService/UploaderWebService/CargueData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCampos">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Uploader.WebService/UploaderWebService/GetCampos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOfficeList">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Uploader.WebService/UploaderWebService/getOfficeList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UploaderWebService">
+    <wsdl:port name="UploaderWebServiceSoap" binding="tns:UploaderWebServiceSoap">
+      <soap:address location="http://localhost:23782/UploaderWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UploaderWebServiceSoap12" binding="tns:UploaderWebServiceSoap12">
+      <soap12:address location="http://localhost:23782/UploaderWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPopUp.master.cs"
+    Inherits="WebPunteoElectronico.Master.MasterPopUp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>:: MIHARU WebPunteoElectronico ::</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Marco.css" rel="stylesheet" type="text/css" />
+    <asp:Literal ID="HeadScriptsLiteral" runat="server"></asp:Literal>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onunload="DlgDefaultClose();" onload="BeginRequestHandler();">
+    <form id="MainForm" runat="server">
+    <div class="oculto">
+        <asp:ScriptManager ID="MasterScriptManager" ScriptMode="Release" runat="server">
+        </asp:ScriptManager>
+        <asp:UpdatePanel ID="SpecialOptionsUpdatePanel" runat="server">
+            <ContentTemplate>
+                <input type="hidden" id="EndRequestAction" value="" runat="server" />
+                <asp:LinkButton ID="FlexiGridRowIndexChangedLinkButton" runat="server" OnClick="FlexiGridRowIndexChangedLinkButton_Click"></asp:LinkButton>
+                <input type="hidden" id="FlexiGridRowIndexInfo" value="" runat="server" />
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    <script type="text/javascript">
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+        prm.add_beginRequest(BeginRequestHandler);
+        prm.add_pageLoaded(pageLoadedHandler);
+
+        var ctrId_ProcessDiv = 'ProcessDiv';
+        var ctrId_LockDiv = 'LockDiv';
+        var ctrId_EndRequestAction = '<%= EndRequestAction.ClientID %>';
+        var ctrId_FlexiGridRowIndexChanged = '<%= FlexiGridRowIndexChangedLinkButton.ClientID %>';
+        var ctrId_FlexiGridRowIndexInfo = '<%= FlexiGridRowIndexInfo.ClientID %>';
+        var vShowLoader = "";
+    </script>
+    <asp:ContentPlaceHolder ID="ShowLoader" runat="server">
+        <script type="text/javascript">
+            vShowLoader = "SI";
+        </script>
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="BodyContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="Eventos" runat="server">
+        <script type="text/javascript">
+            function OnCloseEvent() { }
+            function onResizeEvent() { }
+
+            window.onresize = onResizeEvent;
+        </script>
+    </asp:ContentPlaceHolder>
+    <div id='LockDiv' class="Loading_div Lock_div">
+        <img class="ProcessImg" src="<%= ResolveClientUrl("~/Images/basic/ajax-loader.gif") %>"
+            alt="" />
+    </div>
+    <div id="dialog-message">
+        <div id="dialog-message-icon">
+        </div>
+        <div class="dialog-message-text">
+            <span id="dialog-message-text"></span>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,1835 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:s16="http://slyg.com.co/Miharu.Security/SecurityService/ResultgetSession_TypePermiso/" xmlns:s17="http://slyg.com.co/Miharu.Security/SecurityService/ResultgetConnectionString/" xmlns:s8="http://microsoft.com/wsdl/types/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s6="http://slyg.com.co/Miharu.Security/SecurityService/ResultLDAPgetServerGroups/" xmlns:s13="http://slyg.com.co/Miharu.Security/SecurityService/EnumValidateUser/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s14="http://slyg.com.co/Miharu.Security/SecurityService/ResultValidateUser/" xmlns:s15="http://slyg.com.co/Miharu.Security/SecurityService/ResultgetSession/" xmlns:s4="http://slyg.com.co/Miharu.Security/SecurityService/ResultEsquema_Seguridad_get/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s1="http://www.slyg.com.co/DesktopService/ResultAppSession/" xmlns:s10="http://slyg.com.co/Miharu.Security/SecurityService/ResultLDAPgetClientGroups/" xmlns:s11="http://slyg.com.co/Miharu.Security/SecurityService/ResultUltimaConexion_get/" xmlns:s12="http://slyg.com.co/Miharu.Security/SecurityService/ResultChangePassword/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s9="http://slyg.com.co/Miharu.Security/SecurityService/ResultUsuario_find/" xmlns:s7="http://slyg.com.co/Miharu.Security/SecurityService/ResultUsuario_get/" xmlns:s3="http://slyg.com.co/Miharu.Security/SecurityService/ResultRol_get/" xmlns:s23="http://slyg.com.co/Miharu.Security/SecurityService/ResultPerfil_get/" xmlns:s24="http://slyg.com.co/Miharu.Security/SecurityService/ResultHorario_get/" xmlns:s25="http://slyg.com.co/Miharu.Security/SecurityService/ResultCrearCanalSeguro/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s2="http://Miharu.Security.WebService.DMZ/Result/" xmlns:s18="http://slyg.com.co/Miharu.Security/SecurityService/ResultgetConnectionString_TypeModulo/" xmlns:s19="http://slyg.com.co/Miharu.Security/SecurityService/ResultgetAssemblyVersion/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s20="http://www.slyg.com.co/DesktopService/ResultRestorePassword/" xmlns:s21="http://slyg.com.co/Miharu.Security/SecurityService/ResultIsIPBloqueada/" xmlns:s22="http://slyg.com.co/Miharu.Security/SecurityService/ResultgetKey/" xmlns:s5="http://slyg.com.co/Miharu.Security/SecurityService/ResultDependencia_get/" xmlns:tns="http://slyg.com.co/Miharu.Security/SecurityService/" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/">
+      <s:import namespace="http://www.slyg.com.co/DesktopService/ResultAppSession/" />
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="CrearCanalSeguro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nClientPublicKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CrearCanalSeguroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CrearCanalSeguroResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tipos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="v" type="s1:ResultAppSession" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tiposResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="IsIPBloqueada">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nIPName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsIPBloqueadaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IsIPBloqueadaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAppSession">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nIdModulo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdUser" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAppSessionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAppSessionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterAppSession">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nIdModulo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdUser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIpName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterAppSessionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegisterAppSessionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefreshAppSession">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nIdModulo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdUser" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefreshAppSessionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RefreshAppSessionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DisconnectAppSession">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nIdModulo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdUser" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DisconnectAppSessionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DisconnectAppSessionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForgottenPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nLogin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForgottenPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ForgottenPasswordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForgottenPasswordLocalUrl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nLocalUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nLogin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForgottenPasswordLocalUrlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ForgottenPasswordLocalUrlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateRestoreToken">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nUserToken" type="s8:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateRestoreTokenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateRestoreTokenResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RestorePassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nUserToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nNewPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RestorePasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RestorePasswordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAssemblyVersion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nAssemblyName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAssemblyVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAssemblyVersionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getConnectionString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nClientIP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getConnectionStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getConnectionStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LDAPgetServerGroups">
+        <s:complexType />
+      </s:element>
+      <s:element name="LDAPgetServerGroupsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LDAPgetServerGroupsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LDAPgetClientGroups">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LDAPgetClientGroupsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LDAPgetClientGroupsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LDAPpath">
+        <s:complexType />
+      </s:element>
+      <s:element name="LDAPpathResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LDAPpathResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nClientIP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateUserResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSession">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nAssemblyName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nClientIP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSessionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSessionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nClientIP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nLoginToChange" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nNewPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChangePasswordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Usuario_find">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdEntidad" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Usuario_findResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario_findResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Usuario_get">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdUsuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Usuario_getResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario_getResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Horario_get">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nidEntidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdCalendario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Horario_getResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Horario_getResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Usuario_Perfil_get">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdUsuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Usuario_Perfil_getResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario_Perfil_getResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Dependencia_get">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdEntidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdDependencia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Dependencia_getResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Dependencia_getResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Esquema_Seguridad_get">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdEntidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdEsquema" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Esquema_Seguridad_getResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Esquema_Seguridad_getResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Perfil_get">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdUsuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Perfil_getResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Perfil_getResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Rol_get">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdUsuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Rol_getResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Rol_getResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UltimaConexion_get">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nIdModulo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UltimaConexion_getResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UltimaConexion_getResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getActiveKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getActiveKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getActiveKeyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="idKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getKeyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateKeyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.slyg.com.co/DesktopService/ResultAppSession/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:complexType name="ResultAppSession">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Session" type="s1:TBL_Usuario_SesionSimpleType" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="TBL_Usuario_SesionSimpleType">
+        <s:complexContent mixed="false">
+          <s:extension base="s1:XmlBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Modulo" type="s:short" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Usuario" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Activo" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="Token" type="s8:guid" />
+              <s:element minOccurs="0" maxOccurs="1" name="Client_IP" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Fecha_Conexion" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="Fecha_Validacion" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="XmlBase" />
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://Miharu.Security.WebService.DMZ/Result/">
+      <s:complexType name="ResultBase">
+        <s:attribute name="Result" type="s:boolean" use="required" />
+        <s:attribute name="Message" type="s:string" />
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultRol_get/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:complexType name="ResultRol_get">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="Roles" type="s3:TBL_RolSimpleType" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="TBL_RolSimpleType">
+        <s:complexContent mixed="false">
+          <s:extension base="s3:XmlBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="id_Rol" type="s:short" />
+              <s:element minOccurs="0" maxOccurs="1" name="Nombre_Rol" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Descripcion_Rol" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="XmlBase" />
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultEsquema_Seguridad_get/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:complexType name="ResultEsquema_Seguridad_get">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="Esquemas" type="s4:TBL_Esquema_SeguridadSimpleType" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="TBL_Esquema_SeguridadSimpleType">
+        <s:complexContent mixed="false">
+          <s:extension base="s4:XmlBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Entidad" type="s:short" />
+              <s:element minOccurs="1" maxOccurs="1" name="id_Esquema_Seguridad" type="s:short" />
+              <s:element minOccurs="0" maxOccurs="1" name="Nombre_Esquema_Seguridad" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Min_Longitud" type="s:unsignedByte" />
+              <s:element minOccurs="1" maxOccurs="1" name="Min_Especiales" type="s:unsignedByte" />
+              <s:element minOccurs="1" maxOccurs="1" name="Min_Mayusculas" type="s:unsignedByte" />
+              <s:element minOccurs="1" maxOccurs="1" name="Min_Minusculas" type="s:unsignedByte" />
+              <s:element minOccurs="1" maxOccurs="1" name="Min_Numeros" type="s:unsignedByte" />
+              <s:element minOccurs="1" maxOccurs="1" name="Num_Historial" type="s:unsignedByte" />
+              <s:element minOccurs="1" maxOccurs="1" name="Cambiar_Password" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="Dias_Cambio_Password" type="s:short" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Entidad_Log" type="s:short" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Usuario_Log" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Eliminado" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="Fecha_log" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="XmlBase" />
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultDependencia_get/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:complexType name="ResultDependencia_get">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="Dependencias" type="s5:TBL_DependenciaSimpleType" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="TBL_DependenciaSimpleType">
+        <s:complexContent mixed="false">
+          <s:extension base="s5:XmlBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Entidad" type="s:short" />
+              <s:element minOccurs="1" maxOccurs="1" name="id_Dependencia" type="s:short" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Padre" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Nivel" type="s:unsignedByte" />
+              <s:element minOccurs="0" maxOccurs="1" name="Nombre_Dependencia" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Codigo_Dependencia" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Usuario_Log" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Direccion_Dependencia" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Telefono_Dependencia" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Ubicacion_Dependencia" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Centro_Costo" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Activo" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="Eliminado" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="Fecha_log" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="XmlBase" />
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultLDAPgetServerGroups/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:complexType name="ResultLDAPgetServerGroups">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="Groups" type="s6:TBL_LDAPSimpleType" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="TBL_LDAPSimpleType">
+        <s:complexContent mixed="false">
+          <s:extension base="s6:XmlBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Entidad" type="s:short" />
+              <s:element minOccurs="1" maxOccurs="1" name="id_LDAP" type="s:short" />
+              <s:element minOccurs="0" maxOccurs="1" name="Grupo_LDAP" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Perfil" type="s:short" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Usuario_Log" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Fecha_Log" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="XmlBase" />
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultUsuario_get/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:complexType name="ResultUsuario_get">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="Usuario" type="s7:TBL_UsuarioSimpleType" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="TBL_UsuarioSimpleType">
+        <s:complexContent mixed="false">
+          <s:extension base="s7:XmlBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Entidad" type="s:short" />
+              <s:element minOccurs="1" maxOccurs="1" name="id_Usuario" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Usuario_Log" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Usuario_Jefe" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Dependencia" type="s:short" />
+              <s:element minOccurs="0" maxOccurs="1" name="Nombres_Usuario" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Apellidos_Usuario" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Identificacion_Usuario" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Login_Usuario" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Password_Usuario" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Email_Usuario" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Direccion_Usuario" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Telefono_Usuario" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Esquema_Seguridad" type="s:short" />
+              <s:element minOccurs="1" maxOccurs="1" name="Solicitar_Cambio_Password" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="Usuario_Activo" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="Fecha_Asignacion_Password" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="Eliminado_Usuario" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="Fecha_Creacion" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Observaciones" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Fecha_log" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Cargo" type="s:short" />
+              <s:element minOccurs="1" maxOccurs="1" name="Logeado" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="Logeo_IP" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Logeo_Fecha" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="LDAP" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="Token" type="s8:guid" />
+              <s:element minOccurs="1" maxOccurs="1" name="Fecha_Token" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="XmlBase" />
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultUsuario_find/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:complexType name="ResultUsuario_find">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="Usuarios" type="s9:CTA_UsuarioSimpleType" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="CTA_UsuarioSimpleType">
+        <s:complexContent mixed="false">
+          <s:extension base="s9:XmlBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Entidad" type="s:short" />
+              <s:element minOccurs="1" maxOccurs="1" name="id_Usuario" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Usuario_Log" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Usuario_Jefe" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Dependencia" type="s:short" />
+              <s:element minOccurs="0" maxOccurs="1" name="Nombres_Usuario" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Apellidos_Usuario" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Identificacion_Usuario" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Login_Usuario" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Password_Usuario" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Email_Usuario" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Direccion_Usuario" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Telefono_Usuario" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Esquema_Seguridad" type="s:short" />
+              <s:element minOccurs="1" maxOccurs="1" name="Solicitar_Cambio_Password" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="Usuario_Activo" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="Fecha_Asignacion_Password" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="Eliminado_Usuario" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="Observaciones" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Fecha_log" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Cargo" type="s:short" />
+              <s:element minOccurs="1" maxOccurs="1" name="Logeado" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="Logeo_IP" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Logeo_Fecha" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="Fecha_Creacion" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="LDAP" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="Token" type="s8:guid" />
+              <s:element minOccurs="1" maxOccurs="1" name="Fecha_Token" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Nombre_Entidad" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Nombre_Esquema_Seguridad" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="XmlBase" />
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultLDAPgetClientGroups/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:complexType name="ResultLDAPgetClientGroups">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="Groups" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultUltimaConexion_get/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:complexType name="ResultUltimaConexion_get">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:attribute name="Fecha" type="s:dateTime" use="required" />
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultChangePassword/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:import namespace="http://slyg.com.co/Miharu.Security/SecurityService/EnumValidateUser/" />
+      <s:complexType name="ResultChangePassword">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:attribute ref="s13:LogonResult" />
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/EnumValidateUser/">
+      <s:import namespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultValidateUser/" />
+      <s:attribute name="LogonResult" type="s14:EnumValidateUser" />
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultValidateUser/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:import namespace="http://slyg.com.co/Miharu.Security/SecurityService/EnumValidateUser/" />
+      <s:simpleType name="EnumValidateUser">
+        <s:restriction base="s:string">
+          <s:enumeration value="LOGIN_ERROR" />
+          <s:enumeration value="VALIDO" />
+          <s:enumeration value="FALTA_LOGIN" />
+          <s:enumeration value="INVALIDO_LOGIN" />
+          <s:enumeration value="INVALIDO_PASSWORD" />
+          <s:enumeration value="INACTIVO" />
+          <s:enumeration value="CAMBIAR_PASSWORD" />
+          <s:enumeration value="ERROR_PASSWORD" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ResultValidateUser">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:attribute name="Entidad" type="s:short" use="required" />
+            <s:attribute name="Usuario" type="s:int" use="required" />
+            <s:attribute ref="s13:LogonResult" />
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultgetSession/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:import namespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultgetSession_TypePermiso/" />
+      <s:complexType name="ResultgetSession">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="Permisos" type="s16:TypePermiso" />
+            </s:sequence>
+            <s:attribute name="id_Usuario" type="s:int" use="required" />
+            <s:attribute name="Nombres_Usuario" type="s:string" />
+            <s:attribute name="Apellidos_Usuario" type="s:string" />
+            <s:attribute name="Identificacion_Usuario" type="s:string" />
+            <s:attribute name="id_Entidad" type="s:short" use="required" />
+            <s:attribute name="Nombre_Entidad" type="s:string" />
+            <s:attribute name="id_Grupo_Empresarial" type="s:short" use="required" />
+            <s:attribute name="Nombre_Grupo_Empresarial" type="s:string" />
+            <s:attribute name="IsRoot" type="s:boolean" use="required" />
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultgetSession_TypePermiso/">
+      <s:complexType name="TypePermiso">
+        <s:attribute name="Cadena_Permiso" type="s:string" />
+        <s:attribute name="Consultar" type="s:boolean" use="required" />
+        <s:attribute name="Agregar" type="s:boolean" use="required" />
+        <s:attribute name="Editar" type="s:boolean" use="required" />
+        <s:attribute name="Eliminar" type="s:boolean" use="required" />
+        <s:attribute name="Exportar" type="s:boolean" use="required" />
+        <s:attribute name="Imprimir" type="s:boolean" use="required" />
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultgetConnectionString/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:import namespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultgetConnectionString_TypeModulo/" />
+      <s:complexType name="ResultgetConnectionString">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="ConnectionString" type="s18:TypeModulo" />
+            </s:sequence>
+            <s:attribute name="Usuario" type="s:int" use="required" />
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultgetConnectionString_TypeModulo/">
+      <s:complexType name="TypeModulo">
+        <s:attribute name="Id" type="s:short" use="required" />
+        <s:attribute name="Name" type="s:string" />
+        <s:attribute name="AssemblyName" type="s:string" />
+        <s:attribute name="ConnectionString" type="s:base64Binary" />
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultgetAssemblyVersion/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:complexType name="ResultgetAssemblyVersion">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:attribute name="AssemblyVersion" type="s:string" />
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.slyg.com.co/DesktopService/ResultRestorePassword/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:complexType name="ResultRestorePassword">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:attribute name="Token" type="s:base64Binary" />
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultIsIPBloqueada/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:complexType name="ResultIsIPBloqueada">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:attribute name="Bloqueda" type="s:boolean" use="required" />
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultgetKey/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:complexType name="ResultgetKey">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:attribute name="Entidad" type="s:short" use="required" />
+            <s:attribute name="id" type="s:string" />
+            <s:attribute name="KeyPassword" type="s:base64Binary" />
+            <s:attribute name="KeySeed" type="s:base64Binary" />
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultPerfil_get/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:complexType name="ResultPerfil_get">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="Perfiles" type="s23:TBL_PerfilSimpleType" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="TBL_PerfilSimpleType">
+        <s:complexContent mixed="false">
+          <s:extension base="s23:XmlBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="id_Perfil" type="s:short" />
+              <s:element minOccurs="0" maxOccurs="1" name="Nombre_Perfil" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Descripcion_Perfil" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Eliminado" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="fk_Usuario_Log" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Fecha_log" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="XmlBase" />
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultHorario_get/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:complexType name="ResultHorario_get">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="HorarioValido" type="s:boolean" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://slyg.com.co/Miharu.Security/SecurityService/ResultCrearCanalSeguro/">
+      <s:import namespace="http://Miharu.Security.WebService.DMZ/Result/" />
+      <s:complexType name="ResultCrearCanalSeguro">
+        <s:complexContent mixed="false">
+          <s:extension base="s2:ResultBase">
+            <s:attribute name="Token" type="s:string" />
+            <s:attribute name="ServerPublicKey" type="s:string" />
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CrearCanalSeguroSoapIn">
+    <wsdl:part name="parameters" element="tns:CrearCanalSeguro" />
+  </wsdl:message>
+  <wsdl:message name="CrearCanalSeguroSoapOut">
+    <wsdl:part name="parameters" element="tns:CrearCanalSeguroResponse" />
+  </wsdl:message>
+  <wsdl:message name="tiposSoapIn">
+    <wsdl:part name="parameters" element="tns:tipos" />
+  </wsdl:message>
+  <wsdl:message name="tiposSoapOut">
+    <wsdl:part name="parameters" element="tns:tiposResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsIPBloqueadaSoapIn">
+    <wsdl:part name="parameters" element="tns:IsIPBloqueada" />
+  </wsdl:message>
+  <wsdl:message name="IsIPBloqueadaSoapOut">
+    <wsdl:part name="parameters" element="tns:IsIPBloqueadaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAppSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAppSession" />
+  </wsdl:message>
+  <wsdl:message name="GetAppSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAppSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegisterAppSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:RegisterAppSession" />
+  </wsdl:message>
+  <wsdl:message name="RegisterAppSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:RegisterAppSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="RefreshAppSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:RefreshAppSession" />
+  </wsdl:message>
+  <wsdl:message name="RefreshAppSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:RefreshAppSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisconnectAppSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:DisconnectAppSession" />
+  </wsdl:message>
+  <wsdl:message name="DisconnectAppSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:DisconnectAppSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ForgottenPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ForgottenPassword" />
+  </wsdl:message>
+  <wsdl:message name="ForgottenPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ForgottenPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ForgottenPasswordLocalUrlSoapIn">
+    <wsdl:part name="parameters" element="tns:ForgottenPasswordLocalUrl" />
+  </wsdl:message>
+  <wsdl:message name="ForgottenPasswordLocalUrlSoapOut">
+    <wsdl:part name="parameters" element="tns:ForgottenPasswordLocalUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateRestoreTokenSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateRestoreToken" />
+  </wsdl:message>
+  <wsdl:message name="ValidateRestoreTokenSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateRestoreTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="RestorePasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:RestorePassword" />
+  </wsdl:message>
+  <wsdl:message name="RestorePasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:RestorePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAssemblyVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:getAssemblyVersion" />
+  </wsdl:message>
+  <wsdl:message name="getAssemblyVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:getAssemblyVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="getConnectionStringSoapIn">
+    <wsdl:part name="parameters" element="tns:getConnectionString" />
+  </wsdl:message>
+  <wsdl:message name="getConnectionStringSoapOut">
+    <wsdl:part name="parameters" element="tns:getConnectionStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="LDAPgetServerGroupsSoapIn">
+    <wsdl:part name="parameters" element="tns:LDAPgetServerGroups" />
+  </wsdl:message>
+  <wsdl:message name="LDAPgetServerGroupsSoapOut">
+    <wsdl:part name="parameters" element="tns:LDAPgetServerGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="LDAPgetClientGroupsSoapIn">
+    <wsdl:part name="parameters" element="tns:LDAPgetClientGroups" />
+  </wsdl:message>
+  <wsdl:message name="LDAPgetClientGroupsSoapOut">
+    <wsdl:part name="parameters" element="tns:LDAPgetClientGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="LDAPpathSoapIn">
+    <wsdl:part name="parameters" element="tns:LDAPpath" />
+  </wsdl:message>
+  <wsdl:message name="LDAPpathSoapOut">
+    <wsdl:part name="parameters" element="tns:LDAPpathResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateUserSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateUser" />
+  </wsdl:message>
+  <wsdl:message name="ValidateUserSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:getSession" />
+  </wsdl:message>
+  <wsdl:message name="getSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:getSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangePasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangePassword" />
+  </wsdl:message>
+  <wsdl:message name="ChangePasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="Usuario_findSoapIn">
+    <wsdl:part name="parameters" element="tns:Usuario_find" />
+  </wsdl:message>
+  <wsdl:message name="Usuario_findSoapOut">
+    <wsdl:part name="parameters" element="tns:Usuario_findResponse" />
+  </wsdl:message>
+  <wsdl:message name="Usuario_getSoapIn">
+    <wsdl:part name="parameters" element="tns:Usuario_get" />
+  </wsdl:message>
+  <wsdl:message name="Usuario_getSoapOut">
+    <wsdl:part name="parameters" element="tns:Usuario_getResponse" />
+  </wsdl:message>
+  <wsdl:message name="Horario_getSoapIn">
+    <wsdl:part name="parameters" element="tns:Horario_get" />
+  </wsdl:message>
+  <wsdl:message name="Horario_getSoapOut">
+    <wsdl:part name="parameters" element="tns:Horario_getResponse" />
+  </wsdl:message>
+  <wsdl:message name="Usuario_Perfil_getSoapIn">
+    <wsdl:part name="parameters" element="tns:Usuario_Perfil_get" />
+  </wsdl:message>
+  <wsdl:message name="Usuario_Perfil_getSoapOut">
+    <wsdl:part name="parameters" element="tns:Usuario_Perfil_getResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dependencia_getSoapIn">
+    <wsdl:part name="parameters" element="tns:Dependencia_get" />
+  </wsdl:message>
+  <wsdl:message name="Dependencia_getSoapOut">
+    <wsdl:part name="parameters" element="tns:Dependencia_getResponse" />
+  </wsdl:message>
+  <wsdl:message name="Esquema_Seguridad_getSoapIn">
+    <wsdl:part name="parameters" element="tns:Esquema_Seguridad_get" />
+  </wsdl:message>
+  <wsdl:message name="Esquema_Seguridad_getSoapOut">
+    <wsdl:part name="parameters" element="tns:Esquema_Seguridad_getResponse" />
+  </wsdl:message>
+  <wsdl:message name="Perfil_getSoapIn">
+    <wsdl:part name="parameters" element="tns:Perfil_get" />
+  </wsdl:message>
+  <wsdl:message name="Perfil_getSoapOut">
+    <wsdl:part name="parameters" element="tns:Perfil_getResponse" />
+  </wsdl:message>
+  <wsdl:message name="Rol_getSoapIn">
+    <wsdl:part name="parameters" element="tns:Rol_get" />
+  </wsdl:message>
+  <wsdl:message name="Rol_getSoapOut">
+    <wsdl:part name="parameters" element="tns:Rol_getResponse" />
+  </wsdl:message>
+  <wsdl:message name="UltimaConexion_getSoapIn">
+    <wsdl:part name="parameters" element="tns:UltimaConexion_get" />
+  </wsdl:message>
+  <wsdl:message name="UltimaConexion_getSoapOut">
+    <wsdl:part name="parameters" element="tns:UltimaConexion_getResponse" />
+  </wsdl:message>
+  <wsdl:message name="getActiveKeySoapIn">
+    <wsdl:part name="parameters" element="tns:getActiveKey" />
+  </wsdl:message>
+  <wsdl:message name="getActiveKeySoapOut">
+    <wsdl:part name="parameters" element="tns:getActiveKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="getKeySoapIn">
+    <wsdl:part name="parameters" element="tns:getKey" />
+  </wsdl:message>
+  <wsdl:message name="getKeySoapOut">
+    <wsdl:part name="parameters" element="tns:getKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateKeySoapIn">
+    <wsdl:part name="parameters" element="tns:CreateKey" />
+  </wsdl:message>
+  <wsdl:message name="CreateKeySoapOut">
+    <wsdl:part name="parameters" element="tns:CreateKeyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SecurityDMZServiceSoap">
+    <wsdl:operation name="CrearCanalSeguro">
+      <wsdl:input message="tns:CrearCanalSeguroSoapIn" />
+      <wsdl:output message="tns:CrearCanalSeguroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="tipos">
+      <wsdl:input message="tns:tiposSoapIn" />
+      <wsdl:output message="tns:tiposSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsIPBloqueada">
+      <wsdl:input message="tns:IsIPBloqueadaSoapIn" />
+      <wsdl:output message="tns:IsIPBloqueadaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppSession">
+      <wsdl:input message="tns:GetAppSessionSoapIn" />
+      <wsdl:output message="tns:GetAppSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterAppSession">
+      <wsdl:input message="tns:RegisterAppSessionSoapIn" />
+      <wsdl:output message="tns:RegisterAppSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RefreshAppSession">
+      <wsdl:input message="tns:RefreshAppSessionSoapIn" />
+      <wsdl:output message="tns:RefreshAppSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisconnectAppSession">
+      <wsdl:input message="tns:DisconnectAppSessionSoapIn" />
+      <wsdl:output message="tns:DisconnectAppSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForgottenPassword">
+      <wsdl:input message="tns:ForgottenPasswordSoapIn" />
+      <wsdl:output message="tns:ForgottenPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForgottenPasswordLocalUrl">
+      <wsdl:input message="tns:ForgottenPasswordLocalUrlSoapIn" />
+      <wsdl:output message="tns:ForgottenPasswordLocalUrlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateRestoreToken">
+      <wsdl:input message="tns:ValidateRestoreTokenSoapIn" />
+      <wsdl:output message="tns:ValidateRestoreTokenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RestorePassword">
+      <wsdl:input message="tns:RestorePasswordSoapIn" />
+      <wsdl:output message="tns:RestorePasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAssemblyVersion">
+      <wsdl:input message="tns:getAssemblyVersionSoapIn" />
+      <wsdl:output message="tns:getAssemblyVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getConnectionString">
+      <wsdl:input message="tns:getConnectionStringSoapIn" />
+      <wsdl:output message="tns:getConnectionStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LDAPgetServerGroups">
+      <wsdl:input message="tns:LDAPgetServerGroupsSoapIn" />
+      <wsdl:output message="tns:LDAPgetServerGroupsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LDAPgetClientGroups">
+      <wsdl:input message="tns:LDAPgetClientGroupsSoapIn" />
+      <wsdl:output message="tns:LDAPgetClientGroupsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LDAPpath">
+      <wsdl:input message="tns:LDAPpathSoapIn" />
+      <wsdl:output message="tns:LDAPpathSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUser">
+      <wsdl:input message="tns:ValidateUserSoapIn" />
+      <wsdl:output message="tns:ValidateUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSession">
+      <wsdl:input message="tns:getSessionSoapIn" />
+      <wsdl:output message="tns:getSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <wsdl:input message="tns:ChangePasswordSoapIn" />
+      <wsdl:output message="tns:ChangePasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_find">
+      <wsdl:input message="tns:Usuario_findSoapIn" />
+      <wsdl:output message="tns:Usuario_findSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_get">
+      <wsdl:input message="tns:Usuario_getSoapIn" />
+      <wsdl:output message="tns:Usuario_getSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Horario_get">
+      <wsdl:input message="tns:Horario_getSoapIn" />
+      <wsdl:output message="tns:Horario_getSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_Perfil_get">
+      <wsdl:input message="tns:Usuario_Perfil_getSoapIn" />
+      <wsdl:output message="tns:Usuario_Perfil_getSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Dependencia_get">
+      <wsdl:input message="tns:Dependencia_getSoapIn" />
+      <wsdl:output message="tns:Dependencia_getSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Esquema_Seguridad_get">
+      <wsdl:input message="tns:Esquema_Seguridad_getSoapIn" />
+      <wsdl:output message="tns:Esquema_Seguridad_getSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Perfil_get">
+      <wsdl:input message="tns:Perfil_getSoapIn" />
+      <wsdl:output message="tns:Perfil_getSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Rol_get">
+      <wsdl:input message="tns:Rol_getSoapIn" />
+      <wsdl:output message="tns:Rol_getSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UltimaConexion_get">
+      <wsdl:input message="tns:UltimaConexion_getSoapIn" />
+      <wsdl:output message="tns:UltimaConexion_getSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getActiveKey">
+      <wsdl:input message="tns:getActiveKeySoapIn" />
+      <wsdl:output message="tns:getActiveKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getKey">
+      <wsdl:input message="tns:getKeySoapIn" />
+      <wsdl:output message="tns:getKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateKey">
+      <wsdl:input message="tns:CreateKeySoapIn" />
+      <wsdl:output message="tns:CreateKeySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SecurityDMZServiceSoap" type="tns:SecurityDMZServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CrearCanalSeguro">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/CrearCanalSeguro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tipos">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/tipos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsIPBloqueada">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/IsIPBloqueada" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppSession">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/GetAppSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterAppSession">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/RegisterAppSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshAppSession">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/RefreshAppSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisconnectAppSession">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/DisconnectAppSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgottenPassword">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/ForgottenPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgottenPasswordLocalUrl">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/ForgottenPasswordLocalUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateRestoreToken">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/ValidateRestoreToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RestorePassword">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/RestorePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAssemblyVersion">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/getAssemblyVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConnectionString">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/getConnectionString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LDAPgetServerGroups">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/LDAPgetServerGroups" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LDAPgetClientGroups">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/LDAPgetClientGroups" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LDAPpath">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/LDAPpath" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUser">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/ValidateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSession">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/getSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/ChangePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_find">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/Usuario_find" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_get">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/Usuario_get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Horario_get">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/Horario_get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_Perfil_get">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/Usuario_Perfil_get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Dependencia_get">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/Dependencia_get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Esquema_Seguridad_get">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/Esquema_Seguridad_get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Perfil_get">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/Perfil_get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rol_get">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/Rol_get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UltimaConexion_get">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/UltimaConexion_get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getActiveKey">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/getActiveKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKey">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/getKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateKey">
+      <soap:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/CreateKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SecurityDMZServiceSoap12" type="tns:SecurityDMZServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CrearCanalSeguro">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/CrearCanalSeguro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tipos">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/tipos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsIPBloqueada">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/IsIPBloqueada" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppSession">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/GetAppSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterAppSession">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/RegisterAppSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshAppSession">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/RefreshAppSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisconnectAppSession">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/DisconnectAppSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgottenPassword">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/ForgottenPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgottenPasswordLocalUrl">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/ForgottenPasswordLocalUrl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateRestoreToken">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/ValidateRestoreToken" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RestorePassword">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/RestorePassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAssemblyVersion">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/getAssemblyVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConnectionString">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/getConnectionString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LDAPgetServerGroups">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/LDAPgetServerGroups" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LDAPgetClientGroups">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/LDAPgetClientGroups" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LDAPpath">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/LDAPpath" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUser">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/ValidateUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSession">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/getSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/ChangePassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_find">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/Usuario_find" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_get">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/Usuario_get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Horario_get">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/Horario_get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Usuario_Perfil_get">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/Usuario_Perfil_get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Dependencia_get">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/Dependencia_get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Esquema_Seguridad_get">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/Esquema_Seguridad_get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Perfil_get">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/Perfil_get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rol_get">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/Rol_get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UltimaConexion_get">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/UltimaConexion_get" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getActiveKey">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/getActiveKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKey">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/getKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateKey">
+      <soap12:operation soapAction="http://slyg.com.co/Miharu.Security/SecurityService/CreateKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SecurityDMZService">
+    <wsdl:port name="SecurityDMZServiceSoap" binding="tns:SecurityDMZServiceSoap">
+      <soap:address location="http://localhost:51600/SecurityDMZService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SecurityDMZServiceSoap12" binding="tns:SecurityDMZServiceSoap12">
+      <soap12:address location="http://localhost:51600/SecurityDMZService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

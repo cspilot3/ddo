@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{3AA91370-45D5-4EBD-A700-99FB10AB6FB4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Miharu.Imaging.Indexer</RootNamespace>
+    <AssemblyName>Miharu.Imaging.Indexer</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Miharu.Imaging.Indexer.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Miharu.Imaging.Indexer.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="BarcodeLib, Version=1.0.0.23, Culture=neutral, PublicKeyToken=5f09bda868cc39e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="BarcodeLib.BarcodeReader.Common, Version=7.0.0.40510, Culture=neutral, PublicKeyToken=9179828d0324ae47, processorArchitecture=MSIL">
+      <HintPath>..\..\Miharu+ System - Plugins\packages\BarcodeLib.BarcodeReader.7.0.0.4\lib\netstandard2.0\BarcodeLib.BarcodeReader.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DB_OCR.DataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\DB_OCR.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.1.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\net35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Data, Version=2.7.6.24573, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools, Version=2.0.5140.21387, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\Miharu+ System - Plugins\packages\System.Drawing.Common.9.0.5\lib\net462\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\GenericController.vb" />
+    <Compile Include="Controller\IController.vb" />
+    <Compile Include="Controller\Indexer\Capturas\Captura\PreCapturaControllerDMZ.vb" />
+    <Compile Include="Controller\Indexer\Capturas\Captura\CorreccionCapturaMaquinaController.vb" />
+    <Compile Include="Controller\Indexer\Capturas\CapturasControllerDMZ.vb" />
+    <Compile Include="Controller\Indexer\Capturas\OCR\OCRCapturaDMZ.vb" />
+    <Compile Include="Controller\Indexer\Capturas\OCR\IOCRCaptura.vb" />
+    <Compile Include="Controller\Indexer\Capturas\OCR\OCRCaptura.vb" />
+    <Compile Include="Controller\Indexer\Capturas\Captura\ProcesoAdicionalCapturaController.vb" />
+    <Compile Include="Controller\Indexer\Capturas\CapturasAdicionalController.vb" />
+    <Compile Include="Controller\Indexer\Capturas\GeneraSticker\DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\Indexer\Capturas\GeneraSticker\DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\Indexer\Capturas\OCR\OCRDataStructures.vb" />
+    <Compile Include="Controller\Indexer\IndexerController.vb" />
+    <Compile Include="Controller\Recorte\CalidadRecorteController.vb" />
+    <Compile Include="Controller\Recorte\RecorteController.vb" />
+    <Compile Include="Controller\Recorte\IRecorteController.vb" />
+    <Compile Include="Controller\Indexer\Indexacion\ReIndexacionController.vb" />
+    <Compile Include="View\Indexacion\CampoLlaveCaptura.vb" />
+    <Compile Include="View\Indexacion\IListValidationControl.vb" />
+    <Compile Include="View\Indexacion\ListValidationControl.Designer.vb">
+      <DependentUpon>ListValidationControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\ListValidationControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Recorte\CalidadDataControl.Designer.vb">
+      <DependentUpon>CalidadDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Recorte\CalidadDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Recorte\FormCalidadRecorte.Designer.vb">
+      <DependentUpon>FormCalidadRecorte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Recorte\FormCalidadRecorte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Recorte\IDataControl.vb" />
+    <Compile Include="View\Recorte\RecorteDataControl.Designer.vb">
+      <DependentUpon>RecorteDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Recorte\RecorteDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Recorte\Enumeraciones.vb" />
+    <Compile Include="View\Recorte\FormRecorte.Designer.vb">
+      <DependentUpon>FormRecorte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Recorte\FormRecorte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Recorte\Selector.vb" />
+    <Compile Include="View\IView.vb" />
+    <Compile Include="View\Indexacion\FormDocumentSelector.Designer.vb">
+      <DependentUpon>FormDocumentSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\FormDocumentSelector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Events\EventManager.vb" />
+    <Compile Include="Generic\Campo.vb" />
+    <Compile Include="Controller\Indexer\Capturas\CapturasController.vb" />
+    <Compile Include="Controller\Indexer\IIndexerController.vb" />
+    <Compile Include="Controller\Indexer\Capturas\Captura\CalidadCapturaController.vb" />
+    <Compile Include="Controller\Indexer\Indexacion\IndexacionController.vb" />
+    <Compile Include="Controller\Indexer\Capturas\Captura\PreCapturaController.vb" />
+    <Compile Include="Controller\Indexer\Capturas\Captura\PrimeraCapturaController.vb" />
+    <Compile Include="Controller\Indexer\Capturas\Reproceso\ReProcessController.vb" />
+    <Compile Include="Controller\Indexer\Capturas\Reproceso\ReProcessDemandaController.vb" />
+    <Compile Include="Controller\Indexer\Capturas\Captura\SegundaCapturaController.vb" />
+    <Compile Include="Controller\Indexer\Capturas\Captura\TerceraCapturaController.vb" />
+    <Compile Include="Controller\Indexer\Capturas\Validacion\ValidacionesOpcionalesController.vb" />
+    <Compile Include="Generic\DocumentFile.vb" />
+    <Compile Include="Generic\Folder.vb" />
+    <Compile Include="Generic\Folio.vb" />
+    <Compile Include="View\Comun\FormAccesosRapidos.designer.vb">
+      <DependentUpon>FormAccesosRapidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Comun\FormAccesosRapidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Generic\Validacion.vb" />
+    <Compile Include="Program.vb" />
+    <Compile Include="View\Indexacion\CampoCaptura.vb" />
+    <Compile Include="View\Indexacion\ComboBoxControl.designer.vb">
+      <DependentUpon>ComboBoxControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\ComboBoxControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\DefinicionCaptura.vb" />
+    <Compile Include="View\Indexacion\FormAutoIndexar.Designer.vb">
+      <DependentUpon>FormAutoIndexar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\FormAutoIndexar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\FormIndexerView.Designer.vb">
+      <DependentUpon>FormIndexerView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\FormIndexerView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\FormReprocesoMotivo.designer.vb">
+      <DependentUpon>FormReprocesoMotivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\FormReprocesoMotivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\IIndexerView.vb" />
+    <Compile Include="View\IInputControl.vb" />
+    <Compile Include="View\Indexacion\InputControl.Designer.vb">
+      <DependentUpon>InputControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\InputControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\ListInputControl.Designer.vb">
+      <DependentUpon>ListInputControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\ListInputControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\RulerControl.Designer.vb">
+      <DependentUpon>RulerControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\RulerControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\Table\IndexerTableCellList.Designer.vb">
+      <DependentUpon>IndexerTableCellList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\Table\IndexerTableCellList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\Table\IndexerTable.Designer.vb">
+      <DependentUpon>IndexerTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\Table\IndexerTable.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\Table\IndexerTableCell.Designer.vb">
+      <DependentUpon>IndexerTableCell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\Table\IndexerTableCell.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\Table\IndexerTableCellCollection.vb" />
+    <Compile Include="View\Indexacion\Table\IndexerTableCellDateTime.Designer.vb">
+      <DependentUpon>IndexerTableCellDateTime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\Table\IndexerTableCellDateTime.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\Table\IndexerTableCellNumeric.Designer.vb">
+      <DependentUpon>IndexerTableCellNumeric.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\Table\IndexerTableCellNumeric.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\Table\IndexerTableCellText.Designer.vb">
+      <DependentUpon>IndexerTableCellText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\Table\IndexerTableCellText.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\Table\IndexerTableColumn.vb" />
+    <Compile Include="View\Indexacion\Table\IndexerTableColumnCollection.vb" />
+    <Compile Include="View\Indexacion\Table\IndexerTableRow.Designer.vb">
+      <DependentUpon>IndexerTableRow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\Table\IndexerTableRow.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\Table\IndexerTableRowCollection.vb" />
+    <Compile Include="View\Indexacion\TableInputControl.Designer.vb">
+      <DependentUpon>TableInputControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\TableInputControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\TextInputControl.Designer.vb">
+      <DependentUpon>TextInputControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\TextInputControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\TextInputDateTimeControl.Designer.vb">
+      <DependentUpon>TextInputDateTimeControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\TextInputDateTimeControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\TextInputNumericControl.designer.vb">
+      <DependentUpon>TextInputNumericControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\TextInputNumericControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Indexacion\ValidacionCaptura.vb" />
+    <Compile Include="View\Indexacion\ValidationControl.Designer.vb">
+      <DependentUpon>ValidationControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Indexacion\ValidationControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controller\Indexer\Capturas\GeneraSticker\ReporteSticker.rdlc" />
+    <EmbeddedResource Include="View\Indexacion\ListValidationControl.resx">
+      <DependentUpon>ListValidationControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Recorte\CalidadDataControl.resx">
+      <DependentUpon>CalidadDataControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Recorte\FormCalidadRecorte.resx">
+      <DependentUpon>FormCalidadRecorte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Recorte\RecorteDataControl.resx">
+      <DependentUpon>RecorteDataControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Recorte\FormRecorte.resx">
+      <DependentUpon>FormRecorte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\FormDocumentSelector.resx">
+      <DependentUpon>FormDocumentSelector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Comun\FormAccesosRapidos.resx">
+      <DependentUpon>FormAccesosRapidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\ComboBoxControl.resx">
+      <DependentUpon>ComboBoxControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\FormAutoIndexar.resx">
+      <DependentUpon>FormAutoIndexar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\FormIndexerView.resx">
+      <DependentUpon>FormIndexerView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\FormReprocesoMotivo.resx">
+      <DependentUpon>FormReprocesoMotivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\InputControl.resx">
+      <DependentUpon>InputControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\ListInputControl.resx">
+      <DependentUpon>ListInputControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\RulerControl.resx">
+      <DependentUpon>RulerControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\Table\IndexerTableCellList.resx">
+      <DependentUpon>IndexerTableCellList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\Table\IndexerTable.resx">
+      <DependentUpon>IndexerTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\Table\IndexerTableCell.resx">
+      <DependentUpon>IndexerTableCell.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\Table\IndexerTableCellDateTime.resx">
+      <DependentUpon>IndexerTableCellDateTime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\Table\IndexerTableCellNumeric.resx">
+      <DependentUpon>IndexerTableCellNumeric.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\Table\IndexerTableCellText.resx">
+      <DependentUpon>IndexerTableCellText.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\Table\IndexerTableRow.resx">
+      <DependentUpon>IndexerTableRow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\TableInputControl.resx">
+      <DependentUpon>TableInputControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\TextInputControl.resx">
+      <DependentUpon>TextInputControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\TextInputDateTimeControl.resx">
+      <DependentUpon>TextInputDateTimeControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\TextInputNumericControl.resx">
+      <DependentUpon>TextInputNumericControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Indexacion\ValidationControl.resx">
+      <DependentUpon>ValidationControl.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Controller\Indexer\Capturas\GeneraSticker\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Controller\Indexer\Capturas\GeneraSticker\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Controller\Indexer\Capturas\GeneraSticker\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Controls\Miharu.Desktop.Controls.vbproj">
+      <Project>{BBDF4261-7651-4D93-95EE-675260D016AC}</Project>
+      <Name>Miharu.Desktop.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Library\Miharu.Desktop.Library.vbproj">
+      <Project>{60FE71B4-EC25-45F0-B384-B98582D035C7}</Project>
+      <Name>Miharu.Desktop.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Plugins\DB_SofTrac.DataAccess\DB_SofTrac.DataAccess.csproj">
+      <Project>{EDE682BD-90E7-4318-B0B4-2AAD91DAF726}</Project>
+      <Name>DB_SofTrac.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.DataAccess\Miharu.Security.DataAccess.csproj">
+      <Project>{902B10BC-8630-4730-9AC5-763CA7D2CB31}</Project>
+      <Name>Miharu.Security.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.Library\Miharu.Security.Library.csproj">
+      <Project>{BC90E6AA-55BE-4E52-841E-FE48A32E750D}</Project>
+      <Name>Miharu.Security.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.FileProvider.Library\Miharu.FileProvider.Library.vbproj">
+      <Project>{1E21AD2F-0D1F-47A5-94C5-A75D6DAAAC8F}</Project>
+      <Name>Miharu.FileProvider.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.Tools\Miharu.Tools.vbproj">
+      <Project>{69D016B1-3E92-4037-9CEB-FE8283479AFD}</Project>
+      <Name>Miharu.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Slyg.Tools.Imaging\Slyg.Tools.Imaging.csproj">
+      <Project>{B41AFD53-3FE1-4C20-B359-1C5FC16954C4}</Project>
+      <Name>Slyg.Tools.Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Imaging.DataAccess\Miharu.Imaging.DataAccess.csproj">
+      <Project>{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}</Project>
+      <Name>Miharu.Imaging.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Imaging.OfflineViewer.Library\Miharu.Imaging.OffLineViewer.Library.vbproj">
+      <Project>{B32D869B-91E0-4A7A-8BE7-D14B3275B30A}</Project>
+      <Name>Miharu.Imaging.OffLineViewer.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Barcode.dll" />
+    <Content Include="bin\Debug\BarcodeLib.dll" />
+    <Content Include="Images\Aceptar.png" />
+    <Content Include="Images\anexo_completo.png" />
+    <Content Include="Images\anexo_folder.png" />
+    <Content Include="Images\auto_indexar.png" />
+    <Content Include="Images\btnAgregar.png" />
+    <Content Include="Images\btnAjustarAlto.Image.png" />
+    <Content Include="Images\btnAjustarAncho.Image.png" />
+    <Content Include="Images\btnBuscar.png" />
+    <Content Include="Images\btnCopiar.png" />
+    <Content Include="Images\btnDestape.png" />
+    <Content Include="Images\btnGenerarEstructura.png" />
+    <Content Include="Images\btnGuardar.png" />
+    <Content Include="Images\btnPaginaAnterior.Image.png" />
+    <Content Include="Images\btnPaginaFinal.Image.png" />
+    <Content Include="Images\btnPaginaPrimera.Image.png" />
+    <Content Include="Images\btnPaginaSiguiente.Image.png" />
+    <Content Include="Images\btnReflejarHorizontal.Image.png" />
+    <Content Include="Images\btnReflejarVertical.Image.png" />
+    <Content Include="Images\btnRotarDerecha.Image.png" />
+    <Content Include="Images\btnRotarIzquierda.Image.png" />
+    <Content Include="Images\btnSalir.png" />
+    <Content Include="Images\btnZoomIn.Image.png" />
+    <Content Include="Images\btnZoomOut.Image.png" />
+    <Content Include="Images\cancel.png" />
+    <Content Include="Images\cancelar.png" />
+    <Content Include="Images\cog_edit.png" />
+    <Content Include="Images\cog_go.png" />
+    <None Include="Images\devolver.png" />
+    <Content Include="Images\document_add.png" />
+    <Content Include="Images\document_delete.png" />
+    <Content Include="Images\document_edit.png" />
+    <None Include="Images\draw_table.png" />
+    <None Include="Images\draw_Vertical_Table.png" />
+    <None Include="Images\draw_Horizontal_Table.png" />
+    <Content Include="Images\filesave.png" />
+    <Content Include="Images\film.png" />
+    <Content Include="Images\film_delete.png" />
+    <Content Include="Images\folder_add.png" />
+    <Content Include="Images\folder_delete.png" />
+    <Content Include="Images\folder_image.png" />
+    <Content Include="Images\fotografia.png" />
+    <Content Include="Images\layout_content.png" />
+    <None Include="Images\lente.png" />
+    <Content Include="Images\lightning_go.png" />
+    <Content Include="Images\lock.png" />
+    <Content Include="Images\lock_open.png" />
+    <None Include="Images\play.png" />
+    <None Include="Images\NextPage.png" />
+    <None Include="Images\PreviousPage.png" />
+    <Content Include="Images\NextPageWhite.png" />
+    <Content Include="Images\PreviousPageWhite.png" />
+    <Content Include="Images\refresh.png" />
+    <Content Include="Images\Remove.png" />
+    <Content Include="Images\Reproceso.png" />
+    <Content Include="Images\sheet_add.png" />
+    <Content Include="Images\sheet_delete.png" />
+    <Content Include="Images\TablaAsociada.png" />
+    <Content Include="Images\tick.png" />
+    <Content Include="Images\zoom.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

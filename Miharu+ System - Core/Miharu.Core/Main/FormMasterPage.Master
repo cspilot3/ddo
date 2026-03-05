@@ -1,0 +1,213 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="FormMasterPage.master.vb" Inherits="Miharu.Core.Main.FormMasterPage" %>
+
+<%@ Register Src="~/Controles/MessageBoxTemplate.ascx" TagName="MessageBoxTemplate" TagPrefix="uc3" %>
+<%@ Register Src="~/Controles/ConfirmBoxTemplate.ascx" TagName="ConfirmBoxTemplate" TagPrefix="uc4" %>      
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<%@ Register Src="~/Controles/ToolControl.ascx" TagName="ToolControl" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="Shortcut Icon" href="../favicon.ico"/>
+    <title>.: Miharu.Core :.</title>
+    <asp:Literal ID="lrtMasterScripts" runat="server"></asp:Literal>
+
+    <link href="~/_styles/Styles.css" rel="stylesheet" type="text/css" runat="server" id="cssStyles" />
+    <link href="~/_styles/Default.css" rel="stylesheet" type="text/css" runat="server" id="cssDefault" />
+    <link href="~/_styles/ModalPopUp/StyleSheetModalPopUp.css" rel="stylesheet" type="text/css" runat="server" id="cssModalPopUp" />
+    <link href="~/_styles/Tabpanel/TabpanelStyles.css" rel="stylesheet" type="text/css" runat="server" id="cssTabpanel" />
+    <link href="~/_styles/Marco/StyleSheetMaster.css" rel="stylesheet" type="text/css" runat="server" id="cssMarco" />
+    <link href="~/_js/windows/themes/default.css" rel="stylesheet" type="text/css" />
+    <link href="~/_js/windows/themes/alphacube.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="MasterHead" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <script type="text/javascript">
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+            prm.add_beginRequest(BeginRequestHandler);
+            prm.add_pageLoaded(pageLoadedHandler);
+
+            var ctrId_div_Bloquear = 'div_Bloquear';
+            var ctrId_EndRequestAction = '<%= EndRequestAction.ClientID %>';
+            var ctrId_EndRequestMessage = '<%= EndRequestMessage.ClientID %>';
+            var ctrId_btnModalClosed = '<%= btnModalClosed.UniqueID %>';
+            var ctrId_btnRedirectUrl = '<%= btnRedirectUrl.UniqueID %>';
+            var ctrId_RelativeUrl = '<%= txtRelativeUrl.ClientID %>';
+            var ctrId_ParamsUrl = '<%= txtParamsUrl.ClientID %>';
+
+            var ctrId_TabContainer = '<%=TabContainer1.ClientID%>'
+            var ctrId_ToolControl = '<%= ToolControl1.ClientID %>'
+
+            var IsGridSelected = false;
+        </script>
+
+        <div>
+            <asp:ScriptManager ID="ScriptManager1" runat="server" />
+                <table border="0" style="padding: 0px 5px 0px 5px; margin: 0px 5px 0px 15px; width: 95%; height: 430px;">
+                    <tr>
+                        <td>
+                            <table cellpadding="0" cellspacing="0" width="100%" style="height: 25px">
+                                <tr style="width: 100%">
+                                    <td style="width: 60%">
+                                        <asp:ContentPlaceHolder ID="MasterTool" runat="server">
+                                            <uc1:ToolControl ID="ToolControl1" runat="server" />
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                    <td  style="width: 40%" align ="right">
+                                      <asp:Label ID="lblnamepage" runat="server" Text="" CssClass="Titulo_Principal" Font-Size ="Medium"></asp:Label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                
+                    </tr>
+       
+                    <tr>
+                        <td valign="top" style="height: 100%">
+                            <div id="divBodyUnique" runat="server" visible="false" style="vertical-align: top;" align="left">
+                                <asp:ContentPlaceHolder ID="MasterBodyUnique" runat="server">Body</asp:ContentPlaceHolder>
+                            </div>
+
+                            <div id="divBodyTabs" runat="server" visible="true" style="vertical-align: top;" align="left">
+                            <ajaxToolkit:TabContainer runat="server" ID="TabContainer1" CssClass="ajax__tab_technorati-theme" ActiveTabIndex="2" Height="385px" Width="620px">
+                                <ajaxToolkit:TabPanel runat="server" ID="cphFiltroPanel" HeaderText="Filtro">
+                                    <HeaderTemplate>
+                                        <table onclick="set_activeTabIndex(0)">
+                                            <tr>
+                                                <td>
+                                                    <asp:Image ID="imgParametros" runat="server" ImageUrl="~/_images/menu/Consulta.png" />
+                                                </td>
+                                                <td style="width: 5px">
+                                                </td>
+                                                <td>
+                                                    <asp:Label ID="lblParametros" runat="server" Text="Filtro"></asp:Label>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </HeaderTemplate>
+                                    <ContentTemplate>
+                                       <%-- <div class="formTitle">
+                                            <asp:Label ID="txtFilterTitle" runat="server" Text=""></asp:Label>
+                                        </div>--%>
+                                        <div id="divFilterResize" style="width: 730px; height: 375px; overflow: auto; padding: 5px 0px 0px 0px;
+                                            margin: 0px; vertical-align: top; text-align: left;">
+                                            <asp:UpdatePanel ID="updFilter" runat="server" UpdateMode="Conditional">
+                                                <ContentTemplate>
+                                                    <asp:ContentPlaceHolder ID="MasterFilter" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                </ContentTemplate>
+                                            </asp:UpdatePanel>
+                                        </div>
+                                    </ContentTemplate>
+                                </ajaxToolkit:TabPanel>
+                                <ajaxToolkit:TabPanel runat="server" ID="cphListaPanel" HeaderText="Lista">
+                                    <HeaderTemplate>
+                                        <table onclick="set_activeTabIndex(1)">
+                                            <tr>
+                                                <td>
+                                                    <asp:Image ID="Image1" runat="server" ImageUrl="~/_images/menu/Consulta.png" />
+                                                </td>
+                                                <td style="width: 5px">
+                                                </td>
+                                                <td>
+                                                    <asp:Label ID="lblLista" runat="server" Text="Lista"></asp:Label>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </HeaderTemplate>
+                                    <ContentTemplate>
+                                       <%-- <div class="formTitle">
+                                            <asp:Label ID="txtGridTitle" runat="server" Text=""></asp:Label>
+                                        </div>--%>
+                                        <div id="divGridResize" style="width: 730px; height: 375px; overflow: auto; padding: 5px 0px 0px 0px;
+                                            margin: 0px; vertical-align: top; text-align: left;">
+                                            <asp:UpdatePanel ID="updGrid" runat="server" UpdateMode="Conditional">
+                                                <ContentTemplate>
+                                                    <asp:ContentPlaceHolder ID="MasterGrid" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                </ContentTemplate>
+                                            </asp:UpdatePanel>
+                                        </div>
+                                    </ContentTemplate>
+                                </ajaxToolkit:TabPanel>
+                                <ajaxToolkit:TabPanel runat="server" ID="chpDetallePanel" HeaderText="Detalle">
+                                    <HeaderTemplate>
+                                        <table onclick="set_activeTabIndex(2)">
+                                            <tr>
+                                                <td>
+                                                    <asp:Image ID="Image2" runat="server" ImageUrl="~/_images/menu/Consulta.png" />
+                                                </td>
+                                                <td style="width: 5px">
+                                                </td>
+                                                <td>
+                                                    <asp:Label ID="Label2" runat="server" Text="Detalle"></asp:Label>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </HeaderTemplate>
+                                    <ContentTemplate>
+                                        <div id="divDetailResize" style="width: 730px; height: 375px; overflow: auto; padding: 5px 0px 0px 0px;
+                                            margin: 0px; vertical-align: top; text-align: left;">
+                                            <asp:UpdatePanel ID="updDetail" runat="server" UpdateMode="Conditional">
+                                                <ContentTemplate>
+                                                    <asp:ContentPlaceHolder ID="MasterDetail" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                </ContentTemplate>
+                                            </asp:UpdatePanel>
+                                        </div>
+                                    </ContentTemplate>
+                                </ajaxToolkit:TabPanel>
+                            </ajaxToolkit:TabContainer>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100%; height :10px" align ="right" valign="bottom">
+                            <asp:Label ID="Label1"   runat="server" Text="Entidad" CssClass ="Label" Font-Bold ="false"  ></asp:Label>
+                            &nbsp;<asp:Label ID="LabelEntidad" runat="server" Font-Bold="True" 
+                                Text="NombreEntidad" CssClass="Label"></asp:Label>
+                        </td>
+                    </tr>
+            </table>
+        </div>
+
+        <asp:UpdatePanel ID="upMsgBox" runat="server">
+            <ContentTemplate>
+                <uc3:MessageBoxTemplate ID="MessageBoxTemplate1" runat="server" />
+                <asp:LinkButton ID="btnModalClosed" runat="server" Text=" "></asp:LinkButton>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+
+        <asp:UpdatePanel ID="updRequest" runat="server" UpdateMode="Always">
+            <ContentTemplate>
+                <input type="hidden" id="EndRequestAction" value="" runat="server" />
+                <input type="hidden" id="EndRequestMessage" value="" runat="server" />
+                <input type="hidden" id="CurrentPanelNameHidden" value="" runat="server" />
+                <asp:HiddenField ID="txtRelativeUrl" Value="" runat="server" />
+                <asp:HiddenField ID="txtParamsUrl" Value="" runat="server" />
+                <asp:LinkButton ID="btnRedirectUrl" runat="server"></asp:LinkButton>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+
+        <div id='div_Bloquear' class="divBloquear">
+            <table border="2" style="width: 100%; height: 500px">
+                <tr>
+                    <td valign='middle' align='center'>
+                        <img src="~/_images/basic/ajax-loader.gif" alt="" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <uc4:ConfirmBoxTemplate ID="ConfirmBoxTemplate1" runat="server" />
+    </form>
+</body>
+
+</html>

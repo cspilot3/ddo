@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{2A36C8AA-E7D4-487B-B537-8C26DCCDB6A7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UMV.Plugin</RootNamespace>
+    <AssemblyName>UMV.Plugin</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>UMV.Plugin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>UMV.Plugin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AFPDFLibNET, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Referencias\AFPDFLibNET.dll</HintPath>
+    </Reference>
+    <Reference Include="GdPicture.NET.12, Version=12.0.0.53, Culture=neutral, PublicKeyToken=9b2162a6bfb37f5f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Tools\Slyg.Tools.Imaging\Dlls\GdPicture.NET.12.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Gios.PSM, Version=2.0.2009.701, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Referencias\Gios.PSM.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.2.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.32.3057.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Referencias\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SLYG.Data">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\SLYG.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools.Zip, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Referencias\Slyg.Tools.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Imaging\UMV\Estiba\FormCreacionEstibas.Designer.vb">
+      <DependentUpon>FormCreacionEstibas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\UMV\Estiba\FormCreacionEstibas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\UMV\EventExecuterUMV.vb" />
+    <Compile Include="Imaging\UMV\Exportar\FormExportar.Designer.vb">
+      <DependentUpon>FormExportar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\UMV\Exportar\FormExportar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\UMV\Exportar\PdfSharp.vb" />
+    <Compile Include="Imaging\UMV\ImagingWorkSpaceWrapperUMV.vb" />
+    <Compile Include="Imaging\UMV\Program.vb" />
+    <Compile Include="Imaging\UMV\UMVPlugin.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="reportes\DataSetReportes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReportes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sql\Resource1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Imaging\UMV\Estiba\FormCreacionEstibas.resx">
+      <DependentUpon>FormCreacionEstibas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\UMV\Exportar\FormExportar.resx">
+      <DependentUpon>FormExportar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\PortadaDocumentoPrincipal.rdlc" />
+    <EmbeddedResource Include="sql\Resource1.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="reportes\DataSetReportes.xsc">
+      <DependentUpon>DataSetReportes.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\DataSetReportes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReportes.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\DataSetReportes.xss">
+      <DependentUpon>DataSetReportes.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\ajax-loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Controls\Miharu.Desktop.Controls.vbproj">
+      <Project>{BBDF4261-7651-4D93-95EE-675260D016AC}</Project>
+      <Name>Miharu.Desktop.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Library\Miharu.Desktop.Library.vbproj">
+      <Project>{60FE71B4-EC25-45F0-B384-B98582D035C7}</Project>
+      <Name>Miharu.Desktop.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.DataAccess\Miharu.Imaging.DataAccess.csproj">
+      <Project>{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}</Project>
+      <Name>Miharu.Imaging.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.Indexer\Miharu.Imaging.Indexer.vbproj">
+      <Project>{3AA91370-45D5-4EBD-A700-99FB10AB6FB4}</Project>
+      <Name>Miharu.Imaging.Indexer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.Library\Miharu.Imaging.Library.vbproj">
+      <Project>{9501AE9F-03BC-4933-9EC3-84BCD96CC795}</Project>
+      <Name>Miharu.Imaging.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.OfflineViewer.Library\Miharu.Imaging.OffLineViewer.Library.vbproj">
+      <Project>{B32D869B-91E0-4A7A-8BE7-D14B3275B30A}</Project>
+      <Name>Miharu.Imaging.OffLineViewer.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.OfflineViewer\Miharu.Imaging.OffLineViewer.vbproj">
+      <Project>{42CF61BE-8DDC-4FAE-84F1-57041F076AA9}</Project>
+      <Name>Miharu.Imaging.OffLineViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.DataAccess\Miharu.Security.DataAccess.csproj">
+      <Project>{902B10BC-8630-4730-9AC5-763CA7D2CB31}</Project>
+      <Name>Miharu.Security.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.Library\Miharu.Security.Library.csproj">
+      <Project>{BC90E6AA-55BE-4E52-841E-FE48A32E750D}</Project>
+      <Name>Miharu.Security.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.FileProvider.Library\Miharu.FileProvider.Library.vbproj">
+      <Project>{1E21AD2F-0D1F-47A5-94C5-A75D6DAAAC8F}</Project>
+      <Name>Miharu.FileProvider.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.FileProvider\Miharu.FileProvider.vbproj">
+      <Project>{A81EC87D-4B7A-49C4-91C9-534BFC0C805E}</Project>
+      <Name>Miharu.FileProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.Tools\Miharu.Tools.vbproj">
+      <Project>{69D016B1-3E92-4037-9CEB-FE8283479AFD}</Project>
+      <Name>Miharu.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Slyg.Tools.Imaging\Slyg.Tools.Imaging.csproj">
+      <Project>{B41AFD53-3FE1-4C20-B359-1C5FC16954C4}</Project>
+      <Name>Slyg.Tools.Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Integration.DataAccess\Miharu.Integration.DataAccess.csproj">
+      <Project>{8A0078E2-6728-4413-AE6F-FD1EADEB7247}</Project>
+      <Name>Miharu.Integration.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnCargar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\008000000069.tif" />
+    <Content Include="Images\Aceptar.png" />
+    <Content Include="Images\Adicionar.png" />
+    <Content Include="Referencias\PdfSharp.dll" />
+    <Content Include="Referencias\PdfSharp.xml" />
+    <None Include="Resources\Close_folder.png" />
+    <None Include="Resources\close_folder_2.png" />
+    <None Include="Resources\MainFolder.png" />
+    <None Include="Images\AlcaldiaMayodeBogota.jpg" />
+    <Content Include="Images\anexo_completo.png" />
+    <Content Include="Images\anexo_folder.png" />
+    <Content Include="Images\auto_indexar.png" />
+    <Content Include="Images\bancoagrario.png" />
+    <Content Include="Images\book_previous.png" />
+    <Content Include="Images\btnAgregar.png" />
+    <Content Include="Images\btnAjustarAlto.Image.png" />
+    <Content Include="Images\btnAjustarAncho.Image.png" />
+    <Content Include="Images\btnBuscar.png" />
+    <Content Include="Images\btnCopiar.png" />
+    <Content Include="Images\btnDestape.png" />
+    <Content Include="Images\btnGenerarEstructura.png" />
+    <Content Include="Images\btnGuardar.png" />
+    <Content Include="Images\btnPaginaAnterior.Image.png" />
+    <Content Include="Images\btnPaginaFinal.Image.png" />
+    <Content Include="Images\btnPaginaPrimera.Image.png" />
+    <Content Include="Images\btnPaginaSiguiente.Image.png" />
+    <Content Include="Images\btnReflejarHorizontal.Image.png" />
+    <Content Include="Images\btnReflejarVertical.Image.png" />
+    <Content Include="Images\btnRotarDerecha.Image.png" />
+    <Content Include="Images\btnRotarIzquierda.Image.png" />
+    <Content Include="Images\btnSalir.png" />
+    <Content Include="Images\btnZoomIn.Image.png" />
+    <Content Include="Images\btnZoomOut.Image.png" />
+    <Content Include="Images\calculator_edit.png" />
+    <Content Include="Images\cancel.png" />
+    <Content Include="Images\cancelar.png" />
+    <Content Include="Images\CancelarVen.png" />
+    <Content Include="Images\Cargue.png" />
+    <Content Include="Images\Close_Red.png" />
+    <Content Include="Images\cog_edit.png" />
+    <Content Include="Images\cog_go.png" />
+    <Content Include="Images\compress.png" />
+    <Content Include="Images\cross.png" />
+    <Content Include="Images\Devoluciones.png" />
+    <Content Include="Images\document_add.png" />
+    <Content Include="Images\document_delete.png" />
+    <Content Include="Images\document_edit.png" />
+    <Content Include="Images\door_in.png" />
+    <Content Include="Images\Edit.png" />
+    <Content Include="Images\Entidad.png" />
+    <Content Include="Images\Export.png" />
+    <Content Include="Images\filesave.png" />
+    <Content Include="Images\film.png" />
+    <Content Include="Images\film_delete.png" />
+    <Content Include="Images\find.png" />
+    <Content Include="Images\folder_add.png" />
+    <Content Include="Images\folder_delete.png" />
+    <Content Include="Images\folder_image.png" />
+    <Content Include="Images\images.png" />
+    <Content Include="Images\image_edit.png" />
+    <Content Include="Images\Indexar.png" />
+    <Content Include="Images\Instalador.jpg" />
+    <Content Include="Images\Keys.png" />
+    <Content Include="Images\layout_content.png" />
+    <Content Include="Images\layout_edit.png" />
+    <Content Include="Images\layout_error.png" />
+    <Content Include="Images\lightning_go.png" />
+    <Content Include="Images\lock.png" />
+    <Content Include="Images\lock_open.png" />
+    <Content Include="Images\MainField.png" />
+    <Content Include="Images\MesaImagenes.png" />
+    <Content Include="Images\MiharuImagingIndexerIcon.ico" />
+    <Content Include="Images\MiharuImagingIndexerImage.png" />
+    <Content Include="Images\page_white_code.png" />
+    <Content Include="Images\page_white_key.png" />
+    <Content Include="Images\PreIndexar.png" />
+    <Content Include="Images\prepare.png" />
+    <Content Include="Images\Proceso.ico" />
+    <Content Include="Images\Process-Accept.png" />
+    <Content Include="Images\publicar.png" />
+    <Content Include="Images\refresh.png" />
+    <Content Include="Images\Reindexar2.png" />
+    <Content Include="Images\Remove-Image.png" />
+    <Content Include="Images\remove-update.png" />
+    <Content Include="Images\Remove.png" />
+    <Content Include="Images\replace-image.png" />
+    <Content Include="Images\report.png" />
+    <Content Include="Images\Reproceso.png" />
+    <Content Include="Images\scanner.png" />
+    <Content Include="Images\SegundaCaptura.png" />
+    <Content Include="Images\SelectOne.png" />
+    <Content Include="Images\SelectTwo.png" />
+    <Content Include="Images\server_go.png" />
+    <Content Include="Images\sheet_add.png" />
+    <Content Include="Images\sheet_delete.png" />
+    <Content Include="Images\spellcheck.png" />
+    <Content Include="Images\TablaAsociada.png" />
+    <Content Include="Images\tag_blue_delete.png" />
+    <Content Include="Images\tag_yellow.png" />
+    <Content Include="Images\Terceracaptura.png" />
+    <Content Include="Images\text_list_numbers.png" />
+    <Content Include="Images\tick.png" />
+    <Content Include="Images\zoom.png" />
+    <Content Include="Referencias\AFPDFLibNET.dll" />
+    <Content Include="Referencias\Gios.PSM.dll" />
+    <Content Include="Referencias\Slyg.Tools.Zip.dll" />
+    <Content Include="Resources\btnDestape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DLL\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

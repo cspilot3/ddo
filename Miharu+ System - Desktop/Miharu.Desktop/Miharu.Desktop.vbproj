@@ -1,0 +1,878 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C14D0FDB-917D-473D-83EA-282F57952278}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>Miharu.Desktop</RootNamespace>
+    <AssemblyName>Miharu.DesktopDDO</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>C:\inetpub\wwwroot\DDO_Cer\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://www.procesosycanjecert.com.co/Miharu.DesktopDDO/</InstallUrl>
+    <PublisherName>Procesos y Canje S.A</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>31</ApplicationRevision>
+    <ApplicationVersion>1.1.1.31</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Miharu.DesktopDDO.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Miharu.DesktopDDO.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\MiharuDesktopIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>05D2FE27506ADA115F105745E67E6AC85F04053D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Miharu.DesktopDDO.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Miharu.DesktopDDO.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DB_OCR.DataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencias\DLLs\DB_OCR.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="GdPicture.NET.12, Version=12.0.0.53, Culture=neutral, PublicKeyToken=7425795337ab7910, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Tools\Slyg.Tools.Imaging\Dlls\GdPicture.NET.12.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging">
+      <HintPath>..\Referencias\DLLs\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencias\DLLs\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencias\DLLs\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencias\DLLs\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencias\DLLs\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Slyg.Data, Version=2.7.3.18884, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencias\DLLs\Slyg.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools">
+      <HintPath>..\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\ProcessLibraryFactory.vb" />
+    <Compile Include="Forms\Imaging\FormSelecionarProyecto.Designer.vb">
+      <DependentUpon>FormSelecionarProyecto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Imaging\FormSelecionarProyecto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevaValidacionDinamica.Designer.vb">
+      <DependentUpon>FormNuevaValidacionDinamica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevaValidacionDinamica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormValidacionesDinamicas.Designer.vb">
+      <DependentUpon>FormValidacionesDinamicas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormValidacionesDinamicas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormCampoLista.Designer.vb">
+      <DependentUpon>FormCampoLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormCampoLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormCampoCarpeta.Designer.vb">
+      <DependentUpon>FormCampoCarpeta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormCampoCarpeta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormCategoria.Designer.vb">
+      <DependentUpon>FormCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevaTablaAsociada.Designer.vb">
+      <DependentUpon>FormNuevaTablaAsociada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevaTablaAsociada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevaTipologia.Designer.vb">
+      <DependentUpon>FormNuevaTipologia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevaTipologia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevoCampo.Designer.vb">
+      <DependentUpon>FormNuevoCampo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevoCampo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormCampo.Designer.vb">
+      <DependentUpon>FormCampo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormCampo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Facturacion\FormConsultarEsquemaFacturacion.Designer.vb">
+      <DependentUpon>FormConsultarEsquemaFacturacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Facturacion\FormConsultarEsquemaFacturacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Facturacion\FormEditarFacturacion.Designer.vb">
+      <DependentUpon>FormEditarFacturacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Facturacion\FormEditarFacturacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Facturacion\FormEsquemaFacturacion.Designer.vb">
+      <DependentUpon>FormEsquemaFacturacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Facturacion\FormEsquemaFacturacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Facturacion\FormFacturacion.Designer.vb">
+      <DependentUpon>FormFacturacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Facturacion\FormFacturacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Facturacion\FormHomologacionFacturacion.Designer.vb">
+      <DependentUpon>FormHomologacionFacturacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Facturacion\FormHomologacionFacturacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Facturacion\FormReporteFacturacion.Designer.vb">
+      <DependentUpon>FormReporteFacturacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Facturacion\FormReporteFacturacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Facturacion\FormServiciosFacturacion.Designer.vb">
+      <DependentUpon>FormServiciosFacturacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Facturacion\FormServiciosFacturacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAbout.Designer.vb">
+      <DependentUpon>FormAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAyuda.Designer.vb">
+      <DependentUpon>FormAyuda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAyuda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDesbloquear_Usuarios.Designer.vb">
+      <DependentUpon>FormDesbloquear_Usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDesbloquear_Usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLogin.designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormNewPassword.Designer.vb">
+      <DependentUpon>FormNewPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormNewPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSplash.designer.vb">
+      <DependentUpon>FormSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Imaging\FormParProyectoImaging.Designer.vb">
+      <DependentUpon>FormParProyectoImaging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Imaging\FormParProyectoImaging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Imaging\FormParProyectoLlaveImaging.Designer.vb">
+      <DependentUpon>FormParProyectoLlaveImaging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Imaging\FormParProyectoLlaveImaging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormDocumento.Designer.vb">
+      <DependentUpon>FormDocumento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormDocumento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevaValidacion.Designer.vb">
+      <DependentUpon>FormNuevaValidacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevaValidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevoCampoLista.Designer.vb">
+      <DependentUpon>FormNuevoCampoLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevoCampoLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevoCampoCarpeta.Designer.vb">
+      <DependentUpon>FormNuevoCampoCarpeta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevoCampoCarpeta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevoDocumento.Designer.vb">
+      <DependentUpon>FormNuevoDocumento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevoDocumento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevoTipoOT.Designer.vb">
+      <DependentUpon>FormNuevoTipoOT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormNuevoTipoOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormRoles.Designer.vb">
+      <DependentUpon>FormRoles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormRoles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormRolesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormRolesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormSeleccionarEsquema.Designer.vb">
+      <DependentUpon>FormSeleccionarEsquema.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormSeleccionarEsquema.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormTablaAsociada.Designer.vb">
+      <DependentUpon>FormTablaAsociada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormTablaAsociada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormTipologia.Designer.vb">
+      <DependentUpon>FormTipologia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormTipologia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormTipoOT.Designer.vb">
+      <DependentUpon>FormTipoOT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormTipoOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormValidaciones.Designer.vb">
+      <DependentUpon>FormValidaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\FormValidaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\Controls\ParameterList.Designer.vb">
+      <DependentUpon>ParameterList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\Controls\ParameterList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\Controls\ParameterCheck.Designer.vb">
+      <DependentUpon>ParameterCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\Controls\ParameterCheck.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\Controls\ParameterDate.Designer.vb">
+      <DependentUpon>ParameterDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\Controls\ParameterDate.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\Controls\ParameterNumeric.Designer.vb">
+      <DependentUpon>ParameterNumeric.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\Controls\ParameterNumeric.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\Controls\ParameterText.Designer.vb">
+      <DependentUpon>ParameterText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\Controls\ParameterText.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\FormConfirmacionReporte.Designer.vb">
+      <DependentUpon>FormConfirmacionReporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\FormConfirmacionReporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\FormVisorReportes.Designer.vb">
+      <DependentUpon>FormVisorReportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\FormVisorReportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\IParameter.vb" />
+    <Compile Include="Forms\Risk\FormAdmonPuntos.Designer.vb">
+      <DependentUpon>FormAdmonPuntos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Risk\FormAdmonPuntos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Risk\FormParProyecto.Designer.vb">
+      <DependentUpon>FormParProyecto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Risk\FormParProyecto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Program.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Imaging\FormSelecionarProyecto.resx">
+      <DependentUpon>FormSelecionarProyecto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormNuevaValidacionDinamica.resx">
+      <DependentUpon>FormNuevaValidacionDinamica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormValidacionesDinamicas.resx">
+      <DependentUpon>FormValidacionesDinamicas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormCampoLista.resx">
+      <DependentUpon>FormCampoLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormCampoCarpeta.resx">
+      <DependentUpon>FormCampoCarpeta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormCategoria.resx">
+      <DependentUpon>FormCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormNuevaTablaAsociada.resx">
+      <DependentUpon>FormNuevaTablaAsociada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormNuevaTipologia.resx">
+      <DependentUpon>FormNuevaTipologia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormNuevoCampo.resx">
+      <DependentUpon>FormNuevoCampo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormCampo.resx">
+      <DependentUpon>FormCampo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Facturacion\FormConsultarEsquemaFacturacion.resx">
+      <DependentUpon>FormConsultarEsquemaFacturacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Facturacion\FormEditarFacturacion.resx">
+      <DependentUpon>FormEditarFacturacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Facturacion\FormEsquemaFacturacion.resx">
+      <DependentUpon>FormEsquemaFacturacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Facturacion\FormFacturacion.resx">
+      <DependentUpon>FormFacturacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Facturacion\FormHomologacionFacturacion.resx">
+      <DependentUpon>FormHomologacionFacturacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Facturacion\FormReporteFacturacion.resx">
+      <DependentUpon>FormReporteFacturacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Facturacion\FormServiciosFacturacion.resx">
+      <DependentUpon>FormServiciosFacturacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAbout.resx">
+      <DependentUpon>FormAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAyuda.resx">
+      <DependentUpon>FormAyuda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDesbloquear_Usuarios.resx">
+      <DependentUpon>FormDesbloquear_Usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormNewPassword.resx">
+      <DependentUpon>FormNewPassword.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSplash.resx">
+      <DependentUpon>FormSplash.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Imaging\FormParProyectoImaging.resx">
+      <DependentUpon>FormParProyectoImaging.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Imaging\FormParProyectoLlaveImaging.resx">
+      <DependentUpon>FormParProyectoLlaveImaging.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormDocumento.resx">
+      <DependentUpon>FormDocumento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormNuevaValidacion.resx">
+      <DependentUpon>FormNuevaValidacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormNuevoCampoLista.resx">
+      <DependentUpon>FormNuevoCampoLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormNuevoCampoCarpeta.resx">
+      <DependentUpon>FormNuevoCampoCarpeta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormNuevoDocumento.resx">
+      <DependentUpon>FormNuevoDocumento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormNuevoTipoOT.resx">
+      <DependentUpon>FormNuevoTipoOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormRoles.resx">
+      <DependentUpon>FormRoles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormSeleccionarEsquema.resx">
+      <DependentUpon>FormSeleccionarEsquema.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormTablaAsociada.resx">
+      <DependentUpon>FormTablaAsociada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormTipologia.resx">
+      <DependentUpon>FormTipologia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormTipoOT.resx">
+      <DependentUpon>FormTipoOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\FormValidaciones.resx">
+      <DependentUpon>FormValidaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\Controls\ParameterList.resx">
+      <DependentUpon>ParameterList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\Controls\ParameterCheck.resx">
+      <DependentUpon>ParameterCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\Controls\ParameterDate.resx">
+      <DependentUpon>ParameterDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\Controls\ParameterNumeric.resx">
+      <DependentUpon>ParameterNumeric.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\Controls\ParameterText.resx">
+      <DependentUpon>ParameterText.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\FormConfirmacionReporte.resx">
+      <DependentUpon>FormConfirmacionReporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\FormVisorReportes.resx">
+      <DependentUpon>FormVisorReportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\rptFacturacion.rdlc" />
+    <EmbeddedResource Include="Forms\Risk\FormAdmonPuntos.resx">
+      <DependentUpon>FormAdmonPuntos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Risk\FormParProyecto.resx">
+      <DependentUpon>FormParProyecto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Files\ComandosAyuda.rtf" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Forms\Parametrizacion\FormRolesDataSet.xsc">
+      <DependentUpon>FormRolesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\Parametrizacion\FormRolesDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FormRolesDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Forms\Parametrizacion\FormRolesDataSet.xss">
+      <DependentUpon>FormRolesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Files\JOB Facturacion.sql" />
+    <Content Include="FreeImage.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gsdll32.dll" />
+    <Content Include="gsdll64.dll" />
+    <Content Include="Icons\billing.ico" />
+    <Content Include="Icons\information.ico" />
+    <Content Include="Images\Aceptar.png" />
+    <Content Include="Images\Billing.png" />
+    <Content Include="Images\btnAceptar.png" />
+    <Content Include="Images\btnAgregar.png" />
+    <Content Include="Images\btnBuscar.png" />
+    <Content Include="Images\btnCancelar.png" />
+    <Content Include="Images\btnGenerarEstructura.png" />
+    <Content Include="Images\btnGuardar.png" />
+    <Content Include="Images\btnSalir.gif" />
+    <Content Include="Images\btnSalir.png" />
+    <Content Include="Images\Cancelar.png" />
+    <Content Include="Images\category.png" />
+    <Content Include="Images\chart_organisation.png" />
+    <Content Include="Images\Close_Red.png" />
+    <Content Include="Images\Custody.png" />
+    <Content Include="Images\CreditFactory.png" />
+    <Content Include="Images\domesa.png" />
+    <Content Include="Images\DomesaSA.png" />
+    <Content Include="Images\Edit.png" />
+    <Content Include="Images\excel.png" />
+    <Content Include="Images\FacturacionMain.png" />
+    <Content Include="Images\HelpCenter.png" />
+    <Content Include="Images\HelpMain.png" />
+    <Content Include="Images\imagingMain.png" />
+    <Content Include="Images\Login.png" />
+    <Content Include="Images\Login2.png" />
+    <Content Include="Images\MainHomologacion.png" />
+    <Content Include="Images\MainKey.png" />
+    <Content Include="Images\MainService.png" />
+    <Content Include="Images\password.jpg" />
+    <Content Include="Images\Process_Billing.png" />
+    <Content Include="VintasoftTwainService.exe" />
+    <None Include="Images\pyc.png" />
+    <Content Include="Images\report.png" />
+    <Content Include="Images\ReportPrint.png" />
+    <Content Include="Images\Risk.png" />
+    <Content Include="Images\Paper.png" />
+    <Content Include="Images\MiharuDesktopLogo.png" />
+    <Content Include="Images\MiharuDesktopIcon.ico" />
+    <Content Include="Images\Keys.png" />
+    <Content Include="Images\logoslyg.png" />
+    <Content Include="Images\Imaging.png" />
+    <Content Include="Images\Project.png" />
+    <Content Include="Images\RiskMain.png" />
+    <Content Include="Images\run.png" />
+    <Content Include="Images\vcard.png" />
+    <None Include="Images\ver.jpg" />
+    <Content Include="Images\ver.png" />
+    <Content Include="Images\WindowsMain.png" />
+    <Content Include="OffLineViewer\ExportedData.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OffLineViewer\OffLineViewer.exe" />
+    <Content Include="OffLineViewer\OffLineViewer.Library.dll" />
+    <None Include="Resources\LogoPyC.png" />
+    <None Include="Resources\LogoPYC.jpg" />
+    <Content Include="Temp\temp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Archiving\Miharu.Archiving.DataAccess\Miharu.Archiving.DataAccess.csproj">
+      <Project>{8AB7AE02-8837-4800-8FDA-EA6CC59A374F}</Project>
+      <Name>Miharu.Archiving.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Archiving\Miharu.Custody.Library\Miharu.Custody.Library.vbproj">
+      <Project>{E5A9D40A-E4F4-49B2-B15F-E2F9B3751334}</Project>
+      <Name>Miharu.Custody.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Archiving\Miharu.Risk.Library\Miharu.Risk.Library.vbproj">
+      <Project>{65966670-0B6D-4BB9-9701-00554C5F1F40}</Project>
+      <Name>Miharu.Risk.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.DataAccess\Miharu.Imaging.DataAccess.csproj">
+      <Project>{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}</Project>
+      <Name>Miharu.Imaging.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.Library\Miharu.Imaging.Library.vbproj">
+      <Project>{9501AE9F-03BC-4933-9EC3-84BCD96CC795}</Project>
+      <Name>Miharu.Imaging.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Plugins\Miharu.Integration.DataAccess\Miharu.Integration.DataAccess.csproj">
+      <Project>{8a0078e2-6728-4413-ae6f-fd1eadeb7247}</Project>
+      <Name>Miharu.Integration.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.DataAccess\Miharu.Security.DataAccess.csproj">
+      <Project>{902B10BC-8630-4730-9AC5-763CA7D2CB31}</Project>
+      <Name>Miharu.Security.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.Library\Miharu.Security.Library.csproj">
+      <Project>{BC90E6AA-55BE-4E52-841E-FE48A32E750D}</Project>
+      <Name>Miharu.Security.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Desktop.Controls\Miharu.Desktop.Controls.vbproj">
+      <Project>{BBDF4261-7651-4D93-95EE-675260D016AC}</Project>
+      <Name>Miharu.Desktop.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Desktop.Library\Miharu.Desktop.Library.vbproj">
+      <Project>{60FE71B4-EC25-45F0-B384-B98582D035C7}</Project>
+      <Name>Miharu.Desktop.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="{1D2E2C3B-E84E-410D-8D2B-52B487A654F3}">
+      <Visible>False</Visible>
+      <ProductName>TWAIN DSM x64 2.x</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="{C84127E8-EA97-4F39-BF23-B522D9ED3B22}">
+      <Visible>False</Visible>
+      <ProductName>TWAIN DSM x86 2.x</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="GdPicture.NET.12">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Mono.Security">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

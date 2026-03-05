@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Product xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"
+         ProductCode="TWAINDSMx86">
+
+  <!-- Copia todos los archivos del paquete a la carpeta de publicación -->
+  <PackageFiles CopyAllPackageFiles="true">
+    <PackageFile Name="VintasoftTwain32.msi" />
+  </PackageFiles>
+
+  <!-- Detección: DSM x64 en System32 (ajusta si quieres también SysWOW64) -->
+  <InstallChecks>
+    <FileCheck Property="TWAIN_DSM_INSTALLED"
+               FileName="TWAINDSM.dll"
+               SearchPath="[%SystemRoot%]\SysWOW64"
+               Compare="exists" />
+  </InstallChecks>
+
+  <Commands Reboot="Defer">
+    <Command PackageFile="VintasoftTwain32.msi"
+             Arguments="/qn"
+             EstimatedInstalledBytes="200000"
+             EstimatedInstallSeconds="20"
+             Result="Success">
+      <!-- Si ya está instalado (FileCheck), no lo reinstales -->
+      <InstallConditions>
+        <BypassIf Property="TWAIN_DSM_INSTALLED" Compare="ValueExists" />
+      </InstallConditions>
+    </Command>
+  </Commands>
+</Product>

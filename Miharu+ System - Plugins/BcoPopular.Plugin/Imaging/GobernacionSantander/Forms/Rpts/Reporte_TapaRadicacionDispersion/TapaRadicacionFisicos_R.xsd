@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TapaRadicacionFisicos_R" targetNamespace="http://tempuri.org/TapaRadicacionFisicos_R.xsd" xmlns:mstns="http://tempuri.org/TapaRadicacionFisicos_R.xsd" xmlns="http://tempuri.org/TapaRadicacionFisicos_R.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TapaRadicacionFisicos_R" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="TapaRadicacionFisicos_R" msprop:Generator_UserDSName="TapaRadicacionFisicos_R">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TapaRadicacionFisicos_R" msprop:Generator_TableClassName="TapaRadicacionFisicos_RDataTable" msprop:Generator_TableVarName="tableTapaRadicacionFisicos_R" msprop:Generator_RowChangedName="TapaRadicacionFisicos_RRowChanged" msprop:Generator_TablePropName="_TapaRadicacionFisicos_R" msprop:Generator_RowDeletingName="TapaRadicacionFisicos_RRowDeleting" msprop:Generator_RowChangingName="TapaRadicacionFisicos_RRowChanging" msprop:Generator_RowEvHandlerName="TapaRadicacionFisicos_RRowChangeEventHandler" msprop:Generator_RowDeletedName="TapaRadicacionFisicos_RRowDeleted" msprop:Generator_RowClassName="TapaRadicacionFisicos_RRow" msprop:Generator_UserTableName="TapaRadicacionFisicos_R" msprop:Generator_RowEvArgName="TapaRadicacionFisicos_RRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EMPRESA" msprop:Generator_ColumnVarNameInTable="columnEMPRESA" msprop:Generator_ColumnPropNameInRow="EMPRESA" msprop:Generator_ColumnPropNameInTable="EMPRESAColumn" msprop:Generator_UserColumnName="EMPRESA" type="xs:string" minOccurs="0" />
+              <xs:element name="VALOR" msprop:Generator_ColumnVarNameInTable="columnVALOR" msprop:Generator_ColumnPropNameInRow="VALOR" msprop:Generator_ColumnPropNameInTable="VALORColumn" msprop:Generator_UserColumnName="VALOR" type="xs:string" minOccurs="0" />
+              <xs:element name="CAUSAL" msprop:Generator_ColumnVarNameInTable="columnCAUSAL" msprop:Generator_ColumnPropNameInRow="CAUSAL" msprop:Generator_ColumnPropNameInTable="CAUSALColumn" msprop:Generator_UserColumnName="CAUSAL" type="xs:string" minOccurs="0" />
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

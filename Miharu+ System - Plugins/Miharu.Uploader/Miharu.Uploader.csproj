@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA41121C-DB0F-47E8-A3AF-1DFEB6448C1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Miharu.Uploader</RootNamespace>
+    <AssemblyName>Miharu.Uploader</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>c:\inetpub\wwwroot\Pasos\Miharu.Uploader\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://uatapconvenios/Miharu.Uploader/publish.htm/</InstallUrl>
+    <UpdateUrl>http://200.115.178.58:8090/Miharu.Uploader/</UpdateUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>0.0.0.5</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Miharu.Uploader.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8D5A1F0BBF597AEA51EF0043B987D7F26B4D1C30</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Miharu.Uploader_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Data, Version=2.7.6.24573, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools, Version=2.0.5367.20120, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools.Zip, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\UploaderConfig.cs" />
+    <Compile Include="Forms\FormSeleccionarCargue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSeleccionarCargue.Designer.cs">
+      <DependentUpon>FormSeleccionarCargue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAboutBox.designer.cs">
+      <DependentUpon>FormAboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormConfig.designer.cs">
+      <DependentUpon>FormConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLogin.designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain.designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormNewPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormNewPassword.Designer.cs">
+      <DependentUpon>FormNewPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormNewProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormNewProcess.Designer.cs">
+      <DependentUpon>FormNewProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSeleccionarEsquema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSeleccionarEsquema.Designer.cs">
+      <DependentUpon>FormSeleccionarEsquema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSeleccionarFechaMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSeleccionarFechaMovimiento.designer.cs">
+      <DependentUpon>FormSeleccionarFechaMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormVisorReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormVisorReportes.Designer.cs">
+      <DependentUpon>FormVisorReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\ImageManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormSeleccionarCargue.resx">
+      <DependentUpon>FormSeleccionarCargue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAboutBox.resx">
+      <DependentUpon>FormAboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormConfig.resx">
+      <DependentUpon>FormConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormNewPassword.resx">
+      <DependentUpon>FormNewPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormNewProcess.resx">
+      <DependentUpon>FormNewProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSeleccionarEsquema.resx">
+      <DependentUpon>FormSeleccionarEsquema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSeleccionarFechaMovimiento.resx">
+      <DependentUpon>FormSeleccionarFechaMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormVisorReportes.resx">
+      <DependentUpon>FormVisorReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\arrow_left_green_48.png" />
+    <Content Include="Images\arrow_right_48.png" />
+    <Content Include="Images\BanagrarioScanningIcon.ico" />
+    <Content Include="Images\cancel.png" />
+    <Content Include="Images\cancel_48.png" />
+    <Content Include="Images\cancel_80.png" />
+    <Content Include="Images\cross_48.png" />
+    <Content Include="Images\database_add_48.png" />
+    <Content Include="Images\database_remove_48.png" />
+    <Content Include="Images\DataProc.png" />
+    <Content Include="Images\Directorios.png" />
+    <Content Include="Images\floppy_disk_48.png" />
+    <Content Include="Images\folder_add_48.png" />
+    <Content Include="Images\folder_image.png" />
+    <Content Include="Images\Guardar.png" />
+    <Content Include="Images\images.png" />
+    <Content Include="Images\image_add_48.png" />
+    <Content Include="Images\image_edit.png" />
+    <Content Include="Images\Imaging.png" />
+    <Content Include="Images\InserImage.png" />
+    <Content Include="Images\InsertImages.png" />
+    <Content Include="Images\LoadData_80.png" />
+    <Content Include="Images\MoveNext.png" />
+    <Content Include="Images\MovePrevious.png" />
+    <Content Include="Images\navigate_48.png" />
+    <Content Include="Images\Nuevo.png" />
+    <Content Include="Images\paper_content_48.png" />
+    <Content Include="Images\password.jpg" />
+    <Content Include="Images\password.png" />
+    <Content Include="Images\Remove.png" />
+    <Content Include="Images\spanner_48.png" />
+    <Content Include="Images\table_48.png" />
+    <Content Include="Images\tick.png" />
+    <Content Include="Images\tx_desmat_con_soporte_físico.png" />
+    <Content Include="Images\Vista_Iconos.png" />
+    <Content Include="Images\Vista_Lista.png" />
+    <None Include="Resources\publicar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Controls\Miharu.Desktop.Controls.vbproj">
+      <Project>{BBDF4261-7651-4D93-95EE-675260D016AC}</Project>
+      <Name>Miharu.Desktop.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Library\Miharu.Desktop.Library.vbproj">
+      <Project>{60FE71B4-EC25-45F0-B384-B98582D035C7}</Project>
+      <Name>Miharu.Desktop.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Referencias\Referencias.csproj">
+      <Project>{B17637C8-36B2-4F05-9BF4-4064CEF962AC}</Project>
+      <Name>Referencias</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.Library\Miharu.Security.Library.csproj">
+      <Project>{BC90E6AA-55BE-4E52-841E-FE48A32E750D}</Project>
+      <Name>Miharu.Security.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Slyg.Tools.Imaging\Slyg.Tools.Imaging.csproj">
+      <Project>{B41AFD53-3FE1-4C20-B359-1C5FC16954C4}</Project>
+      <Name>Slyg.Tools.Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.FileSending.Library\Miharu.FileSending.Library.vbproj">
+      <Project>{8E524381-A7E2-4D60-B33C-5C6615252B49}</Project>
+      <Name>Miharu.FileSending.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Integration.DataAccess\Miharu.Integration.DataAccess.csproj">
+      <Project>{8A0078E2-6728-4413-AE6F-FD1EADEB7247}</Project>
+      <Name>Miharu.Integration.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Uploader.Library\Miharu.Uploader.Library.csproj">
+      <Project>{9831ACD1-FBEF-405C-9A86-916B2D684C8B}</Project>
+      <Name>Miharu.Uploader.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.ReportViewer.10.0">
+      <Visible>False</Visible>
+      <ProductName>Visor de informes de Microsoft Visual Studio 2010</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VisualBasic.PowerPacks.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Basic PowerPacks 10.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,12 @@
+﻿a.menu
+{
+    margin: 6px;
+    padding: 6px;
+    float: left;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    cursor: pointer;
+    line-height: normal;
+}
+

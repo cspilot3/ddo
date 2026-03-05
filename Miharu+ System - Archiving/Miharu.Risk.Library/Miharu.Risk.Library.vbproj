@@ -1,0 +1,1386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{65966670-0B6D-4BB9-9701-00554C5F1F40}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Miharu.Risk.Library</RootNamespace>
+    <AssemblyName>Miharu.Risk.Library</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Miharu.Risk.Library.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Miharu.Risk.Library.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Slyg.Data">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB_ArchivingDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_ArchivingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Esquemas\Busqueda\xsdBusqueda.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xsdBusqueda.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Esquemas\Busqueda\xsdBusqueda.vb">
+      <DependentUpon>xsdBusqueda.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Esquemas\Imaging\xsdCargue.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xsdCargue.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Esquemas\Risk\xsdDevoluciones.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xsdDevoluciones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Esquemas\Risk\xsdDevoluciones.vb">
+      <DependentUpon>xsdDevoluciones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Esquemas\Risk\xsdEstadosOT.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xsdEstadosOT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Esquemas\Risk\xsdFilesReproceso.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xsdFilesReproceso.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Esquemas\Risk\xsdFilesReproceso.vb">
+      <DependentUpon>xsdFilesReproceso.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Esquemas\Risk\xsdRemision.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xsdRemision.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\EventManager.vb" />
+    <Compile Include="Eventos\IEventExecuter.vb" />
+    <Compile Include="Forms\CargueLog\FormCargueLog.Designer.vb">
+      <DependentUpon>FormCargueLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CargueLog\FormCargueLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CargueLog\FormResultadoValidacion.Designer.vb">
+      <DependentUpon>FormResultadoValidacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CargueLog\FormResultadoValidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CargueLog\ProcesaCargueLog.vb" />
+    <Compile Include="Forms\Cargue\FormCargue.Designer.vb">
+      <DependentUpon>FormCargue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cargue\FormCargue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cargue\FormCargueDeceval.Designer.vb">
+      <DependentUpon>FormCargueDeceval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cargue\FormCargueDeceval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cargue\FormCargueLogClienteExterno.Designer.vb">
+      <DependentUpon>FormCargueLogClienteExterno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cargue\FormCargueLogClienteExterno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cargue\FormResultadoValidacion.Designer.vb">
+      <DependentUpon>FormResultadoValidacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cargue\FormResultadoValidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cargue\FormResultadoValidacionClienteExterno.Designer.vb">
+      <DependentUpon>FormResultadoValidacionClienteExterno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cargue\FormResultadoValidacionClienteExterno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cargue\ProcesaCargue.vb" />
+    <Compile Include="Forms\Cargue\ProcesaCargueClienteExterno.vb" />
+    <Compile Include="Forms\CBarras\FormCBarrasCajas.Designer.vb">
+      <DependentUpon>FormCBarrasCajas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CBarras\FormCBarrasCajas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CBarras\FormCBarrasFolderFile.Designer.vb">
+      <DependentUpon>FormCBarrasFolderFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CBarras\FormCBarrasFolderFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CBarras\FormImprimirCBarras.Designer.vb">
+      <DependentUpon>FormImprimirCBarras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CBarras\FormImprimirCBarras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CentroDistribucion\FormBandejaDistribucion.Designer.vb">
+      <DependentUpon>FormBandejaDistribucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CentroDistribucion\FormBandejaDistribucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CentroDistribucion\FormCrearRemision.Designer.vb">
+      <DependentUpon>FormCrearRemision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CentroDistribucion\FormCrearRemision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CentroDistribucion\FormRegistrarRemision.Designer.vb">
+      <DependentUpon>FormRegistrarRemision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CentroDistribucion\FormRegistrarRemision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CentroDistribucion\FormRegistroGuia.Designer.vb">
+      <DependentUpon>FormRegistroGuia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CentroDistribucion\FormRegistroGuia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CentroDistribucion\FormRemisionCiudades.Designer.vb">
+      <DependentUpon>FormRemisionCiudades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CentroDistribucion\FormRemisionCiudades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CentroDistribucion\FormSeleccionarRemision.Designer.vb">
+      <DependentUpon>FormSeleccionarRemision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CentroDistribucion\FormSeleccionarRemision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CorreccionDatos\FormCambiaDocumento.Designer.vb">
+      <DependentUpon>FormCambiaDocumento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CorreccionDatos\FormCambiaDocumento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CorreccionDatos\FormCorreccionData.Designer.vb">
+      <DependentUpon>FormCorreccionData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CorreccionDatos\FormCorreccionData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Destape\FormLlavesDobleCaptura.Designer.vb">
+      <DependentUpon>FormLlavesDobleCaptura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Destape\FormLlavesDobleCaptura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Devoluciones\FormDevoluciones.Designer.vb">
+      <DependentUpon>FormDevoluciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Devoluciones\FormDevoluciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Devoluciones\FormImprimirDevolucion.Designer.vb">
+      <DependentUpon>FormImprimirDevolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Devoluciones\FormImprimirDevolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Devoluciones\FormSeleccionOTs.Designer.vb">
+      <DependentUpon>FormSeleccionOTs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Devoluciones\FormSeleccionOTs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empaque\FormEmpaqueCaja.Designer.vb">
+      <DependentUpon>FormEmpaqueCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empaque\FormEmpaqueCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empaque\FormEmpaqueCancelados.Designer.vb">
+      <DependentUpon>FormEmpaqueCancelados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empaque\FormEmpaqueCancelados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empaque\FormSeleccionarCajaCancelados.Designer.vb">
+      <DependentUpon>FormSeleccionarCajaCancelados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empaque\FormSeleccionarCajaCancelados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inserciones\FormInsercion.Designer.vb">
+      <DependentUpon>FormInsercion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inserciones\FormInsercion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inserciones\FormInserciones.Designer.vb">
+      <DependentUpon>FormInserciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inserciones\FormInserciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inserciones\FormLlavesInsercion.Designer.vb">
+      <DependentUpon>FormLlavesInsercion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inserciones\FormLlavesInsercion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LineaProceso\FormSeleccionarLineaProceso.Designer.vb">
+      <DependentUpon>FormSeleccionarLineaProceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LineaProceso\FormSeleccionarLineaProceso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LineaProceso\FormSeleccionarLineaProcesoDeceval.Designer.vb">
+      <DependentUpon>FormSeleccionarLineaProcesoDeceval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LineaProceso\FormSeleccionarLineaProcesoDeceval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormCodigoVsLlavesDeceval.Designer.vb">
+      <DependentUpon>FormCodigoVsLlavesDeceval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormCodigoVsLlavesDeceval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormMesaControlFisicosDeceval.Designer.vb">
+      <DependentUpon>FormMesaControlFisicosDeceval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormMesaControlFisicosDeceval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormPistolearCarpetaDeceval.Designer.vb">
+      <DependentUpon>FormPistolearCarpetaDeceval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormPistolearCarpetaDeceval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormPrimeraCapturarDataAdicionalDeceval.Designer.vb">
+      <DependentUpon>FormPrimeraCapturarDataAdicionalDeceval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormPrimeraCapturarDataAdicionalDeceval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormPrimeraCapturarDataAdicionalDevolucionDeceval.Designer.vb">
+      <DependentUpon>FormPrimeraCapturarDataAdicionalDevolucionDeceval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormPrimeraCapturarDataAdicionalDevolucionDeceval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormPrimeraCapturarDataAdicional.Designer.vb">
+      <DependentUpon>FormPrimeraCapturarDataAdicional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormPrimeraCapturarDataAdicional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormPrimeraCapturarDataAdicionalDevolucion.Designer.vb">
+      <DependentUpon>FormPrimeraCapturarDataAdicionalDevolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormPrimeraCapturarDataAdicionalDevolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OT\FormCerrarOT.Designer.vb">
+      <DependentUpon>FormCerrarOT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OT\FormCerrarOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OT\FormCrearOT.Designer.vb">
+      <DependentUpon>FormCrearOT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OT\FormCrearOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\Risk\FormCamposTrigger.Designer.vb">
+      <DependentUpon>FormCamposTrigger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\Risk\FormCamposTrigger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\Risk\FormEstructuraCargueActualizacion.Designer.vb">
+      <DependentUpon>FormEstructuraCargueActualizacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\Risk\FormEstructuraCargueActualizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProcesamientoLight\Form_ImpresionCBarras_PL.Designer.vb">
+      <DependentUpon>Form_ImpresionCBarras_PL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProcesamientoLight\Form_ImpresionCBarras_PL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\CentroDistribucion\FormImpresionRemision.Designer.vb">
+      <DependentUpon>FormImpresionRemision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\CentroDistribucion\FormImpresionRemision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Destape\FormDocumentos.Designer.vb">
+      <DependentUpon>FormDocumentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Destape\FormDocumentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Destape\FormLlavesIndexacion.Designer.vb">
+      <DependentUpon>FormLlavesIndexacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Destape\FormLlavesIndexacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Destape\FormPrecintosCarpetas.Designer.vb">
+      <DependentUpon>FormPrecintosCarpetas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Destape\FormPrecintosCarpetas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Destape\FormSeleccionarCajaProceso.Designer.vb">
+      <DependentUpon>FormSeleccionarCajaProceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Destape\FormSeleccionarCajaProceso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Destape\FormSeleccionarEsquema.Designer.vb">
+      <DependentUpon>FormSeleccionarEsquema.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Destape\FormSeleccionarEsquema.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Destape\FormSeleccionarOT.Designer.vb">
+      <DependentUpon>FormSeleccionarOT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Destape\FormSeleccionarOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Destape\FormSeleccionarPrecinto.Designer.vb">
+      <DependentUpon>FormSeleccionarPrecinto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Destape\FormSeleccionarPrecinto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empaque\FormAgregarCarpeta.Designer.vb">
+      <DependentUpon>FormAgregarCarpeta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empaque\FormAgregarCarpeta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empaque\FormAgregarDocumento.Designer.vb">
+      <DependentUpon>FormAgregarDocumento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empaque\FormAgregarDocumento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empaque\FormCrearCaja.Designer.vb">
+      <DependentUpon>FormCrearCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empaque\FormCrearCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empaque\FormEmpaque.Designer.vb">
+      <DependentUpon>FormEmpaque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empaque\FormEmpaque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empaque\FormSeleccionarCaja.Designer.vb">
+      <DependentUpon>FormSeleccionarCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empaque\FormSeleccionarCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormCodigoVsLlaves.Designer.vb">
+      <DependentUpon>FormCodigoVsLlaves.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormCodigoVsLlaves.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormMesaControlFisicos.Designer.vb">
+      <DependentUpon>FormMesaControlFisicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormMesaControlFisicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormPistolearCarpeta.Designer.vb">
+      <DependentUpon>FormPistolearCarpeta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormPistolearCarpeta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormSegundaCapturarDataAdicional.Designer.vb">
+      <DependentUpon>FormSegundaCapturarDataAdicional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormSegundaCapturarDataAdicional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormTerceraCapturarDataAdicional.Designer.vb">
+      <DependentUpon>FormTerceraCapturarDataAdicional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MesaControlFisicos\FormTerceraCapturarDataAdicional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\Risk\FormEstructuraCargue.Designer.vb">
+      <DependentUpon>FormEstructuraCargue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\Risk\FormEstructuraCargue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\Risk\FormParCampos.Designer.vb">
+      <DependentUpon>FormParCampos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\Risk\FormParCampos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\Risk\FormParDocumentos.Designer.vb">
+      <DependentUpon>FormParDocumentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\Risk\FormParDocumentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\Risk\FormParEsquema.Designer.vb">
+      <DependentUpon>FormParEsquema.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Parametrizacion\Risk\FormParEsquema.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recepcion\FormPrecinto.Designer.vb">
+      <DependentUpon>FormPrecinto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recepcion\FormPrecinto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recepcion\FormRecepcionPrecintos.Designer.vb">
+      <DependentUpon>FormRecepcionPrecintos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recepcion\FormRecepcionPrecintos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSeleccionarProyecto.Designer.vb">
+      <DependentUpon>FormSeleccionarProyecto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSeleccionarProyecto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRiskWorkSpace.Designer.vb">
+      <DependentUpon>FormRiskWorkSpace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRiskWorkSpace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\Destape\FormReporteUniversalVsParcial.Designer.vb">
+      <DependentUpon>FormReporteUniversalVsParcial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\Destape\FormReporteUniversalVsParcial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\Devoluciones\FormImpresionDevolucion.Designer.vb">
+      <DependentUpon>FormImpresionDevolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\Devoluciones\FormImpresionDevolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\MesaControlFisicos\FormEstadoOT.Designer.vb">
+      <DependentUpon>FormEstadoOT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\MesaControlFisicos\FormEstadoOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\MesaControlFisicos\FormReporteReprocesos.Designer.vb">
+      <DependentUpon>FormReporteReprocesos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\MesaControlFisicos\FormReporteReprocesos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ValidacionesDinamicas\FormValidacionesDinamicas.Designer.vb">
+      <DependentUpon>FormValidacionesDinamicas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ValidacionesDinamicas\FormValidacionesDinamicas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ProcessLibrary.vb" />
+    <Compile Include="Program.vb" />
+    <Compile Include="Reportes\VisorReportes\DestapeOT\Report_DestapeOT.vb" />
+    <Compile Include="Reportes\VisorReportes\DestapeOT\Report_DestapeOT_Parametros.Designer.vb">
+      <DependentUpon>Report_DestapeOT_Parametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\DestapeOT\Report_DestapeOT_Parametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\Destape\FormReporteOTs.Designer.vb">
+      <DependentUpon>FormReporteOTs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\Destape\FormReporteOTs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\Destape\OTs.vb" />
+    <Compile Include="Reportes\VisorReportes\Destape\UniversalVsParcial.vb" />
+    <Compile Include="Reportes\VisorReportes\DocumentosSinCustodia\Report_DocumentosSinCustodia.vb" />
+    <Compile Include="Reportes\VisorReportes\EmpaqueCaja\Report_EmpaqueCaja.vb" />
+    <Compile Include="Reportes\VisorReportes\EmpaqueCaja\Report_EmpaqueCaja_Parametros.Designer.vb">
+      <DependentUpon>Report_EmpaqueCaja_Parametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\EmpaqueCaja\Report_EmpaqueCaja_Parametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\EmpaqueNivelCaja\Report_EmpaqueNivelCaja.vb" />
+    <Compile Include="Reportes\VisorReportes\EmpaqueNivelCaja\Report_EmpaqueNivelCaja_Parametros.Designer.vb">
+      <DependentUpon>Report_EmpaqueNivelCaja_Parametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\EmpaqueNivelCaja\Report_EmpaqueNivelCaja_Parametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\ImagenesProcesadas\Report_ImagenesProcesadas.vb" />
+    <Compile Include="Reportes\VisorReportes\ImagenesProcesadas\Report_ImagenesProcesadas_Parametros.Designer.vb">
+      <DependentUpon>Report_ImagenesProcesadas_Parametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\ImagenesProcesadas\Report_ImagenesProcesadas_Parametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\ImagenesSinProcesar\Report_ImagenesSinProcesar.vb" />
+    <Compile Include="Reportes\VisorReportes\ImagenesSinProcesar\Report_ImagenesSinProcesar_Parametros.Designer.vb">
+      <DependentUpon>Report_ImagenesSinProcesar_Parametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\ImagenesSinProcesar\Report_ImagenesSinProcesar_Parametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\MesaControlFisicos\EstadosOT.vb" />
+    <Compile Include="Reportes\VisorReportes\MesaControlFisicos\FormParametrosMesaControl.Designer.vb">
+      <DependentUpon>FormParametrosMesaControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\MesaControlFisicos\FormParametrosMesaControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\MesaControlFisicos\Reproceso.vb" />
+    <Compile Include="Reportes\VisorReportes\ParametrizacionProyectos\Report_ParametrizacionProyectos.vb" />
+    <Compile Include="Reportes\VisorReportes\ParametrizacionProyectos\Report_ParametrizacionProyectos_Parametros.Designer.vb">
+      <DependentUpon>Report_ParametrizacionProyectos_Parametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\ParametrizacionProyectos\Report_ParametrizacionProyectos_Parametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\ReporteNovedadesDeceval\FormExport.Designer.vb">
+      <DependentUpon>FormExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\ReporteNovedadesDeceval\FormExport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\ReporteNovedadesDeceval\Novedades_Deceval.Designer.vb">
+      <DependentUpon>Novedades_Deceval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\ReporteNovedadesDeceval\Novedades_Deceval.vb">
+      <DependentUpon>Novedades_Deceval.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\ReporteNovedadesDeceval\Report_NovedadesDeceval.vb" />
+    <Compile Include="Reportes\VisorReportes\ResumenCarpetas\Report_ResumenCarpetas.vb" />
+    <Compile Include="Reportes\VisorReportes\ResumenCarpetas\Report_ResumenCarpetas_Parametros.Designer.vb">
+      <DependentUpon>Report_ResumenCarpetas_Parametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\ResumenCarpetas\Report_ResumenCarpetas_Parametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\ResumenDocumentos\Report_ResumenDocumentos.vb" />
+    <Compile Include="Reportes\VisorReportes\ResumenDocumentos\Report_ResumenDocumentos_Parametros.Designer.vb">
+      <DependentUpon>Report_ResumenDocumentos_Parametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\ResumenDocumentos\Report_ResumenDocumentos_Parametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\ResumenOT\Report_ResumenOT.vb" />
+    <Compile Include="Reportes\VisorReportes\ResumenOT\Report_ResumenOT_Parametros.Designer.vb">
+      <DependentUpon>Report_ResumenOT_Parametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\ResumenOT\Report_ResumenOT_Parametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\ResumenPrecintosOT\Report_ResumenPrecintosOT.vb" />
+    <Compile Include="Reportes\VisorReportes\ResumenPrecintosOT\Report_ResumenPrecintosOT_Parametros.Designer.vb">
+      <DependentUpon>Report_ResumenPrecintosOT_Parametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\ResumenPrecintosOT\Report_ResumenPrecintosOT_Parametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\SeguimientoOT\Report_SeguimientoOT.vb" />
+    <Compile Include="Reportes\VisorReportes\SeguimientoOT\Report_SeguimientoOT_Parametros.Designer.vb">
+      <DependentUpon>Report_SeguimientoOT_Parametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\SeguimientoOT\Report_SeguimientoOT_Parametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\UniversalvsParcial\Universal_vs_Parcial_Parametros.Designer.vb">
+      <DependentUpon>Universal_vs_Parcial_Parametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\UniversalvsParcial\Universal_vs_Parcial_Parametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\UniversalvsParcial\Report_UniversalvsParcial.vb" />
+    <Compile Include="Reportes\VisorReportes\UniversalvsParcial\Universal_vs_Parcial.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Universal_vs_Parcial.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\UniversalvsParcial\Universal_vs_Parcial.vb">
+      <DependentUpon>Universal_vs_Parcial.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\Validaciones\Report_Validaciones.vb" />
+    <Compile Include="Reportes\VisorReportes\Validaciones\Report_Validaciones_Parametros.Designer.vb">
+      <DependentUpon>Report_Validaciones_Parametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\Validaciones\Report_Validaciones_Parametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\Genericos\Report_Estados_Operacion.Designer.vb">
+      <DependentUpon>Report_Estados_Operacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\Genericos\Report_Estados_Operacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisorReportes\Genericos\Report_Estados_Operacion_Launch.vb" />
+    <Compile Include="_DB_Miharu_ArchivingDataSet.Designer.vb">
+      <DependentUpon>_DB_Miharu_ArchivingDataSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="_DB_Miharu_ArchivingDataSet.vb">
+      <DependentUpon>_DB_Miharu_ArchivingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_DB_Miharu_ArchivingDataSet1.Designer.vb">
+      <DependentUpon>_DB_Miharu_ArchivingDataSet1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="_DB_Miharu_ArchivingDataSet1.vb">
+      <DependentUpon>_DB_Miharu_ArchivingDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_DB_Miharu_CoreDataSet.Designer.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\CargueLog\FormCargueLog.resx">
+      <DependentUpon>FormCargueLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CargueLog\FormResultadoValidacion.resx">
+      <DependentUpon>FormResultadoValidacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cargue\FormCargue.resx">
+      <DependentUpon>FormCargue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cargue\FormCargueDeceval.resx">
+      <DependentUpon>FormCargueDeceval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cargue\FormCargueLogClienteExterno.resx">
+      <DependentUpon>FormCargueLogClienteExterno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cargue\FormResultadoValidacion.resx">
+      <DependentUpon>FormResultadoValidacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cargue\FormResultadoValidacionClienteExterno.resx">
+      <DependentUpon>FormResultadoValidacionClienteExterno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CBarras\FormCBarrasCajas.resx">
+      <DependentUpon>FormCBarrasCajas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CBarras\FormCBarrasFolderFile.resx">
+      <DependentUpon>FormCBarrasFolderFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CBarras\FormImprimirCBarras.resx">
+      <DependentUpon>FormImprimirCBarras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CentroDistribucion\FormBandejaDistribucion.resx">
+      <DependentUpon>FormBandejaDistribucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CentroDistribucion\FormCrearRemision.resx">
+      <DependentUpon>FormCrearRemision.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CentroDistribucion\FormRegistrarRemision.resx">
+      <DependentUpon>FormRegistrarRemision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CentroDistribucion\FormRegistroGuia.resx">
+      <DependentUpon>FormRegistroGuia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CentroDistribucion\FormRemisionCiudades.resx">
+      <DependentUpon>FormRemisionCiudades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CentroDistribucion\FormSeleccionarRemision.resx">
+      <DependentUpon>FormSeleccionarRemision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CorreccionDatos\FormCambiaDocumento.resx">
+      <DependentUpon>FormCambiaDocumento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CorreccionDatos\FormCorreccionData.resx">
+      <DependentUpon>FormCorreccionData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Destape\FormLlavesDobleCaptura.resx">
+      <DependentUpon>FormLlavesDobleCaptura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Devoluciones\FormDevoluciones.resx">
+      <DependentUpon>FormDevoluciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Devoluciones\FormImprimirDevolucion.resx">
+      <DependentUpon>FormImprimirDevolucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Devoluciones\FormSeleccionOTs.resx">
+      <DependentUpon>FormSeleccionOTs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empaque\FormEmpaqueCaja.resx">
+      <DependentUpon>FormEmpaqueCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empaque\FormEmpaqueCancelados.resx">
+      <DependentUpon>FormEmpaqueCancelados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empaque\FormSeleccionarCajaCancelados.resx">
+      <DependentUpon>FormSeleccionarCajaCancelados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inserciones\FormInsercion.resx">
+      <DependentUpon>FormInsercion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inserciones\FormInserciones.resx">
+      <DependentUpon>FormInserciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inserciones\FormLlavesInsercion.resx">
+      <DependentUpon>FormLlavesInsercion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LineaProceso\FormSeleccionarLineaProceso.resx">
+      <DependentUpon>FormSeleccionarLineaProceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LineaProceso\FormSeleccionarLineaProcesoDeceval.resx">
+      <DependentUpon>FormSeleccionarLineaProcesoDeceval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MesaControlFisicos\FormCodigoVsLlavesDeceval.resx">
+      <DependentUpon>FormCodigoVsLlavesDeceval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MesaControlFisicos\FormMesaControlFisicosDeceval.resx">
+      <DependentUpon>FormMesaControlFisicosDeceval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MesaControlFisicos\FormPistolearCarpetaDeceval.resx">
+      <DependentUpon>FormPistolearCarpetaDeceval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MesaControlFisicos\FormPrimeraCapturarDataAdicionalDeceval.resx">
+      <DependentUpon>FormPrimeraCapturarDataAdicionalDeceval.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MesaControlFisicos\FormPrimeraCapturarDataAdicionalDevolucionDeceval.resx">
+      <DependentUpon>FormPrimeraCapturarDataAdicionalDevolucionDeceval.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MesaControlFisicos\FormPrimeraCapturarDataAdicional.resx">
+      <DependentUpon>FormPrimeraCapturarDataAdicional.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MesaControlFisicos\FormPrimeraCapturarDataAdicionalDevolucion.resx">
+      <DependentUpon>FormPrimeraCapturarDataAdicionalDevolucion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OT\FormCerrarOT.resx">
+      <DependentUpon>FormCerrarOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OT\FormCrearOT.resx">
+      <DependentUpon>FormCrearOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\Risk\FormCamposTrigger.resx">
+      <DependentUpon>FormCamposTrigger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\Risk\FormEstructuraCargueActualizacion.resx">
+      <DependentUpon>FormEstructuraCargueActualizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProcesamientoLight\Form_ImpresionCBarras_PL.resx">
+      <DependentUpon>Form_ImpresionCBarras_PL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\CentroDistribucion\FormImpresionRemision.resx">
+      <DependentUpon>FormImpresionRemision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Destape\FormDocumentos.resx">
+      <DependentUpon>FormDocumentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Destape\FormLlavesIndexacion.resx">
+      <DependentUpon>FormLlavesIndexacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Destape\FormPrecintosCarpetas.resx">
+      <DependentUpon>FormPrecintosCarpetas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Destape\FormSeleccionarCajaProceso.resx">
+      <DependentUpon>FormSeleccionarCajaProceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Destape\FormSeleccionarEsquema.resx">
+      <DependentUpon>FormSeleccionarEsquema.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Destape\FormSeleccionarOT.resx">
+      <DependentUpon>FormSeleccionarOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Destape\FormSeleccionarPrecinto.resx">
+      <DependentUpon>FormSeleccionarPrecinto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empaque\FormAgregarCarpeta.resx">
+      <DependentUpon>FormAgregarCarpeta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empaque\FormAgregarDocumento.resx">
+      <DependentUpon>FormAgregarDocumento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empaque\FormCrearCaja.resx">
+      <DependentUpon>FormCrearCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empaque\FormEmpaque.resx">
+      <DependentUpon>FormEmpaque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empaque\FormSeleccionarCaja.resx">
+      <DependentUpon>FormSeleccionarCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MesaControlFisicos\FormCodigoVsLlaves.resx">
+      <DependentUpon>FormCodigoVsLlaves.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MesaControlFisicos\FormMesaControlFisicos.resx">
+      <DependentUpon>FormMesaControlFisicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MesaControlFisicos\FormPistolearCarpeta.resx">
+      <DependentUpon>FormPistolearCarpeta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MesaControlFisicos\FormSegundaCapturarDataAdicional.resx">
+      <DependentUpon>FormSegundaCapturarDataAdicional.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MesaControlFisicos\FormTerceraCapturarDataAdicional.resx">
+      <DependentUpon>FormTerceraCapturarDataAdicional.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\Risk\FormEstructuraCargue.resx">
+      <DependentUpon>FormEstructuraCargue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\Risk\FormParCampos.resx">
+      <DependentUpon>FormParCampos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\Risk\FormParDocumentos.resx">
+      <DependentUpon>FormParDocumentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parametrizacion\Risk\FormParEsquema.resx">
+      <DependentUpon>FormParEsquema.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recepcion\FormPrecinto.resx">
+      <DependentUpon>FormPrecinto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recepcion\FormRecepcionPrecintos.resx">
+      <DependentUpon>FormRecepcionPrecintos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSeleccionarProyecto.resx">
+      <DependentUpon>FormSeleccionarProyecto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRiskWorkSpace.resx">
+      <DependentUpon>FormRiskWorkSpace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\Destape\FormReporteUniversalVsParcial.resx">
+      <DependentUpon>FormReporteUniversalVsParcial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\Devoluciones\FormImpresionDevolucion.resx">
+      <DependentUpon>FormImpresionDevolucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\MesaControlFisicos\FormEstadoOT.resx">
+      <DependentUpon>FormEstadoOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\MesaControlFisicos\FormReporteReprocesos.resx">
+      <DependentUpon>FormReporteReprocesos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ValidacionesDinamicas\FormValidacionesDinamicas.resx">
+      <DependentUpon>FormValidacionesDinamicas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CentroDistribucion\Remision.rdlc" />
+    <EmbeddedResource Include="Reportes\Destape\Universal Vs Parcial.rdlc" />
+    <EmbeddedResource Include="Reportes\Devoluciones\InformeItemsReproceso.rdlc" />
+    <EmbeddedResource Include="Reportes\Devoluciones\GuiaDevolucionNoGroup.rdlc" />
+    <EmbeddedResource Include="Reportes\Devoluciones\GuiaDevolucion.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\DestapeOT\Report_DestapeOT.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\DestapeOT\Report_DestapeOT_Parametros.resx">
+      <DependentUpon>Report_DestapeOT_Parametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VisorReportes\Destape\FormReporteOTs.resx">
+      <DependentUpon>FormReporteOTs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VisorReportes\Destape\OTs.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\Destape\UniversalVsParcial.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\DocumentosSinCustodia\Report_DocumentosSinCustodia.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\EmpaqueCaja\Report_EmpaqueCaja.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\EmpaqueCaja\Report_EmpaqueCaja_Parametros.resx">
+      <DependentUpon>Report_EmpaqueCaja_Parametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VisorReportes\EmpaqueNivelCaja\Report_EmpaqueNivelCaja.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\EmpaqueNivelCaja\Report_EmpaqueNivelCaja_Parametros.resx">
+      <DependentUpon>Report_EmpaqueNivelCaja_Parametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VisorReportes\ImagenesProcesadas\Report_ImagenesProcesadas.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\ImagenesProcesadas\Report_ImagenesProcesadas_Parametros.resx">
+      <DependentUpon>Report_ImagenesProcesadas_Parametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VisorReportes\ImagenesSinProcesar\Report_ImagenesSinProcesar.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\ImagenesSinProcesar\Report_ImagenesSinProcesar_Parametros.resx">
+      <DependentUpon>Report_ImagenesSinProcesar_Parametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VisorReportes\MesaControlFisicos\EstadosOT.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\MesaControlFisicos\FormParametrosMesaControl.resx">
+      <DependentUpon>FormParametrosMesaControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VisorReportes\MesaControlFisicos\Reprocesos.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\ParametrizacionProyectos\Report_ParametrizacionProyectos.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\ParametrizacionProyectos\Report_ParametrizacionProyectos_Parametros.resx">
+      <DependentUpon>Report_ParametrizacionProyectos_Parametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VisorReportes\ReporteNovedadesDeceval\FormExport.resx">
+      <DependentUpon>FormExport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VisorReportes\ReporteNovedadesDeceval\Report_NovedadesDeceval.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\ResumenCarpetas\Report_ResumenCarpetas.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\ResumenCarpetas\Report_ResumenCarpetas_Parametros.resx">
+      <DependentUpon>Report_ResumenCarpetas_Parametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VisorReportes\ResumenDocumentos\Report_ResumenDocumentos.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\ResumenDocumentos\Report_ResumenDocumentos_Parametros.resx">
+      <DependentUpon>Report_ResumenDocumentos_Parametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VisorReportes\ResumenOT\Report_ResumenOT.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\ResumenOT\Report_ResumenOT_Parametros.resx">
+      <DependentUpon>Report_ResumenOT_Parametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VisorReportes\ResumenPrecintosOT\Report_ResumenPrecintosOT.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\ResumenPrecintosOT\Report_ResumenPrecintosOT_Parametros.resx">
+      <DependentUpon>Report_ResumenPrecintosOT_Parametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VisorReportes\SeguimientoOT\Report_SeguimientoOT.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\SeguimientoOT\Report_SeguimientoOT_Parametros.resx">
+      <DependentUpon>Report_SeguimientoOT_Parametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VisorReportes\UniversalvsParcial\Universal_vs_Parcial_Parametros.resx">
+      <DependentUpon>Universal_vs_Parcial_Parametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VisorReportes\UniversalvsParcial\Report_UniversalvsParcial.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\Validaciones\Report_Validaciones.rdlc" />
+    <EmbeddedResource Include="Reportes\VisorReportes\Validaciones\Report_Validaciones_Parametros.resx">
+      <DependentUpon>Report_Validaciones_Parametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VisorReportes\Genericos\Report_Estados_Operacion.resx">
+      <DependentUpon>Report_Estados_Operacion.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_ArchivingDataSet.xsc">
+      <DependentUpon>DB_ArchivingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_ArchivingDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_ArchivingDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DB_ArchivingDataSet.xss">
+      <DependentUpon>DB_ArchivingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Esquemas\Busqueda\xsdBusqueda.xsc">
+      <DependentUpon>xsdBusqueda.xsd</DependentUpon>
+    </None>
+    <None Include="Esquemas\Busqueda\xsdBusqueda.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xsdBusqueda.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Esquemas\Busqueda\xsdBusqueda.xss">
+      <DependentUpon>xsdBusqueda.xsd</DependentUpon>
+    </None>
+    <None Include="Esquemas\Risk\xsdDevoluciones.xsc">
+      <DependentUpon>xsdDevoluciones.xsd</DependentUpon>
+    </None>
+    <None Include="Esquemas\Risk\xsdDevoluciones.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xsdDevoluciones.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Esquemas\Risk\xsdDevoluciones.xss">
+      <DependentUpon>xsdDevoluciones.xsd</DependentUpon>
+    </None>
+    <None Include="Esquemas\Risk\xsdEstadosOT.xsc">
+      <DependentUpon>xsdEstadosOT.xsd</DependentUpon>
+    </None>
+    <None Include="Esquemas\Risk\xsdEstadosOT.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xsdEstadosOT.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Esquemas\Risk\xsdEstadosOT.xss">
+      <DependentUpon>xsdEstadosOT.xsd</DependentUpon>
+    </None>
+    <None Include="Esquemas\Risk\xsdFilesReproceso.xsc">
+      <DependentUpon>xsdFilesReproceso.xsd</DependentUpon>
+    </None>
+    <None Include="Esquemas\Risk\xsdFilesReproceso.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xsdFilesReproceso.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Esquemas\Risk\xsdFilesReproceso.xss">
+      <DependentUpon>xsdFilesReproceso.xsd</DependentUpon>
+    </None>
+    <None Include="Esquemas\Imaging\xsdCargue.xsc">
+      <DependentUpon>xsdCargue.xsd</DependentUpon>
+    </None>
+    <None Include="Esquemas\Imaging\xsdCargue.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xsdCargue.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Esquemas\Imaging\xsdCargue.xss">
+      <DependentUpon>xsdCargue.xsd</DependentUpon>
+    </None>
+    <None Include="Esquemas\Risk\xsdRemision.xsc">
+      <DependentUpon>xsdRemision.xsd</DependentUpon>
+    </None>
+    <None Include="Esquemas\Risk\xsdRemision.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xsdRemision.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Esquemas\Risk\xsdRemision.xss">
+      <DependentUpon>xsdRemision.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\DBImaging.Esquemas.xsdTrigger.datasource" />
+    <None Include="My Project\DataSources\Miharu.Archiving.DataAccess.DB_Miharu_Archiving.Schemadbo.RPT_Folders_ReprocesoDataTable.datasource" />
+    <None Include="My Project\DataSources\Miharu.Archiving.DataAccess.DB_Miharu_Archiving.Schemadbo.RPT_OTs_DetalleDataTable.datasource" />
+    <None Include="My Project\DataSources\Miharu.Archiving.DataAccess.DB_Miharu_Archiving.Schemadbo.RPT_OTs_EncabezadoDataTable.datasource" />
+    <None Include="My Project\DataSources\Miharu.Archiving.DataAccess.DB_Miharu_Archiving.Schemadbo.RPT_OTs_TotalesDataTable.datasource" />
+    <None Include="My Project\DataSources\Miharu.Core.DataAccess.DB_Miharu_Core.SchemaProcess.CTA_Expediente_LLaveDataTable.datasource" />
+    <None Include="My Project\DataSources\Miharu.Core.DataAccess.DB_Miharu_Core.SchemaProcess.CTA_FileDataTable.datasource" />
+    <None Include="My Project\DataSources\Miharu.Desktop.DataAccess.DB_Miharu_Desktop.Schemadbo.RPT_OTsDataTable.datasource" />
+    <None Include="My Project\DataSources\Miharu.Desktop.DataAccess.DB_Miharu_Desktop.Schemadbo.RPT_Universal_vs_ParcialDataTable.datasource" />
+    <None Include="My Project\DataSources\xsdDevoluciones.datasource" />
+    <None Include="My Project\DataSources\xsdRemision.ItemsRemisionDataTable.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reportes\VisorReportes\ReporteNovedadesDeceval\Novedades_Deceval.xsc">
+      <DependentUpon>Novedades_Deceval.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\VisorReportes\ReporteNovedadesDeceval\Novedades_Deceval.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Novedades_Deceval1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\VisorReportes\ReporteNovedadesDeceval\Novedades_Deceval.xss">
+      <DependentUpon>Novedades_Deceval.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\VisorReportes\UniversalvsParcial\Universal_vs_Parcial.xsc">
+      <DependentUpon>Universal_vs_Parcial.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\VisorReportes\UniversalvsParcial\Universal_vs_Parcial.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Universal_vs_Parcial.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reportes\VisorReportes\UniversalvsParcial\Universal_vs_Parcial.xss">
+      <DependentUpon>Universal_vs_Parcial.xsd</DependentUpon>
+    </None>
+    <None Include="_DB_Miharu_ArchivingDataSet.xsc">
+      <DependentUpon>_DB_Miharu_ArchivingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_DB_Miharu_ArchivingDataSet.xsd" />
+    <None Include="_DB_Miharu_ArchivingDataSet.xss">
+      <DependentUpon>_DB_Miharu_ArchivingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_DB_Miharu_ArchivingDataSet1.xsc">
+      <DependentUpon>_DB_Miharu_ArchivingDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_DB_Miharu_ArchivingDataSet1.xsd" />
+    <None Include="_DB_Miharu_ArchivingDataSet1.xss">
+      <DependentUpon>_DB_Miharu_ArchivingDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_DB_Miharu_CoreDataSet.xsc">
+      <DependentUpon>_DB_Miharu_CoreDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_DB_Miharu_CoreDataSet.xsd" />
+    <None Include="_DB_Miharu_CoreDataSet.xss">
+      <DependentUpon>_DB_Miharu_CoreDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.DataAccess\Miharu.Imaging.DataAccess.csproj">
+      <Project>{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}</Project>
+      <Name>Miharu.Imaging.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.OfflineViewer.Library\Miharu.Imaging.OffLineViewer.Library.vbproj">
+      <Project>{B32D869B-91E0-4A7A-8BE7-D14B3275B30A}</Project>
+      <Name>Miharu.Imaging.OffLineViewer.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.DataAccess\Miharu.Security.DataAccess.csproj">
+      <Project>{902B10BC-8630-4730-9AC5-763CA7D2CB31}</Project>
+      <Name>Miharu.Security.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.Library\Miharu.Security.Library.csproj">
+      <Project>{BC90E6AA-55BE-4E52-841E-FE48A32E750D}</Project>
+      <Name>Miharu.Security.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.MailSender.DataAccess\Miharu.MailSender.DataAccess.csproj">
+      <Project>{68B5513A-93BF-403B-8AEA-C94B43CFCBAF}</Project>
+      <Name>Miharu.MailSender.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.Tools\Miharu.Tools.vbproj">
+      <Project>{69D016B1-3E92-4037-9CEB-FE8283479AFD}</Project>
+      <Name>Miharu.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Controls\Miharu.Desktop.Controls.vbproj">
+      <Project>{BBDF4261-7651-4D93-95EE-675260D016AC}</Project>
+      <Name>Miharu.Desktop.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.Win.Controls\Miharu.Win.Controls.vbproj">
+      <Project>{2D637A57-F0A0-4375-B88E-5BE39C5274E4}</Project>
+      <Name>Miharu.Win.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Archiving.DataAccess\Miharu.Archiving.DataAccess.csproj">
+      <Project>{8AB7AE02-8837-4800-8FDA-EA6CC59A374F}</Project>
+      <Name>Miharu.Archiving.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Library\Miharu.Desktop.Library.vbproj">
+      <Project>{60FE71B4-EC25-45F0-B384-B98582D035C7}</Project>
+      <Name>Miharu.Desktop.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons\Bill.ico" />
+    <Content Include="Icons\Buscar.ico" />
+    <Content Include="Icons\CentroDistribucion.ico" />
+    <Content Include="Icons\CrearRemision.ico" />
+    <Content Include="Icons\Devoluciones.ico" />
+    <Content Include="Icons\process.ico" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\BarCode.png" />
+    <Content Include="Images\book_previous.png" />
+    <Content Include="Images\btnSalir.gif" />
+    <None Include="Resources\cog_go.png" />
+    <None Include="Images\Calendario.png" />
+    <Content Include="Images\CangeDocument.png" />
+    <Content Include="Images\CargueActualizacion.png" />
+    <Content Include="Images\CentroDistribucion.png" />
+    <Content Include="Images\CerrarOT.png" />
+    <Content Include="Images\Close_Red.png" />
+    <Content Include="Images\CrearRemision.png" />
+    <Content Include="Images\Devoluciones.png" />
+    <Content Include="Images\document_add.png" />
+    <Content Include="Images\document_add2.png" />
+    <Content Include="Images\Edit.png" />
+    <None Include="Images\envio_correo.png" />
+    <Content Include="Images\film_delete.png" />
+    <Content Include="Images\folder_add.png" />
+    <Content Include="Images\folder_add2.png" />
+    <Content Include="Images\lock_open.png" />
+    <Content Include="Images\LogoPYC.jpg" />
+    <Content Include="Images\LogoPyC.png" />
+    <Content Include="Images\LogoPyC_mini.jpg" />
+    <Content Include="Images\MainBox.png" />
+    <Content Include="Images\MainCode.png" />
+    <Content Include="Images\MainDestape.png" />
+    <Content Include="Images\MainField.png" />
+    <Content Include="Images\MainFolder.png" />
+    <Content Include="Images\MainFoldersFiles.png" />
+    <Content Include="Images\Mainimaging.png" />
+    <Content Include="Images\MainMesaFisicos.png" />
+    <Content Include="Images\Mainreport.png" />
+    <Content Include="Images\MainRisk.png" />
+    <Content Include="Images\MainStructure.png" />
+    <Content Include="Images\PendientesDistribucion.png" />
+    <Content Include="Images\print.png" />
+    <Content Include="Images\RemisionDistribucion.png" />
+    <Content Include="Images\Remove.png" />
+    <Content Include="Images\Risk.ico" />
+    <Content Include="Images\TablaAsociada.png" />
+    <Content Include="Icons\briefcase.ico" />
+    <Content Include="Icons\Campo_Edit.ico" />
+    <Content Include="Icons\CapturarData.ico" />
+    <Content Include="Icons\code.ico" />
+    <Content Include="Icons\Esquema_edit.ico" />
+    <Content Include="Icons\folder_Edit.ico" />
+    <Content Include="Icons\folder_go.ico" />
+    <Content Include="Icons\key.ico" />
+    <Content Include="Icons\mesa.ico" />
+    <Content Include="Icons\Mesa_Control.ico" />
+    <Content Include="Icons\page.ico" />
+    <Content Include="Icons\Precintos.ico" />
+    <Content Include="Icons\Proyecto_edit.ico" />
+    <Content Include="Icons\RecepcionPrecinto.ico" />
+    <Content Include="Icons\Reportes.ico" />
+    <Content Include="Icons\tag_red.ico" />
+    <Content Include="Icons\upload.ico" />
+    <Content Include="Icons\Validar.ico" />
+    <Content Include="Icons\wrench.ico" />
+    <Content Include="Images\Aceptar.png" />
+    <Content Include="Images\Autualizar.png" />
+    <Content Include="Images\brnCargar.gif" />
+    <Content Include="Images\btnAgregar.png" />
+    <Content Include="Images\btnBuscar.png" />
+    <Content Include="Images\btnBuscar2.png" />
+    <Content Include="Images\btnCapturarData.png" />
+    <Content Include="Images\BtnCargar.png" />
+    <Content Include="Images\btnCopiar.png" />
+    <Content Include="Images\btnDestape.png" />
+    <Content Include="Images\btnFolderGo.png" />
+    <Content Include="Images\btnGenerarEstructura.png" />
+    <Content Include="Images\btnPrinter.png" />
+    <Content Include="Images\btnRecepcion.png" />
+    <Content Include="Images\btnSalir.png" />
+    <Content Include="Images\btnSigiente.gif" />
+    <Content Include="Images\BtnXLS.png" />
+    <Content Include="Images\Cancelar.png" />
+    <Content Include="Images\captura.png" />
+    <Content Include="Images\CargueUniversal.png" />
+    <Content Include="Images\CargueParcial.png" />
+    <Content Include="Images\Custodia.png" />
+    <Content Include="Images\Destape.png" />
+    <Content Include="Images\btnGuardar.png" />
+    <Content Include="Images\Digitalizar.png" />
+    <Content Include="Images\Doblecaptura.png" />
+    <Content Include="Images\Domesa.png" />
+    <Content Include="Images\exportar.png" />
+    <Content Include="Images\indexar.png" />
+    <Content Include="Images\Insercion.png" />
+    <Content Include="Images\MesaFisicos.png" />
+    <Content Include="Images\MesaImagenes.png" />
+    <Content Include="Images\OT.png" />
+    <Content Include="Images\Empaque.png" />
+    <Content Include="Images\publicar.png" />
+    <Content Include="Images\Recepcion.png" />
+    <Content Include="Images\Reprocesos.png" />
+    <Content Include="Images\Terceracaptura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Clases\" />
+    <Folder Include="Reportes\MesaControlFisicos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

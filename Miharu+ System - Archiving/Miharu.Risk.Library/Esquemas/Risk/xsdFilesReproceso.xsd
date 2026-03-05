@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="xsdFilesReproceso" targetNamespace="http://tempuri.org/xsdFilesReproceso.xsd" xmlns:mstns="http://tempuri.org/xsdFilesReproceso.xsd" xmlns="http://tempuri.org/xsdFilesReproceso.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="xsdFilesReproceso" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="xsdFilesReproceso" msprop:Generator_UserDSName="xsdFilesReproceso">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FilesReproceso" msprop:Generator_TableClassName="FilesReprocesoDataTable" msprop:Generator_TableVarName="tableFilesReproceso" msprop:Generator_TablePropName="FilesReproceso" msprop:Generator_RowDeletingName="FilesReprocesoRowDeleting" msprop:Generator_UserTableName="FilesReproceso" msprop:Generator_RowChangingName="FilesReprocesoRowChanging" msprop:Generator_RowEvHandlerName="FilesReprocesoRowChangeEventHandler" msprop:Generator_RowDeletedName="FilesReprocesoRowDeleted" msprop:Generator_RowEvArgName="FilesReprocesoRowChangeEvent" msprop:Generator_RowChangedName="FilesReprocesoRowChanged" msprop:Generator_RowClassName="FilesReprocesoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CBarras_File" msprop:Generator_ColumnVarNameInTable="columnCBarras_File" msprop:Generator_ColumnPropNameInRow="CBarras_File" msprop:Generator_ColumnPropNameInTable="CBarras_FileColumn" msprop:Generator_UserColumnName="CBarras_File" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre_Tipologia" msprop:Generator_ColumnVarNameInTable="columnNombre_Tipologia" msprop:Generator_ColumnPropNameInRow="Nombre_Tipologia" msprop:Generator_ColumnPropNameInTable="Nombre_TipologiaColumn" msprop:Generator_UserColumnName="Nombre_Tipologia" type="xs:string" minOccurs="0" />
+              <xs:element name="Id_Reproceso_Motivo" msprop:Generator_ColumnVarNameInTable="columnId_Reproceso_Motivo" msprop:Generator_ColumnPropNameInRow="Id_Reproceso_Motivo" msprop:Generator_ColumnPropNameInTable="Id_Reproceso_MotivoColumn" msprop:Generator_UserColumnName="Id_Reproceso_Motivo" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre_Reproceso_Motivo" msprop:Generator_ColumnVarNameInTable="columnNombre_Reproceso_Motivo" msprop:Generator_ColumnPropNameInRow="Nombre_Reproceso_Motivo" msprop:Generator_ColumnPropNameInTable="Nombre_Reproceso_MotivoColumn" msprop:Generator_UserColumnName="Nombre_Reproceso_Motivo" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha_Reproceso" msprop:Generator_ColumnVarNameInTable="columnFecha_Reproceso" msprop:Generator_ColumnPropNameInRow="Fecha_Reproceso" msprop:Generator_ColumnPropNameInTable="Fecha_ReprocesoColumn" msprop:Generator_UserColumnName="Fecha_Reproceso" type="xs:string" minOccurs="0" />
+              <xs:element name="fk_Entidad" msprop:Generator_ColumnVarNameInTable="columnfk_Entidad" msprop:Generator_ColumnPropNameInRow="fk_Entidad" msprop:Generator_ColumnPropNameInTable="fk_EntidadColumn" msprop:Generator_UserColumnName="fk_Entidad" type="xs:string" minOccurs="0" />
+              <xs:element name="fk_Proyecto" msprop:Generator_ColumnVarNameInTable="columnfk_Proyecto" msprop:Generator_ColumnPropNameInRow="fk_Proyecto" msprop:Generator_ColumnPropNameInTable="fk_ProyectoColumn" msprop:Generator_UserColumnName="fk_Proyecto" type="xs:string" minOccurs="0" />
+              <xs:element name="fk_Esquema" msprop:Generator_ColumnVarNameInTable="columnfk_Esquema" msprop:Generator_ColumnPropNameInRow="fk_Esquema" msprop:Generator_ColumnPropNameInTable="fk_EsquemaColumn" msprop:Generator_UserColumnName="fk_Esquema" type="xs:string" minOccurs="0" />
+              <xs:element name="fk_OT" msprop:Generator_ColumnVarNameInTable="columnfk_OT" msprop:Generator_ColumnPropNameInRow="fk_OT" msprop:Generator_ColumnPropNameInTable="fk_OTColumn" msprop:Generator_UserColumnName="fk_OT" type="xs:string" minOccurs="0" />
+              <xs:element name="CBarrasImage" msprop:Generator_ColumnVarNameInTable="columnCBarrasImage" msprop:Generator_ColumnPropNameInRow="CBarrasImage" msprop:Generator_ColumnPropNameInTable="CBarrasImageColumn" msprop:Generator_UserColumnName="CBarrasImage" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

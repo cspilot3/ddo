@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_DB_Miharu_CoreDataSet" targetNamespace="http://tempuri.org/_DB_Miharu_CoreDataSet.xsd" xmlns:mstns="http://tempuri.org/_DB_Miharu_CoreDataSet.xsd" xmlns="http://tempuri.org/_DB_Miharu_CoreDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DB_Miharu_CoreConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DB_Miharu_CoreConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Miharu.Risk.Library.My.MySettings.GlobalReference.Default.DB_Miharu_CoreConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CTA_Config_Resticcion_MontoTableAdapter" GeneratorDataComponentClassName="CTA_Config_Resticcion_MontoTableAdapter" Name="CTA_Config_Resticcion_Monto" UserDataComponentName="CTA_Config_Resticcion_MontoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_Miharu_CoreConnectionString (MySettings)" DbObjectName="[DB_Miharu.Core].Report.CTA_Config_Resticcion_Monto" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT fk_Entidad, fk_Proyecto, id_Esquema, Nombre_Restriccion_Monto, Valor_Restriccion_Monto FROM Report.CTA_Config_Resticcion_Monto</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="fk_Entidad" DataSetColumn="fk_Entidad" />
+              <Mapping SourceColumn="fk_Proyecto" DataSetColumn="fk_Proyecto" />
+              <Mapping SourceColumn="id_Esquema" DataSetColumn="id_Esquema" />
+              <Mapping SourceColumn="Nombre_Restriccion_Monto" DataSetColumn="Nombre_Restriccion_Monto" />
+              <Mapping SourceColumn="Valor_Restriccion_Monto" DataSetColumn="Valor_Restriccion_Monto" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_DB_Miharu_CoreDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_DB_Miharu_CoreDataSet" msprop:Generator_UserDSName="_DB_Miharu_CoreDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CTA_Config_Resticcion_Monto" msprop:Generator_TableClassName="CTA_Config_Resticcion_MontoDataTable" msprop:Generator_TableVarName="tableCTA_Config_Resticcion_Monto" msprop:Generator_TablePropName="CTA_Config_Resticcion_Monto" msprop:Generator_RowDeletingName="CTA_Config_Resticcion_MontoRowDeleting" msprop:Generator_UserTableName="CTA_Config_Resticcion_Monto" msprop:Generator_RowChangingName="CTA_Config_Resticcion_MontoRowChanging" msprop:Generator_RowEvHandlerName="CTA_Config_Resticcion_MontoRowChangeEventHandler" msprop:Generator_RowDeletedName="CTA_Config_Resticcion_MontoRowDeleted" msprop:Generator_RowEvArgName="CTA_Config_Resticcion_MontoRowChangeEvent" msprop:Generator_RowChangedName="CTA_Config_Resticcion_MontoRowChanged" msprop:Generator_RowClassName="CTA_Config_Resticcion_MontoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fk_Entidad" msprop:Generator_ColumnVarNameInTable="columnfk_Entidad" msprop:Generator_ColumnPropNameInRow="fk_Entidad" msprop:Generator_ColumnPropNameInTable="fk_EntidadColumn" msprop:Generator_UserColumnName="fk_Entidad" type="xs:short" />
+              <xs:element name="fk_Proyecto" msprop:Generator_ColumnVarNameInTable="columnfk_Proyecto" msprop:Generator_ColumnPropNameInRow="fk_Proyecto" msprop:Generator_ColumnPropNameInTable="fk_ProyectoColumn" msprop:Generator_UserColumnName="fk_Proyecto" type="xs:short" />
+              <xs:element name="id_Esquema" msprop:Generator_ColumnVarNameInTable="columnid_Esquema" msprop:Generator_ColumnPropNameInRow="id_Esquema" msprop:Generator_ColumnPropNameInTable="id_EsquemaColumn" msprop:Generator_UserColumnName="id_Esquema" type="xs:short" />
+              <xs:element name="Nombre_Restriccion_Monto" msprop:Generator_ColumnVarNameInTable="columnNombre_Restriccion_Monto" msprop:Generator_ColumnPropNameInRow="Nombre_Restriccion_Monto" msprop:Generator_ColumnPropNameInTable="Nombre_Restriccion_MontoColumn" msprop:Generator_UserColumnName="Nombre_Restriccion_Monto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Valor_Restriccion_Monto" msprop:Generator_ColumnVarNameInTable="columnValor_Restriccion_Monto" msprop:Generator_ColumnPropNameInRow="Valor_Restriccion_Monto" msprop:Generator_ColumnPropNameInTable="Valor_Restriccion_MontoColumn" msprop:Generator_UserColumnName="Valor_Restriccion_Monto" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CTA_Config_Resticcion_Monto" />
+      <xs:field xpath="mstns:fk_Entidad" />
+      <xs:field xpath="mstns:fk_Proyecto" />
+      <xs:field xpath="mstns:id_Esquema" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

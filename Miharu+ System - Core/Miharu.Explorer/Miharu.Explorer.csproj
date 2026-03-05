@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BA3701FC-9CF7-4388-9E10-384491444999}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Miharu.Explorer</RootNamespace>
+    <AssemblyName>Miharu.Explorer</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <PublishDatabases>false</PublishDatabases>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <DesktopBuildPackageLocation>C:\Users\kevin.vargas\Desktop\123\</DesktopBuildPackageLocation>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.50508.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Data">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="_Images\data.png" />
+    <Content Include="_Images\historiaE.png" />
+    <Content Include="_Images\historiaS.png" />
+    <Content Include="_Images\Login\btn_aceptar.png" />
+    <Content Include="_Images\Login\btn_cancel.png" />
+    <Content Include="_Images\Menu\Rpt_CobroJuridico.png" />
+    <Content Include="_Images\Menu\Faltantes.png" />
+    <Content Include="_Images\Menu\Project.png" />
+    <Content Include="_Images\Menu\Reportes.png" />
+    <Content Include="_Images\Menu\Rpt_Multiactiva.png" />
+    <Content Include="_Images\Menu\Rpt_NovedadesMesa.png" />
+    <Content Include="_Images\Menu\Settings.png" />
+    <Content Include="_Images\pdf-file.png" />
+    <Content Include="_Images\PYC.png" />
+    <Content Include="_Images\ver_imagen.png" />
+    <Content Include="_Main\change_password.aspx" />
+    <Content Include="_Main\Redirect.aspx" />
+    <Content Include="_Scripts\jqGridExportToExcel.js" />
+    <Content Include="_Scripts\jquery-dateFormat.js" />
+    <Content Include="_Site\Garantias\Bancoomeva\Consulta_Bancoomeva.aspx" />
+    <Content Include="_Site\Garantias\Bancoomeva\Consulta_Bancoomeva.js" />
+    <Content Include="_Site\Garantias\Bancoomeva\Reporte_NovedadesMesa.js" />
+    <Content Include="_Site\Garantias\Bancoomeva\Reporte_NovedadesMesa.aspx" />
+    <Content Include="_Site\Garantias\Bancoomeva\Reporte_CobroJuridico.js" />
+    <Content Include="_Site\Garantias\Bancoomeva\Reporte_CobroJuridico.aspx" />
+    <Content Include="_Site\Garantias\Bancoomeva\Reporte_Multiactiva.aspx" />
+    <Content Include="_Site\Garantias\Bancoomeva\ReporteMultiactiva.js" />
+    <Content Include="_Site\Garantias\Bancoomeva\FaltanteLogico.js" />
+    <Content Include="_Site\Garantias\Bancoomeva\FaltanteLogico.aspx" />
+    <Content Include="_Site\Garantias\Solicitudes.aspx" />
+    <Content Include="_Site\Garantias\Solicitudes.js" />
+    <Content Include="_Site\Garantias_Settings\Administracion\Proyecto.aspx" />
+    <Content Include="_Styles\Miharu\ModalBox\icon-error.png" />
+    <Content Include="_Styles\Miharu\ModalBox\icon-information.png" />
+    <Content Include="_Styles\Miharu\ModalBox\icon-warning.png" />
+    <Content Include="_Styles\Miharu\ModalBox\lib\effects.js" />
+    <Content Include="_Styles\Miharu\ModalBox\lib\prototype.js" />
+    <Content Include="_Styles\Miharu\ModalBox\lib\scriptaculous.js" />
+    <Content Include="_Styles\Miharu\ModalBox\modalbox.css" />
+    <Content Include="_Styles\Miharu\ModalBox\modalbox.js" />
+    <Content Include="_Styles\Miharu\ModalBox\spinner.gif" />
+    <Content Include="_Styles\Miharu\StyleSheet_Miharu.css" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\tjpzoom.js" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\tjpzoom_config_default.js" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Ajustar_Alto_Cold.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Ajustar_Alto_Hot.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Ajustar_Ancho_Cold.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Ajustar_Ancho_Hot.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\DefaultImage.jpg" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\EndLeft_Cold.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\EndLeft_Disable.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\EndLeft_Hot.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\EndRight_Cold.gif" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\EndRight_Cold.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\EndRight_Disable.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\EndRight_Hot.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Guardar_Cold.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Guardar_Hot.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Imprimir_Cold.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Imprimir_Hot.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Load.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\NextLeft_Cold.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\NextLeft_Disable.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\NextLeft_Hot.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\NextRight_Cold.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\NextRight_Disable.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\NextRight_Hot.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\PrintHTMLPage.htm" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Rotate_Left_Cold.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Rotate_Left_Hot.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Rotate_Right_Cold.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Rotate_Right_Hot.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Zoom_Cold.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Zoom_Hot.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Zoom_In_Cold.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Zoom_In_Hot.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Zoom_Out_Cold.png" />
+    <Content Include="_Styles\Miharu\_DocumentViewer\_DocumentViewer\Zoom_Out_Hot.png" />
+    <Content Include="Handlers\ExportGridToExcel.ashx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="_Images\Domesa.png" />
+    <Content Include="_Images\favIcon.ico" />
+    <Content Include="_Images\history.png" />
+    <Content Include="_Images\LogoExplorer.png" />
+    <Content Include="_Images\Menu\Back.png" />
+    <Content Include="_Images\Menu\Buscar.png" />
+    <Content Include="_Images\Menu\Garantias.png" />
+    <Content Include="_Images\Menu\Solicitudes.png" />
+    <Content Include="_Images\picture.png" />
+    <Content Include="_Images\Delete.png" />
+    <Content Include="_Images\Buy.png" />
+    <Content Include="_Images\Controls\bg.jpg" />
+    <Content Include="_Images\loading.gif" />
+    <Content Include="_Images\Template\facebook.png" />
+    <Content Include="_Images\Template\jf_bottom.png" />
+    <Content Include="_Images\Template\jf_close.png" />
+    <Content Include="_Images\Template\jf_close_bg.png" />
+    <Content Include="_Images\Template\jf_content.png" />
+    <Content Include="_Images\Template\jf_footermenu.png" />
+    <Content Include="_Images\Template\jf_open.png" />
+    <Content Include="_Images\Template\jf_submenu.png" />
+    <Content Include="_Images\Template\tweet.png" />
+    <Content Include="_Images\titulo.png" />
+    <Content Include="_Main\Login.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="_Images\box-backg.png" />
+    <Content Include="_Images\Fondo.jpg" />
+    <Content Include="_Images\Login\box-backg.png" />
+    <Content Include="_Images\Login\btn.png" />
+    <Content Include="_Main\Inicio.aspx" />
+    <Content Include="_Scripts\alert\images\help.gif" />
+    <Content Include="_Scripts\alert\images\important.gif" />
+    <Content Include="_Scripts\alert\images\info.gif" />
+    <Content Include="_Scripts\alert\images\title.gif" />
+    <Content Include="_Scripts\alert\jquery.alerts.css" />
+    <Content Include="_Scripts\alert\jquery.alerts.js" />
+    <Content Include="_Scripts\Core.js" />
+    <Content Include="_Scripts\jqGrid\jqGrid.js" />
+    <Content Include="_Scripts\jqGrid\jquery.jqGrid.min.js" />
+    <Content Include="_Scripts\jqGrid\ui.jqgrid.css" />
+    <Content Include="_Scripts\jquery-ui\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-bg_glass_75_ffffff_1x400.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-icons_222222_256x240.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-icons_454545_256x240.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-icons_888888_256x240.png" />
+    <Content Include="_Scripts\jquery-ui\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="_Scripts\jquery-ui\jquery-ui.css" />
+    <Content Include="_Scripts\jquery-ui\jquery-ui.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.accordion.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.autocomplete.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.button.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.core.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.datepicker.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.dialog.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.draggable.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.droppable.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.effect-blind.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.effect-bounce.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.effect-clip.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.effect-drop.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.effect-explode.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.effect-fade.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.effect-fold.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.effect-highlight.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.effect-pulsate.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.effect-scale.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.effect-shake.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.effect-slide.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.effect-transfer.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.effect.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.menu.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.mouse.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.position.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.progressbar.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.resizable.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.selectable.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.slider.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.sortable.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.spinner.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.tabs.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.tooltip.js" />
+    <Content Include="_Scripts\jquery-ui\jquery.ui.widget.js" />
+    <Content Include="_Scripts\jquery.js" />
+    <Content Include="_Scripts\jquery.Validation.js" />
+    <Content Include="_Site\Garantias\Consulta.aspx" />
+    <Content Include="_Site\Garantias\Consulta.js" />
+    <Content Include="_Styles\Controls.css" />
+    <Content Include="_Styles\Form.css" />
+    <Content Include="_Styles\Login.css" />
+    <Content Include="_Styles\Menu.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\CreateExcelFile.cs" />
+    <Compile Include="Handlers\ExportGridToExcel.ashx.cs">
+      <DependentUpon>ExportGridToExcel.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="_Clases\Utils.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="_Clases\Ext.cs" />
+    <Compile Include="_Clases\Menu.cs" />
+    <Compile Include="_Controls\ExplorerControls.cs" />
+    <Compile Include="_Main\change_password.aspx.cs">
+      <DependentUpon>change_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Main\change_password.aspx.designer.cs">
+      <DependentUpon>change_password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Main\Form.Master.cs">
+      <DependentUpon>Form.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Main\Form.Master.designer.cs">
+      <DependentUpon>Form.Master</DependentUpon>
+    </Compile>
+    <Compile Include="_Main\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Main\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_Main\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Main\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Main\Redirect.aspx.cs">
+      <DependentUpon>Redirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Main\Redirect.aspx.designer.cs">
+      <DependentUpon>Redirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Main\Sites.Master.cs">
+      <DependentUpon>Sites.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Main\Sites.Master.designer.cs">
+      <DependentUpon>Sites.Master</DependentUpon>
+    </Compile>
+    <Compile Include="_Site\Garantias\Bancoomeva\Consulta_Bancoomeva.aspx.cs">
+      <DependentUpon>Consulta_Bancoomeva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Site\Garantias\Bancoomeva\Consulta_Bancoomeva.aspx.designer.cs">
+      <DependentUpon>Consulta_Bancoomeva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Site\Garantias\Bancoomeva\Reporte_NovedadesMesa.aspx.cs">
+      <DependentUpon>Reporte_NovedadesMesa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Site\Garantias\Bancoomeva\Reporte_NovedadesMesa.aspx.designer.cs">
+      <DependentUpon>Reporte_NovedadesMesa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Site\Garantias\Bancoomeva\Reporte_CobroJuridico.aspx.cs">
+      <DependentUpon>Reporte_CobroJuridico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Site\Garantias\Bancoomeva\Reporte_CobroJuridico.aspx.designer.cs">
+      <DependentUpon>Reporte_CobroJuridico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Site\Garantias\Bancoomeva\Reporte_Multiactiva.aspx.cs">
+      <DependentUpon>Reporte_Multiactiva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Site\Garantias\Bancoomeva\Reporte_Multiactiva.aspx.designer.cs">
+      <DependentUpon>Reporte_Multiactiva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Site\Garantias\Consulta.aspx.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Site\Garantias\Consulta.aspx.designer.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Site\Garantias\Bancoomeva\FaltanteLogico.aspx.cs">
+      <DependentUpon>FaltanteLogico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Site\Garantias\Bancoomeva\FaltanteLogico.aspx.designer.cs">
+      <DependentUpon>FaltanteLogico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Site\Garantias\Solicitudes.aspx.cs">
+      <DependentUpon>Solicitudes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Site\Garantias\Solicitudes.aspx.designer.cs">
+      <DependentUpon>Solicitudes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Site\Garantias_Settings\Administracion\Proyecto.aspx.cs">
+      <DependentUpon>Proyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Site\Garantias_Settings\Administracion\Proyecto.aspx.designer.cs">
+      <DependentUpon>Proyecto.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="_Temporal\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Main\Form.Master" />
+    <Content Include="_Main\Sites.Master" />
+    <None Include="_Scripts\jquery-ui\images\Thumbs.db" />
+    <Content Include="_Scripts\jquery-ui\ui.custom.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Archiving\Miharu.Archiving.DataAccess\Miharu.Archiving.DataAccess.csproj">
+      <Project>{8AB7AE02-8837-4800-8FDA-EA6CC59A374F}</Project>
+      <Name>Miharu.Archiving.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.WebService\Miharu.Imaging.WebService.vbproj">
+      <Project>{E1A819FE-C968-49CE-A549-D4797CB78F68}</Project>
+      <Name>Miharu.Imaging.WebService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.DataAccess\Miharu.Security.DataAccess.csproj">
+      <Project>{902B10BC-8630-4730-9AC5-763CA7D2CB31}</Project>
+      <Name>Miharu.Security.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.Library\Miharu.Security.Library.csproj">
+      <Project>{BC90E6AA-55BE-4E52-841E-FE48A32E750D}</Project>
+      <Name>Miharu.Security.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Core\Miharu.Core.vbproj">
+      <Project>{A75C24FE-1992-40E5-AADF-B51ECB1653A8}</Project>
+      <Name>Miharu.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>33336</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

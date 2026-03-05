@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Agrupado_Dep_NOVALLE" targetNamespace="http://tempuri.org/Agrupado_Dep_NOVALLE.xsd" xmlns:mstns="http://tempuri.org/Agrupado_Dep_NOVALLE.xsd" xmlns="http://tempuri.org/Agrupado_Dep_NOVALLE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Agrupado_Dep_NOVALLE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Agrupado_Dep_NOVALLE" msprop:Generator_UserDSName="Agrupado_Dep_NOVALLE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Agrupados_NOVALLE" msprop:Generator_TableClassName="Agrupados_NOVALLEDataTable" msprop:Generator_TableVarName="tableAgrupados_NOVALLE" msprop:Generator_RowChangedName="Agrupados_NOVALLERowChanged" msprop:Generator_TablePropName="Agrupados_NOVALLE" msprop:Generator_RowDeletingName="Agrupados_NOVALLERowDeleting" msprop:Generator_RowChangingName="Agrupados_NOVALLERowChanging" msprop:Generator_RowEvHandlerName="Agrupados_NOVALLERowChangeEventHandler" msprop:Generator_RowDeletedName="Agrupados_NOVALLERowDeleted" msprop:Generator_RowClassName="Agrupados_NOVALLERow" msprop:Generator_UserTableName="Agrupados_NOVALLE" msprop:Generator_RowEvArgName="Agrupados_NOVALLERowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DEPARTAMENTO" msprop:Generator_ColumnVarNameInTable="columnDEPARTAMENTO" msprop:Generator_ColumnPropNameInRow="DEPARTAMENTO" msprop:Generator_ColumnPropNameInTable="DEPARTAMENTOColumn" msprop:Generator_UserColumnName="DEPARTAMENTO" type="xs:string" minOccurs="0" />
+              <xs:element name="MUNICIPIO" msprop:Generator_ColumnVarNameInTable="columnMUNICIPIO" msprop:Generator_ColumnPropNameInRow="MUNICIPIO" msprop:Generator_ColumnPropNameInTable="MUNICIPIOColumn" msprop:Generator_UserColumnName="MUNICIPIO" type="xs:string" minOccurs="0" />
+              <xs:element name="REGISTROS" msprop:Generator_ColumnVarNameInTable="columnREGISTROS" msprop:Generator_ColumnPropNameInRow="REGISTROS" msprop:Generator_ColumnPropNameInTable="REGISTROSColumn" msprop:Generator_UserColumnName="REGISTROS" type="xs:string" minOccurs="0" />
+              <xs:element name="VALOR_20" msprop:Generator_ColumnVarNameInTable="columnVALOR_20" msprop:Generator_ColumnPropNameInRow="VALOR_20" msprop:Generator_ColumnPropNameInTable="VALOR_20Column" msprop:Generator_UserColumnName="VALOR_20" type="xs:string" minOccurs="0" />
+              <xs:element name="Row_id_Adicional" msprop:Generator_ColumnVarNameInTable="columnRow_id_Adicional" msprop:Generator_ColumnPropNameInRow="Row_id_Adicional" msprop:Generator_ColumnPropNameInTable="Row_id_AdicionalColumn" msprop:Generator_UserColumnName="Row_id_Adicional" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

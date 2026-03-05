@@ -1,0 +1,121 @@
+﻿.Titulo_Menu
+{
+	border: 2px outset #999999;
+	font-weight: bold;
+	font-size: medium;
+	color: #FFFFFF;
+	font-family: Verdana;
+	height: 30px;
+	background-color: #006699;
+	text-align: center;
+}
+.menu-header, .menu-header-selected, .menu-header-disabled
+{
+	padding: 0px 0px 0px 10px;
+	border-style: none;
+	height: 30px;
+	background-repeat: repeat-x;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+	vertical-align: middle;
+	text-align: left;
+}
+.menu-header
+{	
+	background-image: url('../_images/menu/menu-header.gif' );
+	cursor: pointer;
+}
+.menu-header:hover
+{
+	background-image: url('../_images/menu/menu-header-hover.gif' );
+}
+.menu-header-selected
+{
+	background-image: url('../_images/menu/menu-header-selected.gif' );
+}
+.menu-header-selected:hover
+{
+	background-image: url('../_images/menu/menu-header-selected-hover.gif' );
+}
+.menu-header-disabled
+{
+	background-image: url('../_images/menu/menu-header.gif' );
+	color: #808080;
+}
+.menu-body
+{
+	border-style: inset;
+	border-width: 2px;
+	background-color: #FFFFFF;
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	overflow:hidden;
+}
+.menu-body2
+{
+	background-color: #FFFFFF;
+	text-align: left;
+}
+.menu-item
+{
+	border: 1px solid #FFFFFF;
+	font-family: Verdana;
+	font-size: small;
+	text-align: left;
+	color: #333333;
+}
+.menu-item-hover
+{
+	background-color: #99CCFF;
+	border: 1px solid #999999;
+}
+.menu-item-selected
+{	
+	font-weight: bold;
+}
+
+.option-menu
+{
+	cursor: pointer;
+	font-family: Verdana;
+	font-size: small;
+	color: #666666;
+	height: 16px;
+}
+.option-item
+{
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	font-family: Verdana;
+	font-size: small;
+	text-align: left;
+	color: #333333;
+}
+
+.option-item-hover
+{
+	background-color: #99CCFF;
+	border: 1px solid #999999;
+}
+.menu-item-cuerpo
+{
+	border-color: #808080;
+	padding: 5px 0px 0px 5px;
+	border-style: none none solid none;
+	border-width: 1px;
+	background-color: #FFFFFF;
+}
+.div-header
+{
+	padding-top: 5px;
+}
+.div-cuerpo
+{
+	height: 120px;
+	text-align: left;
+	border-color:Blue;
+}

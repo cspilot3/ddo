@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BDC8C01-69A4-4161-8189-6557F52E6097}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebSantander</RootNamespace>
+    <AssemblyName>WebSantander</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="SLYG.Data">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\SLYG.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools, Version=2.9.0.16857, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="controls\DashBoardItem.ascx" />
+    <Content Include="controls\DashBoardItemLocal.ascx" />
+    <Content Include="controls\filter.ascx" />
+    <Content Include="controls\proxy_data.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="errorform.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\autolist\btnList1.gif" />
+    <Content Include="images\autolist\btnList2.gif" />
+    <Content Include="images\basic\add.png" />
+    <Content Include="images\basic\add_cmp.png" />
+    <Content Include="images\basic\add_row.png" />
+    <Content Include="images\basic\admiration12.png" />
+    <Content Include="images\basic\admiration16.png" />
+    <Content Include="images\basic\ajax-loader.gif" />
+    <Content Include="images\basic\candado_login.png" />
+    <Content Include="images\basic\change-password.png" />
+    <Content Include="images\basic\change-project.png" />
+    <Content Include="images\basic\clean_row.png" />
+    <Content Include="images\basic\deleterow.png" />
+    <Content Include="images\basic\download.png" />
+    <Content Include="images\basic\empty_image.png" />
+    <Content Include="images\basic\exit.png" />
+    <Content Include="images\basic\Instalador.jpg" />
+    <Content Include="images\basic\key_accept.png" />
+    <Content Include="images\basic\key_error.png" />
+    <Content Include="images\basic\loading.gif" />
+    <Content Include="images\basic\logoPyC.png" />
+    <Content Include="images\basic\logoSLYG.png" />
+    <Content Include="images\basic\logo_soluciones_h.png" />
+    <Content Include="images\basic\logo_soluciones_v.png" />
+    <Content Include="images\basic\MB_error.png" />
+    <Content Include="images\basic\MB_information.png" />
+    <Content Include="images\basic\MB_warning.png" />
+    <Content Include="images\basic\mouse_loading.gif" />
+    <Content Include="images\basic\orden_pago.png" />
+    <Content Include="images\basic\remove.png" />
+    <Content Include="images\basic\SlygBlockIcon.ico" />
+    <Content Include="images\basic\sol_soluciones.png" />
+    <Content Include="images\basic\traslado.png" />
+    <Content Include="images\basic\user.png" />
+    <Content Include="images\basic\visualizar.png" />
+    <Content Include="images\dashboard\acercade.png" />
+    <Content Include="images\dashboard\back.png" />
+    <Content Include="images\dashboard\consultas.png" />
+    <Content Include="images\dashboard\informes.png" />
+    <Content Include="images\dashboard\Logo Negro.png" />
+    <Content Include="images\dashboard\parametrizacion.png" />
+    <Content Include="images\dashboard\roles.png" />
+    <Content Include="images\dashboard\usuario.png" />
+    <Content Include="images\options\add.png" />
+    <Content Include="images\options\add_2.png" />
+    <Content Include="images\options\calendar.png" />
+    <Content Include="images\options\config.png" />
+    <Content Include="images\options\copy.png" />
+    <Content Include="images\options\export.png" />
+    <Content Include="images\options\find.png" />
+    <Content Include="images\options\find_1.png" />
+    <Content Include="images\options\find_2.png" />
+    <Content Include="images\options\print.png" />
+    <Content Include="images\options\refresh.png" />
+    <Content Include="images\options\remove.png" />
+    <Content Include="images\options\report.png" />
+    <Content Include="images\options\save.png" />
+    <Content Include="images\options\unlock.png" />
+    <Content Include="master\master_form.js" />
+    <Content Include="master\master_site.js" />
+    <Content Include="scripts\ajaxupload\fileuploader.js" />
+    <Content Include="scripts\fixedheadertable\jquery.fixedheader.js" />
+    <Content Include="scripts\jqplot\excanvas.min.js" />
+    <Content Include="scripts\jqplot\jquery.jqplot.js" />
+    <Content Include="scripts\jqplot\jquery.jqplot.min.css" />
+    <Content Include="scripts\jqplot\jquery.jqplot.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.barRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.BezierCurveRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.blockRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.bubbleRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.canvasAxisLabelRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.canvasAxisTickRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.canvasOverlay.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.canvasTextRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.categoryAxisRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.ciParser.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.cursor.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.dateAxisRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.donutRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.dragable.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.enhancedLegendRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.funnelRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.highlighter.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.json2.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.logAxisRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.mekkoAxisRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.mekkoRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.meterGaugeRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.mobile.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.ohlcRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.pieRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.pointLabels.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.pyramidAxisRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.pyramidGridRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.pyramidRenderer.min.js" />
+    <Content Include="scripts\jqplot\plugins\jqplot.trendline.min.js" />
+    <Content Include="scripts\jquery\css\smoothness\images\animated-overlay.gif" />
+    <Content Include="scripts\jquery\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="scripts\jquery\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="scripts\jquery\css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="scripts\jquery\css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="scripts\jquery\css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="scripts\jquery\css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="scripts\jquery\css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="scripts\jquery\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="scripts\jquery\css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="scripts\jquery\css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="scripts\jquery\css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="scripts\jquery\css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="scripts\jquery\css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="scripts\jquery\css\smoothness\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="scripts\jquery\css\smoothness\jquery.ctNotify.css" />
+    <Content Include="scripts\jquery\css\smoothness\jquery.dialogr.css" />
+    <Content Include="scripts\jquery\css\smoothness\jquery.gritter.css" />
+    <Content Include="scripts\jquery\css\smoothness\jquery.windows-engine.css" />
+    <Content Include="scripts\jquery\css\smoothness\slyg-tooltip.css" />
+    <Content Include="scripts\jquery\css\smoothness\tooltip.css" />
+    <Content Include="scripts\jquery\js\date.js" />
+    <Content Include="scripts\jquery\js\flexigrid.custom.js" />
+    <Content Include="scripts\jquery\js\flexigrid.js" />
+    <Content Include="scripts\jquery\js\flexigrid.pack.js" />
+    <Content Include="scripts\jquery\js\jquery-1.9.1.min.js" />
+    <Content Include="scripts\jquery\js\jquery-es.js" />
+    <Content Include="scripts\jquery\js\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="scripts\jquery\js\jquery.alphanumeric.js" />
+    <Content Include="scripts\jquery\js\jquery.browser.js" />
+    <Content Include="scripts\jquery\js\jquery.corner.js" />
+    <Content Include="scripts\jquery\js\jquery.ctNotify.js" />
+    <Content Include="scripts\jquery\js\jquery.floatnumber.js" />
+    <Content Include="scripts\jquery\js\jquery.formatCurrency.js" />
+    <Content Include="scripts\jquery\js\jquery.gritter.min.js" />
+    <Content Include="scripts\jquery\js\jquery.jqRangeSlider.min.js" />
+    <Content Include="scripts\jquery\js\jquery.maskedinput-1.3.min.js" />
+    <Content Include="scripts\jquery\js\jquery.numeric.pack.js" />
+    <Content Include="scripts\jquery\js\jquery.qtip-1.0.0-rc3.min.js" />
+    <Content Include="scripts\jquery\js\jquery.ui.autocomplete.custom.js" />
+    <Content Include="scripts\jquery\js\jquery.ui.autocomplete.js" />
+    <Content Include="scripts\jquery\js\jquery.ui.autolist.js" />
+    <Content Include="scripts\jquery\js\jquery.windows-engine.js" />
+    <Content Include="scripts\jquery\js\SlygToolTip.js" />
+    <Content Include="scripts\jquery\js\tooltip.js" />
+    <Content Include="scripts\jquery\js\ui.dialogr.custom.js" />
+    <Content Include="scripts\tinyeditor\images\header-bg.gif" />
+    <Content Include="scripts\tinyeditor\images\icons.png" />
+    <Content Include="scripts\tinyeditor\images\resize.gif" />
+    <Content Include="scripts\tinyeditor\tiny.editor.js" />
+    <Content Include="scripts\tinyeditor\tiny.editor.packed.js" />
+    <Content Include="scripts\tinyeditor\tinyeditor.css" />
+    <Content Include="scripts\utils.js" />
+    <Content Include="site\account\change_password.aspx" />
+    <Content Include="site\account\connect.aspx" />
+    <Content Include="site\account\forgotten_password.aspx" />
+    <Content Include="site\account\login.aspx" />
+    <Content Include="site\account\restore_password.aspx" />
+    <Content Include="site\application\about.aspx" />
+    <Content Include="site\application\dashboard.aspx" />
+    <Content Include="site\application\dashboard.js" />
+    <Content Include="site\application\dashboard_presupuesto.js" />
+    <Content Include="site\application\dashboard_reportes.js" />
+    <Content Include="site\application\dashboard_usuario.js" />
+    <Content Include="site\consulta\consultas.aspx" />
+    <Content Include="site\consulta\consultas.js" />
+    <Content Include="site\consulta\VerTxLog.aspx" />
+    <Content Include="site\consulta\Visor.aspx" />
+    <Content Include="site\main.aspx" />
+    <Content Include="site\main.js" />
+    <Content Include="site\reportes\reportes.js" />
+    <Content Include="site\reportes\reportes.aspx" />
+    <Content Include="site\reportes\web_report_viewer.aspx" />
+    <Content Include="styles\ajaxupload\fileuploader.css" />
+    <Content Include="styles\autoList\autoList.css" />
+    <Content Include="styles\detail_tooltip.css" />
+    <Content Include="styles\detail_tooltip\sprite.png" />
+    <Content Include="styles\flexigrid-1.1\flexigrid.css" />
+    <Content Include="styles\flexigrid-1.1\flexigrid.pack.css" />
+    <Content Include="styles\flexigrid-1.1\images\bg.gif" />
+    <Content Include="styles\flexigrid-1.1\images\btn-sprite.gif" />
+    <Content Include="styles\flexigrid-1.1\images\ddn.png" />
+    <Content Include="styles\flexigrid-1.1\images\dn.png" />
+    <Content Include="styles\flexigrid-1.1\images\fhbg.gif" />
+    <Content Include="styles\flexigrid-1.1\images\first.gif" />
+    <Content Include="styles\flexigrid-1.1\images\hl.png" />
+    <Content Include="styles\flexigrid-1.1\images\last.gif" />
+    <Content Include="styles\flexigrid-1.1\images\line.gif" />
+    <Content Include="styles\flexigrid-1.1\images\load.gif" />
+    <Content Include="styles\flexigrid-1.1\images\load.png" />
+    <Content Include="styles\flexigrid-1.1\images\magnifier.png" />
+    <Content Include="styles\flexigrid-1.1\images\next.gif" />
+    <Content Include="styles\flexigrid-1.1\images\prev.gif" />
+    <Content Include="styles\flexigrid-1.1\images\selectAll.png" />
+    <Content Include="styles\flexigrid-1.1\images\selectNone.png" />
+    <Content Include="styles\flexigrid-1.1\images\up.png" />
+    <Content Include="styles\flexigrid-1.1\images\uup.png" />
+    <Content Include="styles\flexigrid-1.1\images\wbg.gif" />
+    <Content Include="styles\frame.css" />
+    <Content Include="styles\frame\default_client_logo.png" />
+    <Content Include="styles\frame\left.png" />
+    <Content Include="styles\frame\middle_lightgray.png" />
+    <Content Include="styles\frame\Path.png" />
+    <Content Include="styles\frame\right.png" />
+    <Content Include="styles\frame\ripley-01.png" />
+    <Content Include="styles\frame\topleft_corner.png" />
+    <Content Include="styles\frame\topright_corner.png" />
+    <Content Include="styles\frame\top_intermediate.png" />
+    <Content Include="styles\frame\WebRipleyImage.png" />
+    <Content Include="styles\Modal\Dialogo_Capa.png" />
+    <Content Include="styles\Modal\Dialogo_Cerrar.png" />
+    <Content Include="styles\Modal\Dialogo_Titulo.png" />
+    <Content Include="styles\news\close-cold.png" />
+    <Content Include="styles\news\close-hot.png" />
+    <Content Include="styles\site.css" />
+    <Content Include="styles\Modal\modal.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="code\Auth.cs" />
+    <Compile Include="code\AutoListHelper.cs" />
+    <Compile Include="code\ControlForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="code\EditOptions.cs" />
+    <Compile Include="code\Enums.cs" />
+    <Compile Include="code\Grid\JSonGridData.cs" />
+    <Compile Include="code\Grid\SlygFlexigrid.cs" />
+    <Compile Include="code\MasterBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="code\PageForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="code\PageGeneric.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="code\PageSite.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="code\Program.cs" />
+    <Compile Include="code\ScriptBuilder.cs" />
+    <Compile Include="code\ScriptHelper.cs" />
+    <Compile Include="code\SessionData.cs" />
+    <Compile Include="code\UserControlGeneric.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="code\WebReport.cs" />
+    <Compile Include="controls\AutoListProxy.ashx.cs">
+      <DependentUpon>AutoListProxy.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\DashBoardItem.ascx.cs">
+      <DependentUpon>DashBoardItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\DashBoardItem.ascx.designer.cs">
+      <DependentUpon>DashBoardItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\DashBoardItemLocal.ascx.cs">
+      <DependentUpon>DashBoardItemLocal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\DashBoardItemLocal.ascx.designer.cs">
+      <DependentUpon>DashBoardItemLocal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\filter.ascx.cs">
+      <DependentUpon>filter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\filter.ascx.designer.cs">
+      <DependentUpon>filter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\proxy_data.aspx.cs">
+      <DependentUpon>proxy_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\proxy_data.aspx.designer.cs">
+      <DependentUpon>proxy_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="errorform.aspx.cs">
+      <DependentUpon>errorform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="errorform.aspx.designer.cs">
+      <DependentUpon>errorform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="master\master_form.Master.cs">
+      <DependentUpon>master_form.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\master_form.Master.designer.cs">
+      <DependentUpon>master_form.Master</DependentUpon>
+    </Compile>
+    <Compile Include="master\master_site.Master.cs">
+      <DependentUpon>master_site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\master_site.Master.designer.cs">
+      <DependentUpon>master_site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports.cs" />
+    <Compile Include="site\account\change_password.aspx.cs">
+      <DependentUpon>change_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site\account\change_password.aspx.designer.cs">
+      <DependentUpon>change_password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="site\account\connect.aspx.cs">
+      <DependentUpon>connect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site\account\connect.aspx.designer.cs">
+      <DependentUpon>connect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="site\account\forgotten_password.aspx.cs">
+      <DependentUpon>forgotten_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site\account\forgotten_password.aspx.designer.cs">
+      <DependentUpon>forgotten_password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="site\account\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site\account\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="site\account\restore_password.aspx.cs">
+      <DependentUpon>restore_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site\account\restore_password.aspx.designer.cs">
+      <DependentUpon>restore_password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="site\application\about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site\application\about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="site\application\dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site\application\dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="site\consulta\consultas.aspx.cs">
+      <DependentUpon>consultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site\consulta\consultas.aspx.designer.cs">
+      <DependentUpon>consultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="site\consulta\VerTxLog.aspx.cs">
+      <DependentUpon>VerTxLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site\consulta\VerTxLog.aspx.designer.cs">
+      <DependentUpon>VerTxLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="site\consulta\Visor.aspx.cs">
+      <DependentUpon>Visor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site\consulta\Visor.aspx.designer.cs">
+      <DependentUpon>Visor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="site\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="site\reportes\ReportesWeb.cs" />
+    <Compile Include="site\reportes\reportes.aspx.cs">
+      <DependentUpon>reportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site\reportes\reportes.aspx.designer.cs">
+      <DependentUpon>reportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="site\reportes\web_report_viewer.aspx.cs">
+      <DependentUpon>web_report_viewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site\reportes\web_report_viewer.aspx.designer.cs">
+      <DependentUpon>web_report_viewer.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="scripts\report\" />
+    <Folder Include="Temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Library\Miharu.Desktop.Library.vbproj">
+      <Project>{60FE71B4-EC25-45F0-B384-B98582D035C7}</Project>
+      <Name>Miharu.Desktop.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.DataAccess\Miharu.Imaging.DataAccess.csproj">
+      <Project>{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}</Project>
+      <Name>Miharu.Imaging.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.DataAccess\Miharu.Security.DataAccess.csproj">
+      <Project>{902B10BC-8630-4730-9AC5-763CA7D2CB31}</Project>
+      <Name>Miharu.Security.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.Library\Miharu.Security.Library.csproj">
+      <Project>{BC90E6AA-55BE-4E52-841E-FE48A32E750D}</Project>
+      <Name>Miharu.Security.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.FileProvider.Library\Miharu.FileProvider.Library.vbproj">
+      <Project>{1E21AD2F-0D1F-47A5-94C5-A75D6DAAAC8F}</Project>
+      <Name>Miharu.FileProvider.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Slyg.Tools.Imaging\Slyg.Tools.Imaging.csproj">
+      <Project>{B41AFD53-3FE1-4C20-B359-1C5FC16954C4}</Project>
+      <Name>Slyg.Tools.Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Client.Browser.Ripley\Miharu.Client.Browser.Ripley.csproj">
+      <Project>{C3C08602-3277-4060-87FB-C62161999D2A}</Project>
+      <Name>Miharu.Client.Browser.Ripley</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Integration.DataAccess\Miharu.Integration.DataAccess.csproj">
+      <Project>{8A0078E2-6728-4413-AE6F-FD1EADEB7247}</Project>
+      <Name>Miharu.Integration.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="controls\AutoListProxy.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="master\master_form.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="master\master_site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="site\reportes\Plantillas\ReportCargue.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="site\reportes\Plantillas\ReportFacturacionDetallado.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="site\reportes\Plantillas\ReportCruce.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="site\reportes\Plantillas\ReportFacturacion.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="site\reportes\Plantillas\ReportEmbargosDesembargos.rdlc" />
+    <EmbeddedResource Include="site\reportes\Plantillas\ReportValidacionListas.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7226</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

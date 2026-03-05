@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Sites.master.cs" Inherits="Miharu.Explorer._Main.Sites" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head runat="server">
+    
+    <asp:Literal ID="JavaScripts" runat="server"></asp:Literal>
+    <title></title>
+
+    <link href="../_Scripts/jquery-ui/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="../_Scripts/jquery-ui/ui.custom.css" rel="stylesheet" type="text/css" />
+    <link href="../_Styles/Controls.css" rel="stylesheet" type="text/css" />
+    <link href="../_Scripts/jqGrid/ui.jqgrid.css" rel="stylesheet" type="text/css" />
+    <link href="../_Scripts/alert/jquery.alerts.css" rel="stylesheet" type="text/css" />
+
+    <script language="javascript" type="text/javascript">
+         $(function () {
+             $("#tabs").tabs();
+         });
+    </script>
+
+    <asp:ContentPlaceHolder ID="contentHead" runat="server"></asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    
+    <div>
+
+        <table id="tableContent" style="width:95%;">
+            <tr>
+                <td style="padding: 10px; width:25%; vertical-align: top; border-color: #C5DBEC; border-right-style: solid;">
+                    
+                    <table style="width:100%" >
+                        <tr>
+                            <td class="Titulo_Terceario">
+                                <asp:ContentPlaceHolder ID="contentTitle" runat="server"></asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <br/>
+                    <asp:ContentPlaceHolder ID="contentFilter" runat="server"></asp:ContentPlaceHolder>
+
+                </td>
+
+                <td style="width:75%; vertical-align: top; padding-left: 10px;">
+                    
+                    <div id="tabs">
+                        <ul>
+                            <li><a href="#tabs-1">Lista</a></li>
+                            <li><a href="#tabs-2">Detalle</a></li>
+                        </ul>
+
+                        <div id="tabs-1">
+                            <asp:ContentPlaceHolder ID="contentList" runat="server"></asp:ContentPlaceHolder>
+                        </div>
+
+                        <div id="tabs-2">
+                            <asp:ContentPlaceHolder ID="contentDetail" runat="server"></asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                    
+                </td>
+
+            </tr>
+        </table>
+
+    </div>
+    
+    </form>
+</body>
+</html>

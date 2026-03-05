@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Novedades" targetNamespace="http://tempuri.org/Novedades.xsd" xmlns:mstns="http://tempuri.org/Novedades.xsd" xmlns="http://tempuri.org/Novedades.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Novedades" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Novedades" msprop:Generator_UserDSName="Novedades">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Novedades" msprop:Generator_TableClassName="NovedadesDataTable" msprop:Generator_TableVarName="tableNovedades" msprop:Generator_RowChangedName="NovedadesRowChanged" msprop:Generator_TablePropName="_Novedades" msprop:Generator_RowDeletingName="NovedadesRowDeleting" msprop:Generator_RowChangingName="NovedadesRowChanging" msprop:Generator_RowEvHandlerName="NovedadesRowChangeEventHandler" msprop:Generator_RowDeletedName="NovedadesRowDeleted" msprop:Generator_RowClassName="NovedadesRow" msprop:Generator_UserTableName="Novedades" msprop:Generator_RowEvArgName="NovedadesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Deudor" msprop:Generator_ColumnVarNameInTable="columnId_Deudor" msprop:Generator_ColumnPropNameInRow="Id_Deudor" msprop:Generator_ColumnPropNameInTable="Id_DeudorColumn" msprop:Generator_UserColumnName="Id_Deudor" type="xs:string" minOccurs="0" />
+              <xs:element name="No_Credito" msprop:Generator_ColumnVarNameInTable="columnNo_Credito" msprop:Generator_ColumnPropNameInRow="No_Credito" msprop:Generator_ColumnPropNameInTable="No_CreditoColumn" msprop:Generator_UserColumnName="No_Credito" type="xs:string" minOccurs="0" />
+              <xs:element name="Agencia_Crédito" msprop:Generator_ColumnVarNameInTable="columnAgencia_Crédito" msprop:Generator_ColumnPropNameInRow="Agencia_Crédito" msprop:Generator_ColumnPropNameInTable="Agencia_CréditoColumn" msprop:Generator_UserColumnName="Agencia_Crédito" type="xs:string" minOccurs="0" />
+              <xs:element name="Línea" msprop:Generator_ColumnVarNameInTable="columnLínea" msprop:Generator_ColumnPropNameInRow="Línea" msprop:Generator_ColumnPropNameInTable="LíneaColumn" msprop:Generator_UserColumnName="Línea" type="xs:string" minOccurs="0" />
+              <xs:element name="Código_Garantía" msprop:Generator_ColumnVarNameInTable="columnCódigo_Garantía" msprop:Generator_ColumnPropNameInRow="Código_Garantía" msprop:Generator_ColumnPropNameInTable="Código_GarantíaColumn" msprop:Generator_UserColumnName="Código_Garantía" type="xs:string" minOccurs="0" />
+              <xs:element name="Número_Garantía" msprop:Generator_ColumnVarNameInTable="columnNúmero_Garantía" msprop:Generator_ColumnPropNameInRow="Número_Garantía" msprop:Generator_ColumnPropNameInTable="Número_GarantíaColumn" msprop:Generator_UserColumnName="Número_Garantía" type="xs:string" minOccurs="0" />
+              <xs:element name="Novedad" msprop:Generator_ColumnVarNameInTable="columnNovedad" msprop:Generator_ColumnPropNameInRow="Novedad" msprop:Generator_ColumnPropNameInTable="NovedadColumn" msprop:Generator_UserColumnName="Novedad" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

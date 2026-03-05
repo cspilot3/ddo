@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Faltantes" targetNamespace="http://tempuri.org/Faltantes.xsd" xmlns:mstns="http://tempuri.org/Faltantes.xsd" xmlns="http://tempuri.org/Faltantes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Faltantes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Faltantes" msprop:Generator_UserDSName="Faltantes">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Faltantes" msprop:Generator_TableClassName="FaltantesDataTable" msprop:Generator_TableVarName="tableFaltantes" msprop:Generator_RowChangedName="FaltantesRowChanged" msprop:Generator_TablePropName="_Faltantes" msprop:Generator_RowDeletingName="FaltantesRowDeleting" msprop:Generator_RowChangingName="FaltantesRowChanging" msprop:Generator_RowEvHandlerName="FaltantesRowChangeEventHandler" msprop:Generator_RowDeletedName="FaltantesRowDeleted" msprop:Generator_RowClassName="FaltantesRow" msprop:Generator_UserTableName="Faltantes" msprop:Generator_RowEvArgName="FaltantesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tipologia" msprop:Generator_ColumnVarNameInTable="columnTipologia" msprop:Generator_ColumnPropNameInRow="Tipologia" msprop:Generator_ColumnPropNameInTable="TipologiaColumn" msprop:Generator_UserColumnName="Tipologia" type="xs:string" minOccurs="0" />
+              <xs:element name="Credito" msprop:Generator_ColumnVarNameInTable="columnCredito" msprop:Generator_ColumnPropNameInRow="Credito" msprop:Generator_ColumnPropNameInTable="CreditoColumn" msprop:Generator_UserColumnName="Credito" type="xs:string" minOccurs="0" />
+              <xs:element name="Cedula" msprop:Generator_ColumnVarNameInTable="columnCedula" msprop:Generator_ColumnPropNameInRow="Cedula" msprop:Generator_ColumnPropNameInTable="CedulaColumn" msprop:Generator_UserColumnName="Cedula" type="xs:string" minOccurs="0" />
+              <xs:element name="Agencia_Prestamo" msprop:Generator_ColumnVarNameInTable="columnAgencia_Prestamo" msprop:Generator_ColumnPropNameInRow="Agencia_Prestamo" msprop:Generator_ColumnPropNameInTable="Agencia_PrestamoColumn" msprop:Generator_UserColumnName="Agencia_Prestamo" type="xs:string" minOccurs="0" />
+              <xs:element name="Producto_Prestamo" msprop:Generator_ColumnVarNameInTable="columnProducto_Prestamo" msprop:Generator_ColumnPropNameInRow="Producto_Prestamo" msprop:Generator_ColumnPropNameInTable="Producto_PrestamoColumn" msprop:Generator_UserColumnName="Producto_Prestamo" type="xs:string" minOccurs="0" />
+              <xs:element name="Estado_Documento" msprop:Generator_ColumnVarNameInTable="columnEstado_Documento" msprop:Generator_ColumnPropNameInRow="Estado_Documento" msprop:Generator_ColumnPropNameInTable="Estado_DocumentoColumn" msprop:Generator_UserColumnName="Estado_Documento" type="xs:string" minOccurs="0" />
+              <xs:element name="Precinto" msprop:Generator_ColumnVarNameInTable="columnPrecinto" msprop:Generator_ColumnPropNameInRow="Precinto" msprop:Generator_ColumnPropNameInTable="PrecintoColumn" msprop:Generator_UserColumnName="Precinto" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

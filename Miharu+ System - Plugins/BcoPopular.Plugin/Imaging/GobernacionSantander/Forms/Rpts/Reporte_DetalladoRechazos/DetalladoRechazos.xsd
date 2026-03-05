@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DetalladoRechazos" targetNamespace="http://tempuri.org/DetalladoRechazos.xsd" xmlns:mstns="http://tempuri.org/DetalladoRechazos.xsd" xmlns="http://tempuri.org/DetalladoRechazos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DetalladoRechazos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DetalladoRechazos" msprop:Generator_UserDSName="DetalladoRechazos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Datos" msprop:Generator_TableClassName="DatosDataTable" msprop:Generator_TableVarName="tableDatos" msprop:Generator_RowChangedName="DatosRowChanged" msprop:Generator_TablePropName="Datos" msprop:Generator_RowDeletingName="DatosRowDeleting" msprop:Generator_RowChangingName="DatosRowChanging" msprop:Generator_RowEvHandlerName="DatosRowChangeEventHandler" msprop:Generator_RowDeletedName="DatosRowDeleted" msprop:Generator_RowClassName="DatosRow" msprop:Generator_UserTableName="Datos" msprop:Generator_RowEvArgName="DatosRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="No_Formulario" msprop:Generator_ColumnVarNameInTable="columnNo_Formulario" msprop:Generator_ColumnPropNameInRow="No_Formulario" msprop:Generator_ColumnPropNameInTable="No_FormularioColumn" msprop:Generator_UserColumnName="No_Formulario" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor_Total" msprop:Generator_ColumnVarNameInTable="columnValor_Total" msprop:Generator_ColumnPropNameInRow="Valor_Total" msprop:Generator_ColumnPropNameInTable="Valor_TotalColumn" msprop:Generator_UserColumnName="Valor_Total" type="xs:double" minOccurs="0" />
+              <xs:element name="Nombre_Municipio" msprop:Generator_ColumnVarNameInTable="columnNombre_Municipio" msprop:Generator_ColumnPropNameInRow="Nombre_Municipio" msprop:Generator_ColumnPropNameInTable="Nombre_MunicipioColumn" msprop:Generator_UserColumnName="Nombre_Municipio" type="xs:string" minOccurs="0" />
+              <xs:element name="Causal_Rechazo" msprop:Generator_ColumnVarNameInTable="columnCausal_Rechazo" msprop:Generator_ColumnPropNameInRow="Causal_Rechazo" msprop:Generator_ColumnPropNameInTable="Causal_RechazoColumn" msprop:Generator_UserColumnName="Causal_Rechazo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

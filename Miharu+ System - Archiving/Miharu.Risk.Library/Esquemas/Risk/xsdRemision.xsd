@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="xsdRemision" targetNamespace="http://tempuri.org/xsdRemision.xsd" xmlns:mstns="http://tempuri.org/xsdRemision.xsd" xmlns="http://tempuri.org/xsdRemision.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="xsdRemision" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="xsdRemision" msprop:Generator_UserDSName="xsdRemision">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ItemsRemision" msprop:Generator_TableClassName="ItemsRemisionDataTable" msprop:Generator_TableVarName="tableItemsRemision" msprop:Generator_RowChangedName="ItemsRemisionRowChanged" msprop:Generator_TablePropName="ItemsRemision" msprop:Generator_RowDeletingName="ItemsRemisionRowDeleting" msprop:Generator_RowChangingName="ItemsRemisionRowChanging" msprop:Generator_RowEvHandlerName="ItemsRemisionRowChangeEventHandler" msprop:Generator_RowDeletedName="ItemsRemisionRowDeleted" msprop:Generator_RowClassName="ItemsRemisionRow" msprop:Generator_UserTableName="ItemsRemision" msprop:Generator_RowEvArgName="ItemsRemisionRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Remision_Caja" msprop:Generator_ColumnVarNameInTable="columnId_Remision_Caja" msprop:Generator_ColumnPropNameInRow="Id_Remision_Caja" msprop:Generator_ColumnPropNameInTable="Id_Remision_CajaColumn" msprop:Generator_UserColumnName="Id_Remision_Caja" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre_Entidad" msprop:Generator_ColumnVarNameInTable="columnNombre_Entidad" msprop:Generator_ColumnPropNameInRow="Nombre_Entidad" msprop:Generator_ColumnPropNameInTable="Nombre_EntidadColumn" msprop:Generator_UserColumnName="Nombre_Entidad" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre_Sede" msprop:Generator_ColumnVarNameInTable="columnNombre_Sede" msprop:Generator_ColumnPropNameInRow="Nombre_Sede" msprop:Generator_ColumnPropNameInTable="Nombre_SedeColumn" msprop:Generator_UserColumnName="Nombre_Sede" type="xs:string" default="N.A." minOccurs="0" />
+              <xs:element name="Nombre_Boveda" msprop:Generator_ColumnVarNameInTable="columnNombre_Boveda" msprop:Generator_ColumnPropNameInRow="Nombre_Boveda" msprop:Generator_ColumnPropNameInTable="Nombre_BovedaColumn" msprop:Generator_UserColumnName="Nombre_Boveda" type="xs:string" default="N.A." minOccurs="0" />
+              <xs:element name="Direccion_Envio" msprop:Generator_ColumnVarNameInTable="columnDireccion_Envio" msprop:Generator_ColumnPropNameInRow="Direccion_Envio" msprop:Generator_ColumnPropNameInTable="Direccion_EnvioColumn" msprop:Generator_UserColumnName="Direccion_Envio" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre_Responsable" msprop:Generator_ColumnVarNameInTable="columnNombre_Responsable" msprop:Generator_ColumnPropNameInRow="Nombre_Responsable" msprop:Generator_ColumnPropNameInTable="Nombre_ResponsableColumn" msprop:Generator_UserColumnName="Nombre_Responsable" type="xs:string" minOccurs="0" />
+              <xs:element name="CBarras_Folder" msprop:Generator_ColumnVarNameInTable="columnCBarras_Folder" msprop:Generator_ColumnPropNameInRow="CBarras_Folder" msprop:Generator_ColumnPropNameInTable="CBarras_FolderColumn" msprop:Generator_UserColumnName="CBarras_Folder" type="xs:string" minOccurs="0" />
+              <xs:element name="CBarras_File" msprop:Generator_ColumnVarNameInTable="columnCBarras_File" msprop:Generator_ColumnPropNameInRow="CBarras_File" msprop:Generator_ColumnPropNameInTable="CBarras_FileColumn" msprop:Generator_UserColumnName="CBarras_File" type="xs:string" minOccurs="0" />
+              <xs:element name="Tipo_Documental" msprop:Generator_ColumnVarNameInTable="columnTipo_Documental" msprop:Generator_ColumnPropNameInRow="Tipo_Documental" msprop:Generator_ColumnPropNameInTable="Tipo_DocumentalColumn" msprop:Generator_UserColumnName="Tipo_Documental" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

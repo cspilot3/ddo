@@ -1,0 +1,56 @@
+﻿.CellItemDate
+{
+	text-align: center;
+	vertical-align: top;
+	font-size: 7;
+	font-family: Arial;
+	background-color: #E6E6E6; 
+}
+.CellItemDate:hover
+{
+	border: 1px ridge #808080;
+	text-align: center;
+	vertical-align: top;
+	font-size: 7;
+	font-family: Arial;
+	background-color: #58B0F8;
+}
+.CellItemFest
+{
+	text-align: center;
+	vertical-align: top;
+	font-size: 7;
+	font-family: Arial;
+	background-color: #E8FFDF; 
+}
+.CellItemFest:hover
+{
+	border: 1px ridge #808080;
+	text-align: center;
+	vertical-align: top;
+	font-size: 7;
+	font-family: Arial;
+	background-color: #81FF51;
+}
+.CellOtherMt
+{
+	text-align: center;
+	vertical-align: top;
+	font-size: 7;
+	font-family: Arial;
+	background-color: #F2F2F2;
+	color: #B0B0B0;
+}
+.divItemDate
+{
+	width: 30px;
+	height: 12px;
+	border: solid 1px Silver;
+}
+.divItemDateSel
+{
+	width: 30px;
+	height: 12px;
+	border: solid 1px Silver;
+	background-color:#0080FF;
+}

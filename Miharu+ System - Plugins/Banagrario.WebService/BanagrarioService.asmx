@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="BanagrarioService.asmx.cs" Class="Banagrario.WebService.BanagrarioService" %>

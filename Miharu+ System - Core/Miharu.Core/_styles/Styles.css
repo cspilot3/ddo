@@ -1,0 +1,304 @@
+
+.Titulo_Principal
+{
+	font-weight: bold;
+	font-size: x-large;
+	color: navy;
+	font-family: Georgia;
+}
+.Titulo_Secundario
+{
+	font-weight: bold;
+	font-size: medium;
+	color: silver;
+	font-family: Verdana;
+	height: 30px; 
+	background-color: #006699;
+}
+
+
+.hlnkEtiquetas
+{
+	font-weight: bold;
+	font-size: small;
+	color: #008000;
+	font-family: Verdana;
+	text-decoration: none;
+}
+.hlnkEtiquetas1
+{
+	font-weight: bold;
+	font-size: x-small;
+	color: #808080;
+	font-family: Verdana;
+	text-decoration: none;
+}
+.hlnkEtiquetas2
+{
+	font-weight: bold;
+	font-size: x-small;
+	color: silver;
+	font-family: Verdana;
+	text-align: center;
+	text-decoration: none;
+}
+.Titulo_Menu
+{
+	font-weight: bold;
+	font-size: x-small;
+	color: black;
+	font-family: Verdana;	
+	text-decoration: none;
+}
+.Parrafo
+{
+	font-size: x-small;	
+	font-family: Verdana;
+}
+.Label
+{
+	font-weight: bold;
+	font-size: 10px;
+	color: #006699;
+	font-family: Verdana;
+}
+.LabelDisabled
+{
+	font-weight: bold;
+	font-size: 10px;
+	color: gray;
+	font-family: Verdana;
+}
+.TextboxLogin
+{
+	font-size: small;
+	font-family: Verdana;
+	background-color: #FFFFCC;
+	color: #333333;
+	font-weight: bold;
+}
+.Button
+{
+	font-weight: bold;
+	font-size: xx-small;
+	color: #4682B4;
+	font-family: Tahoma;
+	background-color: #C0C0C0;
+}
+.Error
+{
+	font-weight: bold;
+	color: red;
+	font-family: Verdana;
+}
+.Mensaje_Error
+{
+	font-weight: bold;
+	font-size: xx-small;
+	color: red;
+	font-family: Verdana;
+}
+.Fondo
+{
+	background-color: #f0f8ff;
+}
+.Fondo1
+{
+	background-color: #1e468c;
+}
+.Fondo2
+{
+	background-color: white;
+}
+.LinkButton
+{
+	color: navy;
+	text-decoration: underline;
+}
+
+.lnkRegresar
+{
+	font-weight: bold;
+	font-size: x-small;
+	color: #0000c0;
+}
+
+.MarcoTop
+{
+	background-image: url(../_images/marco/top.jpg); 
+	background-repeat: no-repeat;
+	text-align: left;
+	vertical-align: top; 
+	height: 100px; 
+}
+.MenuTop
+{
+	background-image: url(../_images/marco/MenuTop.jpg); 
+	background-repeat: no-repeat;	
+	width: 200px;	
+}
+.MenuBottom
+{
+	background-image: url(../_images/marco/MenuBottom.jpg); 
+	background-repeat: no-repeat;	
+	width: 200px;
+	height:15px
+}
+.MenuLeft
+{
+	background-image: url(../_images/marco/MenuLeft.jpg); 
+	background-repeat: repeat;		
+	width: 10px;
+}
+.MenuRight
+{
+	background-image: url(../_images/marco/MenuRight.jpg); 
+	background-repeat: repeat;		
+	width: 10px;
+}
+.Oculto
+{
+	visibility:hidden;
+}
+.Button_Mouse_Over
+{
+	border: 2px solid #666666;
+	cursor: pointer;
+}
+.Button_Mouse_Out
+{
+	border-style: none;	
+}
+.TdLabel
+{
+	
+	font-size: 12px;
+	color: gray;
+	font-family: Verdana;
+}
+
+.Titulo_Terceario
+{
+	font-weight: bold;
+	font-size: 12px;
+	color: Gray;
+	font-family: Verdana;
+	height: 15px; 
+	background-color: #F4F4F4;   /*#006699;*/
+	text-align :left 
+}
+
+/* Accordion */
+.accordionHeader
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #2E4d7B;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#master_content .accordionHeader a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+#master_content .accordionHeader a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionHeaderSelected
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #5078B3;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#master_content .accordionHeaderSelected a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+#master_content .accordionHeaderSelected a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionContent
+{
+    background-color: #D3DEEF;
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.heading {
+	padding: 1em 0 1em 0;
+	color:#5377A9;
+	font-family:Arial, Sans-Serif;
+	font-weight:bold;
+	font-size:1.2em;
+}
+.Select
+{
+	border-width: 2px;
+	border-top-style: solid;
+	border-top-color: #808080;
+	border-right-style: solid;
+	border-right-color: #808080;
+	border-bottom-style: solid;
+	border-bottom-color: #808080;
+	border-left-style: solid;
+	border-left-color: #808080;
+}
+.Uselect
+{
+	border-style: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+.SemaforoRojo
+{
+	background-color: #FF595E;
+	color: #FFEAEC;
+}
+
+.SemaforoAzul
+{
+	background-color: #FF595E;
+	color: #FFEAEC;
+}
+
+.SemaforoAmarillo
+{
+	background-color: #FF595E;
+	color: #FFEAEC;
+}
+
+.SemaforoVerde
+{
+	background-color: #FF595E;
+	color: #FFEAEC;
+}
+
+

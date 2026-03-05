@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RotuloCarpeta" targetNamespace="http://tempuri.org/RotuloCarpeta.xsd" xmlns:mstns="http://tempuri.org/RotuloCarpeta.xsd" xmlns="http://tempuri.org/RotuloCarpeta.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RotuloCarpeta" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="RotuloCarpeta" msprop:Generator_UserDSName="RotuloCarpeta">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="U_RotuloCarpeta" msprop:Generator_TableClassName="U_RotuloCarpetaDataTable" msprop:Generator_TableVarName="tableU_RotuloCarpeta" msprop:Generator_RowChangedName="U_RotuloCarpetaRowChanged" msprop:Generator_TablePropName="U_RotuloCarpeta" msprop:Generator_RowDeletingName="U_RotuloCarpetaRowDeleting" msprop:Generator_RowChangingName="U_RotuloCarpetaRowChanging" msprop:Generator_RowEvHandlerName="U_RotuloCarpetaRowChangeEventHandler" msprop:Generator_RowDeletedName="U_RotuloCarpetaRowDeleted" msprop:Generator_RowClassName="U_RotuloCarpetaRow" msprop:Generator_UserTableName="U_RotuloCarpeta" msprop:Generator_RowEvArgName="U_RotuloCarpetaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FECHAAPLICACION" msprop:Generator_ColumnVarNameInTable="columnFECHAAPLICACION" msprop:Generator_ColumnPropNameInRow="FECHAAPLICACION" msprop:Generator_ColumnPropNameInTable="FECHAAPLICACIONColumn" msprop:Generator_UserColumnName="FECHAAPLICACION" type="xs:long" minOccurs="0" />
+              <xs:element name="DEPENDENCIA" msprop:Generator_ColumnVarNameInTable="columnDEPENDENCIA" msprop:Generator_ColumnPropNameInRow="DEPENDENCIA" msprop:Generator_ColumnPropNameInTable="DEPENDENCIAColumn" msprop:Generator_UserColumnName="DEPENDENCIA" type="xs:string" minOccurs="0" />
+              <xs:element name="PROCESO" msprop:Generator_ColumnVarNameInTable="columnPROCESO" msprop:Generator_ColumnPropNameInRow="PROCESO" msprop:Generator_ColumnPropNameInTable="PROCESOColumn" msprop:Generator_UserColumnName="PROCESO" type="xs:string" minOccurs="0" />
+              <xs:element name="CODIGOSERIE" msprop:Generator_ColumnVarNameInTable="columnCODIGOSERIE" msprop:Generator_ColumnPropNameInRow="CODIGOSERIE" msprop:Generator_ColumnPropNameInTable="CODIGOSERIEColumn" msprop:Generator_UserColumnName="CODIGOSERIE" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRESERIE" msprop:Generator_ColumnVarNameInTable="columnNOMBRESERIE" msprop:Generator_ColumnPropNameInRow="NOMBRESERIE" msprop:Generator_ColumnPropNameInTable="NOMBRESERIEColumn" msprop:Generator_UserColumnName="NOMBRESERIE" type="xs:string" minOccurs="0" />
+              <xs:element name="CODIGOSUBSERIE" msprop:Generator_ColumnVarNameInTable="columnCODIGOSUBSERIE" msprop:Generator_ColumnPropNameInRow="CODIGOSUBSERIE" msprop:Generator_ColumnPropNameInTable="CODIGOSUBSERIEColumn" msprop:Generator_UserColumnName="CODIGOSUBSERIE" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRESUBSERIE" msprop:Generator_ColumnVarNameInTable="columnNOMBRESUBSERIE" msprop:Generator_ColumnPropNameInRow="NOMBRESUBSERIE" msprop:Generator_ColumnPropNameInTable="NOMBRESUBSERIEColumn" msprop:Generator_UserColumnName="NOMBRESUBSERIE" type="xs:string" minOccurs="0" />
+              <xs:element name="TITULO" msprop:Generator_ColumnVarNameInTable="columnTITULO" msprop:Generator_ColumnPropNameInRow="TITULO" msprop:Generator_ColumnPropNameInTable="TITULOColumn" msprop:Generator_UserColumnName="TITULO" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHAINICIAL" msprop:Generator_ColumnVarNameInTable="columnFECHAINICIAL" msprop:Generator_ColumnPropNameInRow="FECHAINICIAL" msprop:Generator_ColumnPropNameInTable="FECHAINICIALColumn" msprop:Generator_UserColumnName="FECHAINICIAL" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHAFINAL" msprop:Generator_ColumnVarNameInTable="columnFECHAFINAL" msprop:Generator_ColumnPropNameInRow="FECHAFINAL" msprop:Generator_ColumnPropNameInTable="FECHAFINALColumn" msprop:Generator_UserColumnName="FECHAFINAL" type="xs:string" minOccurs="0" />
+              <xs:element name="OBSERVACIONES" msprop:Generator_ColumnVarNameInTable="columnOBSERVACIONES" msprop:Generator_ColumnPropNameInRow="OBSERVACIONES" msprop:Generator_ColumnPropNameInTable="OBSERVACIONESColumn" msprop:Generator_UserColumnName="OBSERVACIONES" type="xs:string" minOccurs="0" />
+              <xs:element name="CAJA" msprop:Generator_ColumnVarNameInTable="columnCAJA" msprop:Generator_ColumnPropNameInRow="CAJA" msprop:Generator_ColumnPropNameInTable="CAJAColumn" msprop:Generator_UserColumnName="CAJA" type="xs:string" minOccurs="0" />
+              <xs:element name="CARPETA" msprop:Generator_ColumnVarNameInTable="columnCARPETA" msprop:Generator_ColumnPropNameInRow="CARPETA" msprop:Generator_ColumnPropNameInTable="CARPETAColumn" msprop:Generator_UserColumnName="CARPETA" type="xs:string" minOccurs="0" />
+              <xs:element name="FOLIOS" msprop:Generator_ColumnVarNameInTable="columnFOLIOS" msprop:Generator_ColumnPropNameInRow="FOLIOS" msprop:Generator_ColumnPropNameInTable="FOLIOSColumn" msprop:Generator_UserColumnName="FOLIOS" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTALCARPETAS" msprop:Generator_ColumnVarNameInTable="columnTOTALCARPETAS" msprop:Generator_ColumnPropNameInRow="TOTALCARPETAS" msprop:Generator_ColumnPropNameInTable="TOTALCARPETASColumn" msprop:Generator_UserColumnName="TOTALCARPETAS" type="xs:string" minOccurs="0" />
+              <xs:element name="CODIGOUBICACION" msprop:Generator_ColumnVarNameInTable="columnCODIGOUBICACION" msprop:Generator_ColumnPropNameInRow="CODIGOUBICACION" msprop:Generator_ColumnPropNameInTable="CODIGOUBICACIONColumn" msprop:Generator_UserColumnName="CODIGOUBICACION" type="xs:string" minOccurs="0" />
+              <xs:element name="IMAGENCB" msprop:Generator_ColumnVarNameInTable="columnIMAGENCB" msprop:Generator_ColumnPropNameInRow="IMAGENCB" msprop:Generator_ColumnPropNameInTable="IMAGENCBColumn" msprop:Generator_UserColumnName="IMAGENCB" type="xs:string" minOccurs="0" />
+              <xs:element name="NROCARPETA" msprop:Generator_ColumnVarNameInTable="columnNROCARPETA" msprop:Generator_ColumnPropNameInRow="NROCARPETA" msprop:Generator_ColumnPropNameInTable="NROCARPETAColumn" msprop:Generator_UserColumnName="NROCARPETA" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

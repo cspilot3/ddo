@@ -1,0 +1,63 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MiharuMasterPopUp.master.vb"
+    Inherits="Miharu.Imaging.MiharuMasterPopUp" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>:: MIHARU Imaging ::</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="_styles/StyleSheet_Miharu.css" rel="stylesheet" type="text/css" />
+        <link href="_styles/StyleSheet_Marco.css" rel="stylesheet" type="text/css" />
+    </asp:ContentPlaceHolder>
+    <asp:Literal ID="ltrHeadScripts" runat="server"></asp:Literal>
+</head>
+<body onunload="OnCloseEvent();" onload="BeginRequestHandler();">
+    <form id="objForm" runat="server">
+    <script type="text/javascript">
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+        prm.add_beginRequest(BeginRequestHandler);
+        prm.add_pageLoaded(pageLoadedHandler);
+
+        var ctrId_div_Proceso = 'div_Proceso';
+        var ctrId_div_Bloquear = 'div_Bloquear';
+        var ctrId_EndRequestAction = '<%= EndRequestAction.ClientID %>';
+        var vShowLoader = "";
+    </script>
+    <asp:ContentPlaceHolder ID="ShowLoader" runat="server">
+        <script type="text/javascript">
+            vShowLoader = "SI";
+        </script>
+    </asp:ContentPlaceHolder>
+    <div class="Oculto">
+        <ajaxToolkit:ToolkitScriptManager ID="MyToolkitScriptManager" runat="server" ScriptMode="Release">
+        </ajaxToolkit:ToolkitScriptManager>
+        <asp:UpdatePanel ID="upOpcionesEspeciales" runat="server">
+            <ContentTemplate>
+                <input type="hidden" id="EndRequestAction" value="" runat="server" />
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    <asp:ContentPlaceHolder ID="Cuerpo" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="Eventos" runat="server">
+        <script type="text/javascript">
+            function OnCloseEvent() { }
+            function onResizeEvent() { }
+
+            window.onresize = onResizeEvent;
+        </script>
+    </asp:ContentPlaceHolder>
+    <div id='div_Proceso' class="ProcesoHija_div">
+        <table align="center" class="ProcesoHija_tabla">
+            <tr>
+                <td valign='middle' align='center'>
+                    <img src="<%= ResolveClientUrl("~/_images/basic/ajax-loader.gif") %>" alt="" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

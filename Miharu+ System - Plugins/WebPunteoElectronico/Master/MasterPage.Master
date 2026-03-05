@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs"
+    Inherits="WebPunteoElectronico.Master.MasterPage" %>
+
+<%@ Register Src="../Controls/StatusBarWebUserControl.ascx" TagName="StatusBarWebUserControl"
+    TagPrefix="WebPunteoElectronico" %>
+<%@ Register Src="../Controls/LoginWebUserControl.ascx" TagName="LoginWebUserControl"
+    TagPrefix="WebPunteoElectronico" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>::Punteo Electrónico::</title>
+    <link href="~/Images/basic/WebPunteoElectronicoIcon.ico" rel="shortcut icon" type="image/x-icon" />
+    <asp:Literal ID="HeadScriptsLiteral" runat="server"></asp:Literal>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Marco.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContentPlaceHolder" runat="server">
+        <script type="text/javascript">
+            function ResizeChild() { }
+        </script>
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="BeginRequestHandler(); NotificarCargue();" onunload="NotificarCierre();">
+    <form runat="server">
+    <div class="oculto">
+        <asp:ScriptManager ID="MasterScriptManager" ScriptMode="Release" runat="server">
+        </asp:ScriptManager>
+        <asp:UpdatePanel ID="SpecialOptionsUpdatePanel" runat="server">
+            <ContentTemplate>
+                <asp:LinkButton ID="RefreshLinkButton" runat="server" OnClick="RefreshLinkButton_Click"></asp:LinkButton>
+                <input type="hidden" id="EndRequestAction" value="" runat="server" />
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        <a id="fancybox-link" href=""></a>
+    </div>
+    <script type="text/javascript">
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+        prm.add_beginRequest(BeginRequestHandler);
+        prm.add_pageLoaded(pageLoadedHandler);
+
+        var ctrId_ProcessDiv = 'ProcessDiv';
+        var ctrId_LockDiv = 'LockDiv';
+        var ctrId_EndRequestAction = '<%= EndRequestAction.ClientID %>';
+        var ctrId_RefreshLinkButton = '<%= RefreshLinkButton.UniqueID %>';
+        var Pwindow;
+        var Pdocument;
+        var UseDaughterCancelEvent = 0;
+
+        $(function () {
+            ResizeBody();
+        });
+
+        $(window).resize(function () { ResizeBody(); });
+    </script>
+    <div id="dialog-message">
+        <div id="dialog-message-icon">
+        </div>
+        <div class="dialog-message-text">
+            <span id="dialog-message-text"></span>
+        </div>
+    </div>
+    <div id='ProcessDiv' class="Loading_div Lock_div">
+        <img class="ProcessImg" src="<%= ResolveClientUrl("~/Images/basic/ajax-loader.gif") %>"
+            alt="" />
+    </div>
+    <div id='LockDiv' class="Loading_div Lock_div">
+    </div>
+    <div id="page" class="page">
+        <div id="header">
+            <div id="header-top-left">
+            </div>
+            <div id="header-top">
+            </div>
+            <div id="header-top-right">
+            </div>
+            <div id="header-left">
+            </div>
+            <div id="header-center">
+                <asp:UpdatePanel ID="LoginUpdatePanel" runat="server">
+                    <ContentTemplate>
+                        <div class="loginDisplay">
+                            <WebPunteoElectronico:LoginWebUserControl ID="LoginWebUserControl1" runat="server" />
+                        </div>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+            <div id="header-right">
+            </div>
+        </div>
+        <div id="content">
+            <asp:UpdatePanel ID="BodyUpdatePanel" runat="server">
+                <ContentTemplate>                    
+                    <div id="main-content">
+                        <asp:ContentPlaceHolder ID="BodyContentPlaceHolder" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+        <div id="footer">
+            <asp:UpdatePanel ID="FooterUpdatePanel" runat="server">
+                <ContentTemplate>
+                    <WebPunteoElectronico:StatusBarWebUserControl ID="StatusBarWebUserControl1" runat="server" />
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

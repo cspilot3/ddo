@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="xsdOfflineData" targetNamespace="http://tempuri.org/xsdOfflineData.xsd" xmlns:mstns="http://tempuri.org/xsdOfflineData.xsd" xmlns="http://tempuri.org/xsdOfflineData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="xsdOfflineData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="xsdOfflineData" msprop:Generator_UserDSName="xsdOfflineData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TBL_Folder" msprop:Generator_TableClassName="TBL_FolderDataTable" msprop:Generator_TableVarName="tableTBL_Folder" msprop:Generator_TablePropName="TBL_Folder" msprop:Generator_RowDeletingName="TBL_FolderRowDeleting" msprop:Generator_RowChangingName="TBL_FolderRowChanging" msprop:Generator_RowEvHandlerName="TBL_FolderRowChangeEventHandler" msprop:Generator_RowDeletedName="TBL_FolderRowDeleted" msprop:Generator_UserTableName="TBL_Folder" msprop:Generator_RowChangedName="TBL_FolderRowChanged" msprop:Generator_RowEvArgName="TBL_FolderRowChangeEvent" msprop:Generator_RowClassName="TBL_FolderRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Expediente" msprop:Generator_ColumnVarNameInTable="columnid_Expediente" msprop:Generator_ColumnPropNameInRow="id_Expediente" msprop:Generator_ColumnPropNameInTable="id_ExpedienteColumn" msprop:Generator_UserColumnName="id_Expediente" type="xs:long" />
+              <xs:element name="id_Folder" msprop:Generator_ColumnVarNameInTable="columnid_Folder" msprop:Generator_ColumnPropNameInRow="id_Folder" msprop:Generator_ColumnPropNameInTable="id_FolderColumn" msprop:Generator_UserColumnName="id_Folder" type="xs:long" />
+              <xs:element name="id_Esquema" msprop:Generator_ColumnVarNameInTable="columnid_Esquema" msprop:Generator_ColumnPropNameInRow="id_Esquema" msprop:Generator_ColumnPropNameInTable="id_EsquemaColumn" msprop:Generator_UserColumnName="id_Esquema" type="xs:short" minOccurs="0" />
+              <xs:element name="Nombre_Esquema" msprop:Generator_ColumnVarNameInTable="columnNombre_Esquema" msprop:Generator_ColumnPropNameInRow="Nombre_Esquema" msprop:Generator_ColumnPropNameInTable="Nombre_EsquemaColumn" msprop:Generator_UserColumnName="Nombre_Esquema" type="xs:string" minOccurs="0" />
+              <xs:element name="Key_1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnKey_1" msprop:Generator_ColumnPropNameInRow="Key_1" msprop:Generator_ColumnPropNameInTable="Key_1Column" msprop:Generator_UserColumnName="Key_1" type="xs:string" minOccurs="0" />
+              <xs:element name="Key_2" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnKey_2" msprop:Generator_ColumnPropNameInRow="Key_2" msprop:Generator_ColumnPropNameInTable="Key_2Column" msprop:Generator_UserColumnName="Key_2" type="xs:string" minOccurs="0" />
+              <xs:element name="Key_3" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnKey_3" msprop:Generator_ColumnPropNameInRow="Key_3" msprop:Generator_ColumnPropNameInTable="Key_3Column" msprop:Generator_UserColumnName="Key_3" type="xs:string" minOccurs="0" />
+              <xs:element name="CBarras_Folder" msprop:Generator_ColumnVarNameInTable="columnCBarras_Folder" msprop:Generator_ColumnPropNameInRow="CBarras_Folder" msprop:Generator_ColumnPropNameInTable="CBarras_FolderColumn" msprop:Generator_UserColumnName="CBarras_Folder" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TBL_File" msprop:Generator_TableClassName="TBL_FileDataTable" msprop:Generator_TableVarName="tableTBL_File" msprop:Generator_TablePropName="TBL_File" msprop:Generator_RowDeletingName="TBL_FileRowDeleting" msprop:Generator_RowChangingName="TBL_FileRowChanging" msprop:Generator_RowEvHandlerName="TBL_FileRowChangeEventHandler" msprop:Generator_RowDeletedName="TBL_FileRowDeleted" msprop:Generator_UserTableName="TBL_File" msprop:Generator_RowChangedName="TBL_FileRowChanged" msprop:Generator_RowEvArgName="TBL_FileRowChangeEvent" msprop:Generator_RowClassName="TBL_FileRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Expediente" msdata:Caption="fk_Expediente" msprop:Generator_ColumnVarNameInTable="columnid_Expediente" msprop:Generator_ColumnPropNameInRow="id_Expediente" msprop:Generator_ColumnPropNameInTable="id_ExpedienteColumn" msprop:Generator_UserColumnName="id_Expediente" type="xs:long" />
+              <xs:element name="id_Folder" msprop:Generator_ColumnVarNameInTable="columnid_Folder" msprop:Generator_ColumnPropNameInRow="id_Folder" msprop:Generator_ColumnPropNameInTable="id_FolderColumn" msprop:Generator_UserColumnName="id_Folder" type="xs:long" />
+              <xs:element name="id_File" msprop:Generator_ColumnVarNameInTable="columnid_File" msprop:Generator_ColumnPropNameInRow="id_File" msprop:Generator_ColumnPropNameInTable="id_FileColumn" msprop:Generator_UserColumnName="id_File" type="xs:short" />
+              <xs:element name="id_Version" msprop:Generator_ColumnVarNameInTable="columnid_Version" msprop:Generator_ColumnPropNameInRow="id_Version" msprop:Generator_ColumnPropNameInTable="id_VersionColumn" msprop:Generator_UserColumnName="id_Version" type="xs:short" />
+              <xs:element name="File_Unique_Identifier" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnFile_Unique_Identifier" msprop:Generator_ColumnPropNameInRow="File_Unique_Identifier" msprop:Generator_ColumnPropNameInTable="File_Unique_IdentifierColumn" msprop:Generator_UserColumnName="File_Unique_Identifier" type="xs:string" />
+              <xs:element name="Nombre_Documento" msprop:Generator_ColumnVarNameInTable="columnNombre_Documento" msprop:Generator_ColumnPropNameInRow="Nombre_Documento" msprop:Generator_ColumnPropNameInTable="Nombre_DocumentoColumn" msprop:Generator_UserColumnName="Nombre_Documento">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre_Imagen_File" msprop:Generator_ColumnVarNameInTable="columnNombre_Imagen_File" msprop:Generator_ColumnPropNameInRow="Nombre_Imagen_File" msprop:Generator_ColumnPropNameInTable="Nombre_Imagen_FileColumn" msprop:Generator_UserColumnName="Nombre_Imagen_File">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="260" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Folios_Documento_File" msprop:Generator_ColumnVarNameInTable="columnFolios_Documento_File" msprop:Generator_ColumnPropNameInRow="Folios_Documento_File" msprop:Generator_ColumnPropNameInTable="Folios_Documento_FileColumn" msprop:Generator_UserColumnName="Folios_Documento_File" type="xs:short" />
+              <xs:element name="Tamaño_Imagen_File" msprop:Generator_ColumnVarNameInTable="columnTamaño_Imagen_File" msprop:Generator_ColumnPropNameInRow="Tamaño_Imagen_File" msprop:Generator_ColumnPropNameInTable="Tamaño_Imagen_FileColumn" msprop:Generator_UserColumnName="Tamaño_Imagen_File" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TBL_Config" msprop:Generator_TableClassName="TBL_ConfigDataTable" msprop:Generator_TableVarName="tableTBL_Config" msprop:Generator_TablePropName="TBL_Config" msprop:Generator_RowDeletingName="TBL_ConfigRowDeleting" msprop:Generator_RowChangingName="TBL_ConfigRowChanging" msprop:Generator_RowEvHandlerName="TBL_ConfigRowChangeEventHandler" msprop:Generator_RowDeletedName="TBL_ConfigRowDeleted" msprop:Generator_UserTableName="TBL_Config" msprop:Generator_RowChangedName="TBL_ConfigRowChanged" msprop:Generator_RowEvArgName="TBL_ConfigRowChangeEvent" msprop:Generator_RowClassName="TBL_ConfigRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Entidad" msprop:Generator_ColumnVarNameInTable="columnid_Entidad" msprop:Generator_ColumnPropNameInRow="id_Entidad" msprop:Generator_ColumnPropNameInTable="id_EntidadColumn" msprop:Generator_UserColumnName="id_Entidad" type="xs:short" minOccurs="0" />
+              <xs:element name="Nombre_Entidad" msprop:Generator_ColumnVarNameInTable="columnNombre_Entidad" msprop:Generator_ColumnPropNameInRow="Nombre_Entidad" msprop:Generator_ColumnPropNameInTable="Nombre_EntidadColumn" msprop:Generator_UserColumnName="Nombre_Entidad" type="xs:string" minOccurs="0" />
+              <xs:element name="id_Proyecto" msprop:Generator_ColumnVarNameInTable="columnid_Proyecto" msprop:Generator_ColumnPropNameInRow="id_Proyecto" msprop:Generator_ColumnPropNameInTable="id_ProyectoColumn" msprop:Generator_UserColumnName="id_Proyecto" type="xs:short" minOccurs="0" />
+              <xs:element name="Nombre_Proyecto" msprop:Generator_ColumnVarNameInTable="columnNombre_Proyecto" msprop:Generator_ColumnPropNameInRow="Nombre_Proyecto" msprop:Generator_ColumnPropNameInTable="Nombre_ProyectoColumn" msprop:Generator_UserColumnName="Nombre_Proyecto" type="xs:string" minOccurs="0" />
+              <xs:element name="Key_1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnKey_1" msprop:Generator_ColumnPropNameInRow="Key_1" msprop:Generator_ColumnPropNameInTable="Key_1Column" msprop:Generator_UserColumnName="Key_1" type="xs:string" minOccurs="0" />
+              <xs:element name="Key_2" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnKey_2" msprop:Generator_ColumnPropNameInRow="Key_2" msprop:Generator_ColumnPropNameInTable="Key_2Column" msprop:Generator_UserColumnName="Key_2" type="xs:string" minOccurs="0" />
+              <xs:element name="Key_3" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnKey_3" msprop:Generator_ColumnPropNameInRow="Key_3" msprop:Generator_ColumnPropNameInTable="Key_3Column" msprop:Generator_UserColumnName="Key_3" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TBL_File_Data" msprop:Generator_TableClassName="TBL_File_DataDataTable" msprop:Generator_TableVarName="tableTBL_File_Data" msprop:Generator_TablePropName="TBL_File_Data" msprop:Generator_RowDeletingName="TBL_File_DataRowDeleting" msprop:Generator_RowChangingName="TBL_File_DataRowChanging" msprop:Generator_RowEvHandlerName="TBL_File_DataRowChangeEventHandler" msprop:Generator_RowDeletedName="TBL_File_DataRowDeleted" msprop:Generator_UserTableName="TBL_File_Data" msprop:Generator_RowChangedName="TBL_File_DataRowChanged" msprop:Generator_RowEvArgName="TBL_File_DataRowChangeEvent" msprop:Generator_RowClassName="TBL_File_DataRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Expediente" msdata:Caption="fk_Expediente" msprop:Generator_ColumnVarNameInTable="columnid_Expediente" msprop:Generator_ColumnPropNameInRow="id_Expediente" msprop:Generator_ColumnPropNameInTable="id_ExpedienteColumn" msprop:Generator_UserColumnName="id_Expediente" type="xs:long" />
+              <xs:element name="id_Folder" msprop:Generator_ColumnVarNameInTable="columnid_Folder" msprop:Generator_ColumnPropNameInRow="id_Folder" msprop:Generator_ColumnPropNameInTable="id_FolderColumn" msprop:Generator_UserColumnName="id_Folder" type="xs:long" />
+              <xs:element name="id_File" msprop:Generator_ColumnVarNameInTable="columnid_File" msprop:Generator_ColumnPropNameInRow="id_File" msprop:Generator_ColumnPropNameInTable="id_FileColumn" msprop:Generator_UserColumnName="id_File" type="xs:short" />
+              <xs:element name="id_Version" msprop:Generator_ColumnVarNameInTable="columnid_Version" msprop:Generator_ColumnPropNameInRow="id_Version" msprop:Generator_ColumnPropNameInTable="id_VersionColumn" msprop:Generator_UserColumnName="id_Version" type="xs:short" />
+              <xs:element name="id_Campo" msprop:Generator_ColumnVarNameInTable="columnid_Campo" msprop:Generator_ColumnPropNameInRow="id_Campo" msprop:Generator_ColumnPropNameInTable="id_CampoColumn" msprop:Generator_UserColumnName="id_Campo" type="xs:short" />
+              <xs:element name="Nombre_Campo" msprop:Generator_ColumnVarNameInTable="columnNombre_Campo" msprop:Generator_ColumnPropNameInRow="Nombre_Campo" msprop:Generator_ColumnPropNameInTable="Nombre_CampoColumn" msprop:Generator_UserColumnName="Nombre_Campo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Es_Campo_Busqueda" msprop:Generator_ColumnVarNameInTable="columnEs_Campo_Busqueda" msprop:Generator_ColumnPropNameInRow="Es_Campo_Busqueda" msprop:Generator_ColumnPropNameInTable="Es_Campo_BusquedaColumn" msprop:Generator_UserColumnName="Es_Campo_Busqueda" type="xs:boolean" />
+              <xs:element name="fk_Campo_Tipo" msprop:Generator_ColumnVarNameInTable="columnfk_Campo_Tipo" msprop:Generator_ColumnPropNameInRow="fk_Campo_Tipo" msprop:Generator_ColumnPropNameInTable="fk_Campo_TipoColumn" msprop:Generator_UserColumnName="fk_Campo_Tipo" type="xs:unsignedByte" />
+              <xs:element name="fk_Campo_Busqueda" msprop:Generator_ColumnVarNameInTable="columnfk_Campo_Busqueda" msprop:Generator_ColumnPropNameInRow="fk_Campo_Busqueda" msprop:Generator_ColumnPropNameInTable="fk_Campo_BusquedaColumn" msprop:Generator_UserColumnName="fk_Campo_Busqueda" type="xs:short" minOccurs="0" />
+              <xs:element name="Valor_File_Data" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnValor_File_Data" msprop:Generator_ColumnPropNameInRow="Valor_File_Data" msprop:Generator_ColumnPropNameInTable="Valor_File_DataColumn" msprop:Generator_UserColumnName="Valor_File_Data" type="xs:string" minOccurs="0" />
+              <xs:element name="fk_Documento" msprop:Generator_ColumnVarNameInTable="columnfk_Documento" msprop:Generator_ColumnPropNameInRow="fk_Documento" msprop:Generator_ColumnPropNameInTable="fk_DocumentoColumn" msprop:Generator_UserColumnName="fk_Documento" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TBL_Campo_Busqueda" msprop:Generator_TableClassName="TBL_Campo_BusquedaDataTable" msprop:Generator_TableVarName="tableTBL_Campo_Busqueda" msprop:Generator_TablePropName="TBL_Campo_Busqueda" msprop:Generator_RowDeletingName="TBL_Campo_BusquedaRowDeleting" msprop:Generator_RowChangingName="TBL_Campo_BusquedaRowChanging" msprop:Generator_RowEvHandlerName="TBL_Campo_BusquedaRowChangeEventHandler" msprop:Generator_RowDeletedName="TBL_Campo_BusquedaRowDeleted" msprop:Generator_UserTableName="TBL_Campo_Busqueda" msprop:Generator_RowChangedName="TBL_Campo_BusquedaRowChanged" msprop:Generator_RowEvArgName="TBL_Campo_BusquedaRowChangeEvent" msprop:Generator_RowClassName="TBL_Campo_BusquedaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fk_Campo_Tipo" msprop:Generator_ColumnVarNameInTable="columnfk_Campo_Tipo" msprop:Generator_ColumnPropNameInRow="fk_Campo_Tipo" msprop:Generator_ColumnPropNameInTable="fk_Campo_TipoColumn" msprop:Generator_UserColumnName="fk_Campo_Tipo" type="xs:unsignedByte" />
+              <xs:element name="id_Campo_Busqueda" msprop:Generator_ColumnVarNameInTable="columnid_Campo_Busqueda" msprop:Generator_ColumnPropNameInRow="id_Campo_Busqueda" msprop:Generator_ColumnPropNameInTable="id_Campo_BusquedaColumn" msprop:Generator_UserColumnName="id_Campo_Busqueda" type="xs:short" />
+              <xs:element name="Nombre_Campo_Busqueda" msprop:Generator_ColumnVarNameInTable="columnNombre_Campo_Busqueda" msprop:Generator_ColumnPropNameInRow="Nombre_Campo_Busqueda" msprop:Generator_ColumnPropNameInTable="Nombre_Campo_BusquedaColumn" msprop:Generator_UserColumnName="Nombre_Campo_Busqueda">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TBL_File_Validacion" msprop:Generator_TableClassName="TBL_File_ValidacionDataTable" msprop:Generator_TableVarName="tableTBL_File_Validacion" msprop:Generator_TablePropName="TBL_File_Validacion" msprop:Generator_RowDeletingName="TBL_File_ValidacionRowDeleting" msprop:Generator_RowChangingName="TBL_File_ValidacionRowChanging" msprop:Generator_RowEvHandlerName="TBL_File_ValidacionRowChangeEventHandler" msprop:Generator_RowDeletedName="TBL_File_ValidacionRowDeleted" msprop:Generator_UserTableName="TBL_File_Validacion" msprop:Generator_RowChangedName="TBL_File_ValidacionRowChanged" msprop:Generator_RowEvArgName="TBL_File_ValidacionRowChangeEvent" msprop:Generator_RowClassName="TBL_File_ValidacionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Expediente" msdata:Caption="fk_Expediente" msprop:Generator_ColumnVarNameInTable="columnid_Expediente" msprop:Generator_ColumnPropNameInRow="id_Expediente" msprop:Generator_ColumnPropNameInTable="id_ExpedienteColumn" msprop:Generator_UserColumnName="id_Expediente" type="xs:long" />
+              <xs:element name="id_Folder" msprop:Generator_ColumnVarNameInTable="columnid_Folder" msprop:Generator_ColumnPropNameInRow="id_Folder" msprop:Generator_ColumnPropNameInTable="id_FolderColumn" msprop:Generator_UserColumnName="id_Folder" type="xs:long" />
+              <xs:element name="id_File" msprop:Generator_ColumnVarNameInTable="columnid_File" msprop:Generator_ColumnPropNameInRow="id_File" msprop:Generator_ColumnPropNameInTable="id_FileColumn" msprop:Generator_UserColumnName="id_File" type="xs:short" />
+              <xs:element name="id_Version" msprop:Generator_ColumnVarNameInTable="columnid_Version" msprop:Generator_ColumnPropNameInRow="id_Version" msprop:Generator_ColumnPropNameInTable="id_VersionColumn" msprop:Generator_UserColumnName="id_Version" type="xs:short" />
+              <xs:element name="id_Validacion" msdata:Caption="id_Campo" msprop:Generator_ColumnVarNameInTable="columnid_Validacion" msprop:Generator_ColumnPropNameInRow="id_Validacion" msprop:Generator_ColumnPropNameInTable="id_ValidacionColumn" msprop:Generator_UserColumnName="id_Validacion" type="xs:short" />
+              <xs:element name="Pregunta_Validacion" msdata:Caption="Nombre_Campo" msprop:Generator_ColumnVarNameInTable="columnPregunta_Validacion" msprop:Generator_ColumnPropNameInRow="Pregunta_Validacion" msprop:Generator_ColumnPropNameInTable="Pregunta_ValidacionColumn" msprop:Generator_UserColumnName="Pregunta_Validacion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Respuesta" msdata:ReadOnly="true" msdata:Caption="Valor_File_Data" msprop:Generator_ColumnVarNameInTable="columnRespuesta" msprop:Generator_ColumnPropNameInRow="Respuesta" msprop:Generator_ColumnPropNameInTable="RespuestaColumn" msprop:Generator_UserColumnName="Respuesta" type="xs:boolean" minOccurs="0" />
+              <xs:element name="fk_Documento" msprop:Generator_ColumnVarNameInTable="columnfk_Documento" msprop:Generator_ColumnPropNameInRow="fk_Documento" msprop:Generator_ColumnPropNameInTable="fk_DocumentoColumn" msprop:Generator_UserColumnName="fk_Documento" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="TBL_Folder_PrimaryKey" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TBL_Folder" />
+      <xs:field xpath="mstns:id_Expediente" />
+      <xs:field xpath="mstns:id_Folder" />
+    </xs:unique>
+    <xs:unique name="TBL_File_PrimaryKey" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TBL_File" />
+      <xs:field xpath="mstns:id_Expediente" />
+      <xs:field xpath="mstns:id_Folder" />
+      <xs:field xpath="mstns:id_File" />
+      <xs:field xpath="mstns:id_Version" />
+    </xs:unique>
+    <xs:unique name="TBL_File_Data_PrimaryKey" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TBL_File_Data" />
+      <xs:field xpath="mstns:id_Expediente" />
+      <xs:field xpath="mstns:id_Folder" />
+      <xs:field xpath="mstns:id_File" />
+      <xs:field xpath="mstns:id_Version" />
+      <xs:field xpath="mstns:id_Campo" />
+    </xs:unique>
+    <xs:unique name="TBL_Campo_Busqueda_PrimaryKey" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TBL_Campo_Busqueda" />
+      <xs:field xpath="mstns:fk_Campo_Tipo" />
+      <xs:field xpath="mstns:id_Campo_Busqueda" />
+    </xs:unique>
+    <xs:unique name="TBL_File_Validacion_PrimaryKey" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TBL_File_Validacion" />
+      <xs:field xpath="mstns:id_Expediente" />
+      <xs:field xpath="mstns:id_Folder" />
+      <xs:field xpath="mstns:id_File" />
+      <xs:field xpath="mstns:id_Version" />
+      <xs:field xpath="mstns:id_Validacion" />
+    </xs:unique>
+    <xs:keyref name="FK_TBL_File_TBL_File_Validacion" refer="TBL_File_PrimaryKey" msprop:rel_Generator_UserChildTable="TBL_File_Validacion" msprop:rel_Generator_ChildPropName="GetTBL_File_ValidacionRows" msprop:rel_Generator_UserRelationName="FK_TBL_File_TBL_File_Validacion" msprop:rel_Generator_ParentPropName="TBL_FileRowParent" msprop:rel_Generator_RelationVarName="relationFK_TBL_File_TBL_File_Validacion" msprop:rel_Generator_UserParentTable="TBL_File">
+      <xs:selector xpath=".//mstns:TBL_File_Validacion" />
+      <xs:field xpath="mstns:id_Expediente" />
+      <xs:field xpath="mstns:id_Folder" />
+      <xs:field xpath="mstns:id_File" />
+      <xs:field xpath="mstns:id_Version" />
+    </xs:keyref>
+    <xs:keyref name="FK_TBL_File_TBL_File_Data" refer="TBL_File_PrimaryKey" msprop:rel_Generator_UserChildTable="TBL_File_Data" msprop:rel_Generator_ChildPropName="GetTBL_File_DataRows" msprop:rel_Generator_UserRelationName="FK_TBL_File_TBL_File_Data" msprop:rel_Generator_ParentPropName="TBL_FileRowParent" msprop:rel_Generator_RelationVarName="relationFK_TBL_File_TBL_File_Data" msprop:rel_Generator_UserParentTable="TBL_File">
+      <xs:selector xpath=".//mstns:TBL_File_Data" />
+      <xs:field xpath="mstns:id_Expediente" />
+      <xs:field xpath="mstns:id_Folder" />
+      <xs:field xpath="mstns:id_File" />
+      <xs:field xpath="mstns:id_Version" />
+    </xs:keyref>
+    <xs:keyref name="FK_TBL_Folder_TBL_File" refer="TBL_Folder_PrimaryKey" msprop:rel_Generator_UserChildTable="TBL_File" msprop:rel_Generator_ChildPropName="GetTBL_FileRows" msprop:rel_Generator_UserRelationName="FK_TBL_Folder_TBL_File" msprop:rel_Generator_ParentPropName="TBL_FolderRowParent" msprop:rel_Generator_RelationVarName="relationFK_TBL_Folder_TBL_File" msprop:rel_Generator_UserParentTable="TBL_Folder">
+      <xs:selector xpath=".//mstns:TBL_File" />
+      <xs:field xpath="mstns:id_Expediente" />
+      <xs:field xpath="mstns:id_Folder" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

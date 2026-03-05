@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="xsdEstadosOT" targetNamespace="http://tempuri.org/xsdEstadosOT.xsd" xmlns:mstns="http://tempuri.org/xsdEstadosOT.xsd" xmlns="http://tempuri.org/xsdEstadosOT.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="xsdEstadosOT" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="xsdEstadosOT" msprop:Generator_UserDSName="xsdEstadosOT">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EstadosOT" msprop:Generator_TableClassName="EstadosOTDataTable" msprop:Generator_TableVarName="tableEstadosOT" msprop:Generator_TablePropName="EstadosOT" msprop:Generator_RowDeletingName="EstadosOTRowDeleting" msprop:Generator_UserTableName="EstadosOT" msprop:Generator_RowChangingName="EstadosOTRowChanging" msprop:Generator_RowEvHandlerName="EstadosOTRowChangeEventHandler" msprop:Generator_RowDeletedName="EstadosOTRowDeleted" msprop:Generator_RowEvArgName="EstadosOTRowChangeEvent" msprop:Generator_RowChangedName="EstadosOTRowChanged" msprop:Generator_RowClassName="EstadosOTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Entidad" msprop:Generator_ColumnVarNameInTable="columnEntidad" msprop:Generator_ColumnPropNameInRow="Entidad" msprop:Generator_ColumnPropNameInTable="EntidadColumn" msprop:Generator_UserColumnName="Entidad" type="xs:string" minOccurs="0" />
+              <xs:element name="Proyecto" msprop:Generator_ColumnVarNameInTable="columnProyecto" msprop:Generator_ColumnPropNameInRow="Proyecto" msprop:Generator_ColumnPropNameInTable="ProyectoColumn" msprop:Generator_UserColumnName="Proyecto" type="xs:string" minOccurs="0" />
+              <xs:element name="Esquema" msprop:Generator_ColumnVarNameInTable="columnEsquema" msprop:Generator_ColumnPropNameInRow="Esquema" msprop:Generator_ColumnPropNameInTable="EsquemaColumn" msprop:Generator_UserColumnName="Esquema" type="xs:string" minOccurs="0" />
+              <xs:element name="OT" msprop:Generator_ColumnVarNameInTable="columnOT" msprop:Generator_ColumnPropNameInRow="OT" msprop:Generator_ColumnPropNameInTable="OTColumn" msprop:Generator_UserColumnName="OT" type="xs:string" minOccurs="0" />
+              <xs:element name="Procesadas" msprop:Generator_ColumnVarNameInTable="columnProcesadas" msprop:Generator_ColumnPropNameInRow="Procesadas" msprop:Generator_ColumnPropNameInTable="ProcesadasColumn" msprop:Generator_UserColumnName="Procesadas" type="xs:string" minOccurs="0" />
+              <xs:element name="Rechazadas" msprop:Generator_ColumnVarNameInTable="columnRechazadas" msprop:Generator_ColumnPropNameInRow="Rechazadas" msprop:Generator_ColumnPropNameInTable="RechazadasColumn" msprop:Generator_UserColumnName="Rechazadas" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalOT" msprop:Generator_ColumnVarNameInTable="columnTotalOT" msprop:Generator_ColumnPropNameInRow="TotalOT" msprop:Generator_ColumnPropNameInTable="TotalOTColumn" msprop:Generator_UserColumnName="TotalOT" type="xs:string" minOccurs="0" />
+              <xs:element name="PendienteXProc" msprop:Generator_ColumnVarNameInTable="columnPendienteXProc" msprop:Generator_ColumnPropNameInRow="PendienteXProc" msprop:Generator_ColumnPropNameInTable="PendienteXProcColumn" msprop:Generator_UserColumnName="PendienteXProc" type="xs:string" minOccurs="0" />
+              <xs:element name="PorcProcesadas" msprop:Generator_ColumnVarNameInTable="columnPorcProcesadas" msprop:Generator_ColumnPropNameInRow="PorcProcesadas" msprop:Generator_ColumnPropNameInTable="PorcProcesadasColumn" msprop:Generator_UserColumnName="PorcProcesadas" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RotuloCaja" targetNamespace="http://tempuri.org/RotuloCaja.xsd" xmlns:mstns="http://tempuri.org/RotuloCaja.xsd" xmlns="http://tempuri.org/RotuloCaja.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RotuloCaja" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="RotuloCaja" msprop:Generator_UserDSName="RotuloCaja">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="U_RotuloCaja" msprop:Generator_TableClassName="U_RotuloCajaDataTable" msprop:Generator_TableVarName="tableU_RotuloCaja" msprop:Generator_RowChangedName="U_RotuloCajaRowChanged" msprop:Generator_TablePropName="U_RotuloCaja" msprop:Generator_RowDeletingName="U_RotuloCajaRowDeleting" msprop:Generator_RowChangingName="U_RotuloCajaRowChanging" msprop:Generator_RowEvHandlerName="U_RotuloCajaRowChangeEventHandler" msprop:Generator_RowDeletedName="U_RotuloCajaRowDeleted" msprop:Generator_RowClassName="U_RotuloCajaRow" msprop:Generator_UserTableName="U_RotuloCaja" msprop:Generator_RowEvArgName="U_RotuloCajaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FECHAAPLICACION" msprop:Generator_ColumnVarNameInTable="columnFECHAAPLICACION" msprop:Generator_ColumnPropNameInRow="FECHAAPLICACION" msprop:Generator_ColumnPropNameInTable="FECHAAPLICACIONColumn" msprop:Generator_UserColumnName="FECHAAPLICACION" type="xs:long" minOccurs="0" />
+              <xs:element name="DEPENDENCIA" msprop:Generator_ColumnVarNameInTable="columnDEPENDENCIA" msprop:Generator_ColumnPropNameInRow="DEPENDENCIA" msprop:Generator_ColumnPropNameInTable="DEPENDENCIAColumn" msprop:Generator_UserColumnName="DEPENDENCIA" type="xs:string" minOccurs="0" />
+              <xs:element name="CODIGOSERIE" msprop:Generator_ColumnVarNameInTable="columnCODIGOSERIE" msprop:Generator_ColumnPropNameInRow="CODIGOSERIE" msprop:Generator_ColumnPropNameInTable="CODIGOSERIEColumn" msprop:Generator_UserColumnName="CODIGOSERIE" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRESERIE" msprop:Generator_ColumnVarNameInTable="columnNOMBRESERIE" msprop:Generator_ColumnPropNameInRow="NOMBRESERIE" msprop:Generator_ColumnPropNameInTable="NOMBRESERIEColumn" msprop:Generator_UserColumnName="NOMBRESERIE" type="xs:string" minOccurs="0" />
+              <xs:element name="CODIGOSUBSERIE" msprop:Generator_ColumnVarNameInTable="columnCODIGOSUBSERIE" msprop:Generator_ColumnPropNameInRow="CODIGOSUBSERIE" msprop:Generator_ColumnPropNameInTable="CODIGOSUBSERIEColumn" msprop:Generator_UserColumnName="CODIGOSUBSERIE" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRESUBSERIE" msprop:Generator_ColumnVarNameInTable="columnNOMBRESUBSERIE" msprop:Generator_ColumnPropNameInRow="NOMBRESUBSERIE" msprop:Generator_ColumnPropNameInTable="NOMBRESUBSERIEColumn" msprop:Generator_UserColumnName="NOMBRESUBSERIE" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHAINICIAL" msprop:Generator_ColumnVarNameInTable="columnFECHAINICIAL" msprop:Generator_ColumnPropNameInRow="FECHAINICIAL" msprop:Generator_ColumnPropNameInTable="FECHAINICIALColumn" msprop:Generator_UserColumnName="FECHAINICIAL" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHAFINAL" msprop:Generator_ColumnVarNameInTable="columnFECHAFINAL" msprop:Generator_ColumnPropNameInRow="FECHAFINAL" msprop:Generator_ColumnPropNameInTable="FECHAFINALColumn" msprop:Generator_UserColumnName="FECHAFINAL" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTALCARPETAS" msprop:Generator_ColumnVarNameInTable="columnTOTALCARPETAS" msprop:Generator_ColumnPropNameInRow="TOTALCARPETAS" msprop:Generator_ColumnPropNameInTable="TOTALCARPETASColumn" msprop:Generator_UserColumnName="TOTALCARPETAS" type="xs:string" minOccurs="0" />
+              <xs:element name="CAJA" msprop:Generator_ColumnVarNameInTable="columnCAJA" msprop:Generator_ColumnPropNameInRow="CAJA" msprop:Generator_ColumnPropNameInTable="CAJAColumn" msprop:Generator_UserColumnName="CAJA" type="xs:string" minOccurs="0" />
+              <xs:element name="CODIGODEPENDENCIA" msprop:Generator_ColumnVarNameInTable="columnCODIGODEPENDENCIA" msprop:Generator_ColumnPropNameInRow="CODIGODEPENDENCIA" msprop:Generator_ColumnPropNameInTable="CODIGODEPENDENCIAColumn" msprop:Generator_UserColumnName="CODIGODEPENDENCIA" type="xs:string" minOccurs="0" />
+              <xs:element name="IMAGENCBAC" msprop:Generator_ColumnVarNameInTable="columnIMAGENCBAC" msprop:Generator_ColumnPropNameInRow="IMAGENCBAC" msprop:Generator_ColumnPropNameInTable="IMAGENCBACColumn" msprop:Generator_UserColumnName="IMAGENCBAC" type="xs:string" minOccurs="0" />
+              <xs:element name="IMAGENCBAG" msprop:Generator_ColumnVarNameInTable="columnIMAGENCBAG" msprop:Generator_ColumnPropNameInRow="IMAGENCBAG" msprop:Generator_ColumnPropNameInTable="IMAGENCBAGColumn" msprop:Generator_UserColumnName="IMAGENCBAG" type="xs:string" minOccurs="0" />
+              <xs:element name="CODIGOUBICACION" msprop:Generator_ColumnVarNameInTable="columnCODIGOUBICACION" msprop:Generator_ColumnPropNameInRow="CODIGOUBICACION" msprop:Generator_ColumnPropNameInTable="CODIGOUBICACIONColumn" msprop:Generator_UserColumnName="CODIGOUBICACION" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoSerieySubserie" msprop:Generator_ColumnVarNameInTable="columnCodigoSerieySubserie" msprop:Generator_ColumnPropNameInRow="CodigoSerieySubserie" msprop:Generator_ColumnPropNameInTable="CodigoSerieySubserieColumn" msprop:Generator_UserColumnName="CodigoSerieySubserie" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

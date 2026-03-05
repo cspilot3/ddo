@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Miharu.Uploader.Library.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Miharu_Uploader_Library_UploaderWebServiceReference_UploaderWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:23782/UploaderWebService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

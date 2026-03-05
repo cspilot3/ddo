@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{702DF77B-6910-487B-9B76-F2C8BA0952E5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Miharu.Web.Controls</RootNamespace>
+    <AssemblyName>Miharu.Web.Controls</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SignAssembly>true</SignAssembly>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Miharu.Web.Controls" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clock\Clock.vb" />
+    <Compile Include="Diagrama\Bloque.vb" />
+    <Compile Include="Diagrama\Diagrama.vb" />
+    <Compile Include="Diagrama\DiagramaNodo.vb" />
+    <Compile Include="Diagrama\Linea.vb" />
+    <Compile Include="DocumentViewer\FileProvider.vb" />
+    <Compile Include="DocumentViewer\DocumentItemType.vb" />
+    <Compile Include="DocumentViewer\DocumentViewer.vb" />
+    <Compile Include="DocumentViewer\DocumentViewerDesigner.vb" />
+    <Compile Include="DocumentViewer\FileProviderLocal.vb" />
+    <None Include="DocumentViewer\ImageManager_OLD.vb" />
+    <Compile Include="ImageChanging\ImageChanging.vb" />
+    <Compile Include="ImageChangingButton\ImageChangingButton.vb" />
+    <Compile Include="IParameter\IParameter.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ParameterCheck\ParameterCheck.vb" />
+    <Compile Include="ParameterDate\ParameterDate.vb" />
+    <Compile Include="ParameterFileUpload\ParameterFileUpload.vb" />
+    <Compile Include="ParameterList\ParameterList.vb" />
+    <Compile Include="ParameterNumeric\ParameterNumeric.vb" />
+    <Compile Include="ParameterText\ParameterText.vb" />
+    <Compile Include="SlygGridView\SlygGridView.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImageChangingButton\ImageChangingButton.bmp" />
+    <EmbeddedResource Include="ImageChanging\ImageChanging.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Referencias\AFPDFLibNET.dll" />
+    <None Include="Referencias\Gios.PSM.dll" />
+    <None Include="Referencias\Interop.AFPDFLib.dll" />
+    <Content Include="DocumentViewer\Scripts\tjpzoom.js" />
+    <Content Include="DocumentViewer\Scripts\tjpzoom_config_default.js" />
+    <EmbeddedResource Include="DocumentViewer\DocumentViewer.bmp" />
+    <Content Include="DocumentViewer\_DocumentViewer\Ajustar_Alto_Cold.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\Ajustar_Alto_Hot.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\Ajustar_Ancho_Cold.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\Ajustar_Ancho_Hot.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\DefaultImage.jpg" />
+    <Content Include="DocumentViewer\_DocumentViewer\EndLeft_Cold.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\EndLeft_Disable.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\EndLeft_Hot.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\EndRight_Cold.gif" />
+    <Content Include="DocumentViewer\_DocumentViewer\EndRight_Cold.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\EndRight_Disable.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\EndRight_Hot.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\Guardar_Cold.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\Guardar_Hot.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\Imprimir_Cold.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\Imprimir_Hot.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\Load.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\NextLeft_Cold.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\NextLeft_Disable.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\NextLeft_Hot.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\NextRight_Cold.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\NextRight_Disable.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\NextRight_Hot.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\PrintHTMLPage.htm" />
+    <Content Include="DocumentViewer\_DocumentViewer\Rotate_Left_Cold.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\Rotate_Left_Hot.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\Rotate_Right_Cold.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\Rotate_Right_Hot.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\Zoom_Cold.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\Zoom_Hot.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\Zoom_In_Cold.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\Zoom_In_Hot.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\Zoom_Out_Cold.png" />
+    <Content Include="DocumentViewer\_DocumentViewer\Zoom_Out_Hot.png" />
+    <Content Include="SlygGridView\SlygGridViewStyles\extjs\header-hover.gif" />
+    <Content Include="SlygGridView\SlygGridViewStyles\extjs\header.gif" />
+    <Content Include="SlygGridView\SlygGridViewStyles\GridviewStyles.css" />
+    <Content Include="SlygGridView\SlygGridViewStyles\sharepoint\calnumBttnover.gif" />
+    <Content Include="SlygGridView\SlygGridViewStyles\sharepoint\calnumBttntodayHot_obsidian.GIF" />
+    <Content Include="SlygGridView\SlygGridViewStyles\sharepoint\calnumBttntoday_obsidian.gif" />
+    <Content Include="SlygGridView\SlygGridViewStyles\sharepoint\calnumBttn_obsidian.gif" />
+    <Content Include="SlygGridView\SlygGridViewStyles\SlygGridView.js" />
+    <Content Include="SlygGridView\SlygGridViewStyles\tablecloth\tr_back.gif" />
+    <Content Include="SlygGridView\SlygGridViewStyles\WhiteChromeGridView\Images\FireworksNative\HeaderChrome.png" />
+    <Content Include="SlygGridView\SlygGridViewStyles\WhiteChromeGridView\Images\FireworksNative\HeaderChromeBlack.png" />
+    <Content Include="SlygGridView\SlygGridViewStyles\WhiteChromeGridView\Images\FireworksNative\HeaderGamer.png" />
+    <Content Include="SlygGridView\SlygGridViewStyles\WhiteChromeGridView\Images\FireworksNative\HeaderGlassBlack.png" />
+    <Content Include="SlygGridView\SlygGridViewStyles\WhiteChromeGridView\Images\FireworksNative\HeaderSoftGrey.png" />
+    <Content Include="SlygGridView\SlygGridViewStyles\WhiteChromeGridView\Images\FireworksNative\HeaderWhiteChrome.png" />
+    <Content Include="SlygGridView\SlygGridViewStyles\WhiteChromeGridView\Images\FireworksNative\PagerGamer.png" />
+    <Content Include="SlygGridView\SlygGridViewStyles\WhiteChromeGridView\Images\HeaderChrome.jpg" />
+    <Content Include="SlygGridView\SlygGridViewStyles\WhiteChromeGridView\Images\HeaderChromeBlack.jpg" />
+    <Content Include="SlygGridView\SlygGridViewStyles\WhiteChromeGridView\Images\HeaderGamer.jpg" />
+    <Content Include="SlygGridView\SlygGridViewStyles\WhiteChromeGridView\Images\HeaderGamer_Hover.jpg" />
+    <Content Include="SlygGridView\SlygGridViewStyles\WhiteChromeGridView\Images\HeaderGamer_left.jpg" />
+    <Content Include="SlygGridView\SlygGridViewStyles\WhiteChromeGridView\Images\HeaderGlassBlack.jpg" />
+    <Content Include="SlygGridView\SlygGridViewStyles\WhiteChromeGridView\Images\HeaderSoftGrey.jpg" />
+    <Content Include="SlygGridView\SlygGridViewStyles\WhiteChromeGridView\Images\HeaderWhiteChrome.jpg" />
+    <Content Include="SlygGridView\SlygGridViewStyles\WhiteChromeGridView\Images\PagerGamer.jpg" />
+    <Content Include="SlygGridView\SlygGridViewStyles\WhiteChromeGridView\WhiteChromeGridView.css" />
+    <Content Include="SlygGridView\SlygGridViewStyles\yui-datatable\sprite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Slyg.Tools.Imaging\Slyg.Tools.Imaging.csproj">
+      <Project>{B41AFD53-3FE1-4C20-B359-1C5FC16954C4}</Project>
+      <Name>Slyg.Tools.Imaging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

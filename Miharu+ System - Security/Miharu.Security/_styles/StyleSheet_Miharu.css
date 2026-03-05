@@ -1,0 +1,185 @@
+﻿body
+{
+	margin: 0px;
+	overflow: auto;
+	scrollbar-face-color: #EDEDED;
+	scrollbar-highlight-color: #EDEDED;
+	scrollbar-3dlight-color: #666666;
+	scrollbar-darkshadow-color: #666666;
+	scrollbar-shadow-color: #CCCCCC;
+	scrollbar-arrow-color: #666666;
+	scrollbar-track-color: #EDEDED;
+}
+a
+{	
+	color: #003366;
+}
+a:visited
+{
+	color: #003366;
+}
+.link
+{
+	font-size: x-small;
+	font-weight: bold;
+	font-family: 'Microsoft Sans Serif';	
+}
+.botonimagen
+{
+	border: 1px solid #FFFFFF;	
+}
+.botonimagen:hover
+{
+	border: 1px solid #808080;
+	cursor:pointer;
+}
+.Titulo_Principal
+{
+	font-weight: bold;
+	font-size: x-large;
+	color: navy;
+	font-family: Georgia;
+}
+.Titulo_Secundario
+{
+	border: 2px outset #999999;
+	font-weight: bold;
+	font-size: medium;
+	color: #FFFFFF;
+	font-family: Verdana;
+	height: 30px;
+	background-color: #006699;
+}
+.Grilla_Header
+{
+	border: 1px solid #999999;
+	font-weight: bold;
+	font-size: small;
+	color: #FFFFFF;
+	font-family: Verdana;
+	height: 30px;
+	background-color: #006699;
+}
+.Titulo_Menu
+{
+	font-weight: bold;
+	font-size: x-small;
+	color: black;
+	font-family: Verdana;	
+	text-decoration: none;
+}
+.Parrafo
+{
+	font-size: x-small;	
+	font-family: Verdana;
+}
+.Parrafo2
+{
+	font-size: medium;
+	font-family: Verdana;
+	font-weight: bold;
+}
+.Label
+{
+	font-weight: bold;
+	font-size: x-small;
+	color: #3366CC;
+	font-family: Verdana;
+}
+.LabelTextbox
+{
+	border: 1px solid #333333;
+	font-size: small;
+	font-family: Verdana;
+	color: #003366;
+	font-weight: bold;
+	padding-left: 10px;
+}
+.Textbox
+{
+	font-size: small;
+	font-family: Verdana;
+	background-color: #FFFFEA;
+	color: #003366;
+	font-weight: bold;
+}
+.TextboxDisable
+{
+	font-size: small;
+	font-family: Verdana;
+	background-color: #EEEEEE;
+	color: #003366;
+	font-weight: bold;
+}
+.Button, .Button:hover, .Button_Selected
+{
+	font-weight: bold;
+	font-size: x-small;
+	font-family: Tahoma;
+}
+.Button
+{
+	border: 1px solid #666666;
+	background-color: #C0C0C0;
+	cursor: pointer;
+	color: #3366CC;
+}
+.Button:hover
+{
+	border: 1px solid #666666;	
+	background-color: #FFFFCC;
+}
+.Button_Selected
+{
+	border: 1px inset #FFFFFF;
+	background-color: #666666;
+	color: #FFFFFF;
+}
+.Error
+{
+	font-weight: bold;
+	color: red;
+	font-family: Verdana;
+}
+.Mensaje_Error
+{
+	font-weight: bold;
+	font-size: xx-small;
+	color: red;
+	font-family: Verdana;
+}
+.Oculto
+{
+	display: none;
+}
+.BotonCambiante
+{
+	border: 1px solid #FFFFFF;
+	vertical-align: middle;
+	text-align: center;
+}
+.BotonCambiante:hover
+{
+	border: 1px solid #666666;
+	vertical-align: middle;
+	text-align: center;
+}
+.Flujo_Paso
+{
+	background-image: url(        '../_images/flujo/Paso.png' );
+	font-family: 'Courier New' , Courier, 'espacio sencillo';
+	font-weight: bold;
+	background-repeat: no-repeat;
+	text-align: center;
+	vertical-align: middle;
+	width: 23px;
+	font-size: medium;
+	height: 23px;
+	padding-top: 4px;
+}
+.Flujo_Estado
+{
+	text-align: center;
+	vertical-align: middle;
+	width: 23px;
+}

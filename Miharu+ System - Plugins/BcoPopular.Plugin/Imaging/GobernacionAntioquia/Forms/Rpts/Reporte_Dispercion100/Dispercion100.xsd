@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Dispercion100" targetNamespace="http://tempuri.org/Dispercion100.xsd" xmlns:mstns="http://tempuri.org/Dispercion100.xsd" xmlns="http://tempuri.org/Dispercion100.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Dispercion100" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Dispercion100" msprop:Generator_UserDSName="Dispercion100">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Dispercion100" msprop:Generator_TableClassName="Dispercion100DataTable" msprop:Generator_TableVarName="tableDispercion100" msprop:Generator_TablePropName="_Dispercion100" msprop:Generator_RowDeletingName="Dispercion100RowDeleting" msprop:Generator_RowChangingName="Dispercion100RowChanging" msprop:Generator_RowEvHandlerName="Dispercion100RowChangeEventHandler" msprop:Generator_RowDeletedName="Dispercion100RowDeleted" msprop:Generator_UserTableName="Dispercion100" msprop:Generator_RowChangedName="Dispercion100RowChanged" msprop:Generator_RowEvArgName="Dispercion100RowChangeEvent" msprop:Generator_RowClassName="Dispercion100Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NUMERO" msprop:Generator_ColumnVarNameInTable="columnNUMERO" msprop:Generator_ColumnPropNameInRow="NUMERO" msprop:Generator_ColumnPropNameInTable="NUMEROColumn" msprop:Generator_UserColumnName="NUMERO" type="xs:string" minOccurs="0" />
+              <xs:element name="EMPRESA" msprop:Generator_ColumnVarNameInTable="columnEMPRESA" msprop:Generator_ColumnPropNameInRow="EMPRESA" msprop:Generator_ColumnPropNameInTable="EMPRESAColumn" msprop:Generator_UserColumnName="EMPRESA" type="xs:string" minOccurs="0" />
+              <xs:element name="CUENTA" msprop:Generator_ColumnVarNameInTable="columnCUENTA" msprop:Generator_ColumnPropNameInRow="CUENTA" msprop:Generator_ColumnPropNameInTable="CUENTAColumn" msprop:Generator_UserColumnName="CUENTA" type="xs:string" minOccurs="0" />
+              <xs:element name="BANCO" msprop:Generator_ColumnVarNameInTable="columnBANCO" msprop:Generator_ColumnPropNameInRow="BANCO" msprop:Generator_ColumnPropNameInTable="BANCOColumn" msprop:Generator_UserColumnName="BANCO" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA_RECUADO" msprop:Generator_ColumnVarNameInTable="columnFECHA_RECUADO" msprop:Generator_ColumnPropNameInRow="FECHA_RECUADO" msprop:Generator_ColumnPropNameInTable="FECHA_RECUADOColumn" msprop:Generator_UserColumnName="FECHA_RECUADO" type="xs:string" minOccurs="0" />
+              <xs:element name="VALOR" msprop:Generator_ColumnVarNameInTable="columnVALOR" msprop:Generator_ColumnPropNameInRow="VALOR" msprop:Generator_ColumnPropNameInTable="VALORColumn" msprop:Generator_UserColumnName="VALOR" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA_TRASLADO" msprop:Generator_ColumnVarNameInTable="columnFECHA_TRASLADO" msprop:Generator_ColumnPropNameInRow="FECHA_TRASLADO" msprop:Generator_ColumnPropNameInTable="FECHA_TRASLADOColumn" msprop:Generator_UserColumnName="FECHA_TRASLADO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

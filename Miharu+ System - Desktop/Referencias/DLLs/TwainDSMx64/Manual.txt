@@ -1,0 +1,8 @@
+Colocar esta carpeta y sus archivos en la rutas
+
+C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VisualStudio\BootstrapperPackages
+C:\Program Files (x86)\Microsoft SDKs\ClickOnce Bootstrapper\Packages
+
+Luego en la publicacion seleccionar el prerequisito donde debe aparecer la carpeta copiada.
+
+En la ruta url de publicacion no debe aparecer el archivo publish.htm ya que generaria error, solo la carpeta de publicacion.

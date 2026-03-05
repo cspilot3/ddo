@@ -1,0 +1,4 @@
+﻿
+Class xsdBusqueda
+
+End Class

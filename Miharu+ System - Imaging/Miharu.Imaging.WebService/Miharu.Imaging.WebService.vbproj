@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E1A819FE-C968-49CE-A549-D4797CB78F68}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Miharu.Imaging.WebService</RootNamespace>
+    <AssemblyName>Miharu.Imaging.WebService</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Slyg.Data">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="descargar.aspx" />
+    <Content Include="escritura.tif" />
+    <Content Include="ImagingService.asmx" />
+    <Content Include="visor.aspx" />
+    <Content Include="visormultiple.aspx" />
+    <Content Include="VisorPdf.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="_images\Instalador.jpg" />
+    <Content Include="_images\MiharuImagingIcon.ico" />
+    <Content Include="_images\_DocumentViewer\Ajustar_Alto_Cold.png" />
+    <Content Include="_images\_DocumentViewer\Ajustar_Alto_Hot.png" />
+    <Content Include="_images\_DocumentViewer\Ajustar_Ancho_Cold.png" />
+    <Content Include="_images\_DocumentViewer\Ajustar_Ancho_Hot.png" />
+    <Content Include="_images\_DocumentViewer\DefaultImage.jpg" />
+    <Content Include="_images\_DocumentViewer\EndLeft_Cold.png" />
+    <Content Include="_images\_DocumentViewer\EndLeft_Disable.png" />
+    <Content Include="_images\_DocumentViewer\EndLeft_Hot.png" />
+    <Content Include="_images\_DocumentViewer\EndRight_Cold.gif" />
+    <Content Include="_images\_DocumentViewer\EndRight_Cold.png" />
+    <Content Include="_images\_DocumentViewer\EndRight_Disable.png" />
+    <Content Include="_images\_DocumentViewer\EndRight_Hot.png" />
+    <Content Include="_images\_DocumentViewer\Guardar_Cold.png" />
+    <Content Include="_images\_DocumentViewer\Guardar_Hot.png" />
+    <Content Include="_images\_DocumentViewer\Imprimir_Cold.png" />
+    <Content Include="_images\_DocumentViewer\Imprimir_Hot.png" />
+    <Content Include="_images\_DocumentViewer\Length.min.js" />
+    <Content Include="_images\_DocumentViewer\Load.png" />
+    <Content Include="_images\_DocumentViewer\NextLeft_Cold.png" />
+    <Content Include="_images\_DocumentViewer\NextLeft_Disable.png" />
+    <Content Include="_images\_DocumentViewer\NextLeft_Hot.png" />
+    <Content Include="_images\_DocumentViewer\NextRight_Cold.png" />
+    <Content Include="_images\_DocumentViewer\NextRight_Disable.png" />
+    <Content Include="_images\_DocumentViewer\NextRight_Hot.png" />
+    <Content Include="_images\_DocumentViewer\PrintHTMLPage.htm" />
+    <Content Include="_images\_DocumentViewer\Rotate_Left_Cold.png" />
+    <Content Include="_images\_DocumentViewer\Rotate_Left_Hot.png" />
+    <Content Include="_images\_DocumentViewer\Rotate_Right_Cold.png" />
+    <Content Include="_images\_DocumentViewer\Rotate_Right_Hot.png" />
+    <Content Include="_images\_DocumentViewer\Zoom_Cold.png" />
+    <Content Include="_images\_DocumentViewer\Zoom_Hot.png" />
+    <Content Include="_images\_DocumentViewer\Zoom_In_Cold.png" />
+    <Content Include="_images\_DocumentViewer\Zoom_In_Hot.png" />
+    <Content Include="_images\_DocumentViewer\Zoom_Out_Cold.png" />
+    <Content Include="_images\_DocumentViewer\Zoom_Out_Hot.png" />
+    <Content Include="_scripts\ModalBox\icon-error.png" />
+    <Content Include="_scripts\ModalBox\icon-information.png" />
+    <Content Include="_scripts\ModalBox\icon-warning.png" />
+    <Content Include="_scripts\ModalBox\lib\effects.js" />
+    <Content Include="_scripts\ModalBox\lib\prototype.js" />
+    <Content Include="_scripts\ModalBox\lib\scriptaculous.js" />
+    <Content Include="_scripts\ModalBox\modalbox.css" />
+    <Content Include="_scripts\ModalBox\modalbox.js" />
+    <Content Include="_scripts\ModalBox\spinner.gif" />
+    <Content Include="_scripts\_DocumentViewer\tjpzoom.js" />
+    <Content Include="_scripts\_DocumentViewer\tjpzoom_config_default.js" />
+    <Content Include="_styles\StyleSheet_Miharu.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\Interaccion.vb" />
+    <Compile Include="App_Code\Program.vb" />
+    <Compile Include="descargar.aspx.designer.vb">
+      <DependentUpon>descargar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="descargar.aspx.vb">
+      <DependentUpon>descargar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImagingService.asmx.vb">
+      <DependentUpon>ImagingService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="visor.aspx.designer.vb">
+      <DependentUpon>visor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visor.aspx.vb">
+      <DependentUpon>visor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visormultiple.aspx.designer.vb">
+      <DependentUpon>visormultiple.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visormultiple.aspx.vb">
+      <DependentUpon>visormultiple.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisorPdf.aspx.designer.vb">
+      <DependentUpon>VisorPdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisorPdf.aspx.vb">
+      <DependentUpon>VisorPdf.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Library\Miharu.Desktop.Library.vbproj">
+      <Project>{60FE71B4-EC25-45F0-B384-B98582D035C7}</Project>
+      <Name>Miharu.Desktop.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.FileProvider.Library\Miharu.FileProvider.Library.vbproj">
+      <Project>{1E21AD2F-0D1F-47A5-94C5-A75D6DAAAC8F}</Project>
+      <Name>Miharu.FileProvider.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.Web.Controls\Miharu.Web.Controls.vbproj">
+      <Project>{702DF77B-6910-487B-9B76-F2C8BA0952E5}</Project>
+      <Name>Miharu.Web.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Slyg.Tools.Imaging\Slyg.Tools.Imaging.csproj">
+      <Project>{B41AFD53-3FE1-4C20-B359-1C5FC16954C4}</Project>
+      <Name>Slyg.Tools.Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Imaging.DataAccess\Miharu.Imaging.DataAccess.csproj">
+      <Project>{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}</Project>
+      <Name>Miharu.Imaging.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Imaging.Library\Miharu.Imaging.Library.vbproj">
+      <Project>{9501AE9F-03BC-4933-9EC3-84BCD96CC795}</Project>
+      <Name>Miharu.Imaging.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="_temporal\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>55313</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55313/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:55313/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

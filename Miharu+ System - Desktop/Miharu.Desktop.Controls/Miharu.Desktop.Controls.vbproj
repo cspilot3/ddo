@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{BBDF4261-7651-4D93-95EE-675260D016AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Miharu.Desktop.Controls</RootNamespace>
+    <AssemblyName>Miharu.Desktop.Controls</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\Referencias\DLLs\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office12\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencias\DLLs\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencias\DLLs\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Slyg.Data">
+      <HintPath>..\Referencias\DLLs\Slyg.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools">
+      <HintPath>..\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BarCode\BarCodeControl.Designer.vb">
+      <DependentUpon>BarCodeControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BarCode\BarCodeControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BarCode\Code39Generator.vb" />
+    <Compile Include="BarCode\EAN128Generator.vb" />
+    <Compile Include="BarCode\FooterTextLine.vb" />
+    <Compile Include="DesktopCBarras\DesktopCBarrasCajaControl.Designer.vb">
+      <DependentUpon>DesktopCBarrasCajaControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopCBarras\DesktopCBarrasCajaControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DesktopCBarras\DesktopCBarrasControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DesktopCBarras\FormCBarrasSelector.Designer.vb">
+      <DependentUpon>FormCBarrasSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopCBarras\FormCBarrasSelector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesktopCheckBox\DesktopCheckBoxControl.Designer.vb">
+      <DependentUpon>DesktopCheckBoxControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopCheckBox\DesktopCheckBoxControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DesktopComboBox\DesktopComboBoxControl.Designer.vb">
+      <DependentUpon>DesktopComboBoxControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopComboBox\DesktopComboBoxControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DesktopDataGridView\DesktopDataGridViewControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DesktopDateTimeTextBox\DesktopDateTimeTextBoxControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DesktopMessageBox\DesktopMessageBoxControl.Designer.vb">
+      <DependentUpon>DesktopMessageBoxControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopMessageBox\DesktopMessageBoxControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesktopNumericTextBox\DesktopNumericTextBoxControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DesktopOptionCheck\DesktopOptionCheckControl.Designer.vb">
+      <DependentUpon>DesktopOptionCheckControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopOptionCheck\DesktopOptionCheckControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DesktopReportDataGridView\DesktopReportDataGridViewControl.Designer.vb">
+      <DependentUpon>DesktopReportDataGridViewControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopReportDataGridView\DesktopReportDataGridViewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DesktopReportDataGridView\DesktopReportDataGridViewControlValidation.Designer.vb">
+      <DependentUpon>DesktopReportDataGridViewControlValidation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopReportDataGridView\DesktopReportDataGridViewControlValidation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DesktopReportDataGridView\FormParametrosExportacion2.Designer.vb">
+      <DependentUpon>FormParametrosExportacion2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopReportDataGridView\FormParametrosExportacion2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesktopReportDataGridView\FormParametrosExportacion.Designer.vb">
+      <DependentUpon>FormParametrosExportacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopReportDataGridView\FormParametrosExportacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesktopReportViewer\DesktopReportViewerFUID.Designer.vb">
+      <DependentUpon>DesktopReportViewerFUID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopReportViewer\DesktopReportViewerFUID.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DesktopReportViewer\DesktopReportFUID.vb" />
+    <Compile Include="DesktopReportViewer\DesktopReport1.vb" />
+    <Compile Include="DesktopReportViewer\DesktopReportHojaControl.vb" />
+    <Compile Include="DesktopReportViewer\DesktopReportViewer1Control.Designer.vb">
+      <DependentUpon>DesktopReportViewer1Control.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopReportViewer\DesktopReportViewer1Control.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DesktopReportViewer\DesktopReportViewerControl.Designer.vb">
+      <DependentUpon>DesktopReportViewerControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopReportViewer\DesktopReportViewerControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DesktopReportViewer\DesktopReport.vb" />
+    <Compile Include="DesktopReportViewer\DesktopReportViewerHojaControl.Designer.vb">
+      <DependentUpon>DesktopReportViewerHojaControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopReportViewer\DesktopReportViewerHojaControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DesktopTab\DesktopTabControl.Designer.vb">
+      <DependentUpon>DesktopTabControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopTab\DesktopTabControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DesktopTextBox\DesktopTextBoxControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DesktopTextTextBox\DesktopTextTextBoxControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DesktopValidacion\DesktopValidacionControl.Designer.vb">
+      <DependentUpon>DesktopValidacionControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopValidacion\DesktopValidacionControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Flecha\FlechaControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Utils\OkControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Validation\ValidacionCaptura.vb" />
+    <Compile Include="Validation\ValidationControl.Designer.vb">
+      <DependentUpon>ValidationControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\ValidationControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BarCode\BarCodeControl.resx">
+      <DependentUpon>BarCodeControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesktopCBarras\FormCBarrasSelector.resx">
+      <DependentUpon>FormCBarrasSelector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesktopDataGridView\DesktopDataGridViewControl.resx">
+      <DependentUpon>DesktopDataGridViewControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesktopMessageBox\DesktopMessageBoxControl.resx">
+      <DependentUpon>DesktopMessageBoxControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesktopReportDataGridView\DesktopReportDataGridViewControl.resx">
+      <DependentUpon>DesktopReportDataGridViewControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesktopReportDataGridView\DesktopReportDataGridViewControlValidation.resx">
+      <DependentUpon>DesktopReportDataGridViewControlValidation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesktopReportDataGridView\FormParametrosExportacion2.resx">
+      <DependentUpon>FormParametrosExportacion2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesktopReportDataGridView\FormParametrosExportacion.resx">
+      <DependentUpon>FormParametrosExportacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesktopReportViewer\DesktopReportViewerFUID.resx">
+      <DependentUpon>DesktopReportViewerFUID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesktopReportViewer\DesktopReportViewer1Control.resx">
+      <DependentUpon>DesktopReportViewer1Control.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesktopReportViewer\DesktopReportViewerControl.resx">
+      <DependentUpon>DesktopReportViewerControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesktopReportViewer\DesktopReportViewerHojaControl.resx">
+      <DependentUpon>DesktopReportViewerHojaControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesktopTextBox\DesktopTextBoxControl.resx">
+      <DependentUpon>DesktopTextBoxControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesktopValidacion\DesktopValidacionControl.resx">
+      <DependentUpon>DesktopValidacionControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flecha\FlechaControl.resx">
+      <DependentUpon>FlechaControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\ValidationControl.resx">
+      <DependentUpon>ValidationControl.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BarCode\BarCodeControl.bmp" />
+    <Content Include="BarCode\printer.png" />
+    <Content Include="DesktopMessageBox\Aceptar.png" />
+    <Content Include="DesktopMessageBox\Alert.png" />
+    <Content Include="DesktopMessageBox\Cancelar.png" />
+    <Content Include="DesktopMessageBox\Error.png" />
+    <Content Include="DesktopReportDataGridView\historiaE.png" />
+    <None Include="Resources\repert2.jpg" />
+    <None Include="Resources\repert1.jpg" />
+    <None Include="Resources\repert.jpg" />
+    <None Include="Resources\report.png" />
+    <None Include="Utils\ok1.png" />
+    <None Include="Utils\no1.png" />
+    <None Include="DesktopMessageBox\Ok.png" />
+    <Content Include="DesktopMessageBox\warning.png" />
+    <EmbeddedResource Include="Flecha\Flecha.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Archiving\Miharu.Archiving.DataAccess\Miharu.Archiving.DataAccess.csproj">
+      <Project>{8AB7AE02-8837-4800-8FDA-EA6CC59A374F}</Project>
+      <Name>Miharu.Archiving.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.MailSender.DataAccess\Miharu.MailSender.DataAccess.csproj">
+      <Project>{68B5513A-93BF-403B-8AEA-C94B43CFCBAF}</Project>
+      <Name>Miharu.MailSender.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

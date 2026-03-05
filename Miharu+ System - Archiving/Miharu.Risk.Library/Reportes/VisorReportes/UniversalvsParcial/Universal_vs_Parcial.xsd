@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Universal_vs_Parcial" targetNamespace="http://tempuri.org/Universal_vs_Parcial.xsd" xmlns:mstns="http://tempuri.org/Universal_vs_Parcial.xsd" xmlns="http://tempuri.org/Universal_vs_Parcial.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Universal_vs_Parcial" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Universal_vs_Parcial" msprop:Generator_UserDSName="Universal_vs_Parcial">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="U_Recibidos" msprop:Generator_TableClassName="U_RecibidosDataTable" msprop:Generator_TableVarName="tableU_Recibidos" msprop:Generator_TablePropName="U_Recibidos" msprop:Generator_RowDeletingName="U_RecibidosRowDeleting" msprop:Generator_UserTableName="U_Recibidos" msprop:Generator_RowChangingName="U_RecibidosRowChanging" msprop:Generator_RowEvHandlerName="U_RecibidosRowChangeEventHandler" msprop:Generator_RowDeletedName="U_RecibidosRowDeleted" msprop:Generator_RowEvArgName="U_RecibidosRowChangeEvent" msprop:Generator_RowChangedName="U_RecibidosRowChanged" msprop:Generator_RowClassName="U_RecibidosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Universal_Folder" msprop:Generator_ColumnVarNameInTable="columnid_Universal_Folder" msprop:Generator_ColumnPropNameInRow="id_Universal_Folder" msprop:Generator_ColumnPropNameInTable="id_Universal_FolderColumn" msprop:Generator_UserColumnName="id_Universal_Folder" type="xs:long" minOccurs="0" />
+              <xs:element name="CBarras_Folder" msprop:Generator_ColumnVarNameInTable="columnCBarras_Folder" msprop:Generator_ColumnPropNameInRow="CBarras_Folder" msprop:Generator_ColumnPropNameInTable="CBarras_FolderColumn" msprop:Generator_UserColumnName="CBarras_Folder" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre_Proyecto_Llave" msprop:Generator_ColumnVarNameInTable="columnNombre_Proyecto_Llave" msprop:Generator_ColumnPropNameInRow="Nombre_Proyecto_Llave" msprop:Generator_ColumnPropNameInTable="Nombre_Proyecto_LlaveColumn" msprop:Generator_UserColumnName="Nombre_Proyecto_Llave" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor_Llave" msprop:Generator_ColumnVarNameInTable="columnValor_Llave" msprop:Generator_ColumnPropNameInRow="Valor_Llave" msprop:Generator_ColumnPropNameInTable="Valor_LlaveColumn" msprop:Generator_UserColumnName="Valor_Llave" type="xs:string" minOccurs="0" />
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha_cargue" msprop:Generator_ColumnVarNameInTable="columnFecha_cargue" msprop:Generator_ColumnPropNameInRow="Fecha_cargue" msprop:Generator_ColumnPropNameInTable="Fecha_cargueColumn" msprop:Generator_UserColumnName="Fecha_cargue" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="U_Faltantes" msprop:Generator_TableClassName="U_FaltantesDataTable" msprop:Generator_TableVarName="tableU_Faltantes" msprop:Generator_TablePropName="U_Faltantes" msprop:Generator_RowDeletingName="U_FaltantesRowDeleting" msprop:Generator_UserTableName="U_Faltantes" msprop:Generator_RowChangingName="U_FaltantesRowChanging" msprop:Generator_RowEvHandlerName="U_FaltantesRowChangeEventHandler" msprop:Generator_RowDeletedName="U_FaltantesRowDeleted" msprop:Generator_RowEvArgName="U_FaltantesRowChangeEvent" msprop:Generator_RowChangedName="U_FaltantesRowChanged" msprop:Generator_RowClassName="U_FaltantesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Universal_Folder" msprop:Generator_ColumnVarNameInTable="columnid_Universal_Folder" msprop:Generator_ColumnPropNameInRow="id_Universal_Folder" msprop:Generator_ColumnPropNameInTable="id_Universal_FolderColumn" msprop:Generator_UserColumnName="id_Universal_Folder" type="xs:long" minOccurs="0" />
+              <xs:element name="Nombre_Proyecto_Llave" msprop:Generator_ColumnVarNameInTable="columnNombre_Proyecto_Llave" msprop:Generator_ColumnPropNameInRow="Nombre_Proyecto_Llave" msprop:Generator_ColumnPropNameInTable="Nombre_Proyecto_LlaveColumn" msprop:Generator_UserColumnName="Nombre_Proyecto_Llave" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor_Universal_Llave" msprop:Generator_ColumnVarNameInTable="columnValor_Universal_Llave" msprop:Generator_ColumnPropNameInRow="Valor_Universal_Llave" msprop:Generator_ColumnPropNameInTable="Valor_Universal_LlaveColumn" msprop:Generator_UserColumnName="Valor_Universal_Llave" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="U_Sobrantes" msprop:Generator_TableClassName="U_SobrantesDataTable" msprop:Generator_TableVarName="tableU_Sobrantes" msprop:Generator_TablePropName="U_Sobrantes" msprop:Generator_RowDeletingName="U_SobrantesRowDeleting" msprop:Generator_UserTableName="U_Sobrantes" msprop:Generator_RowChangingName="U_SobrantesRowChanging" msprop:Generator_RowEvHandlerName="U_SobrantesRowChangeEventHandler" msprop:Generator_RowDeletedName="U_SobrantesRowDeleted" msprop:Generator_RowEvArgName="U_SobrantesRowChangeEvent" msprop:Generator_RowChangedName="U_SobrantesRowChanged" msprop:Generator_RowClassName="U_SobrantesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Universal_Folder" msprop:Generator_ColumnVarNameInTable="columnid_Universal_Folder" msprop:Generator_ColumnPropNameInRow="id_Universal_Folder" msprop:Generator_ColumnPropNameInTable="id_Universal_FolderColumn" msprop:Generator_UserColumnName="id_Universal_Folder" type="xs:long" minOccurs="0" />
+              <xs:element name="CBarras_Folder" msprop:Generator_ColumnVarNameInTable="columnCBarras_Folder" msprop:Generator_ColumnPropNameInRow="CBarras_Folder" msprop:Generator_ColumnPropNameInTable="CBarras_FolderColumn" msprop:Generator_UserColumnName="CBarras_Folder" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre_Proyecto_Llave" msprop:Generator_ColumnVarNameInTable="columnNombre_Proyecto_Llave" msprop:Generator_ColumnPropNameInRow="Nombre_Proyecto_Llave" msprop:Generator_ColumnPropNameInTable="Nombre_Proyecto_LlaveColumn" msprop:Generator_UserColumnName="Nombre_Proyecto_Llave" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor_Llave" msprop:Generator_ColumnVarNameInTable="columnValor_Llave" msprop:Generator_ColumnPropNameInRow="Valor_Llave" msprop:Generator_ColumnPropNameInTable="Valor_LlaveColumn" msprop:Generator_UserColumnName="Valor_Llave" type="xs:string" minOccurs="0" />
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Fecha_cargue" msprop:Generator_ColumnVarNameInTable="columnFecha_cargue" msprop:Generator_ColumnPropNameInRow="Fecha_cargue" msprop:Generator_ColumnPropNameInTable="Fecha_cargueColumn" msprop:Generator_UserColumnName="Fecha_cargue" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="U_Resumen" msprop:Generator_TableClassName="U_ResumenDataTable" msprop:Generator_TableVarName="tableU_Resumen" msprop:Generator_TablePropName="U_Resumen" msprop:Generator_RowDeletingName="U_ResumenRowDeleting" msprop:Generator_UserTableName="U_Resumen" msprop:Generator_RowChangingName="U_ResumenRowChanging" msprop:Generator_RowEvHandlerName="U_ResumenRowChangeEventHandler" msprop:Generator_RowDeletedName="U_ResumenRowDeleted" msprop:Generator_RowEvArgName="U_ResumenRowChangeEvent" msprop:Generator_RowChangedName="U_ResumenRowChanged" msprop:Generator_RowClassName="U_ResumenRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Total_Universal" msprop:Generator_ColumnVarNameInTable="columnTotal_Universal" msprop:Generator_ColumnPropNameInRow="Total_Universal" msprop:Generator_ColumnPropNameInTable="Total_UniversalColumn" msprop:Generator_UserColumnName="Total_Universal" type="xs:int" minOccurs="0" />
+              <xs:element name="Total_Parcial" msprop:Generator_ColumnVarNameInTable="columnTotal_Parcial" msprop:Generator_ColumnPropNameInRow="Total_Parcial" msprop:Generator_ColumnPropNameInTable="Total_ParcialColumn" msprop:Generator_UserColumnName="Total_Parcial" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

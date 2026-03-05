@@ -1,0 +1,42 @@
+﻿
+/* HEADER
+----------------------------------------------------------*/
+#header { /*background: #b6b7bc;*/ position: relative; top: 0; left: 0; width: 100%; }
+
+#header-top-left { position: absolute; top: 0; left: 5px; width: 10px; height: 12px; background-image: url('frame/topleft_corner.png'); background-repeat: no-repeat; }
+
+#header-top { position: absolute; top: 0; left: 15px; right: 13px; height: 12px; background-image: url('frame/top_intermediate.png'); background-repeat: repeat-x; }
+
+#header-top-right { position: absolute; top: 0; right: 5px; width: 12px; height: 12px; background-image: url('frame/topright_corner.png'); background-repeat: no-repeat; }
+
+#header-left { position: absolute; top: 12px; left: 5px; width: 207px; height: 66px; background-image: url('frame/left.png'); background-repeat: no-repeat; }
+
+#header-center { position: absolute; top: 12px; left: 212px; right: 259px; height: 66px; background-image: url('frame/middle_lightgray.png'); background-repeat: repeat-x; }
+
+
+#header-right { position: absolute; top: 12px; right: 5px; width: 254px; height: 66px; background-image: url('frame/right.png'); background-repeat: no-repeat; }
+
+
+/* FRAME
+----------------------------------------------------------*/
+.framechild { position: absolute; top: 82px; bottom: 0; left: 0; right: 0; font-size: small; }
+
+/* LOCK
+----------------------------------------------------------*/
+.Loading_div, .Lock_div { position: absolute; z-index: 100; top: 0; left: 0; bottom: 0; right: 0; top: 0; left: 0; min-height: 100%; background-color: #FFFFFF; filter: alpha(opacity=65); -moz-opacity: 0.65; opacity: 0.65; vertical-align: middle; text-align: center; }
+
+.Lock_div { display: none; }
+
+.ProcessImg { position: absolute; top: 50%; left: 50%; }
+
+.hidden { display: none; }
+
+.ToolMenuItem { width: 70px; height: 62px; border: 1px solid #000000; border: 1px solid rgba(0, 0, 0, 0); display: inline-block; float: left; margin-top: 3px; overflow: hidden; color: #FFFFFF; padding-top: 2px; padding-bottom: 2px; }
+
+.ToolMenuItem:hover { border: 1px solid #808080; cursor: pointer; background-color: #eaf4ff; background-color: rgba(234, 244, 255, 0.9); color: #333333; }
+
+.dashboarditem-separator { margin-top: 5px; border-style: solid; border-width: 1px; border-color: #EFF5FA #FFFFFF #EFF5FA #666666; height: 60px; width: 1px; float: left; margin-left: 5px; }
+
+.menuitem-separator { margin-top: 5px; border-style: solid; border-width: 1px; height: 45px; width: 0; float: left; margin-left: 2px; margin-right: 2px; border-right-color: #CCCCCC; border-left-color: #808080; }
+
+.menu-options { position: absolute; height: 43px; top: 98px; right: 3px; }

@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lightning_go" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\lightning_go.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layout_content" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\layout_content.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Document_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Document_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnCargar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnCargar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="prepare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\prepare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\cancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="remove_update" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\remove-update.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cog_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\cog_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Remove_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\remove-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Instalador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\instalador.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainField" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\mainfield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="compress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\compress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cog_go" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\cog_go.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnPaginaPrimera_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btnpaginaprimera.image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\tick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Resources" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources.resx;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetData" xml:space="preserve">
+    <value>SELECT DISTINCT 
+		ImagingFile.fk_Expediente 
+        ,ImagingFile.fk_Folder
+		,ImagingFile.fk_File
+		,ImagingFile.id_Version	
+		,PL.id_Proyecto_Llave AS id_Campo
+		,ProcessFile.fk_Documento
+		,PL.fk_Campo_Tipo
+		,CASE PL.id_Proyecto_Llave
+			WHEN 1 THEN Llave_01		
+			WHEN 2 THEN Llave_02
+		END AS Valor_File_Data
+		FROM ##TempCarpetas T 
+		INNER JOIN	[DB_Miharu.Core].Process.TBL_Folder PFolder WITH(NOLOCK)
+				ON	T.Carpeta = PFolder.Cbarras_Folder
+		INNER JOIN	[DB_Miharu.Core].[Process].[TBL_Expediente_Llave_Linea] Llave WITH(NOLOCK)
+				ON	PFolder.fk_Expediente = Llave.fk_Expediente  
+		INNER JOIN	[DB_Miharu.Core].Config.TBL_Proyecto_Llave PL
+				ON	Llave.fk_Entidad = PL.fk_Entidad
+				AND Llave.fk_Proyecto = PL.fk_Proyecto
+		INNER JOIN	[DB_Miharu.Core].Process.TBL_File AS ProcessFile WITH(NOLOCK)
+				ON	PFolder.fk_Expediente = ProcessFile.fk_Expediente 
+				AND PFolder.id_Folder = ProcessFile.fk_Folder 
+		INNER JOIN	[DB_Miharu.Core].Imaging.TBL_File ImagingFile WITH(NOLOCK)
+				ON	ImagingFile.fk_Expediente = ProcessFile.fk_Expediente
+				AND ImagingFile.fk_Folder = ProcessFile.fk_Folder
+				AND ImagingFile.fk_File = ProcessFile.id_File
+		INNER JOIN	[DB_Miharu.Core].Process.TBL_File_Estado FE WITH(NOLOCK)
+				ON	FE.fk_Expediente = ImagingFile.fk_Expediente
+				AND FE.fk_Folder = ImagingFile.fk_Folder
+				AND FE.fk_File = ImagingFile.fk_File
+				AND FE.Modulo = 7
+				AND FE.fk_Estado &gt;= 20               
+		INNER JOIN	[DB_Miharu.Core].Config.TBL_Documento AS Documento WITH(NOLOCK)
+				ON	ProcessFile.fk_Documento = Documento.id_Documento 
+		INNER JOIN	[DB_Miharu.Archiving].Risk.TBL_File RFile WITH(NOLOCK)
+				ON	RFile.fk_Expediente = ImagingFile.fk_Expediente
+				AND RFile.fk_Folder = ImagingFile.fk_Folder
+				AND RFile.id_File = ImagingFile.fk_File
+		INNER JOIN	[DB_Miharu.Archiving].Risk.TBL_OT ROT WITH(NOLOCK)
+				ON	ROT.id_OT = RFile.fk_OT
+				AND	ROT.Fecha_OT &lt; '2019-07-09 23:59:59.999'
+		INNER JOIN	[DB_Miharu.Core].Config.TBL_Esquema Esquema
+				ON	Esquema.fk_Entidad = LLave.fk_Entidad
+				AND Esquema.fk_Proyecto = Llave.fk_Proyecto
+				AND Esquema.id_Esquema = Llave.fk_Esquema
+		INNER JOIN	[DB_Miharu.Security_Core].Config.TBL_Entidad Entidad
+				ON	Entidad.id_Entidad = Llave.fk_Entidad
+		INNER JOIN	[DB_Miharu.Core].Config.TBL_Proyecto Proyecto
+				ON	Proyecto.fk_Entidad = Entidad.id_Entidad
+				AND	Proyecto.id_Proyecto = Llave.fk_Proyecto</value>
+  </data>
+  <data name="PreIndexar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\preindexar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnAgregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btnagregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sheet_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\sheet_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scanner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\scanner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\folder_image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Resources2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources.resx;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Reproceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\reproceso.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Document_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Document_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\zoom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Indexar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\indexar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="auto_indexar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\auto_indexar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Terceracaptura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\terceracaptura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="publicar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\publicar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\image_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Resources_Designer2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources.designer.vb;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Reindexar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\reindexar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SegundaCaptura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\segundacaptura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnDestape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btndestape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="door_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\door_in.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Imaging" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\imaging.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="anexo_completo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\anexo_completo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Resources_Designer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources.designer.vb;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SelectTwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\selecttwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnZoomIn_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btnzoomin.image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Document_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Document_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnReflejarVertical_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btnreflejarvertical.image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnAjustarAlto_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btnajustaralto.image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnGuardar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\btnGuardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spellcheck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\spellcheck.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\keys.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnReflejarHorizontal_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btnreflejarhorizontal.image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnPaginaAnterior_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btnpaginaanterior.image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\folder_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book_previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\book_previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layout_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\layout_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MiharuImagingIndexerImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\miharuimagingindexerimage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnRotarDerecha_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btnrotarderecha.image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GetExpedientes" xml:space="preserve">
+    <value>SELECT DISTINCT Llave.fk_Entidad
+		,Entidad.Nombre_Entidad
+		,Llave.fk_Proyecto
+		,Proyecto.Nombre_Proyecto
+		,Esquema.id_Esquema
+		,Esquema.Nombre_Esquema
+		,ImagingFile.fk_Expediente 
+        ,ImagingFile.fk_Folder
+		,ImagingFile.fk_File
+		,ImagingFile.id_Version
+		,ImagingFile.File_Unique_Identifier
+        ,Llave.Llave_01 + ISNULL( '_' + Llave.Llave_02,'') + '_' + CAST(fk_Tipologia AS VARCHAR(100)) + '_' +  CAST(ImagingFile.fk_File AS VARCHAR(100)) AS Nombre_Imagen_File
+		,ImagingFile.Folios_Documento_File
+		,ImagingFile.Tamaño_Imagen_File
+		,ProcessFile.fk_Documento
+		,Documento.Nombre_Documento
+		,0 AS fk_Grupo
+		,Llave.Llave_01 AS Llave_01
+		,Llave.Llave_02 AS Llave_02
+		,Documento.fk_Tipologia 
+		,CASE	WHEN  File2.fk_Expediente IS NOT NULL THEN 2  
+				WHEN  File3.fk_Expediente IS NOT NULL THEN 3  
+				WHEN  File4.fk_Expediente IS NOT NULL THEN 4 
+				WHEN  File5.fk_Expediente IS NOT NULL THEN 5 
+		END AS fk_ServidorStorage
+		,PFolder.Cbarras_Folder
+		INTO #TempExpedientes
+		FROM ##TempCarpetas T 
+		INNER JOIN	[DB_Miharu.Core].Process.TBL_Folder PFolder WITH(NOLOCK)
+				ON	T.Carpeta = PFolder.Cbarras_Folder
+		INNER JOIN	[DB_Miharu.Core].[Process].[TBL_Expediente_Llave_Linea] Llave WITH(NOLOCK)
+				ON	PFolder.fk_Expediente = Llave.fk_Expediente  
+		INNER JOIN	[DB_Miharu.Core].Process.TBL_File AS ProcessFile WITH(NOLOCK)
+				ON	PFolder.fk_Expediente = ProcessFile.fk_Expediente 
+				AND PFolder.id_Folder = ProcessFile.fk_Folder 
+		INNER JOIN	[DB_Miharu.Core].Imaging.TBL_File ImagingFile WITH(NOLOCK)
+				ON	ImagingFile.fk_Expediente = ProcessFile.fk_Expediente
+				AND ImagingFile.fk_Folder = ProcessFile.fk_Folder
+				AND ImagingFile.fk_File = ProcessFile.id_File
+		INNER JOIN	[DB_Miharu.Core].Process.TBL_File_Estado FE WITH(NOLOCK)
+				ON	FE.fk_Expediente = ImagingFile.fk_Expediente
+				AND FE.fk_Folder = ImagingFile.fk_Folder
+				AND FE.fk_File = ImagingFile.fk_File
+				AND FE.Modulo = 7
+				AND FE.fk_Estado &gt;= 20               
+		INNER JOIN	[DB_Miharu.Core].Config.TBL_Documento AS Documento WITH(NOLOCK)
+				ON	ProcessFile.fk_Documento = Documento.id_Documento 
+		INNER JOIN	[DB_Miharu.Archiving].Risk.TBL_File RFile WITH(NOLOCK)
+				ON	RFile.fk_Expediente = ImagingFile.fk_Expediente
+				AND RFile.fk_Folder = ImagingFile.fk_Folder
+				AND RFile.id_File = ImagingFile.fk_File
+		INNER JOIN	[DB_Miharu.Archiving].Risk.TBL_OT ROT WITH(NOLOCK)
+				ON	ROT.id_OT = RFile.fk_OT
+				AND	ROT.Fecha_OT &lt; '2019-07-09 23:59:59.999'
+		INNER JOIN	[DB_Miharu.Core].Config.TBL_Esquema Esquema
+				ON	Esquema.fk_Entidad = LLave.fk_Entidad
+				AND Esquema.fk_Proyecto = Llave.fk_Proyecto
+				AND Esquema.id_Esquema = Llave.fk_Esquema
+		INNER JOIN	[DB_Miharu.Security_Core].Config.TBL_Entidad Entidad
+				ON	Entidad.id_Entidad = Llave.fk_Entidad
+		INNER JOIN	[DB_Miharu.Core].Config.TBL_Proyecto Proyecto
+				ON	Proyecto.fk_Entidad = Entidad.id_Entidad
+				AND	Proyecto.id_Proyecto = Llave.fk_Proyecto
+		LEFT JOIN	[DB_Miharu.Imaging_Storage].Imaging.TBL_File File2 WITH(NOLOCK)
+				ON	File2.fk_Expediente = ProcessFile.fk_Expediente 
+				AND File2.fk_Folder = ProcessFile.fk_Folder 
+				AND File2.fk_File = ProcessFile.id_File 
+		LEFT JOIN	[Historico].[DB_Miharu.Imaging_Storage].Imaging.TBL_File File3 WITH(NOLOCK) 
+				ON	File3.fk_Expediente = ProcessFile.fk_Expediente 
+				AND File3.fk_Folder = ProcessFile.fk_Folder 
+				AND File3.fk_File = ProcessFile.id_File 
+		LEFT JOIN	[Historico].[DB_Miharu.Imaging_Storage_2].Imaging.TBL_File File4 WITH(NOLOCK)   
+				ON	File4.fk_Expediente = ProcessFile.fk_Expediente 
+				AND File4.fk_Folder = ProcessFile.fk_Folder 
+				AND File4.fk_File = ProcessFile.id_File 
+		LEFT JOIN	[Historico].[DB_Miharu.Imaging_Storage_3].Imaging.TBL_File File5 WITH(NOLOCK)   
+				ON	File5.fk_Expediente = ProcessFile.fk_Expediente 
+				AND File5.fk_Folder = ProcessFile.fk_Folder 
+				AND File5.fk_File = ProcessFile.id_File 
+
+        UPDATE #TempExpedientes 
+        SET fk_ServidorStorage = 1 
+        WHERE(fk_ServidorStorage IS NULL) 
+
+		SELECT  * 
+		FROM #TempExpedientes 
+
+
+        
+		DROP TABLE #TempExpedientes</value>
+  </data>
+  <data name="Resources1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources.resx;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="btnCopiar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btncopiar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\lock_open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="filesave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\filesave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Proceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\proceso.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MesaImagenes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\mesaimagenes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnPaginaFinal_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btnpaginafinal.image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GetCampos" xml:space="preserve">
+    <value>SELECT DISTINCT ProcessFile.fk_Documento
+		,PL.id_Proyecto_Llave AS id_Campo
+		,PL.Nombre_Proyecto_Llave AS Nombre_Campo
+		,1 AS Es_Campo_Busqueda 
+		,PL.fk_Campo_Tipo
+FROM ##TempCarpetas T 
+INNER JOIN	[DB_Miharu.Core].Process.TBL_Folder PFolder WITH(NOLOCK)
+		ON	T.Carpeta = PFolder.Cbarras_Folder
+INNER JOIN	[DB_Miharu.Core].[Process].[TBL_Expediente_Llave_Linea] LLAVE WITH(NOLOCK)
+		ON	PFolder.fk_Expediente = Llave.fk_Expediente  
+INNER JOIN	[DB_Miharu.Core].Config.TBL_Proyecto_Llave PL
+		ON	Llave.fk_Entidad = PL.fk_Entidad
+		AND Llave.fk_Proyecto = PL.fk_Proyecto
+INNER JOIN	[DB_Miharu.Core].Process.TBL_File AS ProcessFile WITH(NOLOCK)
+		ON	PFolder.fk_Expediente = ProcessFile.fk_Expediente 
+		AND PFolder.id_Folder = ProcessFile.fk_Folder 
+INNER JOIN	[DB_Miharu.Core].Imaging.TBL_File ImagingFile WITH(NOLOCK)
+		ON	ImagingFile.fk_Expediente = ProcessFile.fk_Expediente
+		AND ImagingFile.fk_Folder = ProcessFile.fk_Folder
+		AND ImagingFile.fk_File = ProcessFile.id_File
+INNER JOIN	[DB_Miharu.Core].Process.TBL_File_Estado FE WITH(NOLOCK)
+		ON	FE.fk_Expediente = ImagingFile.fk_Expediente
+		AND FE.fk_Folder = ImagingFile.fk_Folder
+		AND FE.fk_File = ImagingFile.fk_File
+		AND FE.Modulo = 7
+		AND FE.fk_Estado &gt;= 20               
+INNER JOIN	[DB_Miharu.Core].Config.TBL_Documento AS Documento WITH(NOLOCK)
+		ON	ProcessFile.fk_Documento = Documento.id_Documento 
+INNER JOIN	[DB_Miharu.Archiving].Risk.TBL_File RFile WITH(NOLOCK)
+		ON	RFile.fk_Expediente = ImagingFile.fk_Expediente
+		AND RFile.fk_Folder = ImagingFile.fk_Folder
+		AND RFile.id_File = ImagingFile.fk_File
+INNER JOIN	[DB_Miharu.Archiving].Risk.TBL_OT ROT WITH(NOLOCK)
+		ON	ROT.id_OT = RFile.fk_OT
+		AND	ROT.Fecha_OT &lt; '2019-07-09 23:59:59.999'</value>
+  </data>
+  <data name="Aceptar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\aceptar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Resources_Designer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources.designer.vb;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="btnRotarIzquierda_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btnrotarizquierda.image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ajax-loader" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ajax-loader.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnSalir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btnsalir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="anexo_folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\anexo_folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\close_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="film_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\film_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="replace_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\replace-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adicionar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Adicionar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnGuardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btnguardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Entidad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\entidad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnPaginaSiguiente_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btnpaginasiguiente.image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layout_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\layout_error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="report" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnZoomOut_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btnzoomout.image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sheet_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\sheet_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="film" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\film.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cargue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\cargue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnGenerarEstructura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btngenerarestructura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="server_go" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\server_go.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnAjustarAncho_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btnajustarancho.image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="find" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\find.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\folder_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CancelarVen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\cancelarven.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Process_Accept" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\process-accept.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TablaAsociada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\tablaasociada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnBuscar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\btnbuscar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\selectone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Export" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\export.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Devoluciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\devoluciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnGuardar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\btnGuardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

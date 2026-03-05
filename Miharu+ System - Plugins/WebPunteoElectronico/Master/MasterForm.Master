@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterForm.master.cs"
+    Inherits="WebPunteoElectronico.Master.MasterForm" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>::Punteo Electrónico::</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Marco.css" rel="stylesheet" type="text/css" />
+    <asp:Literal ID="HeadScriptsLiteral" runat="server"></asp:Literal>
+    <asp:ContentPlaceHolder ID="HeadContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="padding: 0px; text-align: center; margin: 0px; vertical-align: top;
+    background-color: White;" onload="SetPointers(); BeginRequestHandler();">
+    <form runat="server">
+    <script type="text/javascript">
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+        prm.add_beginRequest(BeginRequestHandler);
+
+        prm.add_pageLoaded(pageLoadedHandler);
+
+        var ctrId_EndRequestAction = '<%= EndRequestAction.ClientID %>';
+        var ctrId_DaughterFormCloseLinkButton = '<%= DaughterFormCloseLinkButton.UniqueID %>';
+        var ctrId_FlexiGridRowIndexChanged = '<%= FlexiGridRowIndexChangedLinkButton.ClientID %>';
+        var ctrId_FlexiGridRowIndexInfo = '<%= FlexiGridRowIndexInfo.ClientID %>';
+
+        $(function () {
+            Redimencionar();
+        });
+
+        $(window).resize(function () { Redimencionar(); });        
+    </script>
+    <div class="oculto">
+        <asp:ScriptManager ID="MasterScriptManager" ScriptMode="Release" runat="server">
+        </asp:ScriptManager>
+        <asp:UpdatePanel ID="SpecialOptionsUpdatePanel" runat="server">
+            <ContentTemplate>
+                <asp:LinkButton ID="DaughterFormCloseLinkButton" runat="server" OnClick="DaughterFormCloseLinkButton_Click"></asp:LinkButton>
+                <input type="hidden" id="EndRequestAction" value="" runat="server" />
+                <asp:LinkButton ID="FlexiGridRowIndexChangedLinkButton" runat="server" OnClick="FlexiGridRowIndexChangedLinkButton_Click"></asp:LinkButton>
+                <input type="hidden" id="FlexiGridRowIndexInfo" value="" runat="server" />
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    <div>
+        <asp:UpdatePanel ID="BodyUpdatePanel" runat="server">
+            <ContentTemplate>
+                <%--<div id="baseForm" style="overflow-x: hidden; width: auto; height: auto">--%>
+                    <div class="path">
+                        <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                        </asp:SiteMapPath>
+                    </div>
+                    <table class="page-table">
+                        <tr id="TitleTR" runat="server">
+                            <td class="t1">
+                                <asp:Label ID="TitleLabel" runat="server" Text="Titulo"></asp:Label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="rs5">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:ContentPlaceHolder ID="BodyContentPlaceHolder" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                <%--</div>--%>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    </form>
+</body>
+</html>

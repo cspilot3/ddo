@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="proxy_data.aspx.cs" Inherits="Miharu.Client.Browser.controls.proxy_data" %>

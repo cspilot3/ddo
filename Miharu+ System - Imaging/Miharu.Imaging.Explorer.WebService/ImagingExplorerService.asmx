@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="VB" CodeBehind="ImagingExplorerService.asmx.vb" Class="Miharu.Imaging.Explorer.WebService.ImagingExplorerService" %>

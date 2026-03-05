@@ -1,0 +1,189 @@
+﻿.Cargando_div
+{
+	z-index: 100;
+	width: 795px;
+	height: 590px;
+}
+.Cargando_tabla
+{
+	width: 795px;
+	height: 590px;
+	background-color: #FFFFFF;
+	filter: alpha(opacity=65);
+	-moz-opacity: 0.65;
+	opacity: 0.65;
+}
+.Proceso_div
+{
+	display: none;
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	height: 100%; 
+	top: 0px;
+	left: 0px;
+	min-height: 100%;
+}
+.Proceso_tabla
+{
+	width: 100%;
+	height: 580px;
+	margin-top: 80px;
+	background-color: #FFFFFF;
+	filter: alpha(opacity=65);
+	-moz-opacity: 0.65;
+	opacity: 0.65;
+}
+
+.Bloquear_div
+{
+	display: none;
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	height: 100%; 
+	top: 0px;
+	left: 0px;
+	min-height: 100%;
+}
+.Bloquear_tabla
+{
+	width: 100%;
+	height: 100%;
+	background-color: #000!important;
+	filter: alpha(opacity=65);
+	-moz-opacity: 0.65;
+	opacity: 0.65;
+}
+.ProcesoHija_div
+{
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	width: 100%;
+	height: 100%; 
+	top: 0px;
+	left: 0px;
+	min-height: 100%;
+}
+.ProcesoHija_tabla
+{
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	filter: alpha(opacity=65);
+	-moz-opacity: 0.65;
+	opacity: 0.65;
+}
+.modalBackground
+{
+	background-color: #000!important;
+	filter: alpha(opacity=65);
+	-moz-opacity: 0.65;
+	opacity: 0.65;
+}
+table
+{
+	 border:0;
+}
+
+.header-logo
+{
+	background-image: url('../_images/marco/epago.bmp');
+	width: 170px;
+	height: 78px;
+}
+.header-name
+{
+	background-image: url('../_images/marco/header-name.jpg');
+	width: 238px;
+	height: 78px;
+}
+.header-menu
+{
+	background-image: url('../_images/marco/header2b.jpg');
+	width: 674px;
+	height: 27px;
+}
+.header1
+{
+	background-image: url('../_images/marco/header1.jpg');
+	background-repeat: repeat-x;
+	width: 684px; 
+	height: 32px;
+}
+.header2
+{
+	background-image: url('../_images/marco/header2a.jpg');
+	width: 10px; 
+	height: 27px;
+}
+
+.header3a
+{
+	background-image: url('../_images/marco/header3a.jpg');
+	width: 10px; 
+	height: 19px;
+}
+.header3b
+{
+	background-image: url('../_images/marco/header3b.jpg');
+	background-repeat: repeat-x;
+	width: 674px;
+	height: 19px;
+	text-align: right;
+}
+.header-menuleftv
+{
+	background-image: url('../_images/marco/header-menuleftv.jpg');
+	height: 27px;
+	width: 33px; 
+}
+.header-menurightv
+{
+	background-image: url('../_images/marco/header-menurightv.jpg');
+	height: 27px;
+	width: 33px; 
+}
+.header-menuseparator
+{
+	background-image: url('../_images/marco/header-menuseparator.jpg');
+	height: 27px;
+	width: 5px; 
+}
+.header-menuleft
+{
+	background-image: url('../_images/marco/header-menulefts.jpg');
+	height: 27px;
+	width: 5px; 
+}
+.header-menucenter
+{
+	background-image: url('../_images/marco/header-menucenter.jpg');
+	background-repeat: repeat-x;
+	height: 27px;
+	width: 2px;	
+}
+.footer-left
+{
+	background-image: url('../_images/marco/footer-left.jpg');
+	width: 707px;
+	height: 27px;                 
+}
+.footer-right
+{
+	background-image: url('../_images/marco/footer-right.jpg');
+	width: 293px;
+	height: 27px;
+	font-family: Verdana;
+	font-size: xx-small;
+	font-weight: bold;
+	vertical-align: top;
+	text-align: center;
+}
+.Clock
+{
+	font-family: Verdana;
+	font-size: x-small;
+	font-weight: bold;
+}

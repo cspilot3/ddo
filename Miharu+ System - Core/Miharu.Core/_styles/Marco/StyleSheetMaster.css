@@ -1,0 +1,129 @@
+﻿table
+{
+	 border:0;
+	 
+}
+.divBloquear
+{
+	border-style: none;
+	display: none;
+	position: absolute;
+	z-index: 100;
+	width: 100%; /*height: 100%; */
+	top: 78px; /*top: 0px; */
+	left: 0px; /*min-height: 100%; */
+	background-color: #FFFFFF; /*background-color: #000;*/
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+}
+.header-logo
+{
+	background-image: url(images/LogoEsfera.jpg); 
+	width: 78px;
+	height: 78px;
+}
+.header-name
+{
+    background-image: url(images/header-name.jpg);
+    /*	background-image: url(images/MailCenter.gif);*/
+	width: 238px;
+	height: 78px;
+}
+.header-menu
+{	
+	background-image: url(images/header2b.jpg);
+	width: 674px;
+	height: 27px; 
+}
+.header1
+{
+	background-image: url(images/header1.jpg); 
+	background-repeat: repeat-x;
+	width: 684px; 
+	height: 32px;
+}
+.header2
+{
+	background-image: url(images/header2a.jpg); 
+	width: 10px; 
+	height: 27px;
+}
+
+.header3a
+{
+	background-image: url(images/header3a.jpg); 
+	width: 10px; 
+	height: 19px;
+}
+.header3b
+{
+	background-image: url(images/header3b.jpg); 
+	background-repeat: repeat-x;
+	width: 674px;	
+	height: 19px;
+}
+.header-menuleftv
+{
+	background-image: url(images/header-menuleftv.jpg);
+	height: 27px;
+	width: 33px; 
+}
+.header-menurightv
+{
+	background-image: url(images/header-menurightv.jpg);
+	height: 27px;
+	width: 33px; 
+}
+.header-menuseparator
+{
+	background-image: url(images/header-menuseparator.jpg);
+	height: 27px;
+	width: 5px; 
+}
+.header-menuleft
+{
+	background-image: url(images/header-menulefts.jpg);
+	height: 27px;
+	width: 5px; 
+}
+.header-menucenter
+{
+	background-image: url(images/header-menucenter.jpg);
+	background-repeat: repeat-x;
+	height: 27px;
+	width: 2px;	
+}
+/*.cuerpo
+{
+	width: 1000px; 
+	height: 100%;
+	height: 525px;
+}*/
+.footer-left
+{
+	background-image: url(images/footer-left.jpg);
+	font-size: xx-small;
+	width: 707px;
+	height: 27px;
+	text-align: left;
+}
+.footer-right
+{
+	background-image: url(images/footer-right.jpg);
+	width: 293px;
+	height: 27px;
+	font-family: Verdana;
+	font-size: xx-small;
+	font-weight: bold;
+	vertical-align: top;
+	text-align: right;
+}
+.clock
+{
+	font-family: Verdana;
+	font-size: 9px;
+	/*font-weight: bold;*/
+	vertical-align: middle;
+	text-align: right;
+}

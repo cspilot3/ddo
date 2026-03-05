@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"
+         Name="TWAIN DSM x86 2.x"
+         Culture="en">
+
+  <Strings>
+    <String Name="DisplayName">TWAIN DSM x86 2.x</String>
+    <String Name="AdminRequired">You do not have the permissions required to install the TWAIN DSM x86 2.x. Please contact your administrator.</String>
+    <String Name="GeneralFailure">A failure occurred attempting to install the TWAIN DSM x86 2.x.</String>
+    <String Name="InvalidPlatformWinNT">Installation of the TWAIN DSM x86 2.x is not supported on this operating system.</String>
+  </Strings>
+</Package>

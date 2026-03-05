@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D738B0D8-FBC1-4851-9B5D-FE4CC7AE238B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BcoBogota.Plugin</RootNamespace>
+    <AssemblyName>BcoBogota.Plugin</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\12\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Slyg.Data">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Imaging\Impuestos\Forms\Configuracion\frmConfirmaEliminacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\Configuracion\frmConfirmaEliminacion.Designer.cs">
+      <DependentUpon>frmConfirmaEliminacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\Configuracion\frmEditarAseguradora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\Configuracion\frmEditarAseguradora.Designer.cs">
+      <DependentUpon>frmEditarAseguradora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\Configuracion\frmEditarCuentaMunicipio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\Configuracion\frmEditarCuentaMunicipio.Designer.cs">
+      <DependentUpon>frmEditarCuentaMunicipio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\Configuracion\frmElegirRuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\Configuracion\frmElegirRuta.Designer.cs">
+      <DependentUpon>frmElegirRuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\Configuracion\frmFechaRecaudo_Doble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\Configuracion\frmFechaRecaudo_Doble.Designer.cs">
+      <DependentUpon>frmFechaRecaudo_Doble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\FormResultadoValidacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\FormResultadoValidacion.Designer.cs">
+      <DependentUpon>FormResultadoValidacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmCargueLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmCargueLog.Designer.cs">
+      <DependentUpon>frmCargueLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmCruzarDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmCruzarDatos.Designer.cs">
+      <DependentUpon>frmCruzarDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\Configuracion\frmEligeEstado_FechaDispersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\Configuracion\frmEligeEstado_FechaDispersion.Designer.cs">
+      <DependentUpon>frmEligeEstado_FechaDispersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmDevoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmDevoluciones.Designer.cs">
+      <DependentUpon>frmDevoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmExportacionImagenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmExportacionImagenes.Designer.cs">
+      <DependentUpon>frmExportacionImagenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmFechaRecaudo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmFechaRecaudo.Designer.cs">
+      <DependentUpon>frmFechaRecaudo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmPublicacionDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmPublicacionDatos.Designer.cs">
+      <DependentUpon>frmPublicacionDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmRelacionAseguradoras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmRelacionAseguradoras.Designer.cs">
+      <DependentUpon>frmRelacionAseguradoras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmRelacionCuentasMunicipio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmRelacionCuentasMunicipio.Designer.cs">
+      <DependentUpon>frmRelacionCuentasMunicipio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmRelacion_CuentasDispersadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmRelacion_CuentasDispersadas.Designer.cs">
+      <DependentUpon>frmRelacion_CuentasDispersadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmReportesImpuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\frmReportesImpuestos.Designer.cs">
+      <DependentUpon>frmReportesImpuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\ProcesaCargue_BcoBogota.cs" />
+    <Compile Include="Imaging\Impuestos\Forms\Rpts\ReporteMunicipios1_Banco_de_BogotaImpuestos\Reporte1_BBogotaImpuestos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reporte1_BBogotaImpuestos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\Rpts\ReporteMunicipios2_Detallado_BBogota\Reporte2_ImpuestosBBogota.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reporte2_ImpuestosBBogota.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\Rpts\Reporte_Agrupado_Departamentos_NOVALLE\Agrupado_Dep_NOVALLE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Agrupado_Dep_NOVALLE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\Rpts\Reporte_Carta_EntregaFisico\Carta_EntregaFisico.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Carta_EntregaFisico.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Impuestos\Forms\Rpts\Reporte_Dispersion1\Reporte1_BBogotaImpuestos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reporte1_BBogotaImpuestos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Imaging\Impuestos\EventExecuterImpuestos.cs" />
+    <Compile Include="Imaging\Impuestos\FormImagingWorkSpaceWrapperImpuestos.cs" />
+    <Compile Include="Imaging\Impuestos\ImpuestosPlugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Archiving\Miharu.Archiving.DataAccess\Miharu.Archiving.DataAccess.csproj">
+      <Project>{8AB7AE02-8837-4800-8FDA-EA6CC59A374F}</Project>
+      <Name>Miharu.Archiving.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core\Miharu.Core.vbproj">
+      <Project>{A75C24FE-1992-40E5-AADF-B51ECB1653A8}</Project>
+      <Name>Miharu.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Controls\Miharu.Desktop.Controls.vbproj">
+      <Project>{BBDF4261-7651-4D93-95EE-675260D016AC}</Project>
+      <Name>Miharu.Desktop.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Library\Miharu.Desktop.Library.vbproj">
+      <Project>{60FE71B4-EC25-45F0-B384-B98582D035C7}</Project>
+      <Name>Miharu.Desktop.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.DataAccess\Miharu.Imaging.DataAccess.csproj">
+      <Project>{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}</Project>
+      <Name>Miharu.Imaging.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.Indexer\Miharu.Imaging.Indexer.vbproj">
+      <Project>{3AA91370-45D5-4EBD-A700-99FB10AB6FB4}</Project>
+      <Name>Miharu.Imaging.Indexer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.Library\Miharu.Imaging.Library.vbproj">
+      <Project>{9501AE9F-03BC-4933-9EC3-84BCD96CC795}</Project>
+      <Name>Miharu.Imaging.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.OfflineViewer.Library\Miharu.Imaging.OffLineViewer.Library.vbproj">
+      <Project>{B32D869B-91E0-4A7A-8BE7-D14B3275B30A}</Project>
+      <Name>Miharu.Imaging.OffLineViewer.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.DataAccess\Miharu.Security.DataAccess.csproj">
+      <Project>{902B10BC-8630-4730-9AC5-763CA7D2CB31}</Project>
+      <Name>Miharu.Security.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.Library\Miharu.Security.Library.csproj">
+      <Project>{BC90E6AA-55BE-4E52-841E-FE48A32E750D}</Project>
+      <Name>Miharu.Security.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.FileProvider.Library\Miharu.FileProvider.Library.vbproj">
+      <Project>{1E21AD2F-0D1F-47A5-94C5-A75D6DAAAC8F}</Project>
+      <Name>Miharu.FileProvider.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Slyg.Tools.Imaging\Slyg.Tools.Imaging.csproj">
+      <Project>{B41AFD53-3FE1-4C20-B359-1C5FC16954C4}</Project>
+      <Name>Slyg.Tools.Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Integration.DataAccess\Miharu.Integration.DataAccess.csproj">
+      <Project>{8A0078E2-6728-4413-AE6F-FD1EADEB7247}</Project>
+      <Name>Miharu.Integration.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\Configuracion\frmConfirmaEliminacion.resx">
+      <DependentUpon>frmConfirmaEliminacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\Configuracion\frmEditarAseguradora.resx">
+      <DependentUpon>frmEditarAseguradora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\Configuracion\frmEditarCuentaMunicipio.resx">
+      <DependentUpon>frmEditarCuentaMunicipio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\Configuracion\frmElegirRuta.resx">
+      <DependentUpon>frmElegirRuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\Configuracion\frmEligeEstado_FechaDispersion.resx">
+      <DependentUpon>frmEligeEstado_FechaDispersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\Configuracion\frmFechaRecaudo_Doble.resx">
+      <DependentUpon>frmFechaRecaudo_Doble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\FormResultadoValidacion.resx">
+      <DependentUpon>FormResultadoValidacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\frmCargueLog.resx">
+      <DependentUpon>frmCargueLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\frmCruzarDatos.resx">
+      <DependentUpon>frmCruzarDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\frmDevoluciones.resx">
+      <DependentUpon>frmDevoluciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\frmExportacionImagenes.resx">
+      <DependentUpon>frmExportacionImagenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\frmFechaRecaudo.resx">
+      <DependentUpon>frmFechaRecaudo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\frmPublicacionDatos.resx">
+      <DependentUpon>frmPublicacionDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\frmRelacionAseguradoras.resx">
+      <DependentUpon>frmRelacionAseguradoras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\frmRelacionCuentasMunicipio.resx">
+      <DependentUpon>frmRelacionCuentasMunicipio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\frmRelacion_CuentasDispersadas.resx">
+      <DependentUpon>frmRelacion_CuentasDispersadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\frmReportesImpuestos.resx">
+      <DependentUpon>frmReportesImpuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\Rpts\ReporteMunicipios1_Banco_de_BogotaImpuestos\Reporte1_BBogotaImpuestos.rdlc" />
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\Rpts\ReporteMunicipios2_Detallado_BBogota\Reporte2_BBogotaImpuestos.rdlc" />
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\Rpts\Reporte_Agrupado_Departamentos_NOVALLE\Reporte_Agrupado_Departamentos_NOVALLE.rdlc" />
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\Rpts\Reporte_Carta_EntregaFisico\Reporte_Carta_EntregaFisico.rdlc" />
+    <EmbeddedResource Include="Imaging\Impuestos\Forms\Rpts\Reporte_Dispersion1\Reporte_Dispersion1.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Imaging\Impuestos\Forms\Rpts\ReporteMunicipios1_Banco_de_BogotaImpuestos\Reporte1_BBogotaImpuestos.xsc">
+      <DependentUpon>Reporte1_BBogotaImpuestos.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Impuestos\Forms\Rpts\ReporteMunicipios1_Banco_de_BogotaImpuestos\Reporte1_BBogotaImpuestos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reporte1_BBogotaImpuestos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\Impuestos\Forms\Rpts\ReporteMunicipios1_Banco_de_BogotaImpuestos\Reporte1_BBogotaImpuestos.xss">
+      <DependentUpon>Reporte1_BBogotaImpuestos.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Impuestos\Forms\Rpts\ReporteMunicipios2_Detallado_BBogota\Reporte2_ImpuestosBBogota.xsc">
+      <DependentUpon>Reporte2_ImpuestosBBogota.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Impuestos\Forms\Rpts\ReporteMunicipios2_Detallado_BBogota\Reporte2_ImpuestosBBogota.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reporte2_ImpuestosBBogota.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\Impuestos\Forms\Rpts\ReporteMunicipios2_Detallado_BBogota\Reporte2_ImpuestosBBogota.xss">
+      <DependentUpon>Reporte2_ImpuestosBBogota.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Impuestos\Forms\Rpts\Reporte_Agrupado_Departamentos_NOVALLE\Agrupado_Dep_NOVALLE.xsc">
+      <DependentUpon>Agrupado_Dep_NOVALLE.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Impuestos\Forms\Rpts\Reporte_Agrupado_Departamentos_NOVALLE\Agrupado_Dep_NOVALLE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Agrupado_Dep_NOVALLE.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Imaging\Impuestos\Forms\Rpts\Reporte_Agrupado_Departamentos_NOVALLE\Agrupado_Dep_NOVALLE.xss">
+      <DependentUpon>Agrupado_Dep_NOVALLE.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Impuestos\Forms\Rpts\Reporte_Carta_EntregaFisico\Carta_EntregaFisico.xsc">
+      <DependentUpon>Carta_EntregaFisico.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Impuestos\Forms\Rpts\Reporte_Carta_EntregaFisico\Carta_EntregaFisico.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Carta_EntregaFisico.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Imaging\Impuestos\Forms\Rpts\Reporte_Carta_EntregaFisico\Carta_EntregaFisico.xss">
+      <DependentUpon>Carta_EntregaFisico.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Impuestos\Forms\Rpts\Reporte_Dispersion1\Reporte1_BBogotaImpuestos.xsc">
+      <DependentUpon>Reporte1_BBogotaImpuestos.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Impuestos\Forms\Rpts\Reporte_Dispersion1\Reporte1_BBogotaImpuestos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reporte1_BBogotaImpuestos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\Impuestos\Forms\Rpts\Reporte_Dispersion1\Reporte1_BBogotaImpuestos.xss">
+      <DependentUpon>Reporte1_BBogotaImpuestos.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\MainFolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\btnSalir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Process-Accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnCargar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBuscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Process-Accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax-loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCopiar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnGuardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSalir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax-loader1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Process-Accept1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FacturacionMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAgregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\refresh_grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnGenerarEstructura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\CLOSE_FOLDER.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

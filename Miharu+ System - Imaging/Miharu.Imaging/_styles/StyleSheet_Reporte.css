@@ -1,0 +1,22 @@
+﻿        .encabezadoParametros
+        {
+            width: 200px;
+            height: 36px;
+        }
+        .LeftBorder
+        {
+            width: 30px;
+            height: 0px;
+        }
+        .RightBorder
+        {
+            width: 30px;
+            height: 0px;
+        }
+        .CenterBorder
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 800px;
+            height: 0px;
+            font-size: small;
+        }

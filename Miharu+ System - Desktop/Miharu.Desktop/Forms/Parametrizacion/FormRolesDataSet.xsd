@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FormRolesDataSet" targetNamespace="http://tempuri.org/FormRolesDataSet.xsd" xmlns:mstns="http://tempuri.org/FormRolesDataSet.xsd" xmlns="http://tempuri.org/FormRolesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FormRolesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="FormRolesDataSet" msprop:Generator_UserDSName="FormRolesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Esquema" msprop:Generator_TableClassName="EsquemaDataTable" msprop:Generator_TableVarName="tableEsquema" msprop:Generator_TablePropName="Esquema" msprop:Generator_RowDeletingName="EsquemaRowDeleting" msprop:Generator_RowChangingName="EsquemaRowChanging" msprop:Generator_RowEvHandlerName="EsquemaRowChangeEventHandler" msprop:Generator_RowDeletedName="EsquemaRowDeleted" msprop:Generator_UserTableName="Esquema" msprop:Generator_RowChangedName="EsquemaRowChanged" msprop:Generator_RowEvArgName="EsquemaRowChangeEvent" msprop:Generator_RowClassName="EsquemaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fk_Rol" msprop:Generator_ColumnVarNameInTable="columnfk_Rol" msprop:Generator_ColumnPropNameInRow="fk_Rol" msprop:Generator_ColumnPropNameInTable="fk_RolColumn" msprop:Generator_UserColumnName="fk_Rol" type="xs:short" />
+              <xs:element name="id_Entidad" msprop:Generator_ColumnVarNameInTable="columnid_Entidad" msprop:Generator_ColumnPropNameInRow="id_Entidad" msprop:Generator_ColumnPropNameInTable="id_EntidadColumn" msprop:Generator_UserColumnName="id_Entidad" type="xs:short" />
+              <xs:element name="Nombre_Entidad" msprop:Generator_ColumnVarNameInTable="columnNombre_Entidad" msprop:Generator_ColumnPropNameInRow="Nombre_Entidad" msprop:Generator_ColumnPropNameInTable="Nombre_EntidadColumn" msprop:Generator_UserColumnName="Nombre_Entidad" type="xs:string" minOccurs="0" />
+              <xs:element name="id_Proyecto" msprop:Generator_ColumnVarNameInTable="columnid_Proyecto" msprop:Generator_ColumnPropNameInRow="id_Proyecto" msprop:Generator_ColumnPropNameInTable="id_ProyectoColumn" msprop:Generator_UserColumnName="id_Proyecto" type="xs:short" />
+              <xs:element name="Nombre_Proyecto" msprop:Generator_ColumnVarNameInTable="columnNombre_Proyecto" msprop:Generator_ColumnPropNameInRow="Nombre_Proyecto" msprop:Generator_ColumnPropNameInTable="Nombre_ProyectoColumn" msprop:Generator_UserColumnName="Nombre_Proyecto" type="xs:string" minOccurs="0" />
+              <xs:element name="id_Esquema" msprop:Generator_ColumnVarNameInTable="columnid_Esquema" msprop:Generator_ColumnPropNameInRow="id_Esquema" msprop:Generator_ColumnPropNameInTable="id_EsquemaColumn" msprop:Generator_UserColumnName="id_Esquema" type="xs:short" />
+              <xs:element name="Nombre_Esquema" msprop:Generator_ColumnVarNameInTable="columnNombre_Esquema" msprop:Generator_ColumnPropNameInRow="Nombre_Esquema" msprop:Generator_ColumnPropNameInTable="Nombre_EsquemaColumn" msprop:Generator_UserColumnName="Nombre_Esquema" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Rol" msprop:Generator_TableClassName="RolDataTable" msprop:Generator_TableVarName="tableRol" msprop:Generator_TablePropName="Rol" msprop:Generator_RowDeletingName="RolRowDeleting" msprop:Generator_RowChangingName="RolRowChanging" msprop:Generator_RowEvHandlerName="RolRowChangeEventHandler" msprop:Generator_RowDeletedName="RolRowDeleted" msprop:Generator_UserTableName="Rol" msprop:Generator_RowChangedName="RolRowChanged" msprop:Generator_RowEvArgName="RolRowChangeEvent" msprop:Generator_RowClassName="RolRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Rol" msprop:Generator_ColumnVarNameInTable="columnid_Rol" msprop:Generator_ColumnPropNameInRow="id_Rol" msprop:Generator_ColumnPropNameInTable="id_RolColumn" msprop:Generator_UserColumnName="id_Rol" type="xs:short" />
+              <xs:element name="Nombre_Rol" msprop:Generator_ColumnVarNameInTable="columnNombre_Rol" msprop:Generator_ColumnPropNameInRow="Nombre_Rol" msprop:Generator_ColumnPropNameInTable="Nombre_RolColumn" msprop:Generator_UserColumnName="Nombre_Rol" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion_Rol" msprop:Generator_ColumnVarNameInTable="columnDescripcion_Rol" msprop:Generator_ColumnPropNameInRow="Descripcion_Rol" msprop:Generator_ColumnPropNameInTable="Descripcion_RolColumn" msprop:Generator_UserColumnName="Descripcion_Rol" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Documento" msprop:Generator_TableClassName="DocumentoDataTable" msprop:Generator_TableVarName="tableDocumento" msprop:Generator_TablePropName="Documento" msprop:Generator_RowDeletingName="DocumentoRowDeleting" msprop:Generator_RowChangingName="DocumentoRowChanging" msprop:Generator_RowEvHandlerName="DocumentoRowChangeEventHandler" msprop:Generator_RowDeletedName="DocumentoRowDeleted" msprop:Generator_UserTableName="Documento" msprop:Generator_RowChangedName="DocumentoRowChanged" msprop:Generator_RowEvArgName="DocumentoRowChangeEvent" msprop:Generator_RowClassName="DocumentoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fk_Rol" msprop:Generator_ColumnVarNameInTable="columnfk_Rol" msprop:Generator_ColumnPropNameInRow="fk_Rol" msprop:Generator_ColumnPropNameInTable="fk_RolColumn" msprop:Generator_UserColumnName="fk_Rol" type="xs:short" />
+              <xs:element name="fk_Entidad" msprop:Generator_ColumnVarNameInTable="columnfk_Entidad" msprop:Generator_ColumnPropNameInRow="fk_Entidad" msprop:Generator_ColumnPropNameInTable="fk_EntidadColumn" msprop:Generator_UserColumnName="fk_Entidad" type="xs:short" />
+              <xs:element name="fk_Proyecto" msprop:Generator_ColumnVarNameInTable="columnfk_Proyecto" msprop:Generator_ColumnPropNameInRow="fk_Proyecto" msprop:Generator_ColumnPropNameInTable="fk_ProyectoColumn" msprop:Generator_UserColumnName="fk_Proyecto" type="xs:short" />
+              <xs:element name="fk_Esquema" msprop:Generator_ColumnVarNameInTable="columnfk_Esquema" msprop:Generator_ColumnPropNameInRow="fk_Esquema" msprop:Generator_ColumnPropNameInTable="fk_EsquemaColumn" msprop:Generator_UserColumnName="fk_Esquema" type="xs:short" />
+              <xs:element name="id_Documento" msprop:Generator_ColumnVarNameInTable="columnid_Documento" msprop:Generator_ColumnPropNameInRow="id_Documento" msprop:Generator_ColumnPropNameInTable="id_DocumentoColumn" msprop:Generator_UserColumnName="id_Documento" type="xs:int" />
+              <xs:element name="Nombre_Documento" msprop:Generator_ColumnVarNameInTable="columnNombre_Documento" msprop:Generator_ColumnPropNameInRow="Nombre_Documento" msprop:Generator_ColumnPropNameInTable="Nombre_DocumentoColumn" msprop:Generator_UserColumnName="Nombre_Documento" type="xs:string" minOccurs="0" />
+              <xs:element name="Ver_Registro" msprop:Generator_ColumnVarNameInTable="columnVer_Registro" msprop:Generator_ColumnPropNameInRow="Ver_Registro" msprop:Generator_ColumnPropNameInTable="Ver_RegistroColumn" msprop:Generator_UserColumnName="Ver_Registro" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Ver_Data" msprop:Generator_ColumnVarNameInTable="columnVer_Data" msprop:Generator_ColumnPropNameInRow="Ver_Data" msprop:Generator_ColumnPropNameInTable="Ver_DataColumn" msprop:Generator_UserColumnName="Ver_Data" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Ver_Imagen" msprop:Generator_ColumnVarNameInTable="columnVer_Imagen" msprop:Generator_ColumnPropNameInRow="Ver_Imagen" msprop:Generator_ColumnPropNameInTable="Ver_ImagenColumn" msprop:Generator_UserColumnName="Ver_Imagen" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Descargar" msprop:Generator_ColumnVarNameInTable="columnDescargar" msprop:Generator_ColumnPropNameInRow="Descargar" msprop:Generator_ColumnPropNameInTable="DescargarColumn" msprop:Generator_UserColumnName="Descargar" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Categoria" msprop:Generator_TableClassName="CategoriaDataTable" msprop:Generator_TableVarName="tableCategoria" msprop:Generator_TablePropName="Categoria" msprop:Generator_RowDeletingName="CategoriaRowDeleting" msprop:Generator_RowChangingName="CategoriaRowChanging" msprop:Generator_RowEvHandlerName="CategoriaRowChangeEventHandler" msprop:Generator_RowDeletedName="CategoriaRowDeleted" msprop:Generator_UserTableName="Categoria" msprop:Generator_RowChangedName="CategoriaRowChanged" msprop:Generator_RowEvArgName="CategoriaRowChangeEvent" msprop:Generator_RowClassName="CategoriaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fk_Rol" msprop:Generator_ColumnVarNameInTable="columnfk_Rol" msprop:Generator_ColumnPropNameInRow="fk_Rol" msprop:Generator_ColumnPropNameInTable="fk_RolColumn" msprop:Generator_UserColumnName="fk_Rol" type="xs:short" />
+              <xs:element name="fk_Entidad" msprop:Generator_ColumnVarNameInTable="columnfk_Entidad" msprop:Generator_ColumnPropNameInRow="fk_Entidad" msprop:Generator_ColumnPropNameInTable="fk_EntidadColumn" msprop:Generator_UserColumnName="fk_Entidad" type="xs:short" />
+              <xs:element name="fk_Proyecto" msprop:Generator_ColumnVarNameInTable="columnfk_Proyecto" msprop:Generator_ColumnPropNameInRow="fk_Proyecto" msprop:Generator_ColumnPropNameInTable="fk_ProyectoColumn" msprop:Generator_UserColumnName="fk_Proyecto" type="xs:short" />
+              <xs:element name="fk_Esquema" msprop:Generator_ColumnVarNameInTable="columnfk_Esquema" msprop:Generator_ColumnPropNameInRow="fk_Esquema" msprop:Generator_ColumnPropNameInTable="fk_EsquemaColumn" msprop:Generator_UserColumnName="fk_Esquema" type="xs:short" />
+              <xs:element name="id_Categoria" msprop:Generator_ColumnVarNameInTable="columnid_Categoria" msprop:Generator_ColumnPropNameInRow="id_Categoria" msprop:Generator_ColumnPropNameInTable="id_CategoriaColumn" msprop:Generator_UserColumnName="id_Categoria" type="xs:short" />
+              <xs:element name="Nombre_Categoria" msprop:Generator_ColumnVarNameInTable="columnNombre_Categoria" msprop:Generator_ColumnPropNameInRow="Nombre_Categoria" msprop:Generator_ColumnPropNameInTable="Nombre_CategoriaColumn" msprop:Generator_UserColumnName="Nombre_Categoria" type="xs:string" minOccurs="0" />
+              <xs:element name="Seleccionado" msprop:Generator_ColumnVarNameInTable="columnSeleccionado" msprop:Generator_ColumnPropNameInRow="Seleccionado" msprop:Generator_ColumnPropNameInTable="SeleccionadoColumn" msprop:Generator_UserColumnName="Seleccionado" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="EsquemaKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Esquema" />
+      <xs:field xpath="mstns:fk_Rol" />
+      <xs:field xpath="mstns:id_Entidad" />
+      <xs:field xpath="mstns:id_Proyecto" />
+      <xs:field xpath="mstns:id_Esquema" />
+    </xs:unique>
+    <xs:unique name="RolKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Rol" />
+      <xs:field xpath="mstns:id_Rol" />
+    </xs:unique>
+    <xs:unique name="DocumentoKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Documento" />
+      <xs:field xpath="mstns:fk_Rol" />
+      <xs:field xpath="mstns:fk_Entidad" />
+      <xs:field xpath="mstns:fk_Proyecto" />
+      <xs:field xpath="mstns:fk_Esquema" />
+      <xs:field xpath="mstns:id_Documento" />
+    </xs:unique>
+    <xs:unique name="CategoriaKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Categoria" />
+      <xs:field xpath="mstns:fk_Rol" />
+      <xs:field xpath="mstns:fk_Entidad" />
+      <xs:field xpath="mstns:fk_Proyecto" />
+      <xs:field xpath="mstns:fk_Esquema" />
+      <xs:field xpath="mstns:id_Categoria" />
+    </xs:unique>
+    <xs:keyref name="FK_Esquema_Categoria" refer="EsquemaKey1" msprop:rel_Generator_UserChildTable="Categoria" msprop:rel_Generator_ChildPropName="GetCategoriaRows" msprop:rel_Generator_UserRelationName="FK_Esquema_Categoria" msprop:rel_Generator_ParentPropName="EsquemaRowParent" msprop:rel_Generator_RelationVarName="relationFK_Esquema_Categoria" msprop:rel_Generator_UserParentTable="Esquema">
+      <xs:selector xpath=".//mstns:Categoria" />
+      <xs:field xpath="mstns:fk_Rol" />
+      <xs:field xpath="mstns:fk_Entidad" />
+      <xs:field xpath="mstns:fk_Proyecto" />
+      <xs:field xpath="mstns:fk_Esquema" />
+    </xs:keyref>
+    <xs:keyref name="FK_Esquema_Documento" refer="EsquemaKey1" msprop:rel_Generator_UserChildTable="Documento" msprop:rel_Generator_ChildPropName="GetDocumentoRows" msprop:rel_Generator_UserRelationName="FK_Esquema_Documento" msprop:rel_Generator_ParentPropName="EsquemaRowParent" msprop:rel_Generator_RelationVarName="relationFK_Esquema_Documento" msprop:rel_Generator_UserParentTable="Esquema">
+      <xs:selector xpath=".//mstns:Documento" />
+      <xs:field xpath="mstns:fk_Rol" />
+      <xs:field xpath="mstns:fk_Entidad" />
+      <xs:field xpath="mstns:fk_Proyecto" />
+      <xs:field xpath="mstns:fk_Esquema" />
+    </xs:keyref>
+    <xs:keyref name="FK_Rol_Esquema" refer="RolKey1" msprop:rel_Generator_UserChildTable="Esquema" msprop:rel_Generator_ChildPropName="GetEsquemaRows" msprop:rel_Generator_UserRelationName="FK_Rol_Esquema" msprop:rel_Generator_RelationVarName="relationFK_Rol_Esquema" msprop:rel_Generator_UserParentTable="Rol" msprop:rel_Generator_ParentPropName="RolRow">
+      <xs:selector xpath=".//mstns:Esquema" />
+      <xs:field xpath="mstns:fk_Rol" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

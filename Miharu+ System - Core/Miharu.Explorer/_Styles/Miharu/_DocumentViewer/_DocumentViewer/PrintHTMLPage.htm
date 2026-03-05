@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-'W3C'DTD HTML 4.0 Transitional'EN">
+<html>
+	<head>
+		<title>Imprimiendo...</title>
+		<meta name="vs_defaultClientScript" content="JavaScript"/>
+		<script type="text/jscript">
+			function ImprimirImagen()
+			{
+				cadVariables = location.search.substring(1, location.search.length);
+				arrVariables = cadVariables.split("&amp;");
+				
+				arrVariableActual = arrVariables[0].split("=");
+				// arrVariableActual[0] -> Variable
+				// arrVariableActual[1] -> Dato
+				imgBase.src = arrVariableActual[1];				
+						
+				if (window.print) 
+				{
+					window.print(); 
+				}
+				else 
+				{
+					alert("Lo siento, pero el navegador no permite imprimir desde la web");
+				}								
+			}
+		</script>
+	</head>
+	<body onload="ImprimirImagen();">	    
+		<img id="imgBase" alt="" src=""/>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="DB_Miharu_ImagingConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=COBOGWDB53\TSTWARRANTIES;Initial Catalog=DB_Miharu.Imaging;User ID=sa;Password=DomesaPruebas&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=COBOGWDB53\TSTWARRANTIES;Initial Catalog=DB_Miharu.Imaging;User ID=sa;Password=DomesaPruebas</Value>
+    </Setting>
+    <Setting Name="DB_Miharu_Imaging_CoreConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=PBOGADMDESA03\DESARROLLO;Initial Catalog=DB_Miharu.Imaging_Core;User ID=sa;Password=Cambiar159-&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=PBOGADMDESA03\DESARROLLO;Initial Catalog=DB_Miharu.Imaging_Core;User ID=sa;Password=Cambiar159-</Value>
+    </Setting>
+    <Setting Name="DB_Miharu_CoreConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=10.64.18.59\SQLSTD11DDLO2;Initial Catalog=DB_Miharu.Core;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=10.64.18.59\SQLSTD11DDLO2;Initial Catalog=DB_Miharu.Core;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="ImagingCoreConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=desdbconvenios.brinks.col\DDO,5465;Initial Catalog=DB_Miharu.Imaging_Core;User ID=miharu;Encrypt=False&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=desdbconvenios.brinks.col\DDO,5465;Initial Catalog=DB_Miharu.Imaging_Core;User ID=miharu;Encrypt=False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,135 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miharu.Imaging.DataAccess", "Miharu.Imaging.DataAccess\Miharu.Imaging.DataAccess.csproj", "{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Miharu.Imaging.OffLineViewer.Library", "Miharu.Imaging.OfflineViewer.Library\Miharu.Imaging.OffLineViewer.Library.vbproj", "{B32D869B-91E0-4A7A-8BE7-D14B3275B30A}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Miharu.Imaging.Library", "Miharu.Imaging.Library\Miharu.Imaging.Library.vbproj", "{9501AE9F-03BC-4933-9EC3-84BCD96CC795}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Miharu.Imaging.OffLineViewer", "Miharu.Imaging.OfflineViewer\Miharu.Imaging.OffLineViewer.vbproj", "{42CF61BE-8DDC-4FAE-84F1-57041F076AA9}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Miharu.Imaging.WebService", "Miharu.Imaging.WebService\Miharu.Imaging.WebService.vbproj", "{E1A819FE-C968-49CE-A549-D4797CB78F68}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Miharu.Imaging", "Miharu.Imaging\Miharu.Imaging.vbproj", "{85B4E206-19A9-4EC0-B52B-0ACDBACFAB50}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup Miharu.Imaging", "Setup Miharu.Imaging\Setup Miharu.Imaging.vdproj", "{BEFA1405-AFE9-444A-8C2B-F9E21D10AB3E}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AccionesValores.Plugin", "AccionesValores.Plugin\AccionesValores.Plugin.vbproj", "{39C9545A-7621-4294-B8E4-BB7190F2D6B4}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Miharu.Imaging.Confinanciera", "Miharu.Imaging.Confinanciera\Miharu.Imaging.Confinanciera.vbproj", "{389D9072-5A0A-4DB0-841D-0181C21712D1}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Miharu.Imaging.FileTransfer", "Miharu.Imaging.FileTransfer\Miharu.Imaging.FileTransfer.vbproj", "{03DD4899-4909-41A6-98B6-837D066DCDFE}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Miharu.Imaging.FileTransfer.Monitor", "Miharu.Imaging.FileTransfer.Monitor\Miharu.Imaging.FileTransfer.Monitor.vbproj", "{94B6C631-1BDE-4FE0-8DAA-BD394C00610D}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Miharu.Imaging.Indexer", "Miharu.Imaging.Indexer\Miharu.Imaging.Indexer.vbproj", "{3AA91370-45D5-4EBD-A700-99FB10AB6FB4}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup Miharu.Imaging.FileTransfer", "Setup Miharu.Imaging.FileTransfer\Setup Miharu.Imaging.FileTransfer.vdproj", "{2B92F843-3C18-4D96-AA72-49163A9F793D}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 14
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AccionesValores.Plugin\\AccionesValores.Plugin.vbproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = AccionesValores.Plugin\\
+		SccProjectUniqueName2 = Miharu.Imaging.Confinanciera\\Miharu.Imaging.Confinanciera.vbproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = Miharu.Imaging.Confinanciera\\
+		SccProjectUniqueName3 = Miharu.Imaging.DataAccess\\Miharu.Imaging.DataAccess.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = Miharu.Imaging.DataAccess\\
+		SccProjectUniqueName4 = Miharu.Imaging.FileTransfer.Monitor\\Miharu.Imaging.FileTransfer.Monitor.vbproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = Miharu.Imaging.FileTransfer.Monitor\\
+		SccProjectUniqueName5 = Miharu.Imaging.FileTransfer\\Miharu.Imaging.FileTransfer.vbproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = Miharu.Imaging.FileTransfer\\
+		SccProjectUniqueName6 = Miharu.Imaging.Indexer\\Miharu.Imaging.Indexer.vbproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = Miharu.Imaging.Indexer\\
+		SccProjectUniqueName7 = Miharu.Imaging.Library\\Miharu.Imaging.Library.vbproj
+		SccLocalPath7 = .
+		SccProjectFilePathRelativizedFromConnection7 = Miharu.Imaging.Library\\
+		SccProjectUniqueName8 = Miharu.Imaging.OfflineViewer.Library\\Miharu.Imaging.OffLineViewer.Library.vbproj
+		SccLocalPath8 = .
+		SccProjectFilePathRelativizedFromConnection8 = Miharu.Imaging.OfflineViewer.Library\\
+		SccProjectUniqueName9 = Miharu.Imaging.OfflineViewer\\Miharu.Imaging.OffLineViewer.vbproj
+		SccLocalPath9 = .
+		SccProjectFilePathRelativizedFromConnection9 = Miharu.Imaging.OfflineViewer\\
+		SccProjectUniqueName10 = Miharu.Imaging.WebService\\Miharu.Imaging.WebService.vbproj
+		SccLocalPath10 = .
+		SccProjectFilePathRelativizedFromConnection10 = Miharu.Imaging.WebService\\
+		SccProjectUniqueName11 = Miharu.Imaging\\Miharu.Imaging.vbproj
+		SccLocalPath11 = .
+		SccProjectFilePathRelativizedFromConnection11 = Miharu.Imaging\\
+		SccProjectUniqueName12 = Setup\u0020Miharu.Imaging.FileTransfer\\Setup\u0020Miharu.Imaging.FileTransfer.vdproj
+		SccLocalPath12 = .
+		SccProjectFilePathRelativizedFromConnection12 = Setup\u0020Miharu.Imaging.FileTransfer\\
+		SccProjectUniqueName13 = Setup\u0020Miharu.Imaging\\Setup\u0020Miharu.Imaging.vdproj
+		SccLocalPath13 = .
+		SccProjectFilePathRelativizedFromConnection13 = Setup\u0020Miharu.Imaging\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B32D869B-91E0-4A7A-8BE7-D14B3275B30A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B32D869B-91E0-4A7A-8BE7-D14B3275B30A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B32D869B-91E0-4A7A-8BE7-D14B3275B30A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B32D869B-91E0-4A7A-8BE7-D14B3275B30A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9501AE9F-03BC-4933-9EC3-84BCD96CC795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9501AE9F-03BC-4933-9EC3-84BCD96CC795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9501AE9F-03BC-4933-9EC3-84BCD96CC795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9501AE9F-03BC-4933-9EC3-84BCD96CC795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42CF61BE-8DDC-4FAE-84F1-57041F076AA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42CF61BE-8DDC-4FAE-84F1-57041F076AA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42CF61BE-8DDC-4FAE-84F1-57041F076AA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42CF61BE-8DDC-4FAE-84F1-57041F076AA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1A819FE-C968-49CE-A549-D4797CB78F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A819FE-C968-49CE-A549-D4797CB78F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A819FE-C968-49CE-A549-D4797CB78F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A819FE-C968-49CE-A549-D4797CB78F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85B4E206-19A9-4EC0-B52B-0ACDBACFAB50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85B4E206-19A9-4EC0-B52B-0ACDBACFAB50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85B4E206-19A9-4EC0-B52B-0ACDBACFAB50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85B4E206-19A9-4EC0-B52B-0ACDBACFAB50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEFA1405-AFE9-444A-8C2B-F9E21D10AB3E}.Debug|Any CPU.ActiveCfg = Debug
+		{BEFA1405-AFE9-444A-8C2B-F9E21D10AB3E}.Debug|Any CPU.Build.0 = Debug
+		{BEFA1405-AFE9-444A-8C2B-F9E21D10AB3E}.Release|Any CPU.ActiveCfg = Release
+		{BEFA1405-AFE9-444A-8C2B-F9E21D10AB3E}.Release|Any CPU.Build.0 = Release
+		{39C9545A-7621-4294-B8E4-BB7190F2D6B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39C9545A-7621-4294-B8E4-BB7190F2D6B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39C9545A-7621-4294-B8E4-BB7190F2D6B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39C9545A-7621-4294-B8E4-BB7190F2D6B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{389D9072-5A0A-4DB0-841D-0181C21712D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{389D9072-5A0A-4DB0-841D-0181C21712D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{389D9072-5A0A-4DB0-841D-0181C21712D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{389D9072-5A0A-4DB0-841D-0181C21712D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03DD4899-4909-41A6-98B6-837D066DCDFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03DD4899-4909-41A6-98B6-837D066DCDFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03DD4899-4909-41A6-98B6-837D066DCDFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03DD4899-4909-41A6-98B6-837D066DCDFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94B6C631-1BDE-4FE0-8DAA-BD394C00610D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94B6C631-1BDE-4FE0-8DAA-BD394C00610D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94B6C631-1BDE-4FE0-8DAA-BD394C00610D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94B6C631-1BDE-4FE0-8DAA-BD394C00610D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AA91370-45D5-4EBD-A700-99FB10AB6FB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AA91370-45D5-4EBD-A700-99FB10AB6FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AA91370-45D5-4EBD-A700-99FB10AB6FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AA91370-45D5-4EBD-A700-99FB10AB6FB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B92F843-3C18-4D96-AA72-49163A9F793D}.Debug|Any CPU.ActiveCfg = Debug
+		{2B92F843-3C18-4D96-AA72-49163A9F793D}.Debug|Any CPU.Build.0 = Debug
+		{2B92F843-3C18-4D96-AA72-49163A9F793D}.Release|Any CPU.ActiveCfg = Release
+		{2B92F843-3C18-4D96-AA72-49163A9F793D}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

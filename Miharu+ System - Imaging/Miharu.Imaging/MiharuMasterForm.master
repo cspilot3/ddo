@@ -1,0 +1,49 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MiharuMasterForm.master.vb"
+    Inherits="Miharu.Imaging.MiharuMasterForm" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>:: MIHARU Imaging ::</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="_styles/StyleSheet_Miharu.css" rel="stylesheet" type="text/css" />
+        <link href="_styles/StyleSheet_Marco.css" rel="stylesheet" type="text/css" />
+        <link href="_styles/StyleSheet_Menu.css" rel="stylesheet" type="text/css" />
+    </asp:ContentPlaceHolder>
+    <asp:Literal ID="ltrHeadScripts" runat="server"></asp:Literal>
+</head>
+<body style="padding: 0px; text-align: center; margin: 0px; vertical-align: top;"
+    onload="RegistarApuntadores(); BeginRequestHandler();">
+    <form id="objForm" runat="server">
+    <script type="text/javascript">
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+        prm.add_beginRequest(BeginRequestHandler);
+        prm.add_pageLoaded(pageLoadedHandler);
+
+        var ctrId_EndRequestAction = '<%= EndRequestAction.ClientID %>';
+        var ctrId_lnkbHijaClose = '<%= lnkbHijaClose.ClientID %>';
+                
+    </script>
+    <div class="Oculto">
+        <ajaxToolkit:ToolkitScriptManager runat="server" ID="MyToolkitScriptManager" ScriptMode="Release">
+        </ajaxToolkit:ToolkitScriptManager>
+        <asp:UpdatePanel ID="upOpcionesEspeciales" runat="server">
+            <ContentTemplate>
+                <asp:LinkButton ID="lnkbHijaClose" runat="server"></asp:LinkButton>
+                <input type="hidden" id="EndRequestAction" value="" runat="server" />
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    <div>
+        <asp:UpdatePanel ID="upCuerpo" runat="server">
+            <ContentTemplate>
+                <asp:ContentPlaceHolder ID="Cuerpo" runat="server">
+                </asp:ContentPlaceHolder>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    </form>
+</body>
+</html>

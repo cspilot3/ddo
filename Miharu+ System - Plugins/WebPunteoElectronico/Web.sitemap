@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="" url="~/Main.aspx"  description="">
+    <siteMapNode title="Login" url="~/Site/Account/Login.aspx" description="Login" />
+    <siteMapNode title="Cambiar password" url="~/Site/Account/ChangePassword.aspx" description="Cambiar password" />
+    <siteMapNode title="Accesos" url="~/Site/DashBoard.aspx" description="Inicio">
+      <siteMapNode title ="Consultas"  url="~/Site/Consulta/Consultas.aspx"  description="Módulo de consultas" />
+      
+      <siteMapNode title ="Ajustes"  url="~/Site/DashBoard.aspx?TableMenu=Ajustes"  description="Módulo de ajustes" >
+
+        <siteMapNode title ="Ajuste soportes sobrantes"  url="~/Site/Ajustes/AjusteSoportesSobrantes.aspx"  description="Ajustar soportes sobrantes" />
+        <siteMapNode title ="Ajuste diferencia valor"  url="~/Site/Ajustes/AjusteDiferenciaValor.aspx"  description="Ajustar diferencia en valor" />
+        <siteMapNode title ="Ajuste diferencia producto"  url="~/Site/Ajustes/AjusteDiferenciaProducto.aspx"  description="Ajustar diferencia en producto" />
+        <siteMapNode title ="Ajuste diferencia medio de pago"  url="~/Site/Ajustes/AjusteDiferenciaMedioPago.aspx"  description="Ajustar diferencia medio de pago" />
+        <siteMapNode title ="Ajustar Registros Sobrantes"  url="~/Site/Ajustes/AjusteRegistroSobrante.aspx"  description="Ajustar Registros Sobrantes" />
+
+      </siteMapNode>
+      <siteMapNode title ="Firmas"  url="~/Site/DashBoard.aspx?TableMenu=Firmas"  description="Módulo de Firmas" >
+        <siteMapNode title ="Consulta Firmas"  url="~/Site/ConsultaFirmas/Consulta_Firmas.aspx"  description="Módulo Consulta Firmas" />
+        <siteMapNode title ="Ajustes Firmas"  url="~/Site/Ajustes/AjusteTarjetaFaltante.aspx"  description="Módulo Ajuste Firmas" />
+      </siteMapNode>
+      <siteMapNode title ="Servicio"  url="~/Site/DashBoard.aspx?TableMenu=Servicio"  description="Módulo de Servicio al cliente" >
+        <!--<siteMapNode title ="OficinasB"  url="~/Site/OficinasB/OficinaB.aspx"  description="Módulo de Oficinas Tipo B" />
+        <siteMapNode title ="OficinasB"  url="~/Site/OficinasB/OficinaB.aspx"  description="Módulo de Oficinas Tipo B" />-->
+      </siteMapNode>
+
+      <siteMapNode title ="OficinasB"  url="~/Site/OficinasB/OficinaB.aspx"  description="Módulo de Oficinas Tipo B" />
+
+      <siteMapNode title="Acerca de" url="~/Site/About.aspx" description="Acerca de..." />
+
+      <siteMapNode title ="Reportes"  url="~/Site/DashBoard.aspx?TableMenu=ServerMode&amp;Module=Reportes"  description="" >
+        <siteMapNode title ="Visor"  url="~/Site/Reportes/WebReportViewerA.aspx"  description="Visor de reportes" />
+        <siteMapNode title ="Visor"  url="~/Site/Reportes/WebReportViewerB.aspx"  description="Visor de reportes" />
+        <siteMapNode title ="Visor"  url="~/Site/Reportes/WebReportViewerC.aspx"  description="Visor de reportes" />
+        <siteMapNode title ="Visor"  url="~/Site/Reportes/WebReportViewerD.aspx"  description="Visor de reportes" />
+        <siteMapNode title ="Visor"  url="~/Site/Reportes/WebReportViewerE.aspx"  description="Visor de reportes" />
+        <siteMapNode title ="Visor"  url="~/Site/Reportes/WebReportViewerF.aspx"  description="Visor de reportes" />
+        <siteMapNode title ="Visor"  url="~/Site/Reportes/WebReportViewerG.aspx"  description="Visor de reportes" />
+        <siteMapNode title ="Visor"  url="~/Site/Reportes/WebReportViewerH.aspx"  description="Visor de reportes" />
+        <siteMapNode title ="Visor"  url="~/Site/Reportes/WebReportViewerI.aspx"  description="Visor de reportes" />
+        <siteMapNode title ="Visor"  url="~/Site/Reportes/WebReportViewerJ.aspx"  description="Visor de reportes" />
+        <siteMapNode title ="Visor"  url="~/Site/Reportes/R011_Soporte_Sobrante_Multiple/R011_Soportes_Sobrante_Multiple.aspx"  description="Visor de reportes" />
+      </siteMapNode>
+
+      <siteMapNode title ="Gerencial"  url="~/Site/Estadisticos/WebGraphManagerViewer.aspx"  description="Reporte Gerencial" />
+
+      <siteMapNode title ="Estadisticos"  url="~/Site/DashBoard.aspx?TableMenu=ServerMode&amp;Module=Estadisticos"  description="Módulo de estadísticos" >
+        <siteMapNode title ="Visor"  url="~/Site/Estadisticos/WebGraphViewerA.aspx"  description="Visor de reportes estadisticos" />
+        <siteMapNode title ="Visor"  url="~/Site/Estadisticos/WebGraphViewerB.aspx"  description="Visor de reportes estadisticos" />
+      </siteMapNode>
+
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

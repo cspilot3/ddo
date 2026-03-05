@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="" url="~/site/main.aspx"  description="">
+    <siteMapNode title="Accesos" url="~/site/application/dashboard.aspx" description="Inicio">
+      <siteMapNode title ="Consultas"  url="~/site/Consulta/Consultas.aspx"  description="Módulo de consultas" />
+
+      <siteMapNode title ="Reporte"  url="~/site/reportes/reporte_resumen_movimiento.aspx"  description="Módulo de Reportes" />
+
+
+      <siteMapNode title ="Ajuste soportes sobrantes"  url="~/site/Ajustes/AjusteSoportesSobrantes.aspx"  description="Ajustar soportes sobrantes" />
+      <siteMapNode title ="Ajuste diferencia valor"  url="~/site/Ajustes/AjusteDiferenciaValor.aspx"  description="Ajustar diferencia en valor" />
+      <siteMapNode title ="Ajuste diferencia producto"  url="~/site/Ajustes/AjusteDiferenciaProducto.aspx"  description="Ajustar diferencia en producto" />
+      <siteMapNode title ="Ajuste diferencia medio de pago"  url="~/site/Ajustes/AjusteDiferenciaMedioPago.aspx"  description="Ajustar diferencia medio de pago" />
+      <siteMapNode title ="Ajustar Registros Sobrantes"  url="~/site/Ajustes/AjusteRegistroSobrante.aspx"  description="Ajustar Registros Sobrantes" />
+
+    </siteMapNode>
+
+    <siteMapNode title ="Administracion"  url="~/site/application/dashboard.aspx?TableMenu=Administracion"  description="Módulo de Administración" >
+
+      <siteMapNode title ="Usuarios"  url="~/site/administracion/seguridad/usuarios.aspx"  description="Configuracion Usuarios" />
+      <siteMapNode title ="Perfiles"  url="~/site/administracion/seguridad/roles.aspx"  description="Configuracion Perfiles" />
+
+    </siteMapNode>
+
+    <siteMapNode title="Acerca de" url="~/site/application/about.aspx" description="Acerca de..." />
+
+
+    <siteMapNode title ="Reportes"  url="~/site/dashboard.aspx?TableMenu=ServerMode&amp;Module=Reportes"  description="" >
+      <siteMapNode title ="Visor"  url="~/site/Reportes/WebReportViewerA.aspx"  description="Visor de reportes" />
+      <siteMapNode title ="Visor"  url="~/site/Reportes/WebReportViewerB.aspx"  description="Visor de reportes" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

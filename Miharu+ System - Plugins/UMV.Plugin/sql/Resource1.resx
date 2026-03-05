@@ -1,0 +1,673 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConsultaOrfeo" xml:space="preserve">
+    <value>DECLARE
+    @fk_Entidad INT = 39
+       ,@fk_Proyecto INT = 1
+BEGIN
+	DECLARE @id_Doc_Tapa_Lote INT
+            ,@id_Doc_Tapa_Favidi INT
+            ,@CampoSerie INT
+            ,@Activos VARCHAR(5000)
+            ,@FechaComparacionHLUMV DATETIME
+            ,@CodigoDependencia VARCHAR(10)
+            ,@Dependencia VARCHAR(100)
+            ,@Proceso VARCHAR(100)
+            ,@IdHojaControl INT
+            ,@TipologiasPpales VARCHAR(200)
+            ,@TipologiaFavidi INT
+            ,@CaracterSeparador VARCHAR(1)
+            ,@fk_DocumentosNomina VARCHAR(200)
+            ,@fk_DocumentosParafiscales VARCHAR(200)
+            ,@NombreSerieAutoliquidaciones VARCHAR(5000)
+            ,@NombreSerieHL VARCHAR(5000)
+            ,@NombreSerieNomina VARCHAR(5000)
+
+             SET @NombreSerieAutoliquidaciones = (SELECT  Valor_Parametro_Sistema
+                                               FROM       [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema
+                                               WHERE  Nombre_Parametro_Sistema = 'NombreSerieAutoliquidaciones'
+                                                      AND fk_Entidad = @fk_Entidad
+                                                      AND fk_Proyecto = @fk_Proyecto)
+
+             SET @NombreSerieHL = (SELECT  Valor_Parametro_Sistema
+                                               FROM       [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema
+                                               WHERE  Nombre_Parametro_Sistema = 'NombreSerieHL'
+                                                      AND fk_Entidad = @fk_Entidad
+                                                      AND fk_Proyecto = @fk_Proyecto)
+
+             SET @NombreSerieNomina = (SELECT  Valor_Parametro_Sistema
+                                               FROM       [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema
+                                               WHERE  Nombre_Parametro_Sistema = 'NombreSerieNomina'
+                                                      AND fk_Entidad = @fk_Entidad
+                                                      AND fk_Proyecto = @fk_Proyecto)
+
+       SET @CaracterSeparador = (SELECT  Valor_Parametro_Sistema
+                                               FROM       [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema
+                                               WHERE  Nombre_Parametro_Sistema = '@SeparadorCSV'
+                                                      AND fk_Entidad = @fk_Entidad
+                                                      AND fk_Proyecto = @fk_Proyecto)
+
+       SET @TipologiaFavidi = (SELECT    Valor_Parametro_Sistema
+                                               FROM       [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema
+                                               WHERE  Nombre_Parametro_Sistema = 'TipologiaFavidi'
+                                                      AND fk_Entidad = @fk_Entidad
+                                                      AND fk_Proyecto = @fk_Proyecto)
+
+       SET @TipologiasPpales = (SELECT   Valor_Parametro_Sistema
+                                               FROM       [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema
+                                               WHERE  Nombre_Parametro_Sistema = 'TipologiasPrincipales'
+                                               AND fk_Entidad = @fk_Entidad
+                                               AND fk_Proyecto = @fk_Proyecto)
+
+       SET @IdHojaControl = (SELECT      Valor_Parametro_Sistema
+                                               FROM       [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema
+                                               WHERE  Nombre_Parametro_Sistema = '@HojadeControl'
+                                               AND fk_Entidad = @fk_Entidad
+                                               AND fk_Proyecto = @fk_Proyecto)
+                                        
+       SET @CodigoDependencia = (SELECT  Valor_Parametro_Sistema
+                                                 FROM       [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema
+                                                 WHERE      Nombre_Parametro_Sistema = '@CodigoDependencia'
+                                                 AND fk_Entidad = @fk_Entidad
+                                  AND fk_Proyecto = @fk_Proyecto)
+
+       SET @Dependencia = (SELECT Valor_Parametro_Sistema
+                                                 FROM       [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema
+                                                 WHERE      Nombre_Parametro_Sistema = '@Dependencia'
+                                                 AND fk_Entidad = @fk_Entidad
+                                  AND fk_Proyecto = @fk_Proyecto)
+
+       SET @Proceso = (SELECT     Valor_Parametro_Sistema
+                                                 FROM       [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema
+                                                 WHERE      Nombre_Parametro_Sistema = '@Proceso'
+                                                 AND fk_Entidad = @fk_Entidad
+                                  AND fk_Proyecto = @fk_Proyecto)
+                    
+       SET @FechaComparacionHLUMV = (SELECT    CONVERT(DATETIME, Valor_Parametro_Sistema, 111) 
+                                                 FROM       [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema
+                                                 WHERE      Nombre_Parametro_Sistema = '@FechaLimiteUMVTipoDoc'
+                                                 AND fk_Entidad = @fk_Entidad
+                                  AND fk_Proyecto = @fk_Proyecto)
+
+       SET @Activos = (SELECT Valor_Parametro_Sistema 
+                                  FROM [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema 
+                                  WHERE Nombre_Parametro_Sistema = 'Activos'
+                                  AND fk_Entidad = @fk_Entidad
+                                  AND fk_Proyecto = @fk_Proyecto)
+
+
+       SET @id_Doc_Tapa_Lote = (SELECT TOP 1 ISNULL(Valor_Parametro_Sistema,0)
+                         FROM [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema
+                         WHERE fk_Entidad = @fk_Entidad
+                         AND fk_Proyecto = @fk_Proyecto
+                         AND Nombre_Parametro_Sistema = '@TapaLote')
+
+       SET @id_Doc_Tapa_Favidi = (SELECT TOP 1 ISNULL(Valor_Parametro_Sistema,0)
+                         FROM [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema
+                         WHERE fk_Entidad = @fk_Entidad
+                         AND fk_Proyecto = @fk_Proyecto
+                         AND Nombre_Parametro_Sistema = '@TapaFavidi')
+
+       SET @CampoSerie = (SELECT TOP 1 ISNULL(Valor_Parametro_Sistema,0)
+                                        FROM [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema
+                                        WHERE fk_Entidad = @fk_Entidad
+                                        AND fk_Proyecto = @fk_Proyecto
+                                        AND Nombre_Parametro_Sistema = '@CampoSerie')
+
+       SELECT DISTINCT @CodigoDependencia AS CodigoDependencia
+                    ,@Dependencia AS Dependencia
+                    ,@Proceso AS Proceso
+                    ,@CodigoDependencia + ' ' + CAST(EmpaqueData.Data_Campo AS VARCHAR(100)) AS CodigoSerie
+                    ,CASE EmpaqueData.Data_Campo 
+                    WHEN '190' THEN @NombreSerieHL
+                    WHEN '270' THEN @NombreSerieNomina
+                    ELSE @NombreSerieAutoliquidaciones END NombreSerie
+                    ,Estiba.CodigoEstiba
+                    ,CAST(EmpaqueData.Data_Campo AS VARCHAR(100)) AS TipoSerie
+                    ,PS.Valor_Parametro_Sistema as Sigla_Serie
+                    ,Contenedor.fk_OT
+                    ,Contenedor.fk_Precinto
+                    ,Contenedor.id_Contenedor
+                    ,Contenedor.fk_Cargue
+                    ,Contenedor.fk_Paquete
+                    ,REPLACE(Precinto.Precinto,'P','') AS fk_Llave
+                                  ,SUBSTRING(CAST(Contenedor_DataFoliosPPales.Data_Campo AS VARCHAR), CHARINDEX('-', CAST(Contenedor_DataFoliosPPales.Data_Campo AS VARCHAR)) + 1, LEN(CAST(Contenedor_DataFoliosPPales.Data_Campo AS VARCHAR))) AS FoliosPpales
+                                  ,SUBSTRING(CAST(Contenedor_DataFoliosFavidi.Data_Campo AS VARCHAR), CHARINDEX('-', CAST(Contenedor_DataFoliosFavidi.Data_Campo AS VARCHAR)) + 1, LEN(CAST(Contenedor_DataFoliosFavidi.Data_Campo AS VARCHAR))) AS FoliosFavidi
+                    ,Fil.fk_Expediente
+                    ,Fil.fk_Folder
+                    ,Fil.id_File
+                    ,0 AS Numero_Folios
+                    ,Documento.fk_Tipologia
+                    ,Fil.fk_Documento
+                    ,ImagingFile.id_Version
+                    ,CAST(ImagingFile.File_Unique_Identifier AS VARCHAR(200)) AS File_Unique_Identifier
+                    ,CASE EmpaqueData.Data_Campo 
+                    WHEN '190' THEN '' 
+                    ELSE 'TRD' END GrupoDocumento
+                    ,Folder.fk_Entidad_Servidor
+                    ,Folder.fk_Servidor
+                    ,Fil.Folios_File
+                    ,ImagingFile.Tamaño_Imagen_File                
+                    ,ISNULL(CAST([DB_Miharu.Core].[Process].Fn_getDatos(Fil.fk_Expediente, Fil.fk_Folder, Fil.id_File, NULL, Fil.fk_Documento, 2) AS INT), 0) AS FolioInicial
+                    ,ISNULL(CAST([DB_Miharu.Core].[Process].Fn_getDatos(Fil.fk_Expediente, Fil.fk_Folder, Fil.id_File, NULL, Fil.fk_Documento, 3) AS INT), 0) AS FolioFinal
+                    ,'' AS Nombre_Imagen_File
+                    ,[DB_Miharu.Core].[Process].Fn_getDatos(Fil.fk_Expediente, Fil.fk_Folder, Fil.id_File, NULL, Fil.fk_Documento, 1) AS Fecha
+                    ,[DB_Miharu.Core].[Process].Fn_getDatos(Fil.fk_Expediente, Fil.fk_Folder, Fil.id_File, NULL, Fil.fk_Documento, 6) AS TipoNovedad --Nomina
+                    ,[DB_Miharu.Core].[Process].Fn_getDatos(Fil.fk_Expediente, Fil.fk_Folder, Fil.id_File, NULL, Fil.fk_Documento, 5) AS TipoAporte --PF
+                                  ,[DB_Miharu.Core].[Process].Fn_getDatos(Fil.fk_Expediente, Fil.fk_Folder, Fil.id_File, NULL, Fil.fk_Documento, 6) AS Empresa --PF
+                    ,Estiba.Tipo_Archivo
+                    ,0 AS ImagenPrincipal
+                    ,CASE EmpaqueData.Data_Campo 
+                                   WHEN '270' THEN UPPER([DB_Miharu.Core].[Process].Fn_getDatos(Fil.fk_Expediente, Fil.fk_Folder, Fil.id_File, NULL, Fil.fk_Documento, 4))
+                                  WHEN '50' THEN UPPER([DB_Miharu.Core].[Process].Fn_getDatos(Fil.fk_Expediente, Fil.fk_Folder, Fil.id_File, NULL, Fil.fk_Documento, 7)) 
+                                   END AS Formato 
+                    ,Estiba.Tipo_Archivo + Empaque.Precinto AS Caja
+       INTO #Registros
+       FROM [DB_Miharu.Integration].[UMV].[TBL_Estiba] AS Estiba WITH(NOLOCK)
+       INNER JOIN   [DB_Miharu.Integration].[UMV].TBL_Estiba_Detalle AS EstibaDetalle WITH(NOLOCK)
+             ON     EstibaDetalle.fk_Estiba = Estiba.id_Estiba
+       INNER JOIN   [DB_Miharu.Imaging_Core].Process.TBL_Empaque AS Empaque WITH(NOLOCK)
+             ON     EstibaDetalle.Caja = Empaque.Precinto
+       INNER JOIN   [DB_Miharu.Imaging_Core].Process.TBL_Empaque_Contenedor AS Empaque_Contenedor WITH(NOLOCK)
+             ON     Empaque_Contenedor.fk_OT = Empaque.fk_OT
+                AND Empaque_Contenedor.fk_Empaque = Empaque.id_Empaque
+       INNER JOIN   [DB_Miharu.Imaging_Core].Process.TBL_Empaque_Data AS EmpaqueData WITH(NOLOCK)
+                    ON     EmpaqueData.fk_OT = Empaque.fk_OT
+                    AND EmpaqueData.fk_Empaque = Empaque.id_Empaque
+                    AND EmpaqueData.fk_Campo = @CampoSerie
+                    AND EmpaqueData.Data_Campo = Estiba.Serie
+       INNER JOIN   [DB_Miharu.Imaging_Core].Process.TBL_Empaque_Data AS EmpaqueDataTipoArchivo WITH(NOLOCK)
+                    ON     EmpaqueDataTipoArchivo.fk_OT = Empaque.fk_OT
+                    AND EmpaqueDataTipoArchivo.fk_Empaque = Empaque.id_Empaque
+                    AND EmpaqueDataTipoArchivo.fk_Campo = 3
+                    AND EmpaqueDataTipoArchivo.Data_Campo = Estiba.Tipo_Archivo
+       INNER JOIN   [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema PS WITH(NOLOCK)
+                    ON     PS.Nombre_Parametro_Sistema = EmpaqueData.Data_Campo
+       INNER JOIN   [DB_Miharu.Imaging_Core].Process.TBL_Contenedor Contenedor WITH(NOLOCK)
+                    ON     Empaque_Contenedor.Token = Contenedor.Token
+                    AND Empaque_Contenedor.fk_OT = Contenedor.fk_OT
+             INNER JOIN   [DB_Miharu.Imaging_Core].Process.TBL_Contenedor_Data AS Contenedor_DataFoliosPPales WITH(NOLOCK)
+                    ON     Contenedor_DataFoliosPPales.fk_OT = Contenedor.fk_OT
+                    AND Contenedor_DataFoliosPPales.fk_Precinto = Contenedor.fk_Precinto
+                                  AND Contenedor_DataFoliosPPales.fk_Contenedor = Contenedor.id_Contenedor
+                                  AND Contenedor_DataFoliosPPales.fk_Campo = 4
+             INNER JOIN   [DB_Miharu.Imaging_Core].Process.TBL_Contenedor_Data AS Contenedor_DataFoliosFavidi WITH(NOLOCK)
+                    ON     Contenedor_DataFoliosFavidi.fk_OT = Contenedor.fk_OT
+                    AND Contenedor_DataFoliosFavidi.fk_Precinto = Contenedor.fk_Precinto
+                                  AND Contenedor_DataFoliosFavidi.fk_Contenedor = Contenedor.id_Contenedor
+                                  AND Contenedor_DataFoliosFavidi.fk_Campo = 5
+       INNER JOIN   [DB_Miharu.Imaging_Core].Process.TBL_Precinto Precinto WITH(NOLOCK)
+                    ON     Precinto.fk_OT = Contenedor.fk_OT
+                    AND    Precinto.id_Precinto = Contenedor.fk_Precinto
+       INNER JOIN   [DB_Miharu.Imaging_Core].Process.TBL_OT OT WITH(NOLOCK)
+                    ON     OT.id_OT = Contenedor.fk_OT
+                    AND OT.fk_OT_Tipo = 2
+       INNER JOIN   [DB_Miharu.Core].Imaging.TBL_Folder Folder WITH(NOLOCK)
+                    ON     Contenedor.fk_Cargue = Folder.fk_Cargue 
+                    AND Contenedor.fk_Paquete = Folder.fk_Cargue_Paquete
+       INNER JOIN   [DB_Miharu.Core].Process.TBL_File Fil WITH(NOLOCK)
+                    ON     Fil.fk_Expediente = Folder.fk_Expediente
+                    AND Fil.fk_Folder = Folder.fk_Folder
+                    AND Fil.fk_Documento NOT IN (@id_Doc_Tapa_Lote, @id_Doc_Tapa_Favidi)
+       INNER JOIN   [DB_Miharu.Core].Config.TBL_Documento Documento WITH(NOLOCK)
+                    ON     Documento.id_Documento = Fil.fk_Documento
+       INNER JOIN   [DB_Miharu.Core].Imaging.TBL_File ImagingFile WITH(NOLOCK)
+                    ON     ImagingFile.fk_Expediente = Fil.fk_Expediente
+                    AND ImagingFile.fk_Folder = Fil.fk_Folder
+                    AND ImagingFile.fk_File = Fil.id_File
+       WHERE  OT.fk_Entidad = @fk_Entidad
+                    AND OT.fk_Proyecto = @fk_Proyecto
+                    AND Estiba.id_Estiba = @fk_Estiba
+
+       ALTER TABLE #Registros ADD CodigoDocumento INT
+       ALTER TABLE #Registros ADD NombreDocumento VARCHAR(MAX)
+       ALTER TABLE #Registros ADD Novedades VARCHAR(5000)
+       ALTER TABLE #Registros ALTER COLUMN GrupoDocumento VARCHAR(10)
+       ALTER TABLE #Registros ADD FechaCambio VARCHAR(100)
+       ALTER TABLE #Registros ADD Formatos VARCHAR(500)
+       ALTER TABLE #Registros ADD TipoTrabajador VARCHAR(500)
+       ALTER TABLE #Registros ADD Estado VARCHAR(500)
+       ALTER TABLE #Registros ADD FechaInicial VARCHAR(10)
+       ALTER TABLE #Registros ADD FechaFinal VARCHAR(10)
+       ALTER TABLE #Registros ADD Nombres VARCHAR(500)
+       ALTER TABLE #Registros ADD Ordenamiento INT
+       ALTER TABLE #Registros ADD ReportePrecinto VARCHAR(MAX)
+       ALTER TABLE #Registros ADD ReporteFiles VARCHAR(MAX)
+       ALTER TABLE #Registros ADD TotalCarpetas INT
+       ALTER TABLE #Registros ADD Titulo VARCHAR(MAX)
+		ALTER TABLE #Registros ADD Aportes VARCHAR(5000)
+		ALTER TABLE #Registros ADD Empresas VARCHAR(5000)
+		ALTER TABLE #Registros ADD TotalFolios VARCHAR(100)
+		ALTER TABLE #Registros ADD Folios VARCHAR(100)
+		ALTER TABLE #Registros ADD NumTotalFolios VARCHAR(100)
+
+		UPDATE #Registros
+		SET Numero_Folios = ((FolioFinal - FolioInicial) + 1)
+
+		UPDATE #Registros
+		SET Folios = FolioInicial
+		WHERE FolioInicial = FolioFinal
+
+		UPDATE #Registros
+		SET Folios = (CAST(FolioInicial AS VARCHAR(100)) + '-' + CAST(FolioFinal AS VARCHAR(100)))
+		WHERE Folios IS NULL
+
+		UPDATE #Registros
+		SET TipoTrabajador = PD.Campo_50
+			,Estado = PD.Campo_49
+			,Nombres = PD.Campo_48
+		FROM #Registros R
+		INNER JOIN   [DB_MIharu.Imaging_Core].Process.TBL_Proceso_Data PD
+				ON     PD.fk_Expediente = R.fk_Expediente
+				AND PD.fk_Folder = R.fk_Folder
+		WHERE        TipoSerie = '190'
+
+       UPDATE #Registros
+       SET GrupoDocumento = 'TRD'
+       FROM #Registros R
+       INNER JOIN   [DB_MIharu.Imaging_Core].Process.TBL_Proceso_Data PD
+                    ON     PD.fk_Expediente = R.fk_Expediente
+                    AND PD.fk_Folder = R.fk_Folder
+       WHERE        TipoSerie = '190'
+                    AND ISNULL(GrupoDocumento,'') = ''
+             AND PD.Campo_49 IN (SELECT Data FROM  [DB_MIharu.Imaging_Core].[dbo].[Split] (@Activos, ','));
+
+       UPDATE #Registros
+       SET GrupoDocumento = Data.GrupoDocumento
+       FROM #Registros R
+       INNER JOIN (SELECT R.fk_OT, 
+                           R.fk_Precinto, 
+                           CASE 
+                           WHEN MAX([DB_Miharu.Integration].[dbo].[Fn_Formato_Fecha](CAST(FileData.Valor_File_Data AS VARCHAR(10)), 'yyyy/mm/dd')) &lt;= @FechaComparacionHLUMV THEN 'DAFP' 
+                           ELSE 'TRD' 
+                           END AS GrupoDocumento
+                           FROM #Registros R
+                           INNER JOIN   [DB_Miharu.Core].Process.TBL_File_Data AS FileData WITH(NOLOCK)
+                                        ON     FileData.fk_Expediente = R.fk_Expediente
+                                        AND FileData.fk_Folder = R.fk_Folder                        
+                           INNER JOIN [DB_Miharu.Imaging_Core].Config.TBL_Matriz_Documento MD WITH(NOLOCK)
+                                        ON MD.fk_Documento = FileData.fk_Documento
+                                        AND MD.fk_Campo = FileData.fk_Campo
+                                        AND MD.id_Columna = 1
+                           WHERE  TipoSerie = '190'
+                           AND ISNULL(GrupoDocumento,'') = ''
+                           GROUP BY R.fk_OT, R.fk_Precinto) Data
+       ON Data.fk_OT = R.fk_OT
+       AND Data.fk_Precinto = R.fk_Precinto    
+
+       UPDATE #Registros
+       SET CodigoDocumento = fk_Documento_UMV
+             ,NombreDocumento = Nombre_Documento_UMV
+       FROM #Registros R
+       INNER JOIN [DB_Miharu.Integration].[Config].[TBL_Documento_Homologacion] DocHomo
+                    ON R.fk_Documento = DocHomo.fk_Documento_Core
+                    AND R.GrupoDocumento = DocHomo.Grupo_Documento
+
+       SET @fk_DocumentosNomina = (SELECT Valor_Parametro_Sistema FROM [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema  WHERE Nombre_Parametro_Sistema = 'DocumentosNominaTipoNovedad' AND fk_Entidad = @fk_Entidad AND fk_Proyecto = @fk_Proyecto)
+          SET @fk_DocumentosParafiscales = (SELECT Valor_Parametro_Sistema FROM [DB_Miharu.Imaging_Core].Config.TBL_Parametro_Sistema  WHERE Nombre_Parametro_Sistema = 'DocumentosAutoliquidacionTipoAporte' AND fk_Entidad = @fk_Entidad AND fk_Proyecto = @fk_Proyecto)
+       
+       UPDATE #Registros
+       SET Novedades = Data.Novedades
+       FROM #Registros Registros
+       INNER JOIN (SELECT R.fk_OT, R.fk_Precinto, STUFF(
+                           (SELECT DISTINCT '/' + TipoNovedad
+                           FROM #Registros R2
+                           WHERE ISNULL(R2.TipoNovedad,'') NOT IN ('SIN NOVEDAD', '')
+                           AND R2.fk_OT = R.fk_OT
+                           AND R2.fk_Precinto = R.fk_Precinto
+                           FOR XML PATH('')),
+                           1,1, '') AS Novedades
+                           FROM #Registros R
+                           WHERE ISNULL(R.TipoNovedad,'') NOT IN ('SIN NOVEDAD', '')
+                           GROUP BY R.fk_OT, R.fk_Precinto) AS Data
+       ON Data.fk_OT = Registros.fk_OT
+       AND Data.fk_Precinto = Registros.fk_Precinto
+          WHERE TipoSerie = '270'
+
+       UPDATE #Registros
+       SET Formatos = Data.Formatos
+       FROM #Registros Registros
+       INNER JOIN (SELECT R.fk_OT, R.fk_Precinto, STUFF(
+                           (SELECT DISTINCT '/' + Formato
+                           FROM #Registros R2
+                           WHERE R2.fk_OT = R.fk_OT
+                           AND R2.fk_Precinto = R.fk_Precinto
+                           FOR XML PATH('')),
+                           1,1, '') AS Formatos
+                           FROM #Registros R
+                           GROUP BY R.fk_OT, R.fk_Precinto) AS Data
+       ON Data.fk_OT = Registros.fk_OT
+       AND Data.fk_Precinto = Registros.fk_Precinto
+          WHERE TipoSerie IN ('270', '50')
+
+          UPDATE #Registros
+       SET Aportes = Data.Aportes
+       FROM #Registros Registros
+       INNER JOIN (SELECT R.fk_OT, R.fk_Precinto, STUFF(
+                           (SELECT DISTINCT '/' + TipoAporte
+                           FROM #Registros R2
+                           WHERE R2.fk_OT = R.fk_OT
+                           AND R2.fk_Precinto = R.fk_Precinto
+                           FOR XML PATH('')),
+                           1,1, '') AS Aportes
+                           FROM #Registros R
+                           GROUP BY R.fk_OT, R.fk_Precinto) AS Data
+       ON Data.fk_OT = Registros.fk_OT
+       AND Data.fk_Precinto = Registros.fk_Precinto
+          WHERE TipoSerie = '50'
+
+          UPDATE #Registros
+       SET Empresas = Data.Empresas
+       FROM #Registros Registros
+       INNER JOIN (SELECT R.fk_OT, R.fk_Precinto, STUFF(
+                           (SELECT DISTINCT '/' + Empresa
+                           FROM #Registros R2
+                           WHERE R2.fk_OT = R.fk_OT
+                           AND R2.fk_Precinto = R.fk_Precinto
+                           FOR XML PATH('')),
+                           1,1, '') AS Empresas
+                           FROM #Registros R
+                           GROUP BY R.fk_OT, R.fk_Precinto) AS Data
+       ON Data.fk_OT = Registros.fk_OT
+       AND Data.fk_Precinto = Registros.fk_Precinto
+          WHERE TipoSerie = '50'
+       
+                                                                   
+       UPDATE #Registros
+             SET FechaInicial = Inicial
+                    ,FechaFinal = Final
+             FROM #Registros R
+             INNER JOIN ( SELECT R.fk_OT, R.fk_Precinto, MIN(SUBSTRING(CAST(FD.Valor_File_Data AS VARCHAR(10)), 7, 4) + '/' + SUBSTRING(CAST(FD.Valor_File_Data AS VARCHAR(10)), 4, 2) + '/' + SUBSTRING(CAST(FD.Valor_File_Data AS VARCHAR(10)), 1, 2)) AS Inicial
+                                                      ,MAX(SUBSTRING(CAST(FD.Valor_File_Data AS VARCHAR(10)), 7, 4) + '/' + SUBSTRING(CAST(FD.Valor_File_Data AS VARCHAR(10)), 4, 2) + '/' + SUBSTRING(CAST(FD.Valor_File_Data AS VARCHAR(10)), 1, 2)) AS Final
+                                     FROM #Registros R
+                                     INNER JOIN [DB_Miharu.Core].Process.TBL_File_Data FD WITH(NOLOCK)
+                                                  ON  FD.fk_Expediente = R.fk_Expediente
+                                                  AND FD.fk_Folder = R.fk_Folder
+                                     INNER JOIN [DB_Miharu.Imaging_Core].Config.TBL_Matriz_Documento MD WITH(NOLOCK)
+                                                      ON     MD.fk_Documento = FD.fk_Documento
+                                                      AND MD.fk_Campo = FD.fk_Campo
+                                                      AND MD.id_Columna = 1
+                                        GROUP BY R.fk_OT, R.fk_Precinto) Data
+             ON Data.fk_OT = R.fk_OT
+             AND Data.fk_Precinto = R.fk_Precinto
+             
+             SET LANGUAGE Spanish;
+             UPDATE #Registros
+             SET FechaCambio = REPLACE(UPPER(FORMAT(CAST(SUBSTRING(CAST(fk_Llave AS VARCHAR(6)),1,4) + '/' + '01' + '/' + SUBSTRING(CAST(fk_Llave AS VARCHAR(6)),5,2)  AS DATETIME), 'MMMM/yyyy')), '/', ' DE ')
+             WHERE TipoSerie IN ('270', '50')    
+             SET LANGUAGE US_English;
+       
+       UPDATE #Registros
+       SET Fecha = SUBSTRING(Fecha,7,10) +'/'+ SUBSTRING(Fecha ,4,2) + '/'+SUBSTRING(Fecha,1,2)
+
+           UPDATE #Registros
+       SET NumTotalFolios = Data.TotalFolios
+          FROM #Registros R
+       INNER JOIN ( SELECT fk_OT, fk_Precinto, CASE TipoSerie WHEN '190' THEN CAST(MAX(FoliosPpales) AS VARCHAR(100))  + CAST(MAX(FoliosFavidi) AS VARCHAR(100))
+                                                                                 ELSE CAST(MAX(FoliosPpales) AS VARCHAR(100))   END AS TotalFolios
+                                  FROM #Registros
+                                  GROUP BY fk_OT,  fk_Precinto, TipoSerie) AS Data
+       ON R.fk_OT = Data.fk_OT
+       AND R.fk_Precinto = Data.fk_Precinto      
+
+       UPDATE #Registros
+       SET ReportePrecinto = @CodigoDependencia + '.' + CAST(ISNULL(TipoSerie, '') AS VARCHAR(4)) + 
+                              CASE TipoSerie 
+                                                 WHEN '190' THEN @CaracterSeparador + NombreSerie + '/' + ISNULL(CAST(fk_Llave AS VARCHAR(30)),'') + ISNULL('/' + Nombres,'') + ISNULL('/' + TipoTrabajador,'') + ISNULL('/' + Estado,'') + @CaracterSeparador + ISNULL(CAST(fk_Llave AS VARCHAR(30)),'') + ISNULL('/' + Nombres,'')
+                              WHEN '270' THEN '.10' + @CaracterSeparador + NombreSerie + '/' + FechaCambio + ISNULL('/' + Novedades,'') + @CaracterSeparador + SUBSTRING(CAST(fk_Llave AS VARCHAR(100)),5,2) + '/' + SUBSTRING(CAST(fk_Llave AS VARCHAR(100)),1,4) + @CaracterSeparador + ISNULL(Novedades,'')
+                              ELSE @CaracterSeparador + NombreSerie + '/' + FechaCambio + ISNULL('/' + Aportes,'') + ISNULL('/' + Empresas,'') + @CaracterSeparador + SUBSTRING(CAST(fk_Llave AS VARCHAR(100)),5,2) + '/' + SUBSTRING(CAST(fk_Llave AS VARCHAR(100)),1,4) + @CaracterSeparador + ISNULL(Aportes,'') + @CaracterSeparador + ISNULL(Formatos,'')
+                              END
+                              + @CaracterSeparador + ISNULL(FechaInicial,'') + @CaracterSeparador + ISNULL(FechaFinal,'') + @CaracterSeparador + CAST(NumTotalFolios AS VARCHAR(100)) +
+                              CASE TipoSerie WHEN '190' THEN  @CaracterSeparador + ISNULL(TipoTrabajador,'') + @CaracterSeparador + ISNULL(Estado,'') ELSE @CaracterSeparador + ISNULL(Formatos,'') END
+       , Titulo = CASE TipoSerie WHEN '190' THEN NombreSerie + '/' + ISNULL(CAST(fk_Llave AS VARCHAR(30)),'') + ISNULL('/' + Nombres,'') + ISNULL('/' + TipoTrabajador,'') + ISNULL('/' + Estado,'')
+                              WHEN '270' THEN NombreSerie + '/' + FechaCambio + ISNULL('/' + Novedades,'') 
+                              ELSE NombreSerie + '/' + FechaCambio + ISNULL('/' + Aportes,'') 
+                                                 END
+
+       INSERT #Registros
+       SELECT @CodigoDependencia
+                      , @Dependencia
+                      , @Proceso
+                      , @CodigoDependencia + ' '  + MAX(TipoSerie)
+                      , MAX(NombreSerie)
+                      , MAX(CodigoEstiba) AS CodigoEstiba
+                      , MAX(TipoSerie) AS TipoSerie
+                      , MAX(Sigla_Serie) AS Sigla_Serie
+                      , MAX(fk_OT) AS fk_OT
+                      , MAX(fk_Precinto) AS fk_Precinto
+              , 0 AS TotalCarpetas
+                      , MAX(fk_Cargue) AS fk_Cargue
+                      , MAX(fk_Paquete) AS fk_Paquete
+                      , MAX(fk_Llave) AS fk_Llave
+                      , MAX(FoliosPpales) AS FoliosPpales
+                      , MAX(FoliosFavidi) AS FoliosFavidi
+                      , MIN(fk_Expediente) AS fk_Expediente
+              , MAX(fk_Folder) AS fk_Folder
+                      , 0 AS id_File
+                      , 1 AS Numero_Folios
+                      , 0 AS fk_Tipologia
+                      , 0 AS fk_Documento
+                      , 1 AS id_Version
+                      , '' AS File_Unique_Identifier
+              , NULL AS GrupoDocumento
+                      , 11 AS fk_Entidad_Servidor
+                      , 5 AS fk_Servidor
+                      , 1 AS Folios_File
+                      , 0 AS Tamaño_Imagen_File
+                      , 0 AS FolioInicial
+                      , 0 AS FolioFinal
+                      , '0' AS Nombre_Imagen_File
+              ,NULL AS Fecha
+                      ,NULL AS TipoNovedad
+                      , NULL AS TipoAporte
+                      , NULL AS Empresa
+                      , MAX(Tipo_Archivo)
+                      , 1 AS ImagenPrincipal
+                      , NULL AS Formato
+                      , MAX(Caja)
+                      , 0 AS CodigoDocumento
+                      , 'Imagen Principal' AS NombreDocumento
+              ,'' AS Novedades
+                      , MAX(FechaCambio)
+                      , MAX(Formatos)
+                      , MAX(TipoTrabajador)
+                      , MAX(Estado)
+                      , MAX(FechaInicial)
+                      , MAX(FechaFinal)
+                      , MAX(Nombres) AS Nombres
+              ,1 AS Ordenamiento
+                      , MAX(ReportePrecinto)
+                      , NULL AS ReporteFiles
+                      , NULL TotalCarpetas
+                      , MAX(Titulo)
+                      , '' AS Aportes
+                      , '' AS Empresas
+                      ,MAX(TotalFolios)
+                      ,0
+                                    ,MAX(NumTotalFolios)
+       FROM #Registros
+       GROUP BY fk_LLave
+
+
+       UPDATE #Registros
+       SET TotalCarpetas = Data.TotalCarpetas
+       FROM #Registros R
+       INNER JOIN ( SELECT fk_OT, fk_Precinto, COUNT(DISTINCT id_Contenedor) AS TotalCarpetas
+                                  FROM #Registros
+                                  WHERE id_Contenedor &gt; 0
+                                  GROUP BY fk_OT, fk_Precinto) AS Data
+       ON R.fk_OT = Data.fk_OT
+       AND R.fk_Precinto = Data.fk_Precinto    
+
+
+          UPDATE #Registros
+       SET TotalFolios = Data.TotalFolios
+          FROM #Registros R
+       INNER JOIN ( SELECT fk_OT, fk_Precinto, CASE TipoSerie WHEN '190' THEN  'FP: ' + CAST(MAX(FoliosPpales) AS VARCHAR(100)) + ' - FV: ' + CAST(MAX(FoliosFavidi) AS VARCHAR(100))
+                                                                                 ELSE 'FP: ' + CAST(MAX(FoliosPpales) AS VARCHAR(100))   END AS TotalFolios
+                                  FROM #Registros
+                                  GROUP BY fk_OT,  fk_Precinto, TipoSerie) AS Data
+       ON R.fk_OT = Data.fk_OT
+       AND R.fk_Precinto = Data.fk_Precinto      
+
+       
+          UPDATE #Registros
+       SET Ordenamiento = 2
+             ,FolioInicial = 0
+             ,FolioFinal = 0
+       WHERE fk_Documento = @IdHojaControl
+       AND Ordenamiento IS NULL
+
+       UPDATE #Registros
+       SET Ordenamiento = (ISNULL(FolioInicial,0) + 2)
+       WHERE Ordenamiento IS NULL
+       AND fk_Tipologia IN (SELECT Data FROM [DB_Miharu.Imaging_Core].[dbo].[Split] (@TipologiasPpales, ','))
+
+       UPDATE #Registros
+       SET Ordenamiento = (ISNULL(FolioInicial,0) + 2000)
+       WHERE Ordenamiento IS NULL
+       AND fk_Tipologia = @TipologiaFavidi
+
+       UPDATE #Registros
+       SET ReporteFiles = ISNULL(Fecha,'') + @CaracterSeparador + ISNULL(NombreDocumento,'')
+							+ CASE ImagenPrincipal WHEN 0 THEN
+									CASE TipoSerie WHEN '270' THEN ISNULL('/' + TipoNovedad,'') + ISNULL('/' + Folios,'')
+                                                   WHEN '50' THEN ISNULL('/' + TipoAporte,'') + ISNULL('/' + Folios,'') ELSE '' END
+								ELSE ''
+							  END
+                           + @CaracterSeparador + '@PesoImagenFile' + @CaracterSeparador 
+                                        + ISNULL(CAST(CodigoDocumento AS VARCHAR(100)),'') 
+                                         + @CaracterSeparador +  '@Ruta' 
+                                         + @CaracterSeparador +
+                          CAST(Numero_Folios AS VARCHAR(100)) 
+                                          + @CaracterSeparador + CAST(fk_Llave AS VARCHAR(100)) 
+                                          + @CaracterSeparador + CAST(ImagenPrincipal AS VARCHAR(1))
+
+
+       SELECT *, Numero_Folios as b
+       FROM #Registros
+       ORDER BY CAST(fk_Llave AS INT), Ordenamiento ASC
+
+         
+
+       DROP TABLE #Registros      
+END</value>
+  </data>
+</root>

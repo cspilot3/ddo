@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="xsdTrigger" targetNamespace="http://tempuri.org/xsdTrigger.xsd" xmlns:mstns="http://tempuri.org/xsdTrigger.xsd" xmlns="http://tempuri.org/xsdTrigger.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="xsdTrigger" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="xsdTrigger" msprop:Generator_UserDSName="xsdTrigger">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Lista" msprop:Generator_TableClassName="ListaDataTable" msprop:Generator_TableVarName="tableLista" msprop:Generator_TablePropName="Lista" msprop:Generator_RowDeletingName="ListaRowDeleting" msprop:Generator_RowChangingName="ListaRowChanging" msprop:Generator_RowEvHandlerName="ListaRowChangeEventHandler" msprop:Generator_RowDeletedName="ListaRowDeleted" msprop:Generator_UserTableName="Lista" msprop:Generator_RowChangedName="ListaRowChanged" msprop:Generator_RowEvArgName="ListaRowChangeEvent" msprop:Generator_RowClassName="ListaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Lista" msprop:Generator_ColumnVarNameInTable="columnid_Lista" msprop:Generator_ColumnPropNameInRow="id_Lista" msprop:Generator_ColumnPropNameInTable="id_ListaColumn" msprop:Generator_UserColumnName="id_Lista" type="xs:string" />
+              <xs:element name="Nombre_Lista" msprop:Generator_ColumnVarNameInTable="columnNombre_Lista" msprop:Generator_ColumnPropNameInRow="Nombre_Lista" msprop:Generator_ColumnPropNameInTable="Nombre_ListaColumn" msprop:Generator_UserColumnName="Nombre_Lista" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Etapa" msprop:Generator_TableClassName="EtapaDataTable" msprop:Generator_TableVarName="tableEtapa" msprop:Generator_TablePropName="Etapa" msprop:Generator_RowDeletingName="EtapaRowDeleting" msprop:Generator_RowChangingName="EtapaRowChanging" msprop:Generator_RowEvHandlerName="EtapaRowChangeEventHandler" msprop:Generator_RowDeletedName="EtapaRowDeleted" msprop:Generator_UserTableName="Etapa" msprop:Generator_RowChangedName="EtapaRowChanged" msprop:Generator_RowEvArgName="EtapaRowChangeEvent" msprop:Generator_RowClassName="EtapaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Lista" msprop:Generator_ColumnVarNameInTable="columnid_Lista" msprop:Generator_ColumnPropNameInRow="id_Lista" msprop:Generator_ColumnPropNameInTable="id_ListaColumn" msprop:Generator_UserColumnName="id_Lista" type="xs:string" />
+              <xs:element name="id_Etapa" msprop:Generator_ColumnVarNameInTable="columnid_Etapa" msprop:Generator_ColumnPropNameInRow="id_Etapa" msprop:Generator_ColumnPropNameInTable="id_EtapaColumn" msprop:Generator_UserColumnName="id_Etapa" type="xs:unsignedByte" />
+              <xs:element name="Nombre_Etapa" msprop:Generator_ColumnVarNameInTable="columnNombre_Etapa" msprop:Generator_ColumnPropNameInRow="Nombre_Etapa" msprop:Generator_ColumnPropNameInTable="Nombre_EtapaColumn" msprop:Generator_UserColumnName="Nombre_Etapa" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CampoTrigger" msprop:Generator_TableClassName="CampoTriggerDataTable" msprop:Generator_TableVarName="tableCampoTrigger" msprop:Generator_TablePropName="CampoTrigger" msprop:Generator_RowDeletingName="CampoTriggerRowDeleting" msprop:Generator_RowChangingName="CampoTriggerRowChanging" msprop:Generator_RowEvHandlerName="CampoTriggerRowChangeEventHandler" msprop:Generator_RowDeletedName="CampoTriggerRowDeleted" msprop:Generator_UserTableName="CampoTrigger" msprop:Generator_RowChangedName="CampoTriggerRowChanged" msprop:Generator_RowEvArgName="CampoTriggerRowChangeEvent" msprop:Generator_RowClassName="CampoTriggerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Lista" msprop:Generator_ColumnVarNameInTable="columnid_Lista" msprop:Generator_ColumnPropNameInRow="id_Lista" msprop:Generator_ColumnPropNameInTable="id_ListaColumn" msprop:Generator_UserColumnName="id_Lista" type="xs:string" />
+              <xs:element name="id_Etapa" msprop:Generator_ColumnVarNameInTable="columnid_Etapa" msprop:Generator_ColumnPropNameInRow="id_Etapa" msprop:Generator_ColumnPropNameInTable="id_EtapaColumn" msprop:Generator_UserColumnName="id_Etapa" type="xs:unsignedByte" />
+              <xs:element name="id_Campo" msprop:Generator_ColumnVarNameInTable="columnid_Campo" msprop:Generator_ColumnPropNameInRow="id_Campo" msprop:Generator_ColumnPropNameInTable="id_CampoColumn" msprop:Generator_UserColumnName="id_Campo" type="xs:short" />
+              <xs:element name="id_Campo_Tabla" msprop:Generator_ColumnVarNameInTable="columnid_Campo_Tabla" msprop:Generator_ColumnPropNameInRow="id_Campo_Tabla" msprop:Generator_ColumnPropNameInTable="id_Campo_TablaColumn" msprop:Generator_UserColumnName="id_Campo_Tabla" type="xs:short" />
+              <xs:element name="Nombre_Campo" msprop:Generator_ColumnVarNameInTable="columnNombre_Campo" msprop:Generator_ColumnPropNameInRow="Nombre_Campo" msprop:Generator_ColumnPropNameInTable="Nombre_CampoColumn" msprop:Generator_UserColumnName="Nombre_Campo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Campo" msprop:Generator_TableClassName="CampoDataTable" msprop:Generator_TableVarName="tableCampo" msprop:Generator_TablePropName="Campo" msprop:Generator_RowDeletingName="CampoRowDeleting" msprop:Generator_RowChangingName="CampoRowChanging" msprop:Generator_RowEvHandlerName="CampoRowChangeEventHandler" msprop:Generator_RowDeletedName="CampoRowDeleted" msprop:Generator_UserTableName="Campo" msprop:Generator_RowChangedName="CampoRowChanged" msprop:Generator_RowEvArgName="CampoRowChangeEvent" msprop:Generator_RowClassName="CampoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Campo" msprop:Generator_ColumnVarNameInTable="columnid_Campo" msprop:Generator_ColumnPropNameInRow="id_Campo" msprop:Generator_ColumnPropNameInTable="id_CampoColumn" msprop:Generator_UserColumnName="id_Campo" type="xs:short" />
+              <xs:element name="id_Campo_Tabla" msprop:Generator_ColumnVarNameInTable="columnid_Campo_Tabla" msprop:Generator_ColumnPropNameInRow="id_Campo_Tabla" msprop:Generator_ColumnPropNameInTable="id_Campo_TablaColumn" msprop:Generator_UserColumnName="id_Campo_Tabla" type="xs:short" />
+              <xs:element name="Nombre_Campo" msprop:Generator_ColumnVarNameInTable="columnNombre_Campo" msprop:Generator_ColumnPropNameInRow="Nombre_Campo" msprop:Generator_ColumnPropNameInTable="Nombre_CampoColumn" msprop:Generator_UserColumnName="Nombre_Campo" type="xs:string" minOccurs="0" />
+              <xs:element name="Ocultar" msprop:Generator_ColumnVarNameInTable="columnOcultar" msprop:Generator_ColumnPropNameInRow="Ocultar" msprop:Generator_ColumnPropNameInTable="OcultarColumn" msprop:Generator_UserColumnName="Ocultar" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Validacion" msprop:Generator_TableClassName="ValidacionDataTable" msprop:Generator_TableVarName="tableValidacion" msprop:Generator_TablePropName="Validacion" msprop:Generator_RowDeletingName="ValidacionRowDeleting" msprop:Generator_RowChangingName="ValidacionRowChanging" msprop:Generator_RowEvHandlerName="ValidacionRowChangeEventHandler" msprop:Generator_RowDeletedName="ValidacionRowDeleted" msprop:Generator_UserTableName="Validacion" msprop:Generator_RowChangedName="ValidacionRowChanged" msprop:Generator_RowEvArgName="ValidacionRowChangeEvent" msprop:Generator_RowClassName="ValidacionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fk_Validacion_Ocultar" msdata:Caption="id_Campo" msprop:Generator_ColumnVarNameInTable="columnfk_Validacion_Ocultar" msprop:Generator_ColumnPropNameInRow="fk_Validacion_Ocultar" msprop:Generator_ColumnPropNameInTable="fk_Validacion_OcultarColumn" msprop:Generator_UserColumnName="fk_Validacion_Ocultar" type="xs:short" />
+              <xs:element name="fk_Documento" msprop:Generator_ColumnVarNameInTable="columnfk_Documento" msprop:Generator_ColumnPropNameInRow="fk_Documento" msprop:Generator_ColumnPropNameInTable="fk_DocumentoColumn" msprop:Generator_UserColumnName="fk_Documento" type="xs:int" />
+              <xs:element name="Valor" msprop:Generator_ColumnVarNameInTable="columnValor" msprop:Generator_ColumnPropNameInRow="Valor" msprop:Generator_ColumnPropNameInTable="ValorColumn" msprop:Generator_UserColumnName="Valor" type="xs:string" minOccurs="0" />
+              <xs:element name="Pregunta_Validacion" msprop:Generator_ColumnVarNameInTable="columnPregunta_Validacion" msprop:Generator_ColumnPropNameInRow="Pregunta_Validacion" msprop:Generator_ColumnPropNameInTable="Pregunta_ValidacionColumn" msprop:Generator_UserColumnName="Pregunta_Validacion" type="xs:string" minOccurs="0" />
+              <xs:element name="fk_Etapa_Captura" msprop:Generator_ColumnVarNameInTable="columnfk_Etapa_Captura" msprop:Generator_ColumnPropNameInRow="fk_Etapa_Captura" msprop:Generator_ColumnPropNameInTable="fk_Etapa_CapturaColumn" msprop:Generator_UserColumnName="fk_Etapa_Captura" type="xs:int" />
+              <xs:element name="Eliminado" msprop:Generator_ColumnVarNameInTable="columnEliminado" msprop:Generator_ColumnPropNameInRow="Eliminado" msprop:Generator_ColumnPropNameInTable="EliminadoColumn" msprop:Generator_UserColumnName="Eliminado" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Ocultar" msprop:Generator_ColumnVarNameInTable="columnOcultar" msprop:Generator_ColumnPropNameInRow="Ocultar" msprop:Generator_ColumnPropNameInTable="OcultarColumn" msprop:Generator_UserColumnName="Ocultar" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TBL_Campo" msprop:Generator_TableClassName="TBL_CampoDataTable" msprop:Generator_TableVarName="tableTBL_Campo" msprop:Generator_TablePropName="TBL_Campo" msprop:Generator_RowDeletingName="TBL_CampoRowDeleting" msprop:Generator_RowChangingName="TBL_CampoRowChanging" msprop:Generator_RowEvHandlerName="TBL_CampoRowChangeEventHandler" msprop:Generator_RowDeletedName="TBL_CampoRowDeleted" msprop:Generator_UserTableName="TBL_Campo" msprop:Generator_RowChangedName="TBL_CampoRowChanged" msprop:Generator_RowEvArgName="TBL_CampoRowChangeEvent" msprop:Generator_RowClassName="TBL_CampoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Campo" msprop:Generator_ColumnVarNameInTable="columnid_Campo" msprop:Generator_ColumnPropNameInRow="id_Campo" msprop:Generator_ColumnPropNameInTable="id_CampoColumn" msprop:Generator_UserColumnName="id_Campo" type="xs:short" />
+              <xs:element name="Nombre_Campo" msprop:Generator_ColumnVarNameInTable="columnNombre_Campo" msprop:Generator_ColumnPropNameInRow="Nombre_Campo" msprop:Generator_ColumnPropNameInTable="Nombre_CampoColumn" msprop:Generator_UserColumnName="Nombre_Campo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TBL_Etapa" msprop:Generator_TableClassName="TBL_EtapaDataTable" msprop:Generator_TableVarName="tableTBL_Etapa" msprop:Generator_TablePropName="TBL_Etapa" msprop:Generator_RowDeletingName="TBL_EtapaRowDeleting" msprop:Generator_RowChangingName="TBL_EtapaRowChanging" msprop:Generator_RowEvHandlerName="TBL_EtapaRowChangeEventHandler" msprop:Generator_RowDeletedName="TBL_EtapaRowDeleted" msprop:Generator_UserTableName="TBL_Etapa" msprop:Generator_RowChangedName="TBL_EtapaRowChanged" msprop:Generator_RowEvArgName="TBL_EtapaRowChangeEvent" msprop:Generator_RowClassName="TBL_EtapaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Campo" msprop:Generator_ColumnVarNameInTable="columnid_Campo" msprop:Generator_ColumnPropNameInRow="id_Campo" msprop:Generator_ColumnPropNameInTable="id_CampoColumn" msprop:Generator_UserColumnName="id_Campo" type="xs:short" />
+              <xs:element name="Id_Etapa" msprop:Generator_ColumnVarNameInTable="columnId_Etapa" msprop:Generator_ColumnPropNameInRow="Id_Etapa" msprop:Generator_ColumnPropNameInTable="Id_EtapaColumn" msprop:Generator_UserColumnName="Id_Etapa" type="xs:unsignedByte" />
+              <xs:element name="Nombre_Etapa" msprop:Generator_ColumnVarNameInTable="columnNombre_Etapa" msprop:Generator_ColumnPropNameInRow="Nombre_Etapa" msprop:Generator_ColumnPropNameInTable="Nombre_EtapaColumn" msprop:Generator_UserColumnName="Nombre_Etapa" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TBL_CampoTrigger" msprop:Generator_TableClassName="TBL_CampoTriggerDataTable" msprop:Generator_TableVarName="tableTBL_CampoTrigger" msprop:Generator_TablePropName="TBL_CampoTrigger" msprop:Generator_RowDeletingName="TBL_CampoTriggerRowDeleting" msprop:Generator_RowChangingName="TBL_CampoTriggerRowChanging" msprop:Generator_RowEvHandlerName="TBL_CampoTriggerRowChangeEventHandler" msprop:Generator_RowDeletedName="TBL_CampoTriggerRowDeleted" msprop:Generator_UserTableName="TBL_CampoTrigger" msprop:Generator_RowChangedName="TBL_CampoTriggerRowChanged" msprop:Generator_RowEvArgName="TBL_CampoTriggerRowChangeEvent" msprop:Generator_RowClassName="TBL_CampoTriggerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Etapa" msprop:Generator_ColumnVarNameInTable="columnid_Etapa" msprop:Generator_ColumnPropNameInRow="id_Etapa" msprop:Generator_ColumnPropNameInTable="id_EtapaColumn" msprop:Generator_UserColumnName="id_Etapa" type="xs:unsignedByte" />
+              <xs:element name="id_Campo" msprop:Generator_ColumnVarNameInTable="columnid_Campo" msprop:Generator_ColumnPropNameInRow="id_Campo" msprop:Generator_ColumnPropNameInTable="id_CampoColumn" msprop:Generator_UserColumnName="id_Campo" type="xs:short" minOccurs="0" />
+              <xs:element name="fk_Campo" msprop:Generator_ColumnVarNameInTable="columnfk_Campo" msprop:Generator_ColumnPropNameInRow="fk_Campo" msprop:Generator_ColumnPropNameInTable="fk_CampoColumn" msprop:Generator_UserColumnName="fk_Campo" type="xs:short" minOccurs="0" />
+              <xs:element name="fk_Documento" msprop:Generator_ColumnVarNameInTable="columnfk_Documento" msprop:Generator_ColumnPropNameInRow="fk_Documento" msprop:Generator_ColumnPropNameInTable="fk_DocumentoColumn" msprop:Generator_UserColumnName="fk_Documento" type="xs:int" minOccurs="0" />
+              <xs:element name="Nombre_Campo" msprop:Generator_ColumnVarNameInTable="columnNombre_Campo" msprop:Generator_ColumnPropNameInRow="Nombre_Campo" msprop:Generator_ColumnPropNameInTable="Nombre_CampoColumn" msprop:Generator_UserColumnName="Nombre_Campo" type="xs:string" minOccurs="0" />
+              <xs:element name="fk_Validacion" msprop:Generator_ColumnVarNameInTable="columnfk_Validacion" msprop:Generator_ColumnPropNameInRow="fk_Validacion" msprop:Generator_ColumnPropNameInTable="fk_ValidacionColumn" msprop:Generator_UserColumnName="fk_Validacion" type="xs:short" />
+              <xs:element name="Operador_Validacion" msprop:Generator_ColumnVarNameInTable="columnOperador_Validacion" msprop:Generator_ColumnPropNameInRow="Operador_Validacion" msprop:Generator_ColumnPropNameInTable="Operador_ValidacionColumn" msprop:Generator_UserColumnName="Operador_Validacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" msprop:Generator_ColumnVarNameInTable="columnValor" msprop:Generator_ColumnPropNameInRow="Valor" msprop:Generator_ColumnPropNameInTable="ValorColumn" msprop:Generator_UserColumnName="Valor" type="xs:string" minOccurs="0" />
+              <xs:element name="Ocultar" msprop:Generator_ColumnVarNameInTable="columnOcultar" msprop:Generator_ColumnPropNameInRow="Ocultar" msprop:Generator_ColumnPropNameInTable="OcultarColumn" msprop:Generator_UserColumnName="Ocultar" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="ListaKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Lista" />
+      <xs:field xpath="mstns:id_Lista" />
+    </xs:unique>
+    <xs:unique name="EtapaKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Etapa" />
+      <xs:field xpath="mstns:id_Lista" />
+      <xs:field xpath="mstns:id_Etapa" />
+    </xs:unique>
+    <xs:unique name="CampoTriggerKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CampoTrigger" />
+      <xs:field xpath="mstns:id_Lista" />
+      <xs:field xpath="mstns:id_Etapa" />
+      <xs:field xpath="mstns:id_Campo" />
+      <xs:field xpath="mstns:id_Campo_Tabla" />
+    </xs:unique>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Campo" />
+      <xs:field xpath="mstns:id_Campo" />
+      <xs:field xpath="mstns:id_Campo_Tabla" />
+    </xs:unique>
+    <xs:unique name="ValidacionKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Validacion" />
+      <xs:field xpath="mstns:fk_Validacion_Ocultar" />
+      <xs:field xpath="mstns:fk_Documento" />
+      <xs:field xpath="mstns:fk_Etapa_Captura" />
+    </xs:unique>
+    <xs:unique name="Constraint2" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TBL_Campo" />
+      <xs:field xpath="mstns:id_Campo" />
+    </xs:unique>
+    <xs:unique name="TBL_EtapaKey1">
+      <xs:selector xpath=".//mstns:TBL_Etapa" />
+      <xs:field xpath="mstns:id_Campo" />
+      <xs:field xpath="mstns:Id_Etapa" />
+    </xs:unique>
+    <xs:unique name="TBL_CampoTriggerKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TBL_CampoTrigger" />
+      <xs:field xpath="mstns:id_Etapa" />
+      <xs:field xpath="mstns:fk_Validacion" />
+    </xs:unique>
+    <xs:keyref name="FK_Etapa_CampoTrigger" refer="EtapaKey1" msprop:rel_Generator_UserChildTable="CampoTrigger" msprop:rel_Generator_ChildPropName="GetCampoTriggerRows" msprop:rel_Generator_UserRelationName="FK_Etapa_CampoTrigger" msprop:rel_Generator_ParentPropName="EtapaRowParent" msprop:rel_Generator_RelationVarName="relationFK_Etapa_CampoTrigger" msprop:rel_Generator_UserParentTable="Etapa">
+      <xs:selector xpath=".//mstns:CampoTrigger" />
+      <xs:field xpath="mstns:id_Lista" />
+      <xs:field xpath="mstns:id_Etapa" />
+    </xs:keyref>
+    <xs:keyref name="FK_Lista_Etapa" refer="ListaKey1" msprop:rel_Generator_UserChildTable="Etapa" msprop:rel_Generator_ChildPropName="GetEtapaRows" msprop:rel_Generator_UserRelationName="FK_Lista_Etapa" msprop:rel_Generator_ParentPropName="ListaRow" msprop:rel_Generator_RelationVarName="relationFK_Lista_Etapa" msprop:rel_Generator_UserParentTable="Lista">
+      <xs:selector xpath=".//mstns:Etapa" />
+      <xs:field xpath="mstns:id_Lista" />
+    </xs:keyref>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_TBL_Campo_TBL_Etapa" msdata:parent="TBL_Campo" msdata:child="TBL_Etapa" msdata:parentkey="id_Campo" msdata:childkey="id_Campo" msprop:Generator_UserChildTable="TBL_Etapa" msprop:Generator_ChildPropName="GetTBL_EtapaRows" msprop:Generator_UserRelationName="FK_TBL_Campo_TBL_Etapa" msprop:Generator_ParentPropName="TBL_CampoRow" msprop:Generator_RelationVarName="relationFK_TBL_Campo_TBL_Etapa" msprop:Generator_UserParentTable="TBL_Campo" />
+      <msdata:Relationship name="FK_TBL_Etapa_TBL_CampoTrigger" msdata:parent="TBL_Etapa" msdata:child="TBL_CampoTrigger" msdata:parentkey="Id_Etapa" msdata:childkey="id_Etapa" msprop:Generator_UserChildTable="TBL_CampoTrigger" msprop:Generator_ChildPropName="GetTBL_CampoTriggerRows" msprop:Generator_UserRelationName="FK_TBL_Etapa_TBL_CampoTrigger" msprop:Generator_ParentPropName="TBL_EtapaRow" msprop:Generator_RelationVarName="relationFK_TBL_Etapa_TBL_CampoTrigger" msprop:Generator_UserParentTable="TBL_Etapa" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

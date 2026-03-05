@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PluginsTables" targetNamespace="http://tempuri.org/PluginsTables.xsd" xmlns:mstns="http://tempuri.org/PluginsTables.xsd" xmlns="http://tempuri.org/PluginsTables.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PluginsTables" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PluginsTables" msprop:Generator_UserDSName="PluginsTables">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Precintos" msprop:Generator_TableClassName="PrecintosDataTable" msprop:Generator_TableVarName="tablePrecintos" msprop:Generator_TablePropName="Precintos" msprop:Generator_RowDeletingName="PrecintosRowDeleting" msprop:Generator_UserTableName="Precintos" msprop:Generator_RowChangingName="PrecintosRowChanging" msprop:Generator_RowEvHandlerName="PrecintosRowChangeEventHandler" msprop:Generator_RowDeletedName="PrecintosRowDeleted" msprop:Generator_RowEvArgName="PrecintosRowChangeEvent" msprop:Generator_RowChangedName="PrecintosRowChanged" msprop:Generator_RowClassName="PrecintosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Codigo_Precinto" msprop:Generator_ColumnVarNameInTable="columnCodigo_Precinto" msprop:Generator_ColumnPropNameInRow="Codigo_Precinto" msprop:Generator_ColumnPropNameInTable="Codigo_PrecintoColumn" msprop:Generator_UserColumnName="Codigo_Precinto" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

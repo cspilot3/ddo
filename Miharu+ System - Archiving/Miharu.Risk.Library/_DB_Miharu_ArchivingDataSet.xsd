@@ -1,0 +1,946 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_DB_Miharu_ArchivingDataSet" targetNamespace="http://tempuri.org/_DB_Miharu_ArchivingDataSet.xsd" xmlns:mstns="http://tempuri.org/_DB_Miharu_ArchivingDataSet.xsd" xmlns="http://tempuri.org/_DB_Miharu_ArchivingDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DB_Miharu_ArchivingConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="DB_Miharu_ArchivingConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Miharu.Risk.Library.My.MySettings.GlobalReference.Default.DB_Miharu_ArchivingConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CTA_Nuevos_X_OTTableAdapter" GeneratorDataComponentClassName="CTA_Nuevos_X_OTTableAdapter" Name="CTA_Nuevos_X_OT" UserDataComponentName="CTA_Nuevos_X_OTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_Miharu_ArchivingConnectionString (MySettings)" DbObjectName="[DB_Miharu.Archiving].Report.CTA_Nuevos_X_OT" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Entidad, Proyecto, Esquema, OT, Llave_1, Llave_2, CBarras_Folder, Documento, CBarras_File FROM Report.CTA_Nuevos_X_OT</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Entidad" DataSetColumn="Entidad" />
+              <Mapping SourceColumn="Proyecto" DataSetColumn="Proyecto" />
+              <Mapping SourceColumn="Esquema" DataSetColumn="Esquema" />
+              <Mapping SourceColumn="OT" DataSetColumn="OT" />
+              <Mapping SourceColumn="Llave_1" DataSetColumn="Llave_1" />
+              <Mapping SourceColumn="Llave_2" DataSetColumn="Llave_2" />
+              <Mapping SourceColumn="CBarras_Folder" DataSetColumn="CBarras_Folder" />
+              <Mapping SourceColumn="Documento" DataSetColumn="Documento" />
+              <Mapping SourceColumn="CBarras_File" DataSetColumn="CBarras_File" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CTA_Devolucion_X_OTTableAdapter" GeneratorDataComponentClassName="CTA_Devolucion_X_OTTableAdapter" Name="CTA_Devolucion_X_OT" UserDataComponentName="CTA_Devolucion_X_OTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_Miharu_ArchivingConnectionString (MySettings)" DbObjectName="[DB_Miharu.Archiving].Report.CTA_Devolucion_X_OT" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Entidad, Proyecto, Esquema, OT, Llave_1, Llave_2, CBarras_Folder, Documento, CBarras_File FROM Report.CTA_Devolucion_X_OT</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Entidad" DataSetColumn="Entidad" />
+              <Mapping SourceColumn="Proyecto" DataSetColumn="Proyecto" />
+              <Mapping SourceColumn="Esquema" DataSetColumn="Esquema" />
+              <Mapping SourceColumn="OT" DataSetColumn="OT" />
+              <Mapping SourceColumn="Llave_1" DataSetColumn="Llave_1" />
+              <Mapping SourceColumn="Llave_2" DataSetColumn="Llave_2" />
+              <Mapping SourceColumn="CBarras_Folder" DataSetColumn="CBarras_Folder" />
+              <Mapping SourceColumn="Documento" DataSetColumn="Documento" />
+              <Mapping SourceColumn="CBarras_File" DataSetColumn="CBarras_File" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CTA_Adicion_X_OTTableAdapter" GeneratorDataComponentClassName="CTA_Adicion_X_OTTableAdapter" Name="CTA_Adicion_X_OT" UserDataComponentName="CTA_Adicion_X_OTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_Miharu_ArchivingConnectionString (MySettings)" DbObjectName="[DB_Miharu.Archiving].Report.CTA_Adicion_X_OT" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Entidad, Proyecto, Esquema, OT, Llave_1, Llave_2, CBarras_Folder, Documento, CBarras_File FROM Report.CTA_Adicion_X_OT</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Entidad" DataSetColumn="Entidad" />
+              <Mapping SourceColumn="Proyecto" DataSetColumn="Proyecto" />
+              <Mapping SourceColumn="Esquema" DataSetColumn="Esquema" />
+              <Mapping SourceColumn="OT" DataSetColumn="OT" />
+              <Mapping SourceColumn="Llave_1" DataSetColumn="Llave_1" />
+              <Mapping SourceColumn="Llave_2" DataSetColumn="Llave_2" />
+              <Mapping SourceColumn="CBarras_Folder" DataSetColumn="CBarras_Folder" />
+              <Mapping SourceColumn="Documento" DataSetColumn="Documento" />
+              <Mapping SourceColumn="CBarras_File" DataSetColumn="CBarras_File" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PA_Documentos_Sin_CustodiaTableAdapter" GeneratorDataComponentClassName="PA_Documentos_Sin_CustodiaTableAdapter" Name="PA_Documentos_Sin_Custodia" UserDataComponentName="PA_Documentos_Sin_CustodiaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_Miharu_ArchivingConnectionString (MySettings)" DbObjectName="[DB_Miharu.Archiving].Report.PA_Documentos_Sin_Custodia" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>Report.PA_Documentos_Sin_Custodia</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@fk_Entidad" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@fk_Proyecto" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="fk_Entidad" DataSetColumn="fk_Entidad" />
+              <Mapping SourceColumn="fk_Proyecto" DataSetColumn="fk_Proyecto" />
+              <Mapping SourceColumn="OT" DataSetColumn="OT" />
+              <Mapping SourceColumn="Expediente" DataSetColumn="Expediente" />
+              <Mapping SourceColumn="CBarras_Folder" DataSetColumn="CBarras_Folder" />
+              <Mapping SourceColumn="CBarras_File" DataSetColumn="CBarras_File" />
+              <Mapping SourceColumn="Nombre_Documento" DataSetColumn="Nombre_Documento" />
+              <Mapping SourceColumn="Estado_File" DataSetColumn="Estado_File" />
+              <Mapping SourceColumn="Nombre_Usuario" DataSetColumn="Nombre_Usuario" />
+              <Mapping SourceColumn="Registro_Tipo" DataSetColumn="Registro_Tipo" />
+              <Mapping SourceColumn="Nombre_PLlave" DataSetColumn="Nombre_PLlave" />
+              <Mapping SourceColumn="Valor_Llave" DataSetColumn="Valor_Llave" />
+              <Mapping SourceColumn="Fecha_OT" DataSetColumn="Fecha_OT1" />
+              <Mapping SourceColumn="Fecha_Destape" DataSetColumn="Fecha_Destape" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PA_Proyecto_LlaveTableAdapter" GeneratorDataComponentClassName="PA_Proyecto_LlaveTableAdapter" Name="PA_Proyecto_Llave" UserDataComponentName="PA_Proyecto_LlaveTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_Miharu_ArchivingConnectionString (MySettings)" DbObjectName="[DB_Miharu.Archiving].Report.PA_Proyecto_Llave" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>Report.PA_Proyecto_Llave</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@fk_Entidad" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@fk_Proyecto" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="fk_Entidad" DataSetColumn="fk_Entidad" />
+              <Mapping SourceColumn="id_Proyecto" DataSetColumn="id_Proyecto" />
+              <Mapping SourceColumn="id_Proyecto_Llave" DataSetColumn="id_Proyecto_Llave" />
+              <Mapping SourceColumn="Nombre_Proyecto_Llave" DataSetColumn="Nombre_Proyecto_Llave" />
+              <Mapping SourceColumn="Nombre_Campo_Tipo" DataSetColumn="Nombre_Campo_Tipo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PA_Reporte_EmpaqueTableAdapter" GeneratorDataComponentClassName="PA_Reporte_EmpaqueTableAdapter" Name="PA_Reporte_Empaque" UserDataComponentName="PA_Reporte_EmpaqueTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_Miharu_ArchivingConnectionString (MySettings)" DbObjectName="[DB_Miharu.Archiving].Report.PA_Reporte_Empaque" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>Report.PA_Reporte_Empaque</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@FechaInicio" Precision="23" ProviderType="DateTime" Scale="3" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@FechaFin" Precision="23" ProviderType="DateTime" Scale="3" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Entidad" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Proyecto" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="fk_Entidad_Cliente" DataSetColumn="fk_Entidad_Cliente" />
+              <Mapping SourceColumn="fk_Proyecto_Cliente" DataSetColumn="fk_Proyecto_Cliente" />
+              <Mapping SourceColumn="id_Caja" DataSetColumn="id_Caja" />
+              <Mapping SourceColumn="Nombres" DataSetColumn="Nombres" />
+              <Mapping SourceColumn="Entidad" DataSetColumn="Entidad" />
+              <Mapping SourceColumn="Proyecto" DataSetColumn="Proyecto" />
+              <Mapping SourceColumn="Esquema" DataSetColumn="Esquema" />
+              <Mapping SourceColumn="Codigo_Caja" DataSetColumn="Codigo_Caja" />
+              <Mapping SourceColumn="Total_Folder" DataSetColumn="Total_Folder" />
+              <Mapping SourceColumn="Total_File" DataSetColumn="Total_File" />
+              <Mapping SourceColumn="fk_Registro_Tipo" DataSetColumn="fk_Registro_Tipo" />
+              <Mapping SourceColumn="Fecha_Creacion" DataSetColumn="Fecha_Creacion1" />
+              <Mapping SourceColumn="Tipo" DataSetColumn="Tipo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PA_Resumen_OTTableAdapter" GeneratorDataComponentClassName="PA_Resumen_OTTableAdapter" Name="PA_Resumen_OT" UserDataComponentName="PA_Resumen_OTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_Miharu_ArchivingConnectionString (MySettings)" DbObjectName="[DB_Miharu.Archiving].Report.PA_Resumen_OT" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>Report.PA_Resumen_OT</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@FechaInicio" Precision="23" ProviderType="DateTime" Scale="3" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@FechaFin" Precision="23" ProviderType="DateTime" Scale="3" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Entidad" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Proyecto" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="OT" DataSetColumn="OT" />
+              <Mapping SourceColumn="fk_Entidad" DataSetColumn="fk_Entidad" />
+              <Mapping SourceColumn="fk_Proyecto" DataSetColumn="fk_Proyecto" />
+              <Mapping SourceColumn="fk_Esquema" DataSetColumn="fk_Esquema" />
+              <Mapping SourceColumn="FECHA_OT" DataSetColumn="FECHA_OT" />
+              <Mapping SourceColumn="FECHA_DESTAPE" DataSetColumn="FECHA_PRECINTO" />
+              <Mapping SourceColumn="CARGADOS" DataSetColumn="CARGADOS" />
+              <Mapping SourceColumn="DESTAPADOS" DataSetColumn="DESTAPADOS" />
+              <Mapping SourceColumn="PROCESADOS" DataSetColumn="PROCESADOS" />
+              <Mapping SourceColumn="EMPACADOS" DataSetColumn="EMPACADOS" />
+              <Mapping SourceColumn="CUSTODIADOS" DataSetColumn="CUSTODIADOS" />
+              <Mapping SourceColumn="FALTANTES" DataSetColumn="FALTANTES" />
+              <Mapping SourceColumn="SOBRANTES" DataSetColumn="SOBRANTES" />
+              <Mapping SourceColumn="Tipo" DataSetColumn="Tipo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PA_CarpetasFaltantesTableAdapter" GeneratorDataComponentClassName="PA_CarpetasFaltantesTableAdapter" Name="PA_CarpetasFaltantes" UserDataComponentName="PA_CarpetasFaltantesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_Miharu_ArchivingConnectionString (MySettings)" DbObjectName="[DB_Miharu.Archiving].Report.PA_CarpetasFaltantes" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>Report.PA_CarpetasFaltantes</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@fk_OT" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_OT" DataSetColumn="id_OT" />
+              <Mapping SourceColumn="Fecha_OT" DataSetColumn="Fecha_OT" />
+              <Mapping SourceColumn="Entidad" DataSetColumn="Entidad" />
+              <Mapping SourceColumn="Proyecto" DataSetColumn="Proyecto" />
+              <Mapping SourceColumn="Esquema" DataSetColumn="Esquema" />
+              <Mapping SourceColumn="fk_expediente" DataSetColumn="fk_expediente" />
+              <Mapping SourceColumn="Nombre_Llave" DataSetColumn="Nombre_Llave" />
+              <Mapping SourceColumn="Valor_Llave" DataSetColumn="Valor_Llave" />
+              <Mapping SourceColumn="fk_Estado" DataSetColumn="fk_Estado" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PA_CarpetasSobrantesTableAdapter" GeneratorDataComponentClassName="PA_CarpetasSobrantesTableAdapter" Name="PA_CarpetasSobrantes" UserDataComponentName="PA_CarpetasSobrantesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_Miharu_ArchivingConnectionString (MySettings)" DbObjectName="[DB_Miharu.Archiving].Report.PA_CarpetasSobrantes" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>Report.PA_CarpetasSobrantes</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@fk_OT" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_OT" DataSetColumn="id_OT" />
+              <Mapping SourceColumn="Fecha_OT" DataSetColumn="Fecha_OT" />
+              <Mapping SourceColumn="Entidad" DataSetColumn="Entidad" />
+              <Mapping SourceColumn="Proyecto" DataSetColumn="Proyecto" />
+              <Mapping SourceColumn="Esquema" DataSetColumn="Esquema" />
+              <Mapping SourceColumn="fk_expediente" DataSetColumn="fk_expediente" />
+              <Mapping SourceColumn="Nombre_Llave" DataSetColumn="Nombre_Llave" />
+              <Mapping SourceColumn="Valor_Llave" DataSetColumn="Valor_Llave" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PA_DocumentosFaltantesTableAdapter" GeneratorDataComponentClassName="PA_DocumentosFaltantesTableAdapter" Name="PA_DocumentosFaltantes" UserDataComponentName="PA_DocumentosFaltantesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_Miharu_ArchivingConnectionString (MySettings)" DbObjectName="[DB_Miharu.Archiving].Report.PA_DocumentosFaltantes" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>Report.PA_DocumentosFaltantes</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@fk_OT" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_OT" DataSetColumn="id_OT" />
+              <Mapping SourceColumn="Fecha_OT" DataSetColumn="Fecha_OT" />
+              <Mapping SourceColumn="Entidad" DataSetColumn="Entidad" />
+              <Mapping SourceColumn="Proyecto" DataSetColumn="Proyecto" />
+              <Mapping SourceColumn="Esquema" DataSetColumn="Esquema" />
+              <Mapping SourceColumn="fk_expediente" DataSetColumn="fk_expediente" />
+              <Mapping SourceColumn="Nombre_Llave" DataSetColumn="Nombre_Llave" />
+              <Mapping SourceColumn="Valor_Llave" DataSetColumn="Valor_Llave" />
+              <Mapping SourceColumn="Nombre_Documento" DataSetColumn="Nombre_Documento" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PA_DocumentosSobrantesTableAdapter" GeneratorDataComponentClassName="PA_DocumentosSobrantesTableAdapter" Name="PA_DocumentosSobrantes" UserDataComponentName="PA_DocumentosSobrantesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_Miharu_ArchivingConnectionString (MySettings)" DbObjectName="[DB_Miharu.Archiving].Report.PA_DocumentosSobrantes" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>Report.PA_DocumentosSobrantes</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@fk_OT" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_OT" DataSetColumn="id_OT" />
+              <Mapping SourceColumn="Fecha_OT" DataSetColumn="Fecha_OT" />
+              <Mapping SourceColumn="Entidad" DataSetColumn="Entidad" />
+              <Mapping SourceColumn="Proyecto" DataSetColumn="Proyecto" />
+              <Mapping SourceColumn="Esquema" DataSetColumn="Esquema" />
+              <Mapping SourceColumn="fk_expediente" DataSetColumn="fk_expediente" />
+              <Mapping SourceColumn="Nombre_Llave" DataSetColumn="Nombre_Llave" />
+              <Mapping SourceColumn="Valor_Llave" DataSetColumn="Valor_Llave" />
+              <Mapping SourceColumn="Nombre_Documento" DataSetColumn="Nombre_Documento" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RPT_Universal_vs_ParcialTableAdapter" GeneratorDataComponentClassName="RPT_Universal_vs_ParcialTableAdapter" Name="RPT_Universal_vs_Parcial" UserDataComponentName="RPT_Universal_vs_ParcialTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_Miharu_ArchivingConnectionString (MySettings)" DbObjectName="[DB_Miharu.Archiving].dbo.RPT_Universal_vs_Parcial" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        RPT_Universal_vs_Parcial.*
+FROM            RPT_Universal_vs_Parcial</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nombre_entidad" DataSetColumn="nombre_entidad" />
+              <Mapping SourceColumn="nombre_proyecto" DataSetColumn="nombre_proyecto" />
+              <Mapping SourceColumn="id_Universal_Folder" DataSetColumn="id_Universal_Folder" />
+              <Mapping SourceColumn="nombre_proyecto_llave" DataSetColumn="nombre_proyecto_llave" />
+              <Mapping SourceColumn="Valor_Universal_Llave" DataSetColumn="Valor_Universal_Llave" />
+              <Mapping SourceColumn="fk_Universal_Folder_Estado" DataSetColumn="fk_Universal_Folder_Estado" />
+              <Mapping SourceColumn="fk_entidad" DataSetColumn="fk_entidad" />
+              <Mapping SourceColumn="fk_proyecto" DataSetColumn="fk_proyecto" />
+              <Mapping SourceColumn="PorcentageRecibidas" DataSetColumn="PorcentageRecibidas" />
+              <Mapping SourceColumn="PorcentageSobrantes" DataSetColumn="PorcentageSobrantes" />
+              <Mapping SourceColumn="Recibidas" DataSetColumn="Recibidas" />
+              <Mapping SourceColumn="Sobrantes" DataSetColumn="Sobrantes" />
+              <Mapping SourceColumn="TotalCarpetas" DataSetColumn="TotalCarpetas" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_DB_Miharu_ArchivingDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_DB_Miharu_ArchivingDataSet" msprop:Generator_UserDSName="_DB_Miharu_ArchivingDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CTA_Nuevos_X_OT" msprop:Generator_TableClassName="CTA_Nuevos_X_OTDataTable" msprop:Generator_TableVarName="tableCTA_Nuevos_X_OT" msprop:Generator_TablePropName="CTA_Nuevos_X_OT" msprop:Generator_RowDeletingName="CTA_Nuevos_X_OTRowDeleting" msprop:Generator_UserTableName="CTA_Nuevos_X_OT" msprop:Generator_RowChangingName="CTA_Nuevos_X_OTRowChanging" msprop:Generator_RowEvHandlerName="CTA_Nuevos_X_OTRowChangeEventHandler" msprop:Generator_RowDeletedName="CTA_Nuevos_X_OTRowDeleted" msprop:Generator_RowEvArgName="CTA_Nuevos_X_OTRowChangeEvent" msprop:Generator_RowChangedName="CTA_Nuevos_X_OTRowChanged" msprop:Generator_RowClassName="CTA_Nuevos_X_OTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Entidad" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEntidad" msprop:Generator_ColumnPropNameInRow="Entidad" msprop:Generator_ColumnPropNameInTable="EntidadColumn" msprop:Generator_UserColumnName="Entidad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Proyecto" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnProyecto" msprop:Generator_ColumnPropNameInRow="Proyecto" msprop:Generator_ColumnPropNameInTable="ProyectoColumn" msprop:Generator_UserColumnName="Proyecto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Esquema" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEsquema" msprop:Generator_ColumnPropNameInRow="Esquema" msprop:Generator_ColumnPropNameInTable="EsquemaColumn" msprop:Generator_UserColumnName="Esquema" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OT" msprop:Generator_ColumnVarNameInTable="columnOT" msprop:Generator_ColumnPropNameInRow="OT" msprop:Generator_ColumnPropNameInTable="OTColumn" msprop:Generator_UserColumnName="OT" type="xs:int" />
+              <xs:element name="Llave_1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnLlave_1" msprop:Generator_ColumnPropNameInRow="Llave_1" msprop:Generator_ColumnPropNameInTable="Llave_1Column" msprop:Generator_UserColumnName="Llave_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Llave_2" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnLlave_2" msprop:Generator_ColumnPropNameInRow="Llave_2" msprop:Generator_ColumnPropNameInTable="Llave_2Column" msprop:Generator_UserColumnName="Llave_2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CBarras_Folder" msprop:Generator_ColumnVarNameInTable="columnCBarras_Folder" msprop:Generator_ColumnPropNameInRow="CBarras_Folder" msprop:Generator_ColumnPropNameInTable="CBarras_FolderColumn" msprop:Generator_UserColumnName="CBarras_Folder">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Documento" msprop:Generator_ColumnVarNameInTable="columnDocumento" msprop:Generator_ColumnPropNameInRow="Documento" msprop:Generator_ColumnPropNameInTable="DocumentoColumn" msprop:Generator_UserColumnName="Documento">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CBarras_File" msprop:Generator_ColumnVarNameInTable="columnCBarras_File" msprop:Generator_ColumnPropNameInRow="CBarras_File" msprop:Generator_ColumnPropNameInTable="CBarras_FileColumn" msprop:Generator_UserColumnName="CBarras_File">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CTA_Devolucion_X_OT" msprop:Generator_TableClassName="CTA_Devolucion_X_OTDataTable" msprop:Generator_TableVarName="tableCTA_Devolucion_X_OT" msprop:Generator_TablePropName="CTA_Devolucion_X_OT" msprop:Generator_RowDeletingName="CTA_Devolucion_X_OTRowDeleting" msprop:Generator_UserTableName="CTA_Devolucion_X_OT" msprop:Generator_RowChangingName="CTA_Devolucion_X_OTRowChanging" msprop:Generator_RowEvHandlerName="CTA_Devolucion_X_OTRowChangeEventHandler" msprop:Generator_RowDeletedName="CTA_Devolucion_X_OTRowDeleted" msprop:Generator_RowEvArgName="CTA_Devolucion_X_OTRowChangeEvent" msprop:Generator_RowChangedName="CTA_Devolucion_X_OTRowChanged" msprop:Generator_RowClassName="CTA_Devolucion_X_OTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Entidad" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEntidad" msprop:Generator_ColumnPropNameInRow="Entidad" msprop:Generator_ColumnPropNameInTable="EntidadColumn" msprop:Generator_UserColumnName="Entidad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Proyecto" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnProyecto" msprop:Generator_ColumnPropNameInRow="Proyecto" msprop:Generator_ColumnPropNameInTable="ProyectoColumn" msprop:Generator_UserColumnName="Proyecto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Esquema" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEsquema" msprop:Generator_ColumnPropNameInRow="Esquema" msprop:Generator_ColumnPropNameInTable="EsquemaColumn" msprop:Generator_UserColumnName="Esquema" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OT" msprop:Generator_ColumnVarNameInTable="columnOT" msprop:Generator_ColumnPropNameInRow="OT" msprop:Generator_ColumnPropNameInTable="OTColumn" msprop:Generator_UserColumnName="OT" type="xs:int" />
+              <xs:element name="Llave_1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnLlave_1" msprop:Generator_ColumnPropNameInRow="Llave_1" msprop:Generator_ColumnPropNameInTable="Llave_1Column" msprop:Generator_UserColumnName="Llave_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Llave_2" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnLlave_2" msprop:Generator_ColumnPropNameInRow="Llave_2" msprop:Generator_ColumnPropNameInTable="Llave_2Column" msprop:Generator_UserColumnName="Llave_2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CBarras_Folder" msprop:Generator_ColumnVarNameInTable="columnCBarras_Folder" msprop:Generator_ColumnPropNameInRow="CBarras_Folder" msprop:Generator_ColumnPropNameInTable="CBarras_FolderColumn" msprop:Generator_UserColumnName="CBarras_Folder">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Documento" msprop:Generator_ColumnVarNameInTable="columnDocumento" msprop:Generator_ColumnPropNameInRow="Documento" msprop:Generator_ColumnPropNameInTable="DocumentoColumn" msprop:Generator_UserColumnName="Documento">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CBarras_File" msprop:Generator_ColumnVarNameInTable="columnCBarras_File" msprop:Generator_ColumnPropNameInRow="CBarras_File" msprop:Generator_ColumnPropNameInTable="CBarras_FileColumn" msprop:Generator_UserColumnName="CBarras_File">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CTA_Adicion_X_OT" msprop:Generator_TableClassName="CTA_Adicion_X_OTDataTable" msprop:Generator_TableVarName="tableCTA_Adicion_X_OT" msprop:Generator_TablePropName="CTA_Adicion_X_OT" msprop:Generator_RowDeletingName="CTA_Adicion_X_OTRowDeleting" msprop:Generator_UserTableName="CTA_Adicion_X_OT" msprop:Generator_RowChangingName="CTA_Adicion_X_OTRowChanging" msprop:Generator_RowEvHandlerName="CTA_Adicion_X_OTRowChangeEventHandler" msprop:Generator_RowDeletedName="CTA_Adicion_X_OTRowDeleted" msprop:Generator_RowEvArgName="CTA_Adicion_X_OTRowChangeEvent" msprop:Generator_RowChangedName="CTA_Adicion_X_OTRowChanged" msprop:Generator_RowClassName="CTA_Adicion_X_OTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Entidad" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEntidad" msprop:Generator_ColumnPropNameInRow="Entidad" msprop:Generator_ColumnPropNameInTable="EntidadColumn" msprop:Generator_UserColumnName="Entidad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Proyecto" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnProyecto" msprop:Generator_ColumnPropNameInRow="Proyecto" msprop:Generator_ColumnPropNameInTable="ProyectoColumn" msprop:Generator_UserColumnName="Proyecto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Esquema" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEsquema" msprop:Generator_ColumnPropNameInRow="Esquema" msprop:Generator_ColumnPropNameInTable="EsquemaColumn" msprop:Generator_UserColumnName="Esquema" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OT" msprop:Generator_ColumnVarNameInTable="columnOT" msprop:Generator_ColumnPropNameInRow="OT" msprop:Generator_ColumnPropNameInTable="OTColumn" msprop:Generator_UserColumnName="OT" type="xs:int" />
+              <xs:element name="Llave_1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnLlave_1" msprop:Generator_ColumnPropNameInRow="Llave_1" msprop:Generator_ColumnPropNameInTable="Llave_1Column" msprop:Generator_UserColumnName="Llave_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Llave_2" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnLlave_2" msprop:Generator_ColumnPropNameInRow="Llave_2" msprop:Generator_ColumnPropNameInTable="Llave_2Column" msprop:Generator_UserColumnName="Llave_2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CBarras_Folder" msprop:Generator_ColumnVarNameInTable="columnCBarras_Folder" msprop:Generator_ColumnPropNameInRow="CBarras_Folder" msprop:Generator_ColumnPropNameInTable="CBarras_FolderColumn" msprop:Generator_UserColumnName="CBarras_Folder">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Documento" msprop:Generator_ColumnVarNameInTable="columnDocumento" msprop:Generator_ColumnPropNameInRow="Documento" msprop:Generator_ColumnPropNameInTable="DocumentoColumn" msprop:Generator_UserColumnName="Documento">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CBarras_File" msprop:Generator_ColumnVarNameInTable="columnCBarras_File" msprop:Generator_ColumnPropNameInRow="CBarras_File" msprop:Generator_ColumnPropNameInTable="CBarras_FileColumn" msprop:Generator_UserColumnName="CBarras_File">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PA_Documentos_Sin_Custodia" msprop:Generator_TableClassName="PA_Documentos_Sin_CustodiaDataTable" msprop:Generator_TableVarName="tablePA_Documentos_Sin_Custodia" msprop:Generator_TablePropName="PA_Documentos_Sin_Custodia" msprop:Generator_RowDeletingName="PA_Documentos_Sin_CustodiaRowDeleting" msprop:Generator_UserTableName="PA_Documentos_Sin_Custodia" msprop:Generator_RowChangingName="PA_Documentos_Sin_CustodiaRowChanging" msprop:Generator_RowEvHandlerName="PA_Documentos_Sin_CustodiaRowChangeEventHandler" msprop:Generator_RowDeletedName="PA_Documentos_Sin_CustodiaRowDeleted" msprop:Generator_RowEvArgName="PA_Documentos_Sin_CustodiaRowChangeEvent" msprop:Generator_RowChangedName="PA_Documentos_Sin_CustodiaRowChanged" msprop:Generator_RowClassName="PA_Documentos_Sin_CustodiaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fk_Entidad" msprop:Generator_ColumnVarNameInTable="columnfk_Entidad" msprop:Generator_ColumnPropNameInRow="fk_Entidad" msprop:Generator_ColumnPropNameInTable="fk_EntidadColumn" msprop:Generator_UserColumnName="fk_Entidad" type="xs:short" />
+              <xs:element name="fk_Proyecto" msprop:Generator_ColumnVarNameInTable="columnfk_Proyecto" msprop:Generator_ColumnPropNameInRow="fk_Proyecto" msprop:Generator_ColumnPropNameInTable="fk_ProyectoColumn" msprop:Generator_UserColumnName="fk_Proyecto" type="xs:short" />
+              <xs:element name="OT" msprop:Generator_ColumnVarNameInTable="columnOT" msprop:Generator_ColumnPropNameInRow="OT" msprop:Generator_ColumnPropNameInTable="OTColumn" msprop:Generator_UserColumnName="OT" type="xs:int" />
+              <xs:element name="Fecha_OT" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFecha_OT" msprop:Generator_ColumnPropNameInRow="Fecha_OT" msprop:Generator_ColumnPropNameInTable="Fecha_OTColumn" msprop:Generator_UserColumnName="Fecha_OT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expediente" msprop:Generator_ColumnVarNameInTable="columnExpediente" msprop:Generator_ColumnPropNameInRow="Expediente" msprop:Generator_ColumnPropNameInTable="ExpedienteColumn" msprop:Generator_UserColumnName="Expediente" type="xs:long" />
+              <xs:element name="CBarras_Folder" msprop:Generator_ColumnVarNameInTable="columnCBarras_Folder" msprop:Generator_ColumnPropNameInRow="CBarras_Folder" msprop:Generator_ColumnPropNameInTable="CBarras_FolderColumn" msprop:Generator_UserColumnName="CBarras_Folder">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CBarras_File" msprop:Generator_ColumnVarNameInTable="columnCBarras_File" msprop:Generator_ColumnPropNameInRow="CBarras_File" msprop:Generator_ColumnPropNameInTable="CBarras_FileColumn" msprop:Generator_UserColumnName="CBarras_File">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre_Documento" msprop:Generator_ColumnVarNameInTable="columnNombre_Documento" msprop:Generator_ColumnPropNameInRow="Nombre_Documento" msprop:Generator_ColumnPropNameInTable="Nombre_DocumentoColumn" msprop:Generator_UserColumnName="Nombre_Documento">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Estado_File" msprop:Generator_ColumnVarNameInTable="columnEstado_File" msprop:Generator_ColumnPropNameInRow="Estado_File" msprop:Generator_ColumnPropNameInTable="Estado_FileColumn" msprop:Generator_UserColumnName="Estado_File">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre_Usuario" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNombre_Usuario" msprop:Generator_ColumnPropNameInRow="Nombre_Usuario" msprop:Generator_ColumnPropNameInTable="Nombre_UsuarioColumn" msprop:Generator_UserColumnName="Nombre_Usuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="61" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Registro_Tipo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnRegistro_Tipo" msprop:Generator_ColumnPropNameInRow="Registro_Tipo" msprop:Generator_ColumnPropNameInTable="Registro_TipoColumn" msprop:Generator_UserColumnName="Registro_Tipo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre_PLlave" msprop:Generator_ColumnVarNameInTable="columnNombre_PLlave" msprop:Generator_ColumnPropNameInRow="Nombre_PLlave" msprop:Generator_ColumnPropNameInTable="Nombre_PLlaveColumn" msprop:Generator_UserColumnName="Nombre_PLlave">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Valor_Llave" msprop:Generator_ColumnVarNameInTable="columnValor_Llave" msprop:Generator_ColumnPropNameInRow="Valor_Llave" msprop:Generator_ColumnPropNameInTable="Valor_LlaveColumn" msprop:Generator_UserColumnName="Valor_Llave" type="xs:anyType" minOccurs="0" />
+              <xs:element name="Fecha_OT1" msdata:Caption="Fecha_OT" msprop:Generator_ColumnVarNameInTable="columnFecha_OT1" msprop:Generator_ColumnPropNameInRow="Fecha_OT1" msprop:Generator_ColumnPropNameInTable="Fecha_OT1Column" msprop:Generator_UserColumnName="Fecha_OT1" type="xs:dateTime" />
+              <xs:element name="Fecha_Destape" msprop:Generator_ColumnVarNameInTable="columnFecha_Destape" msprop:Generator_ColumnPropNameInRow="Fecha_Destape" msprop:Generator_ColumnPropNameInTable="Fecha_DestapeColumn" msprop:Generator_UserColumnName="Fecha_Destape" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PA_Proyecto_Llave" msprop:Generator_TableClassName="PA_Proyecto_LlaveDataTable" msprop:Generator_TableVarName="tablePA_Proyecto_Llave" msprop:Generator_TablePropName="PA_Proyecto_Llave" msprop:Generator_RowDeletingName="PA_Proyecto_LlaveRowDeleting" msprop:Generator_UserTableName="PA_Proyecto_Llave" msprop:Generator_RowChangingName="PA_Proyecto_LlaveRowChanging" msprop:Generator_RowEvHandlerName="PA_Proyecto_LlaveRowChangeEventHandler" msprop:Generator_RowDeletedName="PA_Proyecto_LlaveRowDeleted" msprop:Generator_RowEvArgName="PA_Proyecto_LlaveRowChangeEvent" msprop:Generator_RowChangedName="PA_Proyecto_LlaveRowChanged" msprop:Generator_RowClassName="PA_Proyecto_LlaveRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fk_Entidad" msprop:Generator_ColumnVarNameInTable="columnfk_Entidad" msprop:Generator_ColumnPropNameInRow="fk_Entidad" msprop:Generator_ColumnPropNameInTable="fk_EntidadColumn" msprop:Generator_UserColumnName="fk_Entidad" type="xs:short" />
+              <xs:element name="id_Proyecto" msprop:Generator_ColumnVarNameInTable="columnid_Proyecto" msprop:Generator_ColumnPropNameInRow="id_Proyecto" msprop:Generator_ColumnPropNameInTable="id_ProyectoColumn" msprop:Generator_UserColumnName="id_Proyecto" type="xs:short" />
+              <xs:element name="id_Proyecto_Llave" msprop:Generator_ColumnVarNameInTable="columnid_Proyecto_Llave" msprop:Generator_ColumnPropNameInRow="id_Proyecto_Llave" msprop:Generator_ColumnPropNameInTable="id_Proyecto_LlaveColumn" msprop:Generator_UserColumnName="id_Proyecto_Llave" type="xs:short" />
+              <xs:element name="Nombre_Proyecto_Llave" msprop:Generator_ColumnVarNameInTable="columnNombre_Proyecto_Llave" msprop:Generator_ColumnPropNameInRow="Nombre_Proyecto_Llave" msprop:Generator_ColumnPropNameInTable="Nombre_Proyecto_LlaveColumn" msprop:Generator_UserColumnName="Nombre_Proyecto_Llave">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre_Campo_Tipo" msprop:Generator_ColumnVarNameInTable="columnNombre_Campo_Tipo" msprop:Generator_ColumnPropNameInRow="Nombre_Campo_Tipo" msprop:Generator_ColumnPropNameInTable="Nombre_Campo_TipoColumn" msprop:Generator_UserColumnName="Nombre_Campo_Tipo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PA_Reporte_Empaque" msprop:Generator_TableClassName="PA_Reporte_EmpaqueDataTable" msprop:Generator_TableVarName="tablePA_Reporte_Empaque" msprop:Generator_TablePropName="PA_Reporte_Empaque" msprop:Generator_RowDeletingName="PA_Reporte_EmpaqueRowDeleting" msprop:Generator_UserTableName="PA_Reporte_Empaque" msprop:Generator_RowChangingName="PA_Reporte_EmpaqueRowChanging" msprop:Generator_RowEvHandlerName="PA_Reporte_EmpaqueRowChangeEventHandler" msprop:Generator_RowDeletedName="PA_Reporte_EmpaqueRowDeleted" msprop:Generator_RowEvArgName="PA_Reporte_EmpaqueRowChangeEvent" msprop:Generator_RowChangedName="PA_Reporte_EmpaqueRowChanged" msprop:Generator_RowClassName="PA_Reporte_EmpaqueRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fk_Entidad_Cliente" msprop:Generator_ColumnVarNameInTable="columnfk_Entidad_Cliente" msprop:Generator_ColumnPropNameInRow="fk_Entidad_Cliente" msprop:Generator_ColumnPropNameInTable="fk_Entidad_ClienteColumn" msprop:Generator_UserColumnName="fk_Entidad_Cliente" type="xs:short" minOccurs="0" />
+              <xs:element name="fk_Proyecto_Cliente" msprop:Generator_ColumnVarNameInTable="columnfk_Proyecto_Cliente" msprop:Generator_ColumnPropNameInRow="fk_Proyecto_Cliente" msprop:Generator_ColumnPropNameInTable="fk_Proyecto_ClienteColumn" msprop:Generator_UserColumnName="fk_Proyecto_Cliente" type="xs:short" minOccurs="0" />
+              <xs:element name="id_Caja" msprop:Generator_ColumnVarNameInTable="columnid_Caja" msprop:Generator_ColumnPropNameInRow="id_Caja" msprop:Generator_ColumnPropNameInTable="id_CajaColumn" msprop:Generator_UserColumnName="id_Caja" type="xs:int" />
+              <xs:element name="Fecha_Creacion" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFecha_Creacion" msprop:Generator_ColumnPropNameInRow="Fecha_Creacion" msprop:Generator_ColumnPropNameInTable="Fecha_CreacionColumn" msprop:Generator_UserColumnName="Fecha_Creacion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombres" msprop:Generator_ColumnVarNameInTable="columnNombres" msprop:Generator_ColumnPropNameInRow="Nombres" msprop:Generator_ColumnPropNameInTable="NombresColumn" msprop:Generator_UserColumnName="Nombres" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="61" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Entidad" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEntidad" msprop:Generator_ColumnPropNameInRow="Entidad" msprop:Generator_ColumnPropNameInTable="EntidadColumn" msprop:Generator_UserColumnName="Entidad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Proyecto" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnProyecto" msprop:Generator_ColumnPropNameInRow="Proyecto" msprop:Generator_ColumnPropNameInTable="ProyectoColumn" msprop:Generator_UserColumnName="Proyecto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Esquema" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEsquema" msprop:Generator_ColumnPropNameInRow="Esquema" msprop:Generator_ColumnPropNameInTable="EsquemaColumn" msprop:Generator_UserColumnName="Esquema" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Codigo_Caja" msprop:Generator_ColumnVarNameInTable="columnCodigo_Caja" msprop:Generator_ColumnPropNameInRow="Codigo_Caja" msprop:Generator_ColumnPropNameInTable="Codigo_CajaColumn" msprop:Generator_UserColumnName="Codigo_Caja">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Total_Folder" msprop:Generator_ColumnVarNameInTable="columnTotal_Folder" msprop:Generator_ColumnPropNameInRow="Total_Folder" msprop:Generator_ColumnPropNameInTable="Total_FolderColumn" msprop:Generator_UserColumnName="Total_Folder" type="xs:int" minOccurs="0" />
+              <xs:element name="Total_File" msprop:Generator_ColumnVarNameInTable="columnTotal_File" msprop:Generator_ColumnPropNameInRow="Total_File" msprop:Generator_ColumnPropNameInTable="Total_FileColumn" msprop:Generator_UserColumnName="Total_File" type="xs:int" minOccurs="0" />
+              <xs:element name="fk_Registro_Tipo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnfk_Registro_Tipo" msprop:Generator_ColumnPropNameInRow="fk_Registro_Tipo" msprop:Generator_ColumnPropNameInTable="fk_Registro_TipoColumn" msprop:Generator_UserColumnName="fk_Registro_Tipo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fecha_Creacion1" msdata:Caption="Fecha_Creacion" msprop:Generator_ColumnVarNameInTable="columnFecha_Creacion1" msprop:Generator_ColumnPropNameInRow="Fecha_Creacion1" msprop:Generator_ColumnPropNameInTable="Fecha_Creacion1Column" msprop:Generator_UserColumnName="Fecha_Creacion1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Tipo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTipo" msprop:Generator_ColumnPropNameInRow="Tipo" msprop:Generator_ColumnPropNameInTable="TipoColumn" msprop:Generator_UserColumnName="Tipo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PA_Resumen_OT" msprop:Generator_TableClassName="PA_Resumen_OTDataTable" msprop:Generator_TableVarName="tablePA_Resumen_OT" msprop:Generator_TablePropName="PA_Resumen_OT" msprop:Generator_RowDeletingName="PA_Resumen_OTRowDeleting" msprop:Generator_UserTableName="PA_Resumen_OT" msprop:Generator_RowChangingName="PA_Resumen_OTRowChanging" msprop:Generator_RowEvHandlerName="PA_Resumen_OTRowChangeEventHandler" msprop:Generator_RowDeletedName="PA_Resumen_OTRowDeleted" msprop:Generator_RowEvArgName="PA_Resumen_OTRowChangeEvent" msprop:Generator_RowChangedName="PA_Resumen_OTRowChanged" msprop:Generator_RowClassName="PA_Resumen_OTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OT" msprop:Generator_ColumnVarNameInTable="columnOT" msprop:Generator_ColumnPropNameInRow="OT" msprop:Generator_ColumnPropNameInTable="OTColumn" msprop:Generator_UserColumnName="OT" type="xs:int" />
+              <xs:element name="fk_Entidad" msprop:Generator_ColumnVarNameInTable="columnfk_Entidad" msprop:Generator_ColumnPropNameInRow="fk_Entidad" msprop:Generator_ColumnPropNameInTable="fk_EntidadColumn" msprop:Generator_UserColumnName="fk_Entidad" type="xs:short" />
+              <xs:element name="fk_Proyecto" msprop:Generator_ColumnVarNameInTable="columnfk_Proyecto" msprop:Generator_ColumnPropNameInRow="fk_Proyecto" msprop:Generator_ColumnPropNameInTable="fk_ProyectoColumn" msprop:Generator_UserColumnName="fk_Proyecto" type="xs:short" />
+              <xs:element name="fk_Esquema" msprop:Generator_ColumnVarNameInTable="columnfk_Esquema" msprop:Generator_ColumnPropNameInRow="fk_Esquema" msprop:Generator_ColumnPropNameInTable="fk_EsquemaColumn" msprop:Generator_UserColumnName="fk_Esquema" type="xs:short" />
+              <xs:element name="FECHA_OT" msprop:Generator_ColumnVarNameInTable="columnFECHA_OT" msprop:Generator_ColumnPropNameInRow="FECHA_OT" msprop:Generator_ColumnPropNameInTable="FECHA_OTColumn" msprop:Generator_UserColumnName="FECHA_OT" type="xs:dateTime" />
+              <xs:element name="FECHA_PRECINTO" msprop:Generator_ColumnVarNameInTable="columnFECHA_PRECINTO" msprop:Generator_ColumnPropNameInRow="FECHA_PRECINTO" msprop:Generator_ColumnPropNameInTable="FECHA_PRECINTOColumn" msprop:Generator_UserColumnName="FECHA_PRECINTO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CARGADOS" msprop:Generator_ColumnVarNameInTable="columnCARGADOS" msprop:Generator_ColumnPropNameInRow="CARGADOS" msprop:Generator_ColumnPropNameInTable="CARGADOSColumn" msprop:Generator_UserColumnName="CARGADOS" type="xs:int" minOccurs="0" />
+              <xs:element name="DESTAPADOS" msprop:Generator_ColumnVarNameInTable="columnDESTAPADOS" msprop:Generator_ColumnPropNameInRow="DESTAPADOS" msprop:Generator_ColumnPropNameInTable="DESTAPADOSColumn" msprop:Generator_UserColumnName="DESTAPADOS" type="xs:int" minOccurs="0" />
+              <xs:element name="PROCESADOS" msprop:Generator_ColumnVarNameInTable="columnPROCESADOS" msprop:Generator_ColumnPropNameInRow="PROCESADOS" msprop:Generator_ColumnPropNameInTable="PROCESADOSColumn" msprop:Generator_UserColumnName="PROCESADOS" type="xs:int" minOccurs="0" />
+              <xs:element name="EMPACADOS" msprop:Generator_ColumnVarNameInTable="columnEMPACADOS" msprop:Generator_ColumnPropNameInRow="EMPACADOS" msprop:Generator_ColumnPropNameInTable="EMPACADOSColumn" msprop:Generator_UserColumnName="EMPACADOS" type="xs:int" minOccurs="0" />
+              <xs:element name="CUSTODIADOS" msprop:Generator_ColumnVarNameInTable="columnCUSTODIADOS" msprop:Generator_ColumnPropNameInRow="CUSTODIADOS" msprop:Generator_ColumnPropNameInTable="CUSTODIADOSColumn" msprop:Generator_UserColumnName="CUSTODIADOS" type="xs:int" minOccurs="0" />
+              <xs:element name="FALTANTES" msprop:Generator_ColumnVarNameInTable="columnFALTANTES" msprop:Generator_ColumnPropNameInRow="FALTANTES" msprop:Generator_ColumnPropNameInTable="FALTANTESColumn" msprop:Generator_UserColumnName="FALTANTES" type="xs:int" minOccurs="0" />
+              <xs:element name="SOBRANTES" msprop:Generator_ColumnVarNameInTable="columnSOBRANTES" msprop:Generator_ColumnPropNameInRow="SOBRANTES" msprop:Generator_ColumnPropNameInTable="SOBRANTESColumn" msprop:Generator_UserColumnName="SOBRANTES" type="xs:int" minOccurs="0" />
+              <xs:element name="Tipo" msprop:Generator_ColumnVarNameInTable="columnTipo" msprop:Generator_ColumnPropNameInRow="Tipo" msprop:Generator_ColumnPropNameInTable="TipoColumn" msprop:Generator_UserColumnName="Tipo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PA_CarpetasFaltantes" msprop:Generator_TableClassName="PA_CarpetasFaltantesDataTable" msprop:Generator_TableVarName="tablePA_CarpetasFaltantes" msprop:Generator_TablePropName="PA_CarpetasFaltantes" msprop:Generator_RowDeletingName="PA_CarpetasFaltantesRowDeleting" msprop:Generator_UserTableName="PA_CarpetasFaltantes" msprop:Generator_RowChangingName="PA_CarpetasFaltantesRowChanging" msprop:Generator_RowEvHandlerName="PA_CarpetasFaltantesRowChangeEventHandler" msprop:Generator_RowDeletedName="PA_CarpetasFaltantesRowDeleted" msprop:Generator_RowEvArgName="PA_CarpetasFaltantesRowChangeEvent" msprop:Generator_RowChangedName="PA_CarpetasFaltantesRowChanged" msprop:Generator_RowClassName="PA_CarpetasFaltantesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_OT" msprop:Generator_ColumnVarNameInTable="columnid_OT" msprop:Generator_ColumnPropNameInRow="id_OT" msprop:Generator_ColumnPropNameInTable="id_OTColumn" msprop:Generator_UserColumnName="id_OT" type="xs:int" />
+              <xs:element name="Fecha_OT" msprop:Generator_ColumnVarNameInTable="columnFecha_OT" msprop:Generator_ColumnPropNameInRow="Fecha_OT" msprop:Generator_ColumnPropNameInTable="Fecha_OTColumn" msprop:Generator_UserColumnName="Fecha_OT" type="xs:dateTime" />
+              <xs:element name="Entidad" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEntidad" msprop:Generator_ColumnPropNameInRow="Entidad" msprop:Generator_ColumnPropNameInTable="EntidadColumn" msprop:Generator_UserColumnName="Entidad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Proyecto" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnProyecto" msprop:Generator_ColumnPropNameInRow="Proyecto" msprop:Generator_ColumnPropNameInTable="ProyectoColumn" msprop:Generator_UserColumnName="Proyecto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Esquema" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEsquema" msprop:Generator_ColumnPropNameInRow="Esquema" msprop:Generator_ColumnPropNameInTable="EsquemaColumn" msprop:Generator_UserColumnName="Esquema" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fk_expediente" msprop:Generator_ColumnVarNameInTable="columnfk_expediente" msprop:Generator_ColumnPropNameInRow="fk_expediente" msprop:Generator_ColumnPropNameInTable="fk_expedienteColumn" msprop:Generator_UserColumnName="fk_expediente" type="xs:long" />
+              <xs:element name="Nombre_Llave" msprop:Generator_ColumnVarNameInTable="columnNombre_Llave" msprop:Generator_ColumnPropNameInRow="Nombre_Llave" msprop:Generator_ColumnPropNameInTable="Nombre_LlaveColumn" msprop:Generator_UserColumnName="Nombre_Llave">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Valor_Llave" msprop:Generator_ColumnVarNameInTable="columnValor_Llave" msprop:Generator_ColumnPropNameInRow="Valor_Llave" msprop:Generator_ColumnPropNameInTable="Valor_LlaveColumn" msprop:Generator_UserColumnName="Valor_Llave" type="xs:anyType" minOccurs="0" />
+              <xs:element name="fk_Estado" msprop:Generator_ColumnVarNameInTable="columnfk_Estado" msprop:Generator_ColumnPropNameInRow="fk_Estado" msprop:Generator_ColumnPropNameInTable="fk_EstadoColumn" msprop:Generator_UserColumnName="fk_Estado" type="xs:short" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PA_CarpetasSobrantes" msprop:Generator_TableClassName="PA_CarpetasSobrantesDataTable" msprop:Generator_TableVarName="tablePA_CarpetasSobrantes" msprop:Generator_TablePropName="PA_CarpetasSobrantes" msprop:Generator_RowDeletingName="PA_CarpetasSobrantesRowDeleting" msprop:Generator_UserTableName="PA_CarpetasSobrantes" msprop:Generator_RowChangingName="PA_CarpetasSobrantesRowChanging" msprop:Generator_RowEvHandlerName="PA_CarpetasSobrantesRowChangeEventHandler" msprop:Generator_RowDeletedName="PA_CarpetasSobrantesRowDeleted" msprop:Generator_RowEvArgName="PA_CarpetasSobrantesRowChangeEvent" msprop:Generator_RowChangedName="PA_CarpetasSobrantesRowChanged" msprop:Generator_RowClassName="PA_CarpetasSobrantesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_OT" msprop:Generator_ColumnVarNameInTable="columnid_OT" msprop:Generator_ColumnPropNameInRow="id_OT" msprop:Generator_ColumnPropNameInTable="id_OTColumn" msprop:Generator_UserColumnName="id_OT" type="xs:int" />
+              <xs:element name="Fecha_OT" msprop:Generator_ColumnVarNameInTable="columnFecha_OT" msprop:Generator_ColumnPropNameInRow="Fecha_OT" msprop:Generator_ColumnPropNameInTable="Fecha_OTColumn" msprop:Generator_UserColumnName="Fecha_OT" type="xs:dateTime" />
+              <xs:element name="Entidad" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEntidad" msprop:Generator_ColumnPropNameInRow="Entidad" msprop:Generator_ColumnPropNameInTable="EntidadColumn" msprop:Generator_UserColumnName="Entidad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Proyecto" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnProyecto" msprop:Generator_ColumnPropNameInRow="Proyecto" msprop:Generator_ColumnPropNameInTable="ProyectoColumn" msprop:Generator_UserColumnName="Proyecto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Esquema" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEsquema" msprop:Generator_ColumnPropNameInRow="Esquema" msprop:Generator_ColumnPropNameInTable="EsquemaColumn" msprop:Generator_UserColumnName="Esquema" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fk_expediente" msprop:Generator_ColumnVarNameInTable="columnfk_expediente" msprop:Generator_ColumnPropNameInRow="fk_expediente" msprop:Generator_ColumnPropNameInTable="fk_expedienteColumn" msprop:Generator_UserColumnName="fk_expediente" type="xs:long" />
+              <xs:element name="Nombre_Llave" msprop:Generator_ColumnVarNameInTable="columnNombre_Llave" msprop:Generator_ColumnPropNameInRow="Nombre_Llave" msprop:Generator_ColumnPropNameInTable="Nombre_LlaveColumn" msprop:Generator_UserColumnName="Nombre_Llave">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Valor_Llave" msprop:Generator_ColumnVarNameInTable="columnValor_Llave" msprop:Generator_ColumnPropNameInRow="Valor_Llave" msprop:Generator_ColumnPropNameInTable="Valor_LlaveColumn" msprop:Generator_UserColumnName="Valor_Llave" type="xs:anyType" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PA_DocumentosFaltantes" msprop:Generator_TableClassName="PA_DocumentosFaltantesDataTable" msprop:Generator_TableVarName="tablePA_DocumentosFaltantes" msprop:Generator_TablePropName="PA_DocumentosFaltantes" msprop:Generator_RowDeletingName="PA_DocumentosFaltantesRowDeleting" msprop:Generator_UserTableName="PA_DocumentosFaltantes" msprop:Generator_RowChangingName="PA_DocumentosFaltantesRowChanging" msprop:Generator_RowEvHandlerName="PA_DocumentosFaltantesRowChangeEventHandler" msprop:Generator_RowDeletedName="PA_DocumentosFaltantesRowDeleted" msprop:Generator_RowEvArgName="PA_DocumentosFaltantesRowChangeEvent" msprop:Generator_RowChangedName="PA_DocumentosFaltantesRowChanged" msprop:Generator_RowClassName="PA_DocumentosFaltantesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_OT" msprop:Generator_ColumnVarNameInTable="columnid_OT" msprop:Generator_ColumnPropNameInRow="id_OT" msprop:Generator_ColumnPropNameInTable="id_OTColumn" msprop:Generator_UserColumnName="id_OT" type="xs:int" />
+              <xs:element name="Fecha_OT" msprop:Generator_ColumnVarNameInTable="columnFecha_OT" msprop:Generator_ColumnPropNameInRow="Fecha_OT" msprop:Generator_ColumnPropNameInTable="Fecha_OTColumn" msprop:Generator_UserColumnName="Fecha_OT" type="xs:dateTime" />
+              <xs:element name="Entidad" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEntidad" msprop:Generator_ColumnPropNameInRow="Entidad" msprop:Generator_ColumnPropNameInTable="EntidadColumn" msprop:Generator_UserColumnName="Entidad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Proyecto" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnProyecto" msprop:Generator_ColumnPropNameInRow="Proyecto" msprop:Generator_ColumnPropNameInTable="ProyectoColumn" msprop:Generator_UserColumnName="Proyecto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Esquema" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEsquema" msprop:Generator_ColumnPropNameInRow="Esquema" msprop:Generator_ColumnPropNameInTable="EsquemaColumn" msprop:Generator_UserColumnName="Esquema" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fk_expediente" msprop:Generator_ColumnVarNameInTable="columnfk_expediente" msprop:Generator_ColumnPropNameInRow="fk_expediente" msprop:Generator_ColumnPropNameInTable="fk_expedienteColumn" msprop:Generator_UserColumnName="fk_expediente" type="xs:long" />
+              <xs:element name="Nombre_Llave" msprop:Generator_ColumnVarNameInTable="columnNombre_Llave" msprop:Generator_ColumnPropNameInRow="Nombre_Llave" msprop:Generator_ColumnPropNameInTable="Nombre_LlaveColumn" msprop:Generator_UserColumnName="Nombre_Llave">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Valor_Llave" msprop:Generator_ColumnVarNameInTable="columnValor_Llave" msprop:Generator_ColumnPropNameInRow="Valor_Llave" msprop:Generator_ColumnPropNameInTable="Valor_LlaveColumn" msprop:Generator_UserColumnName="Valor_Llave" type="xs:anyType" minOccurs="0" />
+              <xs:element name="Nombre_Documento" msprop:Generator_ColumnVarNameInTable="columnNombre_Documento" msprop:Generator_ColumnPropNameInRow="Nombre_Documento" msprop:Generator_ColumnPropNameInTable="Nombre_DocumentoColumn" msprop:Generator_UserColumnName="Nombre_Documento">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PA_DocumentosSobrantes" msprop:Generator_TableClassName="PA_DocumentosSobrantesDataTable" msprop:Generator_TableVarName="tablePA_DocumentosSobrantes" msprop:Generator_TablePropName="PA_DocumentosSobrantes" msprop:Generator_RowDeletingName="PA_DocumentosSobrantesRowDeleting" msprop:Generator_UserTableName="PA_DocumentosSobrantes" msprop:Generator_RowChangingName="PA_DocumentosSobrantesRowChanging" msprop:Generator_RowEvHandlerName="PA_DocumentosSobrantesRowChangeEventHandler" msprop:Generator_RowDeletedName="PA_DocumentosSobrantesRowDeleted" msprop:Generator_RowEvArgName="PA_DocumentosSobrantesRowChangeEvent" msprop:Generator_RowChangedName="PA_DocumentosSobrantesRowChanged" msprop:Generator_RowClassName="PA_DocumentosSobrantesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_OT" msprop:Generator_ColumnVarNameInTable="columnid_OT" msprop:Generator_ColumnPropNameInRow="id_OT" msprop:Generator_ColumnPropNameInTable="id_OTColumn" msprop:Generator_UserColumnName="id_OT" type="xs:int" />
+              <xs:element name="Fecha_OT" msprop:Generator_ColumnVarNameInTable="columnFecha_OT" msprop:Generator_ColumnPropNameInRow="Fecha_OT" msprop:Generator_ColumnPropNameInTable="Fecha_OTColumn" msprop:Generator_UserColumnName="Fecha_OT" type="xs:dateTime" />
+              <xs:element name="Entidad" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEntidad" msprop:Generator_ColumnPropNameInRow="Entidad" msprop:Generator_ColumnPropNameInTable="EntidadColumn" msprop:Generator_UserColumnName="Entidad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Proyecto" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnProyecto" msprop:Generator_ColumnPropNameInRow="Proyecto" msprop:Generator_ColumnPropNameInTable="ProyectoColumn" msprop:Generator_UserColumnName="Proyecto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Esquema" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEsquema" msprop:Generator_ColumnPropNameInRow="Esquema" msprop:Generator_ColumnPropNameInTable="EsquemaColumn" msprop:Generator_UserColumnName="Esquema" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fk_expediente" msprop:Generator_ColumnVarNameInTable="columnfk_expediente" msprop:Generator_ColumnPropNameInRow="fk_expediente" msprop:Generator_ColumnPropNameInTable="fk_expedienteColumn" msprop:Generator_UserColumnName="fk_expediente" type="xs:long" />
+              <xs:element name="Nombre_Llave" msprop:Generator_ColumnVarNameInTable="columnNombre_Llave" msprop:Generator_ColumnPropNameInRow="Nombre_Llave" msprop:Generator_ColumnPropNameInTable="Nombre_LlaveColumn" msprop:Generator_UserColumnName="Nombre_Llave">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Valor_Llave" msprop:Generator_ColumnVarNameInTable="columnValor_Llave" msprop:Generator_ColumnPropNameInRow="Valor_Llave" msprop:Generator_ColumnPropNameInTable="Valor_LlaveColumn" msprop:Generator_UserColumnName="Valor_Llave" type="xs:anyType" minOccurs="0" />
+              <xs:element name="Nombre_Documento" msprop:Generator_ColumnVarNameInTable="columnNombre_Documento" msprop:Generator_ColumnPropNameInRow="Nombre_Documento" msprop:Generator_ColumnPropNameInTable="Nombre_DocumentoColumn" msprop:Generator_UserColumnName="Nombre_Documento">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RPT_Universal_vs_Parcial" msprop:Generator_TableClassName="RPT_Universal_vs_ParcialDataTable" msprop:Generator_TableVarName="tableRPT_Universal_vs_Parcial" msprop:Generator_TablePropName="RPT_Universal_vs_Parcial" msprop:Generator_RowDeletingName="RPT_Universal_vs_ParcialRowDeleting" msprop:Generator_UserTableName="RPT_Universal_vs_Parcial" msprop:Generator_RowChangingName="RPT_Universal_vs_ParcialRowChanging" msprop:Generator_RowEvHandlerName="RPT_Universal_vs_ParcialRowChangeEventHandler" msprop:Generator_RowDeletedName="RPT_Universal_vs_ParcialRowDeleted" msprop:Generator_RowEvArgName="RPT_Universal_vs_ParcialRowChangeEvent" msprop:Generator_RowChangedName="RPT_Universal_vs_ParcialRowChanged" msprop:Generator_RowClassName="RPT_Universal_vs_ParcialRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre_entidad" msprop:Generator_ColumnVarNameInTable="columnnombre_entidad" msprop:Generator_ColumnPropNameInRow="nombre_entidad" msprop:Generator_ColumnPropNameInTable="nombre_entidadColumn" msprop:Generator_UserColumnName="nombre_entidad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nombre_proyecto" msprop:Generator_ColumnVarNameInTable="columnnombre_proyecto" msprop:Generator_ColumnPropNameInRow="nombre_proyecto" msprop:Generator_ColumnPropNameInTable="nombre_proyectoColumn" msprop:Generator_UserColumnName="nombre_proyecto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id_Universal_Folder" msprop:Generator_ColumnVarNameInTable="columnid_Universal_Folder" msprop:Generator_ColumnPropNameInRow="id_Universal_Folder" msprop:Generator_ColumnPropNameInTable="id_Universal_FolderColumn" msprop:Generator_UserColumnName="id_Universal_Folder" type="xs:long" />
+              <xs:element name="nombre_proyecto_llave" msprop:Generator_ColumnVarNameInTable="columnnombre_proyecto_llave" msprop:Generator_ColumnPropNameInRow="nombre_proyecto_llave" msprop:Generator_ColumnPropNameInTable="nombre_proyecto_llaveColumn" msprop:Generator_UserColumnName="nombre_proyecto_llave">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Valor_Universal_Llave" msprop:Generator_ColumnVarNameInTable="columnValor_Universal_Llave" msprop:Generator_ColumnPropNameInRow="Valor_Universal_Llave" msprop:Generator_ColumnPropNameInTable="Valor_Universal_LlaveColumn" msprop:Generator_UserColumnName="Valor_Universal_Llave" type="xs:anyType" minOccurs="0" />
+              <xs:element name="fk_Universal_Folder_Estado" msprop:Generator_ColumnVarNameInTable="columnfk_Universal_Folder_Estado" msprop:Generator_ColumnPropNameInRow="fk_Universal_Folder_Estado" msprop:Generator_ColumnPropNameInTable="fk_Universal_Folder_EstadoColumn" msprop:Generator_UserColumnName="fk_Universal_Folder_Estado" type="xs:long" />
+              <xs:element name="fk_entidad" msprop:Generator_ColumnVarNameInTable="columnfk_entidad" msprop:Generator_ColumnPropNameInRow="fk_entidad" msprop:Generator_ColumnPropNameInTable="fk_entidadColumn" msprop:Generator_UserColumnName="fk_entidad" type="xs:short" minOccurs="0" />
+              <xs:element name="fk_proyecto" msprop:Generator_ColumnVarNameInTable="columnfk_proyecto" msprop:Generator_ColumnPropNameInRow="fk_proyecto" msprop:Generator_ColumnPropNameInTable="fk_proyectoColumn" msprop:Generator_UserColumnName="fk_proyecto" type="xs:short" minOccurs="0" />
+              <xs:element name="PorcentageRecibidas" msprop:Generator_ColumnVarNameInTable="columnPorcentageRecibidas" msprop:Generator_ColumnPropNameInRow="PorcentageRecibidas" msprop:Generator_ColumnPropNameInTable="PorcentageRecibidasColumn" msprop:Generator_UserColumnName="PorcentageRecibidas" type="xs:double" minOccurs="0" />
+              <xs:element name="PorcentageSobrantes" msprop:Generator_ColumnVarNameInTable="columnPorcentageSobrantes" msprop:Generator_ColumnPropNameInRow="PorcentageSobrantes" msprop:Generator_ColumnPropNameInTable="PorcentageSobrantesColumn" msprop:Generator_UserColumnName="PorcentageSobrantes" type="xs:double" minOccurs="0" />
+              <xs:element name="Recibidas" msprop:Generator_ColumnVarNameInTable="columnRecibidas" msprop:Generator_ColumnPropNameInRow="Recibidas" msprop:Generator_ColumnPropNameInTable="RecibidasColumn" msprop:Generator_UserColumnName="Recibidas" type="xs:double" minOccurs="0" />
+              <xs:element name="Sobrantes" msprop:Generator_ColumnVarNameInTable="columnSobrantes" msprop:Generator_ColumnPropNameInRow="Sobrantes" msprop:Generator_ColumnPropNameInTable="SobrantesColumn" msprop:Generator_UserColumnName="Sobrantes" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalCarpetas" msprop:Generator_ColumnVarNameInTable="columnTotalCarpetas" msprop:Generator_ColumnPropNameInRow="TotalCarpetas" msprop:Generator_ColumnPropNameInTable="TotalCarpetasColumn" msprop:Generator_UserColumnName="TotalCarpetas" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PA_Reporte_Empaque" />
+      <xs:field xpath="mstns:id_Caja" />
+    </xs:unique>
+    <xs:unique name="PA_Resumen_OT_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PA_Resumen_OT" />
+      <xs:field xpath="mstns:OT" />
+    </xs:unique>
+    <xs:unique name="RPT_Universal_vs_Parcial_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RPT_Universal_vs_Parcial" />
+      <xs:field xpath="mstns:id_Universal_Folder" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

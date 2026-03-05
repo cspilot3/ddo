@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Reporte2_ImpuestosBBogota" targetNamespace="http://tempuri.org/Reporte2_ImpuestosBBogota.xsd" xmlns:mstns="http://tempuri.org/Reporte2_ImpuestosBBogota.xsd" xmlns="http://tempuri.org/Reporte2_ImpuestosBBogota.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Reporte2_ImpuestosBBogota" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Reporte2_ImpuestosBBogota" msprop:Generator_UserDSName="Reporte2_ImpuestosBBogota">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DETALLADO_MUNICIPIOS_VALLE" msprop:Generator_TableClassName="DETALLADO_MUNICIPIOS_VALLEDataTable" msprop:Generator_TableVarName="tableDETALLADO_MUNICIPIOS_VALLE" msprop:Generator_RowChangedName="DETALLADO_MUNICIPIOS_VALLERowChanged" msprop:Generator_TablePropName="DETALLADO_MUNICIPIOS_VALLE" msprop:Generator_RowDeletingName="DETALLADO_MUNICIPIOS_VALLERowDeleting" msprop:Generator_RowChangingName="DETALLADO_MUNICIPIOS_VALLERowChanging" msprop:Generator_RowEvHandlerName="DETALLADO_MUNICIPIOS_VALLERowChangeEventHandler" msprop:Generator_RowDeletedName="DETALLADO_MUNICIPIOS_VALLERowDeleted" msprop:Generator_RowClassName="DETALLADO_MUNICIPIOS_VALLERow" msprop:Generator_UserTableName="DETALLADO_MUNICIPIOS_VALLE" msprop:Generator_RowEvArgName="DETALLADO_MUNICIPIOS_VALLERowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FORMULARIO" msprop:Generator_ColumnVarNameInTable="columnFORMULARIO" msprop:Generator_ColumnPropNameInRow="FORMULARIO" msprop:Generator_ColumnPropNameInTable="FORMULARIOColumn" msprop:Generator_UserColumnName="FORMULARIO" type="xs:string" minOccurs="0" />
+              <xs:element name="PLACA" msprop:Generator_ColumnVarNameInTable="columnPLACA" msprop:Generator_ColumnPropNameInRow="PLACA" msprop:Generator_ColumnPropNameInTable="PLACAColumn" msprop:Generator_UserColumnName="PLACA" type="xs:string" minOccurs="0" />
+              <xs:element name="MUNICIPIO" msprop:Generator_ColumnVarNameInTable="columnMUNICIPIO" msprop:Generator_ColumnPropNameInRow="MUNICIPIO" msprop:Generator_ColumnPropNameInTable="MUNICIPIOColumn" msprop:Generator_UserColumnName="MUNICIPIO" type="xs:string" minOccurs="0" />
+              <xs:element name="DEPARTAMENTO" msprop:Generator_ColumnVarNameInTable="columnDEPARTAMENTO" msprop:Generator_ColumnPropNameInRow="DEPARTAMENTO" msprop:Generator_ColumnPropNameInTable="DEPARTAMENTOColumn" msprop:Generator_UserColumnName="DEPARTAMENTO" type="xs:string" minOccurs="0" />
+              <xs:element name="VLR_PAGADO" msprop:Generator_ColumnVarNameInTable="columnVLR_PAGADO" msprop:Generator_ColumnPropNameInRow="VLR_PAGADO" msprop:Generator_ColumnPropNameInTable="VLR_PAGADOColumn" msprop:Generator_UserColumnName="VLR_PAGADO" type="xs:string" minOccurs="0" />
+              <xs:element name="COMISION" msprop:Generator_ColumnVarNameInTable="columnCOMISION" msprop:Generator_ColumnPropNameInRow="COMISION" msprop:Generator_ColumnPropNameInTable="COMISIONColumn" msprop:Generator_UserColumnName="COMISION" type="xs:string" minOccurs="0" />
+              <xs:element name="NETO" msprop:Generator_ColumnVarNameInTable="columnNETO" msprop:Generator_ColumnPropNameInRow="NETO" msprop:Generator_ColumnPropNameInTable="NETOColumn" msprop:Generator_UserColumnName="NETO" type="xs:string" minOccurs="0" />
+              <xs:element name="MUNICIPIO_20" msprop:Generator_ColumnVarNameInTable="columnMUNICIPIO_20" msprop:Generator_ColumnPropNameInRow="MUNICIPIO_20" msprop:Generator_ColumnPropNameInTable="MUNICIPIO_20Column" msprop:Generator_UserColumnName="MUNICIPIO_20" type="xs:string" minOccurs="0" />
+              <xs:element name="DEPARTAMENTO_80_CAMBIADO" msprop:Generator_ColumnVarNameInTable="columnDEPARTAMENTO_80_CAMBIADO" msprop:Generator_ColumnPropNameInRow="DEPARTAMENTO_80_CAMBIADO" msprop:Generator_ColumnPropNameInTable="DEPARTAMENTO_80_CAMBIADOColumn" msprop:Generator_UserColumnName="DEPARTAMENTO_80_CAMBIADO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DETALLADO_OTROS_MUNICIPIOS" msprop:Generator_TableClassName="DETALLADO_OTROS_MUNICIPIOSDataTable" msprop:Generator_TableVarName="tableDETALLADO_OTROS_MUNICIPIOS" msprop:Generator_RowChangedName="DETALLADO_OTROS_MUNICIPIOSRowChanged" msprop:Generator_TablePropName="DETALLADO_OTROS_MUNICIPIOS" msprop:Generator_RowDeletingName="DETALLADO_OTROS_MUNICIPIOSRowDeleting" msprop:Generator_RowChangingName="DETALLADO_OTROS_MUNICIPIOSRowChanging" msprop:Generator_RowEvHandlerName="DETALLADO_OTROS_MUNICIPIOSRowChangeEventHandler" msprop:Generator_RowDeletedName="DETALLADO_OTROS_MUNICIPIOSRowDeleted" msprop:Generator_RowClassName="DETALLADO_OTROS_MUNICIPIOSRow" msprop:Generator_UserTableName="DETALLADO_OTROS_MUNICIPIOS" msprop:Generator_RowEvArgName="DETALLADO_OTROS_MUNICIPIOSRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FORMULARIO2" msprop:Generator_ColumnVarNameInTable="columnFORMULARIO2" msprop:Generator_ColumnPropNameInRow="FORMULARIO2" msprop:Generator_ColumnPropNameInTable="FORMULARIO2Column" msprop:Generator_UserColumnName="FORMULARIO2" type="xs:string" minOccurs="0" />
+              <xs:element name="PLACA" msprop:Generator_ColumnVarNameInTable="columnPLACA" msprop:Generator_ColumnPropNameInRow="PLACA" msprop:Generator_ColumnPropNameInTable="PLACAColumn" msprop:Generator_UserColumnName="PLACA" type="xs:string" minOccurs="0" />
+              <xs:element name="MUNICIPIO" msprop:Generator_ColumnVarNameInTable="columnMUNICIPIO" msprop:Generator_ColumnPropNameInRow="MUNICIPIO" msprop:Generator_ColumnPropNameInTable="MUNICIPIOColumn" msprop:Generator_UserColumnName="MUNICIPIO" type="xs:string" minOccurs="0" />
+              <xs:element name="DEPARTAMENTO" msprop:Generator_ColumnVarNameInTable="columnDEPARTAMENTO" msprop:Generator_ColumnPropNameInRow="DEPARTAMENTO" msprop:Generator_ColumnPropNameInTable="DEPARTAMENTOColumn" msprop:Generator_UserColumnName="DEPARTAMENTO" type="xs:string" minOccurs="0" />
+              <xs:element name="VLR_PAGADO" msprop:Generator_ColumnVarNameInTable="columnVLR_PAGADO" msprop:Generator_ColumnPropNameInRow="VLR_PAGADO" msprop:Generator_ColumnPropNameInTable="VLR_PAGADOColumn" msprop:Generator_UserColumnName="VLR_PAGADO" type="xs:string" minOccurs="0" />
+              <xs:element name="COMISION" msprop:Generator_ColumnVarNameInTable="columnCOMISION" msprop:Generator_ColumnPropNameInRow="COMISION" msprop:Generator_ColumnPropNameInTable="COMISIONColumn" msprop:Generator_UserColumnName="COMISION" type="xs:string" minOccurs="0" />
+              <xs:element name="NETO" msprop:Generator_ColumnVarNameInTable="columnNETO" msprop:Generator_ColumnPropNameInRow="NETO" msprop:Generator_ColumnPropNameInTable="NETOColumn" msprop:Generator_UserColumnName="NETO" type="xs:string" minOccurs="0" />
+              <xs:element name="MUNICIPIO_20" msprop:Generator_ColumnVarNameInTable="columnMUNICIPIO_20" msprop:Generator_ColumnPropNameInRow="MUNICIPIO_20" msprop:Generator_ColumnPropNameInTable="MUNICIPIO_20Column" msprop:Generator_UserColumnName="MUNICIPIO_20" type="xs:string" minOccurs="0" />
+              <xs:element name="DEPARTAMENTO_80" msprop:Generator_ColumnVarNameInTable="columnDEPARTAMENTO_80" msprop:Generator_ColumnPropNameInRow="DEPARTAMENTO_80" msprop:Generator_ColumnPropNameInTable="DEPARTAMENTO_80Column" msprop:Generator_UserColumnName="DEPARTAMENTO_80" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

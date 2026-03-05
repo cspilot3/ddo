@@ -1,0 +1,45 @@
+﻿
+.uiContextualDialogPositioner, .uiContextualDialogPositioner .uiContextualDialog { position: absolute; z-index: 200; font-size: 11px; font-family: "lucida grande",tahoma,verdana,arial,sans-serif; color: #333; line-height: 1.28; text-align: left; direction: ltr; }
+
+.uiContextualDialogLeft .uiContextualDialog { right: 0; }
+
+.uiOverlayArrowRight { padding-right: 10px; }
+
+.uiOverlay { position: relative; z-index: 200; }
+
+.uiContextualDialog, .uiContextualDialog:focus { outline: 0 solid transparent; }
+
+.uiOverlayContent { background: white; border: 1px solid #8C8C8C; border: 1px solid rgba(0, 0, 0, .45); border-bottom: 1px solid #666; -moz-box-shadow: 0 3px 8px #000000; -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .3); -webkit-box-shadow: 0 3px 8px #000000; -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .3); box-shadow: 0 3px 8px #000000; box-shadow: 0 3px 8px rgba(0, 0, 0, .3); position: relative; }
+
+.uiOverlayContentHolder { padding: 10px; }
+
+.uiOverlayArrow { position: absolute; overflow: hidden; }
+
+.uiOverlayArrowRight .uiOverlayArrow { background-image: url(detail_tooltip/sprite.png); background-repeat: no-repeat; /*background-position: -177px -309px;*/ height: 16px; right: 3px; width: 9px; }
+
+.uiLine { border-top: 1px solid #8C8C8C; border-top: 1px solid rgba(0, 0, 0, .45); border-bottom: 1px solid #8C8C8C; margin-top: 5px; margin-left: 0; margin-bottom: 5px; width: auto; height: 0; border-top-color: #8C8C8C; border-bottom-color: #CCCCCC; }
+
+.uiClose { position: absolute; top: 5px; right: 15px; height: 14px; width: 14px; cursor: pointer; text-align: center; vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-size: x-small; color: #336699; }
+    .uiClose:hover { background-color: #003366; filter: alpha(opacity=45); -moz-opacity: 0.45; opacity: 0.45; color: #FFFFFF; font-weight: bold; }
+
+.uiOverlayContentHolder table { border-collapse: collapse; border-spacing: 0; color: #003366; }
+
+.uiOverlayContentHolder div.user { margin-left: 0; margin-right: 0; border: 1px; height: 85px; }
+    .uiOverlayContentHolder div.user img.user { position: relative; top: 0; left: 0; }
+    .uiOverlayContentHolder div.user table { position: relative; top: -64px; left: 70px; margin-right: 0; }
+    .uiOverlayContentHolder div.user img.password { position: relative; top: -95px; left: 340px; }
+
+.uiOverlayContentHolder div.connection { height: 50px; }
+    .uiOverlayContentHolder div.connection img.project { position: relative; top: -30px; left: 340px; }
+
+.uiOverlayContentHolder div.bottom { height: 60px; }
+    .uiOverlayContentHolder div.bottom img.slyg { position: relative; top: 0; left: 0; }
+    .uiOverlayContentHolder div.bottom img.to-exit { position: relative; top: 0; left: 195px; }
+
+.uiOverlayContent div.statusbar { height: 20px; background-color: #CC3300; text-align: center; color: #FFFFFF; font-weight: bold; padding-top: 5px; }
+
+.uiOverlayContentHolder .enfasis { font-size: small; color: #003366; font-weight: bold; }
+
+.uiOverlayContentHolder .text { color: #333333; }
+
+.uiEnvolvente { position: absolute; top: 0; left: 0; bottom: 0; right: 0; }

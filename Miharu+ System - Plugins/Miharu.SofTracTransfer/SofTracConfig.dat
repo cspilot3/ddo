@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SofTracConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Intervalo>5000000</Intervalo>
+  <SecurityWebServiceURL>http://10.64.124.117:8020/Miharu.Security.WebService/SecurityService.asmx</SecurityWebServiceURL>
+  <User>Service</User>
+  <Password>XMOpOjNqaHHFZ7vH1KKb8PIe4xfUT2lnMxAh1thDHEs=</Password>
+</SofTracConfig>

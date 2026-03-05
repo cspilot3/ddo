@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="xsdCargue" targetNamespace="http://tempuri.org/xsdCargue.xsd" xmlns:mstns="http://tempuri.org/xsdCargue.xsd" xmlns="http://tempuri.org/xsdCargue.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="xsdCargue" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="xsdCargue" msprop:Generator_UserDSName="xsdCargue">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Paquete" msprop:Generator_TableClassName="PaqueteDataTable" msprop:Generator_TableVarName="tablePaquete" msprop:Generator_TablePropName="Paquete" msprop:Generator_RowDeletingName="PaqueteRowDeleting" msprop:Generator_RowChangingName="PaqueteRowChanging" msprop:Generator_RowEvHandlerName="PaqueteRowChangeEventHandler" msprop:Generator_RowDeletedName="PaqueteRowDeleted" msprop:Generator_UserTableName="Paquete" msprop:Generator_RowChangedName="PaqueteRowChanged" msprop:Generator_RowEvArgName="PaqueteRowChangeEvent" msprop:Generator_RowClassName="PaqueteRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Paquete" msprop:Generator_ColumnVarNameInTable="columnid_Paquete" msprop:Generator_ColumnPropNameInRow="id_Paquete" msprop:Generator_ColumnPropNameInTable="id_PaqueteColumn" msprop:Generator_UserColumnName="id_Paquete" type="xs:short" minOccurs="0" />
+              <xs:element name="Path" msprop:Generator_ColumnVarNameInTable="columnPath" msprop:Generator_ColumnPropNameInRow="Path" msprop:Generator_ColumnPropNameInTable="PathColumn" msprop:Generator_UserColumnName="Path" type="xs:string" minOccurs="0" />
+              <xs:element name="Validos" msprop:Generator_ColumnVarNameInTable="columnValidos" msprop:Generator_ColumnPropNameInRow="Validos" msprop:Generator_ColumnPropNameInTable="ValidosColumn" msprop:Generator_UserColumnName="Validos" type="xs:int" minOccurs="0" />
+              <xs:element name="Invalidos" msprop:Generator_ColumnVarNameInTable="columnInvalidos" msprop:Generator_ColumnPropNameInRow="Invalidos" msprop:Generator_ColumnPropNameInTable="InvalidosColumn" msprop:Generator_UserColumnName="Invalidos" type="xs:int" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:int" minOccurs="0" />
+              <xs:element name="PaqueteValido" msprop:Generator_ColumnVarNameInTable="columnPaqueteValido" msprop:Generator_ColumnPropNameInRow="PaqueteValido" msprop:Generator_ColumnPropNameInTable="PaqueteValidoColumn" msprop:Generator_UserColumnName="PaqueteValido" type="xs:boolean" default="true" minOccurs="0" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Key" msprop:Generator_ColumnVarNameInTable="columnKey" msprop:Generator_ColumnPropNameInRow="Key" msprop:Generator_ColumnPropNameInTable="KeyColumn" msprop:Generator_UserColumnName="Key" type="xs:string" minOccurs="0" />
+              <xs:element name="Precinto" msprop:Generator_ColumnVarNameInTable="columnPrecinto" msprop:Generator_ColumnPropNameInRow="Precinto" msprop:Generator_ColumnPropNameInTable="PrecintoColumn" msprop:Generator_UserColumnName="Precinto" type="xs:short" minOccurs="0" />
+              <xs:element name="Contenedor" msprop:Generator_ColumnVarNameInTable="columnContenedor" msprop:Generator_ColumnPropNameInRow="Contenedor" msprop:Generator_ColumnPropNameInTable="ContenedorColumn" msprop:Generator_UserColumnName="Contenedor" type="xs:short" minOccurs="0" />
+              <xs:element name="CBarrasContenedor" msprop:Generator_ColumnVarNameInTable="columnCBarrasContenedor" msprop:Generator_ColumnPropNameInRow="CBarrasContenedor" msprop:Generator_ColumnPropNameInTable="CBarrasContenedorColumn" msprop:Generator_UserColumnName="CBarrasContenedor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Item" msprop:Generator_TableClassName="ItemDataTable" msprop:Generator_TableVarName="tableItem" msprop:Generator_TablePropName="Item" msprop:Generator_RowDeletingName="ItemRowDeleting" msprop:Generator_RowChangingName="ItemRowChanging" msprop:Generator_RowEvHandlerName="ItemRowChangeEventHandler" msprop:Generator_RowDeletedName="ItemRowDeleted" msprop:Generator_UserTableName="Item" msprop:Generator_RowChangedName="ItemRowChanged" msprop:Generator_RowEvArgName="ItemRowChangeEvent" msprop:Generator_RowClassName="ItemRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fk_Paquete" msprop:Generator_ColumnVarNameInTable="columnfk_Paquete" msprop:Generator_ColumnPropNameInRow="fk_Paquete" msprop:Generator_ColumnPropNameInTable="fk_PaqueteColumn" msprop:Generator_UserColumnName="fk_Paquete" type="xs:short" minOccurs="0" />
+              <xs:element name="id_Item" msprop:Generator_ColumnVarNameInTable="columnid_Item" msprop:Generator_ColumnPropNameInRow="id_Item" msprop:Generator_ColumnPropNameInTable="id_ItemColumn" msprop:Generator_UserColumnName="id_Item" type="xs:int" minOccurs="0" />
+              <xs:element name="Folios" msprop:Generator_ColumnVarNameInTable="columnFolios" msprop:Generator_ColumnPropNameInRow="Folios" msprop:Generator_ColumnPropNameInTable="FoliosColumn" msprop:Generator_UserColumnName="Folios" type="xs:short" minOccurs="0" />
+              <xs:element name="Tamaño" msprop:Generator_ColumnVarNameInTable="columnTamaño" msprop:Generator_ColumnPropNameInRow="Tamaño" msprop:Generator_ColumnPropNameInTable="TamañoColumn" msprop:Generator_UserColumnName="Tamaño" type="xs:long" minOccurs="0" />
+              <xs:element name="Path" msprop:Generator_ColumnVarNameInTable="columnPath" msprop:Generator_ColumnPropNameInRow="Path" msprop:Generator_ColumnPropNameInTable="PathColumn" msprop:Generator_UserColumnName="Path" type="xs:string" minOccurs="0" />
+              <xs:element name="Key" msprop:Generator_ColumnVarNameInTable="columnKey" msprop:Generator_ColumnPropNameInRow="Key" msprop:Generator_ColumnPropNameInTable="KeyColumn" msprop:Generator_UserColumnName="Key" type="xs:string" minOccurs="0" />
+              <xs:element name="Valido" msprop:Generator_ColumnVarNameInTable="columnValido" msprop:Generator_ColumnPropNameInRow="Valido" msprop:Generator_ColumnPropNameInTable="ValidoColumn" msprop:Generator_UserColumnName="Valido" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Esquema" msprop:Generator_ColumnVarNameInTable="columnEsquema" msprop:Generator_ColumnPropNameInRow="Esquema" msprop:Generator_ColumnPropNameInTable="EsquemaColumn" msprop:Generator_UserColumnName="Esquema" type="xs:short" minOccurs="0" />
+              <xs:element name="Documento" msprop:Generator_ColumnVarNameInTable="columnDocumento" msprop:Generator_ColumnPropNameInRow="Documento" msprop:Generator_ColumnPropNameInTable="DocumentoColumn" msprop:Generator_UserColumnName="Documento" type="xs:int" minOccurs="0" />
+              <xs:element name="Precinto" msprop:Generator_ColumnVarNameInTable="columnPrecinto" msprop:Generator_ColumnPropNameInRow="Precinto" msprop:Generator_ColumnPropNameInTable="PrecintoColumn" msprop:Generator_UserColumnName="Precinto" type="xs:short" minOccurs="0" />
+              <xs:element name="Contenedor" msprop:Generator_ColumnVarNameInTable="columnContenedor" msprop:Generator_ColumnPropNameInRow="Contenedor" msprop:Generator_ColumnPropNameInTable="ContenedorColumn" msprop:Generator_UserColumnName="Contenedor" type="xs:short" minOccurs="0" />
+              <xs:element name="CBarrasContenedor" msprop:Generator_ColumnVarNameInTable="columnCBarrasContenedor" msprop:Generator_ColumnPropNameInRow="CBarrasContenedor" msprop:Generator_ColumnPropNameInTable="CBarrasContenedorColumn" msprop:Generator_UserColumnName="CBarrasContenedor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Campo" msprop:Generator_TableClassName="CampoDataTable" msprop:Generator_TableVarName="tableCampo" msprop:Generator_RowChangedName="CampoRowChanged" msprop:Generator_TablePropName="Campo" msprop:Generator_RowDeletingName="CampoRowDeleting" msprop:Generator_RowChangingName="CampoRowChanging" msprop:Generator_RowEvHandlerName="CampoRowChangeEventHandler" msprop:Generator_RowDeletedName="CampoRowDeleted" msprop:Generator_RowClassName="CampoRow" msprop:Generator_UserTableName="Campo" msprop:Generator_RowEvArgName="CampoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fk_Paquete" msprop:Generator_ColumnVarNameInTable="columnfk_Paquete" msprop:Generator_ColumnPropNameInRow="fk_Paquete" msprop:Generator_ColumnPropNameInTable="fk_PaqueteColumn" msprop:Generator_UserColumnName="fk_Paquete" type="xs:short" />
+              <xs:element name="fk_Item" msprop:Generator_ColumnVarNameInTable="columnfk_Item" msprop:Generator_ColumnPropNameInRow="fk_Item" msprop:Generator_ColumnPropNameInTable="fk_ItemColumn" msprop:Generator_UserColumnName="fk_Item" type="xs:int" />
+              <xs:element name="id_Campo" msprop:Generator_ColumnVarNameInTable="columnid_Campo" msprop:Generator_ColumnPropNameInRow="id_Campo" msprop:Generator_ColumnPropNameInTable="id_CampoColumn" msprop:Generator_UserColumnName="id_Campo" type="xs:short" />
+              <xs:element name="Valor" msprop:Generator_ColumnVarNameInTable="columnValor" msprop:Generator_ColumnPropNameInRow="Valor" msprop:Generator_ColumnPropNameInTable="ValorColumn" msprop:Generator_UserColumnName="Valor" type="xs:anyType" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PaqueteKey1">
+      <xs:selector xpath=".//mstns:Paquete" />
+      <xs:field xpath="mstns:id_Paquete" />
+    </xs:unique>
+    <xs:unique name="ItemKey1">
+      <xs:selector xpath=".//mstns:Item" />
+      <xs:field xpath="mstns:fk_Paquete" />
+      <xs:field xpath="mstns:id_Item" />
+    </xs:unique>
+    <xs:unique name="CampoKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Campo" />
+      <xs:field xpath="mstns:fk_Paquete" />
+      <xs:field xpath="mstns:fk_Item" />
+      <xs:field xpath="mstns:id_Campo" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Paquete_Item" msdata:parent="Paquete" msdata:child="Item" msdata:parentkey="id_Paquete" msdata:childkey="fk_Paquete" msprop:Generator_UserChildTable="Item" msprop:Generator_ChildPropName="GetItemRows" msprop:Generator_UserRelationName="Paquete_Item" msprop:Generator_RelationVarName="relationPaquete_Item" msprop:Generator_UserParentTable="Paquete" msprop:Generator_ParentPropName="PaqueteRow" />
+      <msdata:Relationship name="Item_Campo" msdata:parent="Item" msdata:child="Campo" msdata:parentkey="fk_Paquete id_Item" msdata:childkey="fk_Paquete fk_Item" msprop:Generator_UserChildTable="Campo" msprop:Generator_ChildPropName="GetCampoRows" msprop:Generator_UserRelationName="Item_Campo" msprop:Generator_RelationVarName="relationItem_Campo" msprop:Generator_UserParentTable="Item" msprop:Generator_ParentPropName="ItemRowParent" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

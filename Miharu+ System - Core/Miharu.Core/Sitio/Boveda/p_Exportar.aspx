@@ -1,0 +1,1 @@
+﻿<%@ Page  UICulture="es" Culture="es-MX" Language="vb" AutoEventWireup="false" CodeBehind="p_Exportar.aspx.vb" Inherits="Miharu.Core.p_Exportar" %>

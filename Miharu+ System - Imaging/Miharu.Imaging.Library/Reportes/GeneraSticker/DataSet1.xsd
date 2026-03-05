@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Radicados" msprop:Generator_TableClassName="RadicadosDataTable" msprop:Generator_TableVarName="tableRadicados" msprop:Generator_TablePropName="Radicados" msprop:Generator_RowDeletingName="RadicadosRowDeleting" msprop:Generator_RowChangingName="RadicadosRowChanging" msprop:Generator_RowEvHandlerName="RadicadosRowChangeEventHandler" msprop:Generator_RowDeletedName="RadicadosRowDeleted" msprop:Generator_UserTableName="Radicados" msprop:Generator_RowChangedName="RadicadosRowChanged" msprop:Generator_RowEvArgName="RadicadosRowChangeEvent" msprop:Generator_RowClassName="RadicadosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Entidad" msprop:Generator_ColumnVarNameInTable="columnEntidad" msprop:Generator_ColumnPropNameInRow="Entidad" msprop:Generator_ColumnPropNameInTable="EntidadColumn" msprop:Generator_UserColumnName="Entidad" type="xs:string" minOccurs="0" />
+              <xs:element name="Radicado" msprop:Generator_ColumnVarNameInTable="columnRadicado" msprop:Generator_ColumnPropNameInRow="Radicado" msprop:Generator_ColumnPropNameInTable="RadicadoColumn" msprop:Generator_UserColumnName="Radicado" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaCreacion" msprop:Generator_ColumnVarNameInTable="columnFechaCreacion" msprop:Generator_ColumnPropNameInRow="FechaCreacion" msprop:Generator_ColumnPropNameInTable="FechaCreacionColumn" msprop:Generator_UserColumnName="FechaCreacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Cedula" msprop:Generator_ColumnVarNameInTable="columnCedula" msprop:Generator_ColumnPropNameInRow="Cedula" msprop:Generator_ColumnPropNameInTable="CedulaColumn" msprop:Generator_UserColumnName="Cedula" type="xs:string" minOccurs="0" />
+              <xs:element name="NombrePunto" msprop:Generator_ColumnVarNameInTable="columnNombrePunto" msprop:Generator_ColumnPropNameInRow="NombrePunto" msprop:Generator_ColumnPropNameInTable="NombrePuntoColumn" msprop:Generator_UserColumnName="NombrePunto" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroImagenes" msprop:Generator_ColumnVarNameInTable="columnNumeroImagenes" msprop:Generator_ColumnPropNameInRow="NumeroImagenes" msprop:Generator_ColumnPropNameInTable="NumeroImagenesColumn" msprop:Generator_UserColumnName="NumeroImagenes" type="xs:string" minOccurs="0" />
+              <xs:element name="Imagen" msprop:Generator_ColumnVarNameInTable="columnImagen" msprop:Generator_ColumnPropNameInRow="Imagen" msprop:Generator_ColumnPropNameInTable="ImagenColumn" msprop:Generator_UserColumnName="Imagen" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

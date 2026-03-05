@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"
+         Name="TWAIN DSM x64 2.x"
+         Culture="es">
+  <Strings>
+    <String Name="DisplayName">TWAIN DSM x64 2.x</String>
+    <String Name="AdminRequired">No tiene permisos para instalar TWAIN DSM x64 2.x. Contacte al administrador.</String>
+    <String Name="GeneralFailure">Se produjo un error al intentar instalar TWAIN DSM x64 2.x.</String>
+    <String Name="InvalidPlatformWinNT">La instalación de TWAIN DSM x64 2.x no es compatible con este sistema operativo.</String>
+  </Strings>
+</Package>

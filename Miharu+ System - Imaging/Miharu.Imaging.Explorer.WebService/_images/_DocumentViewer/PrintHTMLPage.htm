@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-'W3C'DTD HTML 4.0 Transitional'EN">
+<html>
+	<head>
+		<title>Imprimiendo...</title>
+		<meta name="vs_defaultClientScript" content="JavaScript"/>
+        <script src="Length.min.js" type="text/javascript"></script>
+	    <script type="text/jscript">
+		    function ImprimirImagen() {
+		        cadVariables = location.search.substring(1, location.search.length);
+		        arrVariables = cadVariables.split("&amp;");
+
+		        arrVariableActual = arrVariables[0].split("=");
+		        // arrVariableActual[0] -> Variable
+		        // arrVariableActual[1] -> Dato
+		        imgBase.src = arrVariableActual[1];
+
+		        // find our target element
+		        var elem = document.getElementById('imgBase');
+		        var maxW = Length.toPx(elem, '215.9mm');
+		        var maxH = Length.toPx(elem, '279.4mm');
+                var w = imgBase.width;
+		        var h = imgBase.height;
+
+		        if (maxW < w || maxH < h) {
+		            var pW = maxW / w;
+		            var pH = maxH / h;
+
+		            if (pW > pH) {
+		                imgBase.width = w * pH;
+		                imgBase.height = h * pH;
+		            }
+		            else {
+		                imgBase.width = w * pW;
+		                imgBase.height = h * pW;
+		            }
+		        }
+
+		        if (window.print)
+		            window.print();
+		        else
+		            alert("Lo siento, pero el navegador no permite imprimir desde la web");
+		    }
+		</script>
+	</head>
+	<body onload="ImprimirImagen();">	    
+		<img id="imgBase" alt="" src=""/>
+	</body>
+</html>

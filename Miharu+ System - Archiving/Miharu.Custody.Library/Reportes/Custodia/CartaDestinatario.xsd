@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CartaDestinatario" targetNamespace="http://tempuri.org/CartaDestinatario.xsd" xmlns:mstns="http://tempuri.org/CartaDestinatario.xsd" xmlns="http://tempuri.org/CartaDestinatario.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CartaDestinatario" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CartaDestinatario" msprop:Generator_UserDSName="CartaDestinatario">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="U_Destinatario" msprop:Generator_TableClassName="U_DestinatarioDataTable" msprop:Generator_TableVarName="tableU_Destinatario" msprop:Generator_TablePropName="U_Destinatario" msprop:Generator_RowDeletingName="U_DestinatarioRowDeleting" msprop:Generator_RowChangingName="U_DestinatarioRowChanging" msprop:Generator_RowEvHandlerName="U_DestinatarioRowChangeEventHandler" msprop:Generator_RowDeletedName="U_DestinatarioRowDeleted" msprop:Generator_UserTableName="U_Destinatario" msprop:Generator_RowChangedName="U_DestinatarioRowChanged" msprop:Generator_RowEvArgName="U_DestinatarioRowChangeEvent" msprop:Generator_RowClassName="U_DestinatarioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Data_1" msprop:Generator_ColumnVarNameInTable="columnData_1" msprop:Generator_ColumnPropNameInRow="Data_1" msprop:Generator_ColumnPropNameInTable="Data_1Column" msprop:Generator_UserColumnName="Data_1" type="xs:long" minOccurs="0" />
+              <xs:element name="Data_2" msprop:Generator_ColumnVarNameInTable="columnData_2" msprop:Generator_ColumnPropNameInRow="Data_2" msprop:Generator_ColumnPropNameInTable="Data_2Column" msprop:Generator_UserColumnName="Data_2" type="xs:string" minOccurs="0" />
+              <xs:element name="CBarras_File" msprop:Generator_ColumnVarNameInTable="columnCBarras_File" msprop:Generator_ColumnPropNameInRow="CBarras_File" msprop:Generator_ColumnPropNameInTable="CBarras_FileColumn" msprop:Generator_UserColumnName="CBarras_File" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

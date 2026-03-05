@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImagingFileTransferConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Intervalo>5000</Intervalo>
+  <SecurityWebServiceURL>http://10.64.64.56:8082/Miharu.Security.WebService/SecurityService.asmx</SecurityWebServiceURL>
+  <User>Service</User>
+  <Password>ru7X8Y7xy91/Gvlex3ZC0g==</Password>
+</ImagingFileTransferConfig>

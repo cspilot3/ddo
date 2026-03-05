@@ -1,0 +1,52 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="PopupMasterPage.master.vb" Inherits="Miharu.Core.PopupMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Miharu.Core</title>
+    <asp:Literal ID="lrtMasterScripts" runat="server"></asp:Literal>
+    
+    <asp:ContentPlaceHolder ID="MasterHead" runat="server">
+        <link href="../_styles/Gridview/GridviewStyles.css" rel="stylesheet" type="text/css" />
+        <link href="../_styles/Default.css" rel="stylesheet" type="text/css" />
+        <link href="../_styles/ModalPopUp/StyleSheetModalPopUp.css" rel="stylesheet" type="text/css" />
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="InitPage()" onunload="PopupClosed()" style="padding: 0px; margin: 0px; text-align: center">
+    <form id="form1" runat="server">
+        <script type="text/javascript">
+            var prm2 = Sys.WebForms.PageRequestManager.getInstance();
+
+            prm2.add_beginRequest(BeginRequestHandler2);
+            prm2.add_pageLoaded(pageLoadedHandler2);
+
+            var ctrId_tbl_Bloquear = 'div_Bloquear';
+            var ctrId_EndRequestAction = '<%= EndRequestAction.ClientID %>';
+            var ctrId_EndRequestMessage = '<%= EndRequestMessage.ClientID %>';
+        </script>
+
+        <div>
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            <asp:ContentPlaceHolder ID="MasterContent" runat="server"></asp:ContentPlaceHolder>
+
+            <asp:UpdatePanel ID="updRequest" runat="server" UpdateMode="Always">
+                <ContentTemplate>
+                    <input type="hidden" id="EndRequestAction" value="" runat="server" />
+                    <input type="hidden" id="EndRequestMessage" value="" runat="server" />
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+    
+        <div id='div_Bloquear' class="divBloquearPopup">
+            <table id="tbl_Bloquear" border="0" style="width: 100%; height: 800px">
+                <tr>
+                    <td valign='middle' align='center'>
+                        <img src="<%= ResolveUrl("~/_images/basic/ajax-loader.gif") %>" alt="" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

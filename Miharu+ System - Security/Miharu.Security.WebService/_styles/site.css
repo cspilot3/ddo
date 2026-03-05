@@ -1,0 +1,37 @@
+﻿body { font-size: x-small; font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif; margin: 0; padding: 0; color: #696969; text-align: left; background-color: #FAFBF6; }
+
+input[type=text], input[type=password] { border: 1px solid #ccc; /*background-color: #F4FAFF;*/ height: 14px; font-size: xx-small; }
+input[type=button] { font-size: xx-small; }
+input[disabled=disabled] { background-color: #F4FAFF !important; }
+
+a:link, a:visited { color: #666666; }
+a:hover { color: #333333; text-decoration: none; }
+a:active { color: #666666; }
+
+h1, h2, h3, h4, h5, h6 { color: #214967; }
+p { margin-bottom: 10px; line-height: 1.6em; }
+table { border: 0; }
+
+.framechild { position: absolute; top: 82px; bottom: 0; left: 0; right: 0; font-size: small; }
+
+.hidden { display: none; }
+
+div.accountInfo { width: 700px; height: 400px; text-align: left; margin-right: auto; margin-left: auto; top: 0; }
+fieldset { margin: 1em 0; padding: 1em; border: 1px solid #ccc; background-color: #FFFFFF; }
+fieldset p { margin: 2px 12px 10px 10px; }
+fieldset.login { padding-left: 40px; padding-right: 40px; padding-bottom: 20px; }
+fieldset.login input { font-size: small !important; width: 320px; height: 18px; }
+fieldset.login label, fieldset.register label, fieldset.changePassword label { display: block; }
+fieldset label.inline { display: inline; }
+legend { font-size: 1.1em; font-weight: 600; padding: 2px 4px 8px 4px; }
+img.candado { position: relative; top: -127px; right: 70px; }
+img.llave { position: relative; top: -265px; right: -210px; }
+
+.error_message { color: #FF0000; }
+.ok_message { color: #009900; }
+
+.center { text-align: center !important; }
+
+.button { cursor: pointer; }
+
+.readonly { background-color: #F4FAFF !important; /*color: #666666;*/ }

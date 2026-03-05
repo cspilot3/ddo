@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="" url="~/site/main.aspx"  description="">
+    <siteMapNode title="Accesos" url="~/site/application/dashboard.aspx" description="Inicio">
+      
+      <siteMapNode title ="Consultas"  url="~/site/Consulta/Consultas.aspx"  description="Módulo de consultas" />
+      
+      <siteMapNode title="Reportes" url="~/site/application/dashboard.aspx?TableMenu=Reportes" description="Módulo de Reportes">
+        <siteMapNode title="Validación de Listas" url="~/site/application/dashboard.aspx?TableMenu=VL" description="Validación de Listas" >
+          <siteMapNode title="Reporte Validación de Listas" url="~/site/reportes/reportes.aspx?rpt=2&amp;pry=1" description="Reporte Validación de Listas" />
+          <siteMapNode title="Reporte Facturación" url="~/site/reportes/reportes.aspx?rpt=3&amp;pry=1" description="Reporte Facturación" />
+          <siteMapNode title="Reporte Facturación Detallada" url="~/site/reportes/reportes.aspx?rpt=4&amp;pry=1" description="Reporte Facturación Detallada" />
+          <siteMapNode title="Reporte Cargues" url="~/site/reportes/reportes.aspx?rpt=6&amp;pry=1" description="Reporte Cargues" />
+        </siteMapNode>
+        <siteMapNode title="Embargos" url="~/site/application/dashboard.aspx?TableMenu=E" description="Embargos">
+          <siteMapNode title="Reporte Embargos" url="~/site/reportes/reportes.aspx?rpt=1&amp;pry=2" description="Reporte Embargos" />
+          <siteMapNode title="Reporte Facturación" url="~/site/reportes/reportes.aspx?rpt=3&amp;pry=2" description="Reporte Facturación" />
+          <siteMapNode title="Reporte Facturación Detallada" url="~/site/reportes/reportes.aspx?rpt=4&amp;pry=2" description="Reporte Facturación Detallada" />
+          <siteMapNode title="Reporte Cruce" url="~/site/reportes/reportes.aspx?rpt=5&amp;pry=2" description="Reporte Cruce" />
+          <siteMapNode title="Reporte Cargues" url="~/site/reportes/reportes.aspx?rpt=6&amp;pry=2" description="Reporte Cargues" />
+        </siteMapNode>
+        <siteMapNode title="Desembargos" url="~/site/application/dashboard.aspx?TableMenu=D" description="Desembargos">
+          <siteMapNode title="Reporte Desembargos" url="~/site/reportes/reportes.aspx?rpt=1&amp;pry=3" description="Reporte Desembargos" />
+          <siteMapNode title="Reporte Facturación" url="~/site/reportes/reportes.aspx?rpt=3&amp;pry=3" description="Reporte Facturación" />
+          <siteMapNode title="Reporte Facturación Detallada" url="~/site/reportes/reportes.aspx?rpt=4&amp;pry=3" description="Reporte Facturación Detallada" />
+          <siteMapNode title="Reporte Cruce" url="~/site/reportes/reportes.aspx?rpt=5&amp;pry=3" description="Reporte Cruce" />
+          <siteMapNode title="Reporte Cargues" url="~/site/reportes/reportes.aspx?rpt=6&amp;pry=3" description="Reporte Cargues" />
+        </siteMapNode>
+      </siteMapNode>      
+      
+       <siteMapNode title="Acerca de" url="~/site/application/about.aspx" description="Acerca de..." />
+
+    </siteMapNode>    
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,315 @@
+﻿body
+{
+	margin: 0px;
+	overflow: auto;
+	scrollbar-face-color: #EDEDED;
+	scrollbar-highlight-color: #EDEDED;
+	scrollbar-3dlight-color: #666666;
+	scrollbar-darkshadow-color: #666666;
+	scrollbar-shadow-color: #CCCCCC;
+	scrollbar-arrow-color: #666666;
+	scrollbar-track-color: #EDEDED;
+}
+a
+{	
+	color: #003366;
+}
+a:visited
+{
+	color: #003366;
+}
+.link
+{
+	font-size: x-small;
+	font-weight: bold;
+	font-family: 'Microsoft Sans Serif';	
+}
+.botonimagen
+{
+	border: 1px solid #FFFFFF;	
+}
+.botonimagen:hover
+{
+	border: 1px solid #808080;
+	cursor:pointer;
+}
+.Titulo_Principal
+{
+	font-weight: bold;
+	font-size: large;
+	color: White;
+	font-family: Arial;
+}
+.Titulo_Secundario
+{
+	/*border: 2px outset #999999;*/
+	font-weight: bold;
+	font-size: small;
+	color: #CFE8BF;
+	font-family: Verdana;
+	height: 15px; /*background-color: #006699;*/
+	width: 100%;
+	text-align: left;
+	background-color: #63AC29;
+}
+.Grilla_Header
+{
+	border: 1px solid #999999;
+	font-weight: bold;
+	font-size: small;
+	color: #FFFFFF;
+	font-family: Verdana;
+	height: 30px;
+	background-color: #006699;
+}
+.Titulo_Menu
+{
+	font-weight: bold;
+	font-size: x-small;
+	color: black;
+	font-family: Verdana;	
+	text-decoration: none;
+}
+.Parrafo
+{
+	font-size: x-small;	
+	font-family: Verdana;
+}
+.Parrafo2
+{
+	font-size: medium;
+	font-family: Verdana;
+	font-weight: bold;
+}
+.Label
+{
+	font-weight: bold;
+	font-size: xx-small;
+	color: #003300;
+	font-family: Arial;
+}
+.Label1
+{
+	font-weight: bold;
+	font-size: small;
+	color: #003300;
+	font-family: Arial;
+}
+.LabelTextbox
+{
+	border: 1px solid #333333;
+	font-size: small;
+	font-family: Verdana;
+	color: #003366;
+	font-weight: bold;
+	padding-left: 10px;
+}
+.Textbox , input , select
+{
+	font-size: small;
+	font-family: Verdana;
+	background-color: #FFFFEA;
+	color: #003366;
+	font-weight: bold;
+    text-align: left;
+    margin-bottom: 0px;
+}
+.TextboxDisable
+{
+	font-size: small;
+	font-family: Verdana;
+	background-color: #EEEEEE;
+	color: #003366;
+	font-weight: bold;
+}
+.Button, .Button:hover, .Button_Selected
+{
+	font-weight: bold;
+	font-size: x-small;
+	font-family: Tahoma;
+}
+.Button
+{
+	border: 1px solid #666666;
+	background-color: #C0C0C0;
+	cursor: pointer;
+	color: #3366CC;
+}
+.Button:hover
+{
+	border: 1px solid #666666;	
+	background-color: #FFFFCC;
+}
+.Button_Selected
+{
+	border: 1px inset #FFFFFF;
+	background-color: #666666;
+	color: #FFFFFF;
+}
+.Error
+{
+	font-weight: bold;
+	color: red;
+	font-family: Verdana;
+}
+.Mensaje_Error
+{
+	font-weight: bold;
+	font-size: xx-small;
+	color: red;
+	font-family: Verdana;
+}
+.Oculto
+{
+	display: none;
+}
+.BotonCambiante
+{
+	border: 1px solid #FFFFFF;
+	vertical-align: middle;
+	text-align: center;
+}
+.BotonCambiante:hover
+{
+	border: 1px solid #666666;
+	vertical-align: middle;
+	text-align: center;
+}
+.Flujo_Paso
+{
+	background-image: url(        '../_images/flujo/Paso.png' );
+	font-family: 'Courier New' , Courier, 'espacio sencillo';
+	font-weight: bold;
+	background-repeat: no-repeat;
+	text-align: center;
+	vertical-align: middle;
+	width: 23px;
+	font-size: medium;
+	height: 23px;
+	padding-top: 4px;
+}
+.Flujo_Estado
+{
+	text-align: center;
+	vertical-align: middle;
+	width: 23px;
+}
+.Calendario
+{
+    width: 80px;
+    height: 80px;
+}
+.titLoginCorp {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#009ee0;
+	font-size:23px;
+	line-height:35px;
+	font-weight:bold;
+	border-bottom: 1px solid #009ee0;
+	display:block;}
+    
+    .boxregisterCorp{
+	border:1px solid #009ee0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:14px;
+	color:#666666;}
+	
+	.textregister{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:20px;
+	color:#666666;}
+	
+
+/* Consultas Inicio*/
+.divCampos
+{
+	border: 1px solid #C0C0C0;
+	width: 650px;
+	height: 100px;
+	overflow: auto;
+}
+
+
+.tab
+{
+	width: 800px;
+	/*font-size: xx-small;*/
+}
+
+.td1
+{
+	width:130px;
+}
+
+.td2
+{
+	width:150px;
+}
+
+.blist
+{
+	width:17px;
+	height:18px;
+	background-image: url('ui/btnList1.gif');
+}
+.blist:hover
+{
+	width:17px;
+	height:18px;
+	background-image: url('ui/btnList2.gif');
+}
+
+#FechaInicial_Input, #FechaFinal_Input
+{
+	width: 100px;
+	font-size: 9px;
+}
+
+#Oficina_Input
+{
+	width:300px;
+	font-size: 9px;
+}
+
+#TipoTransaccion_Input
+{
+	width:300px;
+	font-size: 9px;
+}
+
+#Buscar_Button
+{
+	width: 150px;
+	font-size: 12px;
+	color: #000066;
+	background-color: #CCCCCC;
+}
+#Generar_Button
+{
+	width: 150px;
+	font-size: 12px;
+	color: #000066;
+	background-color: #CCCCCC;
+}
+#Buscar_Button:hover
+{
+	width: 150px;
+	font-size: 12px;
+	color: #000000;
+	background-color: #E1E1E1;
+}
+#Generar_Button:hover
+{
+	width: 150px;
+	font-size: 12px;
+	color: #000000;
+	background-color: #E1E1E1;
+}
+.cinp
+{
+	width:150px;
+	font-size: 9px;
+}
+/* Consultas Fin*/

@@ -1,0 +1,364 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MiharuMasterPage.master.vb"
+    Inherits="Miharu.Imaging.MiharuMasterPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>:: MIHARU Imaging ::</title>
+    <asp:Literal ID="ltrHeadScripts" runat="server"></asp:Literal>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="_styles/StyleSheet_Miharu.css" rel="stylesheet" type="text/css" />
+        <link href="_styles/StyleSheet_Marco.css" rel="stylesheet" type="text/css" />
+        <link href="_styles/StyleSheet_Menu.css" rel="stylesheet" type="text/css" />
+        <link href="_styles/StyleSheet_DialogBox.css" rel="stylesheet" type="text/css" />
+    </asp:ContentPlaceHolder>
+</head>
+<body style="text-align: center; margin: 0px; vertical-align: top;" onload="NotificarCargue(); BeginRequestHandler();"
+    onunload="NotificarCierre();">
+    <form id="objForm" runat="server">
+
+    <script type="text/javascript">
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+        prm.add_beginRequest(BeginRequestHandler);
+        prm.add_pageLoaded(pageLoadedHandler);
+
+        var ctrId_div_Proceso = 'div_Proceso';
+        var ctrId_div_Bloquear = 'div_Bloquear';
+        var ctrId_EndRequestAction = '<%= EndRequestAction.ClientID %>';
+        var ctrId_lnkbHijaClose = '<%= lnkbHijaClose.ClientID %>';
+        var Pwindow;
+        var Pdocument;
+        var UseHijaCancelEvent = 0;
+    </script>
+
+    <div class="Oculto">
+        <ajaxToolkit:ToolkitScriptManager runat="server" ID="MyToolkitScriptManager" ScriptMode="Release"> 
+        </ajaxToolkit:ToolkitScriptManager>
+        <asp:UpdatePanel ID="upOpcionesEspeciales" runat="server">
+            <ContentTemplate>
+                <asp:LinkButton ID="lnkbHijaClose" runat="server"></asp:LinkButton>
+                <input type="hidden" id="EndRequestAction" value="" runat="server" />
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    <div id='div_Proceso' class="Proceso_div">
+        <table align="center" class="Proceso_tabla">
+            <tr>
+                <td valign='middle' align='center'>
+                    <img src="<%= ResolveClientUrl("~/_images/basic/ajax-loader.gif") %>" alt="" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id='div_Bloquear' class="Bloquear_div">
+        <table align="center" class="Bloquear_tabla">
+            <tr>
+                <td valign='middle' align='center'>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <table cellpadding="0" cellspacing="0" border="0" align="center">
+        <tr>
+            <td>
+                <table id="tblHeader" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td rowspan="3" class="header-name">
+                            &nbsp;
+                        </td>
+                        <td colspan="2" class="header1">
+                            &nbsp;
+                        </td>
+                        <td rowspan="3" class="header-logo">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="header2">
+                            &nbsp;
+                        </td>
+                        <td class="header-menu" align="right">
+                            <table id="tblAccesos" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="header-menuleftv">
+                                        &nbsp;
+                                    </td>
+                                    <td style="width: 120px;" class="header-menucenter">
+                                        &nbsp;
+                                    </td>
+                                    <td class="header-menuseparator">
+                                        &nbsp;
+                                    </td>
+                                    <td style="width: 50px;" class="header-menucenter">
+                                        &nbsp;
+                                    </td>
+                                    <td class="header-menuseparator">
+                                        &nbsp;
+                                    </td>
+                                    <td style="width: 120px;" class="header-menucenter">
+                                        &nbsp;
+                                    </td>
+                                    <td class="header-menuseparator">
+                                        &nbsp;
+                                    </td>
+                                    <td style="width: 60px;" class="header-menucenter">
+                                        &nbsp;
+                                    </td>
+                                    <td class="header-menurightv">
+                                        &nbsp;
+                                    </td>
+                                    <td style="width: 120px; padding-top: 10px;" align="right">
+                                        <asp:ContentPlaceHolder ID="Opciones" runat="server">
+                                            <asp:UpdatePanel ID="upOpciones" runat="server">
+                                                <ContentTemplate>
+                                                    <asp:Menu ID="mnuOpciones" runat="server" CssClass="option-menu" DynamicHorizontalOffset="2"
+                                                        Orientation="Horizontal" StaticSubMenuIndent="10px">
+                                                        <StaticSelectedStyle BackColor="#1C5E55" />
+                                                        <LevelSubMenuStyles>
+                                                            <asp:SubMenuStyle Font-Underline="False" />
+                                                            <asp:SubMenuStyle BackColor="White" BorderColor="#666666" BorderStyle="Solid" BorderWidth="1px"
+                                                                Font-Underline="False" />
+                                                        </LevelSubMenuStyles>
+                                                        <LevelMenuItemStyles>
+                                                            <asp:MenuItemStyle Font-Underline="False" />
+                                                            <asp:MenuItemStyle CssClass="option-item" />
+                                                        </LevelMenuItemStyles>
+                                                        <DynamicHoverStyle CssClass="option-item-hover" />
+                                                        <Items>
+                                                            <asp:MenuItem Selectable="False" Text="Opciones" Value="Opciones">
+                                                                <asp:MenuItem Text="Cambiar password" Value="Password"></asp:MenuItem>
+                                                                <asp:MenuItem Text="Acerca de..." Value="About"></asp:MenuItem>
+                                                                <asp:MenuItem Text="Cerrar sesión" Value="Cerrar"></asp:MenuItem>
+                                                            </asp:MenuItem>
+                                                        </Items>
+                                                    </asp:Menu>
+                                                </ContentTemplate>
+                                            </asp:UpdatePanel>
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="header3a">
+                        </td>
+                        <td class="header3b">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 1000px; height: 585px; border-width: 1px; border-color: #999999;
+                border-right-style: solid; border-left-style: solid;" valign="top">
+                <asp:ContentPlaceHolder ID="Cuerpo" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table cellspacing="0" cellpadding="0" border="0" style="border-width: 1px; border-color: #999999;
+                    border-right-style: solid; border-left-style: solid;">
+                    <tr>
+                        <td class="footer-left">
+                        </td>
+                        <td class="footer-right">
+                           <a>Desarrollado por Epago® 2019</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <asp:UpdatePanel ID="upUpdateOpciones" runat="server">
+        <ContentTemplate>
+            <asp:Panel ID="pnlPassword" runat="server" Style="display: none" Width="220px" DefaultButton="PasswordAceptarButton">
+                <table class="table_window" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="DialogBox_nw">
+                        </td>
+                        <td class="DialogBox_n">
+                            <asp:Panel ID="pnlPasswordHead" runat="server">
+                                <div class="title_window">
+                                    Cambiar contraseña</div>
+                            </asp:Panel>
+                        </td>
+                        <td class="DialogBox_close" onclick="hideModalPopupViaClient('<%= ModalPopupPassword.ClientID %>')">
+                        </td>
+                        <td class="DialogBox_ne">
+                        </td>
+                    </tr>
+                </table>
+                <table class="table_window" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="DialogBox_w">
+                        </td>
+                        <td valign="top" class="Content">
+                            <table class="table_window" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td colspan="3" style="height: 10px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="padding: 0px 0px 0px 10px">
+                                        <asp:Label ID="OldPasswordLabel" runat="server" Text="Contraseña" CssClass="Label"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="padding: 0px 0px 0px 10px">
+                                        <asp:TextBox ID="OldPasswordTextBox" runat="server" Width="180px" TextMode="Password"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="height: 10px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="padding: 0px 0px 0px 10px">
+                                        <asp:Label ID="NewPasswordLabel" runat="server" Text="Contraseña" CssClass="Label"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="padding: 0px 0px 0px 10px">
+                                        <asp:TextBox ID="NewPasswordTextBox" runat="server" Width="180px" TextMode="Password"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="height: 10px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="padding: 0px 0px 0px 10px">
+                                        <asp:Label ID="ConfirmPasswordLabel" runat="server" Text="Confirmar contraseña" CssClass="Label"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="padding: 0px 0px 0px 10px">
+                                        <asp:TextBox ID="ConfirmPasswordTextBox" runat="server" Width="180px" TextMode="Password"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="height: 10px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 90px" align="right">
+                                        <asp:Button ID="PasswordAceptarButton" runat="server" Text="Aceptar" />
+                                    </td>
+                                    <td style="width: 20px">
+                                    </td>
+                                    <td style="width: 90px">
+                                        <asp:Button ID="PasswordCancelarButton" runat="server" Text="Cancelar" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="height: 10px">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="DialogBox_e">
+                        </td>
+                    </tr>
+                </table>
+                <table class="table_window" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="DialogBox_sw">
+                        </td>
+                        <td class="DialogBox_s">
+                            <div style="width: 10px; height: 7px">
+                            </div>
+                        </td>
+                        <td class="DialogBox_se">
+                        </td>
+                    </tr>
+                </table>
+            </asp:Panel>
+            <ajaxToolkit:ModalPopupExtender ID="ModalPopupPassword" runat="server" TargetControlID="pnlPasswordHead"
+                PopupControlID="pnlPassword" PopupDragHandleControlID="pnlPasswordHead" CancelControlID="PasswordCancelarButton"
+                DropShadow="True" BackgroundCssClass="modalBackground">
+            </ajaxToolkit:ModalPopupExtender>
+            <asp:Panel ID="pnlCerrarSesion" runat="server" Style="display: none" Width="400px"
+                DefaultButton="btnCerrarSesionAceptar">
+                <table class="table_window" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="DialogBox_nw">
+                        </td>
+                        <td class="DialogBox_n">
+                            <asp:Panel ID="pnlCerrarSesionHead" runat="server">
+                                <div class="title_window">
+                                    Cerrar sesión</div>
+                            </asp:Panel>
+                        </td>
+                        <td class="DialogBox_close" onclick="hideModalPopupViaClient('<%= ModalPopupCerrarSesion.ClientID %>');">
+                        </td>
+                        <td class="DialogBox_ne">
+                        </td>
+                    </tr>
+                </table>
+                <table class="table_window" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="DialogBox_w">
+                        </td>
+                        <td valign="top" class="Content">
+                            <table class="table_window" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td colspan="3" style="height: 10px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="height: 40px" class="Parrafo2">
+                                        <center>
+                                            Desea finalizar la sesión actual?</center>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="height: 10px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 150px" align="right">
+                                        <asp:Button ID="btnCerrarSesionAceptar" runat="server" Text="Aceptar" />
+                                    </td>
+                                    <td style="width: 50px">
+                                    </td>
+                                    <td style="width: 150px">
+                                        <asp:Button ID="btnCerrarSesionCancelar" runat="server" Text="Cancelar" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="height: 10px">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="DialogBox_e">
+                        </td>
+                    </tr>
+                </table>
+                <table class="table_window" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="DialogBox_sw">
+                        </td>
+                        <td class="DialogBox_s">
+                            <div style="width: 10px; height: 7px">
+                            </div>
+                        </td>
+                        <td class="DialogBox_se">
+                        </td>
+                    </tr>
+                </table>
+            </asp:Panel>
+            <ajaxToolkit:ModalPopupExtender ID="ModalPopupCerrarSesion" runat="server" TargetControlID="pnlCerrarSesionHead"
+                PopupControlID="pnlCerrarSesion" PopupDragHandleControlID="pnlCerrarSesionHead"
+                CancelControlID="btnCerrarSesionCancelar" DropShadow="True" BackgroundCssClass="modalBackground">
+            </ajaxToolkit:ModalPopupExtender>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    </form>
+</body>
+</html>

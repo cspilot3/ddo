@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master_form.master.cs" Inherits="WebSantander.master.master_form" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:Literal ID="HeadScriptsLiteral" runat="server"></asp:Literal>
+    <script type="text/javascript">
+        SiteFrm = {
+            //CurrentPage: "main.aspx",
+            DownloadUrl: "",
+            ImageContainer: "",
+
+            Init: function () {
+                //SiteFrm.MostrarImagenLogo();
+            },
+
+            MostrarImagenLogo: function () {
+                var url = SiteFrm.DownloadUrl + "?container=" + SiteFrm.ImageContainer + "&default=~/styles/frame/default_client_logo.png" + "&p=" + (Site.PagNum++);
+                $("#company_image").attr("src", url);
+            }
+        };
+
+        SiteFrm.DownloadUrl = '<%= ResolveClientUrl("~/site/common/show_image.ashx") %>';
+        SiteFrm.ImageContainer = '<%= WebSantander.code.consts.CompanyImage %>';
+
+        $(document).ready(function () { SiteFrm.Init(); });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="padding: 0; text-align: center; margin: 0; vertical-align: top;">
+    <form id="master_formForm" runat="server">
+    <div class="path">
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+        </asp:SiteMapPath>
+    </div>
+    <div class="optionbar">
+        <div id="option_container" class="aleft">
+        </div>
+        <asp:Label ID="TitleLabel" runat="server" Text="Título" CssClass="titlepage"></asp:Label>
+    </div>
+    <%--<img id="company_image" alt="logo" src="" class="client_logo" />--%>
+    <div class="content">
+        <asp:ContentPlaceHolder ID="body" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="MouseLock" class="MouseLock">
+    </div>
+    </form>
+</body>
+</html>

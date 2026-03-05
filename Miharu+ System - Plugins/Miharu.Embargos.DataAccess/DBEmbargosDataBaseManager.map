@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SchemaMapingManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Schemas>
+    <item>
+      <key>
+        <string>Process</string>
+      </key>
+      <value>
+        <string>Process</string>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Config</string>
+      </key>
+      <value>
+        <string>Config</string>
+      </value>
+    </item>
+  </Schemas>
+</SchemaMapingManager>

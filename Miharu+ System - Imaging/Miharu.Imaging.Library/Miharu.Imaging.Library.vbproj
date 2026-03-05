@@ -1,0 +1,1615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{9501AE9F-03BC-4933-9EC3-84BCD96CC795}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Miharu.Imaging.Library</RootNamespace>
+    <AssemblyName>Miharu.Imaging.Library</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Miharu.Imaging.Library.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Miharu.Imaging.Library.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Barcode">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="BarcodeLib">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="BarcodeLib.BarcodeReader">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\BarcodeLib.BarcodeReader.dll</HintPath>
+    </Reference>
+    <Reference Include="DB_OCR.DataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\DB_OCR.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.1.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\net35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PDFaLibrary">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\PDFaLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Data, Version=2.7.6.24573, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools, Version=2.0.4750.24678, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\FormAdicionarDocumento.Designer.vb">
+      <DependentUpon>FormAdicionarDocumento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FormAdicionarDocumento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\FormEditarCampo.Designer.vb">
+      <DependentUpon>FormEditarCampo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FormEditarCampo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\FormReprocesoMotivo.Designer.vb">
+      <DependentUpon>FormReprocesoMotivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FormReprocesoMotivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ImagingSearchControlContenedor.Designer.vb">
+      <DependentUpon>ImagingSearchControlContenedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImagingSearchControlContenedor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ImagingSearchControlParametersContenedor.Designer.vb">
+      <DependentUpon>ImagingSearchControlParametersContenedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImagingSearchControlParametersContenedor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ImagingSearchControlParameters.Designer.vb">
+      <DependentUpon>ImagingSearchControlParameters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImagingSearchControlParameters.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\IImagingSearchControlParameters.vb" />
+    <Compile Include="Controls\UCRelevoCentralizador.Designer.vb">
+      <DependentUpon>UCRelevoCentralizador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCRelevoCentralizador.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCRelevo.Designer.vb">
+      <DependentUpon>UCRelevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCRelevo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Eventos\EventManager.vb" />
+    <Compile Include="Eventos\IEventExecuter.vb" />
+    <Compile Include="FormImagingWorkSpace.Designer.vb">
+      <DependentUpon>FormImagingWorkSpace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormImagingWorkSpace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help\ModuloAyuda.Designer.vb">
+      <DependentUpon>ModuloAyuda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help\ModuloAyuda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb" />
+    <Compile Include="Procesos\CargueLog\FormCargueDescarga.Designer.vb">
+      <DependentUpon>FormCargueDescarga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\CargueLog\FormCargueDescarga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\CargueLog\FormCargueLog.Designer.vb">
+      <DependentUpon>FormCargueLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\CargueLog\FormCargueLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\CargueLog\FormResultadoValidacion.Designer.vb">
+      <DependentUpon>FormResultadoValidacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\CargueLog\FormResultadoValidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\CargueLog\ProcesaCargueLog.vb" />
+    <Compile Include="Procesos\Cargue\CargueImaging.vb" />
+    <Compile Include="Procesos\Cargue\CargueRisk.vb" />
+    <Compile Include="Procesos\Cargue\CargueBase.vb" />
+    <Compile Include="Procesos\Cargue\FormatValidator.vb" />
+    <Compile Include="Procesos\Cargue\FormCargue.Designer.vb">
+      <DependentUpon>FormCargue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Cargue\FormCargue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Cargue\FormCargueCredivalores.Designer.vb">
+      <DependentUpon>FormCargueCredivalores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Cargue\FormCargueCredivalores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Cargue\FormCargueNoPaquete.Designer.vb">
+      <DependentUpon>FormCargueNoPaquete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Cargue\FormCargueNoPaquete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Cargue\FormDesbloquear.Designer.vb">
+      <DependentUpon>FormDesbloquear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Cargue\FormDesbloquear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Cargue\FormEstadoCargue.Designer.vb">
+      <DependentUpon>FormEstadoCargue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Cargue\FormEstadoCargue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Cargue\FormFechaPaquete.designer.vb">
+      <DependentUpon>FormFechaPaquete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Cargue\FormFechaPaquete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ImagingSearchControl.Designer.vb">
+      <DependentUpon>ImagingSearchControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImagingSearchControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Procesos\Cargue\FormReasignarCargue.Designer.vb">
+      <DependentUpon>FormReasignarCargue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Cargue\FormReasignarCargue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Cargue\FormReasignarPaqueteCantidad.designer.vb">
+      <DependentUpon>FormReasignarPaqueteCantidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Cargue\FormReasignarPaqueteCantidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Cargue\FormSeguimiento.Designer.vb">
+      <DependentUpon>FormSeguimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Cargue\FormSeguimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormAgregarEmpaqueContenedorCampo.Designer.vb">
+      <DependentUpon>FormAgregarEmpaqueContenedorCampo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormAgregarEmpaqueContenedorCampo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormConfigImagenes.Designer.vb">
+      <DependentUpon>FormConfigImagenes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormConfigImagenes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormEmpaqueContenedorCampo.Designer.vb">
+      <DependentUpon>FormEmpaqueContenedorCampo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormEmpaqueContenedorCampo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Correos\FormEnviarCorreo.Designer.vb">
+      <DependentUpon>FormEnviarCorreo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Correos\FormEnviarCorreo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Correos\FormSeguimientoCorreo.Designer.vb">
+      <DependentUpon>FormSeguimientoCorreo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Correos\FormSeguimientoCorreo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Cruce\FormCruce.Designer.vb">
+      <DependentUpon>FormCruce.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Cruce\FormCruce.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Destape\FormDestapeCorreccion.Designer.vb">
+      <DependentUpon>FormDestapeCorreccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Destape\FormDestapeCorreccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Destape\FormCrearFechaProceso.Designer.vb">
+      <DependentUpon>FormCrearFechaProceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Destape\FormCrearFechaProceso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Destape\FormCrearOT.Designer.vb">
+      <DependentUpon>FormCrearOT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Destape\FormCrearOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Destape\FormDestape.Designer.vb">
+      <DependentUpon>FormDestape.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Destape\FormDestape.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Destape\FormDestapeMasivo.Designer.vb">
+      <DependentUpon>FormDestapeMasivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Destape\FormDestapeMasivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Destape\FormFechaProceso.Designer.vb">
+      <DependentUpon>FormFechaProceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Destape\FormFechaProceso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Destape\FormOT.Designer.vb">
+      <DependentUpon>FormOT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Destape\FormOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Destape\FormPreDestape.Designer.vb">
+      <DependentUpon>FormPreDestape.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Destape\FormPreDestape.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Empaque\FormCierreCaja.Designer.vb">
+      <DependentUpon>FormCierreCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Empaque\FormCierreCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Empaque\FormEmpaque.Designer.vb">
+      <DependentUpon>FormEmpaque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Empaque\FormEmpaque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Empaque\FormPreEmpaque.Designer.vb">
+      <DependentUpon>FormPreEmpaque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Empaque\FormPreEmpaque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Empaque\FormRotulos.Designer.vb">
+      <DependentUpon>FormRotulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Empaque\FormRotulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Empaque\HojaControlEmpaque.vb" />
+    <Compile Include="Procesos\Exportar\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Exportar\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Exportar\FormExportClientesEnLog.Designer.vb">
+      <DependentUpon>FormExportClientesEnLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Exportar\FormExportClientesEnLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Exportar\FormExportCredivalores.Designer.vb">
+      <DependentUpon>FormExportCredivalores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Exportar\FormExportCredivalores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Exportar\FormExportPDF.Designer.vb">
+      <DependentUpon>FormExportPDF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Exportar\FormExportPDF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Exportar\FormExport.Designer.vb">
+      <DependentUpon>FormExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Exportar\FormExport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Exportar\InstanciaAProcesarClinetesEnLog.vb" />
+    <Compile Include="Procesos\Exportar\ProcesaClientesEnLog.vb" />
+    <Compile Include="Procesos\FormSeleccionarProyecto.Designer.vb">
+      <DependentUpon>FormSeleccionarProyecto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\FormSeleccionarProyecto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\FormSeleccionarProyectoDMZ.Designer.vb">
+      <DependentUpon>FormSeleccionarProyectoDMZ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\FormSeleccionarProyectoDMZ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Fuid\FormGenerarFuid.Designer.vb">
+      <DependentUpon>FormGenerarFuid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Fuid\FormGenerarFuid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Fuid\FormGenerarFuidporCaja.Designer.vb">
+      <DependentUpon>FormGenerarFuidporCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Fuid\FormGenerarFuidporCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Fuid\FormGuardarFuid.Designer.vb">
+      <DependentUpon>FormGuardarFuid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Fuid\FormGuardarFuid.vb" />
+    <Compile Include="Procesos\Fuid\FormReportFuid.Designer.vb">
+      <DependentUpon>FormReportFuid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Fuid\FormReportFuid.vb" />
+    <Compile Include="Procesos\Fuid\FormVisorFuid.Designer.vb">
+      <DependentUpon>FormVisorFuid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Fuid\FormVisorFuid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\GenerarSticker\FormGeneraSticker.Designer.vb">
+      <DependentUpon>FormGeneraSticker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\GenerarSticker\FormGeneraSticker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\HojaControl\CrearHojaControl.vb" />
+    <Compile Include="Procesos\HojaControl\FormGenerarHojadeControl.Designer.vb">
+      <DependentUpon>FormGenerarHojadeControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\HojaControl\FormGenerarHojadeControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\HojaControl\FormPrecintoHojaControl.Designer.vb">
+      <DependentUpon>FormPrecintoHojaControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\HojaControl\FormPrecintoHojaControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\HojaControl\FormReportHojaControl.Designer.vb">
+      <DependentUpon>FormReportHojaControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\HojaControl\FormReportHojaControl.vb" />
+    <Compile Include="Procesos\HojaControl\FormVisorHojaControl.Designer.vb">
+      <DependentUpon>FormVisorHojaControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\HojaControl\FormVisorHojaControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\OT\FormSeleccionarOTCapturaDMZ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\OT\FormSeleccionarOTValidacionListas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\OT\FormSeleccionarOTCargue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\OT\FormSeleccionarOTValidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\OT\FormSeleccionarOTCaptura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\OT\FormSeleccionarOT.Designer.vb">
+      <DependentUpon>FormSeleccionarOT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\OT\FormSeleccionarOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\OT\FormSeleccionarOTIndexacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormAgregarContenedorCampo.Designer.vb">
+      <DependentUpon>FormAgregarContenedorCampo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormAgregarContenedorCampo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormAgregarEmpaqueCampo.Designer.vb">
+      <DependentUpon>FormAgregarEmpaqueCampo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormAgregarEmpaqueCampo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormAgregarPrecintoCampo.Designer.vb">
+      <DependentUpon>FormAgregarPrecintoCampo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormAgregarPrecintoCampo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormCamposTrigger.Designer.vb">
+      <DependentUpon>FormCamposTrigger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormCamposTrigger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormConfigCampo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormConfigCampo.Designer.vb">
+      <DependentUpon>FormConfigCampo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormContenedorCampo.Designer.vb">
+      <DependentUpon>FormContenedorCampo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormContenedorCampo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormEmpaqueCampo.Designer.vb">
+      <DependentUpon>FormEmpaqueCampo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormEmpaqueCampo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormNuevoTipoOT.Designer.vb">
+      <DependentUpon>FormNuevoTipoOT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormNuevoTipoOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParValidaciones_ComparacionParametro.Designer.vb">
+      <DependentUpon>FormParValidaciones_ComparacionParametro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParValidaciones_ComparacionParametro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParValidaciones_ComparacionConstante.Designer.vb">
+      <DependentUpon>FormParValidaciones_ComparacionConstante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParValidaciones_ComparacionConstante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParValidaciones_Constante.Designer.vb">
+      <DependentUpon>FormParValidaciones_Constante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParValidaciones_Constante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormAccesos.Designer.vb">
+      <DependentUpon>FormAccesos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormAccesos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParametros.Designer.vb">
+      <DependentUpon>FormParametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParCamposImaging.Designer.vb">
+      <DependentUpon>FormParCamposImaging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParCamposImaging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParDocumentos.Designer.vb">
+      <DependentUpon>FormParDocumentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParDocumentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParValidaciones.Designer.vb">
+      <DependentUpon>FormParValidaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParValidaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParValidaciones_Campo.Designer.vb">
+      <DependentUpon>FormParValidaciones_Campo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParValidaciones_Campo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormPrecintoCampo.Designer.vb">
+      <DependentUpon>FormPrecintoCampo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormPrecintoCampo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParTablaAsociadaImaging.Designer.vb">
+      <DependentUpon>FormParTablaAsociadaImaging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormParTablaAsociadaImaging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormTipoOT.Designer.vb">
+      <DependentUpon>FormTipoOT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\FormTipoOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Configuracion\Imaging\IParValidaciones.vb" />
+    <Compile Include="Procesos\Rechazos\FormRechazos_ValidacionesCampos.Designer.vb">
+      <DependentUpon>FormRechazos_ValidacionesCampos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Rechazos\FormRechazos_ValidacionesCampos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\ReemplazarImagenes\ReemplazarImagenesForm.Designer.vb">
+      <DependentUpon>ReemplazarImagenesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\ReemplazarImagenes\ReemplazarImagenesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Reproceso\FormReprocesos.Designer.vb">
+      <DependentUpon>FormReprocesos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Reproceso\FormReprocesos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Reproceso\FormVisorImagen.Designer.vb">
+      <DependentUpon>FormVisorImagen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Reproceso\FormVisorImagen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Rotulos\FormCarpetas.Designer.vb">
+      <DependentUpon>FormCarpetas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Rotulos\FormCarpetas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Rotulos\FormGuardarRotulos.Designer.vb">
+      <DependentUpon>FormGuardarRotulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Rotulos\FormGuardarRotulos.vb" />
+    <Compile Include="Procesos\Rotulos\FormGuardarSticker.vb" />
+    <Compile Include="Procesos\Rotulos\FormReportRotuloCaja.Designer.vb">
+      <DependentUpon>FormReportRotuloCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Rotulos\FormReportRotuloCaja.vb" />
+    <Compile Include="Procesos\Rotulos\FormReportRotuloCarpeta.Designer.vb">
+      <DependentUpon>FormReportRotuloCarpeta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Rotulos\FormReportRotuloCarpeta.vb" />
+    <Compile Include="Procesos\Rotulos\FormReportSticker.vb" />
+    <Compile Include="Procesos\Rotulos\FormRotuloCaja.Designer.vb">
+      <DependentUpon>FormRotuloCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Rotulos\FormRotuloCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Rotulos\FormRotuloCarpeta.Designer.vb">
+      <DependentUpon>FormRotuloCarpeta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Rotulos\FormRotuloCarpeta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Rotulos\FormVisorRotuloCaja.Designer.vb">
+      <DependentUpon>FormVisorRotuloCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Rotulos\FormVisorRotuloCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Rotulos\FormVisorRotuloCarpeta.Designer.vb">
+      <DependentUpon>FormVisorRotuloCarpeta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Rotulos\FormVisorRotuloCarpeta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Rotulos\FormVisorSticker.Designer.vb">
+      <DependentUpon>FormVisorSticker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Rotulos\FormVisorSticker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Rotulos\xsdBusqueda.vb" />
+    <Compile Include="Procesos\ValidacionesDinamicas\FormValidacionesDinamicas.Designer.vb">
+      <DependentUpon>FormValidacionesDinamicas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\ValidacionesDinamicas\FormValidacionesDinamicas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessLibrary.vb" />
+    <Compile Include="Program.vb" />
+    <Compile Include="Reportes\CialdLocal\Report_Acta_CialdLocal.Designer.vb">
+      <DependentUpon>Report_Acta_CialdLocal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\CialdLocal\Report_Acta_CialdLocal.vb" />
+    <Compile Include="Reportes\Ciald\dsReporteBean.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReporteBean.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Ciald\dsReporteBean.vb">
+      <DependentUpon>dsReporteBean.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Ciald\DS_AceptaMedio.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_AceptaMedio.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Ciald\ImagingFolioCreator.vb" />
+    <Compile Include="Reportes\Ciald\Report_AceptaMedios.vb" />
+    <Compile Include="Reportes\Ciald\Report_Anexo5.vb" />
+    <Compile Include="Reportes\Ciald\Report_Anexo6.vb" />
+    <Compile Include="Reportes\Ciald\Report_AnexoF88.vb" />
+    <Compile Include="Reportes\Ciald\Report_AnexoF11.vb" />
+    <Compile Include="Reportes\Ciald\Report_Bean.vb" />
+    <Compile Include="Reportes\Ciald\Report_CialdCentral.vb" />
+    <Compile Include="Reportes\Ciald\Report_CialdTotalCentral.vb" />
+    <Compile Include="Reportes\ControlLotes\Report_ControlLotesAD.vb" />
+    <Compile Include="Reportes\ControlLotes\Report_ControlLotesAT.vb" />
+    <Compile Include="Reportes\ControlLotes\Report_ControlLotesEfectividad_EP.vb" />
+    <Compile Include="Reportes\ControlLotes\Report_ControlLotesEfectividad.vb" />
+    <Compile Include="Reportes\ControlLotes\Report_ControlLotesFaltantes_EP.vb" />
+    <Compile Include="Reportes\ControlLotes\Report_ControlLotesFaltantes.vb" />
+    <Compile Include="Reportes\ControlLotes\Report_ControlLotesFileNet.vb" />
+    <Compile Include="Reportes\ControlLotes\Report_ControlLotesMarcacion.vb" />
+    <Compile Include="Reportes\ControlLotes\Report_ControlLotesPD.vb" />
+    <Compile Include="Reportes\ControlLotes\Report_ControlLotesPT.vb" />
+    <Compile Include="Reportes\ControlLotes\Report_ControlLotesSobrantes_EP.vb" />
+    <Compile Include="Reportes\ControlLotes\Report_ControlLotesSobrantes.vb" />
+    <Compile Include="Reportes\ControlLotes\Report_Volumenes.vb" />
+    <Compile Include="Reportes\ControlProceso\Report_ControlProceso.vb" />
+    <Compile Include="Reportes\Filenet\Report_Filenet_Documento.vb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reportes\FormActas.Designer.vb">
+      <DependentUpon>FormActas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FormActas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FormCentralizador.Designer.vb">
+      <DependentUpon>FormCentralizador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FormCentralizador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FormMes.Designer.vb">
+      <DependentUpon>FormMes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FormMes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FormEfectividad.Designer.vb">
+      <DependentUpon>FormEfectividad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FormEfectividad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FormRangoFechas2.Designer.vb">
+      <DependentUpon>FormRangoFechas2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FormRangoFechas2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FormRangoFechasLotes.Designer.vb">
+      <DependentUpon>FormRangoFechasLotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FormRangoFechasLotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FormRangoFechasLotesColaD.Designer.vb">
+      <DependentUpon>FormRangoFechasLotesColaD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FormRangoFechasLotesColaD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FormRangoFechasOT.Designer.vb">
+      <DependentUpon>FormRangoFechasOT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FormRangoFechasOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FormFechaProcesoOT.Designer.vb">
+      <DependentUpon>FormFechaProcesoOT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FormFechaProcesoOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\DestapeContenedorDetallado\Report_DestapeContenedorDetallado.vb" />
+    <Compile Include="Reportes\DestapeContenedor\Report_DestapeContenedor.vb" />
+    <Compile Include="Reportes\DestapeDetallado\Report_DestapeDetallado.vb" />
+    <Compile Include="Reportes\Destape\Report_Destape.vb" />
+    <Compile Include="Reportes\EmpaqueDetallado\Report_EmpaqueDetallado.vb" />
+    <Compile Include="Reportes\Empaque\Report_Empaque.vb" />
+    <Compile Include="Reportes\FormDestape.Designer.vb">
+      <DependentUpon>FormDestape.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FormDestape.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FormPrecinto.Designer.vb">
+      <DependentUpon>FormPrecinto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FormPrecinto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FormRangoFechas.Designer.vb">
+      <DependentUpon>FormRangoFechas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FormRangoFechas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmFechaProceso.Designer.vb">
+      <DependentUpon>FrmFechaProceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmFechaProceso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmFechaRecaudo.Designer.vb">
+      <DependentUpon>FrmFechaRecaudo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmFechaRecaudo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Fuid\Fuid.Designer.vb">
+      <DependentUpon>Fuid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Fuid\Fuid.vb">
+      <DependentUpon>Fuid.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\GeneraSticker\DataSet1.Designer.vb">
+      <DependentUpon>DataSet1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\GeneraSticker\DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\HojaDeControl\HojaControl.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HojaControl.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\HojaDeControl\HojaControlPage.vb" />
+    <Compile Include="Reportes\ImagenesExportadas\Report_ImagenesExportadas.vb" />
+    <Compile Include="Reportes\ProductividadDetallado\Report_ProductividadDetallado.vb" />
+    <Compile Include="Reportes\ProductividadGeneral\Report_ProductividadGeneral.vb" />
+    <Compile Include="Reportes\Rotulos\RotuloCajas.Designer.vb">
+      <DependentUpon>RotuloCajas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Rotulos\RotuloCajas.vb">
+      <DependentUpon>RotuloCajas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Rotulos\RotuloCarpeta.Designer.vb">
+      <DependentUpon>RotuloCarpeta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Rotulos\RotuloCarpeta.vb">
+      <DependentUpon>RotuloCarpeta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ValidacionesDinamicas\Report_ValidacionCampos.vb" />
+    <Compile Include="Reportes\ValidacionesDinamicas\Report_DocumentosObligatoriosFaltantes.vb" />
+    <Compile Include="Service References\ImagingServiceReference\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\WebService.vb" />
+    <Compile Include="Esquemas\xsdInformes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xsdInformes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_DB_Miharu_Imaging_CoreDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_DB_Miharu_Imaging_CoreDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\FormAdicionarDocumento.resx">
+      <DependentUpon>FormAdicionarDocumento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FormEditarCampo.resx">
+      <DependentUpon>FormEditarCampo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FormReprocesoMotivo.resx">
+      <DependentUpon>FormReprocesoMotivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ImagingSearchControlContenedor.resx">
+      <DependentUpon>ImagingSearchControlContenedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ImagingSearchControlParametersContenedor.resx">
+      <DependentUpon>ImagingSearchControlParametersContenedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ImagingSearchControlParameters.resx">
+      <DependentUpon>ImagingSearchControlParameters.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ProductividadDetalladoReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ProductividadGeneralReport.rdlc" />
+    <EmbeddedResource Include="Controls\UCRelevoCentralizador.resx">
+      <DependentUpon>UCRelevoCentralizador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCRelevo.resx">
+      <DependentUpon>UCRelevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImagingWorkSpace.resx">
+      <DependentUpon>FormImagingWorkSpace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help\ModuloAyuda.resx">
+      <DependentUpon>ModuloAyuda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\CargueLog\FormCargueDescarga.resx">
+      <DependentUpon>FormCargueDescarga.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\CargueLog\FormCargueLog.resx">
+      <DependentUpon>FormCargueLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\CargueLog\FormResultadoValidacion.resx">
+      <DependentUpon>FormResultadoValidacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Cargue\FormCargue.resx">
+      <DependentUpon>FormCargue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Cargue\FormCargueCredivalores.resx">
+      <DependentUpon>FormCargueCredivalores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Cargue\FormCargueNoPaquete.resx">
+      <DependentUpon>FormCargueNoPaquete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Cargue\FormDesbloquear.resx">
+      <DependentUpon>FormDesbloquear.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Cargue\FormEstadoCargue.resx">
+      <DependentUpon>FormEstadoCargue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Cargue\FormFechaPaquete.resx">
+      <DependentUpon>FormFechaPaquete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ImagingSearchControl.resx">
+      <DependentUpon>ImagingSearchControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Cargue\FormReasignarCargue.resx">
+      <DependentUpon>FormReasignarCargue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Cargue\FormReasignarPaqueteCantidad.resx">
+      <DependentUpon>FormReasignarPaqueteCantidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Cargue\FormSeguimiento.resx">
+      <DependentUpon>FormSeguimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormAgregarEmpaqueContenedorCampo.resx">
+      <DependentUpon>FormAgregarEmpaqueContenedorCampo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormConfigImagenes.resx">
+      <DependentUpon>FormConfigImagenes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormEmpaqueContenedorCampo.resx">
+      <DependentUpon>FormEmpaqueContenedorCampo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Correos\FormEnviarCorreo.resx">
+      <DependentUpon>FormEnviarCorreo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Correos\FormSeguimientoCorreo.resx">
+      <DependentUpon>FormSeguimientoCorreo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Cruce\FormCruce.resx">
+      <DependentUpon>FormCruce.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Destape\FormDestapeCorreccion.resx">
+      <DependentUpon>FormDestapeCorreccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Destape\FormCrearFechaProceso.resx">
+      <DependentUpon>FormCrearFechaProceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Destape\FormCrearOT.resx">
+      <DependentUpon>FormCrearOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Destape\FormDestape.resx">
+      <DependentUpon>FormDestape.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Destape\FormDestapeMasivo.resx">
+      <DependentUpon>FormDestapeMasivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Destape\FormFechaProceso.resx">
+      <DependentUpon>FormFechaProceso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Destape\FormOT.resx">
+      <DependentUpon>FormOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Destape\FormPreDestape.resx">
+      <DependentUpon>FormPreDestape.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Empaque\FormCierreCaja.resx">
+      <DependentUpon>FormCierreCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Empaque\FormEmpaque.resx">
+      <DependentUpon>FormEmpaque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Empaque\FormPreEmpaque.resx">
+      <DependentUpon>FormPreEmpaque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Empaque\FormRotulos.resx">
+      <DependentUpon>FormRotulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Exportar\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Exportar\FormExportClientesEnLog.resx">
+      <DependentUpon>FormExportClientesEnLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Exportar\FormExportCredivalores.resx">
+      <DependentUpon>FormExportCredivalores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Exportar\FormExportPDF.resx">
+      <DependentUpon>FormExportPDF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Exportar\FormExport.resx">
+      <DependentUpon>FormExport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\FormSeleccionarProyecto.resx">
+      <DependentUpon>FormSeleccionarProyecto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\FormSeleccionarProyectoDMZ.resx">
+      <DependentUpon>FormSeleccionarProyectoDMZ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Fuid\FormGenerarFuid.resx">
+      <DependentUpon>FormGenerarFuid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Fuid\FormGenerarFuidporCaja.resx">
+      <DependentUpon>FormGenerarFuidporCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Fuid\FormVisorFuid.resx">
+      <DependentUpon>FormVisorFuid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\GenerarSticker\FormGeneraSticker.resx">
+      <DependentUpon>FormGeneraSticker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\HojaControl\FormGenerarHojadeControl.resx">
+      <DependentUpon>FormGenerarHojadeControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\HojaControl\FormPrecintoHojaControl.resx">
+      <DependentUpon>FormPrecintoHojaControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\HojaControl\FormVisorHojaControl.resx">
+      <DependentUpon>FormVisorHojaControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\ReemplazarImagenes\ReemplazarImagenesForm.resx">
+      <DependentUpon>ReemplazarImagenesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Rotulos\FormCarpetas.resx">
+      <DependentUpon>FormCarpetas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Rotulos\FormRotuloCaja.resx">
+      <DependentUpon>FormRotuloCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Rotulos\FormRotuloCarpeta.resx">
+      <DependentUpon>FormRotuloCarpeta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Rotulos\FormVisorRotuloCaja.resx">
+      <DependentUpon>FormVisorRotuloCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Rotulos\FormVisorRotuloCarpeta.resx">
+      <DependentUpon>FormVisorRotuloCarpeta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\ValidacionesDinamicas\FormValidacionesDinamicas.resx">
+      <DependentUpon>FormValidacionesDinamicas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CialdLocal\Report_Acta_CialdLocal.rdlc" />
+    <EmbeddedResource Include="Reportes\Ciald\Report_AceptaMedios.rdlc" />
+    <EmbeddedResource Include="Reportes\Ciald\Report_Anexo5.rdlc" />
+    <EmbeddedResource Include="Reportes\Ciald\Report_Anexo6.rdlc" />
+    <EmbeddedResource Include="Reportes\Ciald\Report_AnexoF88.rdlc" />
+    <EmbeddedResource Include="Reportes\Ciald\Report_AnexoF11.rdlc" />
+    <EmbeddedResource Include="Reportes\Ciald\Report_Bean.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Ciald\Report_CialdTotalCentral.rdlc" />
+    <EmbeddedResource Include="Reportes\Ciald\Report_CialdCentral.rdlc" />
+    <EmbeddedResource Include="Reportes\ControlLotes\Report_ControlLotes_AD.rdlc" />
+    <EmbeddedResource Include="Reportes\ControlLotes\Report_ControlLotes_AT.rdlc" />
+    <EmbeddedResource Include="Reportes\ControlLotes\Report_ControlLotes_Efectividad_EP.rdlc" />
+    <EmbeddedResource Include="Reportes\ControlLotes\Report_ControlLotes_Efectividad.rdlc" />
+    <EmbeddedResource Include="Reportes\ControlLotes\Report_ControlLotes_Faltantes_EP.rdlc" />
+    <EmbeddedResource Include="Reportes\ControlLotes\Report_ControlLotes_Faltantes.rdlc" />
+    <EmbeddedResource Include="Reportes\ControlLotes\Report_ControlLotes_FileNet.rdlc" />
+    <EmbeddedResource Include="Reportes\ControlLotes\Report_ControlLotes_Marcacion.rdlc" />
+    <EmbeddedResource Include="Reportes\ControlLotes\Report_ControlLotes_PD.rdlc" />
+    <EmbeddedResource Include="Reportes\ControlLotes\Report_ControlLotes_PT.rdlc" />
+    <EmbeddedResource Include="Reportes\ControlLotes\Report_ControlLotes_Sobrantes_EP.rdlc" />
+    <EmbeddedResource Include="Reportes\ControlLotes\Report_ControlLotes_Sobrantes.rdlc" />
+    <EmbeddedResource Include="Reportes\ControlLotes\Report_Volumenes.rdlc" />
+    <EmbeddedResource Include="Reportes\Filenet\Report_Filenet_Documento.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FormActas.resx">
+      <DependentUpon>FormActas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FormCentralizador.resx">
+      <DependentUpon>FormCentralizador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FormMes.resx">
+      <DependentUpon>FormMes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FormEfectividad.resx">
+      <DependentUpon>FormEfectividad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FormRangoFechas2.resx">
+      <DependentUpon>FormRangoFechas2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FormRangoFechasLotes.resx">
+      <DependentUpon>FormRangoFechasLotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FormRangoFechasLotesColaD.resx">
+      <DependentUpon>FormRangoFechasLotesColaD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FormRangoFechasOT.resx">
+      <DependentUpon>FormRangoFechasOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FormFechaProcesoOT.resx">
+      <DependentUpon>FormFechaProcesoOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmFechaProceso.resx">
+      <DependentUpon>FrmFechaProceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmFechaRecaudo.resx">
+      <DependentUpon>FrmFechaRecaudo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Fuid\ReportAutoLiquidaciones.rdlc" />
+    <EmbeddedResource Include="Reportes\Fuid\ReportFuidHistoriaLaboral.rdlc" />
+    <EmbeddedResource Include="Reportes\Fuid\ReportFuidNominas.rdlc" />
+    <EmbeddedResource Include="Reportes\GeneraSticker\ReporteSticker.rdlc" />
+    <EmbeddedResource Include="Reportes\GeneraSticker\ReporteStickerCodigoBarras.rdlc" />
+    <EmbeddedResource Include="Reportes\GeneraSticker\ReporteStickerFisico.rdlc" />
+    <EmbeddedResource Include="Reportes\HojaDeControl\ReportHojaControl.rdlc" />
+    <EmbeddedResource Include="Reportes\Rotulos\ReportRotuloCarpeta.rdlc" />
+    <EmbeddedResource Include="Reportes\Rotulos\ReportRotulosCajas.rdlc" />
+    <EmbeddedResource Include="Reportes\ValidacionesDinamicas\Report_ValidacionCampos.rdlc" />
+    <EmbeddedResource Include="Reportes\ValidacionesDinamicas\Report_DocumentosObligatoriosFaltantes.rdlc" />
+    <None Include="My Project\DataSources\DBCore.SchemaProcess.CTA_Imagenes_Por_DocumentoDataTable.datasource" />
+    <None Include="My Project\DataSources\DBCore.SchemaProcess.CTA_Imagenes_Por_DocumentoRow.datasource" />
+    <None Include="My Project\DataSources\DBImaging.ProcessSchema.datasource" />
+    <None Include="My Project\DataSources\DBImaging.SchemaProcess.CTA_Get_Registros_Anexo5DataTable.datasource" />
+    <None Include="My Project\DataSources\DBImaging.SchemaProcess.CTA_Get_Registros_Anexo6DataTable.datasource" />
+    <None Include="My Project\DataSources\DBImaging.SchemaProcess.CTA_Get_Registros_AnexoF11DataTable1.datasource" />
+    <None Include="My Project\DataSources\DBImaging.SchemaProcess.CTA_Get_Registros_AnexoF88DataTable.datasource" />
+    <None Include="My Project\DataSources\DBImaging.SchemaProcess.CTA_Get_Registros_RelevoDataTable.datasource" />
+    <None Include="My Project\DataSources\DBImaging.SchemaProcess.CTA_Get_Registros_Relevo_ActaDataTable.datasource" />
+    <None Include="My Project\DataSources\DBImaging.SchemaProcess.CTA_Reporte_ControlLote_AD1DataTable.datasource" />
+    <None Include="My Project\DataSources\DBImaging.SchemaProcess.CTA_Reporte_ControlLote_Efectividad_EPDataTable.datasource" />
+    <None Include="My Project\DataSources\DBImaging.SchemaProcess.CTA_Reporte_ControlLote_Faltantes_EPDataTable.datasource" />
+    <None Include="My Project\DataSources\DBImaging.SchemaProcess.CTA_Reporte_ControlLote_PDDataTable.datasource" />
+    <None Include="My Project\DataSources\DBImaging.SchemaProcess.CTA_Reporte_ControlLote_Sobrantes_EPDataTable.datasource" />
+    <None Include="My Project\DataSources\DS_AceptaMedio.datasource" />
+    <None Include="My Project\DataSources\Miharu.Imaging.Library.Controls.UCRelevoCentralizador.datasource" />
+    <None Include="packages.config" />
+    <None Include="Procesos\Configuracion\Imaging\FormConfigCampo.resx">
+      <DependentUpon>FormConfigCampo.vb</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Procesos\OT\FormSeleccionarOT.resx">
+      <DependentUpon>FormSeleccionarOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormAgregarContenedorCampo.resx">
+      <DependentUpon>FormAgregarContenedorCampo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormAgregarEmpaqueCampo.resx">
+      <DependentUpon>FormAgregarEmpaqueCampo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormAgregarPrecintoCampo.resx">
+      <DependentUpon>FormAgregarPrecintoCampo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormCamposTrigger.resx">
+      <DependentUpon>FormCamposTrigger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormContenedorCampo.resx">
+      <DependentUpon>FormContenedorCampo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormEmpaqueCampo.resx">
+      <DependentUpon>FormEmpaqueCampo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormNuevoTipoOT.resx">
+      <DependentUpon>FormNuevoTipoOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormParValidaciones_ComparacionParametro.resx">
+      <DependentUpon>FormParValidaciones_ComparacionParametro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormParValidaciones_ComparacionConstante.resx">
+      <DependentUpon>FormParValidaciones_ComparacionConstante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormParValidaciones_Constante.resx">
+      <DependentUpon>FormParValidaciones_Constante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormAccesos.resx">
+      <DependentUpon>FormAccesos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormParametros.resx">
+      <DependentUpon>FormParametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormParCamposImaging.resx">
+      <DependentUpon>FormParCamposImaging.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormParDocumentos.resx">
+      <DependentUpon>FormParDocumentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormParValidaciones.resx">
+      <DependentUpon>FormParValidaciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormParValidaciones_Campo.resx">
+      <DependentUpon>FormParValidaciones_Campo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormPrecintoCampo.resx">
+      <DependentUpon>FormPrecintoCampo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormParTablaAsociadaImaging.resx">
+      <DependentUpon>FormParTablaAsociadaImaging.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Configuracion\Imaging\FormTipoOT.resx">
+      <DependentUpon>FormTipoOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Rechazos\FormRechazos_ValidacionesCampos.resx">
+      <DependentUpon>FormRechazos_ValidacionesCampos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Reproceso\FormReprocesos.resx">
+      <DependentUpon>FormReprocesos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Reproceso\FormVisorImagen.resx">
+      <DependentUpon>FormVisorImagen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ControlProceso\Report_ControlProceso.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\DestapeContenedorDetallado\Report_DestapeContenedorDetallado.rdlc" />
+    <EmbeddedResource Include="Reportes\DestapeContenedor\Report_DestapeContenedor.rdlc" />
+    <EmbeddedResource Include="Reportes\DestapeDetallado\Report_DestapeDetallado.rdlc" />
+    <EmbeddedResource Include="Reportes\Destape\Report_Destape.rdlc" />
+    <EmbeddedResource Include="Reportes\EmpaqueDetallado\Report_EmpaqueDetallado.rdlc" />
+    <EmbeddedResource Include="Reportes\Empaque\Report_Empaque.rdlc" />
+    <EmbeddedResource Include="Reportes\FormDestape.resx">
+      <DependentUpon>FormDestape.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FormPrecinto.resx">
+      <DependentUpon>FormPrecinto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FormRangoFechas.resx">
+      <DependentUpon>FormRangoFechas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ImagenesExportadas\Report_ImagenesExportadas.rdlc" />
+    <EmbeddedResource Include="Reportes\ProductividadDetallado\Report_ProductividadDetallado.rdlc" />
+    <EmbeddedResource Include="Reportes\ProductividadGeneral\Report_ProductividadGeneral.rdlc" />
+    <None Include="_DB_Miharu_Imaging_CoreDataSet.xsc">
+      <DependentUpon>_DB_Miharu_Imaging_CoreDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_DB_Miharu_Imaging_CoreDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_DB_Miharu_Imaging_CoreDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_DB_Miharu_Imaging_CoreDataSet.xss">
+      <DependentUpon>_DB_Miharu_Imaging_CoreDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reportes\Ciald\dsReporteBean.xsc">
+      <DependentUpon>dsReporteBean.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Ciald\dsReporteBean.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReporteBean.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reportes\Ciald\dsReporteBean.xss">
+      <DependentUpon>dsReporteBean.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Ciald\DS_AceptaMedio.xsc">
+      <DependentUpon>DS_AceptaMedio.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Ciald\DS_AceptaMedio.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_AceptaMedio.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reportes\Ciald\DS_AceptaMedio.xss">
+      <DependentUpon>DS_AceptaMedio.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Fuid\Fuid.xsc">
+      <DependentUpon>Fuid.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Fuid\Fuid.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Fuid1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\Fuid\Fuid.xss">
+      <DependentUpon>Fuid.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\GeneraSticker\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\GeneraSticker\DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet11.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\GeneraSticker\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\HojaDeControl\HojaControl.xsc">
+      <DependentUpon>HojaControl.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\HojaDeControl\HojaControl.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HojaControl.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\HojaDeControl\HojaControl.xss">
+      <DependentUpon>HojaControl.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Rotulos\RotuloCajas.xsc">
+      <DependentUpon>RotuloCajas.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Rotulos\RotuloCajas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RotuloCajas1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\Rotulos\RotuloCajas.xss">
+      <DependentUpon>RotuloCajas.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Rotulos\RotuloCarpeta.xsc">
+      <DependentUpon>RotuloCarpeta.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Rotulos\RotuloCarpeta.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RotuloCarpeta1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\Rotulos\RotuloCarpeta.xss">
+      <DependentUpon>RotuloCarpeta.xsd</DependentUpon>
+    </None>
+    <None Include="Service References\ImagingServiceReference\ImagingService.wsdl" />
+    <None Include="Esquemas\xsdInformes.xsc">
+      <DependentUpon>xsdInformes.xsd</DependentUpon>
+    </None>
+    <None Include="Esquemas\xsdInformes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xsdInformes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Esquemas\xsdInformes.xss">
+      <DependentUpon>xsdInformes.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Help\009-02-01\Index.txt" />
+    <Content Include="Icons\Cierre.ico" />
+    <Content Include="Icons\Devoluciones.ico" />
+    <Content Include="Icons\Imaging.ico" />
+    <Content Include="Images\008000000069.tif" />
+    <None Include="Images\email.png" />
+    <None Include="Images\correo-electronico.png" />
+    <Content Include="Images\acta.jpg" />
+    <Content Include="Images\acta2.jpg" />
+    <Content Include="Images\ConsultarActas.jpg" />
+    <Content Include="Images\Reindexar2.png" />
+    <Content Include="Images\Aceptar.png" />
+    <Content Include="Images\Adicionar.png" />
+    <Content Include="Images\anexo_completo.png" />
+    <Content Include="Images\auto_indexar.png" />
+    <Content Include="Images\anexo_folder.png" />
+    <Content Include="Images\bancoagrario.png" />
+    <Content Include="Images\book_previous.png" />
+    <Content Include="Images\btnAgregar.png" />
+    <Content Include="Images\btnAjustarAlto.Image.png" />
+    <Content Include="Images\btnAjustarAncho.Image.png" />
+    <Content Include="Images\btnBuscar.png" />
+    <Content Include="Images\btnCopiar.png" />
+    <Content Include="Images\btnDestape.png" />
+    <Content Include="Images\btnGenerarEstructura.png" />
+    <Content Include="Images\btnGuardar.png" />
+    <Content Include="Images\btnPaginaAnterior.Image.png" />
+    <Content Include="Images\btnPaginaFinal.Image.png" />
+    <Content Include="Images\btnPaginaPrimera.Image.png" />
+    <Content Include="Images\btnPaginaSiguiente.Image.png" />
+    <Content Include="Images\btnReflejarHorizontal.Image.png" />
+    <Content Include="Images\btnReflejarVertical.Image.png" />
+    <Content Include="Images\btnRotarDerecha.Image.png" />
+    <Content Include="Images\btnRotarIzquierda.Image.png" />
+    <Content Include="Images\btnSalir.png" />
+    <Content Include="Images\btnZoomIn.Image.png" />
+    <Content Include="Images\btnZoomOut.Image.png" />
+    <Content Include="Images\calculator_edit.png" />
+    <Content Include="Images\cancel.png" />
+    <Content Include="Images\cancelar.png" />
+    <Content Include="Images\CancelarVen.png" />
+    <Content Include="Images\Cargue.png" />
+    <Content Include="Images\Close_Red.png" />
+    <Content Include="Images\cog_edit.png" />
+    <Content Include="Images\cog_go.png" />
+    <Content Include="Images\compress.png" />
+    <Content Include="Images\cross.png" />
+    <Content Include="Images\Devoluciones.png" />
+    <Content Include="Images\document_add.png" />
+    <Content Include="Images\document_delete.png" />
+    <Content Include="Images\document_edit.png" />
+    <Content Include="Images\door_in.png" />
+    <Content Include="Images\Edit.png" />
+    <Content Include="Images\Entidad.png" />
+    <Content Include="Images\Export.png" />
+    <Content Include="Images\filesave.png" />
+    <Content Include="Images\film.png" />
+    <Content Include="Images\film_delete.png" />
+    <Content Include="Images\find.png" />
+    <Content Include="Images\folder_add.png" />
+    <Content Include="Images\folder_delete.png" />
+    <Content Include="Images\folder_image.png" />
+    <Content Include="Images\images.png" />
+    <Content Include="Images\image_edit.png" />
+    <Content Include="Images\Indexar.png" />
+    <Content Include="Images\Instalador.jpg" />
+    <Content Include="Images\Keys.png" />
+    <Content Include="Images\layout_content.png" />
+    <Content Include="Images\layout_edit.png" />
+    <Content Include="Images\layout_error.png" />
+    <Content Include="Images\lightning_go.png" />
+    <Content Include="Images\lock.png" />
+    <Content Include="Images\lock_open.png" />
+    <Content Include="Images\MainField.png" />
+    <Content Include="Images\MesaImagenes.png" />
+    <Content Include="Images\MiharuImagingIndexerIcon.ico" />
+    <Content Include="Images\MiharuImagingIndexerImage.png" />
+    <Content Include="Images\page_white_code.png" />
+    <Content Include="Images\page_white_key.png" />
+    <Content Include="Images\PreIndexar.png" />
+    <Content Include="Images\prepare.png" />
+    <Content Include="Images\Proceso.ico" />
+    <Content Include="Images\Process-Accept.png" />
+    <Content Include="Images\publicar.png" />
+    <Content Include="Images\refresh.png" />
+    <Content Include="Images\Remove-Image.png" />
+    <Content Include="Images\remove-update.png" />
+    <Content Include="Images\Remove.png" />
+    <Content Include="Images\replace-image.png" />
+    <Content Include="Images\report.png" />
+    <Content Include="Images\Reproceso.png" />
+    <Content Include="Images\scanner.png" />
+    <Content Include="Images\SegundaCaptura.png" />
+    <Content Include="Images\SelectOne.png" />
+    <Content Include="Images\SelectTwo.png" />
+    <Content Include="Images\server_go.png" />
+    <Content Include="Images\sheet_add.png" />
+    <Content Include="Images\sheet_delete.png" />
+    <Content Include="Images\spellcheck.png" />
+    <Content Include="Images\TablaAsociada.png" />
+    <Content Include="Images\tag_blue_delete.png" />
+    <Content Include="Images\tag_yellow.png" />
+    <Content Include="Images\Terceracaptura.png" />
+    <Content Include="Images\text_list_numbers.png" />
+    <Content Include="Images\tick.png" />
+    <Content Include="Images\zoom.png" />
+    <Content Include="Referencias\AFPDFLibNET.dll" />
+    <Content Include="Referencias\Gios.PSM.dll" />
+    <Content Include="Referencias\Slyg.Tools.Zip.dll" />
+    <None Include="Resources\ajax-loader.gif" />
+    <None Include="Resources\BtnCargar.png" />
+    <None Include="Service References\ImagingServiceReference\Miharu.Imaging.Library.ImagingServiceReference.PR_ExistKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ImagingServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\ImagingServiceReference\configuration.svcinfo" />
+    <None Include="Service References\ImagingServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\ImagingServiceReference\ImagingService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Archiving\Miharu.Archiving.DataAccess\Miharu.Archiving.DataAccess.csproj">
+      <Project>{8AB7AE02-8837-4800-8FDA-EA6CC59A374F}</Project>
+      <Name>Miharu.Archiving.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Controls\Miharu.Desktop.Controls.vbproj">
+      <Project>{BBDF4261-7651-4D93-95EE-675260D016AC}</Project>
+      <Name>Miharu.Desktop.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Library\Miharu.Desktop.Library.vbproj">
+      <Project>{60FE71B4-EC25-45F0-B384-B98582D035C7}</Project>
+      <Name>Miharu.Desktop.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Plugins\DB_Users_Explorer.DataAccess\DB_Users_Explorer.DataAccess.csproj">
+      <Project>{5F3D19BE-41C4-4B06-840B-262FF38BDD69}</Project>
+      <Name>DB_Users_Explorer.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Plugins\Miharu.DDO\Miharu.DDO.vbproj">
+      <Project>{e61fdaf7-4661-43e7-afc3-b6cd725e2039}</Project>
+      <Name>Miharu.DDO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Plugins\Miharu.Integration.DataAccess\Miharu.Integration.DataAccess.csproj">
+      <Project>{8A0078E2-6728-4413-AE6F-FD1EADEB7247}</Project>
+      <Name>Miharu.Integration.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.DataAccess\Miharu.Security.DataAccess.csproj">
+      <Project>{902B10BC-8630-4730-9AC5-763CA7D2CB31}</Project>
+      <Name>Miharu.Security.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.Library\Miharu.Security.Library.csproj">
+      <Project>{BC90E6AA-55BE-4E52-841E-FE48A32E750D}</Project>
+      <Name>Miharu.Security.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.FileProvider.Library\Miharu.FileProvider.Library.vbproj">
+      <Project>{1E21AD2F-0D1F-47A5-94C5-A75D6DAAAC8F}</Project>
+      <Name>Miharu.FileProvider.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.MailSender.DataAccess\Miharu.MailSender.DataAccess.csproj">
+      <Project>{68B5513A-93BF-403B-8AEA-C94B43CFCBAF}</Project>
+      <Name>Miharu.MailSender.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.Tools\Miharu.Tools.vbproj">
+      <Project>{69D016B1-3E92-4037-9CEB-FE8283479AFD}</Project>
+      <Name>Miharu.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Slyg.Tools.Imaging\Slyg.Tools.Imaging.csproj">
+      <Project>{B41AFD53-3FE1-4C20-B359-1C5FC16954C4}</Project>
+      <Name>Slyg.Tools.Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Imaging.DataAccess\Miharu.Imaging.DataAccess.csproj">
+      <Project>{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}</Project>
+      <Name>Miharu.Imaging.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Imaging.Indexer\Miharu.Imaging.Indexer.vbproj">
+      <Project>{3AA91370-45D5-4EBD-A700-99FB10AB6FB4}</Project>
+      <Name>Miharu.Imaging.Indexer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Imaging.OfflineViewer.Library\Miharu.Imaging.OffLineViewer.Library.vbproj">
+      <Project>{b32d869b-91e0-4a7a-8be7-d14b3275b30a}</Project>
+      <Name>Miharu.Imaging.OffLineViewer.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ImagingServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Procesos\Validaciones\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

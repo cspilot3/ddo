@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE2CA844-3C65-4056-A5E4-030F16140A29}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BcoItau.Plugin</RootNamespace>
+    <AssemblyName>BcoItau.Plugin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\12\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Slyg.Data">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Slyg.Tools">
+      <HintPath>..\..\Miharu+ System - Desktop\Referencias\DLLs\Slyg.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Imaging\Valle\EventExecuterValle.cs" />
+    <Compile Include="Imaging\Valle\FormImagingWorkSpaceWrapperValle.cs" />
+    <Compile Include="Imaging\Valle\Forms\Configuracion\frmConfirmaEliminacion.cs" />
+    <Compile Include="Imaging\Valle\Forms\Configuracion\frmConfirmaEliminacion.Designer.cs">
+      <DependentUpon>frmConfirmaEliminacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\Configuracion\frmEditarAseguradora.cs" />
+    <Compile Include="Imaging\Valle\Forms\Configuracion\frmEditarAseguradora.Designer.cs">
+      <DependentUpon>frmEditarAseguradora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\Configuracion\frmEditarCuentaMunicipio.cs" />
+    <Compile Include="Imaging\Valle\Forms\Configuracion\frmEditarCuentaMunicipio.Designer.cs">
+      <DependentUpon>frmEditarCuentaMunicipio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\Configuracion\frmElegirRuta.cs" />
+    <Compile Include="Imaging\Valle\Forms\Configuracion\frmElegirRuta.Designer.cs">
+      <DependentUpon>frmElegirRuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\Configuracion\frmEligeEstado_FechaDispersion.cs" />
+    <Compile Include="Imaging\Valle\Forms\Configuracion\frmEligeEstado_FechaDispersion.Designer.cs">
+      <DependentUpon>frmEligeEstado_FechaDispersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\Configuracion\frmFechaRecaudo_Doble.cs" />
+    <Compile Include="Imaging\Valle\Forms\Configuracion\frmFechaRecaudo_Doble.Designer.cs">
+      <DependentUpon>frmFechaRecaudo_Doble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\FormResultadoValidacion.cs" />
+    <Compile Include="Imaging\Valle\Forms\FormResultadoValidacion.Designer.cs">
+      <DependentUpon>FormResultadoValidacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\frmCargueLog.cs" />
+    <Compile Include="Imaging\Valle\Forms\frmCargueLog.Designer.cs">
+      <DependentUpon>frmCargueLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\frmCruzarDatos.cs" />
+    <Compile Include="Imaging\Valle\Forms\frmCruzarDatos.Designer.cs">
+      <DependentUpon>frmCruzarDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\frmDevoluciones.cs" />
+    <Compile Include="Imaging\Valle\Forms\frmDevoluciones.Designer.cs">
+      <DependentUpon>frmDevoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\frmExportacionImagenes.cs" />
+    <Compile Include="Imaging\Valle\Forms\frmExportacionImagenes.Designer.cs">
+      <DependentUpon>frmExportacionImagenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\frmFechaRecaudo.cs" />
+    <Compile Include="Imaging\Valle\Forms\frmFechaRecaudo.Designer.cs">
+      <DependentUpon>frmFechaRecaudo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\frmPublicacionDatos.cs" />
+    <Compile Include="Imaging\Valle\Forms\frmPublicacionDatos.Designer.cs">
+      <DependentUpon>frmPublicacionDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\frmRelacionAseguradoras.cs" />
+    <Compile Include="Imaging\Valle\Forms\frmRelacionAseguradoras.Designer.cs">
+      <DependentUpon>frmRelacionAseguradoras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\frmRelacionCuentasMunicipio.cs" />
+    <Compile Include="Imaging\Valle\Forms\frmRelacionCuentasMunicipio.Designer.cs">
+      <DependentUpon>frmRelacionCuentasMunicipio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\frmRelacion_CuentasDispersadas.cs" />
+    <Compile Include="Imaging\Valle\Forms\frmRelacion_CuentasDispersadas.Designer.cs">
+      <DependentUpon>frmRelacion_CuentasDispersadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\frmReportesImpuestos.cs" />
+    <Compile Include="Imaging\Valle\Forms\frmReportesImpuestos.Designer.cs">
+      <DependentUpon>frmReportesImpuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\ProcesaCargue_BcoBogota.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\ReporteDispersion\Reporte1_BBogotaImpuestos.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\ReporteDispersion\ReporteBancoValle.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\ReporteDispersion\ReporteBancoValle1.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\ReporteDispersion\ReporteBancoValle2.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\ReporteDispersion\ReporteBancoValle3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteBancoValle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\Rpts\ReporteMunicipios2_BancoItau\Reporte2_ImpuestosBancoItau.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\ReporteMunicipios2_BancoItau\Reporte2_ImpuestosBancoItau1.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\ReporteMunicipios2_BancoItau\Reporte2_ImpuestosBancoItau2.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\ReporteMunicipios2_BancoItau\Reporte2_ImpuestosBancoItau3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reporte2_ImpuestosBancoItau.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\Rpts\ReporteMunicipios_BancoItau\Reporte1_Municipios.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\ReporteMunicipios_BancoItau\Reporte1_Municipios1.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\ReporteMunicipios_BancoItau\Reporte1_Municipios2.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\ReporteMunicipios_BancoItau\Reporte1_Municipios3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reporte1_Municipios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\Rpts\Reporte_Agrupado_Departamentos_NOVALLE\Agrupado_Dep_NOVALLE.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\Reporte_Agrupado_Departamentos_NOVALLE\Agrupado_Dep_NOVALLE1.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\Reporte_Agrupado_Departamentos_NOVALLE\Agrupado_Dep_NOVALLE2.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\Reporte_Agrupado_Departamentos_NOVALLE\Agrupado_Dep_NOVALLE3.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\Reporte_Agrupado_Departamentos_NOVALLE\Agrupado_Dep_NOVALLE4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Agrupado_Dep_NOVALLE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\Forms\Rpts\Reporte_Carta_EntregaFisico\Carta_EntregaFisico.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\Reporte_Carta_EntregaFisico\Carta_EntregaFisico1.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\Reporte_Carta_EntregaFisico\Carta_EntregaFisico2.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\Reporte_Carta_EntregaFisico\Carta_EntregaFisico3.Designer.cs" />
+    <Compile Include="Imaging\Valle\Forms\Rpts\Reporte_Carta_EntregaFisico\Carta_EntregaFisico4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Carta_EntregaFisico.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\Valle\VallePlugin.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Imaging\Valle\Forms\Configuracion\frmConfirmaEliminacion.resx">
+      <DependentUpon>frmConfirmaEliminacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Valle\Forms\Configuracion\frmEditarAseguradora.resx">
+      <DependentUpon>frmEditarAseguradora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Valle\Forms\Configuracion\frmEditarCuentaMunicipio.resx">
+      <DependentUpon>frmEditarCuentaMunicipio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Valle\Forms\Configuracion\frmElegirRuta.resx">
+      <DependentUpon>frmElegirRuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Valle\Forms\Configuracion\frmEligeEstado_FechaDispersion.resx">
+      <DependentUpon>frmEligeEstado_FechaDispersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Valle\Forms\Configuracion\frmFechaRecaudo_Doble.resx">
+      <DependentUpon>frmFechaRecaudo_Doble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Valle\Forms\FormResultadoValidacion.resx">
+      <DependentUpon>FormResultadoValidacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Valle\Forms\frmCargueLog.resx">
+      <DependentUpon>frmCargueLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Valle\Forms\frmCruzarDatos.resx">
+      <DependentUpon>frmCruzarDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Valle\Forms\frmDevoluciones.resx">
+      <DependentUpon>frmDevoluciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Valle\Forms\frmExportacionImagenes.resx">
+      <DependentUpon>frmExportacionImagenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Valle\Forms\frmFechaRecaudo.resx">
+      <DependentUpon>frmFechaRecaudo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Valle\Forms\frmPublicacionDatos.resx">
+      <DependentUpon>frmPublicacionDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Valle\Forms\frmRelacionAseguradoras.resx">
+      <DependentUpon>frmRelacionAseguradoras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Valle\Forms\frmRelacionCuentasMunicipio.resx">
+      <DependentUpon>frmRelacionCuentasMunicipio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Valle\Forms\frmRelacion_CuentasDispersadas.resx">
+      <DependentUpon>frmRelacion_CuentasDispersadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Valle\Forms\frmReportesImpuestos.resx">
+      <DependentUpon>frmReportesImpuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\Valle\Forms\Rpts\ReporteDispersion\ReporteDispersion.rdlc" />
+    <EmbeddedResource Include="Imaging\Valle\Forms\Rpts\ReporteMunicipios2_BancoItau\Reporte2_BancoItau.rdlc" />
+    <EmbeddedResource Include="Imaging\Valle\Forms\Rpts\ReporteMunicipios_BancoItau\Reporte1_Municipios.rdlc" />
+    <EmbeddedResource Include="Imaging\Valle\Forms\Rpts\Reporte_Agrupado_Departamentos_NOVALLE\Reporte_Agrupado_Departamentos_NOVALLE.rdlc" />
+    <EmbeddedResource Include="Imaging\Valle\Forms\Rpts\Reporte_Carta_EntregaFisico\Reporte_Carta_EntregaFisico.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Imaging\Valle\Forms\Rpts\ReporteDispersion\ReporteBancoValle.xsc">
+      <DependentUpon>ReporteBancoValle.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Valle\Forms\Rpts\ReporteDispersion\ReporteBancoValle.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReporteBancoValle3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\Valle\Forms\Rpts\ReporteDispersion\ReporteBancoValle.xss">
+      <DependentUpon>ReporteBancoValle.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Valle\Forms\Rpts\ReporteMunicipios2_BancoItau\Reporte2_ImpuestosBancoItau.xsc">
+      <DependentUpon>Reporte2_ImpuestosBancoItau.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Valle\Forms\Rpts\ReporteMunicipios2_BancoItau\Reporte2_ImpuestosBancoItau.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reporte2_ImpuestosBancoItau3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\Valle\Forms\Rpts\ReporteMunicipios2_BancoItau\Reporte2_ImpuestosBancoItau.xss">
+      <DependentUpon>Reporte2_ImpuestosBancoItau.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Valle\Forms\Rpts\ReporteMunicipios_BancoItau\Reporte1_Municipios.xsc">
+      <DependentUpon>Reporte1_Municipios.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Valle\Forms\Rpts\ReporteMunicipios_BancoItau\Reporte1_Municipios.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reporte1_Municipios3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\Valle\Forms\Rpts\ReporteMunicipios_BancoItau\Reporte1_Municipios.xss">
+      <DependentUpon>Reporte1_Municipios.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Valle\Forms\Rpts\Reporte_Agrupado_Departamentos_NOVALLE\Agrupado_Dep_NOVALLE.xsc">
+      <DependentUpon>Agrupado_Dep_NOVALLE.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Valle\Forms\Rpts\Reporte_Agrupado_Departamentos_NOVALLE\Agrupado_Dep_NOVALLE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Agrupado_Dep_NOVALLE4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\Valle\Forms\Rpts\Reporte_Agrupado_Departamentos_NOVALLE\Agrupado_Dep_NOVALLE.xss">
+      <DependentUpon>Agrupado_Dep_NOVALLE.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Valle\Forms\Rpts\Reporte_Carta_EntregaFisico\Carta_EntregaFisico.xsc">
+      <DependentUpon>Carta_EntregaFisico.xsd</DependentUpon>
+    </None>
+    <None Include="Imaging\Valle\Forms\Rpts\Reporte_Carta_EntregaFisico\Carta_EntregaFisico.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Carta_EntregaFisico4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Imaging\Valle\Forms\Rpts\Reporte_Carta_EntregaFisico\Carta_EntregaFisico.xss">
+      <DependentUpon>Carta_EntregaFisico.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Miharu+ System - Archiving\Miharu.Archiving.DataAccess\Miharu.Archiving.DataAccess.csproj">
+      <Project>{8AB7AE02-8837-4800-8FDA-EA6CC59A374F}</Project>
+      <Name>Miharu.Archiving.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core.DataAccess\Miharu.Core.DataAccess.csproj">
+      <Project>{F30C1701-9BFE-4100-A6C3-DE950937B4FD}</Project>
+      <Name>Miharu.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Core\Miharu.Core\Miharu.Core.vbproj">
+      <Project>{A75C24FE-1992-40E5-AADF-B51ECB1653A8}</Project>
+      <Name>Miharu.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Controls\Miharu.Desktop.Controls.vbproj">
+      <Project>{BBDF4261-7651-4D93-95EE-675260D016AC}</Project>
+      <Name>Miharu.Desktop.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Desktop\Miharu.Desktop.Library\Miharu.Desktop.Library.vbproj">
+      <Project>{60FE71B4-EC25-45F0-B384-B98582D035C7}</Project>
+      <Name>Miharu.Desktop.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.DataAccess\Miharu.Imaging.DataAccess.csproj">
+      <Project>{312958B8-6FB7-48B5-86EB-D347CEFF8BD4}</Project>
+      <Name>Miharu.Imaging.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.Indexer\Miharu.Imaging.Indexer.vbproj">
+      <Project>{3AA91370-45D5-4EBD-A700-99FB10AB6FB4}</Project>
+      <Name>Miharu.Imaging.Indexer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.Library\Miharu.Imaging.Library.vbproj">
+      <Project>{9501AE9F-03BC-4933-9EC3-84BCD96CC795}</Project>
+      <Name>Miharu.Imaging.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Imaging\Miharu.Imaging.OfflineViewer.Library\Miharu.Imaging.OffLineViewer.Library.vbproj">
+      <Project>{B32D869B-91E0-4A7A-8BE7-D14B3275B30A}</Project>
+      <Name>Miharu.Imaging.OffLineViewer.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.DataAccess\Miharu.Security.DataAccess.csproj">
+      <Project>{902B10BC-8630-4730-9AC5-763CA7D2CB31}</Project>
+      <Name>Miharu.Security.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Security\Miharu.Security.Library\Miharu.Security.Library.csproj">
+      <Project>{BC90E6AA-55BE-4E52-841E-FE48A32E750D}</Project>
+      <Name>Miharu.Security.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.FileProvider.Library\Miharu.FileProvider.Library.vbproj">
+      <Project>{1E21AD2F-0D1F-47A5-94C5-A75D6DAAAC8F}</Project>
+      <Name>Miharu.FileProvider.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.MailSender.DataAccess\Miharu.MailSender.DataAccess.csproj">
+      <Project>{68B5513A-93BF-403B-8AEA-C94B43CFCBAF}</Project>
+      <Name>Miharu.MailSender.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Miharu.Tools\Miharu.Tools.vbproj">
+      <Project>{69D016B1-3E92-4037-9CEB-FE8283479AFD}</Project>
+      <Name>Miharu.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Miharu+ System - Tools\Slyg.Tools.Imaging\Slyg.Tools.Imaging.csproj">
+      <Project>{B41AFD53-3FE1-4C20-B359-1C5FC16954C4}</Project>
+      <Name>Slyg.Tools.Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Integration.DataAccess\Miharu.Integration.DataAccess.csproj">
+      <Project>{8A0078E2-6728-4413-AE6F-FD1EADEB7247}</Project>
+      <Name>Miharu.Integration.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miharu.Mail\Miharu.Mail.vbproj">
+      <Project>{E56A194D-1773-4498-995B-FF74AD0A00AC}</Project>
+      <Name>Miharu.Mail</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\btnSalir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\CLOSE_FOLDER.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Process-Accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\refresh_grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax-loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax-loader1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAgregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBuscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnCargar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCopiar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnGenerarEstructura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnGuardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSalir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FacturacionMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainFolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Process-Accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Process-Accept1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLOSE_FOLDER.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email_go.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

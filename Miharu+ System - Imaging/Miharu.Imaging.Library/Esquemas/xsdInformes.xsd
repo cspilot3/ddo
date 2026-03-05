@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_DB_Miharu_ImagingDataSet" targetNamespace="http://tempuri.org/_DB_Miharu_ImagingDataSet.xsd" xmlns:mstns="http://tempuri.org/_DB_Miharu_ImagingDataSet.xsd" xmlns="http://tempuri.org/_DB_Miharu_ImagingDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DB_Miharu_ImagingConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="DB_Miharu_ImagingConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Miharu.Imaging.Library.My.MySettings.GlobalReference.Default.DB_Miharu_ImagingConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_DB_Miharu_ImagingDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_DB_Miharu_ImagingDataSet" msprop:Generator_UserDSName="_DB_Miharu_ImagingDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CTA_Informe_Productividad_General" msprop:Generator_TableClassName="CTA_Informe_Productividad_GeneralDataTable" msprop:Generator_TableVarName="tableCTA_Informe_Productividad_General" msprop:Generator_TablePropName="CTA_Informe_Productividad_General" msprop:Generator_RowDeletingName="CTA_Informe_Productividad_GeneralRowDeleting" msprop:Generator_UserTableName="CTA_Informe_Productividad_General" msprop:Generator_RowChangingName="CTA_Informe_Productividad_GeneralRowChanging" msprop:Generator_RowEvHandlerName="CTA_Informe_Productividad_GeneralRowChangeEventHandler" msprop:Generator_RowDeletedName="CTA_Informe_Productividad_GeneralRowDeleted" msprop:Generator_RowEvArgName="CTA_Informe_Productividad_GeneralRowChangeEvent" msprop:Generator_RowChangedName="CTA_Informe_Productividad_GeneralRowChanged" msprop:Generator_RowClassName="CTA_Informe_Productividad_GeneralRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fk_Entidad_Index" msprop:Generator_ColumnVarNameInTable="columnfk_Entidad_Index" msprop:Generator_ColumnPropNameInRow="fk_Entidad_Index" msprop:Generator_ColumnPropNameInTable="fk_Entidad_IndexColumn" msprop:Generator_UserColumnName="fk_Entidad_Index" type="xs:short" />
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="id_Entidad" msprop:Generator_ColumnVarNameInTable="columnid_Entidad" msprop:Generator_ColumnPropNameInRow="id_Entidad" msprop:Generator_ColumnPropNameInTable="id_EntidadColumn" msprop:Generator_UserColumnName="id_Entidad" type="xs:short" />
+              <xs:element name="Nombre_Entidad" msprop:Generator_ColumnVarNameInTable="columnNombre_Entidad" msprop:Generator_ColumnPropNameInRow="Nombre_Entidad" msprop:Generator_ColumnPropNameInTable="Nombre_EntidadColumn" msprop:Generator_UserColumnName="Nombre_Entidad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id_Proyecto" msprop:Generator_ColumnVarNameInTable="columnid_Proyecto" msprop:Generator_ColumnPropNameInRow="id_Proyecto" msprop:Generator_ColumnPropNameInTable="id_ProyectoColumn" msprop:Generator_UserColumnName="id_Proyecto" type="xs:short" />
+              <xs:element name="Nombre_Proyecto" msprop:Generator_ColumnVarNameInTable="columnNombre_Proyecto" msprop:Generator_ColumnPropNameInRow="Nombre_Proyecto" msprop:Generator_ColumnPropNameInTable="Nombre_ProyectoColumn" msprop:Generator_UserColumnName="Nombre_Proyecto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id_Esquema" msprop:Generator_ColumnVarNameInTable="columnid_Esquema" msprop:Generator_ColumnPropNameInRow="id_Esquema" msprop:Generator_ColumnPropNameInTable="id_EsquemaColumn" msprop:Generator_UserColumnName="id_Esquema" type="xs:short" />
+              <xs:element name="Nombre_Esquema" msprop:Generator_ColumnVarNameInTable="columnNombre_Esquema" msprop:Generator_ColumnPropNameInRow="Nombre_Esquema" msprop:Generator_ColumnPropNameInTable="Nombre_EsquemaColumn" msprop:Generator_UserColumnName="Nombre_Esquema">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Folders" msprop:Generator_ColumnVarNameInTable="columnFolders" msprop:Generator_ColumnPropNameInRow="Folders" msprop:Generator_ColumnPropNameInTable="FoldersColumn" msprop:Generator_UserColumnName="Folders" type="xs:int" minOccurs="0" />
+              <xs:element name="Files" msprop:Generator_ColumnVarNameInTable="columnFiles" msprop:Generator_ColumnPropNameInRow="Files" msprop:Generator_ColumnPropNameInTable="FilesColumn" msprop:Generator_UserColumnName="Files" type="xs:int" minOccurs="0" />
+              <xs:element name="Campos" msprop:Generator_ColumnVarNameInTable="columnCampos" msprop:Generator_ColumnPropNameInRow="Campos" msprop:Generator_ColumnPropNameInTable="CamposColumn" msprop:Generator_UserColumnName="Campos" type="xs:int" minOccurs="0" />
+              <xs:element name="Caracteres" msprop:Generator_ColumnVarNameInTable="columnCaracteres" msprop:Generator_ColumnPropNameInRow="Caracteres" msprop:Generator_ColumnPropNameInTable="CaracteresColumn" msprop:Generator_UserColumnName="Caracteres" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B17637C8-36B2-4F05-9BF4-4064CEF962AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Referencias</RootNamespace>
+    <AssemblyName>Referencias</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLLs\12\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="DLLs\AFPDFLibNET.dll" />
+    <Content Include="DLLs\AjaxControlToolkit.dll" />
+    <Content Include="DLLs\Barcode.dll" />
+    <Content Include="DLLs\BarcodeLib.BarcodeReader.dll" />
+    <Content Include="DLLs\BarcodeLib.dll" />
+    <Content Include="DLLs\DB_OCR.DataAccess.dll" />
+    <Content Include="DLLs\DocumentFormat.OpenXml.dll" />
+    <Content Include="DLLs\Ext.Net.dll" />
+    <Content Include="DLLs\Ext.Net.Utilities.dll" />
+    <Content Include="DLLs\FreeImage.dll" />
+    <Content Include="DLLs\FreeImage32.dll" />
+    <Content Include="DLLs\Gios.PSM.dll" />
+    <Content Include="DLLs\gsdll32.dll" />
+    <Content Include="DLLs\gsdll64.dll" />
+    <Content Include="DLLs\HtmlAgilityPack.dll" />
+    <Content Include="DLLs\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="DLLs\Ionic.Zip.dll" />
+    <Content Include="DLLs\itextsharp.dll" />
+    <Content Include="DLLs\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="DLLs\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="DLLs\Microsoft.Practices.EnterpriseLibrary.Logging.dll" />
+    <Content Include="DLLs\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="DLLs\Microsoft.Practices.Unity.dll" />
+    <Content Include="DLLs\Microsoft.Practices.Unity.Interception.dll" />
+    <Content Include="DLLs\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="DLLs\Microsoft.ReportViewer.WebForms.dll" />
+    <Content Include="DLLs\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="DLLs\Miharu.Workflow.Library.dll" />
+    <Content Include="DLLs\Mono.Security.dll" />
+    <Content Include="DLLs\Newtonsoft.Json.dll" />
+    <Content Include="DLLs\Npgsql.dll" />
+    <Content Include="DLLs\PDFLibrary.dll" />
+    <Content Include="DLLs\RestSharp.dll" />
+    <Content Include="DLLs\SLYG.Data.dll" />
+    <Content Include="DLLs\Slyg.Tools.dll" />
+    <Content Include="DLLs\Slyg.Tools.Imaging.dll" />
+    <Content Include="DLLs\Slyg.Tools.Net.dll" />
+    <Content Include="DLLs\Slyg.Tools.Scanning.dll" />
+    <Content Include="DLLs\Slyg.Tools.Zip.dll" />
+    <Content Include="DLLs\Sms.Registro.Integration.Library.dll" />
+    <Content Include="DLLs\TextBoxMask.dll" />
+    <Content Include="DLLs\TWAINDSM32\TWAINDSM.dll" />
+    <Content Include="DLLs\TWAINDSM64\TWAINDSM.dll" />
+    <Content Include="DLLs\TwainDSMx64\en\Package.xml" />
+    <Content Include="DLLs\TwainDSMx64\es\Package.xml" />
+    <Content Include="DLLs\TwainDSMx64\Manual.txt" />
+    <Content Include="DLLs\TwainDSMx64\Product.xml" />
+    <Content Include="DLLs\TwainDSMx86\en\Package.xml" />
+    <Content Include="DLLs\TwainDSMx86\es\Package.xml" />
+    <Content Include="DLLs\TwainDSMx86\Manual.txt" />
+    <Content Include="DLLs\TwainDSMx86\Product.xml" />
+    <Content Include="DLLs\Vintasoft.Shared.dll" />
+    <Content Include="DLLs\Vintasoft.Twain.dll" />
+    <Content Include="DLLs\VintasoftTwainService.exe" />
+    <Content Include="DLLs\WindowsBase.dll" />
+    <Content Include="frm4\Newtonsoft.Json.dll" />
+    <Content Include="net35\Newtonsoft.Json.dll" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="DLLs\TWAINDSM32\TWAINDSM32.msm" />
+    <None Include="DLLs\TWAINDSM64\TWAINDSM64.msm" />
+    <None Include="DLLs\TwainDSMx64\VintasoftTwain64.msi" />
+    <None Include="DLLs\TwainDSMx86\VintasoftTwain32.msi" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

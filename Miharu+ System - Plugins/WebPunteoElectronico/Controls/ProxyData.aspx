@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProxyData.aspx.cs" Inherits="WebPunteoElectronico.Controls.ProxyData" %>
