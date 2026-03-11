@@ -1,0 +1,52 @@
+PLAN DE IMPLEMENTACIÓN — Integración Entra ID / OAuth 2.0 — Miharu+ Desktop DDO,,,,,,,,
+,,,,,,,,
+ACTIVIDADES DE DESARROLLO,,,,,,,,
+,,,,,,,,
+#,Actividad,Entregable,Responsable,Estado,Horas estimadas,Fecha estimada,Bloqueante,Notas
+1,Scripts SQL — TBL_Usuario_EntraID + TBL_EntraID_Rol_Perfil,2 archivos .sql listos para ejecutar,Desarrollo,Completado,2,09/03/2026,,Pendiente ejecutar en DESDBCANJE\DDO — DB_Miharu.Security_Core
+2,Modelo de configuración EntraIDConfig.cs,Clase POCO con parámetros OAuth,Desarrollo,Completado,1,09/03/2026,,En Miharu.Security.Library
+3,Wrapper MSAL.NET — EntraIDAuthService.cs,Flujo OAuth interactivo + silencioso,Desarrollo,Completado,3,10/03/2026,,NuGet Microsoft.Identity.Client en instalación
+4,Lógica JIT — JITProvisioningService.cs,Búsqueda / vinculación / actualización de acceso en BD,Desarrollo,Completado,4,10/03/2026,,En Miharu.Security.DataAccess — solo toca tablas nuevas
+5,ValidateEntraIDUser() en SecurityService.asmx.cs,Nuevo método ASMX que recibe token — ejecuta JIT — retorna sesión,Desarrollo,En curso,6,12/03/2026,,
+6,Cliente wrapper — ValidateEntraIDUser() en SecurityWebService.cs,Método cliente que conecta Library con WebService,Desarrollo,Pendiente,3,12/03/2026,,Depende del paso 5
+7,UI — botón Acceso Corporativo en FormLogin.vb + IniciarSesionEntraID() en Program.vb,Flujo de login corporativo visible al usuario,Desarrollo,Pendiente,6,13/03/2026,,Depende del paso 6
+8,App.config — parámetros Entra ID,Configuración TenantId / ClientId / Authority / Scopes / RedirectUri,Desarrollo,Pendiente,1,13/03/2026,,TenantId y ClientId confirmados por banco
+,TOTAL DESARROLLO,,,,,,,26 horas
+,,,,,,,,
+ACTIVIDADES DE INFRAESTRUCTURA / BD,,,,,,,,
+,,,,,,,,
+#,Actividad,Entregable,Responsable,Estado,Horas estimadas,Fecha estimada,Bloqueante,Notas
+9,Instalar NuGet Microsoft.Identity.Client en Miharu.Security.Library,Referencia al paquete en el proyecto,Desarrollo,En curso,0.5,11/03/2026,,En instalación
+10,Ejecutar script 01 — Crear TBL_Usuario_EntraID en BD,Tabla creada en DB_Miharu.Security_Core,DBA / Desarrollo,Pendiente,0.5,12/03/2026,,Servidor: DESDBCANJE\DDO
+11,Ejecutar script 02 — Crear TBL_EntraID_Rol_Perfil en BD,Tabla creada en DB_Miharu.Security_Core,DBA / Desarrollo,Pendiente,0.5,12/03/2026,,Depende del paso 10
+12,Cargar datos iniciales en TBL_EntraID_Rol_Perfil,Mapeo App Roles → Perfiles Miharu+ cargado,DBA / Desarrollo,Pendiente,1,A confirmar con banco,Roles de homologación confirmados por banco,Roles solicitados — pendiente respuesta del banco
+,TOTAL INFRAESTRUCTURA,,,,,,,2.5 horas
+,,,,,,,,
+ACTIVIDADES PENDIENTES DEL BANCO,,,,,,,,
+,,,,,,,,
+#,Actividad,Dato requerido,Responsable,Estado,Horas estimadas,Fecha estimada,Para qué se usa,Notas
+13,Registrar app en Azure — Miharu Desktop DDO,ClientId (GUID de la app),Banco — Azure team,Completado,2,11/03/2026,Configuración MSAL + App.config,ClientId confirmado
+14,Entregar TenantId,GUID del tenant del banco,Banco — Azure team,Completado,0,11/03/2026,Configuración MSAL + App.config,TenantId confirmado
+15,Confirmar nombres exactos de App Roles (campo Value),Ej: Admin / Operador / Consulta,Banco — Azure team,En gestión,1,A confirmar,Cargar TBL_EntraID_Rol_Perfil,Solicitado — pendiente respuesta. Sensible a mayúsculas
+16,Asignar App Roles al usuario de prueba en Azure,Usuario de prueba con rol asignado,Banco — Azure team,En gestión,1,A confirmar,Prueba end-to-end,Solicitado — pendiente respuesta
+17,Proporcionar usuario de prueba con cuenta corporativa,Cuenta @banco.com con MFA activo,Banco — Azure team,En gestión,1,A confirmar,Validar flujo completo con MFA,Solicitado — pendiente respuesta
+18,Confirmar sincronización dominio latam.brinksgbl.com con Entra ID vía AD Connect,Sí / No,Banco — Infraestructura,Pendiente,2,A confirmar,Determina si usuarios ya existen en Entra ID,Impacta el flujo JIT
+,TOTAL BANCO,,,,,,,7 horas
+,,,,,,,,
+PRUEBAS,,,,,,,,
+,,,,,,,,
+#,Actividad,Criterio de éxito,Responsable,Estado,Horas estimadas,Fecha estimada,Bloqueante,Notas
+19,Prueba flujo OAuth aislado (sin WebService),Token JWT retornado con claims oid / upn / roles,Desarrollo,Pendiente,2,14/03/2026,Pasos 9 completado + ClientId confirmado,TenantId y ClientId disponibles — se puede hacer al terminar paso 9
+20,Prueba JIT — primer acceso (usuario nuevo),Usuario creado en TBL_Usuario + vinculado en TBL_Usuario_EntraID,Desarrollo,Pendiente,3,A confirmar,Pasos 10-12 + usuario y roles del banco,Bloqueado por roles del banco
+21,Prueba JIT — acceso recurrente (usuario existente),Fecha_Ultimo_Acceso actualizada — sin duplicados,Desarrollo,Pendiente,2,A confirmar,Paso 20 completado,Bloqueado por roles del banco
+22,Prueba end-to-end — login corporativo desde la app,FormMain carga con permisos correctos del perfil homologado,Desarrollo + Banco,Pendiente,4,A confirmar,Pasos 5-8 + 19-21 completados,Bloqueado por usuario de prueba del banco
+,TOTAL PRUEBAS,,,,,,,11 horas
+,,,,,,,,
+RESUMEN TOTAL,,,,,,,,
+,,,,,,,,
+Área,Horas estimadas,Fecha inicio,Fecha estimada fin,Progreso,Detalle,,,,
+Desarrollo,26,09/03/2026,13/03/2026,50%,Pasos 1-4 completados — 5-8 en curso,,,,
+Infraestructura / BD,2.5,11/03/2026,12/03/2026 (parcial),20%,NuGet en instalación — scripts pendientes de ejecutar,,,,
+Pendientes del banco,7,11/03/2026,A confirmar,60%,TenantId y ClientId confirmados — roles y usuarios en gestión,,,,
+Pruebas,11,14/03/2026,A confirmar,0%,Prueba OAuth lista para el 14/03 — resto bloqueado por banco,,,,
+TOTAL GENERAL,46.5,09/03/2026,A confirmar,,,,,,,
