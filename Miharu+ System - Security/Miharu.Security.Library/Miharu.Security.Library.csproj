@@ -79,6 +79,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+    <Compile Include="EntraID\EntraIDConfig.cs" />
+    <Compile Include="EntraID\EntraIDAuthService.cs" />
     <Compile Include="WebService\SecurityDMZWebService.cs" />
     <Compile Include="WebService\SecurityWebService.cs" />
   </ItemGroup>

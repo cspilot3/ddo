@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntraID\JITProvisioningService.cs" />
     <Compile Include="DBSecurityDataBaseManager.cs" />
     <Compile Include="DBSecurityDataBaseManager.Designer.cs">
       <DependentUpon>DBSecurityDataBaseManager.cs</DependentUpon>

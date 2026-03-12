@@ -12,7 +12,9 @@ using Miharu.Security.WebService.Clases;
 using Slyg.Tools;
 using DBSecurity.SchemaConfig;
 using System.DirectoryServices;
+using System.Collections.Generic;
 using DBTools;
+using DBSecurity.EntraID;
 
 // ReSharper disable InconsistentNaming
 namespace Miharu.Security.WebService
@@ -1274,6 +1276,219 @@ namespace Miharu.Security.WebService
             public List<TypePermiso> Permisos;
         }
 
+
+        #region Entra ID
+
+        /// <summary>
+        /// Valida un ID Token de Microsoft Entra ID, ejecuta JIT Provisioning
+        /// y retorna la sesión con los mismos campos que getSession.
+        ///
+        /// Flujo:
+        ///   1. Decodifica el payload JWT y extrae claims (oid, upn, given_name, family_name, roles).
+        ///   2. Homologa el App Role al id_Perfil en TBL_EntraID_Rol_Perfil.
+        ///   3. Si el OID ya está vinculado → actualiza timestamp (acceso recurrente).
+        ///   4. Si no está vinculado → busca por UPN o crea el usuario en TBL_Usuario,
+        ///      luego registra el vínculo en TBL_Usuario_EntraID.
+        ///   5. Sincroniza el perfil en TBL_Usuario_Perfiles (Entra ID es fuente de verdad).
+        ///   6. Construye y retorna la sesión.
+        ///
+        /// NOTA DE SEGURIDAD: la firma del JWT no se valida en esta versión.
+        /// Para producción, instalar Microsoft.IdentityModel.Tokens y añadir
+        /// validación contra las claves públicas JWKS del tenant.
+        /// </summary>
+        [WebMethod]
+        public ResultgetSession ValidateEntraIDUser(string nIdToken, string nAssemblyName, string nClientIP)
+        {
+            DBSecurityDataBaseManager dbmSecurity = null;
+            var respuesta = new ResultgetSession();
+
+            try
+            {
+                // ── 1. Extraer claims ────────────────────────────────────────────────
+                var claims = ParseJwtClaims(nIdToken);
+
+                string oidStr;
+                if (!claims.TryGetValue("oid", out oidStr) || string.IsNullOrWhiteSpace(oidStr))
+                    throw new Exception("El token no contiene el claim 'oid' requerido.");
+
+                var oid = new Guid(oidStr);
+
+                string upn;
+                if (!claims.TryGetValue("preferred_username", out upn))
+                    claims.TryGetValue("upn", out upn);
+
+                string givenName;
+                claims.TryGetValue("given_name", out givenName);
+
+                string familyName;
+                claims.TryGetValue("family_name", out familyName);
+
+                string rolesRaw;
+                claims.TryGetValue("roles", out rolesRaw);
+                var roles = ParseRolesClaim(rolesRaw);
+
+                // ── 2. Abrir BD y homologar rol ──────────────────────────────────────
+                dbmSecurity = new DBSecurityDataBaseManager(Program.SecurityConnectionString);
+                dbmSecurity.Connection_Open(1); // System
+
+                var jit = new JITProvisioningService(Program.SecurityConnectionString);
+
+                short? idPerfil = null;
+                foreach (var rol in roles)
+                {
+                    idPerfil = jit.GetPerfilIdByRole(rol);
+                    if (idPerfil.HasValue) break;
+                }
+
+                if (!idPerfil.HasValue)
+                    throw new Exception("El usuario no tiene un App Role homologado en Miharu+. Contacte al administrador.");
+
+                // ── 3-4. Buscar o crear usuario y vincular OID ───────────────────────
+                int idUsuario;
+                var existingUserId = jit.FindUsuarioIdByOid(oid);
+
+                if (existingUserId.HasValue)
+                {
+                    // Acceso recurrente — solo sincronizar perfil
+                    idUsuario = existingUserId.Value;
+
+                    dbmSecurity.Transaction_Begin();
+
+                    SincronizarPerfil(dbmSecurity, idUsuario, idPerfil.Value);
+
+                    dbmSecurity.Transaction_Commit();
+
+                    jit.UpdateUltimoAcceso(oid, upn);
+                }
+                else
+                {
+                    // Primer acceso — buscar por UPN o crear usuario
+                    dbmSecurity.Transaction_Begin();
+
+                    var usuarioDataTable = dbmSecurity.SchemaSecurity.TBL_Usuario.DBFindByLogin_Usuario(upn ?? "");
+
+                    if (usuarioDataTable.Count > 0)
+                    {
+                        // Usuario encontrado por UPN — vincular OID
+                        idUsuario = usuarioDataTable[0].id_Usuario;
+                    }
+                    else
+                    {
+                        // Usuario nuevo — crear en TBL_Usuario
+                        var nombres   = !string.IsNullOrWhiteSpace(givenName)  ? givenName  : (upn ?? oid.ToString());
+                        var apellidos = !string.IsNullOrWhiteSpace(familyName) ? familyName : "";
+
+                        var passwordGenerator = new Slyg.Tools.Cryptographic.PasswordGenerator(32);
+                        var dummyPassword     = passwordGenerator.GetNewPassword();
+
+                        var newUser = new TBL_UsuarioType
+                        {
+                            id_Usuario                = dbmSecurity.SchemaSecurity.TBL_Usuario.DBNextId(),
+                            fk_Entidad                = Program.EntraID.Entidad,
+                            Login_Usuario             = upn != null && upn.Length <= 50 ? upn : oid.ToString(),
+                            Nombres_Usuario           = nombres.Length   <= 30  ? nombres   : nombres.Substring(0, 30),
+                            Apellidos_Usuario         = apellidos.Length <= 30  ? apellidos : apellidos.Substring(0, 30),
+                            Identificacion_Usuario    = "",
+                            Email_Usuario             = upn != null && upn.Length <= 100 ? upn : "",
+                            Direccion_Usuario         = "",
+                            Telefono_Usuario          = "",
+                            fk_Dependencia            = Program.EntraID.Dependencia,
+                            fk_Esquema_Seguridad      = Program.EntraID.EsquemaSeguridad,
+                            Password_Usuario          = Slyg.Tools.Cryptographic.Crypto.HASH.Encrypt(dummyPassword, "", 100),
+                            Solicitar_Cambio_Password = false,
+                            Usuario_Activo            = true,
+                            Fecha_Asignacion_Password = SlygNullable.SysDate,
+                            Eliminado_Usuario         = false,
+                            Observaciones             = "Creado por JIT Provisioning - Entra ID",
+                            fk_Usuario_Log            = 1,
+                            Fecha_log                 = SlygNullable.SysDate
+                        };
+
+                        dbmSecurity.SchemaSecurity.TBL_Usuario.DBInsert(newUser);
+                        idUsuario = newUser.id_Usuario;
+                    }
+
+                    SincronizarPerfil(dbmSecurity, idUsuario, idPerfil.Value);
+
+                    dbmSecurity.Transaction_Commit();
+
+                    // Vincular OID después del commit (conexión propia del JIT)
+                    jit.LinkUsuarioToEntraID(idUsuario, oid, upn);
+                }
+
+                // ── 5. Construir sesión ──────────────────────────────────────────────
+                var usuarioRow = dbmSecurity.SchemaSecurity.TBL_Usuario.DBGet(idUsuario);
+                var entidadRow = dbmSecurity.SchemaConfig.TBL_Entidad.DBGet(usuarioRow[0].fk_Entidad);
+                var grupoRow   = dbmSecurity.SchemaConfig.TBL_Grupo_Empresarial.DBGet(entidadRow[0].fk_Grupo_Empresarial);
+
+                var moduloTable = dbmSecurity.SchemaSecurity.TBL_Modulo.DBFindByEnsamblado_Modulo(nAssemblyName);
+                var idModulo    = moduloTable.Count > 0 ? moduloTable[0].id_Modulo : (short)-1;
+
+                respuesta.id_Usuario               = idUsuario;
+                respuesta.Nombres_Usuario          = usuarioRow[0].Nombres_Usuario;
+                respuesta.Apellidos_Usuario        = usuarioRow[0].Apellidos_Usuario;
+                respuesta.Identificacion_Usuario   = usuarioRow[0].Identificacion_Usuario;
+                respuesta.id_Entidad               = entidadRow[0].id_Entidad;
+                respuesta.Nombre_Entidad           = entidadRow[0].Nombre_Entidad;
+                respuesta.id_Grupo_Empresarial     = grupoRow[0].id_Grupo_Empresarial;
+                respuesta.Nombre_Grupo_Empresarial = grupoRow[0].Nombre_Grupo_Empresarial;
+
+                var permisosTable = dbmSecurity.SchemaSecurity.CTA_Usuario_Permisos.DBFindByfk_Usuariofk_Modulo(idUsuario, idModulo);
+                if (permisosTable.Count > 0)
+                {
+                    respuesta.Permisos = new List<ResultgetSession.TypePermiso>();
+                    foreach (var rowPermiso in permisosTable)
+                    {
+                        if (rowPermiso.fk_Perfil == 0) respuesta.IsRoot = true;
+                        respuesta.Permisos.Add(new ResultgetSession.TypePermiso
+                        {
+                            Cadena_Permiso = rowPermiso.Cadena_Permiso,
+                            Consultar      = rowPermiso.Consultar,
+                            Agregar        = rowPermiso.Agregar,
+                            Editar         = rowPermiso.Editar,
+                            Eliminar       = rowPermiso.Eliminar,
+                            Exportar       = rowPermiso.Exportar,
+                            Imprimir       = rowPermiso.Imprimir
+                        });
+                    }
+                }
+
+                respuesta.Result  = true;
+                respuesta.Message = "";
+            }
+            catch (Exception ex)
+            {
+                if (dbmSecurity != null)
+                    dbmSecurity.Transaction_Rollback();
+
+                respuesta.Result  = false;
+                respuesta.Message = "Error: " + ex.Message;
+            }
+            finally
+            {
+                if (dbmSecurity != null)
+                    dbmSecurity.Connection_Close();
+            }
+
+            return respuesta;
+        }
+
+        /// <summary>Borra y re-asigna el único perfil del usuario según Entra ID.</summary>
+        private static void SincronizarPerfil(DBSecurityDataBaseManager nDbm, int nIdUsuario, short nIdPerfil)
+        {
+            nDbm.SchemaSecurity.TBL_Usuario_Perfiles.DBDelete(nIdUsuario, null);
+
+            var perfilType = new TBL_Usuario_PerfilesType
+            {
+                fk_Usuario     = nIdUsuario,
+                fk_Perfil      = nIdPerfil,
+                Fecha_Log      = SlygNullable.SysDate,
+                fk_Usuario_Log = 1
+            };
+            nDbm.SchemaSecurity.TBL_Usuario_Perfiles.DBInsert(perfilType);
+        }
+
+        #endregion
 
         [WebMethod]
         public ResultChangePassword ChangePassword(string nToken, byte[] nLogin, byte[] nPassword, string nClientIP, byte[] nLoginToChange, byte[] nNewPassword)
