@@ -2617,6 +2617,75 @@ namespace Miharu.Security.WebService
             return (Slyg.Tools.Cryptographic.Keys)Application["TDESKeys"];
         }
 
+        /// <summary>
+        /// Decodifica el payload de un JWT y retorna un diccionario de claims.
+        /// No valida la firma — para producción agregar validación con
+        /// Microsoft.IdentityModel.Tokens contra las claves JWKS del tenant.
+        /// </summary>
+        private static Dictionary<string, string> ParseJwtClaims(string nIdToken)
+        {
+            if (string.IsNullOrWhiteSpace(nIdToken))
+                throw new ArgumentNullException("nIdToken");
+
+            var parts = nIdToken.Split('.');
+            if (parts.Length < 2)
+                throw new Exception("El formato del IdToken no es válido.");
+
+            var payload = parts[1].Replace('-', '+').Replace('_', '/');
+            switch (payload.Length % 4)
+            {
+                case 2: payload += "=="; break;
+                case 3: payload += "=";  break;
+            }
+
+            var json       = Encoding.UTF8.GetString(Convert.FromBase64String(payload));
+            var serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
+            var dict       = serializer.Deserialize<Dictionary<string, object>>(json);
+
+            var result = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+            foreach (var pair in dict)
+            {
+                if (pair.Value == null) continue;
+
+                if (pair.Value is System.Collections.ArrayList)
+                {
+                    var sb  = new StringBuilder("[");
+                    var arr = (System.Collections.ArrayList)pair.Value;
+                    for (var i = 0; i < arr.Count; i++)
+                    {
+                        if (i > 0) sb.Append(",");
+                        sb.Append("\"").Append(arr[i]).Append("\"");
+                    }
+                    sb.Append("]");
+                    result[pair.Key] = sb.ToString();
+                }
+                else
+                {
+                    result[pair.Key] = pair.Value.ToString();
+                }
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// El claim "roles" puede llegar como array JSON ["rol1","rol2"] o como string simple.
+        /// </summary>
+        private static string[] ParseRolesClaim(string nRolesRaw)
+        {
+            if (string.IsNullOrWhiteSpace(nRolesRaw))
+                return new string[0];
+
+            var trimmed = nRolesRaw.Trim();
+            if (trimmed.StartsWith("["))
+            {
+                var serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
+                return serializer.Deserialize<string[]>(trimmed);
+            }
+
+            return new[] { trimmed };
+        }
+
         /// <summary>Determina si el password es suficientemente complejo.</summary>
         /// <param name="pwd">Password a validar.</param>
         /// <param name="minLength">Número mínimo de caracteres del password.</param>

@@ -31,6 +31,27 @@ namespace Miharu.Security.WebService.Clases
 
         #endregion
 
+        public class EntraID
+        {
+            /// <summary>fk_Entidad asignada a usuarios creados via Entra ID (JIT).</summary>
+            public static short Entidad
+            {
+                get { return short.Parse(ConfigurationManager.AppSettings["EntraID.Entidad"]); }
+            }
+
+            /// <summary>fk_Dependencia para usuarios nuevos creados via JIT.</summary>
+            public static short Dependencia
+            {
+                get { return short.Parse(ConfigurationManager.AppSettings["EntraID.Dependencia"]); }
+            }
+
+            /// <summary>fk_Esquema_Seguridad para usuarios nuevos creados via JIT.</summary>
+            public static short EsquemaSeguridad
+            {
+                get { return short.Parse(ConfigurationManager.AppSettings["EntraID.EsquemaSeguridad"]); }
+            }
+        }
+
         public class LDAP
         {
             public static string Validar
