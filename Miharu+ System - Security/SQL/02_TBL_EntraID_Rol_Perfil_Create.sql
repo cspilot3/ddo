@@ -25,11 +25,11 @@
 IF NOT EXISTS (
     SELECT 1
     FROM   sys.objects
-    WHERE  object_id = OBJECT_ID(N'dbo.TBL_EntraID_Rol_Perfil')
+    WHERE  object_id = OBJECT_ID(N'Security.TBL_EntraID_Rol_Perfil')
     AND    type      = N'U'
 )
 BEGIN
-    CREATE TABLE dbo.TBL_EntraID_Rol_Perfil
+    CREATE TABLE Security.TBL_EntraID_Rol_Perfil
     (
         -- PK
         id_EntraID_Rol_Perfil   INT           NOT NULL IDENTITY(1, 1),
@@ -58,7 +58,7 @@ BEGIN
 
         -- FK a TBL_Perfil
         CONSTRAINT FK_TBL_EntraID_Rol_Perfil_TBL_Perfil
-            FOREIGN KEY (fk_Perfil) REFERENCES dbo.TBL_Perfil (id_Perfil),
+            FOREIGN KEY (fk_Perfil) REFERENCES Security.TBL_Perfil (id_Perfil),
 
         -- Unicidad: cada rol de Entra ID solo puede mapearse a un perfil activo
         CONSTRAINT UQ_TBL_EntraID_Rol_Perfil_EntraID_Rol
@@ -69,7 +69,7 @@ BEGIN
     --   SELECT fk_Perfil FROM TBL_EntraID_Rol_Perfil
     --   WHERE EntraID_Rol = @rol AND Activo = 1
     CREATE NONCLUSTERED INDEX IX_TBL_EntraID_Rol_Perfil_Rol_Activo
-        ON dbo.TBL_EntraID_Rol_Perfil (EntraID_Rol, Activo)
+        ON Security.TBL_EntraID_Rol_Perfil (EntraID_Rol, Activo)
         INCLUDE (fk_Perfil, Descripcion);
 
     PRINT 'Tabla TBL_EntraID_Rol_Perfil creada correctamente.';
@@ -96,7 +96,7 @@ GO
 /*
 -- Descomentar y ajustar una vez confirmados los valores reales:
 
-INSERT INTO dbo.TBL_EntraID_Rol_Perfil
+INSERT INTO Security.TBL_EntraID_Rol_Perfil
     (EntraID_Rol, fk_Perfil, Descripcion, Activo, Usuario_Creacion)
 VALUES
     ('Admin',    <id_Perfil_Admin>,    'Administrador del sistema DDO',    1, 'SISTEMA'),

@@ -75,7 +75,7 @@ namespace DBSecurity.EntraID
 
             const string sql = @"
                 SELECT fk_Perfil
-                FROM   dbo.TBL_EntraID_Rol_Perfil
+                FROM   Security.TBL_EntraID_Rol_Perfil
                 WHERE  EntraID_Rol = @Rol
                 AND    Activo      = 1";
 
@@ -109,7 +109,7 @@ namespace DBSecurity.EntraID
         {
             const string sql = @"
                 SELECT fk_Usuario
-                FROM   dbo.TBL_Usuario_EntraID
+                FROM   Security.TBL_Usuario_EntraID
                 WHERE  EntraID_ObjectId = @ObjectId
                 AND    Activo           = 1";
 
@@ -140,7 +140,7 @@ namespace DBSecurity.EntraID
         public void LinkUsuarioToEntraID(int nIdUsuario, Guid nObjectId, string nUPN)
         {
             const string sql = @"
-                INSERT INTO dbo.TBL_Usuario_EntraID
+                INSERT INTO Security.TBL_Usuario_EntraID
                     (fk_Usuario, EntraID_ObjectId, EntraID_UPN,
                      Fecha_Vinculacion, Fecha_Ultimo_Acceso, Activo)
                 VALUES
@@ -173,7 +173,7 @@ namespace DBSecurity.EntraID
         public void UpdateUltimoAcceso(Guid nObjectId, string nUPN)
         {
             const string sql = @"
-                UPDATE dbo.TBL_Usuario_EntraID
+                UPDATE Security.TBL_Usuario_EntraID
                 SET    Fecha_Ultimo_Acceso = GETDATE(),
                        EntraID_UPN        = @UPN
                 WHERE  EntraID_ObjectId   = @ObjectId

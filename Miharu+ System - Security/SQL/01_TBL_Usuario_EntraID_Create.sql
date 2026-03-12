@@ -24,11 +24,11 @@
 IF NOT EXISTS (
     SELECT 1
     FROM   sys.objects
-    WHERE  object_id = OBJECT_ID(N'dbo.TBL_Usuario_EntraID')
+    WHERE  object_id = OBJECT_ID(N'Security.TBL_Usuario_EntraID')
     AND    type      = N'U'
 )
 BEGIN
-    CREATE TABLE dbo.TBL_Usuario_EntraID
+    CREATE TABLE Security.TBL_Usuario_EntraID
     (
         -- PK
         id_Usuario_EntraID  INT              NOT NULL IDENTITY(1, 1),
@@ -63,7 +63,7 @@ BEGIN
 
         -- FK a TBL_Usuario
         CONSTRAINT FK_TBL_Usuario_EntraID_TBL_Usuario
-            FOREIGN KEY (fk_Usuario) REFERENCES dbo.TBL_Usuario (id_Usuario),
+            FOREIGN KEY (fk_Usuario) REFERENCES Security.TBL_Usuario (id_Usuario),
 
         -- Un OID solo puede estar vinculado a un usuario
         CONSTRAINT UQ_TBL_Usuario_EntraID_ObjectId
@@ -78,7 +78,7 @@ BEGIN
     --   SELECT fk_Usuario FROM TBL_Usuario_EntraID
     --   WHERE EntraID_ObjectId = @oid AND Activo = 1
     CREATE NONCLUSTERED INDEX IX_TBL_Usuario_EntraID_ObjectId_Activo
-        ON dbo.TBL_Usuario_EntraID (EntraID_ObjectId, Activo)
+        ON Security.TBL_Usuario_EntraID (EntraID_ObjectId, Activo)
         INCLUDE (fk_Usuario, EntraID_UPN, Fecha_Ultimo_Acceso);
 
     PRINT 'Tabla TBL_Usuario_EntraID creada correctamente.';
